@@ -1,0 +1,150 @@
+Számítógépek működése	8
+Matematika1	5
+Diszkrét matematika	6
+Algoritmusok és adatstruktúrák	6
+Közgazdaságtan	4
+Rendszer és irányítás	3
+Számítógép-hálózatok	6
+Programozás	6
+Projektmunka és szoftvertechnológia	6
+Matematika2	5
+Mikroelektromechanikai rendszerek	3
+Rendszerüzemeltetés és biztonság	3
+OO programozás	6
+Adatbázis-kezelés	4
+Matematika3	5
+Vállalatgazdaságtan	5
+Fizika informatikusoknak	4
+Mesterséges intelligencia	6
+Projektmunka1	6
+Ipar 4.0 technológiák	3
+Statisztika	2
+Üzleti és informatikai jog	5
+Projektmunka2	6
+Modern szoftverfejlesztési eszközök	3
+Vállalati információs rendszerek	3
+Modellezés és optimalizálás a gyakorlatban	6
+Korszerű hálózati alkalmazások	6
+Szakdolgozati konzultáció1	7
+IT-szolgáltatások	3
+Szakdolgozati konzultáció2	8
+Makroökonómia	6
+Mikroökonómia	6
+Menedzsment	6
+Számítástudomány	3
+Számvitel	3
+Kontrolling	6
+Üzleti célú rendszerek	5
+Üzleti intelligencia	5
+Önkéntes segítő gyakorlat	2
+Mérnöki képességfejlesztés	4
+Üzleti jog és iparjogvédelem	2
+CAD alkalmazások1	4
+Térinformatika	4
+Fizikatörténet	4
+Komplex energetikai rendszerek	4
+Tudomány népszerűsítés1	2
+Tudomány népszerűsítés	2
+Diagnosztikai képalkotó eljárások	2
+Fizikai alapmérések	2
+Bevezetés a nukleáris technikába	2
+Műszaki kémiai laboratóriumi gyakorlatok	2
+Környezetkémiai alapismeretek	2
+Honvédelmi alapismeretek	2
+Munkaerőpiaci ismeretek	4
+Termelésmenedzsment	4
+Exchange Course2	3
+Exchange Course3	4
+Startup vállalkozás1	4
+Bevezetés az innováció- és kutatáskommunikációba1	5
+Bevezetés az innováció- és kutatáskommunikációba2	5
+Startup vállalkozás2	4
+Környezetvédelem	2
+Környezetelemzés	4
+Környezet-egészségtan	2
+Hit és tudomány	2
+Lelki egészségvédelem	2
+Nemzetközi protkoll és etikett	4
+Prezentációs készségfejlesztés idegen nyelven	4
+Szociológia	4
+Modern társadalom	2
+Az információs társadalom	4
+Társadalmi felelősségvállalás	2
+Helyi társadalom és közösség szükségletfelmérés	2
+Interprofesszionális projektgyakorlat	2
+Közlekedési alapismeretek	2
+Megelőző katasztófavédelem	5
+Ökológia ökonómia	4
+Járműfejlesztés alapjai informatikusoknak	4
+Járműdinamika informatikusoknak	4
+Bevezetés a beágyazott rendszerekbe	2
+Automatikai építőelemek	5
+Szabályozástechnika	5
+Mikrokontroller programozás	5
+Autonóm járművek és robotok programozása	5
+Rendszerfejlesztés	6
+Üzleti célú rendszerek	5
+C++	6
+Felhasználói interfészek tervezése (Sw ergonómia)	6
+Funkcionális programozás	6
+Gyakorlatorientált sw-technológia	6
+Humanoid robotok irányítása	5
+Információ modellezés	5
+Interaktív multimédia alkalmazások	5
+IT a járműgyártásban	5
+IT-változásmenedzsment	5
+Java programozás	6
+Gépi látás	5
+Kiterjesztett kollaboráció a jövő Internetén	5
+Mobilalkalmazás-fejlesztés	6
+PHP	6
+Portálfejlesztés .NET-ben	6
+Programozás.Net-ben	6
+Adatintenzív adatbázis-kezelő alkalmazások	5
+Számítógépes adatbiztonság	5
+IT-beruházások megtérülése1	5
+IT-beruházások megtérülése2	5
+WEB technológia	6
+Ágazati információrendszerek1	3
+Ágazati információrendszerek2	3
+Banki Informatika	3
+Beágyazott rendszerek (IoT)	6
+C#	6
+SAP alkalmazói ismeretek	4
+Tartalomkezelő rendszerek	3
+Blokklánc rendszerek	3
+Unity alapú VR fejlesztések	4
+Autóipari termékfejlesztés	4
+Linux ismeretek	4
+Kombinatorikus optimalizálás	5
+Komponens alapú programozás	5
+Python programozás	5
+Robot programozás	5
+Párhuzamos programozás	4
+Nagyteljesítményű számítási rendszerek	5
+Hang-és képtechnika alapjai	5
+Kommunikációs ismeretek	4
+Takarmányozástan alapjai	4
+Általános állattenyésztéstan	4
+Precíziós állattenyésztés	4
+Mezőgazdasági alapismeretek	4
+Térinformatika	4
+Élelmiszerismeret	4
+Minőségbiztosítás alapjai	3
+Kertészet alapjai	4
+Növényvédelem technológiai alapjai	4
+Általános növénytermesztéstan	4
+Földműveléstan	4
+Biotermékektől a géntechnológiáig	4
+Precíziós növénytermesztési gazdálkodás	4
+Agrometeorológia alapjai	4
+Vízgazdálkodás alapjai	4
+Üzleti kommunikáció	4
+Modern szoftverfejlesztési eszközök	3
+Információ modellezés	5
+Interaktív multimédia alkalmazások	5
+Tartalomkezelő rendszerek	3
+Pénzügyi menedzsment	6
+E-marketing	4
+Bevezetés az innováció- és kutatáskommunikációba1	5
+Bevezetés az innováció- és kutatáskommunikációba2	5
