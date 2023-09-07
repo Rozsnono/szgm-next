@@ -126,6 +126,7 @@ export default function Home() {
                 </span>
                 <span className="p-float-label">
                     <InputNumber id="number-input" value={credit&&credit > 0 ? credit : null} readOnly />
+
                     <label htmlFor="number-input">Felvett kredit</label>
                 </span>
                 <span className="p-float-label">
