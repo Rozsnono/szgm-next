@@ -1,6 +1,6 @@
 "use client";
 import { AutoComplete, AutoCompleteCompleteEvent } from "primereact/autocomplete";
-import { useRef, useState } from "react";
+import { Key, useRef, useState } from "react";
 import { useQuery } from "react-query";
 import Subject from "../../txts/subjects.json"
 import { InputNumber } from 'primereact/inputnumber';
@@ -30,15 +30,15 @@ export default function Home() {
     const subjects: any = useQuery('subjects', getSubjects);
 
     const search = (event: AutoCompleteCompleteEvent) => {
-        let _items = subjects.data.splice(10).map(item => item.subject);
-        setItems(event.query ? subjects.data.filter(item => item.subject.toLowerCase().includes(event.query)).map(item => item.subject) : _items);
+        let _items = subjects.data.splice(10).map((item: { subject: any; }) => item.subject);
+        setItems(event.query ? subjects.data.filter((item: { subject: string; }) => item.subject.toLowerCase().includes(event.query)).map((item: { subject: any; }) => item.subject) : _items);
     }
 
     const subjectsData = useRef<any>([]);
 
     function addSubject() {
         if (value && number) {
-            subjectsData.current.push({ subject: value, mark: number, cred: subjects.data.filter(item => item.subject == value)[0].cred });
+            subjectsData.current.push({ subject: value, mark: number, cred: subjects.data.filter((item: { subject: string; }) => item.subject == value)[0].cred });
             setValue('');
             setNumber(null);
 
@@ -48,7 +48,7 @@ export default function Home() {
     }
 
     function removeSubject(index: number) {
-        subjectsData.current = subjectsData.current.filter((_, i) => i !== index);
+        subjectsData.current = subjectsData.current.filter((_: any, i: number) => i !== index);
         setAvg(Average());
         setCredit(sumCred());
     }
@@ -95,7 +95,7 @@ export default function Home() {
                 <div className="grid p-10 gap-10">
 
                     {
-                        subjectsData.current.map((item, index) => {
+                        subjectsData.current.map((item: { subject: any; mark: string; }, index: number | null | undefined) => {
                             return (
                                 <div key={index} className="flex flex-cols-3 gap-4 w-full">
                                     <span className="p-float-label">
@@ -107,7 +107,7 @@ export default function Home() {
                                         <label htmlFor="number-input">Édemjegy</label>
                                     </span>
 
-                                    <Button icon="pi pi-trash" rounded severity="danger" label="Törlés" onClick={() => { removeSubject(index) }} />
+                                    <Button icon="pi pi-trash" rounded severity="danger" label="Törlés" onClick={() => { removeSubject(index?index:0) }} />
                                 </div>
                             )
                         })
@@ -121,11 +121,11 @@ export default function Home() {
 
             <div className="flex flex-col border-2 border-green-400 rounded-lg p-8 gap-8">
                 <span className="p-float-label">
-                    <InputNumber id="number-input" value={avg > 0 ? avg : null} readOnly />
+                    <InputNumber id="number-input" value={avg&&avg > 0 ? avg : null} readOnly />
                     <label htmlFor="number-input">Átlag</label>
                 </span>
                 <span className="p-float-label">
-                    <InputNumber id="number-input" value={credit > 0 ? credit : null} readOnly />
+                    <InputNumber id="number-input" value={credit&&credit > 0 ? credit : null} readOnly />
                     <label htmlFor="number-input">Felvett kredit</label>
                 </span>
                 <span className="p-float-label">

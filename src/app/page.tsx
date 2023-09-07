@@ -7,6 +7,7 @@ import { useRef, useState } from 'react';
 import { Button } from 'primereact/button';
 import { Menu } from 'primereact/menu';
 import { useRouter } from 'next/navigation';
+import Menus from '@/components/menus';
 
 export default function Home() {
 
@@ -71,7 +72,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <Menu model={items} popup ref={menuLeft} popupAlignment="right" />
+      <Menus menuLeft={menuLeft} />
 
       <div className="flex flex-cols-2">
         <Image src={SZE} height={100} width={600} alt='' ></Image>
