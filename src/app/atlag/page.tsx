@@ -30,8 +30,12 @@ export default function Home() {
     const subjects: any = useQuery('subjects', getSubjects);
 
     const search = (event: AutoCompleteCompleteEvent) => {
-        let _items = subjects.data.splice(10).map((item: { subject: any; }) => item.subject);
-        setItems(event.query ? subjects.data.filter((item: { subject: string; }) => item.subject.toLowerCase().includes(event.query)).map((item: { subject: any; }) => item.subject) : _items);
+        if (event.query) {
+            const filtered = subjects.data.filter((item: any) => {return item.subject.toLowerCase().startsWith(event.query.toLocaleLowerCase())});
+            setItems(filtered.map((item: { subject: any; }) => item.subject));
+        } else {
+            setItems(subjects.data.slice(10).map((item: { subject: any; }) => item.subject));
+        }
     }
 
     const subjectsData = useRef<any>([]);
@@ -107,7 +111,7 @@ export default function Home() {
                                         <label htmlFor="number-input">Édemjegy</label>
                                     </span>
 
-                                    <Button icon="pi pi-trash" rounded severity="danger" label="Törlés" onClick={() => { removeSubject(index?index:0) }} />
+                                    <Button icon="pi pi-trash" rounded severity="danger" label="Törlés" onClick={() => { removeSubject(index ? index : 0) }} />
                                 </div>
                             )
                         })
@@ -121,11 +125,11 @@ export default function Home() {
 
             <div className="flex flex-col border-2 border-green-400 rounded-lg p-8 gap-8">
                 <span className="p-float-label">
-                    <InputNumber id="number-input" value={avg&&avg > 0 ? avg : null} readOnly />
+                    <InputNumber id="number-input" value={avg && avg > 0 ? avg : null} readOnly />
                     <label htmlFor="number-input">Átlag</label>
                 </span>
                 <span className="p-float-label">
-                    <InputNumber id="number-input" value={credit&&credit > 0 ? credit : null} readOnly />
+                    <InputNumber id="number-input" value={credit && credit > 0 ? credit : null} readOnly />
 
                     <label htmlFor="number-input">Felvett kredit</label>
                 </span>

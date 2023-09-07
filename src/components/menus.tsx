@@ -7,6 +7,16 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
     
     const items = [
         {
+            label: 'Átlag',
+            items: [
+                {
+                    label: 'Átlag számítás',
+                    icon: 'pi pi-chart-bar',
+                    command: () => router.push('/atlag')
+                }
+            ]
+        },
+        {
             label: '1. félév',
             items: [
             ]
@@ -34,6 +44,15 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                     command: () => router.push('/rdsz')
                 }
             ]
+        },{
+            label: '3. félév',
+            items: [
+                {
+                    label: 'MEMR',
+                    icon: 'pi pi-calculator',
+                    command: () => router.push('/memr')
+                }
+            ]
         }, {
             label: 'Kötelező nem szakmai',
             items: [
@@ -44,16 +63,7 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                 }
             ]
         },
-        {
-            label: 'Átlag',
-            items: [
-                {
-                    label: 'Átlag számítás',
-                    icon: 'pi pi-chart-bar',
-                    command: () => router.push('/atlag')
-                }
-            ]
-        },
+        
     ];
 
     return(

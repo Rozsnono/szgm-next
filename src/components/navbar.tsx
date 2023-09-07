@@ -15,9 +15,9 @@ export default function Navbar({
 
     return (
         <main className="relative">
-            <nav className="fixed top-0 w-screen z-99 bg-blue-500 p-2">
+            <nav className="fixed top-0 w-screen z-99 bg-blue-500 p-2" style={{zIndex: "1000"}}>
                 <Button label="Menu" icon="pi pi-align-left" onClick={(event: any) => menuLeft.current?.toggle(event)} />
-                <Menus menuLeft={menuLeft} ></Menus>
+                <Menus menuLeft={menuLeft}></Menus>
 
             </nav>
             {children}
