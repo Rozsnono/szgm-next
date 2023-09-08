@@ -52,8 +52,17 @@ export default function Home() {
     const [number, setNumber] = useState(0);
 
     function Next(item: any) {
+        
         setNumber(number + 1);
-        sessionStorage.setItem("number", (number + 1).toString())
+        sessionStorage.setItem("number", (number + 1).toString());
+        let result = sessionStorage.getItem("szgh-result") ? JSON.parse(sessionStorage.getItem("szgh-result") || "") : [];
+        result.push({ question: szgh.data[queue[number]].question, answer: item, options: ["Igaz", "Hamis"] });
+        sessionStorage.setItem("szgh-result", JSON.stringify(result));
+        if(number + 1 > 23){
+            sessionStorage.removeItem("number");
+            sessionStorage.removeItem("queue");
+            window.location.href = "/results/SZGH";
+        }
     }
 
 

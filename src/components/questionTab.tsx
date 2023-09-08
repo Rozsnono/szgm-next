@@ -5,10 +5,10 @@ import { RadioButton } from "primereact/radiobutton";
 import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
 
-export default function Tab({ question, answers, number, type, img, icon, next }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, next: (e: any) => void }) {
+export default function Tab({ question, answers, number, type, img, icon, result, next }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, next: (e: any) => void }) {
     const colors: Array<any> = ['success', 'info', 'warning', 'danger'];
 
-    const [choosed, setChoosed] = useState<any>([]);
+    const [choosed, setChoosed] = useState<any>(result ? result : []);
 
     function toBase64(arr: any) {
         return arr.replace("PIC:", "data:image/png;base64,");
@@ -26,8 +26,8 @@ export default function Tab({ question, answers, number, type, img, icon, next }
                     <>
                         {
                             r.includes("*") ?
-                            <InputText className={"w-full "} id="search" value={r} readOnly />:
-                            <p>{r}</p>
+                                <InputText className={"w-full "} id="search" value={r} readOnly /> :
+                                <p>{r}</p>
                         }
                     </>
                 ))}
@@ -37,7 +37,7 @@ export default function Tab({ question, answers, number, type, img, icon, next }
 
     return (
         <main>
-            <div className="flex items-center bg-gray-100 min-h-screen p-4 lg:justify-center">
+            <div className={"flex items-center p-4 lg:justify-center" + (!result?" min-h-screen":"")}>
                 <div
                     className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
                 >
@@ -70,7 +70,7 @@ export default function Tab({ question, answers, number, type, img, icon, next }
                                     type === "checkbox" ?
                                         answers.map((a: any, i: number) => (
                                             <div key={i} className="flex align-items-center">
-                                                <Checkbox inputId={a} value={a} onChange={(e) => setChoosed([...choosed, e.value])} checked={choosed.includes(a)} />
+                                                <Checkbox disabled={result} inputId={a} value={a} onChange={(e) => setChoosed([...choosed, e.value])} checked={choosed.includes(a)} />
                                                 <label htmlFor={a} className="ml-2">{a}</label>
                                             </div>
                                         ))
@@ -78,7 +78,7 @@ export default function Tab({ question, answers, number, type, img, icon, next }
                                         type === "radio" ?
                                             answers.map((a: any, i: number) => (
                                                 <div key={i} className="flex align-items-center">
-                                                    <RadioButton inputId={a} name="category" value={a} onChange={(e) => setChoosed(e.value)} checked={choosed === a} />
+                                                    <RadioButton disabled={result} inputId={a} name="category" value={a} onChange={(e) => setChoosed(e.value)} checked={choosed === a} />
                                                     <label htmlFor={a} className="ml-2">{a}</label>
                                                 </div>
                                             ))
@@ -93,8 +93,11 @@ export default function Tab({ question, answers, number, type, img, icon, next }
                                 }
                             </div>
                             <div className="flex justify-between">
-
-                                <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" />
+                                {
+                                    !result ?
+                                        <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" />
+                                        : <></>
+                                }
                             </div>
 
 
