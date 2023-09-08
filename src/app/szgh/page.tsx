@@ -60,7 +60,7 @@ export default function Home() {
     return (
         <main>
             {
-                !szgh.isLoading ?
+                !szgh.isLoading && queue.length > 0 ?
                     <QuestionTab question={szgh.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} type="radio"></QuestionTab>
                     : <></>
             }

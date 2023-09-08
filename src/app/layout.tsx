@@ -16,6 +16,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <title>Széchenyi István Egyetem Vizsga és Zárthelyi gyakorló oldal</title>
+
       <body className={inter.className}>
         <QueryClientProvider client={queryClient}>
           <Navbar>

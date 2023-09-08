@@ -4,6 +4,11 @@ import { useRouter } from 'next/navigation';
 
 export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
     const router = useRouter();
+
+    function navigateTo(to: string){
+        router.push(to);
+        sessionStorage.clear();
+    }
     
     const items = [
         {
@@ -12,13 +17,16 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                 {
                     label: 'Átlag számítás',
                     icon: 'pi pi-chart-bar',
-                    command: () => router.push('/atlag')
+                    command: () => navigateTo('/atlag')
                 }
             ]
         },
         {
             label: '1. félév',
             items: [
+                {
+                    template: () => <p className='p-2 ps-4 line-through'><i className='pi pi-desktop'></i> SZGM</p>,
+                },
             ]
         }, {
             label: '2. félév',
@@ -26,32 +34,38 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                 {
                     label: 'SZGH',
                     icon: 'pi pi-sitemap',
-                    command: () => router.push('/szgh')
+                    command: () => navigateTo('/szgh')
                 },
                 {
                     label: 'SZGH-ZH',
                     icon: 'pi pi-server',
-                    command: () => router.push('/szgh-zh')
+                    command: () => navigateTo('/szgh-zh')
                 },
                 {
                     label: 'PMSZT',
                     icon: 'pi pi-database',
-                    command: () => router.push('/pmszt')
+                    command: () => navigateTo('/pmszt')
                 },
                 {
-                    label: 'RDSZ',
-                    icon: 'pi pi-cog',
-                    command: () => router.push('/rdsz')
-                }
+                    template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> RDSZ</p>,
+                },
+                // {
+                //     label: 'RDSZ !',
+                //     icon: 'pi pi-cog',
+                //     command: () => navigateTo('/rdsz')
+                // }
             ]
         },{
             label: '3. félév',
             items: [
                 {
-                    label: 'MEMR',
-                    icon: 'pi pi-calculator',
-                    command: () => router.push('/memr')
-                }
+                    template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> MEMR</p>,
+                },
+                // {
+                //     label: 'MEMR',
+                //     icon: 'pi pi-calculator',
+                //     command: () => navigateTo('/memr')
+                // }
             ]
         }, {
             label: 'Kötelező nem szakmai',
@@ -59,7 +73,7 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                 {
                     label: 'FIZIKA TÖRI',
                     icon: 'pi pi-globe',
-                    command: () => router.push('/fizika')
+                    command: () => navigateTo('/fizika')
                 }
             ]
         },
