@@ -15,8 +15,8 @@ export default function Navbar({
 
     return (
         <main className="relative">
-            <nav className="fixed top-0 w-screen z-99 bg-blue-500 p-2" style={{zIndex: "1000"}}>
-                <Button label="Menu" icon="pi pi-align-left" onClick={(event: any) => menuLeft.current?.toggle(event)} />
+            <nav className="fixed top-0 w-screen z-99 bg-blue-800 p-2" style={{zIndex: "1000"}}>
+                <button onClick={(event: any) => menuLeft.current?.toggle(event)}  className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
                 <Menus menuLeft={menuLeft}></Menus>
 
             </nav>
