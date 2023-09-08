@@ -77,7 +77,7 @@ export default function Home() {
       <div className="flex flex-cols-2">
         <Image src={SZE} height={100} width={600} alt='' ></Image>
         <div className="items-center">
-          <Button label="Menu" icon="pi pi-align-left" className="w-full h-full" onClick={(event: any) => menuLeft.current?.toggle(event)} />
+          <button onClick={(event: any) => menuLeft.current?.toggle(event)} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
         </div>
       </div>
     </main>

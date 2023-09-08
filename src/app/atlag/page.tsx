@@ -31,7 +31,7 @@ export default function Home() {
 
     const search = (event: AutoCompleteCompleteEvent) => {
         if (event.query) {
-            const filtered = subjects.data.filter((item: any) => {return item.subject.toLowerCase().startsWith(event.query.toLocaleLowerCase())});
+            const filtered = subjects.data.filter((item: any) => { return item.subject.toLowerCase().startsWith(event.query.toLocaleLowerCase()) });
             setItems(filtered.map((item: { subject: any; }) => item.subject));
         } else {
             setItems(subjects.data.slice(10).map((item: { subject: any; }) => item.subject));
@@ -83,7 +83,7 @@ export default function Home() {
     return (
         <main className="flex min-h-screen gap-10 items-center justify-center p-24">
             <div className="flex flex-col gap-5">
-                <div className="flex flex-cols-3 border-2 border-green-400 rounded-lg p-6 gap-4">
+                <div className="flex flex-cols-3 border-2 border-blue-700 rounded-lg p-6 gap-4">
                     <span className="p-float-label">
                         <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} />
                         <label htmlFor="number-input">Tárgy</label>
@@ -92,8 +92,7 @@ export default function Home() {
                         <InputNumber id="number-input" min={1} max={5} value={number} onValueChange={(e) => setNumber(e.value ? e.value : null)} />
                         <label htmlFor="number-input">Édemjegy</label>
                     </span>
-
-                    <Button icon="pi pi-plus" rounded severity="success" label="Új tárgy" onClick={addSubject} />
+                    <button onClick={addSubject} className='px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-plus'></i> Új tárgy</button>
                 </div>
 
                 <div className="grid p-10 gap-10">
@@ -123,7 +122,7 @@ export default function Home() {
 
             </div>
 
-            <div className="flex flex-col border-2 border-green-400 rounded-lg p-8 gap-8">
+            <div className="flex flex-col border-2 border-blue-700 rounded-lg p-8 gap-8">
                 <span className="p-float-label">
                     <InputNumber id="number-input" value={avg && avg > 0 ? avg : null} readOnly />
                     <label htmlFor="number-input">Átlag</label>
