@@ -47,13 +47,10 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                     command: () => navigateTo('/pmszt')
                 },
                 {
-                    template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> RDSZ</p>,
-                },
-                // {
-                //     label: 'RDSZ !',
-                //     icon: 'pi pi-cog',
-                //     command: () => navigateTo('/rdsz')
-                // }
+                    label: 'RDSZ',
+                    icon: 'pi pi-cog',
+                    command: () => navigateTo('/rdsz')
+                }
             ]
         },{
             label: '3. félév',

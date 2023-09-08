@@ -81,9 +81,9 @@ export default function Home() {
     }
 
     return (
-        <main className="flex min-h-screen gap-10 items-center justify-center p-24">
-            <div className="flex flex-col gap-5">
-                <div className="flex flex-cols-3 border-2 border-blue-700 rounded-lg p-6 gap-4">
+        <main className="lg:flex grid-col-reverse min-h-screen gap-10 items-center justify-center p-24">
+            <div className="grid gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full border-2 border-blue-700 rounded-lg p-6 gap-4">
                     <span className="p-float-label">
                         <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} />
                         <label htmlFor="number-input">Tárgy</label>
@@ -100,7 +100,7 @@ export default function Home() {
                     {
                         subjectsData.current.map((item: { subject: any; mark: string; }, index: number | null | undefined) => {
                             return (
-                                <div key={index} className="flex flex-cols-3 gap-4 w-full">
+                                <div key={index} className="grid grid-cols-1 lg:grid-cols-3 min-w-full gap-7 ">
                                     <span className="p-float-label">
                                         <AutoComplete value={item.subject} readOnly suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} />
                                         <label htmlFor="number-input">Tárgy</label>

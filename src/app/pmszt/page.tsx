@@ -67,7 +67,7 @@ export default function Home() {
         <main>
             {
                 !pmszt.isLoading && queue.length > 0 ?
-                    <QuestionTab img={pmszt.data[queue[number]].pic} question={pmszt.data[queue[number]].question} number={number + 1} answers={pmszt.data[queue[number]].options} next={(e) => { Next(e); }} type={pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
+                    <QuestionTab icon="database" img={pmszt.data[queue[number]].pic} question={pmszt.data[queue[number]].question} number={number + 1} answers={pmszt.data[queue[number]].options} next={(e) => { Next(e); }} type={pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
                     : <></>
             }
         </main>
