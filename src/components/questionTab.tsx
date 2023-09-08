@@ -59,7 +59,7 @@ export default function Tab({ question, answers, number, type, img, next }: { qu
                             </div>
                             <div className="flex justify-between">
 
-                                <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Check" icon="pi pi-send" severity='help' />
+                                <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" />
                             </div>
 
 
