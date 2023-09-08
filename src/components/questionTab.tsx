@@ -33,7 +33,7 @@ export default function Tab({ question, answers, number, type, img, next }: { qu
                                 <div className="text-lg text-end "> <span className="text-gray-800 font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">24</span> </div>
                             </div>
                             {
-                                img === null || img === "" ?
+                                img === null || img === "" || img === undefined ?
                                     <></> :
                                     <div className="flex flex-col space-y-1 text-center relative items-center jusitfy-center">
                                         <Image src={img?toBase64(img):""} width={300} height={100} alt=""></Image>
