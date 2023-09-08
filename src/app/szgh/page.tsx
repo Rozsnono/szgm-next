@@ -9,17 +9,15 @@ export default function Home() {
     function getData() {
         try {
             const data = SZGH.data;
-            if (sessionStorage.getItem("queue") != "undefined") {
+            if (sessionStorage.getItem("queue") != "undefined" && sessionStorage.getItem("queue") != null) {
                 const qu: string | any = sessionStorage.getItem("queue");
                 setQueue(JSON.parse(qu) as any)
             } else {
                 setQueue(queuing(data));
             }
-            if (sessionStorage.getItem("number") != null) {
+            if (!Number.isNaN(parseFloat(sessionStorage.getItem("number") as string))) {
                 const n: number | any = sessionStorage.getItem("number");
                 setNumber(parseFloat(n))
-            } else {
-                setNumber(0);
             }
             return data;
         } catch (error: Error | any) {      //muszáj így megadni, mert különben hibát dob
