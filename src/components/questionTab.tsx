@@ -1,0 +1,54 @@
+import { Button } from "primereact/button";
+import { Slider } from "primereact/slider";
+import { useEffect, useState } from "react";
+import { RadioButton } from "primereact/radiobutton";
+
+export default function Tab({ question, answers, number, type, next }: { question: string, answers: any, number: number, type: string, next: (e: any) => void }) {
+    const colors: Array<any> = ['success', 'info', 'warning', 'danger'];
+
+    const [choosed, setChoosed] = useState<any>([]);
+
+    return (
+        <main>
+            <div className="flex items-center bg-gray-100 min-h-screen p-4 lg:justify-center">
+                <div
+                    className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
+                >
+                    <div
+                        className={"p-4 py-6 text-white w-full flex-shrink-0 flex flex-col items-center justify-evenly transition-all duration-200 bg-blue-800"}
+                    >
+                        <div className="my-3 text-2xl font-bold tracking-wider text-center">
+                            <p>{question}</p>
+                        </div>
+                    </div>
+                    <div className="p-5 bg-white md:flex-1 ">
+
+                        <div className="flex flex-col space-y-5">
+                            <div className="flex flex-col space-y-1 text-center relative">
+                                <div className="text-lg text-end "> <span className="text-gray-800 font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">24</span> </div>
+                            </div>
+                            <div className='grid gap-5 px-6 pb-6'>
+                                {
+                                    answers.map((a: any, i: number) => (
+                                        <div key={i} className="flex align-items-center">
+                                            <RadioButton inputId={a} name="category" value={a} onChange={(e) => setChoosed(e.value)} checked={choosed === a} />
+                                            <label htmlFor={a} className="ml-2">{a}</label>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                            <div className="flex justify-between">
+
+                                <Button onClick={() => {next(choosed); setChoosed(null)}} rounded label="Check" icon="pi pi-send" severity='help' />
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+    )
+}

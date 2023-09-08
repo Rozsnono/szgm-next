@@ -1,5 +1,71 @@
+"use client";
+import QuestionTab from "@/components/questionTab";
+import SZGH from "../../txts/szgh.json";
+import { useQuery } from "react-query";
+import { useState } from "react";
+
 export default function Home() {
-    return(
-        <main></main>
+
+    function getData() {
+        try {
+            const data = SZGH.data;
+            if (sessionStorage.getItem("queue") != "undefined") {
+                const qu: string | any = sessionStorage.getItem("queue");
+                setQueue(JSON.parse(qu) as any)
+            } else {
+                setQueue(queuing(data));
+            }
+            if (sessionStorage.getItem("number") != null) {
+                const n: number | any = sessionStorage.getItem("number");
+                setNumber(parseFloat(n))
+            } else {
+                setNumber(0);
+            }
+            return data;
+        } catch (error: Error | any) {      //muszáj így megadni, mert különben hibát dob
+            console.error(error);
+            return error;
+        }
+
+    }
+
+    function queuing(data: any) {
+        let array: any = [];
+        for (let index = 0; index < 24; index++) {
+            let random = getRandomInt(data.length)
+            if (!array.includes(random)) {
+                array.push(random);
+            } else {
+                index--;
+            }
+        }
+        sessionStorage.setItem("queue", JSON.stringify(array))
+        return array;
+    }
+
+    function getRandomInt(max: any) {
+        return Math.floor(Math.random() * max);
+    }
+
+    const [queue, setQueue] = useState([]);
+
+    const szgh: any = useQuery('subjects', getData);
+
+    const [number, setNumber] = useState(0);
+
+    function Next(item: any) {
+        setNumber(number + 1);
+        sessionStorage.setItem("number", (number + 1).toString())
+    }
+
+
+    return (
+        <main>
+            {
+                !szgh.isLoading ?
+                    <QuestionTab question={szgh.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} type="radio"></QuestionTab>
+                    : <></>
+            }
+        </main>
     );
 }
