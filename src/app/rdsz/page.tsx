@@ -55,10 +55,14 @@ export default function Home() {
     function Next(item: any) {
         setNumber(number + 1);
         sessionStorage.setItem("number-rdsz", (number + 1).toString());
+        let result = sessionStorage.getItem("rdsz-result") ? JSON.parse(sessionStorage.getItem("rdsz-result") || "") : [];
+        result.push({ question: rdsz.data[queue[number]].question, answer: item, options: rdsz.data[queue[number]].options, correct: rdsz.data[queue[number]].answers, type: rdsz.data[queue[number]].type });
+        sessionStorage.setItem("rdsz-result", JSON.stringify(result));
         if(number + 1 > 23){
             sessionStorage.removeItem("number-rdsz");
             sessionStorage.removeItem("queue-rdsz");
-            setNumber(0);setQueue(queuing(rdsz.data));
+            setNumber(0);
+            window.location.href = "/results/rdsz";
         }
     }
 

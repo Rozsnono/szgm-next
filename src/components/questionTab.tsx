@@ -8,7 +8,7 @@ import { Messages } from 'primereact/messages';
 
 export default function Tab({ question, answers, number, type, img, icon, result, correct, next }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void }) {
 
-    const [choosed, setChoosed] = useState<any>(result ? result : []);
+    const [choosed, setChoosed] = useState<any>(result ? (type === "text" ? answers : result ) : []);
     const isCorrect = useRef<boolean>(true);
 
     function toBase64(arr: any) {
@@ -40,13 +40,13 @@ export default function Tab({ question, answers, number, type, img, icon, result
             <div className="flex flex-col space-y-1 text-center relative">
                 {rows.map((r: string, i: number) => (
 
-                    <>
+                    <div key={i}>
                         {
                             r.includes("*") ?
                                 <InputText className={"w-full "} id="search" value={r} readOnly /> :
                                 <p>{r}</p>
                         }
-                    </>
+                    </div>
                 ))}
             </div>
         )
@@ -142,7 +142,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                         <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" />
                                         :
                                         isCorrect.current ? <></> :
-                                            <div className="w-full border-l-4 border-orange-500 bg-orange-100 text-orange-500 p-3 rounded-lg"> <i className="pi pi-exclamation-triangle"></i> <span className="font-bold ">A helyes válasz:</span> {correct.join(", ")}</div>
+                                            <div className="w-full border-l-4 border-orange-500 bg-orange-100 text-orange-500 p-3 rounded-lg"> <i className="pi pi-exclamation-triangle"></i> <span className="font-bold ">A helyes válasz:</span> {correct.join("; ")}</div>
                                 }
                             </div>
 

@@ -54,11 +54,14 @@ export default function Home() {
     function Next(item: any) {
         setNumber(number + 1);
         sessionStorage.setItem("number", (number + 1).toString());
+        let result = sessionStorage.getItem("pmszt-result") ? JSON.parse(sessionStorage.getItem("pmszt-result") || "") : [];
+        result.push({ question: pmszt.data[queue[number]].question, answer: item, options: pmszt.data[queue[number]].options, correct: pmszt.data[queue[number]].answers, type: pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio" });
+        sessionStorage.setItem("pmszt-result", JSON.stringify(result));
         if(number + 1 > 23){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            // window.location.href = "/pmszt/result";
-            setNumber(0);setQueue(queuing(pmszt.data));
+            window.location.href = "/results/pmszt";
+            setNumber(0);
         }
     }
 
