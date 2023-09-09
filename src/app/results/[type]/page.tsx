@@ -2,13 +2,15 @@
 import QuestionTab from '@/components/questionTab';
 import { useParams, useRouter } from 'next/navigation';
 import { Dropdown } from 'primereact/dropdown';
-import { JSXElementConstructor, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useState } from 'react';
+import { JSXElementConstructor, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useRef, useState } from 'react';
 import { useQuery } from 'react-query';
 
 export default function Home() {
 
     const router = useRouter();
     const param = useParams();
+
+    const point = useRef(0);
 
     const exams = [
         {
@@ -29,10 +31,23 @@ export default function Home() {
     function getResults() {
         if (sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result")) {
             const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") || "");
+            getPoint(data);
             return data;
         } else {
             return []
         }
+    }
+
+    function getPoint(data: any){
+        let checkI = 0;
+        for (const i of data) {
+            if(i.correct.length === i.answer.length){
+                const check = i.answer.filter((item: any) => !i.correct.includes(item));
+                checkI += (check.length > 0 ? 0 : 1);
+            }
+        }
+        point.current = checkI;
+        return 
     }
 
     const results: any = useQuery(param.type + "-result", getResults);
@@ -54,12 +69,15 @@ export default function Home() {
     };
 
     return (
-        <main className="flex flex-col min-h-screen gap-4 p-12 pt-24 text-lg">
-            <div className="flex gap-3 w-1/3">
+        <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg">
+            <div className="flex gap-3 lg:w-1/3 w-full">
                 <span className="p-float-label w-full">
                     <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(e.value); router.push(e.value.title.toLocaleLowerCase()) }} options={exams}
-                        className="w-full md:w-14rem" itemTemplate={Template} optionLabel='title' />
+                        className="w-full " itemTemplate={Template} optionLabel='title' />
                     <label htmlFor="search">Vizsga</label>
+                </span>
+                <span className="p-float-label w-full">
+                    <label htmlFor="search">{point.current} / 24</label>
                 </span>
             </div>
             <div className='text-center grid'>

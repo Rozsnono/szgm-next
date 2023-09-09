@@ -61,7 +61,7 @@ export default function Home() {
         if(number + 1 > 23){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            window.location.href = "/results/rdsz";
+            window.location.href = "/results/szgh";
             setNumber(0);
         }
     }
