@@ -19,7 +19,7 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
         {
             label: 'Eredmények',
             icon: 'pi pi-percentage',
-            command: () => navigateTo('/results/szgh')
+            command: () => router.push('/results/szgh')
         },
         {
             separator: true
