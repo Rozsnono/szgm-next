@@ -106,7 +106,7 @@ export default function Home() {
                                         <label htmlFor="number-input">Tárgy</label>
                                     </span>
                                     <span className="p-float-label">
-                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} />
+                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} readOnly/>
                                         <label htmlFor="number-input">Édemjegy</label>
                                     </span>
 
