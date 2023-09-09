@@ -70,7 +70,7 @@ export default function Home() {
 
                             results.data.map((item: any, index: number) => {
                                 return (
-                                    <QuestionTab key={index} icon="sitemap" question={item.question} number={index+ 1} answers={item.options} result={item.answer} next={(e) => { }} type="radio"></QuestionTab>
+                                    <QuestionTab key={index} icon="sitemap" question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} type="radio"></QuestionTab>
 
                                 )
                             })

@@ -2,24 +2,27 @@
 import { Menu } from 'primereact/menu';
 import { useRouter } from 'next/navigation';
 
-export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
+export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
     const router = useRouter();
 
-    function navigateTo(to: string){
+    function navigateTo(to: string) {
         router.push(to);
         sessionStorage.clear();
     }
-    
+
     const items = [
         {
-            label: 'Átlag',
-            items: [
-                {
-                    label: 'Átlag számítás',
-                    icon: 'pi pi-chart-bar',
-                    command: () => navigateTo('/atlag')
-                }
-            ]
+            label: 'Átlag számítás',
+            icon: 'pi pi-chart-bar',
+            command: () => navigateTo('/atlag')
+        },
+        {
+            label: 'Eredmények',
+            icon: 'pi pi-percentage',
+            command: () => navigateTo('/results/szgh')
+        },
+        {
+            separator: true
         },
         {
             label: '1. félév',
@@ -52,7 +55,7 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                     command: () => navigateTo('/rdsz')
                 }
             ]
-        },{
+        }, {
             label: '3. félév',
             items: [
                 {
@@ -73,11 +76,12 @@ export default function MenuS({menuLeft}: {menuLeft: Menu | null | any}){
                     command: () => navigateTo('/fizika')
                 }
             ]
-        },
+        }, 
         
+
     ];
 
-    return(
+    return (
         <Menu model={items} popup ref={menuLeft} popupAlignment="left" />
     );
 }

@@ -1,18 +1,35 @@
 import { Button } from "primereact/button";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RadioButton } from "primereact/radiobutton";
 import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
+import { Messages } from 'primereact/messages';
 
-export default function Tab({ question, answers, number, type, img, icon, result, next }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, next: (e: any) => void }) {
-    const colors: Array<any> = ['success', 'info', 'warning', 'danger'];
+export default function Tab({ question, answers, number, type, img, icon, result, correct, next }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void }) {
 
     const [choosed, setChoosed] = useState<any>(result ? result : []);
+    const isCorrect = useRef<boolean>(true);
 
     function toBase64(arr: any) {
         return arr.replace("PIC:", "data:image/png;base64,");
     }
+
+    function checkCorrect(a: any) {
+        if (correct.includes(a) && result.includes(a)) {
+            return <i className="pi pi-check text-green-600"></i>
+        } else if (correct.includes(a) && !result.includes(a)) {
+            isCorrect.current = (false)
+            next(false);
+            return <i className="pi pi-info-circle text-blue-400"></i>
+        } else if (!correct.includes(a) && result.includes(a)) {
+            isCorrect.current = (false)
+            next(false);
+            return <i className="pi pi-times text-red-700"></i>
+        }
+
+    }
+
 
     function TextTemplate(row: string) {
 
@@ -35,9 +52,22 @@ export default function Tab({ question, answers, number, type, img, icon, result
         )
     }
 
+    function Checking(e: any) {
+        if (type === "radio") {
+            setChoosed([e.value])
+        } else {
+
+            if (choosed.includes(e.value)) {
+                setChoosed(choosed.filter((item: any) => item !== e.value))
+            } else {
+                setChoosed([...choosed, e.value])
+            }
+        }
+    }
+
     return (
         <main>
-            <div className={"flex items-center p-4 lg:justify-center" + (!result?" min-h-screen":"")}>
+            <div className={"flex items-center p-4 lg:justify-center" + (!result ? " min-h-screen" : "")}>
                 <div
                     className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
                 >
@@ -70,16 +100,30 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                     type === "checkbox" ?
                                         answers.map((a: any, i: number) => (
                                             <div key={i} className="flex align-items-center">
-                                                <Checkbox disabled={result} inputId={a} value={a} onChange={(e) => setChoosed([...choosed, e.value])} checked={choosed.includes(a)} />
+                                                <Checkbox disabled={result} inputId={a} value={a} onChange={(e) => Checking(e)} checked={choosed.includes(a)} />
                                                 <label htmlFor={a} className="ml-2">{a}</label>
+                                                {
+                                                    correct ?
+                                                        checkCorrect(a)
+                                                        : <></>
+                                                }
                                             </div>
                                         ))
                                         :
                                         type === "radio" ?
                                             answers.map((a: any, i: number) => (
                                                 <div key={i} className="flex align-items-center">
-                                                    <RadioButton disabled={result} inputId={a} name="category" value={a} onChange={(e) => setChoosed(e.value)} checked={choosed === a} />
-                                                    <label htmlFor={a} className="ml-2">{a}</label>
+                                                    <RadioButton disabled={result} inputId={a} name="category" value={a} onChange={(e) => Checking(e)} checked={choosed.includes(a)} />
+                                                    <label htmlFor={a} className="ml-2">{a}
+                                                        <span className="font-bold ms-2">
+
+                                                            {
+                                                                correct ?
+                                                                    checkCorrect(a)
+                                                                    : <></>
+                                                            }
+                                                        </span>
+                                                    </label>
                                                 </div>
                                             ))
                                             :
@@ -96,7 +140,9 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                 {
                                     !result ?
                                         <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" />
-                                        : <></>
+                                        :
+                                        isCorrect.current ? <></> :
+                                            <div className="w-full border-l-4 border-orange-500 bg-orange-100 text-orange-500 p-3 rounded-lg"> <i className="pi pi-exclamation-triangle"></i> <span className="font-bold ">A helyes válasz:</span> {correct.join(", ")}</div>
                                 }
                             </div>
 
