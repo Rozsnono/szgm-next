@@ -83,7 +83,7 @@ export default function Home() {
     return (
         <main className="lg:flex grid-col-reverse min-h-screen gap-10 items-center justify-center lg:p-24 p-6 pt-24">
             <div className="grid gap-5">
-                <div className="grid grid-cols-2 lg:grid-cols-3 min-w-full border-2 border-blue-700 rounded-lg p-6 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full border-2 border-blue-700 rounded-lg p-6 gap-4">
                     <span className="p-float-label">
                         <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} />
                         <label htmlFor="number-input">Tárgy</label>

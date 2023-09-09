@@ -51,8 +51,8 @@ export default function Home() {
 
 
     return (
-        <main className="flex flex-col min-h-screen gap-4 p-12 pt-24 text-lg">
-            <div className="flex gap-3 w-1/3">
+        <main className="flex flex-col min-h-screen gap-4 lg:p-12 lg:pt-24 p-6 pt-24 text-lg">
+            <div className="flex gap-3 lg:w-1/3 w-full">
                 <span className="p-float-label w-full">
                     <InputText className={"w-full " + (tmpFizika.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); setTMPFizika(search(e.target.value)) }} />
                     <label htmlFor="search">Keresés</label>
