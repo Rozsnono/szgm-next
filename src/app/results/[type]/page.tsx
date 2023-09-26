@@ -25,6 +25,10 @@ export default function Home() {
             title: "RDSZ",
             icon: "pi pi-cog",
         },
+        {
+            title: "MEMR",
+            icon: "pi pi-calculator",
+        },
     ];
     const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
 

@@ -58,14 +58,14 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
         }, {
             label: '3. félév',
             items: [
-                {
-                    template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> MEMR</p>,
-                },
                 // {
-                //     label: 'MEMR',
-                //     icon: 'pi pi-calculator',
-                //     command: () => navigateTo('/memr')
-                // }
+                //     template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> MEMR</p>,
+                // },
+                {
+                    label: 'MEMR',
+                    icon: 'pi pi-calculator',
+                    command: () => navigateTo('/memr')
+                }
             ]
         }, {
             label: 'Kötelező nem szakmai',

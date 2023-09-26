@@ -1,0 +1,298 @@
+A p-n dióda záróirányban előfeszítve kondenzátorként viselkedik. IGAZ
+Az élek a második derivált maximumai. HAMIS
+A Raspberry Pi már a 4k-s megjelenítést is támogatja. IGAZ
+A MOS tranzisztor kondenzátorként is használható. IGAZ
+A mikrovezérlők általánosabb célúak, mint a DSP-k. IGAZ
+A PIC mikrovezérlőknél a RAM és a regiszterkészlet különválik egymástól. HAMIS
+A gradiens operátor megadja egy több dimenziós függvény első deriváltjainak összegét. HAMIS
+A Sobel-szűrőt élszűrésre használjuk. IGAZ
+Az FPGA-nál a programozás hardver szinten történik. IGAZ
+Az élek az első derivált abszolút értékének maximumai. IGAZ
+Laplace-operátor megadja egy több dimenziós függvény első deriváltjainak összegét. HAMIS
+A Raspberry Pi mikroszámítógépeknek nincs BIOS-a. IGAZ
+A jelfeldolgozó processzorok (DSP) wattonkénti teljesítménye nagyobb a mikroprocesszorokénál. IGAZ
+Az FPGA-k csak egy adott specifikus feladatot képesek ellátni. HAMIS
+A Python-ban van konstruktor és destruktor függvény. HAMIS
+A beágyazott rendszerek két komponensből, hardverből és szoftverből állnak. HAMIS
+Az ASIC alapú beágyazott rendszerek gyártási egységára nagyobb mint az FPGA alapúaké. HAMIS
+Python-ban az utasításlezárójel a pontosvessző. HAMIS
+Az intelligens érzékelők a mikrovezérlőt is magukba integrálják. IGAZ
+A Python-ban a komplex számokhoz complex típus tartozik. IGAZ
+A pixel-felhalmozás szegmentálási eljárás iteratív folyamat. IGAZ
+A PIC mikrovezérlőknél az utasításvégrehajtás frekvenciája negyede az alap órajel frekvenciájának. IGAZ
+A Flash memória az EEPROM egy változata. IGAZ
+A PROM memória csak egyszer programozható. IGAZ
+A bootloader a mikrovezérlő programmemóriájában helyezkedik el. IGAZ
+A Python statikus típusadású nyelv. HAMIS
+Nagy megbízhatóságú operációs rendszereknél a gyors válaszidő a legfontosabb szempont. HAMIS
+Gauss-szűrőnél a σ (simítás mértékének) növelésével a maszk mérete csökken. HAMIS
+A Harvard-architektúra lehetőséget ad az utasítások pipeline feldolgozására. IGAZ
+Az átlagszűrő nemlineáris simítószűrő. HAMIS
+A beágyazott rendszerek két komponensből, hardverből és szoftverből állnak. HAMIS
+A Windows és a Linux nem valós idejű operációs rendszerek, de mindkettőhöz létezik 
+valós idejű működést lehetővé tevő kiegészítés. IGAZ
+A C++ statikus típusadású nyelv. IGAZ
+Az intelligens érzékelő képes jelezni az elöregedését. IGAZ
+A Python interpreteres nyelv. IGAZ
+A bipoláris monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak. IGAZ
+Beágyazott rendszereknél a hardver megtervezése után következik a szoftver tervezése. HAMIS
+A watchdog egy időzítő áramkör, amely túlcsordulás esetén újraindítja a mikrovezérlőt. IGAZ
+A szoftver aktív redundanciája ugyanazon szoftver megkettőzését jelenti. HAMIS
+Az Arduino mikrovezérlőkártya tápellátása USB-n keresztül is biztosítható. IGAZ
+A beágyazott rendszerek két komponensből, hardverből és szoftverből állnak HAMIS
+A Symbian valós idejű operációs rendszer IGAZ
+A dobozszűrő súlyai a középponttól való távolságtól függetlenek. IGAZ
+A watchdog egy időzítő áramkör, amely túlcsordulás esetén újraindítja a mikrovezérlőt IGAZ
+A gauss-szűrőnél a súlyokat az egyenletes eloszlás adja. HAMIS
+A Raspberry Pi 4 már a 4k-s megjelenítést is támogatja. IGAZ
+A Python támogatja az objektumorientált programozást. IGAZ
+A Python-ban a lebegőpontos számokhoz double típus tartozik. HAMIS
+Az FPGA-k csak egy adott specifikus feladatot képesek ellátni HAMIS
+A mediánszűrő lineáris szűrő. HAMIS
+Az intelligens érzékelő képes az önkalibrációra. IGAZ
+A só-és-bors zaj tipikusan a csatornazaj. HAMIS
+A mikrovezérlők általánosabb célúak mint a DSP-k. IGAZ
+A Raspberry Pi az SPI-kommunikációt támogatja, de az I2C-t nem. HAMIS
+A Python-ban van szemétgyűjtő. IGAZ
+A kvantálási hiba zajként jelentkezik IGAZ
+A valós idejű operációs rendszerek garantálják az alkalmazások valós idejű működését. HAMIS
+A Symbian valós idejű operációs rendszer. IGAZ
+A C++-ban nincs szükség szemétgyűjtőre. IGAZ
+A Gauss-szűrő azonos súlyokkal rendelkező átlagszűrő. HAMIS
+A Python a többszörös öröklődést nem támogatja. HAMIS
+A Windows és a Linux nem valós idejű operációs rendszerek, de mindkettőhöz létezik valós idejű működést lehetővé tevő kiegészítés. IGAZ
+A kvantálási hiba is zajként jelentkezik. IGAZ
+Egy tipikus élszűrő az élerősséget és az élorientációt is megadja. IGAZ
+A gradiens operátor egy vektort eredményez. IGAZ
+A Neumann-architektúra lehetőséget ad az utasítások pipeline feldolgozására. HAMIS
+AZ FPGA programozható logikai eszköz. IGAZ
+A MOS technológiával készült monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak. HAMIS
+Az ASIC olyan integrált áramkör, amely egy adott specifikus feladat ellátására lett tervezve. IGAZ
+A mikrovezérlők többnyire Neumann-architektúrájúak. HAMIS
+Izotróp élszűrőnél az eredmény függ az él orientációjától. HAMIS
+A Flash memória egy nem felejtő típusú memória. IGAZ
+A beágyazott rendszerek hardver/szoftver partícionálása egy többkritériumos NP-nehéz optimalizálási feladat. IGAZ
+Python-ban a blokkokat kapcsos zárójelekkel kell jelezni. HAMIS
+Az ASIC alapú beágyazott rendszerek energiahatékonyabbak mint az FPGA alapúak. IGAZ
+A Prewitt-szűrő zajszűrésre szolgál. HAMIS
+A p-n dióda záróirányban előfeszítve kondenzátorként viselkedik. IGAZ
+A beágyazott rendszerek hardver/szoftver partícionálása egy többkritériumos NP-nehéz optimalizálási feladat. IGAZ
+A beágyazott rendszerek két komponensből, hardverből és szoftverből állnak. HAMIS
+A bipoláris monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak. IGAZ
+A bootloader a mikrovezérlő programmemóriájában helyezkedik el. IGAZ
+A C++ statikus típusadású nyelv. IGAZ
+A C++-ban nincs szükség szemétgyűjtőre. IGAZ
+A dobozszűrő súlyai a középponttól való távolságtól függetlenek. IGAZ
+A Flash memória az EEPROM egy változata. IGAZ
+A Flash memória egy nem felejtő típusú memória. IGAZ
+A Gauss-szűrő azonos súlyokkal rendelkező átlagszűrő. HAMIS
+A gauss-szűrőnél a súlyokat az egyenletes eloszlás adja. HAMIS
+A gradiens operátor egy vektort eredményez. IGAZ
+A gradiens operátor megadja egy több dimenziós függvény első deriváltjainak összegét. HAMIS
+A Harvard-architektúra lehetőséget ad az utasítások pipeline feldolgozására. IGAZ
+A jelfeldolgozó processzorok (DSP) wattonkénti teljesítménye nagyobb a mikroprocesszorokénál. IGAZ
+A kvantálási hiba is zajként jelentkezik. IGAZ
+A kvantálási hiba zajként jelentkezik IGAZ
+A mediánszűrő lineáris szűrő. HAMIS
+A mikrovezérlők általánosabb célúak mint a DSP-k. IGAZ
+A mikrovezérlők többnyire Neumann-architektúrájúak. HAMIS
+A MOS technológiával készült monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak. HAMIS
+A MOS tranzisztor kondenzátorként is használható. IGAZ
+A Neumann-architektúra lehetőséget ad az utasítások pipeline feldolgozására. HAMIS
+A PIC mikrovezérlőknél a RAM és a regiszterkészlet különválik egymástól. HAMIS
+A PIC mikrovezérlőknél az utasításvégrehajtás frekvenciája negyede az alap órajel frekvenciájának. IGAZ
+A pixel-felhalmozás szegmentálási eljárás iteratív folyamat. IGAZ
+A Prewitt-szűrő zajszűrésre szolgál. HAMIS
+A PROM memória csak egyszer programozható. IGAZ
+A Python a többszörös öröklődést nem támogatja. HAMIS
+A Python interpreteres nyelv. IGAZ
+A Python statikus típusadású nyelv. HAMIS
+A Python támogatja az objektumorientált programozást. IGAZ
+A Python-ban a komplex számokhoz complex típus tartozik. IGAZ
+A Python-ban a lebegőpontos számokhoz double típus tartozik. HAMIS
+A Python-ban van konstruktor és destruktor függvény. HAMIS
+A Python-ban van szemétgyűjtő. IGAZ
+A Raspberry Pi az SPI-kommunikációt támogatja, de az I2C-t nem. HAMIS
+A Raspberry Pi már a 4k-s megjelenítést is támogatja. IGAZ
+A Raspberry Pi mikroszámítógépeknek nincs BIOS-a. IGAZ
+A Sobel-szűrőt élszűrésre használjuk. IGAZ
+A só-és-bors zaj tipikusan a csatornazaj. HAMIS
+A Symbian valós idejű operációs rendszer IGAZ
+A Symbian valós idejű operációs rendszer. IGAZ
+A szoftver aktív redundanciája ugyanazon szoftver megkettőzését jelenti. HAMIS
+A valós idejű operációs rendszerek garantálják az alkalmazások valós idejű működését. HAMIS
+A watchdog egy időzítő áramkör, amely túlcsordulás esetén újraindítja a mikrovezérlőt. IGAZ
+A Windows és a Linux nem valós idejű operációs rendszerek, de mindkettőhöz létezik valós idejű működést lehetővé tevő kiegészítés. IGAZ
+Az Arduino mikrovezérlőkártya tápellátása USB-n keresztül is biztosítható. IGAZ
+Az ASIC alapú beágyazott rendszerek energiahatékonyabbak mint az FPGA alapúak. IGAZ
+Az ASIC alapú beágyazott rendszerek gyártási egységára nagyobb mint az FPGA alapúaké. HAMIS
+Az ASIC olyan integrált áramkör, amely egy adott specifikus feladat ellátására lett tervezve. IGAZ
+Az átlagszűrő nemlineáris simítószűrő. HAMIS
+Az élek a második derivált maximumai. HAMIS
+Az élek az első derivált abszolút értékének maximumai. IGAZ
+AZ FPGA programozható logikai eszköz. IGAZ
+Az FPGA-k csak egy adott specifikus feladatot képesek ellátni. HAMIS
+Az FPGA-nál a programozás hardver szinten történik. IGAZ
+Az intelligens érzékelő képes az önkalibrációra. IGAZ
+Az intelligens érzékelő képes jelezni az elöregedését. IGAZ
+Az intelligens érzékelők a mikrovezérlőt is magukba integrálják. IGAZ
+Beágyazott rendszereknél a hardver megtervezése után következik a szoftver tervezése. HAMIS
+Egy tipikus élszűrő az élerősséget és az élorientációt is megadja. IGAZ
+Gauss-szűrőnél a σ (simítás mértékének) növelésével a maszk mérete csökken. HAMIS
+Izotróp élszűrőnél az eredmény függ az él orientációjától. HAMIS
+Laplace-operátor megadja egy több dimenziós függvény első deriváltjainak összegét. HAMIS
+Nagy megbízhatóságú operációs rendszereknél a gyors válaszidő a legfontosabb szempont. HAMIS
+Python-ban a blokkokat kapcsos zárójelekkel kell jelezni. HAMIS
+Python-ban az utasításlezárójel a pontosvessző. HAMIS
+A Symbian valós idejű operációs rendszer. IGAZ
+Nagy megbízhatóságú operációs rendszereknél a gyors válaszidő a legfontosabb szempont. HAMIS
+A Python-ban van konstruktor és destruktor függvény. HAMIS
+A Python-ban a komplex számokhoz complex típus tartozik. IGAZ
+A Python-ban a lebegőpontos számokhoz double típus tartozik. HAMIS
+A Python-ban van szemétgyűjtő. IGAZ
+A Python támogatja az objektumorientált programozást. IGAZ
+A Python a többszörös öröklődést nem támogatja. HAMIS
+A Python interpreteres nyelv. IGAZ
+A Python statikus típusadású nyelv. HAMIS
+Python-ban az utasításlezárójel a pontosvessző. HAMIS
+Python-ban a blokkokat kapcsos zárójelekkel kell jelezni. HAMIS
+A Gauss-szűrő azonos súlyokkal rendelkező átlagszűrő. HAMIS
+Gauss-szűrőnél a σ (simítás mértékének) növelésével a maszk mérete csökken. HAMIS
+A Gauss-szűrőnél a súlyokat az egyenletes eloszlás adja. HAMIS
+A watchdog egy időzítő áramkör, amely túlcsordulás esetén újraindítja a mikrovezérlőt. IGAZ
+Beágyazott rendszereknél a hardver megtervezése után következik a szoftver tervezése. HAMIS
+A szoftver aktív redundanciája ugyanazon szoftver megkettőzést jelenti. HAMIS
+A mikrovezérlők általánosabb célúak mint a DSP-k. IGAZ
+A mikrovezérlők többnyire Neumann-architektúrájúak. HAMIS
+A C++ statikus típusadású nyelv. IGAZ
+A C++-ban nincs szükség szemétgyűjtőre. IGAZ
+A Raspberry Pi az SPI-kommunikációt támogatja, de az I2C-t nem. HAMIS
+A Raspberry Pi mikroszámítógépeknek nincs BIOS-a. IGAZ
+A Raspberry Pi 4 már a 4k-s megjelenítést is támogatja. IGAZ
+A jelfeldolgozó processzorok (DSP) wattonkénti teljesítménye nagyobb a mikroprocesszorokénál. IGAZ
+A mediánszűrő lineáris szűrő. HAMIS (az átlag szűrő lineáris)
+A MOS technológiával készült monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak. HAMIS
+A MOS tranzisztor kondenzátorként is használható. IGAZ
+A gradiens operátor egy vektort eredményez. IGAZ
+A gradiens operátor megadja egy több dimenziós függvény első deriváltjainak összegét. HAMIS
+A Sobel-szűrőt élszűrésre használjuk. IGAZ
+AZ FPGA-nál a programozás hardver szinten történik. IGAZ
+Az FPGA-k csak egy adott specifikus feladatot képesek ellátni. HAMIS
+Az FPGA programozható logikai eszköz. IGAZ
+A Neumann-architektúra lehetőséget ad az utasítások pipeline feldolgozására. HAMIS
+Az élek az első derivált abszolút értékének maximumai. IGAZ
+Az élek a második derivált maximumai. HAMIS
+A PIC mikrovezérlőknél az utasításvégrehajtás frekvenciája negyede az alap órajel frekvenciájának. IGAZ
+A PIC mikrovezérlő a legtöbb utasítást négy órajel alatt hajtja végre. IGAZ
+A PIC mikrovezérlő a vezérlésátadásokat két órajel alatt adja át. IGAZ
+A PIC mikrovezérlőknél a RAM és a regiszterkészlet különválik egymástól. HAMIS
+A mikrovezérlők többnyire Neumann-architektúrájúak. HAMIS
+A mikrovezérlők általánosabb célúak mint a DSP-k. IGAZ
+A pixel-felhalmozás szegmentálási eljárás iteratív folyamat. IGAZ
+A Harvard-architektúra lehetőséget ad az utasítások pipeline feldolgozására. IGAZ
+Az intelligens érzékelők a mikrovezérlőt is magukba integrálják. IGAZ
+Az intelligens érzékelő képes az önkalibrációra IGAZ
+Az intelligens érzékelő képes jelezni az elöregedést. IGAZ
+Az ASIC olyan integrált áramkör, amely egy adott specifikus feladat ellátására lett tervezve. IGAZ
+Az ASIC alapú beágyazott rendszerek gyártási egységára nagyobb mint az FPGA alapúaké. HAMIS
+Az ASIC alapú beágyazott rendszerek energiahatékonyabbak mint az FPGA alapúak. IGAZ
+A só-és-bors zaj tipikusan a csatornazaj. HAMIS
+A fehérzaj tipikusan csatornazaj, additív. IGAZ
+A bootloader a mikrovezérlő programmemóriájában helyezkedik el. IGAZ
+Egy tipikus élszűrő az élerősséget és az élorientációt is megadja. IGAZ
+A Flash memória egy nem felejtő típusú memória. IGAZ
+A Flash memória az EEPROM egy változata. IGAZ
+A beágyazott rendszerek hardver/szoftver partícionálása egy többkritériumos NP-nehéz optimalizálási feladat. IGAZ
+A beágyazott rendszerek két komponensből, hardver és szoftverből állnak. HAMIS
+Beágyazott rendszereknél a hardver megtervezése után következik a szoftver tervezése. HAMIS 
+A szoftver aktív redundanciája ugyanazon szoftver megkettőzését jelenti. HAMIS
+A PROM memória csak egyszer programozható. IGAZ
+A valós idejű operációs rendszerek garantálják az alkalmazások valós idejű működését. HAMIS
+Laplace-operátor megadja egy több dimenziós függvény első deriváltjainak összegét. HAMIS
+Az Arduino mikrovezérlőkártya tápellátása USB-n keresztül is biztosítható. IGAZ
+A p-n dióda záróirányban előfeszítve kondenzátorként viselkedik. IGAZ
+Az átlagszűrő nemlineáris simítószűrő. HAMIS
+A Windows és a Linux nem valós idejű operációs rendszerek, de mindkettőhöz létezik valós idejű működést lehetővé tevő kiegészítés. IGAZ
+A bipoláris monolitikus IC-knél hagyományos ellenállásokat és kondenzátorokat alkalmaznak. IGAZ
+A kvantálási hiba is zajként jelentkezik. IGAZ
+A dobozszűrő súlyai a középponttól való távolságtól függetlenek. IGAZ
+Izotróp élszűrőnél az eredmény függ az él orientációjától. HAMIS
+A Prewitt-szűrő zajszűrésre szolgál. HAMIS
+A kóderek 2n bemenettel és n kimenettel rendelkeznek. IGAZ.
+A multiplexerek olyan logikai áramkörök, amelyek 2n bemenetből kiválasztanak egyet a kimenetre. IGAZ.
+A szenzorok passzív elektronikai elemek. IGAZ.
+Az áramgenerátor egy passzív elektronikai elem. HAMIS.
+A breadboard előnye, hogy forrasztásmentes, tehát gyorsan és könnyedén összeállítható rajta bármilyen elektronikai áramkör. IGAZ.
+Az interfész egy kapcsolattartási felület, általában két (vagy több) elektronikai eszköz között. IGAZ.
+Az SPI teljes-duplex kommunikációra képes. IGAZ.
+Az USB csak soros kommunikációra képes. HAMIS.
+Azokat a jeleket, ahol a jel múltbeli viselkedéséből és jelenkori értékéből nem lehet következtetni a jel jövőbeli viselkedésére, determinisztikus jeleknek nevezzük. HAMIS.
+A DC motor pólusait sztátornak nevezzük. IGAZ.
+A léptetőmotorok csak egy irányba képesek forogni. HAMIS.
+A szervomotor egy vezérlési feladatokat ellátó motor. HAMIS.
+Pozíciószabályozást legtöbbször szervomotoroknál alkalmaznak. IGAZ.
+A beágyazott rendszerek fő egysége valamilyen CPU. IGAZ.
+A digitális jelfeldolgozásban szükség van A/D konverterre. IGAZ.
+A felbontóképesség digitális műszerek esetén a legkisebb tizedesjegyű érték. IGAZ.
+A mérőeszköz precizitásának mutatója a szórás. IGAZ.
+A LED-es optikai szenzorokat használhatják közelségérzékelésre. IGAZ.
+A magnetométer úgy működik mint egy iránytű. IGAZ.
+A potenciométerek olcsóbb kialakítása legtöbb esetben szolenoidos kivitelezésű. HAMIS.
+A termisztoroknak lineáris a karakterisztikája. HAMIS.
+Az ultrahangos szenzorok nagy pontosságú távolságmérésre alkalmazhatók. IGAZ.
+Azokat a jeleket, ahol a jel múltbeli viselkedésből és a jelenkori értékéből nem lehet következtetni a jel jövőbeli viselkedésre determinisztikus jeleknek nevezzük. HAMIS.
+Az SPI egy párhuzamos kommunikációs interfész. HAMIS.
+A termisztoroknak lineáris a karakterisztikája. HAMIS.
+A szenzorokat osztályozhatjuk a mérendő mennyiségek alapján. IGAZ.
+A műveleti erősítő csak az invertáló bemenet értékét erősíti. HAMIS.
+A szolenoidos potenciométerek pontatlanabbak a grafitosoknál. HAMIS.
+A műveleti erősítőket szimmetrikus táplálással kell ellátni. IGAZ.
+A logikai kapuk feszültséglogika szerint működnek. HAMIS.
+Pozíciószabályozást legtöbbször szervomotoroknál alkalmaznak. IGAZ.
+A váltakozó-áramú motorok fordulatszámszabályozását feszültségváltóval végzik a gyakorlatban. HAMIS.
+A GPIO egy Globális Pin Input Output. HAMIS.
+A vércukor mérő szenzor egy bioszenzor. HAMIS.
+A felbontóképesség digitális műszerek esetén a legnagyobb tizedesjegyű érték. HAMIS.
+A szenzorok (c) olyan mérőegységek, vagy jelátalakítók, amelyek általában valamilyen nem villamos mennyiséget alakítanak át villamos jellé.
+A nyúlásmérő bélyeg lehet fémes és félvezető kialakítású. IGAZ.
+A gyakorlatban páros pólusszámú DC motorokat alkalmaznak. HAMIS.
+Az inkrementális jeladókat a motorok szögelfordulásának mérésére használják. IGAZ.
+A műveleti erősítőket asszimetrikus táplálással kell ellátni. HAMIS.
+A termoelemek termoelektromos érzékelők. IGAZ.
+Kváziperiodikus jeleknek nevezzük azokat a jeleket, amelyek egy adott periódus alatt ismétlődnek, és az ismétlések periodikusak. HAMIS.
+A léptetőmotor tekercselései a forgórészen találhatók. HAMIS.
+A mérőeszköz precizitása a mérőeszköz azon tulajdonsága, hogy egymáshoz közeli értékeket mutasson. IGAZ.
+A termisztoroknak lineáris a karakterisztikája. HAMIS.
+A dekóderek n bemenettel és 2n kimenettel rendelkeznek. IGAZ.
+A szinkron motor generátorként is működhet. IGAZ.
+A réz-ellenállás hőmérsékleti karakterisztikája szinte teljesen lineáris. HAMIS.
+Az aktív elektronikai elemekből nagyon sokféle létezik. HAMIS.
+A termisztorok félvezető-ellenállások. IGAZ.
+Az inkrementális jeladókat a motorok szögelfordulásának mérésére használják. IGAZ.
+Az interfész lehet gép és ember közötti felület is. IGAZ.
+Az áramgenerátor egy passzív elektronikai elem. HAMIS.
+A pentán alkalmazható a termoelektromos érzékelőkben. HAMIS.
+A feszültséggenerátor egy aktív elektronikai elem. IGAZ.
+A beadboard egy elektronikai prototípusokhoz használatos próbapanel. IGAZ.
+A hagyományos DC motor vasmagja tekercselt. IGAZ.
+A DC motorok fordulatszámszabályozását frekvenciaváltóval végzik a gyakorlatban. HAMIS.
+A véroxigén mérő szenzor egy bioszenzor. HAMIS.
+A felbontóképesség analóg műszer esetén a legnagyobb skálabeosztást jelenti. HAMIS.
+A mérőeszköz hiszterézise olyan tulajdonság, hogy a bemenőjelre adott válaszfüggvény függ az előző kimenőjelek sorrendjétől. HAMIS.
+Azokat a jeleket, ahol a jel múltbeli viselkedésből és a jelenkori értékéből nem lehet következtetni a jel jövőbeli viselkedésre determinisztikus jeleknek nevezzük. HAMIS.
+Az alacsony frekvenciák visszaverődnek az atmoszféráról! HAMIS.
+Az alacsony nyomású pneumatikus aktuátorokat jellemzően vezérlési feladatokra alkalmazzák. IGAZ.
+A szenzorokat osztályozhatjuk a mérendő mennyiségek alapján. IGAZ.
+A műveleti erősítő csak az invertáló bemenet értékét erősíti. HAMIS.
+Pozíciószabályozást legtöbbször szervomotoroknál alkalmaznak. IGAZ.
+A váltakozó-áramú motorok fordulatszámszabályozását feszültségváltóval végzik a gyakorlatban. HAMIS.
+Az ellenállás-alapú érzékelők legtöbbször változtatható ellenállások. IGAZ.
+A demultiplexerek olyan logikai áramkörök, amelyek 2 n bemenetből kiválasztanak egyet a kimenetre. IGAZ.
+A mechanikus aktuátorok képesek a forgó mozgást egy másik forgó mozgássá alakítani. IGAZ.
+A giroszkóp dőlést, perdülést és irányváltoztatást érzékel. HAMIS.
+A merülős szintérzékelő általában egy cilindrikus keresztmetszetű rúd, amelynek a felső vége egy erő érzékelőre van erősítve. IGAZ.
+Az UART adakerete maximum 7 bit lehet. HAMIS.
+A villamos aktuátorok a villamos energiát alakítják át mechanikus jellemzőre. IGAZ.
+A logikai kapuk áramlogika szerint működnek. IGAZ.
+A Point-to-Point pozíciószabályozást főleg PID szabályozással oldják meg a gyakorlatban. HAMIS.
+Kváziperiodikus jeleknek nevezzük azokat a jeleket, amelyek egy adott periódus alatt ismétlődnek, és az ismétlések periodikusak. HAMIS.
