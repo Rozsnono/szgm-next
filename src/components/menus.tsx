@@ -12,7 +12,7 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
 
     const items = [
         {
-            label: 'Átlag számítás',
+            label: 'Átlagszámítás',
             icon: 'pi pi-chart-bar',
             command: () => navigateTo('/atlag')
         },
