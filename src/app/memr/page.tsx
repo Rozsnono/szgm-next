@@ -71,7 +71,7 @@ export default function Home() {
         <main>
             {
                 !memr.isLoading && queue.length > 0 ?
-                    <QuestionTab icon="sitemap" question={memr.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} type="radio"></QuestionTab>
+                    <QuestionTab icon="calculator" question={memr.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} type="radio"></QuestionTab>
                     : <></>
             }
         </main>
