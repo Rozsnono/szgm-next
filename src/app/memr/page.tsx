@@ -61,7 +61,7 @@ export default function Home() {
         if(number > 22){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            window.location.href = "/results/memr";
+            window.location.href = "/results/all";
             setNumber(0);
         }
     }
