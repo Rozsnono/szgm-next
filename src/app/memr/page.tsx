@@ -3,8 +3,11 @@ import QuestionTab from "@/components/questionTab";
 import MEMR from "../../txts/memr.json";
 import { useQuery } from "react-query";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+
+    const router = useRouter();
 
     function getData() {
         try {
@@ -61,7 +64,7 @@ export default function Home() {
         if(number > 22){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            window.location.href = "/results/all";
+            router.push("/results/all");
             setNumber(0);
         }
     }
