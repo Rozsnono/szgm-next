@@ -58,7 +58,6 @@ export default function Home() {
         let result = sessionStorage.getItem("memr-result") ? JSON.parse(sessionStorage.getItem("memr-result") || "") : [];
         result.push({ question: memr.data[queue[number]].question, answer: item, options: ["Igaz", "Hamis"], correct: [memr.data[queue[number]].answer?"Igaz":"Hamis"], type: "radio" });
         sessionStorage.setItem("memr-result", JSON.stringify(result));
-        console.log(number);
         if(number > 22){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
