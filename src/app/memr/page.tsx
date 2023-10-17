@@ -64,7 +64,7 @@ export default function Home() {
         if(number > 22){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            router.push("/results/all");
+            router.push("/results/memr");
             setNumber(0);
         }
     }

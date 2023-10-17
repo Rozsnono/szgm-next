@@ -3,6 +3,7 @@ import QuestionTab from "@/components/questionTab";
 import RDSZ from "../../txts/rendszer.json";
 import { useQuery } from "react-query";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
@@ -51,6 +52,7 @@ export default function Home() {
     const rdsz: any = useQuery('rdsz', getData);
 
     const [number, setNumber] = useState(0);
+    const router = useRouter();
 
     function Next(item: any) {
         setNumber(number + 1);
@@ -62,7 +64,7 @@ export default function Home() {
             sessionStorage.removeItem("number-rdsz");
             sessionStorage.removeItem("queue-rdsz");
             setNumber(0);
-            window.location.href = "/results/rdsz";
+            router.push("/results/rdsz");
         }
     }
 

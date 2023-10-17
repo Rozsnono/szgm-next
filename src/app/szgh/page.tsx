@@ -3,6 +3,7 @@ import QuestionTab from "@/components/questionTab";
 import SZGH from "../../txts/szgh.json";
 import { useQuery } from "react-query";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
@@ -50,6 +51,7 @@ export default function Home() {
     const szgh: any = useQuery('subjects', getData);
 
     const [number, setNumber] = useState(0);
+    const router = useRouter();
 
     function Next(item: any) {
         
@@ -61,7 +63,7 @@ export default function Home() {
         if(number + 1 > 23){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            window.location.href = "/results/szgh";
+            router.push("/results/szgh");
             setNumber(0);
         }
     }
