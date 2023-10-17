@@ -33,6 +33,7 @@ export default function Home() {
     const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
 
     function getResults() {
+        if(!selectedExam) return [];
         if (sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result")) {
             const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") || "");
             getPoint(data);
