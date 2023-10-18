@@ -75,7 +75,7 @@ export default function Home() {
 
     return (
         <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg">
-            <div className="flex gap-3 lg:w-1/3 w-full">
+            <div className="flex gap-3 w-full">
                 <span className="p-float-label w-full">
                     <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(e.value); router.push(e.value.title.toLocaleLowerCase()) }} options={exams}
                         className="w-full " itemTemplate={Template} optionLabel='title' />
@@ -84,7 +84,11 @@ export default function Home() {
                 <span className="p-float-label w-full">
                     <label htmlFor="search">{point.current} / 24</label>
                 </span>
+                <span onClick={()=>{router.push("/"+selectedExam.title.toLocaleLowerCase())}} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
+                    Újra
+                </span>
             </div>
+
             <div className='text-center grid'>
                 {
                     results.isLoading ?

@@ -67,7 +67,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
 
     return (
         <main>
-            <div className={"flex items-center p-4 lg:justify-center" + (!result ? " min-h-screen" : "")}>
+            <div className={"flex items-center lg:p-4 py-4 lg:justify-center" + (!result ? " min-h-screen" : "")}>
                 <div
                     className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
                 >
