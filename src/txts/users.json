@@ -18,5 +18,25 @@
         "user": "markhorompo",
         "password": "65586c31646e6830624735",
         "role": 3
+    },
+    {
+        "user": "Pingu",
+        "password": "4f6c5936557a513053",
+        "role": 3
+    },
+    {
+        "user": "hermangabor",
+        "password": "664868716147317a5a5842",
+        "role": 3
+    },
+    {
+        "user": "3XP3RT",
+        "password": "63484e386157",
+        "role": 3
+    },
+    {
+        "user": "fabrypatrik",
+        "password": "4f4463324e545579",
+        "role": 3
     }
 ]

@@ -1,5 +1,6 @@
 "use client"
 import User from "../txts/users.json";
+import fs from 'fs/promises';
 
 import React, { createContext, useContext } from 'react'
 
@@ -17,14 +18,13 @@ export function login(user: string, password: string){
     return {error: "User not found"};
 }
 
-export function register(user: string, password: string, role: number){
+export async function register(user: string, password: string, role: number){
     User.push({user: user, password: Coder(password), role: role});
     console.log(JSON.stringify({user: user, password: Coder(password), role: role}))
 }
 
 export function logout(){
     localStorage.removeItem("user");
-
 }
 
 function Coder(string: string){
