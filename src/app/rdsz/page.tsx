@@ -20,7 +20,6 @@ export default function Home() {
                 const n: number | any = sessionStorage.getItem("number-rdsz");
                 setNumber(parseFloat(n))
             }
-            console.log(data, queue, number)
             return data;
         } catch (error: Error | any) {      //muszáj így megadni, mert különben hibát dob
             console.error(error);
@@ -73,7 +72,7 @@ export default function Home() {
         <main>
             {
                 !rdsz.isLoading && queue.length > 0 ?
-                    <QuestionTab icon="cog" question={rdsz.data[queue[number]].question} number={number + 1} answers={rdsz.data[queue[number]].options} next={(e) => { Next(e); }} type={rdsz.data[queue[number]].type}></QuestionTab>
+                    <QuestionTab max={24} icon="cog" question={rdsz.data[queue[number]].question} number={number + 1} answers={rdsz.data[queue[number]].options} next={(e) => { Next(e); }} type={rdsz.data[queue[number]].type}></QuestionTab>
                     : <></>
             }
         </main>

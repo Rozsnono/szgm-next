@@ -65,6 +65,11 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
                     label: 'MEMR',
                     icon: 'pi pi-calculator',
                     command: () => navigateTo('/memr')
+                },
+                {
+                    label: 'VÁLLALAT',
+                    icon: 'pi pi-chart-line',
+                    command: () => navigateTo('/vallalat')
                 }
             ]
         }, {

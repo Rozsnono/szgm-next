@@ -34,7 +34,7 @@ export default function RootLayout({
           <UserContext.Provider value={{ user, setUser }}>
             <Navbar>
               <Form>
-                {(pathName != "/") ? <></> : children}
+                {children}
               </Form>
             </Navbar>
           </UserContext.Provider>

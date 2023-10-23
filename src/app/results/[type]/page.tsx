@@ -16,18 +16,27 @@ export default function Home() {
         {
             title: "PMSZT",
             icon: "pi pi-database",
+            max: 24
         },
         {
             title: "SZGH",
             icon: "pi pi-sitemap",
+            max: 24
         },
         {
             title: "RDSZ",
             icon: "pi pi-cog",
+            max: 24
         },
         {
             title: "MEMR",
             icon: "pi pi-calculator",
+            max: 30
+        },
+        {
+            title: "VALLALAT",
+            icon: "pi pi-chart-line",
+            max: 9
         },
     ];
     const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
@@ -82,7 +91,7 @@ export default function Home() {
                     <label htmlFor="search">Vizsga</label>
                 </span>
                 <span className="p-float-label w-full">
-                    <label htmlFor="search">{point.current} / 24</label>
+                    <label htmlFor="search">{point.current} / {selectedExam.max}</label>
                 </span>
                 <span onClick={()=>{router.push("/"+selectedExam.title.toLocaleLowerCase())}} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
                     Újra
@@ -97,7 +106,7 @@ export default function Home() {
 
                             results.data.map((item: any, index: number) => {
                                 return (
-                                    <QuestionTab key={index} icon="sitemap" type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
+                                    <QuestionTab max={selectedExam.max} key={index} icon="sitemap" type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
 
                                 )
                             })

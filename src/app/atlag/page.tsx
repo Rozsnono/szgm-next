@@ -74,7 +74,6 @@ export default function Home() {
         let sum = 0;
         for (const i of subjectsData.current) {
             sum += parseInt(i.cred);
-            console.log(i);
         }
         if (sum == 0) return 0;
         return sum;

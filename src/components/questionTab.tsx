@@ -6,7 +6,7 @@ import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
 import { Messages } from 'primereact/messages';
 
-export default function Tab({ question, answers, number, type, img, icon, result, correct, next }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void }) {
+export default function Tab({ question, answers, number, type, img, icon, result, correct, next, max}: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void, max: number }) {
 
     const [choosed, setChoosed] = useState<any>(result ? (type === "text" ? answers : result ) : []);
     const isCorrect = useRef<boolean>(true);
@@ -86,7 +86,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
 
                         <div className="flex flex-col space-y-5">
                             <div className="flex flex-col space-y-1 text-center relative">
-                                <div className="text-lg text-end "> <span className="text-gray-800 font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">24</span> </div>
+                                <div className="text-lg text-end "> <span className="text-gray-800 font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">{max}</span> </div>
                             </div>
                             {
                                 img === null || img === "" || img === undefined ?
@@ -99,9 +99,9 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                 {
                                     type === "checkbox" ?
                                         answers.map((a: any, i: number) => (
-                                            <div key={i} className="flex align-items-center">
+                                            <div key={i} className="flex align-items-center items-center">
                                                 <Checkbox disabled={result} inputId={a} value={a} onChange={(e) => Checking(e)} checked={choosed.includes(a)} />
-                                                <label htmlFor={a} className="ml-2">{a}</label>
+                                                <label htmlFor={a} className="mx-2">{a}</label>
                                                 {
                                                     correct ?
                                                         checkCorrect(a)
@@ -112,7 +112,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                         :
                                         type === "radio" ?
                                             answers.map((a: any, i: number) => (
-                                                <div key={i} className="flex align-items-center">
+                                                <div key={i} className="flex align-items-center items-center">
                                                     <RadioButton disabled={result} inputId={a} name="category" value={a} onChange={(e) => Checking(e)} checked={choosed.includes(a)} />
                                                     <label htmlFor={a} className="ml-2">{a}
                                                         <span className="font-bold ms-2">
