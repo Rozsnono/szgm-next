@@ -93,7 +93,7 @@ export default function Home() {
                 <span className="p-float-label w-full">
                     <label htmlFor="search">{point.current} / {selectedExam.max}</label>
                 </span>
-                <span onClick={()=>{router.push("/"+selectedExam.title.toLocaleLowerCase())}} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
+                <span onClick={()=>{router.push("/"+selectedExam.title.toLocaleLowerCase()); sessionStorage.removeItem(selectedExam.title.toLowerCase() + "-result")}} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
                     Újra
                 </span>
             </div>
