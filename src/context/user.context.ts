@@ -19,7 +19,7 @@ export function login(user: string, password: string){
 
 export function register(user: string, password: string, role: number){
     User.push({user: user, password: Coder(password), role: role});
-    console.log({user: user, password: Coder(password), role: role})
+    console.log(JSON.stringify({user: user, password: Coder(password), role: role}))
 }
 
 export function logout(){

@@ -1,4 +1,22 @@
 [
-    {"user": "rozsnono", "password": "50446b344f576477625756", "role": 1},
-    {"user": "markgaal068", "password": "615563374f546331", "role": 2}
+    {
+        "user": "rozsnono",
+        "password": "50446b344f576477625756",
+        "role": 1
+    },
+    {
+        "user": "markgaal068",
+        "password": "615563374f546331",
+        "role": 2
+    },
+    {
+        "user": "farkasgergo",
+        "password": "65584236624731345a5735",
+        "role": 3
+    },
+    {
+        "user": "markhorompo",
+        "password": "65586c31646e6830624735",
+        "role": 3
+    }
 ]
