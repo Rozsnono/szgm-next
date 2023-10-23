@@ -217,7 +217,7 @@
         ],
         "option": [
             "A klaszer nem beszerzési kartell",
-            "A közvetett tulajdnos azt jelenti, hogy a vállalatok egymásba kölcsönösen tulajdonosok",
+            "A közvetett tulajdonos azt jelenti, hogy a vállalatok egymásba kölcsönösen tulajdonosok",
             "A reszvénytársaságok fúziósjánál részvénycserét hajtanak végre"
         ],
         "type": "checkbox"
@@ -237,7 +237,7 @@
     {
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
-            "A vállalat tulajdonosa lehet töb vállalat",
+            "A vállalat tulajdonosa lehet több vállalat",
             "A vállalati stratégia tartalmaz funkcionális fejezeteket"
         ],
         "option": [
@@ -266,7 +266,7 @@
             "A maketingmix eleme az értékesítési politika"
         ],
         "option": [
-            "A vállalatirányítási rendszerek gyakra modulszerűek",
+            "A vállalatirányítási rendszerek gyakran modulrendszerűek",
             "A maketingmix eleme az értékesítési politika",
             "A marketing törzskari funkció"
         ],
@@ -276,7 +276,7 @@
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
             "A vállalat kidolgozhat túlélési stratégiát",
-            "A vállalat szervezete divizonális"
+            "A vállalat szervezete lehet divizionális"
         ],
         "option": [
             "A vállalat nem irányítható vagyonkezelőn keresztül",
@@ -319,7 +319,7 @@
         "option": [
             "Az outsourcing magyarul említhető bekebelezésként",
             "Vállalatgeneráló tényező a konjuktúra",
-            "A b to b ügyletben további feldolgozást igénylő termékekket adnak el"
+            "A b to b ügyletben további feldolgozást igénylő termékeket adnak el"
         ],
         "type": "checkbox"
     },
@@ -344,7 +344,7 @@
             "A vállalat tulajdonosa rendelkezik a használat jogával"
         ],
         "option": [
-            "Az ISO-szabványok szerinti tanúsított rendszereketa piac elfogadja",
+            "Az ISO-szabványok szerinti tanúsított rendszerekt a piac elfogadja",
             "A vállalat tulajdonosa rendelkezik a használat jogával",
             "A közbeszerzési ajánlatokat egy személy bírálja el"
         ],
@@ -366,11 +366,11 @@
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
             "A fúzióknál részvénycserét vagy üzletcserét hajtanak végre",
-            "A kereszttulajdon azt jelenti hogy a vállalatok egymásban kölcsönösen tulajdonosok"
+            "A kereszttulajdon azt jelenti hogy egymásban kölcsönösen tulajdonosok"
         ],
         "option": [
             "A klaszter beszerzési kartell",
-            "A fúzióknál részvénycserét vagy üzletrészcserét hajtanak végre",
+            "A fúzióknál részvénycserét vagy üzletcserét hajtanak végre",
             "A kereszttulajdon azt jelenti hogy egymásban kölcsönösen tulajdonosok"
         ],
         "type": "checkbox"
@@ -382,7 +382,7 @@
             "A szabványos minőségirányítási rendszer fontos része az eljárások sora"
         ],
         "option": [
-            "Vállalatgeneráűló tényező a tőke és a külföldi tőke",
+            "Vállalatgeneráló tényező a tőke és a külföldi tőke",
             "Az EVA külső mutatú",
             "A szabványos minőségirányítási rendszer fontos része az eljárások sora"
         ],
@@ -395,7 +395,7 @@
             "A közbeszerzési eljárás egyik fázia az ajánlatok fogadása"
         ],
         "option": [
-            "A privatizáció során az önkormányzatzok vállalati vagyonhoz jutottak",
+            "A privatizáció során az önkormányzatok vállalati vagyonhoz jutottak",
             "Az állam nem rendelkezik vállalati tulajdonnal",
             "A közbeszerzési eljárás egyik fázia az ajánlatok fogadása"
         ],
@@ -404,7 +404,7 @@
     {
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
-            "A modern vállalatoknál a gazdasági vezető irányítása alá tartozik a controlling",
+            "A modern vállalatnál a gazdasági vezető alá tartozik a controlling",
             "A vállalatnál a gazdasági vezető irányítása alá tartozik a számvitel"
         ],
         "option": [
@@ -421,7 +421,7 @@
             "A marketing feladata a szegmentáció"
         ],
         "option": [
-            "A maketingmix eleme a termékpolitika",
+            "A maketingmix eleme a termékpolitka",
             "A marketing feladata a szegmentáció",
             "A marketing egyik feladata a mérleg elkészítése"
         ],
@@ -434,7 +434,7 @@
             "A vállalatcsoport létrehozásának célja lehet a kockázatok megosztása"
         ],
         "option": [
-            "A vállalat értékesíthet közbeszerzési pályázat elnyerésével",
+            "A vállalat értékesíthet közbeszerzési páylyázat elnyerésével",
             "Az SHV a vállalat tiszta nyereségét mutatja meg",
             "A vállalatcsoport létrehozásának célja lehet a kockázatok megosztása"
         ],
@@ -444,11 +444,11 @@
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
             "A szabályos vállalati életciklus része a férfikor",
-            " Belső tranzakció a vállalat tulanjdonában lévő eszköz igénybevétele"
+            "Belső tranzakció a vállalat tulanjdonában lévő eszköz igénybevétele"
         ],
         "option": [
             "A szabályos vállalati életciklus része a férfikor",
-            " Belső tranzakció a vállalat tulajdonában lévő eszköz igénybevétele",
+            "Belső tranzakció a vállalat tulajdonában lévő eszköz igénybevétele",
             "A core business körébe tartozó tevékenységeket alvállalkozók végzik"
         ],
         "type": "checkbox"
@@ -494,7 +494,7 @@
     {
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
-            "Vákllalatcsoport eredeti tulajdonosa lehet az önkormányzat",
+            "Vállalatcsoport eredeti tulajdonosa lehet az önkormányzat",
             "A vállalatnál a gazdasági vezető irányítása alá tartozik a pénzügy"
         ],
         "option": [
@@ -508,12 +508,12 @@
         "question": " Jelölje meg a helyes megállapításokat! ",
         "answer": [
             "A vállalat tagja lehet egy stratégiai szövetségnek",
-            "A vállalat mindig a tulajdonos közvetleny irányítása  alatt működik",
+            "A vállalat mindig a tulajdonos közvetleny irányítása alatt működik",
             "Készíthetünk stratégiai tervet tíz évre"
         ],
         "option": [
             "A vállalat tagja lehet egy stratégiai szövetségnek",
-            "A vállalat mindig a tulajdnoos közvetlen irányítása alatt működik",
+            "A vállalat mindig a tulajdonos közvetleny irányítása alatt működik",
             "Készíthetünk stratégiai tervet tíz évre"
         ],
         "type": "checkbox"
@@ -537,7 +537,7 @@
             "A vállalat küldetése egy mondatos"
         ],
         "option": [
-            "A vállalat küldetése kinyilvánítja a válalalt felelősségét",
+            "A vállalat küldetése kinyilvánítja a vállalat felelősségét",
             "A vállalati stratégia lehet túlélési stratégia",
             "A vállalat küldetése egy mondatos"
         ],
@@ -550,7 +550,7 @@
             "Az organigram és az organigráf a szervezetet mutatja be"
         ],
         "option": [
-            "A vagyonkezelés egyik formája a pénzügyi vagyonkezelés",
+            "A vagyonkezelés egyik formája pénzügyi vagyonkezelés",
             "Az organigram és az organigráf a szervezetet mutatja be",
             "Vonali szakmai terület a személyügy"
         ],
@@ -587,9 +587,10 @@
         ],
         "option": [
             "A vállalat működhet európai betéti társaságként",
-            "A vállalat személyügyi tevékenységének környezeti eleme a jogi környezet"
+            "A vállalat személyügyi tevékenységének környezeti eleme a jogi környezet",
+            "A vállalat működtethet szabványos minőségirányítási rendszert"
         ],
-        "type": "checkbox"
+        "type": "radio"
     },
     {
         "question": " Jelölje meg a helyes megállapításokat! ",
@@ -625,7 +626,7 @@
         "option": [
             "A vállalatot mindig vagyonkezelő irányítja",
             "A vállalat ideális mérete pontosan kiszámítható",
-            "A vagyonklezelő lehet rendszerszintű vagyonkezelő"
+            "A vagyonkezelő lehet rendszerszintű vagyonkezelő"
         ],
         "type": "radio"
     },
@@ -648,7 +649,7 @@
             "A divizió működhet profitcentrumként"
         ],
         "option": [
-            "A divizó működhet profitcentrumként",
+            "A divizió működhet profitcentrumként",
             "A vállalatnak mindig van tulajdonosi szervezete",
             "A minőségirányítási rendszer dokumentuma a környezetpolitika"
         ],
@@ -661,7 +662,7 @@
         ],
         "option": [
             "A klaszer beszerzési kartell",
-            "A kerestzttulajdon azt jelenti hogy a vállalatok egymásban kölcsönösen tulajdonosok",
+            "A kereszttulajdon azt jelenti hogy a vállalatok egymásban kölcsönösen tulajdonosok",
             "A fúzióknál a részvénycserét vagy üzletrészcvserét hajtanak végre"
         ],
         "type": "checkbox"
@@ -673,7 +674,7 @@
         ],
         "option": [
             "A vállalati termelés lehet stratégiai rendszerű",
-            "A vállalati gazdaságtan lehet business administration szmelékletű",
+            "A vállalati gazdaságtan lehet business administration szemléletű",
             "A vállalati stakeholderek egyike sem rendelkezik szavazati joggal"
         ],
         "type": "radio"
@@ -697,7 +698,7 @@
             "A vállalat stakeholderei között lehet bank"
         ],
         "option": [
-            "A konzorciuim beszerzési kartell",
+            "A konzorcium beszerzési kartell",
             "A hálózatos vállalatcsoportban több erőközpont van",
             "A vállalat stakeholderei között lehet bank"
         ],
@@ -723,7 +724,7 @@
             "A humánpolitika a személyügy másik megnevezése"
         ],
         "option": [
-            "A vállalati személyügy egyik szakmai feladata az öszötnző rendszer kidlgozása",
+            "A vállalati személyügy egyik szakmai feladata az öszötnző rendszer kidolgozása",
             "A vállalati személyügy egyik szakmai feladata lehet a logisztikai tervezés",
             "A humánpolitika a személyügy másik megnevezése"
         ],
