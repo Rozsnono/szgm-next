@@ -33,13 +33,9 @@ export default function RootLayout({
         <QueryClientProvider client={queryClient}>
           <UserContext.Provider value={{ user, setUser }}>
             <Navbar>
-              {
-                !user && <Form></Form>
-              }
-              {
-                !user && (pathName != "/") ? <></> : children
-              }
-
+              <Form>
+                {(pathName != "/") ? <></> : children}
+              </Form>
             </Navbar>
           </UserContext.Provider>
         </QueryClientProvider>
