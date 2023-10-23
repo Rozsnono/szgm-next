@@ -38,5 +38,10 @@
         "user": "fabrypatrik",
         "password": "4f4463324e545579",
         "role": 3
+    },
+    {
+        "user": "vbene",
+        "password": "616e3170635764",
+        "role": 3
     }
 ]
