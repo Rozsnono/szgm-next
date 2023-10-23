@@ -106,7 +106,7 @@ export default function Home() {
 
                             results.data.map((item: any, index: number) => {
                                 return (
-                                    <QuestionTab max={selectedExam.max} key={index} icon="sitemap" type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
+                                    <QuestionTab max={selectedExam.max} key={index} icon={selectedExam.icon.replace("pi pi-","")} type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
 
                                 )
                             })

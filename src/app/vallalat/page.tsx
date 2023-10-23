@@ -75,7 +75,7 @@ export default function Home() {
         <main>
             {
                 !vallalat.isLoading && queue.length > 0 ?
-                    <QuestionTab max={9} icon="calculator" question={vallalat.data[queue[number]].question} number={number + 1} answers={vallalat.data[queue[number]].option} next={(e) => { Next(e); }} type={vallalat.data[queue[number]].type}></QuestionTab>
+                    <QuestionTab max={9} icon="chart-line" question={vallalat.data[queue[number]].question} number={number + 1} answers={vallalat.data[queue[number]].option} next={(e) => { Next(e); }} type={vallalat.data[queue[number]].type}></QuestionTab>
                     : <></>
             }
         </main>
