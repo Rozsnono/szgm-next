@@ -8,6 +8,8 @@ import { Register } from './form';
 import UserContext, { logout } from '@/context/user.context';
 import { useRouter } from 'next/navigation';
 
+import MobileMenu from "./mobile.menu"
+
 export default function Navbar({
     children,
 }: {
@@ -24,15 +26,29 @@ export default function Navbar({
 
     const router = useRouter();
     const [show, setShow] = useState<boolean>(false);
+    const [menuShow, setMenuShow] = useState<boolean>(false);
+
+    const isMobile = useRef(false);
+
+    if (typeof navigator !== "undefined") {
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            isMobile.current = true;
+        }
+
+    }
+
 
     return (
         <main className="relative">
+
+
             <nav className="fixed top-0 w-screen z-99 bg-blue-800 p-2 flex justify-between" style={{ zIndex: "1000" }}>
                 {
-                    checkUser ?
+                    checkUser && !isMobile.current ?
                         <Menus menuLeft={menuLeft}></Menus> : <></>
                 }
-                <button onClick={(event: any) => menuLeft.current?.toggle(event)} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
+                <button onClick={(event: any) => { menuLeft.current?.toggle(event); setMenuShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
 
                 {
                     checkUser && checkUser.role === 1 ?
@@ -48,6 +64,10 @@ export default function Navbar({
 
                 }
             </nav>
+            {
+                isMobile.current && menuShow ?
+                    <MobileMenu></MobileMenu> : <></>
+            }
             {children}
         </main>
     );
