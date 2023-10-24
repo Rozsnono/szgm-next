@@ -8,7 +8,7 @@ const UserContext = createContext({ user: {} as { user: string, password: string
 export default UserContext;
 
 export async function login(user: string, password: string) {
-    await fetch("/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
+    await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
         if (data.length !== 0) {
             localStorage.setItem("user", JSON.stringify(data[0]));
             window.location.reload();
@@ -23,7 +23,7 @@ export async function login(user: string, password: string) {
 export async function register(user: string, password: string, role: number) {
     User.push({ user: user, password: Coder(password), role: role });
 
-    await fetch("/api/user", { method: "POST", body: JSON.stringify({ user: user, password: Coder(password), role: role }), headers: { "Content-Type": "application/json" } })
+    await fetch("https://teal-frail-ostrich.cyclic.app/api/user", { method: "POST", body: JSON.stringify({ user: user, password: Coder(password), role: role }), headers: { "Content-Type": "application/json" } })
 }
 
 export function logout() {
