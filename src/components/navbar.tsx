@@ -55,6 +55,10 @@ export default function Navbar({
                         <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-user'></i> Register</button> : <></>
                 }
                 {
+                    checkUser && checkUser.role !== 3  ?
+                        <button onClick={() => { window.location.href = "/admin" }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i> Admin</button> : <></>
+                }
+                {
                     checkUser && checkUser.role === 1 && show &&
                     <Register></Register>
                 }
