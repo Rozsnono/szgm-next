@@ -30,6 +30,11 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
                 {
                     template: () => <p className='p-2 ps-4 line-through'><i className='pi pi-desktop'></i> SZGM</p>,
                 },
+                {
+                    label: 'Matek 1',
+                    icon: 'pi pi-plus-circle',
+                    command: () => navigateTo('/matek1')
+                },
             ]
         }, {
             label: '2. félév',
@@ -53,7 +58,12 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
                     label: 'RDSZ',
                     icon: 'pi pi-cog',
                     command: () => navigateTo('/rdsz')
-                }
+                },
+                {
+                    label: 'Matek 2',
+                    icon: 'pi pi-plus-circle',
+                    command: () => navigateTo('/matek2')
+                },
             ]
         }, {
             label: '3. félév',
@@ -70,7 +80,15 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
                     label: 'VÁLLALAT',
                     icon: 'pi pi-chart-line',
                     command: () => navigateTo('/vallalat')
-                }
+                },
+                {
+                    label: 'ADATBÁZIS',
+                    icon: 'pi pi-database',
+                    command: () => navigateTo('/adatbazis')
+                },
+                {
+                    template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> Matek 3</p>,
+                },
             ]
         }, {
             label: 'Kötelező nem szakmai',
