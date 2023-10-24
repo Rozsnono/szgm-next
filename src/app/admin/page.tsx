@@ -35,7 +35,7 @@ export default function Home() {
                         >
                             <p className="font-bold">{item.log}</p>
                             <p>
-                                {new Date(item.date).setHours(new Date(item.date).getHours() + 2).toLocaleString()}
+                                {(new Date(item.date).setHours(new Date(item.date).getHours() + 2)).toLocaleString()}
                             </p>
                         </div>
                     );
