@@ -26,7 +26,7 @@ export default function Home() {
     const data = useQuery<any[]>('database', getData);
 
     return (
-        <main className="flex flex-col min-h-screen gap-4 lg:p-12 lg:pt-24 p-6 pt-24 text-sm">
+        <main className="flex flex-col min-h-screen gap-2 lg:p-12 lg:pt-24 p-6 pt-32 text-sm">
             {!data.isLoading && data.data
                 ? data.data.map((item: any, index: number) => {
                     return (
@@ -35,7 +35,7 @@ export default function Home() {
                         >
                             <p className="font-bold">{item.log}</p>
                             <p>
-                                {item.date}
+                                {new Date(item.date).setHours(new Date(item.date).getHours() + 2).toLocaleString()}
                             </p>
                         </div>
                     );
