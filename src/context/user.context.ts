@@ -10,7 +10,7 @@ export default UserContext;
 export async function login(user: string, password: string) {
     await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
         if (data.length !== 0) {
-            localStorage.setItem("user", JSON.stringify(data[0]));
+            localStorage.setItem("SZEuser", JSON.stringify(data[0]));
             window.location.reload();
             return { message: "User logged in", user: data[0] };
 
@@ -27,7 +27,7 @@ export async function register(user: string, password: string, role: number) {
 }
 
 export function logout() {
-    localStorage.removeItem("user");
+    localStorage.removeItem("SZEuser");
 }
 
 function Coder(string: string) {

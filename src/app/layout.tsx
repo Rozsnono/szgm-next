@@ -21,9 +21,9 @@ export default function RootLayout({
   const pathName = usePathname();
   const [user, setUser] = useState<any | null>(
     typeof localStorage === "undefined" ? null
-      : localStorage.getItem("user") === "undefined" ? null
-        : (JSON.parse(localStorage.getItem("user") as string) === null ? null
-          : JSON.parse(localStorage.getItem("user") as string) as any));
+      : localStorage.getItem("SZEuser") === "undefined" ? null
+        : (JSON.parse(localStorage.getItem("SZEuser") as string) === null ? null
+          : JSON.parse(localStorage.getItem("SZEuser") as string) as any));
 
   return (
     <html lang="en">
