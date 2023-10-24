@@ -2,7 +2,7 @@ import { items } from "./menus";
 
 export default function Home() {
     return (
-        <main className="fixed w-screen h-screen bg-white z-10 flex flex-col items-center pt-6 gap-2" style={{ zIndex: "1001" }}>
+        <main className="fixed w-screen h-screen bg-white z-10 flex flex-col items-center pt-6 gap-2 mobile-menu" style={{ zIndex: "1001" }}>
 
             {
                 items.map((item: any, index: number) => {

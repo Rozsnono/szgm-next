@@ -7,3 +7,16 @@
 
 @import 'primeicons/primeicons.css';
         
+
+.mobile-menu{
+    animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
