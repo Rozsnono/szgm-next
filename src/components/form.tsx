@@ -26,8 +26,6 @@ export default function Form({
     function logining() {
         const data = login(TMPuser, pass);
         setMessage(data);
-        if (data.error) return;
-        setUser(data.user);
     }
 
 

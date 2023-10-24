@@ -52,7 +52,7 @@ export default function Home() {
                                 <p>
                                     {
                                         item.slice((item.indexOf("\r\n")) + 2).split("\n").map((item2: string, index2: number) => {
-                                            return (<>{item2.replace("\t"," - ")} <br/></>)
+                                            return (<span key={index2}>{item2.replace("\t"," - ")} <br/></span>)
                                         })
                                     }
                                 </p>
