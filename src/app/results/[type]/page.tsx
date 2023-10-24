@@ -15,7 +15,7 @@ export default function Home() {
     const exams = [
         {
             title: "PMSZT",
-            icon: "pi pi-database",
+            icon: "pi pi-file",
             max: 24
         },
         {

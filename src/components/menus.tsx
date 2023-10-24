@@ -1,6 +1,7 @@
 
 import { Menu } from 'primereact/menu';
 import { useRouter } from 'next/navigation';
+import {Icons} from "../context/icons.enum"
 
 export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
     const router = useRouter();
@@ -32,7 +33,7 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
                 },
                 {
                     label: 'Matek 1',
-                    icon: 'pi pi-plus-circle',
+                    icon: Icons['Matek 1'],
                     command: () => navigateTo('/matek1')
                 },
             ]
@@ -41,27 +42,27 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
             items: [
                 {
                     label: 'SZGH',
-                    icon: 'pi pi-sitemap',
+                    icon: Icons['SZGH'],
                     command: () => navigateTo('/szgh')
                 },
                 {
                     label: 'SZGH-ZH',
-                    icon: 'pi pi-server',
+                    icon: Icons['SZGH-ZH'],
                     command: () => navigateTo('/szgh-zh')
                 },
                 {
                     label: 'PMSZT',
-                    icon: 'pi pi-database',
+                    icon: Icons['PMSZT'],
                     command: () => navigateTo('/pmszt')
                 },
                 {
                     label: 'RDSZ',
-                    icon: 'pi pi-cog',
+                    icon: Icons['RDSZ'],
                     command: () => navigateTo('/rdsz')
                 },
                 {
                     label: 'Matek 2',
-                    icon: 'pi pi-plus-circle',
+                    icon: Icons['Matek 2'],
                     command: () => navigateTo('/matek2')
                 },
             ]
@@ -73,17 +74,17 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
                 // },
                 {
                     label: 'MEMR',
-                    icon: 'pi pi-calculator',
+                    icon: Icons['MEMR'],
                     command: () => navigateTo('/memr')
                 },
                 {
                     label: 'VÁLLALAT',
-                    icon: 'pi pi-chart-line',
+                    icon: Icons['VÁLLALAT'],
                     command: () => navigateTo('/vallalat')
                 },
                 {
                     label: 'ADATBÁZIS',
-                    icon: 'pi pi-database',
+                    icon: Icons['ADATBÁZIS'],
                     command: () => navigateTo('/adatbazis')
                 },
                 {
@@ -95,7 +96,7 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
             items: [
                 {
                     label: 'FIZIKA TÖRI',
-                    icon: 'pi pi-globe',
+                    icon: Icons['FIZIKA TÖRI'],
                     command: () => navigateTo('/fizika')
                 }
             ]
