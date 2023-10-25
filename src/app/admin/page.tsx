@@ -35,7 +35,7 @@ export default function Home() {
                         >
                             <p className="font-bold">{item.log}</p>
                             <p>
-                                {new Date(item.date).toLocaleString()}
+                                {new Date((item.date).replace(/\s+/g, 'T').concat('.000+08:00')).toLocaleString()}
                             </p>
                         </div>
                     );
