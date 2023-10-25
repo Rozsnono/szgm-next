@@ -35,7 +35,9 @@ export default function Home() {
                         >
                             <p className="font-bold">{item.log}</p>
                             <p>
-                                {new Date((item.date).replace(/\s+/g, 'T').concat('.000+08:00')).toLocaleString()}
+                                {
+                                    new Date((item.date.toString()).replace(/-/g, "/")).toLocaleString("hu-HU",{timeZone:"Europe/Budapest"})
+                                }
                             </p>
                         </div>
                     );
