@@ -9,7 +9,7 @@ export default UserContext;
 
 export async function login(user: string, password: string) {
     await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
-        if (data.length !== 0) {
+        if (data.length !== 0 && data.user) {
             localStorage.setItem("SZEuser", JSON.stringify(data[0]));
             window.location.reload();
             return { message: "User logged in", user: data[0] };
@@ -30,7 +30,7 @@ export function logout() {
     localStorage.removeItem("SZEuser");
 }
 
-function Coder(string: string) {
+export function Coder(string: string) {
     let returnString = "";
     for (let i = 0; i < string.length; i++) {
         returnString += String.fromCharCode(string.charCodeAt(i) + i);

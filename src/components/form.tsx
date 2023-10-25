@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Password } from 'primereact/password';
-import UserContext, { login, register } from "@/context/user.context";
+import UserContext, { Coder, register } from "@/context/user.context";
 
 export default function Form({
     children,
@@ -23,11 +23,24 @@ export default function Form({
     }, [user])
 
 
-    function logining() {
-        const data = login(TMPuser, pass);
-        setMessage(data);
+    async function logining() {
+        login(TMPuser, pass);
+        // console.log(await login());
+
     }
 
+    async function login(user: string, password: string) {
+        await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
+            if (data.length !== 0 && data.user) {
+                localStorage.setItem("SZEuser", JSON.stringify(data[0]));
+                window.location.reload();
+
+            }
+            console.log(data)
+        }   
+        );
+        setMessage("User not found");
+    }
 
     return (
         <>
@@ -43,11 +56,11 @@ export default function Form({
                             <Password id="password" value={pass} onChange={(e) => setPass(e.target.value)} feedback={false} tabIndex={1} />
                             <label htmlFor="password">Password</label>
                         </span>
-                        <div className="text-red-500">{message && message.error}</div>
+                        <div className="text-red-500">{message}</div>
 
                         <div className="w-full rounded-full border-blue-800 bg-white border-2 text-blue-800 hover:bg-blue-800 hover:text-white duration-100 text-center cursor-pointer" onClick={logining}>Login</div>
                     </div>
-                </main> : 
+                </main> :
                 children
             }
         </>
