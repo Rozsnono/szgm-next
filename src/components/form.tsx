@@ -30,15 +30,19 @@ export default function Form({
     }
 
     async function login(user: string, password: string) {
-        await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
+        await fetch("https://api.ipify.org/?format=json").then(res => res.json()).then(data => {
+            fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password) + "&ip="+data.ip).then(res => res.json()).then(data => {
 
-            if (data.length !== 0 && data[0].user) {
-                localStorage.setItem("SZEuser", JSON.stringify(data[0]));
-                window.location.reload();
+                if (data.length !== 0 && data[0].user) {
+                    localStorage.setItem("SZEuser", JSON.stringify(data[0]));
+                    window.location.reload();
 
+                }
             }
-        }   
-        );
+            );
+        }
+        )
+
         setMessage("User not found");
     }
 
@@ -46,22 +50,22 @@ export default function Form({
         <>
             {
                 !checkUser ?
-                <main className="fixed top-0 p-2 flex justify-center w-screen h-screen bg-[#00000040]" style={{ zIndex: 1001 }}>
-                    <div className="mx-auto flex flex-col bg-white border-2 border-blue-800 gap-6 p-6 rounded-lg h-fit" >
-                        <span className="p-float-label">
-                            <InputText id="username" value={TMPuser} onChange={(e) => setTMPUser(e.target.value)} />
-                            <label htmlFor="username">Username</label>
-                        </span>
-                        <span className="p-float-label">
-                            <Password id="password" value={pass} onChange={(e) => setPass(e.target.value)} feedback={false} tabIndex={1} />
-                            <label htmlFor="password">Password</label>
-                        </span>
-                        <div className="text-red-500">{message}</div>
+                    <main className="fixed top-0 p-2 flex justify-center w-screen h-screen bg-[#00000040]" style={{ zIndex: 1001 }}>
+                        <div className="mx-auto flex flex-col bg-white border-2 border-blue-800 gap-6 p-6 rounded-lg h-fit" >
+                            <span className="p-float-label">
+                                <InputText id="username" value={TMPuser} onChange={(e) => setTMPUser(e.target.value)} />
+                                <label htmlFor="username">Username</label>
+                            </span>
+                            <span className="p-float-label">
+                                <Password id="password" value={pass} onChange={(e) => setPass(e.target.value)} feedback={false} tabIndex={1} />
+                                <label htmlFor="password">Password</label>
+                            </span>
+                            <div className="text-red-500">{message}</div>
 
-                        <div className="w-full rounded-full border-blue-800 bg-white border-2 text-blue-800 hover:bg-blue-800 hover:text-white duration-100 text-center cursor-pointer" onClick={logining}>Login</div>
-                    </div>
-                </main> :
-                children
+                            <div className="w-full rounded-full border-blue-800 bg-white border-2 text-blue-800 hover:bg-blue-800 hover:text-white duration-100 text-center cursor-pointer" onClick={logining}>Login</div>
+                        </div>
+                    </main> :
+                    children
             }
         </>
 
