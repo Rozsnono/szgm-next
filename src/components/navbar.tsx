@@ -29,24 +29,21 @@ export default function Navbar({
     const [show, setShow] = useState<boolean>(false);
     const [menuShow, setMenuShow] = useState<boolean>(false);
 
-    async function getData() {
+    async function getData(): Promise<any> {
         const tmpUser = JSON.parse(localStorage.getItem("6429FC567AB4618A") as string) as any;
         fetch("https://api.ipify.org/?format=json").then(res => res.json()).then(async datas => {
-    
-          const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + datas.ip);
-          const data: any = await res.json();
-          if (data.length !== 0 && data[0].user) {
-            setUser(data[0]);
-          }
-          return null;
+
+            const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + datas.ip);
+            const data: any = await res.json();
+            if (data.length !== 0 && data[0].user) {
+                setUser(data[0]);
+                return data[0];
+            }
         }
         )
-    
-    
-        return null
-      }
-    
-      const data = useQuery<any[]>('database', getData);
+    }
+
+    const data = useQuery<any[]>('database', getData);
 
     const isMobile = useRef(false);
 
@@ -75,7 +72,7 @@ export default function Navbar({
                         <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-user'></i> Register</button> : <></>
                 }
                 {
-                    checkUser && checkUser.role !== 3  ?
+                    checkUser && checkUser.role !== 3 ?
                         <button onClick={() => { window.location.href = "/admin" }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i> Admin</button> : <></>
                 }
                 {
