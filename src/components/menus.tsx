@@ -26,6 +26,11 @@ export const items = [
         command: () => navigateTo('/results/szgh')
     },
     {
+        label: 'Tárgyak',
+        icon: 'pi pi-bookmark',
+        command: () => navigateTo('/targyak')
+    },
+    {
         separator: true
     },
     {

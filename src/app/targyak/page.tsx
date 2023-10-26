@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
+import { Tooltip } from 'primereact/tooltip';
 import { useQuery } from "react-query";
 
 export default function Home() {
@@ -31,15 +32,18 @@ export default function Home() {
         setNexts(item.nexts);
         setPrevs(item.prevs);
     }
+    function onTematikaHover(item: any){
+        setTematik(item);
+    }
     function onHoverOut() {
         setNexts([]);
         setPrevs([]);
     }
     function onClick(item: any, nexts: any) {
-        
+
 
         if (doneRef.current.includes(item)) {
-            setDone(done => done.filter((items: any) => { return items.code != subjects.filter((items: any) => {return items.code == item.toString()})[0].code }));
+            setDone(done => done.filter((items: any) => { return items.code != subjects.filter((items: any) => { return items.code == item.toString() })[0].code }));
 
             doneRef.current = doneRef.current.filter((items: any) => { return items != item });
             setCan(can => can.filter((canItem: any) => {
@@ -64,7 +68,7 @@ export default function Home() {
                 }
             );
             if (tmp.length != tmpDoneLength) return;
-            setDone([...done, subjects.filter((items: any) => {return items.code == item.toString()})[0]])
+            setDone([...done, subjects.filter((items: any) => { return items.code == item.toString() })[0]])
             doneRef.current = ([...doneRef.current, item]);
             let tmpCan = [...can, ...nexts.filter(
                 (next: any) => {
@@ -89,9 +93,20 @@ export default function Home() {
     const [can, setCan] = useState<any[]>([]);
     const [prevs, setPrevs] = useState<any[]>([]);
     const [done, setDone] = useState<any[]>([]);
+    const [tematik, setTematik] = useState<string>();
 
     const doneRef = useRef<any[]>([]);
 
+    function getCount(type: any) {
+        let tmp = 0;
+        done.forEach((item: any) => {
+            if (Object.keys(type.data).includes(item.code)) {
+                tmp += parseInt(item.credit);
+            }
+        })
+
+        return tmp;
+    }
 
     const data = useQuery<any>('database', getData);
 
@@ -100,8 +115,14 @@ export default function Home() {
             {
                 !data.isLoading && data.data &&
                 <div className="flex w-full flex-col gap-3">
+
+                    <Tooltip target=".cursor-pointer" autoHide={false} position={"top"}>
+                        <div className="flex align-items-center">
+                            <a className="underline " href={"https://neptun.sze.hu/coursethematics/details/tid/"+tematik+"/m/5246"}>Tárgytematika</a>
+                        </div>
+                    </Tooltip>
                     <div className="text-center text-lg">{data.data.courses[0].name}</div>
-                    <div className="text-center text-sm">{data.data.courses[0].required_credits} / 0</div>
+                    <div className={"text-center text-sm" + (data.data.courses[0].required_credits > getCount(data.data.courses[0]) ? "" : " text-green-600")}>{data.data.courses[0].required_credits} / {getCount(data.data.courses[0])}</div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-center">
 
                         {
@@ -115,7 +136,7 @@ export default function Home() {
                                         {
                                             Object.values(data.data.courses[0].data).filter((item: any) => { return item.semester == sem }).map((item: any, index: number) => {
                                                 return (
-                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-yellow-200" : "")}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-yellow-200" : "")}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                 )
                                             })
                                         }
@@ -132,7 +153,7 @@ export default function Home() {
                                 return (
                                     <div key={c_i} className="flex flex-col gap-2">
                                         <div className="text-center">{courses.name}</div>
-                                        <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0")}>{courses.required_credits ? courses.required_credits : 0} / 0</div>
+                                        <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0") + (getCount(courses) < courses.required_credits ? "" : " text-green-600 font-bold")}>{courses.required_credits ? courses.required_credits : 0} / {getCount(courses)}</div>
 
                                         <hr />
 
