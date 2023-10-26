@@ -1,9 +1,13 @@
 "use client";
-import { useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Tooltip } from 'primereact/tooltip';
 import { useQuery } from "react-query";
+import UserContext from "@/context/user.context";
 
 export default function Home() {
+
+    const {user} = useContext(UserContext);
+
     async function getData() {
         const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/subjects?url=2021-09-01/IVIN_BMI/IVIN_BMI/IVIN_BMI_4");
         const data: any = await res.json();
@@ -19,9 +23,15 @@ export default function Home() {
         subjects = subjects.map((item: any, index: number) => { return { ...item, code: subjectsName[index] } })
         setSubjects(subjects);
 
+        if(user && subjects){
+            setDone(user.savedSubjects.map((item: any) => subjects.filter((items: any) => { return items.code == item })).flat());
+            doneRef.current = user.savedSubjects;
+        }
 
         return data
     }
+    
+    const [subjects, setSubjects] = useState<any[]>([]);
 
     function getKeyByValue(object: any, value: any) {
         const search = Object.keys(object).find(key => object[key] === value);
@@ -88,7 +98,6 @@ export default function Home() {
     }
 
     const [semesters, setSemesters] = useState<number[]>([]);
-    const [subjects, setSubjects] = useState<any[]>([]);
     const [nexts, setNexts] = useState<any[]>([]);
     const [can, setCan] = useState<any[]>([]);
     const [prevs, setPrevs] = useState<any[]>([]);
@@ -108,7 +117,27 @@ export default function Home() {
         return tmp;
     }
 
-    const data = useQuery<any>('database', getData);
+    const [save, setSave] = useState<boolean>(false);
+    function saving(){
+        setSave(true);
+        const body = 
+        {
+            ...user,
+            savedSubjects: doneRef.current
+        };
+        fetch("https://teal-frail-ostrich.cyclic.app/api/user/"+body._id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+        }).then(res => res.json()).then(data => {
+            console.log(data);
+            setSave(false);
+        })
+    }
+
+    const data = useQuery<any>('database', getData, { refetchOnWindowFocus: false });
 
     return (
         <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm">
@@ -116,7 +145,9 @@ export default function Home() {
                 !data.isLoading && data.data &&
                 <div className="flex w-full flex-col gap-3">
 
-                    <Tooltip target=".cursor-pointer" autoHide={false} position={"top"}>
+                    <div onClick={!save ? saving : ()=>{}} className={"border border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
+
+                    <Tooltip target=".cursor-pointer.duration-100" autoHide={false} position={"top"}>
                         <div className="flex align-items-center">
                             <a className="underline " href={"https://neptun.sze.hu/coursethematics/details/tid/"+tematik+"/m/5246"}>Tárgytematika</a>
                         </div>

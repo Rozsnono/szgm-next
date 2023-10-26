@@ -3,8 +3,8 @@ import Navbar from '@/components/navbar';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { QueryClient, QueryClientProvider } from 'react-query';
-import UserContext from '@/context/user.context';
+import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
+import UserContext, { Coder } from '@/context/user.context';
 import { useState } from 'react';
 import Form from '@/components/form';
 import { usePathname, useRouter } from 'next/navigation';
@@ -16,14 +16,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   const queryClient = new QueryClient();
   const router = useRouter();
   const pathName = usePathname();
-  const [user, setUser] = useState<any | null>(
-    typeof localStorage === "undefined" ? null
-      : localStorage.getItem("SZEuser") === "undefined" ? null
-        : (JSON.parse(localStorage.getItem("SZEuser") as string) === null ? null
-          : JSON.parse(localStorage.getItem("SZEuser") as string) as any));
+  const [user, setUser] = useState<any | null>(null);
+
+
+
+
 
   return (
     <html lang="en">

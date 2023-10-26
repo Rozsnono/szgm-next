@@ -9,6 +9,7 @@ import UserContext, { logout } from '@/context/user.context';
 import { useRouter } from 'next/navigation';
 
 import MobileMenu from "./mobile.menu"
+import { useQuery } from 'react-query';
 
 export default function Navbar({
     children,
@@ -22,11 +23,30 @@ export default function Navbar({
 
     const [checkUser, setCheckUser] = useState<any | null>(user);
 
-    useEffect(() => { setCheckUser(user) }, [user])
+    useEffect(() => { setCheckUser(user); }, [user])
 
     const router = useRouter();
     const [show, setShow] = useState<boolean>(false);
     const [menuShow, setMenuShow] = useState<boolean>(false);
+
+    async function getData() {
+        const tmpUser = JSON.parse(localStorage.getItem("6429FC567AB4618A") as string) as any;
+        fetch("https://api.ipify.org/?format=json").then(res => res.json()).then(async datas => {
+    
+          const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + datas.ip);
+          const data: any = await res.json();
+          if (data.length !== 0 && data[0].user) {
+            setUser(data[0]);
+          }
+          return null;
+        }
+        )
+    
+    
+        return null
+      }
+    
+      const data = useQuery<any[]>('database', getData);
 
     const isMobile = useRef(false);
 

@@ -34,7 +34,7 @@ export default function Form({
             fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password) + "&ip="+data.ip).then(res => res.json()).then(data => {
 
                 if (data.length !== 0 && data[0].user) {
-                    localStorage.setItem("SZEuser", JSON.stringify(data[0]));
+                    localStorage.setItem("6429FC567AB4618A", JSON.stringify(data[0]));
                     window.location.reload();
 
                 }

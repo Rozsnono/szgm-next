@@ -19,7 +19,6 @@ export default function Home() {
     async function getData() {
         const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/logs");
         const data = await res.json();
-        console.log(data);
         return data;
     }
 
@@ -33,15 +32,24 @@ export default function Home() {
                     ? data.data.map((item: any, index: number) => {
                         return (
                             <div key={index}
-                                className={"flex"}
+                                className={"flex justify-between px-2"}
                             >
-                                <p className="border-r border-gray-400 w-[2rem] text-end px-1 me-1 text-sm text-gray-400">{index}</p>
-                                <p className="flex-none w-[4.2rem]">
-                                    {
-                                        new Date(item.date).toLocaleTimeString("hu-HU", { hour: '2-digit', minute: '2-digit', second: '2-digit' })
-                                    }:
-                                </p>
-                                <p className={"font-bold flex-1" + (item.log.includes("tried") ? " text-red-900" : "")}>{item.log}</p>
+                                <div className="flex">
+
+                                    <p className="border-r border-gray-400 w-[2rem] text-end pe-1 me-1 text-sm text-gray-400">{index}</p>
+                                    <p className="flex-none w-[4.2rem]">
+                                        {
+                                            new Date(item.date).toLocaleTimeString("hu-HU", { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+                                        }:
+                                    </p>
+
+                                    <p className={"font-bold flex-1" + (item.log.includes("tried") ? " text-red-900" : "")}>{item.log}</p>
+                                </div>
+
+                                <div>
+                                    <p className="text-gray-500">{item.ip}</p>
+                                </div>
+                                
                             </div>
                         );
                     })
