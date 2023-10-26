@@ -111,7 +111,7 @@ export default function Home() {
     const data = useQuery<any>('database', getData);
 
     return (
-        <main className="pt-24 p-8 text-sm">
+        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm">
             {
                 !data.isLoading && data.data &&
                 <div className="flex w-full flex-col gap-3">
