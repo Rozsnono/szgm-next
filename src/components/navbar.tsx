@@ -30,17 +30,24 @@ export default function Navbar({
     const [menuShow, setMenuShow] = useState<boolean>(false);
 
     async function getData(): Promise<any> {
-        const tmpUser = JSON.parse(localStorage.getItem("6429FC567AB4618A") as string) as any;
-        fetch("https://api.ipify.org/?format=json").then(res => res.json()).then(async datas => {
 
-            const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + datas.ip);
-            const data: any = await res.json();
-            if (data.length !== 0 && data[0].user) {
-                setUser(data[0]);
-                return data[0];
-            }
+        let data = { ip: "1.1.1.1" };
+        try {
+            const res = await fetch("https://api.ipify.org/?format=json");
+            data = await res.json();
+            console.log(data);
+        } catch (error) {
+            data = { ip: "0.0.0.0" };
         }
-        )
+        const tmpUser = JSON.parse(localStorage.getItem("6429FC567AB4618A") as string) as any;
+        const res2 = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + data.ip);
+        const data2 = await res2.json();
+        if (data2.length !== 0 && data2[0].user) {
+            setUser(data2[0]);
+            return data2[0];
+
+        }
+        
     }
 
     const data = useQuery<any[]>('database', getData);
