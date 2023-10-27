@@ -20,7 +20,7 @@ export default function RootLayout({
   const queryClient = new QueryClient();
   const router = useRouter();
   const pathName = usePathname();
-  const [user, setUser] = useState<any | null>(null);
+  const [user, setUser] = useState<any | null | undefined>(undefined);
 
 
 
