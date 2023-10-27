@@ -8,8 +8,10 @@ import { Dropdown } from "primereact/dropdown";
 export default function Home() {
 
     const { user } = useContext(UserContext);
+    const [loading, setLoading] = useState<boolean>(true);
 
     async function getData() {
+        setLoading(true);
         let url = "2021-09-01/IVIN_BMI/IVIN_BMI/IVIN_BMI_4";
         if (selectedSub && selectedDir && selectedY && selectedYear) {
             url = selectedYear +"/" + selectedSub.code + "/" + selectedDir.code + "/" + selectedY.code + "/";
@@ -39,7 +41,7 @@ export default function Home() {
             setDone(user.savedSubjects.map((item: any) => subjects.filter((items: any) => { return items.code == item })).flat());
             doneRef.current = user.savedSubjects;
         }
-
+        setLoading(false);
         return data
     }
 
@@ -221,7 +223,7 @@ export default function Home() {
                                     <Dropdown value={selectedY} onChange={(e) => setSelectedY(e.value)} options={selectedDir ? selectedDir.tanterv : []} optionLabel="name" className="w-64" />
                                     <label htmlFor="username">Tanterv</label>
                                 </span>
-                                <div onClick={()=>{data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
+                                <div onClick={()=>{data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
 
 
                             </>
