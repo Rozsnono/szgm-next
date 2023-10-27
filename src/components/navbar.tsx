@@ -35,19 +35,24 @@ export default function Navbar({
         try {
             const res = await fetch("https://api.ipify.org/?format=json");
             data = await res.json();
-            console.log(data);
         } catch (error) {
             data = { ip: "0.0.0.0" };
         }
+
         const tmpUser = JSON.parse(localStorage.getItem("6429FC567AB4618A") as string) as any;
+        if(!tmpUser){
+            setUser(null);
+            return null;
+        };
         const res2 = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + data.ip);
         const data2 = await res2.json();
+
         if (data2.length !== 0 && data2[0].user) {
             setUser(data2[0]);
             return data2[0];
-
         }
-        
+
+
     }
 
     const data = useQuery<any[]>('database', getData);

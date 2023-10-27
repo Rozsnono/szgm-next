@@ -19,8 +19,10 @@ export default function Form({
     const [message, setMessage] = useState<any>();
 
     useEffect(() => {
-        setCheckUser(user);
-    }, [user])
+        if(user !== undefined){
+            setCheckUser(user);
+        }
+    },[user])
 
 
     async function logining() {
@@ -34,7 +36,6 @@ export default function Form({
         try {
             const res = await fetch("https://api.ipify.org/?format=json");
             data = await res.json();
-            console.log(data);
         } catch (error) {
             data = { ip: "0.0.0.0" };
         }
@@ -51,15 +52,13 @@ export default function Form({
 
     }
 
-    console.log(checkUser);
-
     return (
         <>
             {
                 checkUser == null ?
                     <>
                         {
-                            checkUser === null ? <></> :
+                            checkUser === undefined ? <></> :
                                 <main className="fixed top-0 p-2 flex justify-center w-screen h-screen bg-[#00000040]" style={{ zIndex: 1001 }}>
                                     <div className="mx-auto flex flex-col bg-white border-2 border-blue-800 gap-6 p-6 rounded-lg h-fit" >
                                         <span className="p-float-label">
