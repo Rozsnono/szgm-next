@@ -31,13 +31,13 @@ export default function Form({
 
     async function login(user: string, password: string) {
         let data = { ip: "1.1.1.1" };
-        try {
-            const res = await fetch("https://api.ipify.org/?format=json");
-            data = await res.json();
-            console.log(data);
-        } catch (error) {
-            data = { ip: "0.0.0.0" };
-        }
+        // try {
+        //     const res = await fetch("https://api.ipify.org/?format=json");
+        //     data = await res.json();
+        //     console.log(data);
+        // } catch (error) {
+        //     data = { ip: "0.0.0.0" };
+        // }
 
         const res2 = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password) + "&ip=" + data.ip);
         const data2 = await res2.json();
