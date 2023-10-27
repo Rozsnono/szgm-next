@@ -3,7 +3,7 @@ import User from "../txts/users.json";
 
 import React, { createContext, useContext } from 'react'
 
-const UserContext = createContext({ user: {} as { _id: string, user: string, password: string, role: number, savedSubjects: any } | null, setUser: (user: { user: string, password: string, role: number } | null) => { } });
+const UserContext = createContext({ user: {} as { _id: string, user: string, password: string, role: number, savedSubjects: any, savedTematiks: any } | null, setUser: (user: { user: string, password: string, role: number } | null) => { } });
 
 export default UserContext;
 

@@ -3,13 +3,25 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { Tooltip } from 'primereact/tooltip';
 import { useQuery } from "react-query";
 import UserContext from "@/context/user.context";
+import { Dropdown } from "primereact/dropdown";
 
 export default function Home() {
 
-    const {user} = useContext(UserContext);
+    const { user } = useContext(UserContext);
 
     async function getData() {
-        const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/subjects?url=2021-09-01/IVIN_BMI/IVIN_BMI/IVIN_BMI_4");
+        let url = "2021-09-01/IVIN_BMI/IVIN_BMI/IVIN_BMI_4";
+        if (selectedSub && selectedDir && selectedY && selectedYear) {
+            url = selectedYear +"/" + selectedSub.code + "/" + selectedDir.code + "/" + selectedY.code + "/";
+        }else if(user && user.savedTematiks){
+            
+            setSelectedYear(user.savedTematiks.year);
+            setSelectedSub(user.savedTematiks.sub);
+            setSelectedDir(user.savedTematiks.dir);
+            setSelectedY(user.savedTematiks.y);
+            url = user.savedTematiks.year +"/" + user.savedTematiks.sub.code + "/" + user.savedTematiks.dir.code + "/" + user.savedTematiks.y.code;
+        }
+        const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/subjects?url=" + url);
         const data: any = await res.json();
         let semesters = Object.values(data.courses[0].data).map((item: any) => item.semester)
         semesters = semesters.filter((item: any, index: number) => { return semesters.indexOf(item) == index });
@@ -23,14 +35,35 @@ export default function Home() {
         subjects = subjects.map((item: any, index: number) => { return { ...item, code: subjectsName[index] } })
         setSubjects(subjects);
 
-        if(user && subjects){
+        if (user && subjects) {
             setDone(user.savedSubjects.map((item: any) => subjects.filter((items: any) => { return items.code == item })).flat());
             doneRef.current = user.savedSubjects;
         }
 
         return data
     }
-    
+
+    async function getSub() {
+        const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/subjectData");
+        const data: any = await res.json();
+        const tmpSub = Object.values(data.targyadatok).map((item: any, index: number) => {
+            return {
+                code: Object.keys(data.targyadatok)[index], name: item.name,
+                szakirany: Object.values(item.szakirany).map((szaki: any, index: number) => {
+                    return {
+                        code: Object.keys(item.szakirany)[index], name: szaki.name,
+                        tanterv: Object.values(szaki.tanterv).map((tan: any, index: number) => { return { code: Object.keys(szaki.tanterv)[index], name: tan.name } })
+                    }
+                })
+            }
+        });
+        const tmpData = {
+            evek: data.evek,
+            targyadatok: tmpSub
+        }
+        return tmpData
+    }
+
     const [subjects, setSubjects] = useState<any[]>([]);
 
     function getKeyByValue(object: any, value: any) {
@@ -42,7 +75,7 @@ export default function Home() {
         setNexts(item.nexts);
         setPrevs(item.prevs);
     }
-    function onTematikaHover(item: any){
+    function onTematikaHover(item: any) {
         setTematik(item);
     }
     function onHoverOut() {
@@ -117,15 +150,30 @@ export default function Home() {
         return tmp;
     }
 
+    function getAllCount() {
+        let tmp = 0;
+        data.data.courses.forEach((item: any) => {
+            tmp += parseInt(item.required_credits ? item.required_credits : 0);
+        })
+
+        let tmpD = 0;
+        done.forEach((item: any) => {
+            tmpD += parseInt(item.credit);
+        })
+
+        return <>{tmp} / {tmpD}</>;
+    }
+
     const [save, setSave] = useState<boolean>(false);
-    function saving(){
+    function saving() {
         setSave(true);
-        const body = 
+        const body =
         {
             ...user,
-            savedSubjects: doneRef.current
+            savedSubjects: doneRef.current,
+            savedTematiks: {year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY}
         };
-        fetch("https://teal-frail-ostrich.cyclic.app/api/user/"+body._id, {
+        fetch("https://teal-frail-ostrich.cyclic.app/api/user/" + body._id, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -138,18 +186,55 @@ export default function Home() {
     }
 
     const data = useQuery<any>('database', getData, { refetchOnWindowFocus: false });
+    const subjectsData = useQuery<any>('sub', getSub, { refetchOnWindowFocus: false });
+
+    const [selectedYear, setSelectedYear] = useState<any>();
+    const [selectedSub, setSelectedSub] = useState<any>();
+    const [selectedDir, setSelectedDir] = useState<any>();
+    const [selectedY, setSelectedY] = useState<any>();
 
     return (
         <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm">
             {
                 !data.isLoading && data.data &&
                 <div className="flex w-full flex-col gap-3">
+                    <div className="flex justify-between lg:flex-row flex-col justify-center items-center gap-6">
+                        <div onClick={!save ? saving : () => { }} className={"border w-full text-center border-green-800 bg-green-800 text-white hover:text-green-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
 
-                    <div onClick={!save ? saving : ()=>{}} className={"border border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
+                        {
+                            !subjectsData.isLoading && subjectsData.data &&
+                            <>
+                                <span className="p-float-label">
+                                    <Dropdown value={selectedYear} onChange={(e) => setSelectedYear(e.value)} options={subjectsData.data.evek} optionLabel="name" className="w-64" />
+                                    <label htmlFor="username">Beiratkozás éve</label>
+                                </span>
+                                <span className="p-float-label">
+                                    <Dropdown value={selectedSub} onChange={(e) => setSelectedSub(e.value)} options={subjectsData.data.targyadatok} optionLabel="name" filter className="w-64 " />
+                                    <label htmlFor="username">Szak</label>
+
+                                </span>
+                                <span className="p-float-label">
+                                    <Dropdown value={selectedDir} onChange={(e) => setSelectedDir(e.value)} options={selectedSub ? selectedSub.szakirany : []} optionLabel="name" className="w-64" />
+                                    <label htmlFor="username">Szakirány</label>
+                                </span>
+                                <span className="p-float-label">
+                                    <Dropdown value={selectedY} onChange={(e) => setSelectedY(e.value)} options={selectedDir ? selectedDir.tanterv : []} optionLabel="name" className="w-64" />
+                                    <label htmlFor="username">Tanterv</label>
+                                </span>
+                                <div onClick={()=>{data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
+
+
+                            </>
+
+                        }
+
+                        <div className={"text-lg text-center"}>{data.data.courses ? getAllCount() : 0}</div>
+
+                    </div>
 
                     <Tooltip target=".cursor-pointer.duration-100" autoHide={false} position={"top"}>
                         <div className="flex align-items-center">
-                            <a className="underline " href={"https://neptun.sze.hu/coursethematics/details/tid/"+tematik+"/m/5246"}>Tárgytematika</a>
+                            <a className="underline " href={"https://neptun.sze.hu/coursethematics/details/tid/" + tematik + "/m/5246"}>Tárgytematika</a>
                         </div>
                     </Tooltip>
                     <div className="text-center text-lg">{data.data.courses[0].name}</div>
