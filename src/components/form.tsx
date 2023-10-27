@@ -43,13 +43,15 @@ export default function Form({
         const data2 = await res2.json();
         if (data2.length !== 0 && data2[0].user) {
             localStorage.setItem("6429FC567AB4618A", JSON.stringify(data2[0]));
-            // window.location.reload();
+            window.location.reload();
 
         } else {
             setMessage("User not found");
         }
 
     }
+
+    console.log(checkUser);
 
     return (
         <>
