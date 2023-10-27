@@ -42,6 +42,8 @@ export default function Home() {
             doneRef.current = user.savedSubjects;
         }
         setLoading(false);
+
+        console.log(data);
         return data
     }
 
@@ -92,7 +94,7 @@ export default function Home() {
 
             doneRef.current = doneRef.current.filter((items: any) => { return items != item });
             setCan(can => can.filter((canItem: any) => {
-                return !nexts.filter(
+                return nexts.filter(
                     (next: any) => {
                         if (subjects.filter((code: any) => { return code.code == next.toString() }).length == 0) return false;
                         const tmp = subjects.filter((code: any) => { return code.code == next.toString() })[0].prevs.filter(
@@ -239,6 +241,16 @@ export default function Home() {
                             <a className="underline " href={"https://neptun.sze.hu/coursethematics/details/tid/" + tematik + "/m/5246"}>Tárgytematika</a>
                         </div>
                     </Tooltip>
+
+                    <div className="flex w-full gap-5 text-center justify-center">
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-600">Teljesített</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-200">Kijelölt</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-yellow-200">Ráépülés</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-red-200">Előkövetelmény</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-blue-200">Felvehető</div>
+                    </div>
+
+
                     <div className="text-center text-lg">{data.data.courses[0].name}</div>
                     <div className={"text-center text-sm" + (data.data.courses[0].required_credits > getCount(data.data.courses[0]) ? "" : " text-green-600")}>{data.data.courses[0].required_credits} / {getCount(data.data.courses[0])}</div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-center">
