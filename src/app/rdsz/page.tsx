@@ -59,7 +59,7 @@ export default function Home() {
         let result = sessionStorage.getItem("rdsz-result") ? JSON.parse(sessionStorage.getItem("rdsz-result") || "") : [];
         result.push({ question: rdsz.data[queue[number]].question, answer: item, options: rdsz.data[queue[number]].options, correct: rdsz.data[queue[number]].answers, type: rdsz.data[queue[number]].type });
         sessionStorage.setItem("rdsz-result", JSON.stringify(result));
-        if(number + 1 > 23){
+        if (number + 1 > 23) {
             sessionStorage.removeItem("number-rdsz");
             sessionStorage.removeItem("queue-rdsz");
             setNumber(0);
@@ -67,12 +67,23 @@ export default function Home() {
         }
     }
 
+    function finished(item: any) {
+
+        let result = sessionStorage.getItem("rdsz-result") ? JSON.parse(sessionStorage.getItem("rdsz-result") || "") : [];
+        result.push({ question: rdsz.data[queue[number]].question, answer: item, options: rdsz.data[queue[number]].options, correct: rdsz.data[queue[number]].answers, type: rdsz.data[queue[number]].type });
+        sessionStorage.setItem("rdsz-result", JSON.stringify(result));
+        sessionStorage.removeItem("number-rdsz");
+        sessionStorage.removeItem("queue-rdsz");
+        setNumber(0);
+        router.push("/results/rdsz");
+    }
+
 
     return (
         <main>
             {
                 !rdsz.isLoading && queue.length > 0 ?
-                    <QuestionTab max={24} icon="cog" question={rdsz.data[queue[number]].question} number={number + 1} answers={rdsz.data[queue[number]].options} next={(e) => { Next(e); }} type={rdsz.data[queue[number]].type}></QuestionTab>
+                    <QuestionTab max={24} icon="cog" question={rdsz.data[queue[number]].question} number={number + 1} answers={rdsz.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={rdsz.data[queue[number]].type}></QuestionTab>
                     : <></>
             }
         </main>

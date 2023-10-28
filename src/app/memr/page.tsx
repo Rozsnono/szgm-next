@@ -69,12 +69,22 @@ export default function Home() {
         }
     }
 
+    function finished(item: any) {
+
+        let result = sessionStorage.getItem("memr-result") ? JSON.parse(sessionStorage.getItem("memr-result") || "") : [];
+        result.push({ question: memr.data[queue[number]].question, answer: item, options: memr.data[queue[number]].option, correct: memr.data[queue[number]].answer, type: memr.data[queue[number]].type });
+        sessionStorage.setItem("memr-result", JSON.stringify(result));
+        sessionStorage.removeItem("number");
+            sessionStorage.removeItem("queue");
+            router.push("/results/memr");
+            setNumber(0);
+    }
 
     return (
         <main>
             {
                 !memr.isLoading && queue.length > 0 ?
-                    <QuestionTab icon="calculator" question={memr.data[queue[number]].question} number={number + 1} answers={memr.data[queue[number]].option} next={(e) => { Next(e); }} type={memr.data[queue[number]].type} max={30}></QuestionTab>
+                    <QuestionTab icon="calculator" question={memr.data[queue[number]].question} number={number + 1} answers={memr.data[queue[number]].option} next={(e) => { Next(e); }} finished={(e)=>{finished(e)}} type={memr.data[queue[number]].type} max={30}></QuestionTab>
                     : <></>
             }
         </main>

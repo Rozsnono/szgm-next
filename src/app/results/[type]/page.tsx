@@ -44,7 +44,7 @@ export default function Home() {
     function getResults() {
         if(!selectedExam) return [];
         if (sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result")) {
-            const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") || "");
+            const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") as string);
             getPoint(data);
             return data;
         } else {
@@ -54,14 +54,15 @@ export default function Home() {
 
     function getPoint(data: any){
         let checkI = 0;
+
         for (const i of data) {
-            if(i.correct.length === i.answer.length){
+            if(i.correct && i.correct.length === i.answer.length){
                 const check = i.answer.filter((item: any) => !i.correct.includes(item));
                 checkI += (check.length > 0 ? 0 : 1);
             }
         }
         point.current = checkI;
-        return 
+        return checkI;
     }
 
     const results: any = useQuery(param.type + "-result", getResults);
@@ -102,11 +103,11 @@ export default function Home() {
                 {
                     results.isLoading ?
                         <h3>Töltés...</h3> :
-                        results.data.length > 0 ?
+                        results.data && results.data !== undefined && results.data.length > 0?
 
                             results.data.map((item: any, index: number) => {
                                 return (
-                                    <QuestionTab max={selectedExam.max} key={index} icon={selectedExam.icon.replace("pi pi-","")} type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
+                                    <QuestionTab finished={(e)=>{}} max={selectedExam.max} key={index} icon={selectedExam.icon.replace("pi pi-","")} type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
 
                                 )
                             })

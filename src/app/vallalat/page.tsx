@@ -70,12 +70,23 @@ export default function Home() {
         }
     }
 
+    function finished(item: any) {
+
+        let result = sessionStorage.getItem("vallalat-result") ? JSON.parse(sessionStorage.getItem("vallalat-result") || "") : [];
+        result.push({ question: vallalat.data[queue[number]].question, answer: item, options: vallalat.data[queue[number]].option, correct: vallalat.data[queue[number]].answer, type: vallalat.data[queue[number]].type });
+        sessionStorage.setItem("vallalat-result", JSON.stringify(result));
+        sessionStorage.removeItem("number");
+        sessionStorage.removeItem("queue");
+        router.push("/results/vallalat");
+        setNumber(0);
+    }
+
 
     return (
         <main>
             {
                 !vallalat.isLoading && queue.length > 0 ?
-                    <QuestionTab max={9} icon="chart-line" question={vallalat.data[queue[number]].question} number={number + 1} answers={vallalat.data[queue[number]].option} next={(e) => { Next(e); }} type={vallalat.data[queue[number]].type}></QuestionTab>
+                    <QuestionTab max={9} icon="chart-line" question={vallalat.data[queue[number]].question} number={number + 1} answers={vallalat.data[queue[number]].option} next={(e) => { Next(e); }} finished={(e)=>{finished(e)}} type={vallalat.data[queue[number]].type}></QuestionTab>
                     : <></>
             }
         </main>

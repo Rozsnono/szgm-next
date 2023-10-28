@@ -54,13 +54,13 @@ export default function Home() {
     const router = useRouter();
 
     function Next(item: any) {
-        
+
         setNumber(number + 1);
         sessionStorage.setItem("number", (number + 1).toString());
         let result = sessionStorage.getItem("szgh-result") ? JSON.parse(sessionStorage.getItem("szgh-result") || "") : [];
-        result.push({ question: szgh.data[queue[number]].question, answer: item, options: ["Igaz", "Hamis"], correct: [szgh.data[queue[number]].answer?"Igaz":"Hamis"], type: "radio" });
+        result.push({ question: szgh.data[queue[number]].question, answer: item, options: ["Igaz", "Hamis"], correct: [szgh.data[queue[number]].answer ? "Igaz" : "Hamis"], type: "radio" });
         sessionStorage.setItem("szgh-result", JSON.stringify(result));
-        if(number + 1 > 23){
+        if (number + 1 > 23) {
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
             router.push("/results/szgh");
@@ -68,12 +68,23 @@ export default function Home() {
         }
     }
 
+    function finished(item: any) {
+
+        let result = sessionStorage.getItem("szgh-result") ? JSON.parse(sessionStorage.getItem("szgh-result") || "") : [];
+        result.push({ question: szgh.data[queue[number]].question, answer: item, options: ["Igaz", "Hamis"], correct: [szgh.data[queue[number]].answer ? "Igaz" : "Hamis"], type: "radio" });
+        sessionStorage.setItem("szgh-result", JSON.stringify(result));
+        sessionStorage.removeItem("number");
+        sessionStorage.removeItem("queue");
+        router.push("/results/szgh");
+        setNumber(0);
+    }
+
 
     return (
         <main>
             {
                 !szgh.isLoading && queue.length > 0 ?
-                    <QuestionTab max={24} icon="sitemap" question={szgh.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} type="radio"></QuestionTab>
+                    <QuestionTab max={24} icon="sitemap" question={szgh.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type="radio"></QuestionTab>
                     : <></>
             }
         </main>

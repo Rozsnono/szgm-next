@@ -6,9 +6,9 @@ import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
 import { Messages } from 'primereact/messages';
 
-export default function Tab({ question, answers, number, type, img, icon, result, correct, next, max}: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void, max: number }) {
+export default function Tab({ question, answers, number, type, img, icon, result, correct, next, finished, max }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void, finished: (e: any) => void, max: number }) {
 
-    const [choosed, setChoosed] = useState<any>(result ? (type === "text" ? answers : result ) : []);
+    const [choosed, setChoosed] = useState<any>(result ? (type === "text" ? answers : result) : []);
     const isCorrect = useRef<boolean>(true);
 
     function toBase64(arr: any) {
@@ -99,7 +99,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                 {
                                     type === "checkbox" ?
                                         answers.map((a: any, i: number) => (
-                                            <div key={i} className="flex align-items-center items-center">
+                                            <div key={i} className="flex items-center justify-start text-left">
                                                 <Checkbox disabled={result} inputId={a} value={a} onChange={(e) => Checking(e)} checked={choosed.includes(a)} />
                                                 <label htmlFor={a} className="mx-2">{a}</label>
                                                 {
@@ -112,7 +112,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                         :
                                         type === "radio" ?
                                             answers.map((a: any, i: number) => (
-                                                <div key={i} className="flex align-items-center items-center">
+                                                <div key={i} className="flex items-center justify-start">
                                                     <RadioButton disabled={result} inputId={a} name="category" value={a} onChange={(e) => Checking(e)} checked={choosed.includes(a)} />
                                                     <label htmlFor={a} className="ml-2">{a}
                                                         <span className="font-bold ms-2">
@@ -139,7 +139,14 @@ export default function Tab({ question, answers, number, type, img, icon, result
                             <div className="flex justify-between">
                                 {
                                     !result ?
-                                        <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" />
+                                        <>
+                                            {
+                                                max !== number ?
+
+                                                    <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" /> :
+                                                    <Button onClick={() => { finished(choosed); setChoosed([]) }} rounded label="Befejezés" icon="pi pi-send" />
+                                            }
+                                        </>
                                         :
                                         isCorrect.current ? <></> :
                                             <div className="w-full border-l-4 border-orange-500 bg-orange-100 text-orange-500 p-3 rounded-lg"> <i className="pi pi-exclamation-triangle"></i> <span className="font-bold ">A helyes válasz:</span> {correct.join("; ")}</div>

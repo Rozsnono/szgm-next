@@ -42,8 +42,6 @@ export default function Home() {
             doneRef.current = user.savedSubjects;
         }
         setLoading(false);
-
-        console.log(data);
         return data
     }
 
@@ -184,7 +182,6 @@ export default function Home() {
             },
             body: JSON.stringify(body)
         }).then(res => res.json()).then(data => {
-            console.log(data);
             setSave(false);
         })
     }
@@ -242,7 +239,7 @@ export default function Home() {
                         </div>
                     </Tooltip>
 
-                    <div className="flex w-full gap-5 text-center justify-center">
+                    <div className="flex lg:flex-row flex-col w-full gap-5 text-center justify-center">
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-600">Teljesített</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-200">Kijelölt</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-yellow-200">Ráépülés</div>
