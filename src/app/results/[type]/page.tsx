@@ -65,7 +65,7 @@ export default function Home() {
         return checkI;
     }
 
-    const results: any = useQuery(param.type + "-result", getResults);
+    // const results: any = useQuery(param.type + "-result", getResults);
 
 
 
