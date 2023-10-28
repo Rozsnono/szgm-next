@@ -100,7 +100,7 @@ export default function Home() {
             </div>
 
             <div className='text-center grid'>
-                {
+                {/* {
                     results.isLoading ?
                         <h3>Töltés...</h3> :
                         results.data && results.data !== undefined && results.data.length > 0?
@@ -115,7 +115,7 @@ export default function Home() {
                             <h3>
                                 Nincs mentett válasz!
                             </h3>
-                }
+                } */}
             </div>
 
         </main>
