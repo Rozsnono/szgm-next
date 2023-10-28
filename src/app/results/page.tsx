@@ -40,11 +40,12 @@ export default function Home() {
         },
     ];
     const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
+    const exam = useRef<any>(selectedExam);
 
     function getResults() {
-        if(!selectedExam) return [];
-        if (sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result")) {
-            const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") as string);
+        if(!exam.current) return [];
+        if (sessionStorage.getItem(exam.current.title.toLowerCase() + "-result")) {
+            const data = JSON.parse(sessionStorage.getItem(exam.current.title.toLowerCase() + "-result") as string);
             getPoint(data);
             return data;
         } else {
@@ -87,7 +88,7 @@ export default function Home() {
         <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg">
             <div className="flex gap-3 w-full">
                 <span className="p-float-label w-full">
-                    <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(e.value); results.refetch() }} options={exams}
+                    <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(() => e.value); exam.current = e.value; results.refetch() }} options={exams}
                         className="w-full " itemTemplate={Template} optionLabel='title' />
                     <label htmlFor="search">Vizsga</label>
                 </span>
