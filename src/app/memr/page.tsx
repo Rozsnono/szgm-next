@@ -64,7 +64,7 @@ export default function Home() {
         if(number > 28){
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            router.push("/results/memr");
+            router.push("/results");
             setNumber(0);
         }
     }
@@ -76,7 +76,7 @@ export default function Home() {
         sessionStorage.setItem("memr-result", JSON.stringify(result));
         sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            router.push("/results/memr");
+            router.push("/results");
             setNumber(0);
     }
 

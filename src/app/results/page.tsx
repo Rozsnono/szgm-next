@@ -7,8 +7,8 @@ import { useQuery } from 'react-query';
 
 export default function Home() {
 
-    // const router = useRouter();
-    // const param = useParams();
+    const router = useRouter();
+    const param = useParams();
 
     const point = useRef(0);
 
@@ -39,18 +39,18 @@ export default function Home() {
             max: 9
         },
     ];
-    // const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
+    const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
 
-    // function getResults() {
-    //     if(!selectedExam) return [];
-    //     if (sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result")) {
-    //         const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") as string);
-    //         getPoint(data);
-    //         return data;
-    //     } else {
-    //         return []
-    //     }
-    // }
+    function getResults() {
+        if(!selectedExam) return [];
+        if (sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result")) {
+            const data = JSON.parse(sessionStorage.getItem(selectedExam.title.toLowerCase() + "-result") as string);
+            getPoint(data);
+            return data;
+        } else {
+            return []
+        }
+    }
 
     function getPoint(data: any){
         let checkI = 0;
@@ -65,7 +65,7 @@ export default function Home() {
         return checkI;
     }
 
-    // const results: any = useQuery(param.type + "-result", getResults);
+    const results: any = useQuery(param.type + "-result", getResults);
 
 
 
@@ -86,8 +86,8 @@ export default function Home() {
     return (
         <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg">
             <div className="flex gap-3 w-full">
-                {/* <span className="p-float-label w-full">
-                    <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(e.value); router.push(e.value.title.toLocaleLowerCase()) }} options={exams}
+                <span className="p-float-label w-full">
+                    <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(e.value); results.refetch() }} options={exams}
                         className="w-full " itemTemplate={Template} optionLabel='title' />
                     <label htmlFor="search">Vizsga</label>
                 </span>
@@ -96,11 +96,11 @@ export default function Home() {
                 </span>
                 <span onClick={()=>{router.push("/"+selectedExam.title.toLocaleLowerCase()); sessionStorage.removeItem(selectedExam.title.toLowerCase() + "-result")}} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
                     Újra
-                </span> */}
+                </span>
             </div>
 
             <div className='text-center grid'>
-                {/* {
+                {
                     results.isLoading ?
                         <h3>Töltés...</h3> :
                         results.data && results.data !== undefined && results.data.length > 0?
@@ -115,7 +115,7 @@ export default function Home() {
                             <h3>
                                 Nincs mentett válasz!
                             </h3>
-                } */}
+                }
             </div>
 
         </main>

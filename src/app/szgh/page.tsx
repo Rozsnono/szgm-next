@@ -63,7 +63,7 @@ export default function Home() {
         if (number + 1 > 23) {
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            router.push("/results/szgh");
+            router.push("/results");
             setNumber(0);
         }
     }
@@ -75,7 +75,7 @@ export default function Home() {
         sessionStorage.setItem("szgh-result", JSON.stringify(result));
         sessionStorage.removeItem("number");
         sessionStorage.removeItem("queue");
-        router.push("/results/szgh");
+        router.push("/results");
         setNumber(0);
     }
 

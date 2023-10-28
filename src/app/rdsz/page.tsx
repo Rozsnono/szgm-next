@@ -63,7 +63,7 @@ export default function Home() {
             sessionStorage.removeItem("number-rdsz");
             sessionStorage.removeItem("queue-rdsz");
             setNumber(0);
-            router.push("/results/rdsz");
+            router.push("/results");
         }
     }
 
@@ -75,7 +75,7 @@ export default function Home() {
         sessionStorage.removeItem("number-rdsz");
         sessionStorage.removeItem("queue-rdsz");
         setNumber(0);
-        router.push("/results/rdsz");
+        router.push("/results");
     }
 
 

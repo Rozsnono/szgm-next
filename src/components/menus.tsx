@@ -23,7 +23,7 @@ export const items = [
     {
         label: 'Eredmények',
         icon: 'pi pi-percentage',
-        command: () => navigateTo('/results/szgh')
+        command: () => navigateTo('/results')
     },
     {
         label: 'Tárgyak',
