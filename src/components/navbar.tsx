@@ -76,29 +76,6 @@ export default function Navbar({
 
 
             <nav className="fixed top-0 w-screen z-99 bg-blue-800 p-2 flex justify-between" style={{ zIndex: "1000" }}>
-                {
-                    checkUser && !isMobile.current ?
-                        <Sidebar visible={menu} onHide={() => setMenu(false)}>
-                            <div className='flex flex-col gap-2'>
-                                {
-                                    items.map((item: any, index: number) => {
-                                        return (
-                                            <>
-                                                {
-                                                    !item.items && !item.separator ?
-                                                        <div onClick={item.command} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div> :
-                                                        item.items && !item.separator ?
-                                                            <MenusItem items={item.items.filter((item: any) => !item.template)} label={item.label}></MenusItem>
-                                                            :
-                                                            <div className="h-10"></div>
-                                                }
-                                            </>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </Sidebar> : <></>
-                }
                 <button onClick={(event: any) => { setMenu(true); setMenuShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
 
                 {
@@ -119,10 +96,26 @@ export default function Navbar({
 
                 }
             </nav>
-            {
-                isMobile.current && menuShow ?
-                    <MobileMenu></MobileMenu> : <></>
-            }
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={checkUser && isMobile.current && { width: "100vw" }}>
+                <div className='flex flex-col gap-2 relative'>
+                    {
+                        items.map((item: any, index: number) => {
+                            return (
+                                <>
+                                    {
+                                        !item.items && !item.separator ?
+                                            <div onClick={item.command} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div> :
+                                            item.items && !item.separator ?
+                                                <MenusItem items={item.items.filter((item: any) => !item.template)} label={item.label}></MenusItem>
+                                                :
+                                                <div className="h-10"></div>
+                                    }
+                                </>
+                            )
+                        })
+                    }
+                </div>
+            </Sidebar>
             {children}
         </main>
     );

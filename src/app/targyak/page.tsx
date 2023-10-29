@@ -41,6 +41,9 @@ export default function Home() {
             setDone(user.savedSubjects.map((item: any) => subjects.filter((items: any) => { return items.code == item })).flat());
             doneRef.current = user.savedSubjects;
         }
+        if (user && subjects) {
+            setMaybe(user.planedSubjects);
+        }
         setLoading(false);
         return data
     }
@@ -86,8 +89,11 @@ export default function Home() {
     }
     function onClick(item: any, nexts: any) {
 
-
-        if (doneRef.current.includes(item)) {
+        if(maybe.includes(item)) {
+            
+            setMaybe(maybe => maybe.filter((items: any) => { return items != item }));
+        }
+        else if (doneRef.current.includes(item)) {
             setDone(done => done.filter((items: any) => { return items.code != subjects.filter((items: any) => { return items.code == item.toString() })[0].code }));
 
             doneRef.current = doneRef.current.filter((items: any) => { return items != item });
@@ -104,6 +110,8 @@ export default function Home() {
                     }
                 ).includes(canItem)
             }))
+
+            setMaybe([...maybe, item]);
 
         } else {
             const tmpDoneLength = subjects.filter((code: any) => { return code.code == item.toString() })[0].prevs.length;
@@ -134,6 +142,7 @@ export default function Home() {
 
     const [semesters, setSemesters] = useState<number[]>([]);
     const [nexts, setNexts] = useState<any[]>([]);
+    const [maybe, setMaybe] = useState<any[]>([]);
     const [can, setCan] = useState<any[]>([]);
     const [prevs, setPrevs] = useState<any[]>([]);
     const [done, setDone] = useState<any[]>([]);
@@ -150,6 +159,15 @@ export default function Home() {
         })
 
         return tmp;
+    }
+
+    function getColorCode(include: any) {
+        if(nexts.includes(include)) return "bg-yellow-200";
+        if(prevs.includes(include)) return "bg-red-200";
+        if(can.includes(include)) return "bg-blue-200";
+        if(doneRef.current.includes(include)) return "bg-green-700";
+        if(maybe.includes(include)) return "bg-sky-400";
+        return "hover:bg-green-200";
     }
 
     function getAllCount() {
@@ -173,7 +191,8 @@ export default function Home() {
         {
             ...user,
             savedSubjects: doneRef.current,
-            savedTematiks: {year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY}
+            savedTematiks: {year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY},
+            planedSubjects: maybe
         };
         fetch("https://teal-frail-ostrich.cyclic.app/api/user/" + body._id, {
             method: "PUT",
@@ -240,11 +259,12 @@ export default function Home() {
                     </Tooltip>
 
                     <div className="flex lg:flex-row flex-col w-full gap-5 text-center justify-center">
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-600">Teljesített</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-700">Teljesített</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-200">Kijelölt</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-yellow-200">Ráépülés</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-red-200">Előkövetelmény</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-blue-200">Felvehető</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-sky-400">Tervezett</div>
                     </div>
 
 
@@ -263,7 +283,7 @@ export default function Home() {
                                         {
                                             Object.values(data.data.courses[0].data).filter((item: any) => { return item.semester == sem }).map((item: any, index: number) => {
                                                 return (
-                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[0].data, item)) ? " bg-yellow-200" : "")}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(data.data.courses[0].data, item)) }> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                 )
                                             })
                                         }
@@ -287,7 +307,7 @@ export default function Home() {
                                         {
                                             Object.values(courses.data).map((item: any, index: number) => {
                                                 return (
-                                                    <div key={index} onClick={() => { onClick(getKeyByValue(courses.data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(courses.data, item)) }} onMouseLeave={onHoverOut} className={"border flex justify-between rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(courses.data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(courses.data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(courses.data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(courses.data, item)) ? " bg-yellow-200" : "")}><div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                    <div key={index} onClick={() => { onClick(getKeyByValue(courses.data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(courses.data, item)) }} onMouseLeave={onHoverOut} className={"border flex justify-between rounded-md border-gray-800 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(courses.data, item))}><div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                 )
                                             })
                                         }
