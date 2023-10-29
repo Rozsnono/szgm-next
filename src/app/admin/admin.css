@@ -1,0 +1,4 @@
+.admin-terminal-input:focus{
+    border: none !important;
+    outline: none !important;
+}
