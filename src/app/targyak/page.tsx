@@ -167,6 +167,17 @@ export default function Home() {
         return tmp;
     }
 
+    function getCountByMaybe(type: any) {
+        let tmp = 0;
+        maybe.forEach((item: any) => {
+            if (Object.keys(type.data).includes(item.code)) {
+                tmp += parseInt(item.credit);
+            }
+        })
+
+        return tmp;
+    }
+
     function getColorCode(include: any) {
         if (nexts.includes(include)) return "bg-yellow-200";
         if (prevs.includes(include)) return "bg-red-200";
@@ -275,7 +286,7 @@ export default function Home() {
 
 
                     <div className="text-center text-lg">{data.data.courses[0].name}</div>
-                    <div className={"text-center text-sm" + (data.data.courses[0].required_credits > getCount(data.data.courses[0]) ? "" : " text-green-600")}>{data.data.courses[0].required_credits} / {getCount(data.data.courses[0])}</div>
+                    <div className={"text-center text-sm" + (data.data.courses[0].required_credits > getCount(data.data.courses[0]) ? "" : " text-green-600")}>{data.data.courses[0].required_credits} / {getCount(data.data.courses[0])} ({getCountByMaybe(data.data.courses[0])})</div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-center">
 
                         {
@@ -306,7 +317,7 @@ export default function Home() {
                                 return (
                                     <div key={c_i} className="flex flex-col gap-2">
                                         <div className="text-center">{courses.name}</div>
-                                        <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0") + (getCount(courses) < courses.required_credits ? "" : " text-green-600 font-bold")}>{courses.required_credits ? courses.required_credits : 0} / {getCount(courses)}</div>
+                                        <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0") + (getCount(courses) < courses.required_credits ? "" : " text-green-600 font-bold")}>{courses.required_credits ? courses.required_credits : 0} / {getCount(courses)} ({getCountByMaybe(courses)})</div>
 
                                         <hr />
 
