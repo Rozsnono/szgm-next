@@ -170,11 +170,10 @@ export default function Home() {
     function getCountByMaybe(type: any) {
         let tmp = 0;
         maybe.forEach((item: any) => {
-            if (Object.keys(type.data).includes(item.code)) {
-                tmp += parseInt(item.credit);
+            if (Object.keys(type.data).includes(item)) {
+                tmp += parseInt(type.data[item].credit);
             }
         })
-
         return tmp;
     }
 
