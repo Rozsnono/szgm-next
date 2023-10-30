@@ -5,6 +5,7 @@ import { useQuery } from "react-query";
 import UserContext from "@/context/user.context";
 import { Dropdown } from "primereact/dropdown";
 
+import { Toast } from 'primereact/toast';
 export default function Home() {
 
     const { user } = useContext(UserContext);
@@ -229,6 +230,12 @@ export default function Home() {
     const [selectedDir, setSelectedDir] = useState<any>();
     const [selectedY, setSelectedY] = useState<any>();
 
+    const toast = useRef<Toast>(null);
+
+    const show = () => {
+        toast.current?.show({severity:'info', summary: 'Info', detail:'Copied to clipboard!', life: 1000});
+    };
+
     return (
         <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm">
             {
@@ -267,10 +274,12 @@ export default function Home() {
                         <div className={"text-lg text-center"}>{data.data.courses ? getAllCount() : 0}</div>
 
                     </div>
+                    <Toast ref={toast} />
 
                     <Tooltip target=".cursor-pointer.duration-100" autoHide={false} position={"top"}>
-                        <div className="flex align-items-center">
+                        <div className="flex items-center gap-3">
                             <a className="underline " href={"https://neptun.sze.hu/coursethematics/details/tid/" + tematik + "/m/5246"}>Tárgytematika</a>
+                            <div className="border border-white text-white rounded-md px-3 py-1 cursor-pointer active:bg-gray-400" onClick={() => { navigator.clipboard.writeText(tematik as string); show() }}> Másolás</div>
                         </div>
                     </Tooltip>
 
