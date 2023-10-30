@@ -14,14 +14,14 @@ export default function Home() {
         setLoading(true);
         let url = "2021-09-01/IVIN_BMI/IVIN_BMI/IVIN_BMI_4";
         if (selectedSub && selectedDir && selectedY && selectedYear) {
-            url = selectedYear +"/" + selectedSub.code + "/" + selectedDir.code + "/" + selectedY.code + "/";
-        }else if(user && user.savedTematiks){
-            
+            url = selectedYear + "/" + selectedSub.code + "/" + selectedDir.code + "/" + selectedY.code + "/";
+        } else if (user && user.savedTematiks) {
+
             setSelectedYear(user.savedTematiks.year);
             setSelectedSub(user.savedTematiks.sub);
             setSelectedDir(user.savedTematiks.dir);
             setSelectedY(user.savedTematiks.y);
-            url = user.savedTematiks.year +"/" + user.savedTematiks.sub.code + "/" + user.savedTematiks.dir.code + "/" + user.savedTematiks.y.code;
+            url = user.savedTematiks.year + "/" + user.savedTematiks.sub.code + "/" + user.savedTematiks.dir.code + "/" + user.savedTematiks.y.code;
         }
         const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/subjects?url=" + url);
         const data: any = await res.json();
@@ -89,11 +89,13 @@ export default function Home() {
     }
     function onClick(item: any, nexts: any) {
 
-        if(maybe.includes(item)) {
-            
+        if (maybe.includes(item)) {
+
             setMaybe(maybe => maybe.filter((items: any) => { return items != item }));
         }
         else if (doneRef.current.includes(item)) {
+            setMaybe([...maybe, item]);
+
             setDone(done => done.filter((items: any) => { return items.code != subjects.filter((items: any) => { return items.code == item.toString() })[0].code }));
 
             doneRef.current = doneRef.current.filter((items: any) => { return items != item });
@@ -111,7 +113,7 @@ export default function Home() {
                 ).includes(canItem)
             }))
 
-            setMaybe([...maybe, item]);
+
 
         } else {
             const tmpDoneLength = subjects.filter((code: any) => { return code.code == item.toString() })[0].prevs.length;
@@ -120,7 +122,11 @@ export default function Home() {
                     return doneRef.current.includes(prev);
                 }
             );
-            if (tmp.length != tmpDoneLength) return;
+            if (tmp.length != tmpDoneLength) {
+                setMaybe([...maybe, item]);
+
+                return
+            };
             setDone([...done, subjects.filter((items: any) => { return items.code == item.toString() })[0]])
             doneRef.current = ([...doneRef.current, item]);
             let tmpCan = [...can, ...nexts.filter(
@@ -162,11 +168,11 @@ export default function Home() {
     }
 
     function getColorCode(include: any) {
-        if(nexts.includes(include)) return "bg-yellow-200";
-        if(prevs.includes(include)) return "bg-red-200";
-        if(can.includes(include)) return "bg-blue-200";
-        if(doneRef.current.includes(include)) return "bg-green-700";
-        if(maybe.includes(include)) return "bg-sky-400";
+        if (nexts.includes(include)) return "bg-yellow-200";
+        if (prevs.includes(include)) return "bg-red-200";
+        if (can.includes(include)) return "bg-blue-200";
+        if (doneRef.current.includes(include)) return "bg-green-700";
+        if (maybe.includes(include)) return "bg-sky-400";
         return "hover:bg-green-200";
     }
 
@@ -191,7 +197,7 @@ export default function Home() {
         {
             ...user,
             savedSubjects: doneRef.current,
-            savedTematiks: {year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY},
+            savedTematiks: { year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY },
             planedSubjects: maybe
         };
         fetch("https://teal-frail-ostrich.cyclic.app/api/user/" + body._id, {
@@ -241,7 +247,7 @@ export default function Home() {
                                     <Dropdown value={selectedY} onChange={(e) => setSelectedY(e.value)} options={selectedDir ? selectedDir.tanterv : []} optionLabel="name" className="w-64" />
                                     <label htmlFor="username">Tanterv</label>
                                 </span>
-                                <div onClick={()=>{data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
+                                <div onClick={() => { data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
 
 
                             </>
@@ -283,7 +289,7 @@ export default function Home() {
                                         {
                                             Object.values(data.data.courses[0].data).filter((item: any) => { return item.semester == sem }).map((item: any, index: number) => {
                                                 return (
-                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(data.data.courses[0].data, item)) }> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(data.data.courses[0].data, item))}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                 )
                                             })
                                         }
