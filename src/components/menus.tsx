@@ -99,7 +99,18 @@ export const items = [
                 template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> Matek 3</p>,
             },
         ]
-    }, {
+    }, 
+    {
+        label: '4. félév',
+        items: [
+            {
+                label: 'MI',
+                icon: Icons['MI'],
+                command: () => navigateTo('/mi')
+            }
+        ]
+    },
+    {
         label: 'Kötelező nem szakmai',
         items: [
             {

@@ -8,5 +8,6 @@ export enum Icons {
     "MEMR" = "pi pi-calculator",
     "VÁLLALAT" = "pi pi-chart-line",
     "ADATBÁZIS" = "pi pi-database",
-    "FIZIKA TÖRI" = "pi pi-globe"
+    "FIZIKA TÖRI" = "pi pi-globe",
+    "MI" = "pi pi-android",
 }
