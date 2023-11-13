@@ -46,11 +46,12 @@
 
 .sections{
     background: #ebebeb;
+    width: calc(6rem * 30);
 }
 
 .sections .box{
-    width: calc(5vw - 0.5rem);
-    height: calc(5vw - 0.5rem);
+    width: 6rem;
+    height: 6rem;
     transition: 1s;
     background: #fff;
     z-index: 100;
