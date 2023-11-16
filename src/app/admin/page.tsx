@@ -51,7 +51,7 @@ export default function Home() {
         switch (command.toLocaleLowerCase()) {
 
             case "logs":
-                tmpResponse = (data.data?.map((item: any, index: number) => { return "|   " + item.log }) as string[]).reverse();
+                tmpResponse = (data.data?.map((item: any, index: number) => { return "|   " + new Date(item.date).toLocaleTimeString() + " - " + item.log }) as string[]).reverse();
                 break;
 
             case "log":
