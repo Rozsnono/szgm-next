@@ -8,6 +8,7 @@ import UserContext, { Coder } from '@/context/user.context';
 import { useState } from 'react';
 import Form from '@/components/form';
 import { usePathname, useRouter } from 'next/navigation';
+import Message from '@/components/message';
 
 const inter = Inter({ subsets: ['latin'] })
 
