@@ -31,11 +31,6 @@ export const items = [
         command: () => navigateTo('/targyak')
     },
     {
-        label: 'Üzenetek',
-        icon: 'pi pi-whatsapp',
-        command: () => navigateTo('/messages    ')
-    },
-    {
         separator: true
     },
     {

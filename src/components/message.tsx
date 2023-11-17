@@ -49,7 +49,7 @@ export default function Message() {
 
 
     useEffect(() => {
-        if (talkLoaded) {
+        if (typeof window != undefined && talkLoaded) {
             currentUser.current = new Talk.User({
                 id: user._id,
                 name: user.user,
