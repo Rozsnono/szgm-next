@@ -29,7 +29,7 @@ export default function Messages() {
 
     return (
         <div className="lg:p-16 p-4 lg:gap-16 gap-4 pt-32 text-lg flex w-screen h-screen">
-            <div className="flex-col items-center border rounded-xl gap-2 bg-gray-200 overflow-hidden relative lg:w-[35rem] w-[80vw] lg:flex hidden">
+            <div className={"flex-col items-center border rounded-xl gap-2 bg-gray-200 overflow-hidden relative lg:w-[35rem] w-[80vw]" + (params.get("id") && " hidden")}>
                 <div className="text-4xl font-bold bg-blue-500 w-full p-4 text-center">Messages</div>
 
                 {allMessages.isLoading && <div className="text-2xl">Loading...</div>}
