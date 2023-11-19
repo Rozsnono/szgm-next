@@ -19,10 +19,12 @@ export default function Users({ except }: { except: any[] }) {
     const users = useQuery<any[]>('users', getUsers);
 
     async function newConversation() {
-        const res = await fetch("https://szgm-next-server-production.up.railway.app/api/message", { method: 'POST', body: JSON.stringify({ participants: [...groupChat.map((value) => {return {_id: value._id, name: value.user}}) ,{ _id: user._id, name: user.user }], lastMessage: [] }), headers: { "Content-Type": "application/json" } })
-        const data = await res.json();
-        console.log(data);
-        window.location.href = "/messages/" + data._id;
+        if (groupChat.length > 0) {
+            const res = await fetch("https://szgm-next-server-production.up.railway.app/api/message", { method: 'POST', body: JSON.stringify({ participants: [...groupChat.map((value) => { return { _id: value._id, name: value.user } }), { _id: user._id, name: user.user }], lastMessage: [] }), headers: { "Content-Type": "application/json" } })
+            const data = await res.json();
+            console.log(data);
+            window.location.href = "/messages/" + data._id;
+        }
     }
 
     const [search, setSearch] = useState('');
@@ -32,7 +34,7 @@ export default function Users({ except }: { except: any[] }) {
         return (
             <div className="bg-white flex items-center border rounded-full gap-2 px-2 my-1">
                 <span className="font-medium">{item.label}</span>
-                <button onClick={() => { setGroupChat(groupChat.filter((user) => { return user.user !== item.label })) }} className="rounded-full text-sm"><i className="pi pi-times" style={{fontSize: "0.6rem"}}></i></button>
+                <button onClick={() => { setGroupChat(groupChat.filter((user) => { return user.user !== item.label })) }} className="rounded-full text-sm"><i className="pi pi-times" style={{ fontSize: "0.6rem" }}></i></button>
             </div>
         )
     }
