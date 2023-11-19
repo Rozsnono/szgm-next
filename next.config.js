@@ -7,8 +7,8 @@ module.exports = {
     async rewrites() {
         return [
             {
-                source: 'https://szgm-next-server-production.up.railway.app/api/:path*',
-                destination: 'https://szgm-next-server-production.up.railway.apphttps://szgm-next-server-production.up.railway.app/api/:path*',
+                source: '/api/:path*',
+                destination: 'https://szgm-next-server-production.up.railway.app/api/:path*',
             },
         ];
     },
