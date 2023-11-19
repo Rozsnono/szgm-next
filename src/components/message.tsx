@@ -169,7 +169,7 @@ export default function Message({ _id }: { _id: string }) {
   }
 
   async function reactToChat(reaction: string, selected: any) {
-    const res = await fetch("https://szgm-next-server-production.up.railway.app/api/message/reaction/655889877599d49c8afbba37", { method: 'PUT', body: JSON.stringify({ _id: selected._id, reaction: reaction }), headers: { "Content-Type": "application/json" } });
+    const res = await fetch("https://szgm-next-server-production.up.railway.app/api/message/reaction/"+selected._id, { method: 'PUT', body: JSON.stringify({ _id: selected._id, reaction: reaction }), headers: { "Content-Type": "application/json" } });
     setShowEmoji(null);
     const data = await res.json();
   }
