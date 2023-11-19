@@ -24,7 +24,7 @@ export default function Home() {
             setSelectedY(user.savedTematiks.y);
             url = user.savedTematiks.year + "/" + user.savedTematiks.sub.code + "/" + user.savedTematiks.dir.code + "/" + user.savedTematiks.y.code;
         }
-        const res = await fetch("/api/subjects?url=" + url);
+        const res = await fetch("https://szgm-next-server-production.up.railway.app/api/subjects?url=" + url);
         const data: any = await res.json();
         let semesters = Object.values(data.courses[0].data).map((item: any) => item.semester)
         semesters = semesters.filter((item: any, index: number) => { return semesters.indexOf(item) == index });
@@ -50,7 +50,7 @@ export default function Home() {
     }
 
     async function getSub() {
-        const res = await fetch("/api/subjectData");
+        const res = await fetch("https://szgm-next-server-production.up.railway.app/api/subjectData");
         const data: any = await res.json();
         const tmpSub = Object.values(data.targyadatok).map((item: any, index: number) => {
             return {
@@ -211,7 +211,7 @@ export default function Home() {
             savedTematiks: { year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY },
             planedSubjects: maybe
         };
-        fetch("/api/user/" + body._id, {
+        fetch("https://szgm-next-server-production.up.railway.app/api/user/" + body._id, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

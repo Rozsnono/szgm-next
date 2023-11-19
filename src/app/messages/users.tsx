@@ -12,14 +12,14 @@ export default function Users({ except }: { except: any[] }) {
     const { user } = useContext<any>(UserContext);
 
     async function getUsers() {
-        const res = await fetch("/api/users");
+        const res = await fetch("https://szgm-next-server-production.up.railway.app/api/users");
         const data = await res.json();
         return data.filter((user: any) => { return user.user == search });
     }
     const users = useQuery<any[]>('users', getUsers);
 
     async function newConversation() {
-        const res = await fetch("/api/message", { method: 'POST', body: JSON.stringify({ participants: [...groupChat.map((value) => {return {_id: value._id, name: value.user}}) ,{ _id: user._id, name: user.user }], lastMessage: [] }), headers: { "Content-Type": "application/json" } })
+        const res = await fetch("https://szgm-next-server-production.up.railway.app/api/message", { method: 'POST', body: JSON.stringify({ participants: [...groupChat.map((value) => {return {_id: value._id, name: value.user}}) ,{ _id: user._id, name: user.user }], lastMessage: [] }), headers: { "Content-Type": "application/json" } })
         const data = await res.json();
         console.log(data);
         window.location.href = "/messages/" + data._id;
