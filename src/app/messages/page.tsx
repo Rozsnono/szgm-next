@@ -3,14 +3,17 @@
 import Message from "@/components/message";
 import UserContext from "@/context/user.context";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { Avatar } from "primereact/avatar";
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import { useQuery } from "react-query";
 import Users from "./users";
-import { AvatarGroup } from 'primereact/avatargroup';
+import { AvatarGroup } from "primereact/avatargroup";
 
 export default function Messages() {
+
+    const path = usePathname();
+    const params = useSearchParams();
 
     const { user } = useContext<any>(UserContext);
 
@@ -20,13 +23,15 @@ export default function Messages() {
         return data;
     }
     const allMessages = useQuery<any>('messagess', getMessages);
-    const path = usePathname();
+
+    const refresh = useRef(0);
 
 
     return (
-        <div className="lg:p-16 p-4 lg:gap-16 gap-4 pt-32 text-lg flex w-screen h-screen lg:justify-start justify-center">
-            <div className="flex flex-col items-center border rounded-xl gap-2 bg-gray-200 overflow-hidden relative lg:w-[35rem] w-[90vw]">
+        <div className="lg:p-16 p-4 lg:gap-16 gap-4 pt-32 text-lg flex w-screen h-screen">
+            <div className="flex-col items-center border rounded-xl gap-2 bg-gray-200 overflow-hidden relative lg:w-[35rem] w-[80vw] lg:flex hidden">
                 <div className="text-4xl font-bold bg-blue-500 w-full p-4 text-center">Messages</div>
+
                 {allMessages.isLoading && <div className="text-2xl">Loading...</div>}
                 <div className="flex flex-col px-3 w-full gap-2">
 
@@ -34,7 +39,7 @@ export default function Messages() {
                         !allMessages.isLoading &&
                         allMessages.data?.map((message: any, index: number) => {
                             return (
-                                <Link href={"/messages/" + message._id} key={index} className="w-full p-4 border flex justify-between rounded-full border-gray-300 group hover:bg-blue-600 hover:text-white cursor-pointer duration-100">
+                                <Link href={"/messages?id=" + message._id} onClick={() => { refresh.current = (refresh.current + 1) % 2 }} key={index} className="w-full p-4 border flex justify-between rounded-full border-gray-300 group hover:bg-blue-600 hover:text-white cursor-pointer duration-100">
                                     <div className="flex items-center">
                                         <AvatarGroup>
 
@@ -75,6 +80,13 @@ export default function Messages() {
                         <Users except={allMessages.data}></Users>
                     }
                 </div>
+            </div>
+            <div key={refresh.current}>
+                {
+                    params.get("id") &&
+                    <Message _id={params.get("id") as string}></Message>
+
+                }
             </div>
         </div>
     )
