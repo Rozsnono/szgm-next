@@ -22,19 +22,19 @@ export default function Home() {
     }
 
     async function getData() {
-        const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/logs");
+        const res = await fetch("/api/logs");
         const data = await res.json();
         return data;
     }
 
     async function getUsers() {
-        const res = await fetch("https://teal-frail-ostrich.cyclic.app/api/users");
+        const res = await fetch("/api/users");
         const data = await res.json();
         return data;
     }
 
     function banUser() {
-        fetch("https://teal-frail-ostrich.cyclic.app/api/user/" + choosen._id + "/" + !choosen.isDeleted, { method: "DELETE" })
+        fetch("/api/user/" + choosen._id + "/" + !choosen.isDeleted, { method: "DELETE" })
     }
 
     const data = useQuery<any[]>('database', getData);
@@ -66,14 +66,14 @@ export default function Home() {
                 setChoosen(users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0]);
                 const banUser = users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0];
                 tmpResponse = ["|    User banned: " + banUser.user];
-                fetch("https://teal-frail-ostrich.cyclic.app/api/user/" + banUser._id + "/" + true, { method: "DELETE" })
+                fetch("/api/user/" + banUser._id + "/" + true, { method: "DELETE" })
                 break;
 
             case "unban":
                 setChoosen(users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0]);
                 const banUser2 = users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0];
                 tmpResponse = ["|    User unbanned: " + banUser2.user];
-                fetch("https://teal-frail-ostrich.cyclic.app/api/user/" + banUser2._id + "/" + false, { method: "DELETE" })
+                fetch("/api/user/" + banUser2._id + "/" + false, { method: "DELETE" })
                 break;
 
             case 'clear':

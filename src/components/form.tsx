@@ -38,7 +38,7 @@ export default function Form({
             data = { ip: "0.0.0.0" };
         }
 
-        const res2 = await fetch("https://teal-frail-ostrich.cyclic.app/api/user?user=" + user + "&password=" + Coder(password) + "&ip=" + data.ip);
+        const res2 = await fetch("/api/user?user=" + user + "&password=" + Coder(password) + "&ip=" + data.ip);
         const data2 = await res2.json();
         try {
             if (data2.length !== 0 && data2[0].user) {

@@ -78,3 +78,60 @@
         transform: translateY(100%);
     }
 }
+
+
+.bottom--2{
+    bottom: -1.3rem;
+}
+
+.rounded-l-full{
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.rounded-r-sm{
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+}
+
+.rounded-l-sm{
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-bl-full{
+    border-bottom-left-radius: 9999px;
+}
+
+.rounded-tl-full{
+    border-top-left-radius: 9999px;
+}
+
+.rounded-r-full{
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+}
+
+.rounded-br-full{
+    border-bottom-right-radius: 9999px;
+}
+
+.rounded-tr-full{
+    border-top-right-radius: 9999px;
+}
+
+.rounded-br-sm{
+    border-bottom-right-radius: 0.125rem;
+}
+
+.rounded-bl-sm{
+    border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-tr-sm{
+    border-top-right-radius: 0.125rem;
+}
+
+.rounded-tl-sm{
+    border-top-left-radius: 0.125rem;
+}

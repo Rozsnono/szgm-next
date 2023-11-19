@@ -8,7 +8,7 @@ module.exports = {
         return [
             {
                 source: '/api/:path*',
-                destination: 'https://teal-frail-ostrich.cyclic.app/api/:path*',
+                destination: 'https://szgm-next-server-production.up.railway.app/api/:path*',
             },
         ];
     },

@@ -5,12 +5,15 @@ import UserContext from "@/context/user.context";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Avatar } from "primereact/avatar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useQuery } from "react-query";
-import Users from "./users";
-import { AvatarGroup } from 'primereact/avatargroup';
+import Users from "../users";
+import { AvatarGroup } from "primereact/avatargroup";
 
 export default function Messages() {
+
+    const path = usePathname();
+
 
     const { user } = useContext<any>(UserContext);
 
@@ -20,13 +23,13 @@ export default function Messages() {
         return data;
     }
     const allMessages = useQuery<any>('messagess', getMessages);
-    const path = usePathname();
 
 
     return (
-        <div className="lg:p-16 p-4 lg:gap-16 gap-4 pt-32 text-lg flex w-screen h-screen lg:justify-start justify-center">
-            <div className="flex flex-col items-center border rounded-xl gap-2 bg-gray-200 overflow-hidden relative lg:w-[35rem] w-[90vw]">
+        <div className="lg:p-16 p-4 lg:gap-16 gap-4 pt-32 text-lg flex w-screen h-screen">
+            <div className="flex-col items-center border rounded-xl gap-2 bg-gray-200 overflow-hidden relative lg:w-[35rem] w-[80vw] lg:flex hidden">
                 <div className="text-4xl font-bold bg-blue-500 w-full p-4 text-center">Messages</div>
+
                 {allMessages.isLoading && <div className="text-2xl">Loading...</div>}
                 <div className="flex flex-col px-3 w-full gap-2">
 
@@ -76,6 +79,7 @@ export default function Messages() {
                     }
                 </div>
             </div>
+            <Message _id={path.split("/")[path.split("/").length - 1]}></Message>
         </div>
     )
 }
