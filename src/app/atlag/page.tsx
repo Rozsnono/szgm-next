@@ -81,9 +81,20 @@ export default function Home() {
         return sum;
     }
 
-    function changeMark(mark: number, subject: string){
-        let tmp = subjectsData.current.filter((item: any) => {return subject == item.subject});
-        
+    function changeMark(mark: number | null, subject: string) {
+        if (mark && mark > 0 && mark < 6) {
+            mark = mark > 6 ? 5 : mark < 0 ? 0 : mark;
+            subjectsData.current = subjectsData.current.map((item: any) => {
+                if (item.subject == subject) {
+                    item.mark = mark;
+                }
+                return item;
+            })
+            setAvg(Average());
+            setCredit(sumCred());
+
+        }
+
     }
 
     return (
@@ -114,7 +125,7 @@ export default function Home() {
                                         <label htmlFor="number-input">Tárgy</label>
                                     </span>
                                     <span className="p-float-label">
-                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} onChange={(e)=>{subjectsData.current[subjectsData.current.indexOf(subjectsData.current.filter((itemF: any) => {return itemF.subject == item.subject})[0])].mark = e}} />
+                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} onChange={(e) => { changeMark(e.value, item.subject) }} />
                                         <label htmlFor="number-input">Érdemjegy</label>
                                     </span>
 
