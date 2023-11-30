@@ -4,8 +4,10 @@ import { useRouter } from 'next/navigation';
 import {Icons} from "../context/icons.enum"
 
 export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
+
     return (
-        <Menu model={items} popup ref={menuLeft} popupAlignment="left" />
+        <></>
+        // <Menu model={items} popup ref={menuLeft} popupAlignment="left" />
     );
 }
 
@@ -18,22 +20,22 @@ export const items = [
     {
         label: 'Átlagszámítás',
         icon: 'pi pi-chart-bar',
-        command: () => navigateTo('/atlag')
+        link: '/atlag'
     },
     {
         label: 'Eredmények',
         icon: 'pi pi-percentage',
-        command: () => navigateTo('/results')
+        link: '/results'
     },
     {
         label: 'Tárgyak',
         icon: 'pi pi-bookmark',
-        command: () => navigateTo('/targyak')
+        link: '/targyak'
     },
     {
         label: 'Üzenetek',
         icon: 'pi pi-whatsapp',
-        command: () => navigateTo('/messages')
+        link: '/messages'
     },
     {
         separator: true
@@ -47,7 +49,7 @@ export const items = [
             {
                 label: 'Matek 1',
                 icon: Icons['Matek 1'],
-                command: () => navigateTo('/matek1')
+                link: '/matek1'
             },
         ]
     }, {
@@ -56,27 +58,27 @@ export const items = [
             {
                 label: 'SZGH',
                 icon: Icons['SZGH'],
-                command: () => navigateTo('/szgh')
+                link: '/szgh'
             },
             {
                 label: 'SZGH-ZH',
                 icon: Icons['SZGH-ZH'],
-                command: () => navigateTo('/szgh-zh')
+                link: '/szgh-zh'
             },
             {
                 label: 'PMSZT',
                 icon: Icons['PMSZT'],
-                command: () => navigateTo('/pmszt')
+                link: '/pmszt'
             },
             {
                 label: 'RDSZ',
                 icon: Icons['RDSZ'],
-                command: () => navigateTo('/rdsz')
+                link: '/rdsz'
             },
             {
                 label: 'Matek 2',
                 icon: Icons['Matek 2'],
-                command: () => navigateTo('/matek2')
+                link: '/matek2'
             },
         ]
     }, {
@@ -88,17 +90,17 @@ export const items = [
             {
                 label: 'MEMR',
                 icon: Icons['MEMR'],
-                command: () => navigateTo('/memr')
+                link: '/memr'
             },
             {
                 label: 'VÁLLALAT',
                 icon: Icons['VÁLLALAT'],
-                command: () => navigateTo('/vallalat')
+                link: '/vallalat'
             },
             {
                 label: 'ADATBÁZIS',
                 icon: Icons['ADATBÁZIS'],
-                command: () => navigateTo('/adatbazis')
+                link: '/adatbazis'
             },
             {
                 template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> Matek 3</p>,
@@ -111,7 +113,7 @@ export const items = [
             {
                 label: 'MI',
                 icon: Icons['MI'],
-                command: () => navigateTo('/mi')
+                link: '/mi'
             }
         ]
     },
@@ -121,7 +123,7 @@ export const items = [
             {
                 label: 'FIZIKA TÖRI',
                 icon: Icons['FIZIKA TÖRI'],
-                command: () => navigateTo('/fizika')
+                link: '/fizika'
             }
         ]
     }, 

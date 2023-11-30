@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">sze-helper</string>
+    <string name="title_activity_main">sze-helper</string>
+    <string name="package_name">com.szehelper.app</string>
+    <string name="custom_url_scheme">com.szehelper.app</string>
+</resources>

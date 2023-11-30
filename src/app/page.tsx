@@ -15,11 +15,11 @@ export default function Home() {
   const menuLeft = useRef<Menu | null>(null);
   const router = useRouter();
 
-  const {user} = useContext<any>(UserContext);
-  const [checkUser , setuser] = useState<any | null>(user);
-  
-  useEffect(() => {setuser(user)},[user])
-  
+  const { user } = useContext<any>(UserContext);
+  const [checkUser, setuser] = useState<any | null>(user);
+
+  useEffect(() => { setuser(user) }, [user])
+
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center lg:p-24 p-16">
@@ -31,7 +31,15 @@ export default function Home() {
       <div className="lg:flex flex-cols-2 ">
         <Image src={SZE} height={100} width={600} alt='' ></Image>
         <div className="items-center">
-          <button onClick={(event: any) => menuLeft.current?.toggle(event)} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
+          <button onClick={() => {
+            const link = document.createElement('a');
+            link.href = '/sze-helper.apk';
+            link.download = 'sze-helper.apk';
+            link.click();
+          }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'>
+            <i className='pi pi-mobile'></i> Download APK
+          </button>
+
         </div>
       </div>
     </main>
