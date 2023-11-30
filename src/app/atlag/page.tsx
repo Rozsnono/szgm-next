@@ -6,10 +6,11 @@ import Subject from "../../txts/subjects.json"
 import { InputNumber } from 'primereact/inputnumber';
 import { Button } from 'primereact/button';
 import { Divider } from 'primereact/divider';
+import { Dropdown } from "primereact/dropdown";
 
 
 export default function Home() {
-    const [value, setValue] = useState<string>('');
+    const [value, setValue] = useState<any>({ subject: '', cred: '' });
     const [number, setNumber] = useState<number | null>(null);
     const [items, setItems] = useState<string[]>([]);
 
@@ -41,8 +42,9 @@ export default function Home() {
     const subjectsData = useRef<any>([]);
 
     function addSubject() {
+        console.log(value, number);
         if (value && number) {
-            subjectsData.current.push({ subject: value, mark: number, cred: subjects.data.filter((item: { subject: string; }) => item.subject == value)[0].cred });
+            subjectsData.current.push({ subject: value.subject, mark: number, cred: value.cred });
             setValue('');
             setNumber(null);
 
@@ -84,12 +86,14 @@ export default function Home() {
             <div className="grid gap-5">
                 <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full border-2 border-blue-700 rounded-lg p-6 gap-4">
                     <span className="p-float-label">
-                        <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} />
+                        <Dropdown value={value} onChange={(e: any) => setValue(e.value)} options={subjects.data} optionLabel={"subject"}
+                            filter className="w-full md:w-14rem" />
+                        {/* <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} /> */}
                         <label htmlFor="number-input">Tárgy</label>
                     </span>
                     <span className="p-float-label">
                         <InputNumber id="number-input" min={1} max={5} value={number} onValueChange={(e) => setNumber(e.value ? e.value : null)} />
-                        <label htmlFor="number-input">Édemjegy</label>
+                        <label htmlFor="number-input">Érdemjegy</label>
                     </span>
                     <button onClick={addSubject} className='px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-plus'></i> Új tárgy</button>
                 </div>
@@ -105,7 +109,7 @@ export default function Home() {
                                         <label htmlFor="number-input">Tárgy</label>
                                     </span>
                                     <span className="p-float-label">
-                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} readOnly/>
+                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} readOnly />
                                         <label htmlFor="number-input">Édemjegy</label>
                                     </span>
 
