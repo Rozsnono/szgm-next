@@ -81,6 +81,11 @@ export default function Home() {
         return sum;
     }
 
+    function changeMark(mark: number, subject: string){
+        let tmp = subjectsData.current.filter((item: any) => {return subject == item.subject});
+        
+    }
+
     return (
         <main className="lg:flex grid-col-reverse min-h-screen gap-10 items-center justify-center lg:p-24 p-6 pt-24">
             <div className="grid gap-5">
@@ -109,8 +114,8 @@ export default function Home() {
                                         <label htmlFor="number-input">Tárgy</label>
                                     </span>
                                     <span className="p-float-label">
-                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} readOnly />
-                                        <label htmlFor="number-input">Édemjegy</label>
+                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} onChange={(e)=>{subjectsData.current[subjectsData.current.indexOf(subjectsData.current.filter((itemF: any) => {return itemF.subject == item.subject})[0])].mark = e}} />
+                                        <label htmlFor="number-input">Érdemjegy</label>
                                     </span>
 
                                     <Button icon="pi pi-trash" rounded severity="danger" label="Törlés" onClick={() => { removeSubject(index ? index : 0) }} />
