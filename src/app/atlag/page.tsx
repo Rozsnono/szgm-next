@@ -81,17 +81,19 @@ export default function Home() {
 
     function PriceIndex(): number {
 
-        let sum = 0;
+        let sum: number = 0;
         let credSum: number = 0;
+        let compCredSum: number = 0;
 
         for (const i of subjectsData.current) {
-            if(i.mark != 1){
-                sum += i.mark * i.cred;
-                credSum += parseInt(i.cred);
+            sum += (i.mark < 2 ? 0 : i.mark) * i.cred;
+            if(i.mark > 1){
+                compCredSum += parseInt(i.cred);
             }
+            credSum += parseInt(i.cred);
         }
         if (sum == 0 || credSum == 0) return 0;
-        return parseFloat((sum / (credSum > 20 ? credSum : 20)).toFixed(2));
+        return parseFloat(parseFloat(((sum / compCredSum) * (compCredSum / credSum)).toString()).toFixed(2));
     }
 
     function sumCred() {

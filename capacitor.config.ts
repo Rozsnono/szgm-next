@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.szehelper.app',
-  appName: 'sze-helper',
+  appName: 'SZE helper',
   webDir: 'out',
   bundledWebRuntime: false,
   server: {
