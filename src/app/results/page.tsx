@@ -85,7 +85,7 @@ export default function Home() {
     };
 
     return (
-        <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg">
+        <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-32 text-lg">
             <div className="flex gap-3 w-full">
                 <span className="p-float-label w-full">
                     <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(() => e.value); exam.current = e.value; results.refetch() }} options={exams}

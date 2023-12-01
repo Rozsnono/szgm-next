@@ -36,7 +36,6 @@ export default function RootLayout({
           <UserContext.Provider value={{ user, setUser }}>
             <Navbar>
               <Form>
-                <div className='lg:hidden flex h-24'></div>
                 {children}
               </Form>
             </Navbar>

@@ -51,14 +51,14 @@ export default function Home() {
         switch (command.toLocaleLowerCase()) {
 
             case "logs":
-                tmpResponse = (data.data?.map((item: any, index: number) => { return "|   " + new Date(item.date).toLocaleDateString("hu-HU", {year: 'numeric',month: 'long',day: 'numeric'}) + " - " + item.log }) as string[]).reverse();
+                tmpResponse = (data.data?.map((item: any, index: number) => { return "|   " + new Date(item.date).toLocaleDateString("hu-HU", {month: 'long',day: 'numeric', hour:"2-digit", minute:"2-digit"}) + " - " + item.log }) as string[]).reverse();
                 break;
 
             case "log":
-                tmpResponse = (data.data?.filter((item) => { return item.log.includes(text.substring(argsIndex + 1)) }).map((item: any, index: number) => { return "|      " + new Date(item.date).toLocaleTimeString("hu-HU", { hour: '2-digit', minute: '2-digit', second: '2-digit' }) + " - " + item.log }) as string[]).reverse();
+                tmpResponse = (data.data?.filter((item) => { return item.log.includes(text.substring(argsIndex + 1)) }).map((item: any, index: number) => { return "|      " + new Date(item.date).toLocaleDateString("hu-HU", {month: 'long',day: 'numeric', hour:"2-digit", minute:"2-digit"}) + " - " + item.log }) as string[]).reverse();
                 break;
 
-            case "users":
+            case "list":
                 tmpResponse = (users.data?.map((item: any, index: number) => { return "|   " + item.user }) as string[]).reverse();
                 break;
 
@@ -89,7 +89,7 @@ export default function Home() {
                     "- unban <username>",
                     "- clear",
                     "- help",
-                    "- users",
+                    "- list users",
                 ]
                 break;
             default:

@@ -1,7 +1,7 @@
 
 import { Menu } from 'primereact/menu';
 import { useRouter } from 'next/navigation';
-import {Icons} from "../context/icons.enum"
+import { Icons } from "../context/icons.enum"
 
 export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
 
@@ -11,10 +11,13 @@ export default function MenuS({ menuLeft }: { menuLeft: Menu | null | any }) {
     );
 }
 
-export  function navigateTo(to: string) {
+export function navigateTo(to: string) {
     window.location.href = to;
     sessionStorage.clear();
 }
+
+export const urls = ["/atlag","/targyak"];
+
 
 export const items = [
     {
@@ -106,7 +109,7 @@ export const items = [
                 template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> Matek 3</p>,
             },
         ]
-    }, 
+    },
     {
         label: '4. félév',
         items: [
@@ -126,7 +129,7 @@ export const items = [
                 link: '/fizika'
             }
         ]
-    }, 
-    
+    },
+
 
 ];

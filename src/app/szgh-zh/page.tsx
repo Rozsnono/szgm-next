@@ -60,12 +60,12 @@ export default function Home() {
                                             
                                             {
                                                 item.includes("?") ?
-                                                    <p className="font-bold">
+                                                    <p className="font-bold lg:text-md text-sm">
                                                         <br/>
                                                         {item}
                                                     </p>
                                                     :
-                                                    <p>
+                                                    <p className="lg:text-md text-sm">
                                                         {item}
                                                     </p>
                                             }

@@ -80,7 +80,7 @@ export default function Home() {
 
 
     return (
-        <main>
+        <main className="lg:pt-0 pt-12">
             {
                 !pmszt.isLoading && queue.length > 0 ?
                     <QuestionTab max={24} icon="database" img={pmszt.data[queue[number]].pic} question={pmszt.data[queue[number]].question} number={number + 1} answers={pmszt.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>

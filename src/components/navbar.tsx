@@ -12,6 +12,7 @@ import { useRouter } from 'next/navigation';
 import MobileMenu from "./mobile.menu"
 import { useQuery } from 'react-query';
 import { Tooltip } from 'primereact/tooltip';
+import { urls } from './menus';
 
 export default function Navbar({
     children,
@@ -75,7 +76,7 @@ export default function Navbar({
     }
 
     return (
-        
+
         <main className="relative">
 
 
@@ -84,11 +85,11 @@ export default function Navbar({
 
                 {
                     checkUser && checkUser.role === 1 ?
-                        <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-user'></i> Register</button> : <></>
+                        <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-user'></i></button> : <></>
                 }
                 {
                     checkUser && checkUser.role !== 3 ?
-                        <button onClick={() => { window.location.href = "/admin" }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i> Admin</button> : <></>
+                        <button onClick={() => {  router.replace("/admin"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i></button> : <></>
                 }
                 {
                     checkUser && checkUser.role === 1 && show &&
@@ -96,21 +97,31 @@ export default function Navbar({
                 }
                 {
                     checkUser ?
-                        <button onClick={() => { logout(); setUser({}); router.replace("/"); router.refresh(); window.location.reload() }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-out'></i> Log out</button> : <></>
+                        <button onClick={() => { logout(); setUser({}); router.replace("/"); router.refresh(); window.location.reload() }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-out'></i> Log out</button> : 
+                        <button onClick={() => { router.replace("/login"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-in'></i> Log in</button>
 
                 }
             </nav>
             <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={checkUser && isMobile.current && { width: "100vw" }}>
                 <div className='flex flex-col gap-2 relative'>
                     {
+                        !checkUser ?
+                        items.filter((item: any) => { return urls.includes(item.link) }).map((item: any, index: number) => {
+                            return (
+                                <div key={index}>
+                                    <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div>
+                                </div>
+                            )
+                        }) 
+                        :
                         items.map((item: any, index: number) => {
                             return (
                                 <div key={index}>
                                     {
                                         !item.items && !item.separator ?
-                                            <div onClick={()=>{navigateTo(item.link); setMenu(false)}} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div> :
+                                            <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div> :
                                             item.items && !item.separator ?
-                                                <MenusItem items={item.items.filter((item: any) => !item.template)} label={item.label} onClick={(e)=>{navigateTo(e); setMenu(false)}}></MenusItem>
+                                                <MenusItem items={item.items.filter((item: any) => !item.template)} label={item.label} onClick={(e) => { navigateTo(e); setMenu(false) }}></MenusItem>
                                                 :
                                                 <div className="h-10"></div>
                                     }
@@ -125,7 +136,7 @@ export default function Navbar({
     );
 }
 
-function MenusItem({ items, label, onClick }: {items: any, label: string, onClick: (e: any) => void}) {
+function MenusItem({ items, label, onClick }: { items: any, label: string, onClick: (e: any) => void }) {
 
 
     return (
@@ -135,7 +146,7 @@ function MenusItem({ items, label, onClick }: {items: any, label: string, onClic
                 {
                     items.map((item: any, index: number) => {
                         return (
-                            <div onClick={()=>{onClick(item.link);}} key={index} data-pr-tooltip={item.label} data-pr-position={"top"} className="p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i></div>
+                            <div onClick={() => { onClick(item.link); }} key={index} data-pr-tooltip={item.label} data-pr-position={"top"} className="p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i></div>
                         )
                     })
                 }

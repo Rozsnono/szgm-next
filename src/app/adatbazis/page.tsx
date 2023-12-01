@@ -33,7 +33,7 @@ export default function Home() {
 
 
     return (
-        <main className="flex flex-col min-h-screen gap-4 lg:p-12 lg:pt-24 p-6 pt-24 text-lg">
+        <main className="flex flex-col min-h-screen gap-4 lg:p-12 lg:pt-24 p-6 pt-32 text-lg">
             <div className="flex gap-3 lg:w-1/3 w-full">
                 <span className="p-float-label w-full">
                     <InputText className={"w-full " + (data.length === 0 && value != null && value != "" ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); setData(search(e.target.value)) }} />

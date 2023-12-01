@@ -10,11 +10,12 @@ import { Dropdown } from "primereact/dropdown";
 
 
 export default function Home() {
-    const [value, setValue] = useState<any>({ subject: '', cred: '' });
+    const [value, setValue] = useState<any>();
     const [number, setNumber] = useState<number | null>(null);
     const [items, setItems] = useState<string[]>([]);
 
     const [avg, setAvg] = useState<number | null>(null);
+    const [price, setPrice] = useState<number | null>(null);
     const [credit, setCredit] = useState<number | null>(null);
 
     function getSubjects() {
@@ -42,13 +43,17 @@ export default function Home() {
     const subjectsData = useRef<any>([]);
 
     function addSubject() {
-        console.log(value, number);
-        if (value && number) {
-            subjectsData.current.push({ subject: value.subject, mark: number, cred: value.cred });
+        if (value) {
+            let tmpV = value;
+            if(typeof value == "string"){
+                tmpV = subjects.data.filter((item: { subject: any; }) => item.subject == value)[0];
+            }
+            subjectsData.current.push({ subject: tmpV.subject, mark: number ? number : 0, cred: tmpV.cred });
             setValue('');
             setNumber(null);
 
             setAvg(Average());
+            setPrice(PriceIndex());
             setCredit(sumCred());
         }
     }
@@ -65,11 +70,28 @@ export default function Home() {
         let credSum: number = 0;
 
         for (const i of subjectsData.current) {
-            sum += i.mark * i.cred;
-            credSum += parseInt(i.cred);
+            if(i.mark > 0){
+                sum += i.mark * i.cred;
+                credSum += parseInt(i.cred);
+            }
         }
         if (sum == 0 || credSum == 0) return 0;
         return parseFloat((sum / credSum).toFixed(2));
+    }
+
+    function PriceIndex(): number {
+
+        let sum = 0;
+        let credSum: number = 0;
+
+        for (const i of subjectsData.current) {
+            if(i.mark != 1){
+                sum += i.mark * i.cred;
+                credSum += parseInt(i.cred);
+            }
+        }
+        if (sum == 0 || credSum == 0) return 0;
+        return parseFloat((sum / (credSum > 20 ? credSum : 20)).toFixed(2));
     }
 
     function sumCred() {
@@ -90,6 +112,7 @@ export default function Home() {
                 }
                 return item;
             })
+            setPrice(PriceIndex());
             setAvg(Average());
             setCredit(sumCred());
 
@@ -101,14 +124,14 @@ export default function Home() {
         <main className="lg:flex grid-col-reverse min-h-screen gap-10 items-center justify-center lg:p-24 p-6 pt-24">
             <div className="grid gap-5">
                 <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full border-2 border-blue-700 rounded-lg p-6 gap-4">
-                    <span className="p-float-label">
-                        <Dropdown value={value} onChange={(e: any) => setValue(e.value)} options={subjects.data} optionLabel={"subject"}
-                            filter className="w-full md:w-14rem" />
-                        {/* <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} /> */}
+                    <span className="p-float-label mx-auto">
+                        {/* <Dropdown value={value} onChange={(e: any) => setValue(e.value)} options={subjects.data} optionLabel={"subject"}
+                            filter className="w-full" /> */}
+                        <AutoComplete value={value} suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} className="w-full"/>
                         <label htmlFor="number-input">Tárgy</label>
                     </span>
-                    <span className="p-float-label">
-                        <InputNumber id="number-input" min={1} max={5} value={number} onValueChange={(e) => setNumber(e.value ? e.value : null)} />
+                    <span className="p-float-label mx-auto">
+                        <InputNumber id="number-input" min={0} max={5} value={number} onValueChange={(e) => setNumber(e.value ? e.value : null)} />
                         <label htmlFor="number-input">Érdemjegy</label>
                     </span>
                     <button onClick={addSubject} className='px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-plus'></i> Új tárgy</button>
@@ -120,12 +143,12 @@ export default function Home() {
                         subjectsData.current.map((item: { subject: any; mark: string; }, index: number | null | undefined) => {
                             return (
                                 <div key={index} className="grid grid-cols-1 lg:grid-cols-3 min-w-full gap-7 ">
-                                    <span className="p-float-label">
+                                    <span className="p-float-label mx-auto">
                                         <AutoComplete value={item.subject} readOnly suggestions={items} completeMethod={search} onChange={(e: any) => setValue(e.value)} />
                                         <label htmlFor="number-input">Tárgy</label>
                                     </span>
-                                    <span className="p-float-label">
-                                        <InputNumber id="number-input" min={1} max={5} value={parseInt(item.mark)} onChange={(e) => { changeMark(e.value, item.subject) }} />
+                                    <span className="p-float-label mx-auto">
+                                        <InputNumber id="number-input" min={0} max={5} value={parseInt(item.mark)} onChange={(e) => { changeMark(e.value, item.subject) }} />
                                         <label htmlFor="number-input">Érdemjegy</label>
                                     </span>
 
@@ -142,19 +165,25 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col border-2 border-blue-700 rounded-lg p-8 gap-8">
-                <span className="p-float-label">
+                <span className="p-float-label mx-auto">
                     <InputNumber id="number-input" value={avg && avg > 0 ? avg : null} readOnly />
                     <label htmlFor="number-input">Átlag</label>
                 </span>
-                <span className="p-float-label">
+
+                <span className="p-float-label mx-auto">
+                    <InputNumber id="number-input" value={price && price > 0 ? price : null} readOnly />
+                    <label htmlFor="number-input">ÖsztöndíjIndex</label>
+                </span>
+                <span className="p-float-label mx-auto">
                     <InputNumber id="number-input" value={credit && credit > 0 ? credit : null} readOnly />
 
                     <label htmlFor="number-input">Felvett kredit</label>
                 </span>
-                <span className="p-float-label">
+                <span className="p-float-label mx-auto">
                     <InputNumber id="number-input" value={subjectsData.current.length > 0 ? subjectsData.current.length : null} readOnly />
                     <label htmlFor="number-input">Felvett tárgyak</label>
                 </span>
+                
             </div>
 
 

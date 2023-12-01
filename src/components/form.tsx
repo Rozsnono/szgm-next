@@ -12,6 +12,7 @@ export default function Form({
 
     const [TMPuser, setTMPUser] = useState('');
     const [pass, setPass] = useState('');
+    const path = usePathname();
 
     const { user, setUser } = useContext<any>(UserContext);
     const [checkUser, setCheckUser] = useState<any | null>(undefined);
@@ -44,7 +45,7 @@ export default function Form({
             if (data2.length !== 0 && data2[0].user) {
                 localStorage.setItem("6429FC567AB4618A", JSON.stringify(data2[0]));
                 window.location.reload();
-    
+
             }
         } catch (error) {
             setMessage("User not found");
@@ -52,10 +53,12 @@ export default function Form({
 
     }
 
+    const urls = ["/atlag", "/targyak", "/"]
+
     return (
         <>
             {
-                checkUser == null ?
+                checkUser == null && urls.filter((url) => {return path == url}).length === 0 ?
                     <>
                         {
                             checkUser === undefined ?
@@ -430,6 +433,7 @@ export default function Form({
 
 
 import { SelectButton } from 'primereact/selectbutton';
+import { usePathname } from "next/navigation";
 
 export function Register() {
 

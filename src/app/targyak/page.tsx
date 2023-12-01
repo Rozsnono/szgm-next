@@ -6,6 +6,7 @@ import UserContext from "@/context/user.context";
 import { Dropdown } from "primereact/dropdown";
 
 import { Toast } from 'primereact/toast';
+import Loading from "../loading";
 export default function Home() {
 
     const { user } = useContext(UserContext);
@@ -69,6 +70,10 @@ export default function Home() {
         }
         return tmpData
     }
+
+
+    const data = useQuery<any>('subss', getData);
+    const subjectsData = useQuery<any>('sub', getSub, { refetchOnWindowFocus: false });
 
     const [subjects, setSubjects] = useState<any[]>([]);
 
@@ -222,8 +227,6 @@ export default function Home() {
         })
     }
 
-    const data = useQuery<any>('database', getData, { refetchOnWindowFocus: false });
-    const subjectsData = useQuery<any>('sub', getSub, { refetchOnWindowFocus: false });
 
     const [selectedYear, setSelectedYear] = useState<any>();
     const [selectedSub, setSelectedSub] = useState<any>();
@@ -233,16 +236,19 @@ export default function Home() {
     const toast = useRef<Toast>(null);
 
     const show = () => {
-        toast.current?.show({severity:'info', summary: 'Info', detail:'Copied to clipboard!', life: 1000});
+        toast.current?.show({ severity: 'info', summary: 'Info', detail: 'Copied to clipboard!', life: 1000 });
     };
 
     return (
         <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm">
             {
-                !data.isLoading && data.data &&
+                !data.isLoading && data.data ?
                 <div className="flex w-full flex-col gap-3">
                     <div className="flex justify-between lg:flex-row flex-col justify-center items-center gap-6">
-                        <div onClick={!save ? saving : () => { }} className={"border w-full text-center border-green-800 bg-green-800 text-white hover:text-green-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
+                        {
+                            user &&
+                            <div onClick={!save ? saving : () => { }} className={"border w-full text-center border-green-800 bg-green-800 text-white hover:text-green-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
+                        }
 
                         {
                             !subjectsData.isLoading && subjectsData.data &&
@@ -264,6 +270,7 @@ export default function Home() {
                                     <Dropdown value={selectedY} onChange={(e) => setSelectedY(e.value)} options={selectedDir ? selectedDir.tanterv : []} optionLabel="name" className="w-64" />
                                     <label htmlFor="username">Tanterv</label>
                                 </span>
+
                                 <div onClick={() => { data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
 
 
@@ -401,6 +408,8 @@ export default function Home() {
                     </div>
 
                 </div>
+                :
+                <Loading></Loading>
             }
         </main>
     );

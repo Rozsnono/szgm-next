@@ -22,7 +22,6 @@ export default function Users({ except }: { except: any[] }) {
         if (groupChat.length > 0) {
             const res = await fetch("https://szgm-next-server-production.up.railway.app/api/message", { method: 'POST', body: JSON.stringify({ participants: [...groupChat.map((value) => { return { _id: value._id, name: value.user } }), { _id: user._id, name: user.user }], lastMessage: [] }), headers: { "Content-Type": "application/json" } })
             const data = await res.json();
-            console.log(data);
             window.location.href = "/messages/" + data._id;
         }
     }
