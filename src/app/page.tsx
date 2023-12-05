@@ -28,8 +28,9 @@ export default function Home() {
           <Menus menuLeft={menuLeft}></Menus> : <></>
       }
 
-      <div className="lg:flex flex-cols-2 ">
-        <Image src={SZE} height={100} width={600} alt='' ></Image>
+      <div className="flex flex-col  gap-2">
+        
+        <div className='flex flex-col text-[5rem] font-bold p-6 border-2 underline border-blue-800 rounded-lg text-blue-800'>Nem hivatalos oldal!</div>
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');
