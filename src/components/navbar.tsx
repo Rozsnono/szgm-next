@@ -9,7 +9,6 @@ import { Sidebar } from 'primereact/sidebar';
 import UserContext, { logout } from '@/context/user.context';
 import { useRouter } from 'next/navigation';
 
-import MobileMenu from "./mobile.menu"
 import { useQuery } from 'react-query';
 import { Tooltip } from 'primereact/tooltip';
 import { urls } from './menus';

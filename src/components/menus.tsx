@@ -106,7 +106,9 @@ export const items = [
                 link: '/adatbazis'
             },
             {
-                template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> Matek 3</p>,
+                label: 'Matek 3',
+                icon: Icons['Matek 3'],
+                link: '/matek3'
             },
         ]
     },
