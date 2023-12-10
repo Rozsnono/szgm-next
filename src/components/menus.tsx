@@ -52,7 +52,8 @@ export const items = [
             {
                 label: 'Matek 1',
                 icon: Icons['Matek 1'],
-                link: '/matek1'
+                link: '/matek1',
+                type: "study"
             },
         ]
     }, {
@@ -61,27 +62,32 @@ export const items = [
             {
                 label: 'SZGH',
                 icon: Icons['SZGH'],
-                link: '/szgh'
+                link: '/szgh',
+                type: "test"
             },
             {
                 label: 'SZGH-ZH',
                 icon: Icons['SZGH-ZH'],
-                link: '/szgh-zh'
+                link: '/szgh-zh',
+                type: "study"
             },
             {
                 label: 'PMSZT',
                 icon: Icons['PMSZT'],
-                link: '/pmszt'
+                link: '/pmszt',
+                type: "test"
             },
             {
                 label: 'RDSZ',
                 icon: Icons['RDSZ'],
-                link: '/rdsz'
+                link: '/rdsz',
+                type: "test"
             },
             {
                 label: 'Matek 2',
                 icon: Icons['Matek 2'],
-                link: '/matek2'
+                link: '/matek2',
+                type: "study"
             },
         ]
     }, {
@@ -93,22 +99,26 @@ export const items = [
             {
                 label: 'MEMR',
                 icon: Icons['MEMR'],
-                link: '/memr'
+                link: '/memr',
+                type: "test"
             },
             {
                 label: 'VÁLLALAT',
                 icon: Icons['VÁLLALAT'],
-                link: '/vallalat'
+                link: '/vallalat',
+                type: "test"
             },
             {
                 label: 'ADATBÁZIS',
                 icon: Icons['ADATBÁZIS'],
-                link: '/adatbazis'
+                link: '/adatbazis',
+                type: "study"
             },
             {
                 label: 'Matek 3',
                 icon: Icons['Matek 3'],
-                link: '/matek3'
+                link: '/matek3',
+                type: "study"
             },
         ]
     },
@@ -118,7 +128,8 @@ export const items = [
             {
                 label: 'MI',
                 icon: Icons['MI'],
-                link: '/mi'
+                link: '/mi',
+                type: "study"
             }
         ]
     },
@@ -128,7 +139,8 @@ export const items = [
             {
                 label: 'FIZIKA TÖRI',
                 icon: Icons['FIZIKA TÖRI'],
-                link: '/fizika'
+                link: '/fizika',
+                type: "study"
             }
         ]
     },

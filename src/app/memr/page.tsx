@@ -12,8 +12,8 @@ export default function Home() {
     function getData() {
         try {
             const data = MEMR;
-            if (sessionStorage.getItem("queue") != "undefined" && sessionStorage.getItem("queue") != null) {
-                const qu: string | any = sessionStorage.getItem("queue");
+            if (sessionStorage.getItem("memr-queue") != "undefined" && sessionStorage.getItem("memr-queue") != null) {
+                const qu: string | any = sessionStorage.getItem("memr-queue");
                 setQueue(JSON.parse(qu) as any)
             } else {
                 setQueue(queuing(data));
@@ -40,7 +40,7 @@ export default function Home() {
                 index--;
             }
         }
-        sessionStorage.setItem("queue", JSON.stringify(array))
+        sessionStorage.setItem("memr-queue", JSON.stringify(array))
         return array;
     }
 
@@ -50,20 +50,20 @@ export default function Home() {
 
     const [queue, setQueue] = useState([]);
 
-    const memr: any = useQuery('subjects', getData);
+    const memr: any = useQuery('memr', getData);
 
     const [number, setNumber] = useState(0);
 
     function Next(item: any) {
-        
+
         setNumber(number + 1);
         sessionStorage.setItem("number", (number + 1).toString());
         let result = sessionStorage.getItem("memr-result") ? JSON.parse(sessionStorage.getItem("memr-result") || "") : [];
         result.push({ question: memr.data[queue[number]].question, answer: item, options: memr.data[queue[number]].option, correct: memr.data[queue[number]].answer, type: memr.data[queue[number]].type });
         sessionStorage.setItem("memr-result", JSON.stringify(result));
-        if(number > 28){
+        if (number > 28) {
             sessionStorage.removeItem("number");
-            sessionStorage.removeItem("queue");
+            sessionStorage.removeItem("memr-queue");
             router.push("/results");
             setNumber(0);
         }
@@ -75,16 +75,17 @@ export default function Home() {
         result.push({ question: memr.data[queue[number]].question, answer: item, options: memr.data[queue[number]].option, correct: memr.data[queue[number]].answer, type: memr.data[queue[number]].type });
         sessionStorage.setItem("memr-result", JSON.stringify(result));
         sessionStorage.removeItem("number");
-            sessionStorage.removeItem("queue");
-            router.push("/results");
-            setNumber(0);
+        sessionStorage.removeItem("memr-queue");
+        router.push("/results");
+        setNumber(0);
     }
 
     return (
         <main className="lg:pt-0">
+            {!memr.isLoading ? <>{console.log(memr.data, queue, number, memr.data[queue[number]])}</> : <></>}
             {
                 !memr.isLoading && queue.length > 0 ?
-                    <QuestionTab icon="calculator" question={memr.data[queue[number]].question} number={number + 1} answers={memr.data[queue[number]].option} next={(e) => { Next(e); }} finished={(e)=>{finished(e)}} type={memr.data[queue[number]].type} max={30}></QuestionTab>
+                    <QuestionTab icon="calculator" question={memr.data[queue[number]].question} number={number + 1} answers={memr.data[queue[number]].option} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={memr.data[queue[number]].type} max={30}></QuestionTab>
                     : <></>
             }
         </main>
