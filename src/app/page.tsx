@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="flex flex-col  gap-2">
         
-        <div className='flex flex-col lg:text-[5rem] text-lg font-bold p-6 border-2 underline border-blue-800 rounded-lg text-blue-800'>Nem hivatalos oldal!</div>
+        <div className='flex flex-col lg:text-[5rem] text-lg font-bold p-12 border-2 underline border-blue-800 rounded-lg text-blue-800'>Nem hivatalos oldal!</div>
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');

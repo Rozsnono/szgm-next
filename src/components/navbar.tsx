@@ -101,14 +101,14 @@ export default function Navbar({
 
                 }
             </nav>
-            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={checkUser && isMobile.current && { width: "100vw" }}>
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={checkUser && isMobile.current ? { width: "100vw" } : {width: "20vw"}}>
                 <div className='grid grid-cols-2 gap-2 relative'>
                     {
                         !checkUser ?
                         items.filter((item: any) => { return urls.includes(item.link) }).map((item: any, index: number) => {
                             return (
                                 <div key={index}>
-                                    <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div>
+                                    <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 cursor-pointer px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800 hover:bg-red-800 hover:text-white" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"}`}><i className={item.icon}></i> {item.label}</div>
                                 </div>
                             )
                         }) 
@@ -118,7 +118,7 @@ export default function Navbar({
                                 <div key={index} className={!item.items && !item.separator ? "" : "col-span-2"}>
                                     {
                                         !item.items && !item.separator  ?
-                                            <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className="p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"><i className={item.icon}></i> {item.label}</div> :
+                                            <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer"}`}><i className={item.icon}></i> {item.label}</div> :
                                             item.items && !item.separator ?
                                                 <MenusItem items={item.items.filter((item: any) => !item.template )} label={item.label} onClick={(e) => { navigateTo(e); setMenu(false) }}></MenusItem>
                                                 :

@@ -38,7 +38,8 @@ export const items = [
     {
         label: 'Üzenetek',
         icon: 'pi pi-whatsapp',
-        link: '/messages'
+        error: true,
+        link: '/'
     },
     {
         separator: true
