@@ -104,6 +104,12 @@ export const items = [
                 type: "test"
             },
             {
+                label: 'MEMR ZH',
+                icon: Icons['MEMR'],
+                link: '/memr-zh?number=5',
+                type: "study"
+            },
+            {
                 label: 'VÁLLALAT',
                 icon: Icons['VÁLLALAT'],
                 link: '/vallalat',
