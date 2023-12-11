@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.szehelper.app',
-  appName: 'SZE helper',
+  appName: 'Tanulas Helper',
   webDir: 'out',
   bundledWebRuntime: false,
   server: {
