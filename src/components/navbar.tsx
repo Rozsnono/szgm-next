@@ -101,7 +101,7 @@ export default function Navbar({
 
                 }
             </nav>
-            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={checkUser && isMobile.current ? { width: "100vw" } : {width: "20vw"}}>
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={isMobile.current ? { width: "100vw" } :{width: "20vw"}}>
                 <div className='grid grid-cols-2 gap-2 relative'>
                     {
                         !checkUser ?

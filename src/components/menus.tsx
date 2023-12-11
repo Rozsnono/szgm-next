@@ -106,7 +106,7 @@ export const items = [
             {
                 label: 'MEMR ZH',
                 icon: Icons['MEMR'],
-                link: '/memr-zh?number=5',
+                link: '/memr-zh/5',
                 type: "study"
             },
             {
