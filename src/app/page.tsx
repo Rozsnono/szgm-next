@@ -34,8 +34,8 @@ export default function Home() {
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');
-            link.href = '/sze-helper.apk';
-            link.download = 'sze-helper.apk';
+            link.href = '/tanulas-helper.apk';
+            link.download = 'tanulas-helper.apk';
             link.click();
           }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'>
             <i className='pi pi-mobile'></i> Download APK
