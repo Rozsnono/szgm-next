@@ -34,7 +34,7 @@ export default function Home() {
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');
-            link.href = '/sze-helper.apk';
+            link.href = 'https://drive.google.com/file/d/1btLmzhTym17loZ-36_q4Ij_mYOtACOZq/view?usp=drive_link';
             link.download = 'sze-helper.apk';
             link.click();
           }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'>
