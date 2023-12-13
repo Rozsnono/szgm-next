@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { InputText } from "primereact/inputtext";
 import { Dropdown } from 'primereact/dropdown';
 import { useContext, useEffect, useState } from "react";
-import UserContext from "@/context/user.context";
+import UserContext, { register } from "@/context/user.context";
 
 
 // import { Terminal } from 'primereact/terminal';
@@ -12,7 +12,7 @@ import Terminal from "./terminal";
 
 export default function Home() {
 
-    const { user } = useContext(UserContext)
+    const { user } = useContext(UserContext);
 
 
     if (typeof window !== "undefined") {
@@ -33,8 +33,9 @@ export default function Home() {
         return data;
     }
 
-    function banUser() {
-        fetch("https://szgm-next-server-production.up.railway.app/api/user/" + choosen._id + "/" + !choosen.isDeleted, { method: "DELETE" })
+    async function banUser(user: any) {
+        await fetch("https://szgm-next-server-production.up.railway.app/api/user/" + user._id + "/" + !user.isDeleted, { method: "DELETE" });
+        window.location.reload();
     }
 
     const data = useQuery<any[]>('database', getData);
@@ -48,18 +49,31 @@ export default function Home() {
         let argsIndex = text.indexOf(' ');
         let command = argsIndex !== -1 ? text.substring(0, argsIndex) : text;
 
+
         switch (command.toLocaleLowerCase()) {
 
             case "logs":
-                tmpResponse = (data.data?.map((item: any, index: number) => { return "|   " + new Date(item.date).toLocaleDateString("hu-HU", {month: 'long',day: 'numeric', hour:"2-digit", minute:"2-digit"}) + " - " + item.log }) as string[]).reverse();
+                tmpResponse = (data.data?.map((item: any, index: number) => { return "|   " + new Date(item.date).toLocaleDateString("hu-HU", { month: 'long', day: 'numeric', hour: "2-digit", minute: "2-digit" }) + " - " + item.log }) as string[]).reverse();
                 break;
 
             case "log":
-                tmpResponse = (data.data?.filter((item) => { return item.log.includes(text.substring(argsIndex + 1)) }).map((item: any, index: number) => { return "|      " + new Date(item.date).toLocaleDateString("hu-HU", {month: 'long',day: 'numeric', hour:"2-digit", minute:"2-digit"}) + " - " + item.log }) as string[]).reverse();
+                tmpResponse = (data.data?.filter((item) => { return item.log.includes(text.substring(argsIndex + 1)) }).map((item: any, index: number) => { return "|      " + new Date(item.date).toLocaleDateString("hu-HU", { month: 'long', day: 'numeric', hour: "2-digit", minute: "2-digit" }) + " - " + item.log }) as string[]).reverse();
+                break;
+
+
+            case "new":
+                const regData = text.substring(argsIndex + 1).split(" ");
+                const user = regData[0];
+                const password = regData[1];
+                const role = parseInt(regData[2]);
+                if (user && password && role) {
+                    register(user, password, role);
+                }
+                tmpResponse = ["| " + user + " registered!"];
                 break;
 
             case "list":
-                tmpResponse = (users.data?.map((item: any, index: number) => { return "|   " + item.user }) as string[]).reverse();
+                tmpResponse = (users.data?.map((item: any, index: number) => { return "|   " + item.user + " " + (item.isDeleted ? "- Banned" : "") }) as string[]).reverse();
                 break;
 
             case "ban":
@@ -90,6 +104,7 @@ export default function Home() {
                     "- clear",
                     "- help",
                     "- list users",
+                    "- new <username> <password> <role>"
                 ]
                 break;
             default:
@@ -103,6 +118,8 @@ export default function Home() {
         } else {
             setResponse([]);
         }
+        data.refetch();
+        users.refetch();
     };
 
     useEffect(() => {
@@ -115,15 +132,8 @@ export default function Home() {
 
     return (
         <main className="flex flex-col min-h-screen gap-2 lg:p-12 lg:pt-24 p-6 pt-32 text-sm">
-            {
-                !users.isLoading && users.data ?
-                    <div className="flex gap-2">
-                        <Dropdown value={choosen} onChange={(e) => setChoosen(e.value)} options={users.data} optionLabel="user"
-                            placeholder="Users" className="w-fit" />
-                        <div onClick={banUser} className="border border-blue-800 bg-blue-800 text-white flex items-center justify-center p-2 rounded-md cursor-pointer hover:bg-white hover:text-blue-800 duration-100">{choosen && choosen.isDeleted ? "Unban" : "Ban"}</div>
-                    </div> : <></>
-            }
-            <div className="w-full h-[80vh] flex flex-col">
+
+            <div className="w-full h-[80vh] flex gap-3 lg:flex-row flex-col">
                 {/* <Terminal
                     welcomeMessage={`Welcome ${user?.user} on the admin site, what should I do for you?`}
                     prompt="sze$" className="h-full"
@@ -136,9 +146,39 @@ export default function Home() {
                         response: { className: 'text-gray-600 font-thin' }
                     }}
                 /> */}
+
+                {
+                    !users.isLoading && users.data &&
+                    <div className="lg:flex grid grid-cols-2 flex-col gap-2">
+                        {
+                            users.data.map((item: any, index: number) => {
+                                return (
+                                    <div className={`border ${item.isDeleted ? "border-red-600" : ""} rounded-lg p-2 flex justify-between items-center gap-2`} key={index}>
+                                        {item.user}
+                                        <div onClick={() => { banUser(item) }} className="border border-blue-800 bg-blue-800 text-white flex items-center justify-center p-1 text-xs rounded-md cursor-pointer hover:bg-white hover:text-blue-800 duration-100">
+                                            {!item.isDeleted ? "BAN" : "UNBAN"}
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                }
+                
                 {!users.isLoading && users.data &&
                     <Terminal commandHandler={commandHandler} response={response} users={users.data}></Terminal>
                 }
+
+                {/* {
+                    !users.isLoading && users.data ?
+                        <div className="flex gap-2">
+                            <Dropdown value={choosen} onChange={(e) => setChoosen(e.value)} options={users.data} optionLabel="user"
+                                placeholder="Users" className="w-fit" />
+                            <div onClick={banUser} className="border border-blue-800 bg-blue-800 text-white flex items-center justify-center p-2 rounded-md cursor-pointer hover:bg-white hover:text-blue-800 duration-100">{choosen && choosen.isDeleted ? "Unban" : "Ban"}</div>
+                        </div> : <></>
+                } */}
+
+
 
                 {/* {!data.isLoading && data.data
                     ? data.data.map((item: any, index: number) => {
