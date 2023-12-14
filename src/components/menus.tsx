@@ -110,6 +110,12 @@ export const items = [
                 type: "study"
             },
             {
+                label: 'MEMR VIZSGA',
+                icon: Icons['MEMR'],
+                link: '/memr-vizsga',
+                type: "study"
+            },
+            {
                 label: 'VÁLLALAT',
                 icon: Icons['VÁLLALAT'],
                 link: '/vallalat',

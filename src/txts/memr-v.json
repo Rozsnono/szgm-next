@@ -1,0 +1,2305 @@
+[
+    {
+        "label": "Elektromágneses spektrum",
+        "text": [
+            "A föld légköre átengedi: rádióhullám (RH), fény (F)",
+            "A föld légköre nem engedi át: mikrohullám (MW), infravörös (IR), ultraibolya (UV), röntgen (X), gamma (Y)"
+        ]
+    },
+    {
+        "label": "Ohm törvénye",
+        "text": [
+            "Ohm törvényében az áramerősség (I) és az ellenállás (R) közötti kapcsolat egyenesen arányos, míg a feszültség (U) és az ellenállás (R) közötti kapcsolat fordítottan arányos."
+        ]
+    },
+    {
+        "label": "Aktív elektronikai elemek",
+        "text": [
+            "Áramgenerátor",
+            "Feszültséggenerátor"
+        ]
+    },
+    {
+        "label": "Passzív elektronikai elemek",
+        "text": [
+            "Ellenállások",
+            "Kondenzátorok",
+            "Kapcsolók",
+            "Tekercsek",
+            "Nyomógombok",
+            "Biztosítékok",
+            "Érzékelők",
+            "Vezetékek"
+        ]
+    },
+    {
+        "label": "Shannon tétele",
+        "text": [
+            "egy mintavételezett jelből akkorlehet az eredeti jelet információ veszteség nélkül visszaállítani, ha a mintavételezési frekvenciaértéke legalább kétszerese az eredeti analóg jelben előforduló legnagyobb frekvenciának"
+        ]
+    },
+    {
+        "label": "Szenzorok",
+        "text": [
+            "A szenzorok olyan jelátalakítók, amelyek valamilyen nem villamos mennyiséget, villamos jellé alakítanak át (egyes esetekben pneumatikussá).",
+            "A szenzorok lehetnek fizikailag jelenlévő mérési érték felvevők, vagy tisztán szoftver szenzorok (ún. figyelők).",
+            "A szenzorok a bemeneti változókat az információ feldolgozóhoz továbbítják, amely azután meghatározza a szükséges aktuátor beavatkozásokat."
+        ]
+    },
+    {
+        "label": "Aktuátor",
+        "text": [
+            "Mechanikai aktuátorok: fogaskerekek, szíjhajtások, orsók",
+            "Fluid-mechanikai aktuátorok: szelepek, kompresszorok, pneumatikus motorok",
+            "Villamos aktuátorok: szinkron, aszinkron, egyenáramú, léptető motorok"
+        ]
+    },
+    {
+        "label": "Kombinációs áramkörök",
+        "text": [
+            "Illesztők",
+            "Dekóderek",
+            "Kóderek",
+            "Kódátalakítók",
+            "Multiplexerek",
+            "Demultiplexerek"
+        ]
+    },
+    {
+        "label": "Sorrendi áramkörök",
+        "text": [
+            "Elemi memóriák",
+            "Logikai automaták",
+            "Regiszterek",
+            "Számlálók"
+        ]
+    },
+    {
+        "label": "Hibrid áramkörök",
+        "text": [
+            "Memóriák",
+            "Aritmetikai egységek",
+            "D/A átalakítók",
+            "A/D átalakítók"
+        ]
+    },
+    {
+        "label": "Műveleti erősítők",
+        "text": [
+            "Kétoldalas, szimmetrikus táplálás",
+            "Invertáló és neminvertáló bemenetek",
+            "A bemenetek különbségét erősíti"
+        ]
+    },
+    {
+        "label": "Integráló erősítő",
+        "text": [
+            "A bemeneti jel időbeli",
+            "integrálása"
+        ]
+    },
+    {
+        "label": "Differenciáló erősítő",
+        "text": [
+            "Az RC elemek cseréjével",
+            "kapjuk",
+            "A kondenzátor árama a",
+            "bemeneti feszültség",
+            "deriváltjával arányos"
+        ]
+    },
+    {
+        "label": "Beágyazott rendszerek",
+        "text": [
+            "Adott feladatot ellátó kis számítógépek",
+            "Cél-specifikus tervezés",
+            "Néhány, előre meghatározott feladatot képes ellátni"
+        ]
+    },
+    {
+        "label": "Központi vezérlőegység fő típusai",
+        "text": [
+            "ASIC (Application Specific Integrated Circuits)",
+            "ASIP (Application-Specific Instruction-set Processor) és DSP (Digital Signal Processor)",
+            "CPLD (Complex Programmable Logic Device)",
+            "FPGA (Field Programmable Gate Array)",
+            "SoC (System On a Chip)",
+            "Mikrokontrollerek"
+        ]
+    },
+    {
+        "label": "Mik a beágyazott rendszerek",
+        "text": [
+            "Adott feladatot ellátó kis számítógépek",
+            "Cél-specifikus tervezés",
+            "Néhány, előre meghatározott feladatot képes ellátni"
+        ]
+    },
+    {
+        "label": "Mi az a szenzor?",
+        "text": [
+            "A szenzorok olyan mérőegységek, vagy jelátalakítók, amelyek valamilyen – általában – nem villamos mennyiséget, villamos jellé alakítanak át (egyes esetekben pneumatikussá).",
+            "A szenzorok lehetnek fizikailag jelenlévő mérési érték felvevők, vagy tisztán szoftver szenzorok (ún. figyelők).",
+            "A szenzorok a bemeneti változókat az információ feldolgozóhoz továbbítják, amely azután meghatározza a szükséges aktuátor beavatkozásokat."
+        ]
+    },
+    {
+        "label": "Metrológia",
+        "text": [
+            "A metrológia tudománya foglalkozik a mennyiségek és mértékegységek származtatásával, a mértékegységek fizikai megvalósításával, és mérések elvi megvalósításának problémáival.",
+            "SI mértékrendszer (Le Système International d’Unités – Nemzetközi Egységrendszer, 1960)"
+        ]
+    },
+    {
+        "label": "Szenzorok osztályozása",
+        "text": [
+            "Mérendő mennyiség alapján",
+            "Jel természete alapján",
+            "Jel kialakításban szereplő kölcsönhatások alapján",
+            "Külső energiaforrás igény alapján"
+        ]
+    },
+    {
+        "label": "Szenzortípusok a jel természete alapján",
+        "text": [
+            "Elektromos jel",
+            "Mágneses jel",
+            "Sugárzási jel",
+            "Kémiai jel",
+            "Termikus jel",
+            "Mechanikai jel"
+        ]
+    },
+    {
+        "label": "Szenzorok a jelek kölcsönhatásai alapján",
+        "text": [
+            "Fizikai szenzorok",
+            "Kémiai szenzorok",
+            "Bioszenzorok: A bioérzékelők olyan érzékelők, melyek működése az élő szervezetekre jellemző specifikus reakción alapul. Pl. a véroxigénérzékelő NEM bioszenzor, hanem egy orvosbiológiai célokra kialakított kémiai érzékelő."
+        ]
+    },
+    {
+        "label": "Mérőrendszerek statikus karakterisztikái",
+        "text": [
+            "Pontosság",
+            "Precizitás",
+            "Felbontás",
+            "Linearitás",
+            "Érzékenység",
+            "Stabilitás",
+            "Ismételhetőség",
+            "Hiszterézis"
+        ]
+    },
+    {
+        "label": "Pontosság",
+        "text": [
+            "A mérőeszköz pontossága a mérőeszköznek az a tulajdonsága, hogy a mérendő mennyiség valódi értékéhez közeli értékmutatást vagy választ szolgáltat.",
+            "Általában a pontos értéket nem ismerjük, így konvencionális valódi, vagyis gyakran megegyezés alapján elfogadott értéket használjuk."
+        ]
+    },
+    {
+        "label": "Precizitás",
+        "text": [
+            "A mérőeszköz precizitása a mérőeszköz azon tulajdonsága, hogy egymáshoz közeli értékeket mutasson.",
+            "A precizitás legjobb mutatója a szórás.",
+            "A szórás statisztikai mértékmutatója a mérés megismételhetőségének"
+        ]
+    },
+    {
+        "label": "Felbontás",
+        "text": [
+            "A felbontóképesség a mérőeszköz azon tulajdonsága, hogy meg tud egymáshoz közeli értékeket különböztetni.",
+            "Analóg műszer esetén a legkisebb skálabeosztás a felbontóképesség.",
+            "Digitális műszerek esetén ez a legkisebb tizedesjegyű érték."
+        ]
+    },
+    {
+        "label": "Linearitás",
+        "text": [
+            "A mérőműszer azon tulajdonsága, hogy a válaszfüggvényt a bemeneti jel lineáris funkcióját generálja."
+        ]
+    },
+    {
+        "label": "Érzékenység",
+        "text": [
+            "A mérőeszköz kimenőjelének megváltozása osztva a bemenőjel megfelelő megváltozásával."
+        ]
+    },
+    {
+        "label": "Stabilitás",
+        "text": [
+            "A mérőeszköznek az a képessége, hogy metrológiai jellemzőit időben folyamatosan megőrzi.",
+            "A berendezés stabilitása definiálható különböző változások függvényében, de mindenek előtt az időbeni változásokra vonatkozik. Léteznek hosszútávú és rövidtávú stabilitási hibák."
+        ]
+    },
+    {
+        "label": "Ismételhetőség",
+        "text": [
+            "A mérőeszköznek az a képessége, hogy azonos mérendő mennyiséget azonos feltételek között ismételten megmérve egymáshoz közeli értékmutatásokat ad.",
+            "A megismételhetőségi hibát a válaszfüggvény maximális és minimális értéke közötti különbségként definiáljuk, ugyanannak a bemenőjelnek, legalább ötszöri, egymásutáni alkalmazásakor."
+        ]
+    },
+    {
+        "label": "Hiszterézis",
+        "text": [
+            "A mérőeszköz hiszterézise olyan tulajdonság, hogy a bemenőjelre adott válaszfüggvény függ az előző bemenőjelek sorrendjétől."
+        ]
+    },
+    {
+        "label": "Mérőrendszerek dinamikus karakterisztikái",
+        "text": [
+            "A dinamikus mérések esetében a kimenetet nem a bemenet függvényében, hanem az időtarto-mányban vizsgáljuk, hiszen éppen az a kérdés, hogy a szenzor milyen gyorsan reagál a bemenet változásaira.",
+            "A műszer modellje, azaz a matematikai kifejezés, amely összeköti a bemenetet a kimenettel, közelíthető a bemenőjel differenciálhányadosainak lineáris kombinációjával."
+        ]
+    },
+    {
+        "label": "Aktuátorok",
+        "text": [
+            "Az aktuátorok a vezérlőrendszerek végrehajtó vagy beavatkozó szervei.",
+            "Feladatuk, hogy a vezérlő algoritmus kimenő jeleit konkrét tevékenységgé alakítsák át.",
+            "Az információt, illetve a vezérlőrendszer döntését az aktuátor egy digitális kód alakjában kapja, amit fizikai jellé kell átalakítani"
+        ]
+    },
+    {
+        "label": "Aktuátorok csoportosítása",
+        "text": [
+            "Mechanikai aktuátorok: fogaskerekek, szíjhajtások, orsók",
+            "Fluid-mechanikai aktuátorok: szelepek, kompresszorok, pneumatikus motorok",
+            "Villamos aktuátorok: szinkron, aszinkron, egyenáramú, léptető motorok"
+        ]
+    },
+    {
+        "label": "A mechanikus aktuátorok típusai",
+        "text": [
+            "Forgó-forgó",
+            "Forgó-haladó",
+            "Haladó-forgó",
+            "Haladó-haladó"
+        ]
+    },
+    {
+        "label": "Fluidmechanikai aktuátorok fajtái",
+        "text": [
+            "Pneumatikus: az 1 bar-ig terjedő nyomást vezérlési feladatokhoz, a 6-10 bar nyomást aktuátorok működtetésére használják. A pneumatikus körfolyamok nyitottak.",
+            "Hidraulikus: az aktuátorokat kis (30-60 bar), közepes (160 bar-ig) és nagy (420 bar-ig) nyomással működtetik. A hidraulikus körfolyamokban a munkaközeg (a folyadék) zárt körforgást végez."
+        ]
+    },
+    {
+        "label": "Villamos aktuátorok fajtái",
+        "text": [
+            "Általában motorok:",
+            "• Szinkron",
+            "• Aszinkron",
+            "• Egyenáramú",
+            "• Léptető, stb."
+        ]
+    },
+    {
+        "label": "Villamos aktuátorok áramkörei",
+        "text": [
+            "Az aktuátorokat tartalmazó áramkörök rendszerint a következő jellegzetes elemek csoportjaiból állnak:",
+            "Betáplálóhálózat vagy áramforrás",
+            "Biztosítékok",
+            "Védőelemek",
+            "Vezérlőelemek (ki-és bekapcsolás)",
+            "Energiaátalakítók (feszültségváltók, frekveciaváltók)",
+            "Különböző szűrő és fojtóelemek (zavarelhárítás)",
+            "Végrehajtóelemek"
+        ]
+    },
+    {
+        "label": "Mi az a beadboard",
+        "text": [
+            "A beadboard (más néven próbapanel) egy elektronikai prototípusokhoz használatos konstrukció.",
+            "Előnye, hogy forrasztásmentes, tehát gyorsan és könnyedén összeállítható rajta bármilyen elektronika.",
+            "Hátránya, hogy az így készített prototípusok nem tartósak."
+        ]
+    },
+    {
+        "label": "Mi az interfész?",
+        "text": [
+            "Az interfész (más néven kapcsolódási felület) általában két (vagy több) számítógépes eszköz érintkezési felülete.",
+            "Lehet gép és ember közötti interakciós felület is.",
+            "Általában vezetékes, de lehet vezetéknélküli megoldás"
+        ]
+    },
+    {
+        "label": "Beágyazott rendszerek interfészei",
+        "text": [
+            "GPIO (General Pupose Input/Output)",
+            "SPI (Serial Peripheral Interface)",
+            "UART (Universal Asynchronous Receiver-Transmitter)",
+            "I2C (Inter-Integrated Circuit)",
+            "USB (Universal Serial Bus)"
+        ]
+    },
+    {
+        "label": "GPIO",
+        "text": [
+            "A GPIO (General Purpose Input Output) egy általános felhasználású port.",
+            "Különféle kimeneti és bemeneti jeleket tudunk manipulálni."
+        ]
+    },
+    {
+        "label": "GPIO száma",
+        "text": [
+            "Raspberry Pi GPIO: 24",
+            "Arduino GPIO: 22"
+        ]
+    },
+    {
+        "label": "SPI",
+        "text": [
+            "Ez egy szinkron soros kommunikációs interfész",
+            "Rövidtávú kommunikáció jellemzi",
+            "A Motorola fejlesztette ki a szabványt",
+            "Full-duplex módban működik",
+            "Négy logikai jellel rendelkezik"
+        ]
+    },
+    {
+        "label": "Az SPI jelei",
+        "text": [
+            "SCLK: Serial Clock (master kimenet)",
+            "MOSI: Master Out Slave In (master adat kimenet)",
+            "MISO: Master In Slave Out (slave adat kimenet)",
+            "SS: Slave Select (master kimenet, aktív logikai alacsony szint)"
+        ]
+    },
+    {
+        "label": "UART",
+        "text": [
+            "Aszinkron soros kommunikációs interfész",
+            "Állítható adatformátum és átviteli sebesség",
+            "Általában egy különálló integrált áramkör",
+            "A kommunikáció egyaránt lehet szimplex és duplex",
+            "A küldő és fogadó fél ugyanolyan beállításokkal kell, hogy rendelkezzen (bit sebesség, karakterhosszúság, paritásbit, stopbit)"
+        ]
+    },
+    {
+        "label": "I2C",
+        "text": [
+            "Két vezetékes soros interfész",
+            "Kis sebességű kommunikáció",
+            "A Philips fejlesztette ki",
+            "Egyszerű használat, akár több master eszköz",
+            "A felső sebességet kell csak definiálni",
+            "Két felhízó ellenállás segítségével szinte korlátlan számú eszközt lehet összekötni"
+        ]
+    },
+    {
+        "label": "USB",
+        "text": [
+            "Ipari szabványként alkották meg, hogy összeköthessék a periféria eszközöket a számítógépekkel",
+            "A kommunikáción túl, tápfeszültséget is képes továbbítani az eszközök számára",
+            "Erősen korlátozott a hosszúságban (5m)",
+            "Soros és párhuzamos kommunikációra is képes"
+        ]
+    },
+    {
+        "label": "Analóg jelek tulajdonságai",
+        "text": [
+            "Időben folytonos",
+            "Kiszámítható, vagy sztochasztikus",
+            "Pillanatnyi értékük az amplitúdó",
+            "Diagramokon ábrázoljuk (x-idő, y-mennyiség)",
+            "Analóg jelek pl.: nyomás, erő, hőmérséklet, áram, feszültség, stb."
+        ]
+    },
+    {
+        "label": "Determinisztikus jelek",
+        "text": [
+            "Azokat a jeleket, ahol a jel múltbeli viselkedésből és a jelenkori értékéből matematikai módszerek segítségével meg tudjuk határozni, a jel jövőbeli viselkedését, determinisztikus jeleknek nevezzük."
+        ]
+    },
+    {
+        "label": "Sztochasztikus jelek",
+        "text": [
+            "Azokat a jeleket, ahol a jel múltbeli viselkedésből és a jelenkori értékéből nem lehet következtetni a jel jövőbeli viselkedésre sztochasztikus jeleknek nevezzük"
+        ]
+    },
+    {
+        "label": "Periodikus jelek",
+        "text": [
+            "Egy f(t) jelet periodikusnak nevezünk, ha adott időközönként ugyanaz a minta ismétlődik benne"
+        ]
+    },
+    {
+        "label": "Kváziperiodikus jelek",
+        "text": [
+            "Kváziperiodikus jeleknek nevezzük azokat a jeleket, amelyek egy adott periódus alatt ismétlődnek, azonban az ismétlések nem periodikusak."
+        ]
+    },
+    {
+        "label": "Tranziens jelek",
+        "text": [
+            "A tranziens jelek nem periodikusak, egyszeri lecsengésűek, és a jel által szállított energia véges"
+        ]
+    },
+    {
+        "label": "Digitális jelek",
+        "text": [
+            "Egy jelet digitálisnak nevezünk, ha értelmezési tartományában is és értékkészletében is diszkrét"
+        ]
+    },
+    {
+        "label": "Jelkondicionálás",
+        "text": [
+            "A jelkondicionálás során a jelátalakítóból érkező jelet egyrészt erősítéssel a megfelelő intenzitásúra állítjuk, másrészt szűrjük az analóg jelet a zajtól.",
+            "Aluláteresztő szűrő (low-pass filter):"
+        ]
+    },
+    {
+        "label": "A/D átalakítás",
+        "text": [
+            "Az analóg-digitális átalakítók (A/D konverter) a bementi feszültséget a feszültség nagyságával arányos egész számmá alakítják.",
+            "Fontos tényezők még a(z): konverziós idő, mintavételi frekvencia, felbontás, legkisebb jelentőségű bit, sávszélesség."
+        ]
+    },
+    {
+        "label": "A jelfeldolgozó egység DSP",
+        "text": [
+            "A DSP-egység tartalmazza azt, a leggyakrabban szoftveres módon megvalósított logikát, melynek feladata az információ kinyerése és feldolgozása a digitalizált jelből.",
+            "A szoftvereket könnyű az adott feladathoz igazítani.",
+            "a DSP-egységekben megvalósított szoftvereknél törekedni kell a minél gyorsabb – lehetőleg valós idejű – futásra."
+        ]
+    },
+    {
+        "label": "D/A átalakítás",
+        "text": [
+            "A D/A átalakítók feladata az, hogy a bemenetére érkező digitális jelből (bináris információból) azzal arányos analóg jelet hozzon létre a lehető legkisebb hibával."
+        ]
+    },
+    {
+        "label": "Jelfeldolgozási módszerek",
+        "text": [
+            "Időalapú jelfeldolgozás (ha a jel időbeli viselkedésén akarunk változtatni)",
+            "Frekvenciaalapú jelfeldolgozás (ha a feldolgozás alapja a jelben levő frekvenciákon végzett művelet): Fourier-sor"
+        ]
+    },
+    {
+        "label": "Modellillesztés",
+        "text": [
+            "A jelfeldolgozás során gyakori feladat a mért jelek grafikus ábrázolása",
+            "Nem a pontok közvetlen összekötése a cél, hanem a mért folyamatot legjobban megközelítő kvantitatív összefüggés megtalálása – amelyet illesztési függvénynek is nevezünk.",
+            "Egyik legismertebb illesztő függvény a legkisebb négyzetek módszere"
+        ]
+    },
+    {
+        "label": "Legkisebb négyzetek módszere",
+        "text": [
+            "Az illesztési függvény együtthatóit úgy határozzuk meg, hogy a függvény egyenletéből szerkesztett görbe és a mérési adatok közötti (függőleges) távolságok négyzeteinek összege minimális legyen"
+        ]
+    },
+    {
+        "label": "Villamos motorok",
+        "text": [
+            "A villamos motorok a villamos energiát mechanikai energiává alakítják.",
+            "A villamos motor lehetnek:",
+            " Egyenáramú",
+            " Váltakozó áramú:",
+            "– Egyfázisú",
+            "– Háromfázisú"
+        ]
+    },
+    {
+        "label": "Váltakozó áramú motorok",
+        "text": [
+            "Kollektoros",
+            " Szinkron",
+            " Aszinkron"
+        ]
+    },
+    {
+        "label": "Egyenáramú motorok",
+        "text": [
+            "Klasszikus kefés DC motor",
+            " Kétpólusú kommutátoros DC motor",
+            " Többpólusú kommutátoros DC motor"
+        ]
+    },
+    {
+        "label": "DC motor a gyakorlatban ",
+        "text": [
+            "Páratlan pólusú forgórész",
+            " Vasmag nélküli forgórész (coreless)",
+            " Működési vizsgálat:",
+            "– A forgórész (rotor) szöghelyzete φ, az A-val jelölt tekercs szögeltérése",
+            "– az egyik kommutációs pont 0 rotorállásnál található, ezt tekintjük az 1. fázis kezdőpontjának.",
+            "– A forgórész egy teljes 360º-os körbefordulása 6 fázis alatt zajlik le."
+        ]
+    },
+    {
+        "label": "Léptető motorok",
+        "text": [
+            "Szakaszosan érkező jelekkel táplálva meghatározott nagyságú szögelfordulásokat tesznek.",
+            " Jellegzetesen az összes tekercselés a motor állórészén helyezkedik el.",
+            " A mozgáshoz szükséges összes kommutációt a motor vezérlésének kell megoldania, ami nem része a motornak.",
+            " Képesek mindkét irányba forogni."
+        ]
+    },
+    {
+        "label": "Léptető motorok típusai vezérlés alapján",
+        "text": [
+            "Unipoláris tekercselésű ",
+            "Bipoláris tekercselésű"
+        ]
+    },
+    {
+        "label": "Léptetőmotorok vezérlései",
+        "text": [
+            "Hullámhajtás",
+            " Egészlépéses üzemmód",
+            " Féllépéses üzemmód",
+            " Mikrolépéses üzemmód"
+        ]
+    },
+    {
+        "label": "Szervomotorok",
+        "text": [
+            "Különböző vezérlő és szabályozó rendszerekben alkalmazzák pozicionálási célból.",
+            " Léteznek egyenáramú és váltakozóáramú szervomotorok",
+            " A szervo egy pozicionálható motor, amely ismeri az aktuális pozícióját, és a cél pozíciót. Feladata, hogy az aktuális pozícióból a kívántra álljon.",
+            " A meghajtást valamilyen motor végzi (általában DC)."
+        ]
+    },
+    {
+        "label": "Motor irányítási alapfeladatok",
+        "text": [
+            "Vezérlés",
+            " Fordulatszám-szabályozás",
+            " Hajtás-szabályozás",
+            " Szervo-szabályozás"
+        ]
+    },
+    {
+        "label": "Motor szabályozások",
+        "text": [
+            "Egy villamos gépnél alapvetően néhány paramétert kell feladatspecifikusan szabályoznunk:",
+            "– Fordulatszám",
+            "– Pozíció",
+            "– Nyomaték",
+            " Attól függően, hogy milyen típusú gépről van szó, sokféle szabályozási technika létezik."
+        ]
+    },
+    {
+        "label": "Motorszabályozási technikák",
+        "text": [
+            "Áramirányítós szabályzás",
+            " Mezőorientált áramvektor-szabályozás",
+            " Feszültséginverteres szabályozás",
+            " Közvetlen nyomatékszabályozás",
+            " Tirisztoros áraminverteres szabályozás",
+            " Impulzusszélesség modulációs áraminverteres szabályozás"
+        ]
+    },
+    {
+        "label": "Szabályozáshoz szükséges elemek",
+        "text": [
+            "Mérőeszközök",
+            " Szenzorok",
+            " Szabályozó áramkörök",
+            " Váltóáramkörök (pl. frekvenciaváltó)",
+            " MOTOR"
+        ]
+    },
+    {
+        "label": "Mérőeszközök",
+        "text": [
+            "Szögmérés:",
+            "– Abszolút és inkrementális jeladók",
+            "– Optikai jeladók",
+            "– Mágneses forgó jeladók",
+            "– Rezolverek",
+            "– Elektromos eszközök: potenciométerek",
+            " Fordulatszám (szögsebesség) jeladók:",
+            "– Mágneses elvű jeladók: tachogenerátor",
+            "– Időmérésen alapuló eszközök: optikai és mágneses impulzusszámlálók",
+            "– Inerciális elvű jeladók: giro-szenzorok (MEMS)",
+            " Nyomaték jeladók"
+        ]
+    },
+    {
+        "label": "Fordulatszámszabályozás",
+        "text": [
+            "A váltakozó áramú motorok fordulatszámának a változtatása a frekvencia változtatásával kivitelezhető a legjobban:",
+            "– Frekvenciaváltó",
+            " Az egyenáramú motorok fordulatszámának a változtatása az impulzusszélesség változtatásával kivitelezhető a legjobban:",
+            "– Impulzus szélesség moduláció (PWM)"
+        ]
+    },
+    {
+        "label": "Frekvenciaváltók",
+        "text": [
+            "Olyan készülék, amibe bevezetjük az áramot és a kimenetére váltakozóáramú motort kapcsolunk.",
+            " A frekvenciaváltó a motorra nem csak 50 Hz-es feszültséget, hanem egy tetszőlegesen változtatható frekvenciájú feszültséget tud adni."
+        ]
+    },
+    {
+        "label": "PWM",
+        "text": [
+            "Az impulzus vezérlés előnyei: az egész fordulatszám tartományban nagyobb nyomaték; nagyobb az indító nyomaték; a vezérlő veszteségei kisebbek."
+        ]
+    },
+    {
+        "label": "Pozíciószabályozás",
+        "text": [
+            "Leggyakrabban szervohajtásokban alkalmazzák",
+            " Szabályozás fajtái:",
+            "– Point-to-point szabályozás (PTP)",
+            "– Continuous-path szabályozás (CP)"
+        ]
+    },
+    {
+        "label": "A pozíciószabályozó egyszerűsített hatásvázlata",
+        "text": [
+            "A pozíciószabályozó átviteli függvénye általános esetben PID típusú: Y = K + 1 / sT + sT",
+            " A PTP gyakorlatban P és PD pozíció szabályozókat alkalmaznak"
+        ]
+    },
+    {
+        "label": "Elmozdulás és pozíció mérő szenzorok",
+        "text": [
+            "Ellenállásos szenzorok",
+            " Kapacitív szenzorok",
+            " Elektromágneses szenzorok",
+            " Piezoelektromos szenzorok",
+            " Optoelektronikus szenzorok",
+            " Ultrahangos szenzorok"
+        ]
+    },
+    {
+        "label": "Ellenállásos szenzorok",
+        "text": [
+            "Mechanikai erő, hőmérséklet változás vagy különböző sugárzások hatására ellenállás változás jön létre.",
+            " Az érzékelő elem maga az ellenállás."
+        ]
+    },
+    {
+        "label": "Forgó potenciométerek",
+        "text": [
+            "Szolenoidos kivitel ",
+            " Grafit érintkezővel"
+        ]
+    },
+    {
+        "label": "Potenciométeres szenzorok tulajdonságai",
+        "text": [
+            "A csúszka súrlódása hiszterézis hibát okoz",
+            " A csúszka és az ellenálláspálya kopik a csúszka és az ellenálláspálya között",
+            " Az átmeneti ellenállás elektronikus zajt okoz",
+            " Csak terheletlenül (Rt = ∞) lineáris",
+            " A linearitást a vezeték-ellenállások is kedvezőtlenül befolyásolják"
+        ]
+    },
+    {
+        "label": "Nyúlásmérő bélyegek fajtái",
+        "text": [
+            "Fémes ellenállas-anyagú ",
+            " Félvezető ellenállas-anyagú"
+        ]
+    },
+    {
+        "label": "Nyúlásmérő bélyegek",
+        "text": [
+            "Mit mérhetünk vele? ",
+            " elmozdulást",
+            " sebességet ",
+            " gyorsulást ",
+            " erőt ",
+            " nyomatékot ",
+            " nyomást"
+        ]
+    },
+    {
+        "label": "Kapacitív szenzorok",
+        "text": [
+            "Két fém felület, melyek között dielektromos szigetelő anyag van",
+            " A kapacitás az alábbi képlettel számítható: C = Ɛ0 * Ɛ * S / d",
+            "A kapacitív szenzorok jó tulajdonságai az egyszerűség, áttekinthetőség, magas érzékenység és alkalmazhatóság magasabb hőmérsékleteknél is."
+        ]
+    },
+    {
+        "label": "Kapacitív szenzorok fajtái",
+        "text": [
+            "Változó felületű kapacitív szenzorok",
+            "Változó dielektrikumú kapacitív szenzorok"
+        ]
+    },
+    {
+        "label": "Elektromágneses szenzorok",
+        "text": [
+            "Az elektromágneses szenzorok működése a tekercs induktivitásának, a mágneses kör mágneses ellenállásának változásán vagy az elektromágneses indukción alapul.",
+            " E tekintetben megkülönböztetjük az öninduktivitás-, kölcsönös induktivitás változásán alapuló és indukciós érzékelőket.",
+            " A kölcsönös- és öninduktivitás változáson alapuló szenzorokat passzív, az indukciós szenzorokat pedig aktív szenzoroknak is nevezzük."
+        ]
+    },
+    {
+        "label": "Elektromágneses szenzorok",
+        "text": [
+            "Mivel a vasmag mágneses ellenállása kicsi, a vasmag veszteségei elhanyagolhatóak, így az induktivitás a következő képlettel határozható meg"
+        ]
+    },
+    {
+        "label": "Önindukciós szenzorok",
+        "text": [
+            "Váltakozó légrésű önindukciós szenzorok"
+        ]
+    },
+    {
+        "label": "Kölcsönös induktivitású szenzorok",
+        "text": [
+            "Nem a tekercs induktivitását mérjük, hanem a két szélső (szekunder) tekercsben indukált feszültséget",
+            " Nagy a megbízhatósága",
+            " Váltakozó hosszú vagy keresztmetszetű légréssel készülnek. Alkalmasak kicsiny mechanikus elmozdulások mérésére."
+        ]
+    },
+    {
+        "label": "Indukciós szenzorok",
+        "text": [
+            "Valójában generátorok, így az aktív szenzorok csoportjába tartoznak",
+            " Ha egy mozgó vezető egy állandó mágnes erővonalait metszi abban feszültség indukálódik.",
+            " Létezik mozgó tekercses vagy mozgó mágneses kivitel"
+        ]
+    },
+    {
+        "label": "Piezoelektromos szenzorok",
+        "text": [
+            "Bizonyos egykristály szerkezetű dielektromos anyagok mechanikai igénybevétel hatására elektromos potenciált produkálnak. A legismertebb ilyen anyag a kvarc (SiO2).",
+            " Készülhetnek prizma, tárcsa, henger(cső) vagy",
+            "hengerszelet alakjában.",
+            " Az érzékenység akkor a legnagyobb, a piezoelektromos átalakító szalag alakú. Sajnos, a szalag szilárdsága kicsi és könnyen törik hosszanti terhelés esetén. Szilárdság szempontjából legmegfelelőbb a cilindrikus alak, de nehéz előállítani."
+        ]
+    },
+    {
+        "label": "Transzformátoros piezoelektromos szenzorok",
+        "text": [
+            "Ezek az érzékelők két piezo-aktív szekcióból tevődnek össze.",
+            " Az érzékelők ezen típusát villamos nagyságok mérésére használjuk (áram, feszültség, frekvencia) és két csoportra osztjuk őket: Feszültség- és áramtranszformátorok."
+        ]
+    },
+    {
+        "label": "Optoelektronikai szenzorok",
+        "text": [
+            "Az optikai szenzorok általában három részből állnak: (fény)forrás, fényérzékelő és szállítóközeg",
+            " Fényérzékelő mint optikai szenzor: a fényenergiát elektromos nagysággá (áram, feszültség, ellenállás, kapacitás vagy villamos töltés) alakítja át.",
+            " Alkalmazási lehetőségek: közelség mérés, távolság mérés, fényerősség, stb."
+        ]
+    },
+    {
+        "label": "Optoelektronikai szenzorok",
+        "text": [
+            "-Közelség érzékelők:",
+            " Fényforrásként LED-et használnak",
+            " Vevőoldalon fotodióda vagy fototranzisztor található",
+            "-Optikai távolságmérő:",
+            " Vörös- vagy lézerfénnyel működnek",
+            " Általában háromszögelési módszeren vagy Time-of-Flight technológián (TOF) alapul."
+        ]
+    },
+    {
+        "label": "Ultrahangos szenzorok",
+        "text": [
+            "Az ultrahang érzékelő a nagyfrekvenciás hanghullámok visszaverődése alapján működik."
+        ]
+    },
+    {
+        "label": "Hőmérsékletmérő szenzorok",
+        "text": [
+            "Expanziós hőmérők",
+            " Ellenállásos hőmérők",
+            " Termoelektromos érzékelők (termoelemek, dióda és tranzisztor mint hőmérséklet érzékelők)",
+            " Hősugárzás érzékelők.",
+            "A felsoroltak mellett léteznek más eljárások is, és a jövőben még újabbak fognak megjelenni!"
+        ]
+    },
+    {
+        "label": "Expanziós hőmérséklet szenzorok",
+        "text": [
+            "Melegedésre tágul, hűtésre viszont összehúzódik, hőmérséklet változásra lineárisan változtatja méreteit.",
+            " Tipikus expanziós érzékelő a higanyos hőmérő.",
+            " A higany mellett használható még toluol, etilalkohol, pentán.",
+            " Lehet még dilatációs hőmérő. Pl. termosztát.",
+            " Vagy bimetálos (ikerfémes) hőmérők."
+        ]
+    },
+    {
+        "label": "Ellenállás hőmérők",
+        "text": [
+            "Fém ellenállás-hőmérők. A fém ellenállás-hőmérőket tekercs alakúra gyártják.",
+            " A platina a legmegfelelőbb anyag ellenállásos hőmérő készítésére, mert 99,999% tisztaságú fém állítható elő, kémiailag semleges és elég nagy az ellenállás, lineáris a hőmérséklet állandója.",
+            " A platina ellenállás hőmérsékletmérésre -200°C-tól 630°C-ig (maximum 1060°C-ig) alkalmazható.",
+            " Lehet még réz vagy nikkel huzalból, de kevésbé hatékony"
+        ]
+    },
+    {
+        "label": "Félvezetős ellenállás hőmérők",
+        "text": [
+            "A termisztorok hőmérsékletre érzékeny félvezető ellenállások, anyagukat tekintve nehézfém oxidokból készült kerámiák.",
+            " A -50 °C-tól 100 °C-ig terjedő tartományban mérnek.",
+            " A termisztorok fajtái lehetnek NTC és PTC típusúak.",
+            " Gyors reakcióval rendelkeznek és az öregedés folyamán nő a stabilitásuk.",
+            " Kifejezetten nemlineáris karakterisztika."
+        ]
+    },
+    {
+        "label": "Termoelemek",
+        "text": [
+            "A termoelemek elsődleges feladata a magas 500 – 1000 °C hőmérsékletek mérése volt. Ma is ezen a területen a legnagyobb a jelentőségük, de alkalmazásuk sikeresen kiterjedt a rendkívül alacsony hőmérsékletek (1K-ig), valamint az egészen magas hőmérsékletek (4000 °C-ig) mérésére is.",
+            " Termoelem a szokványos elnevezése azoknak a mérőeszközöknek amelyek két különböző anyagú, egyik végükön összeforrasztott (összehegesztett esetleg csak erősen összecsavart) huzalból állnak."
+        ]
+    },
+    {
+        "label": "Nyomásmérő szenzorok",
+        "text": [
+            "Azt a skaláris mennyiséget amit az egységnyi felületre S [m2] ható erő F [N] értékére kapunk, nyomásnak nevezzük P [Pa].",
+            " P = F / S",
+            " A nyomásméréseket három csoportba kategorizáljuk:",
+            "– Abszolút nyomásmérés",
+            "– Légnyomásmérés",
+            "– Differenciális nyomásmérés"
+        ]
+    },
+    {
+        "label": "Nyomásmérő szenzorok",
+        "text": [
+            "A nyomásérzékelők lehetnek közvetlen vagy kompenzációs típusúak.",
+            " Mindkét esetben közös elemük az elsődleges érzékelő elem, amely a p nyomást vagy a Δp nyomáskülönbséget erővé alakítja.",
+            " Ez általában egy elasztikus elem, amely az F erő hatására deformálódik vagy pedig elmozdul Δx távolságra.",
+            " A közvetlen átalakítóknál az erő vagy az elmozdulás a következő lépésben elektromos jellé alakul."
+        ]
+    },
+    {
+        "label": "Tipikus nyomásérzékelők",
+        "text": [
+            "A deformáció villamos kimenetté alakul.",
+            " A villamos nyomásérzékelők többsége rendelkezik membrán típusú primer elemmel.",
+            " A primer elem karakterisztikáitól függ a méréstartomány, a rezonáló frekvencia és a szenzor érzékenysége.",
+            " Az elem deformációja, a nyomás hatására jön létre, és a továbbiakban villamos jellé alakul át.",
+            " Megkülönböztetünk elektromágneses, kapacitív, ellenállásos valamint piezoelektromos érzékelőket."
+        ]
+    },
+    {
+        "label": "Szintmérő szenzorok",
+        "text": [
+            "A szint tulajdonképpen egy folyékony, vagy szemcsés anyag magassága az edényben vagy tartályban.",
+            " A szintmérő szenzorokat nívómétereknek is nevezzük.",
+            " A szintet a hosszúság mértékegységében fejezzük ki (m).",
+            " A szintmérésmódszerek két csoportba oszthatók:",
+            "– A kiválasztott diszkrét pontokban történő szintmérési módszerek (minimum, maximum),",
+            "– A folyamatos szintmérési módszerek."
+        ]
+    },
+    {
+        "label": "Szintmérési technikák",
+        "text": [
+            "Úszós szintérzékelők: Az úszó egy 80 - 200 mm átmérőjű gömb. a folyadék felszínén úszik, melynek a szintjét mérjük. Az úszó helyzete mechanikus úton egy mutatóra vagy egy szögelfordulás érzékelőre kerül.",
+            " Merülős szintérzékelők: A merülő általában egy cilindrikus keresztmetszetű rúd mely felső vége egy erő érzékelőre van erősítve. Sűrűsége nagyobb mint a mért folyadék sűrűsége, a hossza pedig közel megegyezik a mérési tartománnyal."
+        ]
+    },
+    {
+        "label": "Szintmérési technikák",
+        "text": [
+            "Hidrosztatikus szintérzékelők: Ezen szenzorok működési elve Pascal törvényén alapul, mely segítségével kiszámítható a P nyomás adott sűrűségű, nyugodt, homogén fluidban h mélységen.",
+            " Ellenállásos szintmérők: leginkább egy kifeszített fém szalagból és egy ellenálláshuzalból állnak. A folyadék vagy a szemcsés anyag felszíne alatt a szalag és a huzal rövidre vannak zárva. Az áramkör ellenállása a felszín felett arányos a mért szinttel."
+        ]
+    },
+    {
+        "label": "Szintmérési technikák",
+        "text": [
+            "Kapacitív szintérzékelők: leginkább sík vagy cilindrikus kondenzátorok melyek fegyverzetei között a mért folyadék helyezkedik el. A folyadék lehet vezető vagy szigetelő.",
+            " Ultrahangos szintérzékelők: A hanghullámok, ultrahanghullámok és a mikrohullámú sugárzás visszaverődése két fluid határfelületéről hatásosan alkalmazható a szintmérés területén. A szint arányos az eltelt t idővel, amíg a hullám megteszi a forrástól az érzékelőig az utat."
+        ]
+    },
+    {
+        "label": "Szintmérő szenzorok",
+        "text": [
+            "radaros",
+            "mágneses ",
+            "kapacitív ",
+            "ultrahangos"
+        ]
+    },
+    {
+        "label": "Inerciális szenzorok – IMU",
+        "text": [
+            "Olyan szenzorok egysége, amelyek valamilyen mozgásból származó értékeket mérnek.",
+            " Lehet:",
+            "– Gyorsulás (gyorsulásmérő)",
+            "– Sebesség (gyorsulásmérő)",
+            "– Megtett út (gyorsulásmérő)",
+            "– Tájolás (giroszkóp)",
+            "– Magasság (magnetométer)"
+        ]
+    },
+    {
+        "label": "Gyorsulásmérő szenzor",
+        "text": [
+            "Egyszerűen fogalmazva a gyorsulásmérő szenzor az X, Y és Z irányba ható erőhatásokat méri.",
+            " Ezeknek az adatoknak a gravitáció miatt tudjuk hasznát venni.",
+            " Tudjuk, ha egy test mozdulatlan, akkor csak a gravitációnak köszönhetően lesz gyorsulása, elhanyagolva minden más minimális erőhatást."
+        ]
+    },
+    {
+        "label": "Giroszkóp",
+        "text": [
+            "Szögsebességet mér a három tengely irányában.",
+            " Nem közvetlenül méri a dőlést (pitch), perdülést (roll) és irányváltoztatást (yaw).",
+            " Ha időben integráljuk a három tengely szögsebesség értékét, akkor megkapjuk a szögekben kifejezett elmozdulásokat a három tengelyre vetítve."
+        ]
+    },
+    {
+        "label": "Magnetométer",
+        "text": [
+            "Mágneses térerősség mérésére szolgáló szenzor.",
+            " A Föld mágneses terét használja az orientáció meghatározására.",
+            " Hasonlóan működik mint az iránytű.",
+            " A mért értékekből kiolvasható az irányváltoztatás."
+        ]
+    },
+    {
+        "label": "Intelligens érzékelő",
+        "text": [
+            "Az intelligens érzékelőkben mikroprocesszorok végzik el a feldolgozási feladatokat. Az érzékelőnek a következő feladatokat kell ellátnia:",
+            " Valamilyen jelet mér",
+            " Digitális módon ezt a jelet feldolgozza",
+            " Szabványos közlési protokollokon keresztül továbbítja",
+            " Rendelkezik önkalibráló, öndiagnosztizáló és alkalmazkodó képességgel.",
+            " Digitális jelfeldolgozás, jeltárolás",
+            " Hibakompenzáció",
+            " Multiszenzor jelfeldolgozás (neurális hálózattal öntanulás)",
+            " Önkalibráció és tesztelés",
+            " Automatikus méréshatár váltás",
+            " Átlag- és hibaszámítás",
+            " Időbeli instabilitások kompenzációja (fuzzy logika alkalmazása)",
+            " Számítógéppel való kommunikáció"
+        ]
+    },
+    {
+        "label": "Gépi látás",
+        "text": [
+            "A gépi látás egy olyan általános gyűjtőfogalom eljárásokra és rendszerekre, amelyekkel (mozgó)kép alapú adatgyűjtés és kiértékelés után vagy annak hatására valamilyen vezérlési, szabályozási vagy gépi értelmezési mechanizmus indul be.",
+            " Machine Vision",
+            " Computer Vision"
+        ]
+    },
+    {
+        "label": "Machine Vision",
+        "text": [
+            "Emberi tényezőt meghaladó képességek géppel (= inkább hardver-orientált módon) való kiváltására",
+            " Kiértékelés (minőség-ellenőrzés, hegesztési varrat minősítés, résméretek, gyógyszerminőség-ellenőrzése)",
+            " Méretezés (tárgy modellezése, kalibráció, 3D rekonstrukció)",
+            " Pozicionálás (futószalag vezérlése, forgatás, robotika)",
+            " Jelenség felismerése (képi diagnosztika, betegségfelismerés, hőhidak felismerése, anyaghibák felderítése)",
+            " Képi kódolás (vonalkód, QR-kód, pozíciókódolás)"
+        ]
+    },
+    {
+        "label": "Computer Vision",
+        "text": [
+            "Az emberi látáshoz köthető feladatok automatizálására, modellezésére (= inkább szoftver-orientált módon)",
+            " Térérzékelés és térlátás (pozicionálás, mélység meghatározás, előtér-háttér szétválasztás, ortofotó automatikus előállítása, kép alapú vonalbíró rendszer)",
+            " Számlálás (kép alapú forgalomszámlálás, belépésszámlálás, mozgás alapú hőtérkép készítése)",
+            " Objektumfelismerés (táblafelismerés, gyalogosfelismerés, ellenségfelismerés, távérzékelés)",
+            " Minta- és jelenségelemzés (csillagászati képelemzés, agyműködés elemzése elektromikroszkóppal, elhagyott tárgyak felismerése, önvezető autók közlekedési helyzetelemzése)",
+            " Azonosítás (kép alapú biometrikus azonosítás, szám- és rendszámfelismerés)",
+            " Nyomkövetés (sportoló által megtett út, lövéserő, elkövetői útvonal felderítése, forgalommodellezés)",
+            " Mechanikai elemzés (testbeszéd alapú hazugságvizsgálat, képi hangulatelemzés, sportolói mozgáselemzés, tengelyterhelés becslése)"
+        ]
+    },
+    {
+        "label": "Előfeldolgozás:",
+        "text": [
+            "bemenet és a kimenet is egy-egy kép",
+            "-Feladatok:",
+            " Fölösleges információk eldobása → átalakítás szürkeárnyalatos képpé",
+            " Zajszűrés",
+            " Élesítés",
+            " Kontraszt erősítése"
+        ]
+    },
+    {
+        "label": "Képszűrés",
+        "text": [
+            "Digitális képfeldolgozás központi fogalma és legfontosabb művelete",
+            " Lokális operátorok",
+            " Legyen f (x, y) a bemeneti (input) kép, g(x, y) a kimeneti (output) kép",
+            " Az (x, y) pontban az eredmény csak a pont környezetétől függ: g(x, y) = T [f (x, y)], ahol T a környezeten definiált operátor."
+        ]
+    },
+    {
+        "label": "Zajtípusok",
+        "text": [
+            "Additív képfüggetlen, azaz fehér zaj: g(x, y) = f(x, y) + vadd(x, y) ahol f(x, y) az inputkép, g(x, y) az outputkép, v(x, y) a zaj. Ez a tipikus csatornazaj (jeltovábbítási zaj, transmission noise).",
+            " Nemkorrelált multiplikatív zaj: g(x, y) = f(x, y) · vmult(x, y). Ez a televíziós rasztersorokra jellemző amplitudó-moduláció (változás).",
+            " Kvantálási zaj (hiba): vkvant(x, y) = gkvant(x, y) − feredeti(x, y) Az eredeti jelérték folytonos, a kvantált jelérték diszkrét, a különbség véletlen zajként jelenik meg.",
+            "• Só-és-bors zaj (salt-and-pepper, vagy peak noise): Ez a pontszerű, a képpel nem korreláló, véletlen zaj legtöbbször szélsőértékű (fekete és fehér). Jellemző egyes fajta űrfelvételekre."
+        ]
+    },
+    {
+        "label": "Átlagszűrő",
+        "text": [
+            "Képtérben működő lineáris simítószűrő",
+            " A súlyok nem negatívak, nem nőnek a középpontól való távolsággal, és 1 az összegük",
+            " A gyakorlatban a súlyok gyakran egész számok, és a maszk alkalmazása után a súlyok összegével normálják az eredményt."
+        ]
+    },
+    {
+        "label": "Átlagszűrők típusai",
+        "text": [
+            "Dobozszűrő (box filter): a legegyszerűbb és a leggyorsabb, azonos súlyokkal rendelkező átlagszűrő Egy (2M + 1) × (2N + 1)-es méretű ablakban az eredmény a képértékek egyszerű, nem súlyozott átlaga:",
+            "Gauss-szűrő: legelterjedtebb átlagszűrő Súlyokat a normáleloszlás (Gauss-eloszlás) adja:"
+        ]
+    },
+    {
+        "label": "Mediánszűrő:",
+        "text": [
+            "A mediánszűrő eredménye az ablakban levő értékek mediánja Példa: egy 3 × 3-as ablakban az értékek: (1, 1, 3, 2, 5, 4, 4, 12, 11) akkor a rendezett sorozat: (1, 1, 2, 3, 4, 4, 5, 11, 12) és a medián a 4.",
+            "A medián meghatározása nemlineáris művelet P és Q számsorozatra",
+            " Az átlaggal ellentétben a medián robusztus statisztikai mennyiség (robust statistics). Ha a hibás adatok aránya kevesebb mint 50%, nem befolyásolják az eredményt."
+        ]
+    },
+    {
+        "label": "Szegmentálás",
+        "text": [
+            "Fontos területek kiválasztása: kép érdekes és érdektelen részeinek meghatározása",
+            " Legtöbbször szín és világosság alapján",
+            " Navigációs alkalmazásoknál például nem érdekes az égbolt, forgalomszámlálásnál az útfelület"
+        ]
+    },
+    {
+        "label": "Szegmentálás",
+        "text": [
+            "Intenzitás alapján, küszöbözéssel:  Nagy homogén területek egyenletes intenzitásértékek",
+            "Régió alapú szegmentálás célja felosztani az I képet n darab R1, . . . , Rn összefüggő és homogén régióra.",
+            " Egy régió homogén, ha valamelyik teljesül:",
+            "| Imax − Imin | kicsi;",
+            " bármelyik I(x, y) R pixelre | I(x, y) − I ∈ mean | kicsi, ahol Imean a régió átlaga;",
+            " a σR intenzitás szórás a régióban kicsi. ",
+            "-Leggyakrabban alkalmazott eljárások:",
+            " Régió növesztés",
+            " Régiók darabolása és egyesítése"
+        ]
+    },
+    {
+        "label": "Régió alapú szegmentálás",
+        "text": [
+            "A szegmentálás eredménye a következőktől függ:",
+            " milyen képi tulajdonságokat használunk ⇒ intenzitás, szín, textúra",
+            " hogyan hasonlítjuk össze a tulajdonságokat",
+            " mekkora változásokat tolerálunk régión belül"
+        ]
+    },
+    {
+        "label": "Régió alapú szegmentálási eljárások",
+        "text": [
+            "-Pixel-felhalomozás:",
+            "Inicializálás",
+            "Iteráció",
+            "Megállás",
+            "",
+            "-Vágás és egyesítés",
+            "1. Föntről lefelé (top-down)",
+            " felosztjuk a képet egyre csökkenő méretű Ri kockákra",
+            " megállunk, ha az összes kocka homogén: P(Ri) = TRUE ⇒ az eredmény egy négyesfa",
+            "2. Lentről fölfelé (bottom-up)",
+            " minden szinten egyesítünk két szomszédos R i és R j régiót,",
+            " ha P(Ri ∪ Rj ) = TRUE",
+            "3. Iteráljuk a két fázist, amíg van új felosztás vagy egyesítés",
+            "",
+            "-Egyéb szegmentálási módszerek:",
+            " Él alapú: objektumok kontúrkeresése élkövetéssel",
+            " Textúra, szín alapú: régiók textúráját, színét használják",
+            " Mozgás alapú: objektumok szegmentálása mozgás alapján"
+        ]
+    },
+    {
+        "label": "Feature detekció",
+        "text": [
+            "Egyes feladatok jelentősen különböző featureök kinyerését igénylik",
+            "Példák:",
+            " Arcfelismerés: hasonlóság különböző biometriai értékek – szemek, orr, áll távolsága, arc szélessége, homlok magassága – alapján",
+            " Nyomtatott vagy kézzel írt szöveg, ujjlenyomatok felismerése: karakterisztikus jegyek keresése",
+            " Jellemző feladatok: élek, kontúrok, sarkok detektálása",
+            "Él: egy nagyobb, a kontúrra merőleges intenzitás-változás",
+            "Sarok: egy hirtelen forduló a kontúron",
+            "Vonal: egy keskeny, hosszú régió",
+            "Folt: egy kompakt régió"
+        ]
+    },
+    {
+        "label": "Éldetektálás folyamata",
+        "text": [
+            "1. élszűrés: élszűrő élekre reagál, vagyis felerősíti az éleket és elnyomja a kis változású régiókat.",
+            "2. éllokalizáció: utófeldolgozás eltünteti a zajos és ún. fantom éleket"
+        ]
+    },
+    {
+        "label": "Élszűrők",
+        "text": [
+            "alkalmazzák a képfüggvény deriváltjait, hogy felerősítsék az élre merőleges intenzitás-változásokat és elnyomják az ilyen változásokat nem tartalmazó régiókat",
+            "egy zajos, elmosott él több szomszédos maximumot produkál",
+            "Leggyakoribb operátorok:",
+            " gradiens operátor",
+            " Laplace-operátor",
+            "",
+            "Jó lineáris élszűrő kritériumai:",
+            "1. Legyen nulla az eredmény ott, ahol nincs képváltozás.",
+            "2. Legyen jó a detektálás, azaz legyen minimális az alábbi események előfordulása:",
+            "   hamis, zajos élek detektálása (false positives)",
+            "   valós élek elvesztése (false negatives)",
+            "3. Legyen jó a lokalizálás: a detektált él a lehető legközelebb legyen a tényleges élhez.",
+            "4. A szűrő legyen izotróp: az eredmény ne függjön az él orientációjától.",
+            "5. A szűrő egy élet csak egyszer jelezzen (single response): legyen minimális a valós él körüli hamis lokális maximumok száma."
+        ]
+    },
+    {
+        "label": "Gradiens élszűrők",
+        "text": [
+            "Feltételezzük, hogy a képfüggvény deriválható és minden pontban meghatározzuk a gradiensvektort",
+            " A gradiensvektor magnitúdója és szöge",
+            " Θ(x, y) a leggyorsabb intenzitás-növekedés iránya, M(x, y) a növekedés nagysága",
+            "A legkisebb méretű 3 × 3-as gradiensszűrők esetén a parciális deriváltakat különbségekkel közelítjük, ezzel az X és Y irányú, G x és G y deriváltmaszkokat kapjuk: f * Gx = fx, f * Gy = fy ahol Gy a Gx 90-fokos elforgatottja."
+        ]
+    },
+    {
+        "label": "Felismerés",
+        "text": [
+            "Legjobban illeszkedő elem megtalálása az adatbázisból",
+            " Feature vektor összehasonlítása az adatbázisban található feature vektorokkal",
+            " Gyakori a tanulási algoritmusok használata (például neurális hálók)"
+        ]
+    },
+    {
+        "label": "Mik a félvezetők",
+        "text": [
+            "A félvezetők olyan anyagok, amelyek fajlagos ellenállása a vezetők és a szigetelők közé esik.",
+            "A félvezetők lehetnek:",
+            "Elemi félvezetők (Si, Ge)",
+            "Félvezető vegyületek (AlP, AlAs,GaAs, stb.)",
+            "Adalékolt félvezetők; n- és p-típusú félvezetők",
+            "Szerves félvezetők (pentacén, poliacetilén)"
+        ]
+    },
+    {
+        "label": "A szilárd félvezetők",
+        "text": [
+            "A szilárd félvezetők szobahőmérsékleten, vegytiszta állapotban gyakorlatilag szigetelők. A hőmérséklet növelésével, illetve szennyezéssel igen sok vezetési elektron keletkezik, és megnövekszik a vezetőképesség.",
+            "A leggyakrabban használt szilárd félvezetők: szilícium (Si), germánium (Ge)."
+        ]
+    },
+    {
+        "label": "Félvezetők szennyezése",
+        "text": [
+            "Az erős hőfüggésű tiszta félvezetők alacsony vezetőképessége idegen atomok hozzáadásával növelhető. ",
+            "Gyakorlatilag a szennyezés mértéke igen kicsi, mindössze 10^–5,10^–6%-os. Ugyanakkor a szennyezés a szabad töltéshordozók számát a termikus töltéshordozók mennyiségéhez képest 10^3 - 10^6-szorosára növeli.",
+            "A szennyezés lehet:",
+            "N-típusú (donor) szennyezés",
+            "P-típusú (akceptor) szennyezés"
+        ]
+    },
+    {
+        "label": "N-típusú (donor) szennyezés",
+        "text": [
+            "A 4 vegyértékű Si kristályhoz 5 vegyértékű atomokat",
+            "(foszfor, antimon, arzén, bizmut) adnak. A szennyezés",
+            "hatására szabad elektronok jönnek létre a kristályban.",
+            "Ilyenkor a többségi töltéshordozók az elektronok, a",
+            "kisebbségi töltéshordozók a lyukak."
+        ]
+    },
+    {
+        "label": "P-típusú (akceptor) szennyezés",
+        "text": [
+            "A 4 vegyértékű Si kristályhoz 3 vegyértékű atomokat (bór,",
+            "alumínium, indium, gallium) adnak. A szennyezés hatására",
+            "elektronhiányt jelentő lyukak jönnek létre a kristályban.",
+            "Ilyenkor a kisebbségi töltéshordozók az elektronok, a",
+            "többségi töltéshordozók a lyukak."
+        ]
+    },
+    {
+        "label": "A töltéshozrdozók mozgása",
+        "text": [
+            "Homogén szennyezettségű félvezetőkben a töltéshordozók mozgásának okai a következők:",
+            "hőmérsékletváltozás (rendezettlen mozgás) a töltéshordozók változó eloszlású koncentrációja (rendezett mozgás)",
+            "belső vagy külső villamos erőtér jelenléte (rendezett mozgás)",
+            "",
+            "Rekombináció: a félvezető kristályban a véletlenszerűen mozgó elektron lyukkal találkozva újraegyesül vele, és az elektron és a lyuk, mint szabad töltéshordozók megszűnnek."
+        ]
+    },
+    {
+        "label": "A félvezető diódák",
+        "text": [
+            "Félvezető dióda: egy elektronikai félvezető eszköz, amely zárt tokban, két kivezetéssel (katód-anód) ellátva egy db PN átmenetet tartalmaz.",
+            "Villamos jelölése:",
+            "P és N típusú rétegek:"
+        ]
+    },
+    {
+        "label": "A PN átmenet",
+        "text": [
+            "Egy N-típusú és egy P-típusú félvezető találkozásánál a",
+            "szennyező atomok eloszlása megváltozik, és a két",
+            "különböző szennyezettségű anyag határán létrejön egy",
+            "néhány μm vastagságú sáv. A két réteg találkozásánál a",
+            "töltéshordozók koncentrációkülönbsége diffúziós áramlást",
+            "hoz létre.",
+            "Az N rétegből elektronok, a P rétegből lyukak diffundálnak",
+            "át a PN átmeneten keresztül az ellentétes rétegbe, ahol",
+            "rekombináció megy végbe, megszűnnek a szabad",
+            "töltéshordozók, és a PN átmenet két oldalán létrejön a",
+            "kiürített réteg."
+        ]
+    },
+    {
+        "label": "A dióda nyitóírányú előfeszítése",
+        "text": [
+            "A P rétegre (anódra) az N réteghez (katódhoz) képest pozitív",
+            "feszültséget kapcsolnak. A dióda ellenállása igen kicsi,",
+            "vezetőként viselkedik. Nyitóirányú áram jön létre."
+        ]
+    },
+    {
+        "label": "A dióda záróirányú előfeszítése",
+        "text": [
+            "A P rétegre (anódra) az N réteghez (katódhoz) képest",
+            "negatív feszültséget kapcsolnak. A dióda ellenállása igen",
+            "nagy, ellenállásként viselkedik. A kiürített réteg",
+            "kiszélesedik, a potenciálgát megnő, a dióda nem vezet."
+        ]
+    },
+    {
+        "label": "Diódák fajtái",
+        "text": [
+            "Egyenirányító dióda",
+            "Zener-dióda",
+            "Schottky-dióda",
+            "Varikap dióda (kapacitásdióda)",
+            "Tűs dióda",
+            "Alagút dióda",
+            "Fotodióda",
+            "LED"
+        ]
+    },
+    {
+        "label": "A bipoláris tranzisztor",
+        "text": [
+            "A bipoláris tranzisztor elektromos jelek erősítésére kifejlesztett, 2 db PN átmenettel rendelkező aktív áramköri elem.",
+            "A bipoláris kifejezés arra utal, hogy működésében mindkét töltéshordozó fajta (elektron, lyuk) részt vesz.",
+            "A bipoláris tranzisztor háromelektródás félvezető eszköz, amely NPN vagy PNP elrendezésű, szennyezett félvezető rétegekből áll.",
+            "Az elektródák elnevezései:",
+            "E - emitter:töltéshordozókat kibocsátó elektróda",
+            "B - bázis: vezérlő elektróda",
+            "C - kollektor:töltéshordozókat gyűjtő elektróda"
+        ]
+    },
+    {
+        "label": "A bipoláris tranzisztor működése II",
+        "text": [
+            "A bázis-emitter átmenetet nyitó irányban, a bázis-kollektor átmenetet",
+            "záró irányban feszítjük elő. A nyitóirányú feszültség hatására az emitter",
+            "tartományban található többségi töltéshordozók (lyukak) rendezett",
+            "áramlással áthaladnak a határrétegen, és így létrejön az emitter áram",
+            "(IE). A kiürített rétegként viselkedő bázistartományba áramlott lyukak",
+            "kis része egyesül (rekombinálódik) az itt található elektronokkal és",
+            "létrejön egy kis értékű bázisáram (IB).",
+            "",
+            "A bázis-kollektor átmenet záróirányú előfeszítése következtében a",
+            "lyukak diffúzió révén rendezetten a kollektor rétegbe áramlanak és",
+            "létrejön a kollektor áram (IC). Az elektronikai gyakorlatban a bipoláris",
+            "tranzisztor IC kollektor áramát az UBE bázis-emitter feszültség és az IB",
+            "bázisáram segítségével vezérelhetjük."
+        ]
+    },
+    {
+        "label": "A bipoláris tranzisztor alapkapcsolásai",
+        "text": [
+            "A tranzisztor fizikai működése nem függ az alapkapcsolástól, de a bemeneti-, kimeneti- és transzfer jellemzői alapkapcsolás függőek."
+        ]
+    },
+    {
+        "label": "Az unipoláris tranzisztor - FET",
+        "text": [
+            "Unipoláris, vagy másnéven térvezérlésű tranzisztoroknak nevezik",
+            "azokat a tranzisztorokat, amelyekben a kialakuló áramot csak egyfajta",
+            "töltéshordozó (elektron vagy lyuk) biztosítja. Erre utal az unipoláris",
+            "elnevezés.",
+            "",
+            "Működésük alapja egy félvezető kristályból álló csatorna vezetőképességének külső villamos erőtér segítségével történő változtatása.",
+            "",
+            "Az elektromos teret egy kapunak nevezett vezérlőelektróda segítségével hozzák létre a csatorna keresztmetszetében. Az elektromos erőteret létrehozó feszültség vezérli a FET áramát.",
+            "",
+            "A kapuelektróda felépítése szerint létezik: jFET (junction FET, záróréteges félvezető) és MOSFET (Metal Oxide Semiconductor, fémoxid félvezető)."
+        ]
+    },
+    {
+        "label": "FET vs. Bipoláris tranzisztor",
+        "text": [
+            "A térvezérlésű tranzisztorok előnyei a bipoláris tranzisztorokkal szemben:",
+            " igen nagy értékű a bemeneti ellenállásuk,",
+            " egyszerűbb a gyártásuk,",
+            " kisebb a helyigényük az integrált áramkörökben."
+        ]
+    },
+    {
+        "label": "A jFET",
+        "text": [
+            "A jFET olyan térvezérlésű eszköz, melynek belső csatornáját két darab, záróirányban előfeszített PN átmenet határolja. A csatorna készülhet N vagy P típusú szennyezéssel",
+            "A FET elektródái",
+            "S – source",
+            "D – drain",
+            "G - gate"
+        ]
+    },
+    {
+        "label": "A jFET felépítése és működése",
+        "text": [
+            "Az N csatornás JFET szerkezetének közepén egy nagyon",
+            "keskeny, gyengén szennyezett réteg, a csatorna helyezkedik el,",
+            "melyet két erősen szennyezett, a csatornával ellentétes",
+            "szennyezettségű P+ félvezető határol. A csatorna két végén fém",
+            "elektródák, a D drain és az S source kivezetések találhatók. A G",
+            "gate elektróda feladata a vezérlés.",
+            "",
+            "Alaphelyzetben a D és a S közé UDS feszültséget kapcsolunk, és",
+            "ha a G és a S elektróda közötti UGS feszültség nulla, mindkét PNátmenet záróirányú előfeszítést kap. Mivel ekkor a csatorna",
+            "szélessége maximális, a D és S elektródák közötti ID",
+            "elektronáram a legnagyobb. Ezért nevezik a jFET-eket önvezető",
+            "tranzisztoroknak."
+        ]
+    },
+    {
+        "label": "A jFET vezérlése",
+        "text": [
+            "Az UGS feszültség változtatásával befolyásolható a",
+            "csatorna, azaz a vezető réteg ellenállása.",
+            "A csatorna ellenállásának növekedése a csatornán folyó ID",
+            "áram csökkenését eredményezi.",
+            "Tehát az ID áram nagysága az UDS feszültséggel",
+            "vezérelhető."
+        ]
+    },
+    {
+        "label": "A MOSFET",
+        "text": [
+            "A MOSFET típusú tranzisztor felépítése összhangban áll az elnevezéssel (MOS - Metal Oxid Semiconductor, azaz fém - oxid - félvezető).",
+            "A MOSFET tranzisztorok - hasonlóan, mint a jFET-ek - szintén lehetnek N-csatornásak vagy P-csatornásak.",
+            "További csoportosításuk: növekményes (önzáró), ill. kiürítéses (önvezető)."
+        ]
+    },
+    {
+        "label": "A FET-ek alapkapcsolásai",
+        "text": [
+            "Mindegyik típusú FET-re érvényesek az alábbi alapkapcsolások:",
+            "gate",
+            "source",
+            "drain"
+        ]
+    },
+    {
+        "label": "Teljesítményelektronikai alkatrészek",
+        "text": [
+            "Négyrétegű dióda",
+            "Tirisztor",
+            "Diac (kétirányú dióda)",
+            "Triac (kétirányú tirisztordióda)",
+            "UJT (egyátmenetű tranzisztor)"
+        ]
+    },
+    {
+        "label": "Mi az integrált áramkör",
+        "text": [
+            "Az integrált áramkör (röviden IC, az angol Integrated Circuit rövidítéséből) félvezető lapkán (esetleg lapkákon) kialakított nagyon kisméretű áramkör.",
+            " Tipikus alkatrésze az integrált tranzisztor.",
+            " A modern (mind analóg, mind digitális) integrált áramkörök döntő többsége növekményes MOS tranzisztorokból épül fel."
+        ]
+    },
+    {
+        "label": "Integrált áramkör előnyei",
+        "text": [
+            "Előnyei a hagyományos áramkörökkel szemben:",
+            " Nagyobb megbízhatóság",
+            " Kompakt kivitel, nagy funkciósűrűség kis helyen",
+            " Nagyobb sebesség",
+            " Kisebb fogyasztás",
+            " Gazdaságosabb tömeggyártás"
+        ]
+    },
+    {
+        "label": "IC-k bonyolultságának változása",
+        "text": [
+            "1960: SSI: < 100 elem",
+            " 1966: MSI: n × 100 elem",
+            " 1969: LSI: n × 1.000 elem",
+            " 1975: VLSI: n × 10.000 elem",
+            " Ma: ULSI: n × 1.000.000 elem"
+        ]
+    },
+    {
+        "label": "Moore törvénye (1965)",
+        "text": [
+            "Az integrált áramkörök összetettsége – a legalacsonyabb árú ilyen komponenst figyelembe véve – körülbelül 18 hónaponként megduplázódik."
+        ]
+    },
+    {
+        "label": "Az IC-k gyártása",
+        "text": [
+            "Planár technológia: A planár szó arra utal, hogy az integrált áramkörök gyártása síkbeli elrendezésben történik, azaz rétegekben",
+            " A gyártás „síkja” a félvezető szelet (wafer) felülete",
+            " Kiindulási alap: a rudakban készülő szilícium egy kristály",
+            " Ezekből szeletelik a 2-12” (zoll ≈ inch ≈ hüvelyk, jele: ”) átmérőjű szeleteket",
+            " Ezek vastagsága kb. negyed milliméter",
+            " Egy szeleten több ezer IC (chip = die) készül egyszerre"
+        ]
+    },
+    {
+        "label": "IC-k tokozása",
+        "text": [
+            "Furatszerelt",
+            "– SIP (Single in-line package)",
+            "– DIP (Dual in-line package)",
+            " Felületszerelt (SMD)"
+        ]
+    },
+    {
+        "label": "Monolitikus áramkörök",
+        "text": [
+            "Az áramkör valamennyi aktív és passzív elemét (tranzisztorok és diódák, illetve ellenállások és kis értékű kondenzátorok), valamint a hozzájuk tartozó összekötéseket egyetlen félvezető-egykristály lemezkén alakítják ki."
+        ]
+    },
+    {
+        "label": "Monolitikus áramkörök megvalósításai",
+        "text": [
+            "MOS technológia:",
+            "– Nem használnak \"hagyományos\" ellenállást vagy kondenzátort. Ellenállás helyett",
+            "passzív kétpólusnak kapcsolt MOS tranzisztor: a gate-et összekötik a source-szal.",
+            "– Kondenzátor: MOS kondenzátor vagy p-n dióda.",
+            "– Induktivitás: nincs. Ha nagyon szükséges, külső tekercset használnak.",
+            "",
+            "Bipoláris technológia:",
+            "– Elemválaszték: ellenállás, kondenzátor, dióda, bipoláris tranzisztor.",
+            "– Induktivitás a mikrohullámú IC-k kivételével gyakorlatilag megvalósíthatatlan,",
+            "használatukat kapcsolástechnikai megoldásokkal célszerű elkerülni.",
+            "– A bipoláris IC-k előállítási technológiája a legfontosabb aktív elem, az npn",
+            "tranzisztor megvalósítására van optimalizálva. Az összes többi alkatrészt az npn",
+            "tranzisztorhoz szükséges technológiai lépésekkel valósítják meg."
+        ]
+    },
+    {
+        "label": "Hibrid áramkörök",
+        "text": [
+            "Ezt a kialakítást szokás szigetelő alapú integrált áramkörnek is nevezni.",
+            " A hibrid integrált áramkörökben szigetelő alapanyagon állítják",
+            "elő a vezetőpályákat és az ellenállásokat.",
+            " A hordozó megfelelő mechanikai, elektromos és hőtechnikai tulajdonságú anyag, pl. zománcozott kerámia, bór-szilikát üveg, zafír vagy Al2O3 alapú kerámia.",
+            " Csipméret tipikusan 5 cm2",
+            " A szigetelő lapra készítik el a passzív és az aktív elemeket.",
+            " Az aktív elemek lehetnek monolitikus integrált áramkörök is."
+        ]
+    },
+    {
+        "label": "Hibrid áramkörök megvalósításai",
+        "text": [
+            "Vékonyréteg áramkörök:",
+            "– Az áramkörök néhány száz nm vastagságú rétegekből épülnek fel.",
+            "– Hordozó : üveg",
+            "– A fémrétegeket vákuumpárologtatással vagy porlasztással viszik fel.",
+            "– Gyakran kétréteges fémezés a tapadás javítása végett.",
+            " Vastagréteg áramkörök",
+            "– Hordozó: kerámia (Al2O3, AlN, BeO)",
+            "– 10 - 50 μm vastagságú réteg",
+            "– Cermet vagy polimer alapú pasztát szitanyomtatással visznek fel, majd hőkezelik."
+        ]
+    },
+    {
+        "label": "Mikrovezérlők",
+        "text": [
+            "A mikrokontroller (uC) lényegében egy egy tokba integrált mikroszámítógép.",
+            " Pontos definíciója nincs, különböző bonyolultságú típusok vannak.",
+            " Korai, egyszerű típusok pl. uP kiegészítve belső memóriával vagy egyszerű portokkal.",
+            " Mai típusok megfeleltethetőek egy nem is túl régi komplett számítógépnek..."
+        ]
+    },
+    {
+        "label": "Mikrovezérlő vs. számítógép",
+        "text": [
+            "Kisebb számítási teljesítmény",
+            " Kisebb fogyasztás",
+            " Szélesebb feszültségtartomány",
+            " Kisebb (beépített) memória",
+            " Nem feltétlenül csatlakoztatható gyors párhuzamos külső memória",
+            " Speciális perifériák vannak beépítve",
+            "„Tápot kap és már megy is”",
+            " Feladatspecifikus műveletek megvalósítása"
+        ]
+    },
+    {
+        "label": "Mikrovezérlők jellemző elemei",
+        "text": [
+            "Processzormag",
+            " Programmemória (EEPROM/Flash)",
+            " Szabadon hozzáférhető memória (RAM); adatmemória (EEPROM)",
+            " Órajel generátor",
+            " Digitális ki-bemenetek, soros portok, analóg bemenet, PWM kimenet",
+            " Időzítők, számlálók, eseményfigyelők, megszakítási lehetőségekkel",
+            " Megbízhatósági funkciók (brown-out reset, watchdog timer stb)"
+        ]
+    },
+    {
+        "label": "Mikrovezérlők felhasználási területei",
+        "text": [
+            "Egyszerűbb beágyazott rendszerek (különböző gépek beépített vezérlőegysége), pl.:",
+            "– jármű, modelljármű",
+            "– ipari berendezések",
+            "– műholdak",
+            "– mérőműszerek",
+            "– háztartási eszközök",
+            "– szórakoztató eszközök",
+            " PC-n belül is van (perifériák vezérlőegységei)"
+        ]
+    },
+    {
+        "label": "8 bites mikrovezérlők",
+        "text": [
+            "A 8bites típusok jellemzően <20MHz órajelűek, programmemóriájuk a néhány ezer sortól a néhány tízezer sorig terjed, a RAM a néhány száz bytetól a néhány száz kB-ig terjed.",
+            " A processzor paraméterek szempontjából összehasonlíthatóak egy 80-as évekbeli PC-vel (de utóbbiak memóriája és háttértára általában nagyobb volt). Assemblyben is könnyen lehet programozni."
+        ]
+    },
+    {
+        "label": "32 bites mikrovezérlők",
+        "text": [
+            "A 32bites vezérlők akár 100MHz órajelűek is lehetnek, akár több MB programmemóriával és RAM-mal.",
+            " Akár egy 90-es évekbeli PC processzor teljesítményét elérik. Ilyenekre fejleszteni már majdnem olyan, mint PCre... Célszerűen C-ben lehet programozni.."
+        ]
+    },
+    {
+        "label": "Mikrovezérlők felépítése",
+        "text": [
+            "A kisebb teljesítményű mikrovezérlők jellemzően Harvard architektúrájúak, azaz fizikailag külön memória van a programnak (utasítások) és az egyebeknek (RAM).",
+            " A programmemória nem feltétlenül 8bites felépítésű; a RAM általában 8bites cellákból áll",
+            " A RAM mellett tartalmazhat Data EEPROM-ot is a program által igényelt adatok tartós tárolása céljából."
+        ]
+    },
+    {
+        "label": "Mikrovezérlők jellemző előnyei",
+        "text": [
+            "Kis feszültségigény (5V)",
+            " Sok ki/bemeneti port (típusonként eltérő)",
+            " Gyors műveletvégzés",
+            " Kis méret",
+            " Hosszú élettartam",
+            " Nagy megbízhatóság"
+        ]
+    },
+    {
+        "label": "Mikrovezérlők programmemóriája",
+        "text": [
+            "A központi egység a végrehajtandó adatokat a program memóriából olvassa ki. Ez a tár különféle igények miatt különböző típusú:",
+            "– ROM",
+            "– PROM",
+            "– EPROM",
+            "– EEPROM",
+            "– Flash"
+        ]
+    },
+    {
+        "label": "Programmemória típusok",
+        "text": [
+            "ROM: ennek a tartalmát a gyártás során írják bele a memóriába.",
+            "Ez – mivel nagy darabszám esetén a legolcsóbb",
+            "memóriamegoldás – akkor előnyös, ha nagy mennyiségben",
+            "akarjuk az adott felprogramozott PIC vezérlőt felhasználni.",
+            "Természetesen ilyenkor a gyártóhoz kell juttatni a ROM-ba",
+            "írandó teljes tartalmat és ezt írják be a gyártástechnológia",
+            "adott fázisában a ROM-ba.",
+            " PROM / OTP: Programmable ROM, One-Time Programmable; a",
+            "felhasználó által egyszer programozható, így nem kell a",
+            "gyártóhoz beküldeni, és utólag nem módosítható (ez akkor",
+            "előnyös, ha nagyon el akarjuk kerülni, hogy a felhasználó",
+            "belenyúljon a programba).",
+            "EPROM: Erasable Programmable ROM; ez a memóriatípus",
+            "olyan, hogy a felhasználó képes ennek tartalmát beírni, majd",
+            "új tartalom beírása előtt ultraibolya fénnyel [pl. kvarclámpa]",
+            "törölni. A kvarc ablakot törlés után le kell ragasztani, mert a",
+            "napfény hatására idővel törlődik. Ma már nem használatos,",
+            "meghaladta az EEPROM és a Flash, de pl. régi párhuzamos",
+            "buszú memóriáknál találkozhatunk vele.",
+            " EEPROM: Electronically Erasable Programmable ROM;",
+            "hasonló az EPROM memóriához, de itt a törlés a „kinapozás”",
+            "helyett elektromos jelekkel történik, így a",
+            "programfejlesztéshez az ilyen típusú memória még",
+            "előnyösebb. Ennek újabb változata a FLASH."
+        ]
+    },
+    {
+        "label": "A Microchip PIC mikrovezérlői",
+        "text": [
+            "A Microchip az egyik legnagyobb mikrovezérlő gyártó cég",
+            " A Microchip mikrovezérlő családjának „márkaneve” a PIC",
+            " Létezik 8, 16, 32 bites változat, mindegyikből több család és több tucat típus.",
+            " Az egyes családokat számok jelölik",
+            " A 8 bites családok:",
+            "– alsó kategória: PIC10, PIC12",
+            "– középső kategória: PIC14, PIC16",
+            "– felső kategória: PIC18"
+        ]
+    },
+    {
+        "label": "PIC mikrovezérlők RAM-ja",
+        "text": [
+            "A PIC-nél nincsenek külön processzor regiszterek és RAM, a kettő ugyanaz.",
+            " Két típus:",
+            "– A GPR-ek (General Purpose Registers) a hagyományos értelemben vett RAM, a szabadon írható-olvasható cellák. Itt tárolhatjuk a változóinkat.",
+            "– Az SFR-ek (Special Function Registers) egyrészt a mikrokontroller különböző beállításait tartalmazó regiszterek, másrészt a beépített perifériák beállításait és ki-bemenő adatait kezelhetjük rajtuk keresztül. (Ez lényegében a memory-mapped IO fogalom megvalósítása.) Az SFR-ek többnyire írhatóak és olvashatóak, de vannak kivételek."
+        ]
+    },
+    {
+        "label": "PIC mikrovezérlők tápellátása",
+        "text": [
+            "A 8 bites PIC-ek jellemzően 5V vagy 3,3V tápfeszültségű kivitelben készülnek. A 16b és 32b verziók jellemzően 3,3voltosak.",
+            " Az 5V-os verziók gyakran kb. 2,5V-5,5V tartományban működőképesek. A 3,3voltosak jellemzően nem szeretik a nagyobb feszültséget!"
+        ]
+    },
+    {
+        "label": "PIC mikrovezérlők órajele",
+        "text": [
+            "System clock (fs): az alap órajel",
+            " Instruction clock finstr= fs/4, az utasítás-végrehajtási ciklus",
+            " Majdnem minden utasítás egy ilyen ciklus alatt hajtódik végre (ezért is egy szó hosszúak), kivéve a vezérlésátadások, amelyek két ciklus alatt (a pipeline törlése miatt)",
+            " Pl. ha fs=4MHz, akkor Tinstr=1us az utasítás-végrehajtási idő"
+        ]
+    },
+    {
+        "label": "PIC mikrovezérlők programozása",
+        "text": [
+            "Van egy hardver (a programozó), ami a PC-ről jövő jelet",
+            "(USB vagy RS232) átalakítja és betáplálja a",
+            "mikrokontrollerbe. A programozási mód beállításához a Vpp",
+            "lábra kell kötni egy bizonyos feszültséget (a normál",
+            "tápfeszültségnél nagyobbat).",
+            " A programozás egy szinkron soros adatátvitel: ICSPDAT",
+            "lábon az adat, ICSPCLK lábon az órajel megy."
+        ]
+    },
+    {
+        "label": "PIC mikrovezérlők programozása",
+        "text": [
+            "bootloader használata:",
+            "– Ez egy kis program, amit először hagyományos módon",
+            "feltöltünk. Utána a mikrokontrollerhez a saját soros portján",
+            "(UART vagy USB) csatlakozva a bootloader segítségével",
+            "közvetlen a PC-ről töltjük át a programot. A bootloader ilyen",
+            "szempontból a PC operációs rendszeréhez hasonlít (ő indul",
+            "el először és ő indítja el a felhasználói programot).",
+            "– (Ez csak akkor megvalósítható, ha a uC rendelkezik ilyen",
+            "porttal ill. elég nagy programmemóriával, hiszen a",
+            "bootloader is helyet foglal el.)"
+        ]
+    },
+    {
+        "label": "Atmel 8 bites mikrovezérlők",
+        "text": [
+            "Az Atmel eredetileg különálló cég volt, majd felvásárolta a Microchip",
+            " Load-store architektúra (külön regiszterkészlet és külön RAM, adatokat be kell másolni RAM-ból a regiszterekbe, ott lehet dolgozni velük)",
+            " Jellemzően nagyobb RAM, mint PIC-ben",
+            " Egyébként hasonló tudású mint a PIC"
+        ]
+    },
+    {
+        "label": "Beágyazott rendszerek",
+        "text": [
+            "Beágyazott rendszer (Embedded System): a (számítógépes)",
+            "hardver- és szoftverelemeknekkombinációja, amely kifejezetten",
+            "egy adott funkciót, specifikus (vezérlési) feladatot képes ellátni,",
+            "szemben az általános célú számítógép rendszerekkel.",
+            " A beágyazott rendszerek olyan számítógépes eszközöket",
+            "tartalmazhatnak, amelyek alkalmazás-orientált",
+            "célberendezésekkel (ASIC, ASSP, FPGA, MCU, MPU, DSP, stb.),",
+            "vagy komplex alkalmazói rendszerekkel (akár OS) szervesen",
+            "egybeépülve akár azok autonóm működését is képesek",
+            "biztosítani"
+        ]
+    },
+    {
+        "label": "Alkalmazási területek:",
+        "text": [
+            "Autóipari alkalmazások: beágyazott elektronikus vezérlők",
+            " Biztonságkritikus: központi elektronikai vezérlő (ECU), motorvezérlés, fékrásegítő, sebességváltó, blokkolásgátló vezérlés (ABS), kipörgésgátló (ESP), légzsák",
+            " Utas központú (komfort) rendszerek: szórakoztatás, ülés/tükör ellenőrzés stb.",
+            " Repülőgép-ipari és védelmi alkalmazások",
+            " Repülésirányító rendszerek (fedélzeti navigáció, GPS vevő), hajtómű vezérlés, robotpilóta",
+            " Védelmi rendszerek, radar rendszerek, rádió rendszerek, rakétavezérlő rendszerek",
+            "Gyógyászati berendezések",
+            " Orvosi képfeldolgozás",
+            " Jelmonitorozás (PET, MRI, CT)",
+            " Hálózati/ telekommunikációs rendszerek (modem, router stb.)",
+            " IoT: Intelligens, vagy smart rendszerek",
+            " Háztartási gépek, ill. fogyasztói elektronika"
+        ]
+    },
+    {
+        "label": "Általános követelmények",
+        "text": [
+            "Dedikált funkció",
+            " Jól körülhatárolt (alkalmazás specifikus) funkció(k) támogatása",
+            " Szigorú követelmények",
+            " Alacsony költség (Cost)",
+            " Gazdaságosság (Economy) - lehetőleg minimális alkatrészből épüljön fel",
+            " Gyors működés (Speed)",
+            " Alacsony disszipáció (Power)",
+            " Valós idejű (real-time) működés és válasz",
+            " a környezetet folyamatos monitorozása, és beavatkozás",
+            " Hardver-, és szoftver részek elkülönült, de együttes tervezése (co-design), tesztelése (co-simulation), ellenőrzése (co-verification)"
+        ]
+    },
+    {
+        "label": "Alapkövetelmények",
+        "text": [
+            "Idő: Egy bekövetkező esemény kezelését a beágyazott rendszer egy meghatározott időn belül kezdje el.",
+            " Biztonság: olyan rendszer vezérlése, amely hibás működés esetén egészségkárosodás, és komoly anyagi kár nélkül kezeli a bekövetkező eseményt.",
+            "E filozófia mentén a beágyazott rendszerek két alcsoportját lehet definiálni:",
+            " Valós idejű rendszer (v. idő kritikus): melynél az időkövetelmények betartása a legfontosabb szempont",
+            " Biztonságkritikus rendszer: melynél a biztonsági funkciók sokkal fontosabbak, mint az időkövetelmények betartása"
+        ]
+    },
+    {
+        "label": "Hardver/szoftver partícionálás:",
+        "text": [
+            "Annak eldöntése, hogy mely funkcionalitást érdemes hardverben, melyet szoftverben megvalósítani",
+            " Figyelembe vehető költségek: hardver (pl. terület), szoftver (pl. memória), kommunikáció",
+            " Különféle korlátok és optimalizálási célok: real-time, terület, ár, energia",
+            " Probléma legtöbb változata erősen NP-nehéz"
+        ]
+    },
+    {
+        "label": "Hardver/szoftver partícionálás",
+        "text": [
+            "Hardver és szoftver együttes tervezése, szimulációja és verifikációja",
+            " Nem kell várni a beágyazott szoftver tervezésével addig, amíg elkészül a hardver",
+            " A tervezés magas absztrakciós szinten történhet"
+        ]
+    },
+    {
+        "label": "Hardver és szoftver együttes tervezése, szimulációja és verifikációja",
+        "text": [
+            "Magas szintű absztrakciós leírással könnyebben átlátható legyen a terv",
+            " Hibákat gyorsabban meg lehessen találni",
+            " Optimalizálni lehessen a hardver/szoftver partícionálást",
+            " Csökkenjen a piacra kerülés átfutási ideje",
+            " Csökkenjenek a fejlesztési költségek"
+        ]
+    },
+    {
+        "label": "A központi egység megvalósításai",
+        "text": [
+            "Mikrovezérlő alapú rendszerek (microcontroller)",
+            " DSP processzoralapú rendszerek",
+            " ASIC technológián alapuló rendszerek",
+            " FPGA technológián (programozható logikai áramkörök) alapuló rendszerek"
+        ]
+    },
+    {
+        "label": "Szoftver",
+        "text": [
+            "más jellegű követelmények lépnek fel, mint az általános célra épített számítógépek szoftvereinél:",
+            " hardver szempontból sokkal kisebb erőforrással (kisebb RAM, gyengébb órajelű processzor, stb.) kell beérni",
+            " sokkal hibatűrőbbnek kell lenni",
+            " követelmény lehet a valósidejű futás is"
+        ]
+    },
+    {
+        "label": "Szoftver",
+        "text": [
+            "Fejlesztés általános célú számítógépeken",
+            " Fordítás keresztfordító program (cross complier) segítségével beágyazott rendszeren futó képes kódra (target)",
+            " Cross compiler: olyan fordító program, amely az őt futtató platformtól eltérő platformon futó kód generálására is képes.",
+            "A beágyazott szoftver fejlesztésének és nyomkövetésének blokksémája"
+        ]
+    },
+    {
+        "label": "Programozási nyelvek",
+        "text": [
+            "- Gépi kódban való programozás",
+            " A processzor számára önmagában értelmezhető bináris adat",
+            " Manapság igen ritkán alkalmazzák",
+            " Assembly",
+            " Rövid szöveges utasítások",
+            " Még mostanság is sok helyen alkalmazzák mikrokontrollerek, vagy akár processzorok programozására, ha egy utasítás nagy hatékonyságú elvégzése kulcs fontosságú, illetve esetlegesen az adott utasításnak nincs magasabb programnyelvű implementációja",
+            " Komoly hátránya, hogy a processzorhoz, pontosabban az adott architektúrához kötöttek",
+            "- C nyelv",
+            " Egyik legelterjedtebb, a kisebb kontrollerekre talán a leginkább alkalmazott programozási nyelv",
+            " Objektumorientált programozási nyelvek: C++, Java",
+            " Elsősorban összetett programkódok esetén szokták alkalmazni, ahol fontos a modularitás.",
+            " Kisméretű kontrollerek esetén többnyire nem kellően hatékonyak",
+            "- Grafikus programozási nyelvek:",
+            " Pl. Matlab/Simulink, NI LabVIEW, stb.:",
+            " Nem programkódot kell írni, hanem grafikus módon, blokkok segítségével kerül összeállításra a program",
+            " Hátrányok:",
+            "   ingyenes verzió ritkán érhető el ezen programokból",
+            "   csak adott típusú kontrollereket támogatnak"
+        ]
+    },
+    {
+        "label": "Valós idejű rendszerek",
+        "text": [
+            "A legegyszerűbb felépítésűeket kivéve, a beágyazott rendszerek",
+            "tartalmaznak valósidejű operációs rendszert (Real Time Operating",
+            "System – RTOS)",
+            " Válaszidő: Egy esemény által kiváltott időzítő (trigger) impulzus és",
+            "az eseményt lekezelő program indulása között eltelt idő.",
+            " Határidő teljesített: Ha egy eseményt a megadott válaszidőkön",
+            "belül elkezdte a rendszer feldolgozni.",
+            " Hibás rendszerviselkedés: Ha a válaszidők az előírt időhatáron",
+            "kívül vannak.",
+            "Erősen valósidejű rendszerek (Hard real-time): a műveletek",
+            "érvénytelenek, ha az eredmények nem állnak elő a meghatározott időn",
+            "belül. Minden határidősértés elfogadhatatlan, és megengedhetetlen.",
+            " Gyengén valósidejű rendszerek (soft real-time): kritikus folyamatokat",
+            "a rendszer mindössze nagyobb prioritással dolgozza fel."
+        ]
+    },
+    {
+        "label": "Biztonságkritikus rendszerek",
+        "text": [
+            "Példák: nukleáris erőművek, vasút, autóipari alkalmazások, légi közlekedés",
+            "szigorú rendeletek szabályozzák a biztonsági követelményeket",
+            "Szoftvernél aktív redundancia: Eltérő tervezésű redundáns modulok",
+            "szükségesek",
+            "Variánsok: azonos specifikáció, de",
+            " eltérő algoritmus, adatstruktúrák",
+            " más fejlesztési környezet, programnyelv",
+            " elszigetelt fejlesztés"
+        ]
+    },
+    {
+        "label": "Beágyazott operációs rendszerek",
+        "text": [
+            "Többféle csoportosítás lehetséges:",
+            " Általános célú, vagy beágyazott OS",
+            " Valós-idejű (idő-kritikus), vagy nem-időkritikus",
+            " Nyílt forráskódú, vagy licenszelhető, stb.",
+            "Tulajdonságaik alapján léteznek:",
+            " Valós idejű operációs rendszerek - garantálnak valamilyen előírt időkorláton",
+            "belüli válaszidőt (pl. pilóta nélkülirepülőgép)",
+            " Nagy megbízhatóságú operációs rendszerek – magas rendelkezésre állás",
+            "(pl. űrszonda)",
+            " Konfigurálható operációs rendszerek – funkciók kiválasztása, testre szabása",
+            "Beágyazott processzorok valós-idejű operációs rendszerei (RTOS):",
+            " Linux",
+            " Android",
+            " Micrium uC/OS",
+            " QNX",
+            " RTLinux",
+            " Windriver VxWorks (RT)",
+            " Symbian",
+            " Windows Embedded",
+            " Windows CE"
+        ]
+    },
+    {
+        "label": "Valós idejű operációs rendszerek",
+        "text": [
+            "A berendezés összetettségétől függ, hogy a valósidejű operációs rendszer",
+            "mely elemei lesznek beépítve. A RTOS leggyakrabban ezeket az elemeket",
+            "foglalja magában:",
+            " valós idejű óra (real time clock) – a periodikus folyamatok időzítéséhez;",
+            " megszakításkezelő (interrupt handler) – az aperiodikus események",
+            "feldolgozására;",
+            " ütemező (scheduler) – ez a komponens választ ki egyet a futtatható",
+            "folyamatok közül egyet a végrehajtásra;",
+            " erőforrás-kezelő (resource handler) – memóriát és processzoridőt rendel a",
+            "futtatható folyamathoz;",
+            " elosztó (distributor) – folyamat futtatását kezdi meg.",
+            "Az összetettebb berendezések – pl. a vezérlő és távközlési",
+            "berendezések – valósidejű operációs rendszerei további",
+            "elemeket is tartalmazhatnak, úgy mint:",
+            " háttértár kezelő",
+            " hiba felismerő és – jelző mechanizmus",
+            " dinamikus alkalmazás-újrakonfiguráló"
+        ]
+    },
+    {
+        "label": "Mikrovezérlő",
+        "text": [
+            "Célfeladat ellátására tervezett integrált áramkör",
+            " Harvard architektúrával rendelkezik, de létezik Neumann architektúrás kivitel is",
+            " Van belső memória -> SRAM",
+            " Van belső tárhely -> NOR Flash",
+            " Nem kell hozzá operációs rendszer",
+            " Vezérlési célok megvalósítására fejlesztve"
+        ]
+    },
+    {
+        "label": "Mikrovezérlő",
+        "text": [
+            "Fejlesztéshez kell:",
+            " Egy mikrovezérlő",
+            " Programozó eszköz, feltöltő",
+            " Fordító / fejlesztő program",
+            " Elektronikai alapismeretek a nyomtatott áramkör megtervezéséhez és legyártásához"
+        ]
+    },
+    {
+        "label": "Mikrovezérlő",
+        "text": [
+            "Fejlesztés klasszikus folyamata",
+            " Kiválasztott mikrovezérlő adatlapjának elolvasása (50-1200 oldal)",
+            " Fejlesztőeszköz megismerése, dokumentációjának elolvasása (50-1000 oldal)",
+            " Kapcsolás megtervezése, összeállítása",
+            " Szoftver megírása"
+        ]
+    },
+    {
+        "label": "Mikrovezérlő",
+        "text": [
+            "Fejlesztés problémái:",
+            " Minden mikrovezérlő típus külön belső felépítéssel rendelkezik, így a konfigurációs regiszterek működésének elsajátítása hosszadalmas és frusztráló.",
+            " Ezt minden egyes típus esetén el kell sajátítani, ami nem túl kellemes.",
+            " A legtöbb programozó szoftver csak Windows platformra érhető el (Microchip főleg)."
+        ]
+    },
+    {
+        "label": "Mikrovezérlő",
+        "text": [
+            "A problémát többen felismerték:",
+            " 2001 – Ben Fry & Casey Reas (MIT): Processing: Java alapú",
+            "programozást tanító környezet",
+            " 2003 – Hernando Barragán, Brett Hagman and Alexander",
+            "Brevig:",
+            "– Wiring: Mikrovezérlő fejlesztő környezet, Atmel alapokon,",
+            "Processing IDE segítségével",
+            "– Nyílforrású mikrovezérlős fejlesztőkártya és programnyelv",
+            " 2005 – Massimo Banzi: Arduino projekt"
+        ]
+    },
+    {
+        "label": "Arduino projekt",
+        "text": [
+            "A tervező mikrovezérlős rendszerfejlesztést oktatott az Ivreai",
+            "egyetemen és felismerte, hogy a piacon nem igen van olyan",
+            "termék, amit egy diák is megengedhet magának.",
+            " A Projekt a Wiring platformra épül, de jelentősen",
+            "továbbfejlődött azóta",
+            " Olcsó, nyíltforrású, egyszerűen használható mikrovezérlő",
+            "kártya",
+            " Ingyenes, nyíltforrású programfejlesztői környezet (Arduino",
+            "IDE)",
+            " Ingyenes, nyíltforrású programkönyvtár és mintaprogram",
+            "gyűjtemény"
+        ]
+    },
+    {
+        "label": "Arduino projekt",
+        "text": [
+            "Fejlesztés Arduino platform esetén:",
+            " Fejlesztőeszköz megismerése, dokumentációjának",
+            "elolvasása (50-120 oldal)",
+            " A megszerzett tudás bármelyik Arduino modell esetén",
+            "alkalmazható, mivel a fejlesztőkörnyezet könyvtárai elfedik",
+            "a hardver egyediségét. Így a kód nagyon minimális",
+            "módosítással hordozható a típusok között."
+        ]
+    },
+    {
+        "label": "Arduino hardvere",
+        "text": [
+            "Jelenleg számos modell érhető el, mindegyikről nem lesz szó,",
+            "csak a népszerűbbekről a teljesség igénye nélkül:",
+            " Arduino Uno",
+            " Arduino Mega",
+            " Arduino Leonardo",
+            " Arduino Due",
+            " Arduino Yún"
+        ]
+    },
+    {
+        "label": "Arduino Uno",
+        "text": [
+            "ATmega 328 mikrovezérlő",
+            " 16MHz órajel",
+            " 13 digitális I/O",
+            " 6db 10 bites ADC",
+            " 32KB kódmemória",
+            " 2KB adatmemória"
+        ]
+    },
+    {
+        "label": "Arduino Mega",
+        "text": [
+            "ATmega 2560 mikrovezérlő",
+            " 16MHz órajel",
+            " 54 digitális I/O",
+            " 16db 10 bites ADC",
+            " 256KB kódmemória",
+            " 8KB adatmemória"
+        ]
+    },
+    {
+        "label": "Arduino Leonardo",
+        "text": [
+            "Atmega 32u4 mikrovezérlő",
+            " 16MHz órajel",
+            " 13 digitális I/O",
+            " 6db 10 bites ADC",
+            " 32KB kódmemória",
+            " 2KB adatmemória",
+            " Valódi USB támogatás"
+        ]
+    },
+    {
+        "label": "Arduino Due",
+        "text": [
+            "AT91SAM3X8E mikrovezérlő",
+            " 32 bites ARM",
+            " 84MHz órajel",
+            " 54 digitális I/O",
+            " 12db 12 bites ADC",
+            " 2db 12 bites DAC",
+            " 512KB kódmemória",
+            " 96KB adatmemória"
+        ]
+    },
+    {
+        "label": "Arduino Yún",
+        "text": [
+            "Arduino Leonardo hardver kiegészítve egy Atheros AR9331",
+            "processzorral",
+            " WLAN képességek",
+            " Linux támogatás"
+        ]
+    },
+    {
+        "label": "Arduino fejlesztőkörnyezet",
+        "text": [
+            "Arduino IDE",
+            " Java-ban íródott",
+            " Multiplatform: Windows/Linux/OS-X",
+            " Windows esetén különösebb telepítést nem igényel",
+            " A kommunikációs driver telepítése minden esetben kell, de",
+            "Windows Update-ben is benne van",
+            " Az Arduino programokat C/C++ alapú programozási",
+            "nyelven írhatjuk"
+        ]
+    },
+    {
+        "label": "Arduino programozása",
+        "text": [
+            "C++ nyelvre épül",
+            " Objektum orientált, amit a szoftver könyvtárak ki is",
+            "használnak",
+            " Az osztály könyvtárak tervezésekor a hangsúly a könnyű",
+            "használhatóságon volt, hogy a felhasználó ne vesszen el a",
+            "C++ rejtelmeiben és több idő maradjon tényleges",
+            "fejlesztésre.",
+            " A programok itt vázlatnak (sketch) nevezettek"
+        ]
+    },
+    {
+        "label": "Sketch felépítése",
+        "text": [
+            "Legalább két függvényből áll:",
+            " Egy setup() függvényből, ami a mikrovezérlő",
+            "bekapcsolásakor, újraindításakor lefut",
+            " Egy loop függvényből, aminek a végrehajtását a",
+            "mikrovezérlő ismételgetni fogja"
+        ]
+    },
+    {
+        "label": "Raspberry PI",
+        "text": [
+            "Olcsó, hitelkártya méretű, un. SoC (System on Chip)",
+            "számítógép",
+            " Az Egyesült Királyságban fejlesztették oktatási célokra",
+            " A hivatalosan ajánlott operációs rendszer a Raspbian, ami",
+            "a Debian Linux kifejezetten Raspberry Pi-re optimalizált",
+            "változata."
+        ]
+    },
+    {
+        "label": "Raspberry PI 1",
+        "text": [
+            "2012-ben jelent meg",
+            " A változat: nem rendelkezik Ethernet csatolóval, csak egy",
+            "USB portja volt és a rendszer memóriája 256 MB.",
+            " B modell: 2 db USB porttal, 512 MB memóriával és integrált",
+            "Ethernet csatolóval rendelkezik",
+            " B+ a RaspBerry Pi B továbbfejlesztett változata",
+            " GPIO tüskesor 26 lábról 40-re emelkedett",
+            " Négy USB 2.0-s port"
+        ]
+    },
+    {
+        "label": "Raspberry PI 2 ",
+        "text": [
+            "Négymagos processzor",
+            " 1G RAM",
+            " SoC csip a BCM2836, ami a korábbi Pi modellek esetén",
+            "használt BCM2835 továbbfejlesztett változata",
+            " Megfelelő betáplálás mellett 1,2 amper leadására is képes",
+            "USB portonként (6 watt), a nagy teljesítmény igényű",
+            "perifériák miatt"
+        ]
+    },
+    {
+        "label": "Raspberry PI tápegysége",
+        "text": [
+            "Mindegyik Raspberry PI microUSB csatlakozóval",
+            "rendelkezik, amin 5V tápfeszültséget vár. (kivéve PI 4)"
+        ]
+    },
+    {
+        "label": "Raspberry PI SD kártya",
+        "text": [
+            "Kettős funkció:",
+            "– Ezen a kártyán található az operációs rendszer, bekapcsolás",
+            "után innen bootol be. Mivel a Raspberry PI-nek nincs BIOSa mint a hagyományos asztali gépeknek, ezért nem működő",
+            "SD kártya esetén el sem indul, semmilyen életjelet nem ad.",
+            "– Háttértárként működik: Ide menti a Raspberry PI a különféle",
+            "adatokat, LOG-okat."
+        ]
+    },
+    {
+        "label": "Raspberry PI operációs rendszere",
+        "text": [
+            "Raspbian: A Debian raspberry-re optimalizált változata",
+            " Minibian: Raspbian-on alapuló, minimális operációs rendszer",
+            " Ubuntu MATE: Kifejezetten Raspberryre készített Ubuntu disztribúció",
+            " Pidora: A Fedora Remix raspberry-re optimalizált változata",
+            " OpenELEC: Egy Kodi/XBMC alapú médialejátszóra optimalizált operációs",
+            "rendszer",
+            " OSMC (Open Source Media Center) (régi nevén RaspBMC) Egy Debian és",
+            "Kodi alapú media center",
+            " Risc OS: Egy nem Linux alapú rendszer",
+            " Retropie: Kifejezetten régi konzolok emulálására fejlesztett operációs",
+            "rendszer Emulation Station és Raspbian alapokon.",
+            " Windows 10 IoT Core stb."
+        ]
+    },
+    {
+        "label": "Raspberry PI programozása",
+        "text": [
+            "Sokféle programozási nyelven lehetséges",
+            " Kettő kiemelt támogatású:",
+            "– Python",
+            "– SCRATCH: kimondottan gyerekeknek való interaktív grafikus",
+            "programozási környezet",
+            " A hivatalos RASPBIAN rendszer az alábbi programozási",
+            "nyelveket is tartalmazza: C, C++, Java , Ruby"
+        ]
+    },
+    {
+        "label": "Raspberry PI alkalmazása",
+        "text": [
+            "Ethernet port nélküli változatok:",
+            "– Automatizálási feladatok",
+            "– Robotvezérlés",
+            "– Szenzoradat rögzítése",
+            " Ethernet porttal rendelkező változatok:",
+            "– IoT feladatok",
+            "– Szerverfeladatok: nyomtatószerverként, NAS szerverként, LAMP",
+            "szerverként (PHP+MySQL), VPN vagy torrent szerverként stb.",
+            "– Alacsony fogyasztású asztali PC"
+        ]
+    },
+    {
+        "label": "Python",
+        "text": [
+            "Guido van Rossum kezdete fejleszteni 1989-ben",
+            " Olvashatóságot és a programozói munka megkönnyítését helyezi előtérbe a",
+            "futási sebességgel szemben",
+            " Open source",
+            " Portábilis: elérhető különféle Linux és Windows változatokra és macOS",
+            "alatt is",
+            " ingyenes ám korlátozás nélkül használható",
+            " Magasszintű, jól olvasható szintaktikájú SCRIPT nyelv",
+            " Interpreteres nyelv: a Python nyelven írt programot megírás után az",
+            "interpreter futtatja. Nincs szükség olyan fordításra (compiling), melynek",
+            "során a programnyelven írt programot egy futtatható állománnyá alakítjuk.",
+            " Moduláris és objektumorientált programozást is támogatja"
+        ]
+    },
+    {
+        "label": "Python alkalmazási területei",
+        "text": [
+            "általános szkriptnyelv rendszer-adminisztrációs, automatizálási feladatokra",
+            " parancssori alkalmazások fejlesztése",
+            " felhasználói felületek létrehozásának támogatása",
+            " Webscraping: weboldalak szisztematikus letöltése, feldolgozása",
+            " webes alkalmazások fejlesztése",
+            " adatbányászat, adattudomány, hatékony adatfeldolgozás és adatvizualizáció",
+            " mesterséges intelligencia, neurális hálózatok definiálása és tanítása, gépi",
+            "tanuló algoritmusok",
+            " képfeldolgozás, gépi látás",
+            " számítógépes grafika, vizuális effektusok generálásakor a pipeline",
+            "fejlesztéséhez is hatékonyan használható"
+        ]
+    },
+    {
+        "label": "Python típusok",
+        "text": [
+            "Dinamikus típusadású: Aprogramozó általmanipulált mindenobjektumnak a programvégrehajtásakor jólmeghatározott típusavan, amit nem kell előredefiniálni."
+        ]
+    },
+    {
+        "label": "Python csomagkezelés",
+        "text": [
+            "Pip:",
+            "– Python standard csomagkezelője",
+            "– segítségével telepíthetünk és kezelhetünk olyan Python",
+            "csomagokat, amik nem részei a Python alapkönyvtárának"
+        ]
+    },
+    {
+        "label": "Python program online futtatása",
+        "text": [
+            "Repl.it",
+            " Google Colab — ez leginkább tudományos számításokhoz,",
+            "gépi tanulás témakörében használható jól. Beépített GPU",
+            "támogatással nagy számítási igényű modelleket is lehet",
+            "tanítani vele.",
+            " ...stb."
+        ]
+    },
+    {
+        "label": "Python vs C++ - típusadás",
+        "text": [
+            "C++ statikus",
+            " Python dinamikus"
+        ]
+    },
+    {
+        "label": "Python vs C++ - osztályok",
+        "text": [
+            "A származtatott osztályok a szülők bármely metódusát",
+            "felül tudják írni",
+            " Van öröklődés, többszörös öröklődés",
+            " A metódusok ugyanazon a néven érhetik el a",
+            "szülőosztály metódusait",
+            "Különbségek:",
+            " az osztály minden eleme (beleértve az adatokat is)",
+            "publikus",
+            " nincsenek konstruktor és destruktor függvények"
+        ]
+    },
+    {
+        "label": "Python vs C++ - főbb paraméterek",
+        "text": [
+            "C++:",
+            "Gyorsabb",
+            "Egy-tipusos változók",
+            "Beépített algorimusokból gazdag",
+            "Statikus",
+            "Memória szabályozás",
+            "",
+            "Python:",
+            "Cross-platform",
+            "Multi-tipusos változók",
+            "Egyszerűsítések",
+            "Beépített algorimusokból gazdag",
+            "Dinamikus",
+            "Garbage collekció"
+        ]
+    }
+]
