@@ -33,13 +33,13 @@ export default function Home() {
 
     }
 
-    const [value, setValue] = useState('' as string | any);
+    const [value, setValue] = useState<any>([]);
 
     const memr: any = useQuery('memrv', getData);
 
     function search(value: string) {
         let tmp: any = [];
-        if(value.length == 0 ){return memr.data};
+        if (value.length == 0) { return memr.data };
         for (const i of value) {
             const m = memr.data.filter((item: any) => item.text.filter((t: any) => t.toLowerCase().includes(i.toLowerCase())).length > 0 || item.label.toLowerCase().includes(i.toLowerCase()));
             tmp = [...tmp, ...m];
@@ -109,6 +109,23 @@ export default function Home() {
         }
     };
 
+    const handleKeyDown = (event: any) => {
+        if (event.key === ' ' || event.key == "Enter") {
+            event.preventDefault();
+            let tmp;
+            if( value == null){
+                tmp = value.concat(event.target.value.trim().split(" ")).split(",");
+            }else{
+                tmp = value.concat(event.target.value.trim().split(" "));
+            }
+            const not = ["A"," ","a","az","Az", ""];
+            tmp = tmp.filter((item: any) => {return !not.includes(item)});
+
+            setValue(tmp);
+            event.target.value = '';
+        }
+    };
+
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         isMobile.current = true;
@@ -127,7 +144,7 @@ export default function Home() {
             </div> */}
             <div className="flex gap-3 lg:w-1/3 w-full mt-8 px-3">
                 <span className="p-float-label w-full ">
-                    <Chips className={"w-full " + (!memr.isLoading && memr.data.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); }} />
+                    <Chips className={"w-full " + (!memr.isLoading && memr.data.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); }} onKeyDown={handleKeyDown} />
                     <label htmlFor="search">Keresés</label>
                 </span>
                 <button onClick={getSearch} className="border border-blue-400 rounded-lg bg-blue-400 text-white font-bold p-2">Search</button>
