@@ -35,7 +35,7 @@ export default function Home() {
 
     const [value, setValue] = useState<any>([]);
 
-    const memr: any = useQuery('memrv', getData);
+    const memr: any = useQuery('memrv', getData, {refetchOnWindowFocus: false});
 
     function search(value: string) {
         let tmp: any = [];
