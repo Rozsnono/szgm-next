@@ -30,7 +30,7 @@ export default function Home() {
 
     function queuing(data: any) {
         let array: any = [];
-        for (let index = 0; index < 24; index++) {
+        for (let index = 0; index < 30; index++) {
             let random = getRandomInt(data.length)
             if (!array.includes(random)) {
                 array.push(random);
@@ -59,7 +59,7 @@ export default function Home() {
         let result = sessionStorage.getItem("pmszt-result") ? JSON.parse(sessionStorage.getItem("pmszt-result") || "") : [];
         result.push({ question: pmszt.data[queue[number]].question, answer: item, options: pmszt.data[queue[number]].options, correct: pmszt.data[queue[number]].answers, type: pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio" });
         sessionStorage.setItem("pmszt-result", JSON.stringify(result));
-        if (number + 1 > 23) {
+        if (number + 1 > 29) {
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
             router.push("/results");
@@ -83,7 +83,7 @@ export default function Home() {
         <main className="lg:pt-0 pt-12">
             {
                 !pmszt.isLoading && queue.length > 0 ?
-                    <QuestionTab max={24} icon="database" img={pmszt.data[queue[number]].pic} question={pmszt.data[queue[number]].question} number={number + 1} answers={pmszt.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
+                    <QuestionTab max={30} icon="database" img={pmszt.data[queue[number]].pic} question={pmszt.data[queue[number]].question} number={number + 1} answers={pmszt.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={pmszt.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
                     : <></>
             }
         </main>

@@ -79,6 +79,12 @@ export const items = [
                 type: "test"
             },
             {
+                label: 'PMSZT-VIZSGA',
+                icon: Icons['PMSZT'],
+                link: '/pmszt-vizsga',
+                type: "study"
+            },
+            {
                 label: 'RDSZ',
                 icon: Icons['RDSZ'],
                 link: '/rdsz',

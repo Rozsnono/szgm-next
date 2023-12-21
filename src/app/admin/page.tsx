@@ -73,7 +73,13 @@ export default function Home() {
                 break;
 
             case "list":
-                tmpResponse = (users.data?.map((item: any, index: number) => { return "|   " + item.user + " " + (item.isDeleted ? "- Banned" : "") }) as string[]).reverse();
+                const listing = text.substring(argsIndex + 1).split(" ");
+                if (listing[0] === "users") {
+                    tmpResponse = (users.data?.map((item: any, index: number) => { return "|   " + item.user + " " + (item.isDeleted ? "- Banned" : "") }) as string[]).reverse();
+                }
+                else if(listing[0] === "roles"){
+                    tmpResponse = ["|   1 - Owner", "|   2 - Admin", "|   3 - Default"];
+                }
                 break;
 
             case "ban":
