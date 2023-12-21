@@ -101,7 +101,7 @@ export default function Navbar({
 
                 }
             </nav>
-            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={isMobile.current ? { width: "100vw" } :{width: "20vw"}}>
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={isMobile.current ? { width: "100vw" } :{width: "25rem"}}>
                 <div className='grid grid-cols-2 gap-2 relative'>
                     {
                         !checkUser ?
@@ -115,7 +115,7 @@ export default function Navbar({
                         :
                         items.map((item: any, index: number) => {
                             return (
-                                <div key={index} className={!item.items && !item.separator ? "" : "col-span-2"}>
+                                <div key={index} className={!item.items && !item.separator ? "" : "col-span-2 flex flex-wrap justify-center"}>
                                     {
                                         !item.items && !item.separator  ?
                                             <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer"}`}><i className={item.icon}></i> {item.label}</div> :
