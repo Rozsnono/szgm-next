@@ -30,8 +30,10 @@ export default function Home() {
                 pmszt.data.map((item: any, index: number) => {
                     return (
                         // <QuestionTab finished={(e) => { }} key={index} icon={selectedExam.icon.replace("pi pi-", "")} type={item.type} question={item.question} number={index + 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
-                        <QuestionTab key={index} max={30} icon="database" img={item.pic} result={item.answers} correct={item.answers} question={item.question} number={index+1} answers={item.options} next={(e) => { }} finished={(e) => { }} type={item.answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
-
+                        <div key={index}>
+                            {index % 30 === 0 && <hr/>}
+                            <QuestionTab key={index} max={30} icon="database" img={item.pic} result={item.answers} correct={item.answers} question={item.question} number={index + 1} answers={item.options} next={(e) => { }} finished={(e) => { }} type={item.answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
+                        </div>
                     )
                 })
 
