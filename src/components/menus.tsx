@@ -73,19 +73,19 @@ export const items = [
                 type: "study"
             },
             {
-                label: 'PMSZT',
+                label: 'PMSZT-TEST',
                 icon: Icons['PMSZT'],
                 link: '/pmszt',
                 type: "test"
             },
             {
-                label: 'PMSZT-VIZSGA',
+                label: 'PMSZT',
                 icon: Icons['PMSZT'],
                 link: '/pmszt-vizsga',
                 type: "study"
             },
             {
-                label: 'RDSZ',
+                label: 'RDSZ-TEST',
                 icon: Icons['RDSZ'],
                 link: '/rdsz',
                 type: "test"
@@ -104,25 +104,25 @@ export const items = [
             //     template: () => <p className='p-2 ps-4 text-red-400'><i className='pi pi-spinner pi-spin'></i> MEMR</p>,
             // },
             {
-                label: 'MEMR',
+                label: 'MEMR-TEST',
                 icon: Icons['MEMR'],
                 link: '/memr',
                 type: "test"
             },
             {
-                label: 'MEMR ZH',
+                label: 'MEMR',
                 icon: Icons['MEMR'],
                 link: '/memr-zh/5',
                 type: "study"
             },
             {
-                label: 'MEMR VIZSGA',
+                label: 'MEMR',
                 icon: Icons['MEMR'],
                 link: '/memr-vizsga',
                 type: "study"
             },
             {
-                label: 'VÁLLALAT',
+                label: 'VÁLLALAT-TEST',
                 icon: Icons['VÁLLALAT'],
                 link: '/vallalat',
                 type: "test"

@@ -16,7 +16,7 @@ export default function Home() {
         {
             title: "PMSZT",
             icon: "pi pi-file",
-            max: 24
+            max: 30
         },
         {
             title: "SZGH",
