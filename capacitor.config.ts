@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.szehelper.app',
-  appName: 'Tanulas Helper',
+  appId: 'com.tanulasseged.app',
+  appName: 'Tanulas Segéd',
   webDir: 'out',
   bundledWebRuntime: false,
   server: {
