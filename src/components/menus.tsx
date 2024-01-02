@@ -36,11 +36,16 @@ export const items = [
         link: '/targyak'
     },
     {
-        label: 'Üzenetek',
-        icon: 'pi pi-whatsapp',
-        error: true,
-        link: '/'
+        label: 'TanulAI',
+        icon: 'pi pi-user',
+        link: '/tanulai'
     },
+    // {
+    //     label: 'Üzenetek',
+    //     icon: 'pi pi-whatsapp',
+    //     error: true,
+    //     link: '/'
+    // },
     {
         separator: true
     },
