@@ -64,3 +64,9 @@ pre{
     font-family: monospace;
     overflow-x: auto;
 }
+
+.label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
