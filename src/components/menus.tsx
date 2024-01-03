@@ -16,7 +16,7 @@ export function navigateTo(to: string) {
     sessionStorage.clear();
 }
 
-export const urls = ["/atlag","/targyak"];
+export const urls = ["/atlag", "/targyak"];
 
 
 export const items = [
@@ -65,17 +65,12 @@ export const items = [
     }, {
         label: '2. félév',
         items: [
+
             {
-                label: 'SZGH',
+                label: 'SZGH-TEST',
                 icon: Icons['SZGH'],
                 link: '/szgh',
                 type: "test"
-            },
-            {
-                label: 'SZGH-ZH',
-                icon: Icons['SZGH-ZH'],
-                link: '/szgh-zh',
-                type: "study"
             },
             {
                 label: 'PMSZT-TEST',
@@ -84,17 +79,28 @@ export const items = [
                 type: "test"
             },
             {
-                label: 'PMSZT',
-                icon: Icons['PMSZT'],
-                link: '/pmszt-vizsga',
-                type: "study"
-            },
-            {
                 label: 'RDSZ-TEST',
                 icon: Icons['RDSZ'],
                 link: '/rdsz',
                 type: "test"
             },
+            {
+                separator: true
+            },
+
+            {
+                label: 'SZGH',
+                icon: Icons['SZGH-ZH'],
+                link: '/szgh-zh',
+                type: "study"
+            },
+            {
+                label: 'PMSZT',
+                icon: Icons['PMSZT'],
+                link: '/pmszt-vizsga',
+                type: "study"
+            },
+
             {
                 label: 'Matek 2',
                 icon: Icons['Matek 2'],
@@ -115,6 +121,15 @@ export const items = [
                 type: "test"
             },
             {
+                label: 'VÁLLALAT-TEST',
+                icon: Icons['VÁLLALAT'],
+                link: '/vallalat',
+                type: "test"
+            },
+            {
+                separator: true
+            },
+            {
                 label: 'MEMR',
                 icon: Icons['MEMR'],
                 link: '/memr-zh/5',
@@ -125,12 +140,6 @@ export const items = [
                 icon: Icons['MEMR'],
                 link: '/memr-vizsga',
                 type: "study"
-            },
-            {
-                label: 'VÁLLALAT-TEST',
-                icon: Icons['VÁLLALAT'],
-                link: '/vallalat',
-                type: "test"
             },
             {
                 label: 'ADATBÁZIS',

@@ -65,7 +65,7 @@ export default function Home() {
         if (number > 7) {
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            router.push("/results");
+            router.push("/results?exam=vallalat");
             setNumber(0);
         }
     }
@@ -77,7 +77,7 @@ export default function Home() {
         sessionStorage.setItem("vallalat-result", JSON.stringify(result));
         sessionStorage.removeItem("number");
         sessionStorage.removeItem("queue");
-        router.push("/results");
+        router.push("/results?exam=vallalat");
         setNumber(0);
     }
 

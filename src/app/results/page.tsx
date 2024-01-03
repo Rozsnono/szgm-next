@@ -1,6 +1,7 @@
 "use client";
 import QuestionTab from '@/components/questionTab';
-import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { Dropdown } from 'primereact/dropdown';
 import { JSXElementConstructor, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useRef, useState } from 'react';
 import { useQuery } from 'react-query';
@@ -8,7 +9,7 @@ import { useQuery } from 'react-query';
 export default function Home() {
 
     const router = useRouter();
-    const param = useParams();
+    const param = useSearchParams();
 
     const point = useRef(0);
 
@@ -39,11 +40,11 @@ export default function Home() {
             max: 9
         },
     ];
-    const [selectedExam, setSelectedExam] = useState<any>(param.type ? exams.filter((item) => item.title == (param.type as string).toUpperCase())[0] : exams[0]);
+    const [selectedExam, setSelectedExam] = useState<any>(param.get("exam") ? exams.filter((item) => item.title == (param.get("exam") as string).toUpperCase())[0] : exams[0]);
     const exam = useRef<any>(selectedExam);
 
     function getResults() {
-        if(!exam.current) return [];
+        if (!exam.current) return [];
         if (sessionStorage.getItem(exam.current.title.toLowerCase() + "-result")) {
             const data = JSON.parse(sessionStorage.getItem(exam.current.title.toLowerCase() + "-result") as string);
             getPoint(data);
@@ -53,11 +54,11 @@ export default function Home() {
         }
     }
 
-    function getPoint(data: any){
+    function getPoint(data: any) {
         let checkI = 0;
 
         for (const i of data) {
-            if(i.correct && i.correct.length === i.answer.length){
+            if (i.correct && i.correct.length === i.answer.length) {
                 const check = i.answer.filter((item: any) => !i.correct.includes(item));
                 checkI += (check.length > 0 ? 0 : 1);
             }
@@ -66,7 +67,7 @@ export default function Home() {
         return checkI;
     }
 
-    const results: any = useQuery(param.type + "-result", getResults);
+    const results: any = useQuery(param.get("exam")+ "-result", getResults);
 
 
 
@@ -86,29 +87,30 @@ export default function Home() {
 
     return (
         <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-32 text-lg">
+            <div className="flex gap-3 w-full justify-center">
+                {exams.map((item) => {
+                    return (
+                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className='flex items-center gap-1 border-2 border-blue-700 text-blue-700 font-bold p-2 rounded-lg hover:text-white hover:bg-blue-700 cursor-pointer duration-200'><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
+                    )
+                })}
+            </div>
             <div className="flex gap-3 w-full">
-                <span className="p-float-label w-full">
-                    <Dropdown value={selectedExam} onChange={(e) => { setSelectedExam(() => e.value); exam.current = e.value; results.refetch() }} options={exams}
-                        className="w-full " itemTemplate={Template} optionLabel='title' />
-                    <label htmlFor="search">Vizsga</label>
-                </span>
                 <span className="p-float-label w-full">
                     <label htmlFor="search">{point.current} / {selectedExam.max}</label>
                 </span>
-                <span onClick={()=>{router.push("/"+selectedExam.title.toLocaleLowerCase()); sessionStorage.removeItem(selectedExam.title.toLowerCase() + "-result")}} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
+                <span onClick={() => { router.push("/" + selectedExam.title.toLocaleLowerCase()); sessionStorage.removeItem(selectedExam.title.toLowerCase() + "-result") }} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
                     Újra
                 </span>
             </div>
-
             <div className='text-center grid'>
                 {
                     results.isLoading ?
                         <h3>Töltés...</h3> :
-                        results.data && results.data !== undefined && results.data.length > 0?
+                        results.data && results.data !== undefined && results.data.length > 0 ?
 
                             results.data.map((item: any, index: number) => {
                                 return (
-                                    <QuestionTab finished={(e)=>{}} max={selectedExam.max} key={index} icon={selectedExam.icon.replace("pi pi-","")} type={item.type} question={item.question} number={index+ 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
+                                    <QuestionTab finished={(e) => { }} max={selectedExam.max} key={index} icon={selectedExam.icon.replace("pi pi-", "")} type={item.type} question={item.question} number={index + 1} answers={item.options} result={item.answer} correct={item.correct} next={(e) => { }} ></QuestionTab>
 
                                 )
                             })
@@ -118,6 +120,8 @@ export default function Home() {
                             </h3>
                 }
             </div>
+
+
 
         </main>
     );

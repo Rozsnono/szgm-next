@@ -29,8 +29,7 @@ export default function Home() {
       }
 
       <div className="flex flex-col  gap-2">
-        
-        <div className='flex flex-col lg:text-[5rem] text-lg font-bold p-12 border-2 underline border-blue-800 rounded-lg text-blue-800'>Nem hivatalos oldal!</div>
+        <Image src={"/icon-only.png"} width={300} height={300} alt='icon'></Image>
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');

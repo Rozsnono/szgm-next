@@ -88,7 +88,7 @@ export default function Navbar({
                 }
                 {
                     checkUser && checkUser.role !== 3 ?
-                        <button onClick={() => {  router.replace("/admin"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i></button> : <></>
+                        <button onClick={() => { router.replace("/admin"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i></button> : <></>
                 }
                 {
                     checkUser && checkUser.role === 1 && show &&
@@ -96,37 +96,37 @@ export default function Navbar({
                 }
                 {
                     checkUser ?
-                        <button onClick={() => { logout(); setUser({}); router.replace("/"); router.refresh(); window.location.reload() }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-out'></i> Log out</button> : 
+                        <button onClick={() => { logout(); setUser({}); router.replace("/"); router.refresh(); window.location.reload() }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-out'></i> Log out</button> :
                         <button onClick={() => { router.replace("/login"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-in'></i> Log in</button>
 
                 }
             </nav>
-            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={isMobile.current ? { width: "100vw" } :{width: "25rem"}}>
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={isMobile.current ? { width: "100vw" } : { width: "25rem" }}>
                 <div className='grid grid-cols-2 gap-2 relative'>
                     {
                         !checkUser ?
-                        items.filter((item: any) => { return urls.includes(item.link) }).map((item: any, index: number) => {
-                            return (
-                                <div key={index}>
-                                    <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 cursor-pointer px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800 hover:bg-red-800 hover:text-white" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"}`}><i className={item.icon}></i> {item.label}</div>
-                                </div>
-                            )
-                        }) 
-                        :
-                        items.map((item: any, index: number) => {
-                            return (
-                                <div key={index} className={!item.items && !item.separator ? "" : "col-span-2 flex flex-wrap justify-center"}>
-                                    {
-                                        !item.items && !item.separator  ?
-                                            <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer"}`}><i className={item.icon}></i> {item.label}</div> :
-                                            item.items && !item.separator ?
-                                                <MenusItem items={item.items.filter((item: any) => !item.template )} label={item.label} onClick={(e) => { navigateTo(e); setMenu(false) }}></MenusItem>
-                                                :
-                                                <div className="h-10 col-span-2 "></div>
-                                    }
-                                </div>
-                            )
-                        })
+                            items.filter((item: any) => { return urls.includes(item.link) }).map((item: any, index: number) => {
+                                return (
+                                    <div key={index}>
+                                        <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 cursor-pointer px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800 hover:bg-red-800 hover:text-white" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"}`}><i className={item.icon}></i> {item.label}</div>
+                                    </div>
+                                )
+                            })
+                            :
+                            items.map((item: any, index: number) => {
+                                return (
+                                    <div key={index} className={!item.items && !item.separator ? "" : "col-span-2 flex flex-wrap justify-center"}>
+                                        {
+                                            !item.items && !item.separator ?
+                                                <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white  cursor-pointer"}`}><i className={item.icon}></i> {item.label}</div> :
+                                                item.items && !item.separator ?
+                                                    <MenusItem items={item.items.filter((item: any) => !item.template)} label={item.label} onClick={(e) => { navigateTo(e); setMenu(false) }}></MenusItem>
+                                                    :
+                                                    <div className="h-10 col-span-2 "></div>
+                                        }
+                                    </div>
+                                )
+                            })
                     }
                 </div>
             </Sidebar>
@@ -145,7 +145,13 @@ function MenusItem({ items, label, onClick }: { items: any, label: string, onCli
                 {
                     items.map((item: any, index: number) => {
                         return (
-                            <div onClick={() => { onClick(item.link); }} key={index} data-pr-tooltip={item.label} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white" + (item.type == "test" ? " border-green-800 text-green-800 hover:bg-green-800" : " border-blue-800 text-blue-800 hover:bg-blue-800")}><i className={item.icon}></i></div>
+                            <div key={index}>
+                                {
+                                    item.separator ?
+                                        <div className='h-10 border border-gray-500'></div> :
+                                        <div onClick={() => { onClick(item.link); }} data-pr-tooltip={item.label} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white" + (item.type == "test" ? " border-green-800 text-green-800 hover:bg-green-800" : " border-blue-800 text-blue-800 hover:bg-blue-800")}><i className={item.icon}></i></div>
+                                }
+                            </div>
                         )
                     })
                 }

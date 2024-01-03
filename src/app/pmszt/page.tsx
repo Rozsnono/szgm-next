@@ -62,7 +62,7 @@ export default function Home() {
         if (number + 1 > 29) {
             sessionStorage.removeItem("number");
             sessionStorage.removeItem("queue");
-            router.push("/results");
+            router.push("/results?exam=pmszt");
             setNumber(0);
         }
     }
@@ -74,7 +74,7 @@ export default function Home() {
         sessionStorage.setItem("pmszt-result", JSON.stringify(result));
         sessionStorage.removeItem("number");
         sessionStorage.removeItem("queue");
-        router.push("/results");
+        router.push("/results?exam=pmszt");
         setNumber(0);
     }
 
