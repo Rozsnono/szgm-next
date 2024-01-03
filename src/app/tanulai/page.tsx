@@ -108,9 +108,9 @@ export default function Page() {
 
 
     return (
-        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-md flex justify-center gap-4">
-            <div className="w-1/4 flex flex-col relative">
-                <div className="fixed flex flex-col gap-4 overflow-auto">
+        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-md flex lg:flex-row flex-col justify-center gap-4">
+            <div className="lg:flex hidden lg:w-1/4 w-full flex-col relative">
+                <div className="lg:fixed flex lg:flex-col flex-row gap-4 overflow-auto">
                     <div onClick={create} className=" border border-blue-800 flex items-center gap-1 rounded-lg p-2 w-fit text-blue-800 font-bold cursor-pointer hover:bg-blue-800 hover:text-white duration-200">
                         Új chat
                         <i className="pi pi-comment"></i>
