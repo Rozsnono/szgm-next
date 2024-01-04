@@ -40,6 +40,16 @@ export const items = [
         icon: 'pi pi-user',
         link: '/tanulai'
     },
+    {
+        label: 'Tesztek',
+        icon: 'pi pi-question',
+        type: "switcher"
+    },
+    {
+        label: 'Anyagok',
+        icon: 'pi pi-file',
+        type: "switcher"
+    },
     // {
     //     label: 'Üzenetek',
     //     icon: 'pi pi-whatsapp',
@@ -85,10 +95,6 @@ export const items = [
                 type: "test"
             },
             {
-                separator: true
-            },
-
-            {
                 label: 'SZGH',
                 icon: Icons['SZGH-ZH'],
                 link: '/szgh-zh',
@@ -125,9 +131,6 @@ export const items = [
                 icon: Icons['VÁLLALAT'],
                 link: '/vallalat',
                 type: "test"
-            },
-            {
-                separator: true
             },
             {
                 label: 'MEMR',

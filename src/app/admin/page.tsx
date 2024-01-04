@@ -109,7 +109,7 @@ export default function Home() {
                     "- unban <username>",
                     "- clear",
                     "- help",
-                    "- list users",
+                    "- list <users | roles>",
                     "- new <username> <password> <role>"
                 ]
                 break;

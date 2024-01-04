@@ -140,3 +140,30 @@
     width: 2rem !important;
     height: 2rem !important;
 }
+
+
+.study-animation{
+    animation: slide-from-right 0.2s ease-in-out;
+}
+
+.test-animation{
+    animation: slide-from-left 0.2s ease-in-out;
+}
+
+@keyframes slide-from-left {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-from-right {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
