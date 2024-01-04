@@ -90,7 +90,7 @@ export default function Home() {
             <div className="flex gap-3 w-full justify-center">
                 {exams.map((item) => {
                     return (
-                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className='flex items-center gap-1 border-2 border-blue-700 text-blue-700 font-bold p-2 rounded-lg hover:text-white hover:bg-blue-700 cursor-pointer duration-200'><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
+                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border-2  font-bold p-2 rounded-lg cursor-pointer duration-200' + (item.title === param.get("exam") ? "border-blue-700 text-white bg-blue-700" : "border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
                     )
                 })}
             </div>
