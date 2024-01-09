@@ -78,7 +78,7 @@ export default function Home() {
                     tmpResponse = (users.data?.map((item: any, index: number) => { return "|   " + item.user + " " + (item.isDeleted ? "- Banned" : "") }) as string[]).reverse();
                 }
                 else if(listing[0] === "roles"){
-                    tmpResponse = ["|   1 - Owner", "|   2 - Admin", "|   3 - Default"];
+                    tmpResponse = ["|   1 - Owner", "|   2 - Admin", "|   3 - Member" , "|   4 - Guest" ];
                 }
                 break;
 

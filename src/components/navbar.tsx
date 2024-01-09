@@ -117,14 +117,19 @@ export default function Navbar({
 
                     <hr className='col-span-2' />
 
-                    <div onClick={() => { setType("test") }} className={`p-3 select-none px-4 rounded-full ${type == 'study' ? 'border-b-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer' : 'border-b-2 border-green-800 bg-green-800 text-white'} duration-200`}><i className="pi pi-question"></i> Tesztek</div>
-                    <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer' : 'border-b-2 border-green-800 bg-green-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
+                    {
+                        checkUser && checkUser.role != 4 &&
+                        <>
+                            <div onClick={() => { setType("test") }} className={`p-3 select-none px-4 rounded-full ${type == 'study' ? 'border-b-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer' : 'border-b-2 border-green-800 bg-green-800 text-white'} duration-200`}><i className="pi pi-question"></i> Tesztek</div>
+                            <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer' : 'border-b-2 border-green-800 bg-green-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
+                        </>
+                    }
 
 
                     <Tooltip target=".menu-items">
                     </Tooltip>
 
-                    <div className={'col-span-2 flex flex-col gap-2 mt-4 ' + (type+"-animation")}>
+                    <div className={'col-span-2 flex flex-col gap-2 mt-4 ' + (type + "-animation")}>
                         <main className="flex flex-col justify-center items-center col-span-2">
                             <div className="">1. félév</div>
                             <div className="flex gap-2 items-center">
