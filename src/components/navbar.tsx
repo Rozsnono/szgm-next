@@ -75,7 +75,7 @@ export default function Navbar({
         setMenu(false)
     }
 
-    const [type, setType] = useState<string>("test");
+    const [type, setType] = useState<string>("study");
 
     return (
 
