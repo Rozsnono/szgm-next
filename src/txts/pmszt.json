@@ -178,7 +178,9 @@
         {
             "question": "Hány csoportra oszthatjuk a COCOMO Intermediate költségtényezőit? ",
             "pic": null,
-            "answers": ["3"],
+            "answers": [
+                "3"
+            ],
             "options": [
                 "3 ",
                 "6 ",
@@ -1120,7 +1122,10 @@
         {
             "question": " Mit nevezünk inkrementumnak? ",
             "pic": null,
-            "answers": [],
+            "answers": [
+                "Növekményes fejlesztési modell esetén az egyes részfunkciókat megvalósító fejlesztési változatokat. ",
+                "Evolúciós fejlesztési modell esetén az egyes részfunkciókat megvalósító fejlesztési változatokat. "
+            ],
             "options": [
                 "Növekményes fejlesztési modell esetén az egyes részfunkciókat megvalósító fejlesztési változatokat. ",
                 "Evolúciós fejlesztési modell esetén az egyes részfunkciókat megvalósító fejlesztési változatokat. ",
@@ -1375,7 +1380,9 @@
         {
             "question": " Mit jelent az M(t) >= 0,9 ? ",
             "pic": null,
-            "answers": [],
+            "answers": [
+                "Az informatikai rendszer a t időpontban legalább 0,9 valószínűséggel biztonságosan fog működni. "
+            ],
             "options": [
                 "Az informatikai rendszer t idő alatt legalább 0,9 valószínűséggel újra üzemképes állapotba hozható. ",
                 "Az informatikai rendszer a t időpontban legalább 0,9 valószínűséggel biztonságosan fog működni. ",
@@ -1571,7 +1578,9 @@
         {
             "question": " V modell esetén mely fázis eredményeként állnak elő a hardver és szoftver tervdokumentációk? ",
             "pic": null,
-            "answers": [],
+            "answers": [
+                "Követelmények specifikálása "
+            ],
             "options": [
                 "Architekturális tervezés ",
                 "A teljes rendszer-specifikáció ",
@@ -2993,11 +3002,12 @@
             ]
         },
         {
-            "question": " Az alábbi esetben mennyi LSZ értéke? ",
+            "question": " Az alábbi esetben mennyi LSZ értéke? 5E → 2H, 9E → 1H, 3E → 2H ",
             "pic": null,
-            "answers": [],
+            "answers": [
+                "15E "
+            ],
             "options": [
-                "5E → 2H, 9E → 1H, 3E → 2H ",
                 "5E",
                 "15E ",
                 "5H ",
@@ -3464,8 +3474,7 @@
                 "Inkrementális tesztelés során, azon belül a hívási hierarchia szerinti vizsgálatnál használjuk. ",
                 "A tesztelendő modul által meghívót modulokat helyettesítjük vele. ",
                 "Egy modul izolált ellenőrzése során használjuk. ",
-                "Azokat a modulokat hívjuk így, melyek a végleges rendszerben nem fognak szerepelni, csak a ",
-                "tesztelés során használtuk fel, egy másik modul vizsgálata során. ",
+                "Azokat a modulokat hívjuk így, melyek a végleges rendszerben nem fognak szerepelni, csak a tesztelés során használtuk fel, egy másik modul vizsgálata során. ",
                 "A Funkcionális tesztelés során használjuk. ",
                 "A tesztelendő modult helyettesítjük vele. "
             ]
@@ -3537,7 +3546,9 @@
         {
             "question": " Előfordulhat, hogy tesztelés során nincs szükség meghajtó modulokra csak csonk modulokra? ",
             "pic": null,
-            "answers": [],
+            "answers": [
+                "Nem, meghajtó modulra mindig szükség van. Csak olyan fordulhat elő, hogy további csonkok nem szükségesek. "
+            ],
             "options": [
                 "Igen, top-down integrálás esetén az elkészült és letesztelt modulok használhatóak meghajtóként. ",
                 "Igen, ha az tesztelt modul működése egyértelműen specifikált, akkor elhagyható a meghajtó modul. ",
@@ -3582,7 +3593,9 @@
         {
             "question": "Top-down módszer esetén hány lépésben célszerű összeintegrálni az alábbi rendszert? ",
             "pic": "PIC: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",
-            "answers": [],
+            "answers": [
+                "5 "
+            ],
             "options": [
                 "5 ",
                 "6 ",
@@ -3594,7 +3607,9 @@
         {
             "question": " Bottom-up módszer esetén hány lépésben célszerű összeintegrálni az alábbi rendszert? ",
             "pic": "PIC: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",
-            "answers": [],
+            "answers": [
+                "3 "
+            ],
             "options": [
                 "5 ",
                 "6 ",
@@ -5065,7 +5080,9 @@
         {
             "question": " Jelölje az igaz állítást! ",
             "pic": null,
-            "answers": [],
+            "answers": [
+                "Osztálydiagramon az asszociáció kapcsolatot jelöl, a kompozíció tulajdonlást."
+            ],
             "options": [
                 "Osztálydiagramon az asszociáció kapcsolatot jelöl, a kompozíció tulajdonlást.",
                 "Osztálydiagramon a kompozíció kapcsolatot jelöl, az asszociáció tulajdonlást. "
