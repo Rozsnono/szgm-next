@@ -2022,16 +2022,14 @@
             ]
         },
         {
-            "question": " Mit fejez ki az alábbi egyenlőtlenség? ",
+            "question": " Mit fejez ki az alábbi egyenlőtlenség? C(f1) > C(f2) ",
             "pic": null,
             "answers": [
                 "Az f1 feladat bonyolultsága nagyobb, mint az f2 feladat bonyolultsága. "
             ],
             "options": [
-                "C(f1) > C(f2) ",
                 "Az f1 feladat bonyolultsága nagyobb, mint az f2 feladat bonyolultsága. ",
-                "Az f1 probléma megoldására fordítandó erőfeszítés nagyobb, mint az f2 probléma megoldására ",
-                "fordítandó erőfeszítés. ",
+                "Az f1 probléma megoldására fordítandó erőfeszítés nagyobb, mint az f2 probléma megoldására fordítandó erőfeszítés. ",
                 "Az f1 forráskód hossza nagyobb, mint az f2 forráskód hossza. ",
                 "Az f1 modul funkciópontja nagyobb, mint az f2 modul funkciópontja. "
             ]
@@ -2986,13 +2984,12 @@
             ]
         },
         {
-            "question": " Mi igaz az alábbi kifejezés esetén? ",
+            "question": " Mi igaz az alábbi kifejezés esetén? 4E → 2H, 8E → 4H, 6E → 3H ",
             "pic": null,
             "answers": [
                 "A projekt időtartama 11 hónap. "
             ],
             "options": [
-                "4E → 2H, 8E → 4H, 6E → 3H ",
                 "A projekt időtartama 11 hónap. ",
                 "A projekt időtartama 58 hónap ",
                 "A projekt időtartama 58 hét. ",
@@ -3511,7 +3508,7 @@
             ]
         },
         {
-            "question": " Egy inkrementális tesztelés első három fázisa látható. Mi mondható el róla? ",
+            "question": " Egy inkrementális tesztelés első három fázisa látható. Mi mondható el róla? 1) {A, B} modulok: T1, T2, T3 tesztek. 2) {A, B, C} modulok: T1, T2, T3, T4 tesztek. 3) {A, B, C, D} modulok: T1, T2, T3, T4, T5 tesztek. ",
             "pic": null,
             "answers": [
                 "Ezt a tesztelési módszert regresszív tesztelésnek nevezzük. ",
@@ -3519,9 +3516,6 @@
                 "Ezt a tesztelési módszert visszaható tesztelésnek nevezzük. "
             ],
             "options": [
-                "1) {A, B} modulok: T1, T2, T3 tesztek. ",
-                "2) {A, B, C} modulok: T1, T2, T3, T4 tesztek. ",
-                "3) {A, B, C, D} modulok: T1, T2, T3, T4, T5 tesztek. ",
                 "Ezt a tesztelési módszert regresszív tesztelésnek nevezzük. ",
                 "Ezt a tesztelési módszert regressziós tesztelésnek nevezzük. ",
                 "Ezt a tesztelési módszert visszaható tesztelésnek nevezzük. ",
