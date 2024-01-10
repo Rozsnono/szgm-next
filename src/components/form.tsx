@@ -13,6 +13,7 @@ export default function Form({
     const [TMPuser, setTMPUser] = useState('');
     const [pass, setPass] = useState('');
     const path = usePathname();
+    const [isLoading, setIsloading] = useState(false);
 
     const { user, setUser } = useContext<any>(UserContext);
     const [checkUser, setCheckUser] = useState<any | null>(undefined);
@@ -27,10 +28,12 @@ export default function Form({
 
 
     async function logining() {
+        if(isLoading) return;
         login(TMPuser, pass);
     }
 
     async function login(user: string, password: string) {
+        setIsloading(true);
         let data = { ip: "1.1.1.1" };
         try {
             const res = await fetch("https://api.ipify.org/?format=json");
@@ -45,12 +48,14 @@ export default function Form({
             if (data2.length !== 0 && data2[0].user) {
                 localStorage.setItem("6429FC567AB4618A", JSON.stringify(data2[0]));
                 window.location.reload();
-
+                setIsloading(false);
             }
         } catch (error) {
             setMessage("User not found");
-        }
+            setIsloading(false);
 
+        }
+        
     }
 
     const urls = ["/atlag", "/targyak", "/"]
@@ -419,7 +424,7 @@ export default function Form({
                                         </span>
                                         <div className="text-red-500">{message}</div>
 
-                                        <div className="w-full rounded-full border-blue-500 bg-white border-2 text-blue-500 hover:bg-blue-500 hover:text-white duration-100 text-center cursor-pointer" onClick={logining}>Login</div>
+                                        <div className={"w-full rounded-full border-blue-500 bg-white border-2 text-blue-500 duration-100 text-center " + (isLoading ? "" : "hover:bg-blue-500 hover:text-white cursor-pointer")} onClick={logining}>{isLoading ? "Loging in..." : "Login"}</div>
                                     </div>
                                 </main>
                         }
@@ -434,6 +439,7 @@ export default function Form({
 
 import { SelectButton } from 'primereact/selectbutton';
 import { usePathname } from "next/navigation";
+import { set } from "mongoose";
 
 export function Register() {
 

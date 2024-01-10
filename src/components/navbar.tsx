@@ -111,9 +111,15 @@ export default function Navbar({
                     <hr className='col-span-2' />
 
                     <div onClick={() => { navigateTo("/average"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Átlag</div>
-                    <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
                     <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-bookmark"></i> Tárgyak</div>
-                    <div onClick={() => { navigateTo("/tanulai"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-user"></i> TanulAI</div>
+
+                    {
+                        checkUser &&
+                        <>
+                            <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
+                            <div onClick={() => { navigateTo("/tanulai"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-user"></i> TanulAI</div>
+                        </>
+                    }
 
                     <hr className='col-span-2' />
 
@@ -129,85 +135,88 @@ export default function Navbar({
                     <Tooltip target=".menu-items">
                     </Tooltip>
 
-                    <div className={'col-span-2 flex flex-col gap-2 mt-4 ' + (type + "-animation")}>
-                        <main className="flex flex-col justify-center items-center col-span-2">
-                            <div className="">1. félév</div>
-                            <div className="flex gap-2 items-center">
-                                {
-                                    type === "study" ?
-                                        <>
-                                            <div onClick={() => { navigateTo("/matek1") }} data-pr-tooltip={"Matek 1"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
-                                        </> :
-                                        <>
-                                        </>
-                                }
-                            </div>
-                        </main>
+                    {
+                        checkUser &&
+                        <div className={'col-span-2 flex flex-col gap-2 mt-4 ' + (type + "-animation")}>
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">1. félév</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                                <div onClick={() => { navigateTo("/matek1") }} data-pr-tooltip={"Matek 1"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
+                                            </> :
+                                            <>
+                                            </>
+                                    }
+                                </div>
+                            </main>
 
-                        <main className="flex flex-col justify-center items-center col-span-2">
-                            <div className="">2. félév</div>
-                            <div className="flex gap-2 items-center">
-                                {
-                                    type === "study" ?
-                                        <>
-                                            <div onClick={() => { navigateTo("/matek2") }} data-pr-tooltip={"Matek 2"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
-                                            <div onClick={() => { navigateTo("/szgh-zh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
-                                            <div onClick={() => { navigateTo("/pmszt-vizsga") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
-                                        </> :
-                                        <>
-                                            <div onClick={() => { navigateTo("/szgh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
-                                            <div onClick={() => { navigateTo("/rdsz") }} data-pr-tooltip={"RDSZ"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-cog"></i></div>
-                                            <div onClick={() => { navigateTo("/pmszt") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
-                                        </>
-                                }
-                            </div>
-                        </main>
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">2. félév</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                                <div onClick={() => { navigateTo("/matek2") }} data-pr-tooltip={"Matek 2"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
+                                                <div onClick={() => { navigateTo("/szgh-zh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
+                                                <div onClick={() => { navigateTo("/pmszt-vizsga") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
+                                            </> :
+                                            <>
+                                                <div onClick={() => { navigateTo("/szgh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
+                                                <div onClick={() => { navigateTo("/rdsz") }} data-pr-tooltip={"RDSZ"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-cog"></i></div>
+                                                <div onClick={() => { navigateTo("/pmszt") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
+                                            </>
+                                    }
+                                </div>
+                            </main>
 
-                        <main className="flex flex-col justify-center items-center col-span-2">
-                            <div className="">3. félév</div>
-                            <div className="flex gap-2 items-center">
-                                {
-                                    type === "study" ?
-                                        <>
-                                            <div onClick={() => { navigateTo("/matek3") }} data-pr-tooltip={"Matek 3"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
-                                            <div onClick={() => { navigateTo("/memr-zh") }} data-pr-tooltip={"MEMR RÖVID"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
-                                            <div onClick={() => { navigateTo("/memr-vizsga") }} data-pr-tooltip={"MEMR TELJES"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
-                                            <div onClick={() => { navigateTo("/database") }} data-pr-tooltip={"ADATBÁZIS"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-database"></i></div>
-                                        </> :
-                                        <>
-                                            <div onClick={() => { navigateTo("/memr") }} data-pr-tooltip={"MEMR"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
-                                            <div onClick={() => { navigateTo("/company") }} data-pr-tooltip={"VÁLLALAT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-chart-line"></i></div>
-                                        </>
-                                }
-                            </div>
-                        </main>
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">3. félév</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                                <div onClick={() => { navigateTo("/matek3") }} data-pr-tooltip={"Matek 3"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
+                                                <div onClick={() => { navigateTo("/memr-zh") }} data-pr-tooltip={"MEMR RÖVID"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
+                                                <div onClick={() => { navigateTo("/memr-vizsga") }} data-pr-tooltip={"MEMR TELJES"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
+                                                <div onClick={() => { navigateTo("/database") }} data-pr-tooltip={"ADATBÁZIS"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-database"></i></div>
+                                            </> :
+                                            <>
+                                                <div onClick={() => { navigateTo("/memr") }} data-pr-tooltip={"MEMR"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
+                                                <div onClick={() => { navigateTo("/company") }} data-pr-tooltip={"VÁLLALAT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-chart-line"></i></div>
+                                            </>
+                                    }
+                                </div>
+                            </main>
 
-                        <main className="flex flex-col justify-center items-center col-span-2">
-                            <div className="">3. félév</div>
-                            <div className="flex gap-2 items-center">
-                                {
-                                    type === "study" ?
-                                        <>
-                                            <div onClick={() => { navigateTo("/mi") }} data-pr-tooltip={"MI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-android"></i></div>
-                                        </> :
-                                        <></>
-                                }
-                            </div>
-                        </main>
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">3. félév</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                                <div onClick={() => { navigateTo("/mi") }} data-pr-tooltip={"MI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-android"></i></div>
+                                            </> :
+                                            <></>
+                                    }
+                                </div>
+                            </main>
 
-                        <main className="flex flex-col justify-center items-center col-span-2">
-                            <div className="">Kötelező nem szakmai</div>
-                            <div className="flex gap-2 items-center">
-                                {
-                                    type === "study" ?
-                                        <>
-                                            <div onClick={() => { navigateTo("/physics") }} data-pr-tooltip={"FIZIKA TÖRI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-globe"></i></div>
-                                        </> :
-                                        <></>
-                                }
-                            </div>
-                        </main>
-                    </div>
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">Kötelező nem szakmai</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                                <div onClick={() => { navigateTo("/physics") }} data-pr-tooltip={"FIZIKA TÖRI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-globe"></i></div>
+                                            </> :
+                                            <></>
+                                    }
+                                </div>
+                            </main>
+                        </div>
+                    }
                     {/* {
                         !checkUser ?
                             items.filter((item: any) => { return urls.includes(item.link) }).map((item: any, index: number) => {
