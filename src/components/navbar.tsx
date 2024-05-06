@@ -191,12 +191,13 @@ export default function Navbar({
                             </main>
 
                             <main className="flex flex-col justify-center items-center col-span-2">
-                                <div className="">3. félév</div>
+                                <div className="">4. félév</div>
                                 <div className="flex gap-2 items-center">
                                     {
                                         type === "study" ?
                                             <>
                                                 <div onClick={() => { navigateTo("/mi") }} data-pr-tooltip={"MI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-android"></i></div>
+                                                <div onClick={() => { navigateTo("/physics-info") }} data-pr-tooltip={"FIZIKA INFO"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-globe"></i></div>
                                             </> :
                                             <></>
                                     }
