@@ -1,0 +1,88 @@
+[
+    {
+        "label": "Pontszerü testek",
+        "text": [
+            "Pontszerű testnek nevezünk egy testet, ha méretei a mozgás pályájának méreteihez képest elhanyagolhatók és belső folyamatai nem befolyásolják középpontjának mozgását"
+        ]
+    },
+    {
+        "label": "Átlagsebesség",
+        "text": [
+            "A hely-idő függvény differenciálhányadosa"
+        ]
+    },
+    {
+        "label": "Pillanatnyi sebesség",
+        "text": [
+            "A hely-idő függvény differenciálhányadosa"
+        ]
+    },
+    {
+        "label": "Hely-idő grafikon",
+        "text": [
+            "A grafikonhoz huzott szelő meredekséget az átlagsebességet, az érintő meredekséget a pillanatnyi sebességet adja"
+        ]
+    },
+    {
+        "label": "Sebesség-idő grafikon",
+        "text": [
+            "A függvény alatti területek előjeles összege az elmozdulást adja meg"
+        ]
+    },
+    {
+        "label": "Gyorsulás-idő grafikon",
+        "text": [
+            "A függvény alatti területek előjeles összege a sebesség változását adja meg"
+        ]
+    },
+    {
+        "label": "Newton 1. törvénye",
+        "text": [
+            "Található olyan vonatkoztatási rendszer, amelyből nézveminden magárahagyott testállandósebességvektorralmozog"
+        ]
+    },
+    {
+        "label": "Newton 2. törvénye",
+        "text": [
+            "Minden testhez található egy olyan állandó m mennyiség, amit a test tömegének nevezünk, és a többi test hatása a vizsgált testre jellemezhető egy F úgynevezett erő függvénnyel, ami csak a test tömegétől, helyétől sebességétől és az időponttól függ, úgy, hogy",
+            "F = m * a",
+            "ahol a az a test gyorsulása."
+        ]
+    },
+    {
+        "label": "Newton 3. törvénye",
+        "text": [
+            "Ha csak két test van egymással kölcsön hatásban, akkor ha az egyikre F1 erő hat, akkor a másikra ható erő F2=−F1."
+        ]
+    },
+    {
+        "label": "Newton 4. törvénye",
+        "text": [
+            "Ha egy testre több másik is hat egyszerre, akkor a test úgy mozog, mintha olyan kölcsönhatásban szerepelne, melynek ereje a külön külön kölcsönhatások erőinek vektori összege"
+        ]
+    },
+    {
+        "label": "A munka",
+        "text": [
+            "Ha egy test ∆r elmozdulása során a ráható erő folytonosan F, akkor ez alatt az erő testen végzett munkája: ∆W=F·∆r"
+        ]
+    },
+    {
+        "label": "Hang",
+        "text": [
+            "Szűkebb értelemben a levegőben terjedő longitudinális hullám"
+        ]
+    },
+    {
+        "label": "Hangintenzitás",
+        "text": [
+            "Essen hang merőlegesen egy A nagyságú felületre, az erre a felületre a hang által szállított teljesítmény legyen P. Ekkor hangintenzitásnak nevezzük az I = P/A mennyiséget."
+        ]
+    },
+    {
+        "label": "Hangintenzitás",
+        "text": [
+            "Az ember hangérzete nem a hangintenzitással (I) arányos. A pontos összefüggés bonyolult. Közelítés: a hangérzet logI-vel arányos. Hangnyomásszint n= 10lg * (I/I₀)."
+        ]
+    }
+]
