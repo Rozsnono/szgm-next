@@ -425,7 +425,7 @@ export default function Form({
                                         </span>
                                         <div className="text-red-500">{message}</div>
 
-                                        <div className={"w-full rounded-full border-blue-500 bg-white border-2 text-blue-500 duration-100 text-center " + (isLoading ? "" : "hover:bg-blue-500 hover:text-white cursor-pointer")} onClick={logining}>{isLoading ? "Loging in..." : "Login"}</div>
+                                        <div className={"w-full rounded-full border-blue-500 bg-white border-2 text-blue-500 duration-100 text-center " + (isLoading ? "" : "hover:bg-blue-500 hover:text-white cursor-pointer")} onClick={logining}>{isLoading ? "Logging in..." : "Login"}</div>
                                     </div>
                                 </main>
                         }
