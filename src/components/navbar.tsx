@@ -160,6 +160,7 @@ export default function Navbar({
                                             <>
                                                 <div onClick={() => { navigateTo("/matek2") }} data-pr-tooltip={"Matek 2"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
                                                 <div onClick={() => { navigateTo("/szgh-zh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
+                                                <div onClick={() => { navigateTo("/szgh-answers") }} data-pr-tooltip={"SZGH-GYAK"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
                                                 <div onClick={() => { navigateTo("/pmszt-vizsga") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
                                             </> :
                                             <>

@@ -6,7 +6,7 @@ import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
 import { Messages } from 'primereact/messages';
 
-export default function Tab({ question, answers, number, type, img, icon, result, correct, next, finished, max }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void, finished: (e: any) => void, max: number }) {
+export default function Tab({ question, answers, number, type, img, icon, result, correct, next, finished, max, checking }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void, finished: (e: any) => void, max: number, checking?: boolean}) {
 
     const [choosed, setChoosed] = useState<any>(result ? (type === "text" ? answers : result) : []);
     const isCorrect = useRef<boolean>(true);
@@ -138,7 +138,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
                             </div>
                             <div className="flex justify-between">
                                 {
-                                    !result ?
+                                    !result || checking ?
                                         <>
                                             {
                                                 max !== number ?
