@@ -2,9 +2,9 @@
 .loader {
     width: 2.5rem;
     aspect-ratio: 1;
-    --c: linear-gradient(#000 0 0);
-    --r1: radial-gradient(farthest-side at bottom, #000 93%, #0000);
-    --r2: radial-gradient(farthest-side at top, #000 93%, #0000);
+    --c: linear-gradient(#1e40af 0 0);
+    --r1: radial-gradient(farthest-side at bottom, #1e40af 93%, #0000);
+    --r2: radial-gradient(farthest-side at top, #1e40af 93%, #0000);
     background:
         var(--c), var(--r1), var(--r2),
         var(--c), var(--r1), var(--r2),
