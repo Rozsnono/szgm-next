@@ -167,3 +167,7 @@
         transform: translateX(0%);
     }
 }
+
+.p-float-label input, .p-float-label ul{
+    width: 100%;
+}

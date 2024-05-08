@@ -114,9 +114,9 @@ export default function Home() {
             event.preventDefault();
             let tmp;
             if( value == null){
-                tmp = value.concat(event.target.value.trim().split(" ")).split(",");
+                tmp = value.concat(event.target.value.trim()).split(",");
             }else{
-                tmp = value.concat(event.target.value.trim().split(" "));
+                tmp = value.concat(event.target.value.trim());
             }
             const not = ["A"," ","a","az","Az", ""];
             tmp = tmp.filter((item: any) => {return !not.includes(item)});
