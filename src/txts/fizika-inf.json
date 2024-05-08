@@ -1,88 +1,1416 @@
 [
     {
-        "label": "Pontszerü testek",
-        "text": [
-            "Pontszerű testnek nevezünk egy testet, ha méretei a mozgás pályájának méreteihez képest elhanyagolhatók és belső folyamatai nem befolyásolják középpontjának mozgását"
+        "question": "Lehet-e egy test mozgása során az elmozdulás nagysága nagyobb, mint a megtett út? Mikor? Mikor lehetnek egyenlőek?",
+        "answers": [
+            "Az elmozdulás sosem lehet nagyobb az útnál. Egyenlőség fennállhat, ha a mozgás egyenes vonalú, és a mozgás sebessége nem vált előjelet."
         ]
     },
     {
-        "label": "Átlagsebesség",
-        "text": [
-            "A hely-idő függvény differenciálhányadosa"
+        "question": "Mit ad meg a gyorsulás-idő függvény grafikonja alatti terület nagysága?",
+        "answers": [
+            "A test sebességváltozását."
         ]
     },
     {
-        "label": "Pillanatnyi sebesség",
-        "text": [
-            "A hely-idő függvény differenciálhányadosa"
+        "question": "Hogyan olvasható le a sebesség-idő grafikonról a test t1 és t2 közötti átlagos gyorsulása?",
+        "answers": [
+            "A grafikon két pontjához húzott érintő meredeksége."
         ]
     },
     {
-        "label": "Hely-idő grafikon",
-        "text": [
-            "A grafikonhoz huzott szelő meredekséget az átlagsebességet, az érintő meredekséget a pillanatnyi sebességet adja"
+        "question": "Hogyan olvasható le a sebesség-idő grafikonról a test t1 és t2 közötti elmozdulása?",
+        "answers": [
+            "A grafikon alatti terület nagyságából. (Negatív előjellel figyelembe véve a grafikon alatti részeket.)"
         ]
     },
     {
-        "label": "Sebesség-idő grafikon",
-        "text": [
-            "A függvény alatti területek előjeles összege az elmozdulást adja meg"
+        "question": "Hogyan olvasható le a sebesség-idő grafikonról a test helye egy t időpontban?",
+        "answers": [
+            "Sehogyan, legfeljebb a 0 és t közti elmozdulás olvasható le, de ha a kezdőhelyzet nem ismert, akkor a hely ebből nem mondható meg."
         ]
     },
     {
-        "label": "Gyorsulás-idő grafikon",
-        "text": [
-            "A függvény alatti területek előjeles összege a sebesség változását adja meg"
+        "question": "Mit ad meg a sebesség-idő függvény grafikonjához húzott érintő meredeksége?",
+        "answers": [
+            "A pillanatnyi gyorsulást."
         ]
     },
     {
-        "label": "Newton 1. törvénye",
-        "text": [
-            "Található olyan vonatkoztatási rendszer, amelyből nézveminden magárahagyott testállandósebességvektorralmozog"
+        "question": "Milyen művelettel számolható ki egy test sebessége a hely-idő függvényből?",
+        "answers": [
+            "Az adott pontba húzott érintő meredeksége megadja a test pillanatnyi sebességét"
         ]
     },
     {
-        "label": "Newton 2. törvénye",
-        "text": [
-            "Minden testhez található egy olyan állandó m mennyiség, amit a test tömegének nevezünk, és a többi test hatása a vizsgált testre jellemezhető egy F úgynevezett erő függvénnyel, ami csak a test tömegétől, helyétől sebességétől és az időponttól függ, úgy, hogy",
-            "F = m * a",
-            "ahol a az a test gyorsulása."
+        "question": "Mit nevezünk inerciarendszernek?",
+        "answers": [
+            "Olyan vonatkoztatási rendszert, melyben minden magára hagyott test állandó sebességgel mozog."
         ]
     },
     {
-        "label": "Newton 3. törvénye",
-        "text": [
-            "Ha csak két test van egymással kölcsön hatásban, akkor ha az egyikre F1 erő hat, akkor a másikra ható erő F2=−F1."
+        "question": "Két test azonos tömegű, de egy adott pillanatban az első kétszer nagyobb sebességgel megy, mint a második. Mit tudunk ez alapján mondani a rájuk ható erők eredőjének nagyságáról?",
+        "answers": [
+            "Semmit, mert az erőt nem határozza meg a testek sebessége és tömege."
         ]
     },
     {
-        "label": "Newton 4. törvénye",
-        "text": [
-            "Ha egy testre több másik is hat egyszerre, akkor a test úgy mozog, mintha olyan kölcsönhatásban szerepelne, melynek ereje a külön külön kölcsönhatások erőinek vektori összege"
+        "question": "Két test azonos tömegű, de egy adott pillanatban az első kétszer nagyobb gyorsulással mozog, mint a második. Mit tudunk ez alapján mondani a rájuk ható erők eredőjének nagyságáról?",
+        "answers": [
+            "Newton II. törvénye értelmében azonos tömegek esetén a nagyobb gyorsuláshoz tartozik nagyobb erő, ezért az első testre kétszer akkora erő hat, mint a másodikra."
         ]
     },
     {
-        "label": "A munka",
-        "text": [
-            "Ha egy test ∆r elmozdulása során a ráható erő folytonosan F, akkor ez alatt az erő testen végzett munkája: ∆W=F·∆r"
+        "question": "Egy kötélről tudjuk, hogy akkor szakadna el, ha egy kampóra kötve alsó végére egy 100N súlyú testet akasztanánk, de 99N esetén még nem szakad el. Elszakad-e, ha kézbe fogva mindkét végét 80N nagyságú, ellentétes irányú erővel húzzuk? Miért?",
+        "answers": [
+            "Igen mert a kötélre ható erők összesen több, mint 100N. A maximális feszítő erő az 100N de a kötélnek így 160N-t kéne kibírnia."
         ]
     },
     {
-        "label": "Hang",
-        "text": [
-            "Szűkebb értelemben a levegőben terjedő longitudinális hullám"
+        "question": "Egy testre állandóan csak egyetlen, 5N nagyságú erő hat, sebessége mégis állandóan 3 m/s nagyságú. Hogyan lehetséges ez?",
+        "answers": [
+            "Például úgy, hogy a test egyenletes körmozgást végez, és az 5 N-os erő a centripetális erő. (Az biztos, hogy mivel a sebesség nagysága nem változik, ezért az erő csak merőleges lehet a mozgásra minden pillanatban. Ezek közül az egyik megoldás az előbb említett körpálya, de lehetnek egyéb megoldások is.)"
         ]
     },
     {
-        "label": "Hangintenzitás",
-        "text": [
-            "Essen hang merőlegesen egy A nagyságú felületre, az erre a felületre a hang által szállított teljesítmény legyen P. Ekkor hangintenzitásnak nevezzük az I = P/A mennyiséget."
+        "question": "Egy 2 kg tömegű testre egy 5N és egy 7N nagyságú erő hat. Legalább és legfeljebb mekkora a gyorsulása?",
+        "answers": [
+            "A megoldás kulcsa: az erők nem feltétlen egyirányúak!"
         ]
     },
     {
-        "label": "Hangintenzitás",
-        "text": [
-            "Az ember hangérzete nem a hangintenzitással (I) arányos. A pontos összefüggés bonyolult. Közelítés: a hangérzet logI-vel arányos. Hangnyomásszint n= 10lg * (I/I₀)."
+        "question": "•\tLegnagyobb gyorsulás: egyirányú erők esetén: amax = (5 + 7)/2 = 6 m/s2.",
+        "answers": [
+            "Legnagyobb gyorsulás: egyirányú erők esetén: amax = (5 + 7)/2 = 6 m/s2."
+        ]
+    },
+    {
+        "question": "•\tLegkisebb gyorsulás: ellentétes irányú erők esetén: amin = (7 − 5)/2 = 1 m/s2.",
+        "answers": [
+            "Legkisebb gyorsulás: ellentétes irányú erők esetén: amin = (7 − 5)/2 = 1 m/s2."
+        ]
+    },
+    {
+        "question": "A Föld kb. 81-szer nagyobb tömegű, mint a Hold. Melyik gyakorol nagyobb vonzóerőt a másikra? Miért?",
+        "answers": [
+            "Ugyanakkora vonzóerőt gyakorolnak egymásra, a tömegvonzás törvénye alapján"
+        ]
+    },
+    {
+        "question": "Két korcsolyázó ember egymással szembefordulva áll a jégen. A kisebb tömegű ellöki magától a nagyobbikat. Melyiknek lesz nagyobb a kezdősebessége, ha korcsolyájukon csúsznak? (Nem fékeznek be.) Miért?",
+        "answers": [
+            "A kisebb tömegűnek nagyobb lesz a sebessége, mert arra könnyebb hatni. Itt a közegellenállást, surlódást elhanyagolhatjuk, a jég miatt. A kisebb tömegű tehetetlenebb."
+        ]
+    },
+    {
+        "question": "Mi a kapcsolat egy test lendülete és a rá ható erők eredője között?",
+        "answers": [
+            "A lendület vektor deriváltja = az eredő erővel"
+        ]
+    },
+    {
+        "question": "Egy kemény tárgy esik le először puha szivacsra, másodszor ugyanakkora sebességgel merev műpadlóra. Lefékeződése közben melyik esetben fog fellépni a legnagyobb erő?",
+        "answers": [
+            "Összességében ugyaakkora erők hatottak mindkét helyzetben, mert mindkét esetben lefékeződtek és nyugalomba kerültek. A szivacsnál több ideig kisebb erő hatott, ezért volt finomabb az érkezés. A második esetben a műpadlónál nagyobb erő hatott egy de rövidebb ideig, ami rövid idő alatt lefékezte. Tehát a legnagyobb erő a műpadló esetén lép fel."
+        ]
+    },
+    {
+        "question": "Egy testen egy külső erő munkavégzése negatív. Mit mondhatunk a test mozgási irányának és az erő irányának kapcsolatáról?",
+        "answers": [
+            "Tompaszöget zárnak be"
+        ]
+    },
+    {
+        "question": "Egy testnek folytonosan van gyorsulása, mozgási energiája mégsem változik. Hogyan lehetséges ez?",
+        "answers": [
+            "Egyenletes körmozgást végez a test. Csak a mozgás iránya változik folytonosan."
+        ]
+    },
+    {
+        "question": "Mikor mondjuk, hogy egy erőnek van potenciálja?",
+        "answers": [
+            "Ha az általa végzett munka csak a kezdő és végponttól függ"
+        ]
+    },
+    {
+        "question": "Egy testet elhajítunk. Repülése közben a közegellenállás elhanyagolható hatású. Sebessége és magassága folytonosan változni fog. Adjon meg egy formulát, mely tartalmazza a test sebességét és magasságát, és amely a test repülése során mégis állandó marad!",
+        "answers": [
+            "kezdőmagasság+kezdősebesség*idő-(gravitációs gyorsulás/2)*idő^2"
+        ]
+    },
+    {
+        "question": "Mivel magyarázható, hogy a magasról eső testek eleinte gyorsulnak, de egy idő múltán lényegében állandó sebességgel zuhannak tovább?",
+        "answers": [
+            "Közegellenállás miatt, a testek megközelítenek az esésük során egy végsebességet. Amikor a közegellenállás fékezőereje (0,5*C*A*ró*v^2) eléri a gyorsító m*g erő mértékét, akkor az erők kiegyenlítik egymást."
+        ]
+    },
+    {
+        "question": "Nagy sebességű mozgások esetén hogyan függ a közegellenállási erő a test sebességétől?",
+        "answers": [
+            "négyzetesen"
+        ]
+    },
+    {
+        "question": "Milyen jellegű problémák esetén elfogadhatatlanul nagy a newtoni mechanika eltérése a valóságtól? (Egy példa elég.)",
+        "answers": [
+            "A mindennapinál jelentősen kisebb, vagy jelentősen nagyobb mértékeknél hibázik sokat a Newtoni mechanika. Pl egy katódsugárcsöves televízióban az elektronágyúk beállításánál akár 5-10%-os is lehet az eltérés a Newtoni mechanika és az Einsteinféle elmélet közt."
+        ]
+    },
+    {
+        "question": "Mondjon példát a gyakorlati életből olyan egyensúlyi helyzetre, mely körül nem alakulhat ki rezgés!",
+        "answers": [
+            "Kis domb tetejére helyezett labda ott egyensúlyban van, de bármelyik irányban kitérítve legurul onnan, azaz nem alakul ki rezgőmozgás."
+        ]
+    },
+    {
+        "question": "Harmonikus rezgőmozgás periódusidejét kétszeresére szeretnénk növelni. Hogyan változtassuk a rezgő test tömegét?",
+        "answers": [
+            "Négyszerezni kell"
+        ]
+    },
+    {
+        "question": "Egy test először 1 cm, majd utána 2 cm amplitúdóval végez harmonikus rezgőmozgást azonos felfüggesztés mellett. Melyik esetben nagyobb a frekvenciája?",
+        "answers": [
+            "A harmonikus rezgés frekvenciája független az amplitudótól, csak a test tömegétől és a felfüggesztés rugóállandójától függ. Ezért mindkét esetben azonos lesz a frekvencia."
+        ]
+    },
+    {
+        "question": "Rugón rezgő test csillapodó rezgőmozgásánál mi történik a rezgő test kezdeti energiájával?",
+        "answers": [
+            "A közegellánálláson és a súrlódáson keresztül hővé alakul."
+        ]
+    },
+    {
+        "question": "•\tAkkor, ha a testre nagyon erős csillapítőerő is hat. (Lineáris csillapítóerő esetén akkor, ha béta > omega0.) Ilyen eset pl. s˝ur˝u folyadékba merüléskor képzelhető el.",
+        "answers": [
+            "Akkor, ha a testre nagyon erős csillapítőerő is hat. (Lineáris csillapítóerő esetén akkor, ha béta > omega0.) Ilyen eset pl. s˝ur˝u folyadékba merüléskor képzelhető el."
+        ]
+    },
+    {
+        "question": "Egy függőleges rugó alsó végéhez egy test van rögzítve. A rugó felső végét függőleges irányban kis amplitúdóval mozgathatjuk. Milyen körülmények közt lehetséges, hogy a felső véget csak 1mm amplitúdóval mozgatjuk, de a test 10 cm-es, állandó amplitúdójú rezgéseket végez?",
+        "answers": [
+            "Ez akkor lehetséges, ha a gerjesztő erő frekvenciája, azaz a felső vég mozgatásának frekvenci ája közel egyenlő a test rezonanciafrenvenciájával, valamint a közegellenállás csillapító szerepe viszonylag kicsi."
+        ]
+    },
+    {
+        "question": "Milyen a gerjesztőerő és a hosszú távon kialakuló rezgések fáziskülönbsége a rezonanciafrekvencián?",
+        "answers": [
+            "Közel 0"
+        ]
+    },
+    {
+        "question": "Mikor lesz két egyirányú szinuszos rezgés eredője nem periodikus?",
+        "answers": [
+            "Ha a két rezgés frekvenciájának aránya nem racionális."
+        ]
+    },
+    {
+        "question": "Milyen rezgés lesz két azonos frekvenciájú, egy irányba eső harmonikus rezgés eredője?",
+        "answers": [
+            "Azonos frekvenciájú harmonikus rezgés. Az eredő amplitudó a két rezgés amplitúdójától és a fáziskülönbségtől függ, de mindig a két amplitudó összege és különbsége közt lesz."
+        ]
+    },
+    {
+        "question": "Lehetséges-e, hogy két 5 cm amplitúdójú, egyirányú harmonikus rezgés eredője is 5 cm amplitúdójú lesz? Válaszát indokolja röviden.",
+        "answers": [
+            "Igen. A két rezgés fáziskülönbségétől függően az eredő rezgés amplitúdója a két amplitúdó összege (jelenleg 10 cm) és különbsége (jelenleg 0 cm) közt van, és ebben az intervallumban minden érték lehetséges. A kérdezett 5 cm eredő amplitúdó pedig ebben az intervallumban van, így lehetséges."
+        ]
+    },
+    {
+        "question": "Két egyirányú harmonikus rezgés eredőjét vizsgáljuk. Lehet-e az eredő amplitúdó a két amplitúdó összegénél nagyobb? Miért?",
+        "answers": [
+            "Az összegnél nagyobb amplitudó sohasem alakulhat ki, mert a legnagyobb erősítéskor (azonos fázis) esetén is csak az amplitudók összege alakul ki."
+        ]
+    },
+    {
+        "question": "Két egyirányú harmonikus rezgés eredőjét vizsgáljuk. Lehet-e az eredő kisebb amplitúdójú, mint a kisebbik amplitúdó? Miért?",
+        "answers": [
+            "Kisebb amplitudó lehetséges, hisz ellentétes fázis és azonos amplitudók esetén az eredő amplitudó 0 lesz. (Teljes kioltás.)"
+        ]
+    },
+    {
+        "question": "Mi lesz három, azonos frekvenciájú, egy irányba eső szinuszos rezgés eredője? Válaszát indokolja!",
+        "answers": [
+            "Az összegzést részenként is megtehetjük, mivel az összeadás asszociatív m˝uvelet. így az első kettő összegeként egy ugyanolyan frekvenciájú szinuszos rezgést kapunk, és ehhez a harmadikat adva ismét csak egy ugyanilyen frekvenciájú szinuszos rezgéshez jutunk. (Ennek amplitudója és fázisa a három rezgés adataitól függ bonyolult módon.) Tehát az eredő az eredeti reszgésekkel megegyező frekvenciájú, szinuszos rezgés lesz."
+        ]
+    },
+    {
+        "question": "Két egyirányú szinuszos rezgés eredőjének amplitúdója lassan, periodikusan váltakozik. Mit mondhatunk a két rezgés frekvenciájáról? Hogyan nevezzük ezt a jelenséget?",
+        "answers": [
+            "A két rezgés frekvenciája közel egyenlő, de biztosan nem teljesen egyforma. A jelenség neve: lebegés."
+        ]
+    },
+    {
+        "question": "Milyen mozgásfajták alakulhatnak ki két, azonos amplitúdójú és frekvenciájú, egymásra merőleges harmonikus rezgés eredőjeként? Mi határozza meg, melyik eset áll fenn?",
+        "answers": [
+            "Ebben az esetben az eredő lehet egyenes, ellipszis vagy kör. Azt, hogy melyik eset valósul meg, a rezgések fáziskülönbsége határozza meg."
+        ]
+    },
+    {
+        "question": "Hogyan olvasható le egy Lissajous-görbéről a rezgések frekvenciaaránya?",
+        "answers": [
+            "A grafikon egyik vízszintes és egyik  függőleges tengelyén külön-külön meg kell számolni, hogy hányszor érinti a szélét a görbe. Ezen számok aránya adja meg a frekvenciaarányt. Figyelni kell arra, hogy a görbék átfedhetik egymást."
+        ]
+    },
+    {
+        "question": "Mondjon példát a gyakorlati életből hajlítási rezgésre!",
+        "answers": [
+            "Pl pad szélén lelógatjuk a vonalzót és lenyomjuk a végét, majd elengedjük. Ekkor gyors rezgésbe kezd a szabadon álló vége."
+        ]
+    },
+    {
+        "question": "Miért tekinthetjük transzverzális hullámnak a gitár húrján terjedő hullámot?",
+        "answers": [
+            "mert a hullám terjedési iránya merőleges a hullámszakaszok rezgési irányára(a zavarra)"
+        ]
+    },
+    {
+        "question": "Hogyan lehet kialakítani longitudinális hullámzást egy spirálrugón?",
+        "answers": [
+            "egyik végét a rúgó irányának megfelelően előre hátra rángatjuk"
+        ]
+    },
+    {
+        "question": "Mi a különbség a transzverzális és longitudinális hullámok között?",
+        "answers": [
+            "Transzverzális hullámokban a terjedés iránya és a zavar iránya egymásra merőlegesek.",
+            "Longitudinális hullámokban a terjedés iránya és a zavar iránya egymással párhuzamosak."
+        ]
+    },
+    {
+        "question": "•\tNégyszeresére (v = (Fh / mű) ** 0.5 képlet miatt)",
+        "answers": [
+            "Négyszeresére (v = (Fh / mű) ** 0.5 képlet miatt)"
+        ]
+    },
+    {
+        "question": "Egy feszített húron két hullám halad egymással ellentétes irányban. Visszaverődhetnek ezek egymáson?",
+        "answers": [
+            "Passz"
+        ]
+    },
+    {
+        "question": "Ha egy kifeszített gumikötél egyik végét másodpercenként háromszor mozdítjuk fel–le, akkor a kötélen kialakult hullámok periódusideje mekkora lesz?",
+        "answers": [
+            "egyharmad"
+        ]
+    },
+    {
+        "question": "Tekintsünk egy feszített húrt, melynek egyik végét harmonikusan rezegtetjük adott teljesítménnyel. Hogyan változik a hullám amplitúdója ha a rezgetés teljesítményét megkétszerezzük? Változik-e a hullám terjedési sebessége?",
+        "answers": [
+            "Egyik sem változik"
+        ]
+    },
+    {
+        "question": "Mi történik egy feszített húron terjedő hullámzás hullámhosszával, ha a hullámzás frekvenciáját megkétszerezzük? (Tegyük fel, hogy a kötélben a feszítőerő eközben nem változik.)",
+        "answers": [
+            "A hullámhossz a felére csökken"
+        ]
+    },
+    {
+        "question": "Mi történik egy feszített húron terjedő hullámzás terjedési sebességével, ha a hullámzás frekvenciáját megkétszerezzük? (Tegyük fel, hogy a kötélben a feszítőerő eközben nem változik.)",
+        "answers": [
+            "A sebesség megkétszereződik"
+        ]
+    },
+    {
+        "question": "Fémben terjedhetnek mind longitudinális mind transzverzális hullámok, viszont folyadék belsejében csak longitudinálisak. Mi lehet ennek az oka?",
+        "answers": [
+            "Passz"
+        ]
+    },
+    {
+        "question": "Ha egy pontszerű hangforrástól háromszor olyan messzire távolodunk, mint eddig voltunk, hogyan változik meg a fülünk által érzékelt hang intenzitása?",
+        "answers": [
+            "gömbsugár köbével fordított arányban csökken (Vgömb = 4/3 * pí * r^3). Theát 27-ed részére csökken ebben az esetben"
+        ]
+    },
+    {
+        "question": "Miért kisebb mindig az intenzitása a visszhangnak, mint az eredeti hangnak?",
+        "answers": [
+            "Mert a felület is, amiről visszapattan a hang is picit elnyel, tehát minimálisan beremeg bármi legyen illetve minimálisan hevül is. Így már nem tud ugyanakkora intenzitással visszaérni. De az is közre játszhat, hogy ha érzékelünk egy adott intenzitású hangot az tova terjed. Ha ennek az egésze tud reflektálódni valamiről, ami egy nagyon szerencsés eset magában is, akkor is egy része jut csak el hozzánk az érzékelőhöz, hiszen a gömbhullámok ként terjednek ezek a hanghullámok."
+        ]
+    },
+    {
+        "question": "Amikor hullámok kioltják vagy erősítik egymást, megmarad-e a hullámok létrehozására befektetett energia?",
+        "answers": [
+            "Megmarad, az erősítési pontokon annyival több energia lesz, mint amennyi elveszik a gyengítésnél. Az energia nem vész el csak átalakul"
+        ]
+    },
+    {
+        "question": "Mindkét végén rögzített húron állóhullámot alakítunk ki. Azt tapasztaljuk, hogy a húr egyik végétől a másik végének irányában nincs energiaáramlás. Hol van az állóhullám kialakításába fektetett energia?",
+        "answers": [
+            "Passz"
+        ]
+    },
+    {
+        "question": "Mindkét végén rögzített húron állóhullámot alakítunk ki. Milyen mozgást végeznek a húr egyes pontjai? (Kivéve a csomópontokat?)",
+        "answers": [
+            "Rezgőmozgást"
+        ]
+    },
+    {
+        "question": "Egy repülőgép tervező arra lett figyelmes, amikor egy kétmotoros gép hangját vizsgálta, hogy a hang hol felerősödik, hol elgyengül. Mi lehet a jelenség magyarázata?",
+        "answers": [
+            "Interferencia történik. A két motort tekinthetjük két pontszerű hangforrásnak, ezek a térben erősítési és gyengítési pontokat hoznak létre, hiperbolikus pályák mentén."
+        ]
+    },
+    {
+        "question": "Bizonyára mindenki ismeri azt a jelenséget, hogy ha nedves ujjal körözünk egy talpas pohár szélén, akkor az kellemes hangot adhat ki. Mi a jelenség magyarázata? Változtatható ezen hang frekvenciája?",
+        "answers": [
+            "Magyarázata: Az ujjunkkal a pohár felületén található érdesség miatt állóhullámokat keltünk a pohár belsejében található levegőben. A frekvencia azzal változtatható, hogy mennyi levegő van a pohárban, tehát lényegében a víz magasságával."
+        ]
+    },
+    {
+        "question": "Hogyan nevezzük a látható fénynél kissé nagyobb frekvenciájú elektromágneses hullámokat? Mondjon példát a mindennapokból, amikor ennek hatását érzékeljük!",
+        "answers": [
+            "Ultraibolyának nevezzük, például a Nap bőrre káros sugárzásainál tapasztaljuk a mindennapokban"
+        ]
+    },
+    {
+        "question": "Milyen hullámnak nevezzük a 20m hullámhosszúságú elektromágneses hullámokat?",
+        "answers": [
+            "Rádióhullámnak"
+        ]
+    },
+    {
+        "question": "Mit nevezünk tiszta színnek?",
+        "answers": [
+            "A szivárvány 7 alapszínét"
+        ]
+    },
+    {
+        "question": "Rendezze növekvő hullámhossz szerint sorba a következő színeket: sárga, kék, vörös.",
+        "answers": [
+            "Kék, sárga, vörös"
+        ]
+    },
+    {
+        "question": "A víz törésmutatója 1,33, egy üvegfajtáé pedig 1,5. Melyikben megy lassabban a fény?",
+        "answers": [
+            "Az üvegben"
+        ]
+    },
+    {
+        "question": "Írja fel a Snellius-Descartes törvényt!",
+        "answers": [
+            "Töréstörvény, sin alfa / sin béta = v1 / v2 = n2,1"
+        ]
+    },
+    {
+        "question": "Mi a koherenciahossz? Hagyományos fényforrásokra kb. mekkora az értéke?",
+        "answers": [
+            "Az a távolság, amin belül egy adott fényforrás fénye egyetlen harmonikus hullámmal jellemezhető, hagyományos fényforrásoknál ez általában kisebb, mint 0,1mm"
+        ]
+    },
+    {
+        "question": "Miért nem láthatunk a hétköznapokban környezetünkben szabad szemmel fénnyel kapcsolatos interferenciajelenségeket?",
+        "answers": [
+            "Mert túl kicsi ehhez a fény hullámhossza"
+        ]
+    },
+    {
+        "question": "Milyen polarizáltságú egy nyugodt tó felszínéről visszaverődő napfény? Miért? Mikor lehet tökéletesen síkban polarizált ez a fény?",
+        "answers": [
+            "Részben polarizált lesz, mert a víz nem fémes felület. Akkor lesz tökéletesen síkban polarizált, ha pont a Brewster-szögben verődik vissza, vagyis pont 90 fokban"
+        ]
+    },
+    {
+        "question": "Mondjon példát, hogy egy átlagos szobában ülve honnét jut a szemünkbe részben polarizált fény!",
+        "answers": [
+            "A nem fémes felületekről nem merőlegesen visszavert sugarak"
+        ]
+    },
+    {
+        "question": "Miért nem tapasztaljuk a fény hullámtulajdonságainak hatását a hétköznapi méretű tárgyak esetében?",
+        "answers": [
+            "Mert túl kicsi ehhez a fény hullámhossza"
+        ]
+    },
+    {
+        "question": "Mi történik egy fénysugárral, ha a fény hullámhosszánál sokkal kisebb méretű résen halad át?",
+        "answers": [
+            "Gömbhullámként terjed tovább"
+        ]
+    },
+    {
+        "question": "Mit nevezünk optikai rácsnak?",
+        "answers": [
+            "Olyan sík üveglemezt, amin egymás mellett egyenletes távolságban található réssorozat"
+        ]
+    },
+    {
+        "question": "Egy egyszínű fénnyel megvilágított optikai rács mögötti ernyőn jól láthatók az erősítési irányoknak megfelelő fényes vonalak. Csökken vagy nő ezek távolsága, ha az optikai rácsot egy olyanra cseréljük, melyen a rések közelebb vannak egymáshoz?",
+        "answers": [
+            "növekszik"
+        ]
+    },
+    {
+        "question": "A vörös vagy a kék fény első erősítési irányai közül melyik nagyobb szögű azonos optikai rácson való elhajlás esetén? Miért?",
+        "answers": [
+            "A vörös, mert nagyobb a hullámhossza, és az egyenesen arányos a szöggel (sin alfa = n * (lambda / a))"
+        ]
+    },
+    {
+        "question": "Egyszínű fénysugár a hullámhossz 100-szorosa átmérőjű kör alakú nyíláson halad át. Milyen képet kapunk a nyílás mögött elhelyezett ernyőn?",
+        "answers": [
+            "Darts-tábla szerűt"
+        ]
+    },
+    {
+        "question": "Létrehozható-e olyan fényforrás, melynek nyalábja tökéletesen párhuzamos? Miért?",
+        "answers": [
+            "Nem, mert a fényelhajlás miatt a nyalábok széttartanak"
+        ]
+    },
+    {
+        "question": "Milyen körülmények közt alkalmazhatjuk a geometriai optikai közelítést a fény leírására?",
+        "answers": [
+            "leképező rendszerek (lencsék, tükrök, távcsövek) működésének vizsgálatakor"
+        ]
+    },
+    {
+        "question": "Mikor beszélünk arról, hogy egy rendszer látszólagos képet alkot egy tárgyról?",
+        "answers": [
+            "Ha a fénysugrak nem metszik egymást, csak a meghosszabításaik"
+        ]
+    },
+    {
+        "question": "Két, azonos átmérőjű és anyagú lencse van a kezünkben. A széleknél mindegyik azonos vastagságú, de az első középen vastagabb, mint a második. Melyiknek nagyobb a fókusztávolsága?",
+        "answers": [
+            "Annak nagyobb a fókusztávolsága, amelyiknek nagyobb a sugara, tehát amelyik vastagabb középen"
+        ]
+    },
+    {
+        "question": "A látszólagos vagy a valódi kép vetíthető ki ernyőre? Miért?",
+        "answers": [
+            "A valódi, mert csak abban az esetben metszik egymást a fénysugarak"
+        ]
+    },
+    {
+        "question": "Miért nem tud a síktükör valódi képet alkotni egy tárgyról?",
+        "answers": [
+            "Mert a visszavert fénysugarak nem metszik egymást, csak a meghosszabbításaik"
+        ]
+    },
+    {
+        "question": "Lehet-e egy gyűjtőlencse által alkotott valódi kép pontosan ugyanakkora, mint a tárgy? Mit mondhatunk ekkor a tárgytávolságról?",
+        "answers": [
+            "Igen, lehet. Ekkor a tárgytávolság a fókusztávolság kétszerese (+ a 2 képlet)"
+        ]
+    },
+    {
+        "question": "Miért érdemes minél nagyobb átmérőjű lencsét használni a távcsövekben azon kívül, hogy a nagyobb lencse több fényt gyűjt össze?",
+        "answers": [
+            "Mert nagyobb lencsével nagyobb felbontóképesség érhető el."
+        ]
+    },
+    {
+        "question": "Egy lencsétől folyamatosan távolodik egy tárgy. Hogyan változik valódi képének mérete és távolsága a lencsétől? Miért?",
+        "answers": [
+            "Mindkettő csökken, 1/f = 1/k + 1/t miatt a k, k/t = K/T miatt a K (a T fix)"
+        ]
+    },
+    {
+        "question": "Egy írásvetítő éles képet ad a vásznon, de a kép túl kicsi. Közelebb vagy távolabb kell vinni a vászontól? Csökkenteni vagy növelni kell a vetítőlencse és a fólia távolságát? Miért?",
+        "answers": [
+            "A vászontól távolabb kell vinni, mert az N = k / t képlet miatt nagyobb képtávolsággal a nagyítás mértéke is nő. A tárgytávolságot pedig csökkenteni kell ugyanezen képlet miatt."
+        ]
+    },
+    {
+        "question": "Igaz-e mindig, hogy ha egy gyűjtőlencse által alkotott valódi kép nagyobb, mint a tárgy, akkor a képtávolság is nagyobb, mint a tárgytávolság? Válaszát indokolja!",
+        "answers": [
+            "Az N = k / t = K / T képlet miatt igaz"
+        ]
+    },
+    {
+        "question": "Mi a fizikai jelentése annak, ha egy gyűjtőlencse képalkotásának számításakor a képtávolság negatívnak adódik?",
+        "answers": [
+            "Azt jelenti, hogy látszólagos kép jön csak létre"
+        ]
+    },
+    {
+        "question": "Milyen hullámhosszon a legérzékenyebb az emberi szem?",
+        "answers": [
+            "500 nm"
+        ]
+    },
+    {
+        "question": "Hogyan oldja meg a szem a különböző távolságú tárgyak éles képének előállítását?",
+        "answers": [
+            "a szemlencse fókusztávolságának változtatásával"
+        ]
+    },
+    {
+        "question": "Miért van szükség a vetítőgépekben arra, hogy a fényforrás fényét egy külön kondenzorlencsével vagy -lemezzel összegyűjtsük?",
+        "answers": [
+            "A megfelelő erősségű megvilágítás eléréséhez szükséges"
+        ]
+    },
+    {
+        "question": "Hogyan jelentkezik a lencsék diszperziójának jelensége képalkotáskor?",
+        "answers": [
+            "A kép széle elmosódik"
+        ]
+    },
+    {
+        "question": "Miért van kapcsolat a CD-jellegű adathordozók adatsűrűsége és a használt szín között?",
+        "answers": [
+            "Kisebb hullámhosszú fényt jobban lehet fókuszálni"
+        ]
+    },
+    {
+        "question": "Miért képződik a távcsőben a tárgyak képe közel a fókuszsíkon?",
+        "answers": [
+            ""
+        ]
+    },
+    {
+        "question": "Mondjon két fontos okot, amiért a távcsövekben nagyobb átmérőjű objektívet érdemes alkalmazni!",
+        "answers": [
+            "Több fényt lehet így begyűjteni",
+            "Nagyobb felbontóképesség érhető el"
+        ]
+    },
+    {
+        "question": "Lehetséges-e fénnyel működő mikroszkóppal 5nm méretű tárgyakat vizsgálni? Miért?",
+        "answers": [
+            "Nem lehet, mert a fény hullámhossza jóval nagyobb 5 nm-nél"
+        ]
+    },
+    {
+        "question": "Két, 5mm átmérőjű lencsénk van. Az egyik 8mm, a másik 4mm fókusztávolságú. Melyik alkalmasabb mikroszkóp objektívjének? Miért?",
+        "answers": [
+            "A 4mm fókusztávolságú, mert minél kisebb, annál nagyob az elérhető nagyítás."
+        ]
+    },
+    {
+        "question": "Mit értünk azon, hogy a klasszikus mechanika törvényei invariánsak a Galilei-transzformációra?",
+        "answers": [
+            "Azt, hogy az F = m * a képlet változatlan formában igaz"
+        ]
+    },
+    {
+        "question": "Miért nem tapasztalható a Compton-effektus a látható fény fotonjainál?",
+        "answers": [
+            "Azért, mert a látható fénynek túl kevés az energiája ehhez, mivel jelentősen nagyobb a hullámhossza és ezáltal jelentősen kisebb a frekvenciája, mint a Röntgen-sugaraknak (E = h * f képletből adódik). Emiatt nem tudja úgy meglökni a szabad elektronokat, mint a Röntgen-sugarak"
+        ]
+    },
+    {
+        "question": "Mire szolgál az atomerőművekben a moderátor?",
+        "answers": [
+            "A moderátorrúd olyan anyagból van, ami a hasadást előidéző neutronokat képes lassítani, ezáltal a hasadás tempóját lehet velük szabályozni"
+        ]
+    },
+    {
+        "question": "Mi a szükséges feltétele annak, hogy a nukleáris láncreakció szabályozható legyen?",
+        "answers": [
+            "A moderátorrudakra gondol talán"
+        ]
+    },
+    {
+        "question": "Milyen kettős szerepe van egy nyomottvizes reaktorban a víznek?",
+        "answers": [
+            "Egyrészt hűtőközeg, másrészt moderátoranyag is"
+        ]
+    },
+    {
+        "question": "A paksi reaktorokban a hűtővíz hőmérséklete kb. 300 C. Hogy lehetséges, hogy még mindig folyékony halmazállapotú?",
+        "answers": [
+            "Az egész reaktor egy zárt rendszer, és 130 atmoszféra nyomás uralkodik benne"
+        ]
+    },
+    {
+        "question": "Írja le, hogy a természetes radioaktivitás 3 fő fajtája esetében hogyan változik a bomló mag rendszáma és tömegszáma? (ismétlődött – 2x)",
+        "answers": [
+            "Alfa: tömegszám: -4, rendszám: -2 (Hélium)",
+            "Béta: tömegszám marad, rendszám eggyel nő",
+            "Gamma: marad az eredeti mindkettő"
+        ]
+    },
+    {
+        "question": "Mi történne a magreakciókkal egy atomerőműben, ha a moderátoranyag hirtelen eltűnne? Miért?",
+        "answers": [
+            "Lelassulna és egy idő után meg is állna, mert nem lenne semmi sem, ami lelassítaná a gyors neutronokat. A moderátorrúd azért kell, mert a lassú neutronok jóval több atomot hasítanak szét"
+        ]
+    },
+    {
+        "question": "A He, Fe és U atomok közül melyiknek a legnagyobb az egy nukleonra jutó kötési energiája? Nagyságrendileg mekkora ez az érték?",
+        "answers": [
+            "Vasnak a legnagyobb, nagyságrendileg 8 MeV"
+        ]
+    },
+    {
+        "question": "Nagyságrendileg mekkora a magerők hatótávolsága?",
+        "answers": [
+            "10^-15 méter"
+        ]
+    },
+    {
+        "question": "Mit lehet meghatározni a tömegdefektus mértékéből?",
+        "answers": [
+            "A mag kötési energiájának mértékét"
+        ]
+    },
+    {
+        "question": "Miért kíséri gyakran gamma-sugárzás az alfa-sugárzást?",
+        "answers": [
+            "Mert az alfa sugárzás után az atommag általában nincs energiaminimumban, az alacsonyabb energiaszintekre került nukleonok a felszabadult energiát gamma-sugárzásként sugározzák ki."
+        ]
+    },
+    {
+        "question": "Nagyságrendileg mekkora egy alfa-részecske energiája?",
+        "answers": [
+            "1-20 MeV"
+        ]
+    },
+    {
+        "question": "Hányadrészére csökken egy radioaktív anyag aktivitása 3 felezési idő alatt?",
+        "answers": [
+            "Egy nyolcadára"
+        ]
+    },
+    {
+        "question": "Két radioaktív anyagdarabban pillanatnyilag azonos mennyiségű radioaktív atom van, de az első felezési ideje kétszerese a másodikénak. Hogyan viszonyulnak egymáshoz az aktivitások? Miért?",
+        "answers": [
+            "Az első aktivitása feleakkora, mint a másodiké, mert az A = N * lambda és a lambda = ln 2 / T1/2 képletek szerint az aktivitás fordítottan arányos a felezési idővel"
+        ]
+    },
+    {
+        "question": "Mit értünk a láncreakciószerű maghasadás esetén „kritikus tömeg” alatt?",
+        "answers": [
+            "Ami alatt nem nem tud beindulni az önfenntartó láncreakció"
+        ]
+    },
+    {
+        "question": "Milyen tulajdonságokkal kell rendelkezzen egy anyag, hogy jó moderator legyen belőle maghasadáson alapuló láncreakciókhoz?",
+        "answers": [
+            "Kis valószínűséggel nyelje el a neutronokat",
+            "Kicsi legyen a tömegszáma",
+            "Nagy mennyiségben előállítható legyen"
+        ]
+    },
+    {
+        "question": "Az atomerőművek biztonsági rúdjai hogyan viselkednek a neutronokkal szemben?",
+        "answers": [
+            "Lelassítják őket"
+        ]
+    },
+    {
+        "question": "Az asztalon, tőlünk 5 m-re egy alfa-sugárzó anyagdarab van. Félnünk kell-e, hogy közvetlen sugárfertőzést kapunk? Miért?",
+        "answers": [
+            "Nem, mert az alfa-sugárzást a levegő gyorsan elnyeli"
+        ]
+    },
+    {
+        "question": "Miért okoz erős kémiai roncsolást egy kis radioaktív anyagdarab is?",
+        "answers": [
+            "Mert radioaktív bomlás során milliószor több energia szabadul fel, mint a kémiai reakciók esetén"
+        ]
+    },
+    {
+        "question": "Mit határoz meg a gyorsulás-idő függvény",
+        "answers": [
+            "t-beli deriváltja,",
+            "t1 és t2 közit integrálja?"
+        ]
+    },
+    {
+        "question": "Azonos méretű fa- és acélgolyót ejtünk le egy magas toronyból egyszerre. Melyik indul nagyobb gyorsulással lefelé az ejtés után? Melyik csapódik nagyobb sebességgel a talajba? Válaszát indokolja a fellépő erők elemzésével!",
+        "answers": [
+            "Az acélgolyó sűrűsége és ezáltal a tömege is nagyobb, mint a fagolyóé, így nagyobb a rá ható gravitációs gyorsulás (m * g), tehát nagyobb gyorsulással indul el. Szintén emiatt az acélgolyó nagyobb végsebességet tud elérni, így nagyobb sebességgel is csapódik be."
+        ]
+    },
+    {
+        "question": "Egy pontszerű test mozgását vizsgáljuk. Azt vesszük észre, hogy a rá ható erők eredőjének munkája mindig negatív. Csupán ez alapján mit mondhatunk a test sebességvektorának változásáról? (Térjen ki a sebességvektor nagyságára és irányára is! – ismétlődött – 2x)",
+        "answers": [
+            "Az erő és az elmozdulás egymással tompaszöget zár be"
+        ]
+    },
+    {
+        "question": "Egy mobiltelefon gyorsulásmérőjének értékeit egy programmal elmentjük, majd megjelenítjük grafikonon. A telefont vízszintes asztalra fektetjük és forgatás nélkül, vízszintesen, x irányban mozgatjuk a következőképp: Először 2 s-ig áll, aztán elkezdjük jobbra (pozitív x irány) mozgatni, majd fokozatosan lefékezzük és az elindulás után 3 s múlva már újra megáll az asztalton. Rajzolja fel, milyen jellegű ennek a mozgásnak az a(t), v(t) és x(t) függvénye! (A grafikonokon csak a t tengelyen lesznek számok, mivel konkrét értékeket nem adtam meg a sebességre.)",
+        "answers": [
+            "asdasd"
+        ]
+    },
+    {
+        "question": "Egy 1 dimenziós mozgásnak ismerjük a v(t) sebesség-idő függvényét. Milyen művelettel lehet ebből a hely-idő függvényt meghatározni? Milyen adatot kell még ismernünk ehhez? (ismétlődött – 2x)",
+        "answers": [
+            "Integrálással lehet meghatározni, és ismernünk kell hozzá a mozgás kezdőpozcióját is még"
+        ]
+    },
+    {
+        "question": "Mikor mondjuk, hogy egy erőnek van potenciálja?",
+        "answers": [
+            "Ha az általa végzett munka csak a kezdő- és végponttól függ (az ilyen erőt szokás konzervatívnak is nevezni)"
+        ]
+    },
+    {
+        "question": "Egy autó esetén feltételezhetjük, hogy a közegellenállási erő a sebesség négyzetével egyenesen arányos. Hogyan függ a sebességtől a közegellenállás legyőzésére fordítandó motorteljesítmény? Miért?",
+        "answers": [
+            "A sebesség harmadik hatványával egyenesen arányos, mivel a szükséges teljesítmény kiszámolásához a közegellenállás erejét, amiben a sebesség négyzete van (blablabla képlet), még be kell szorozni magával a sebességgel (P = Fk * v)"
+        ]
+    },
+    {
+        "question": "A Föld kb. 81-szer nagyobb tömegű, mint a Hold. Melyik gyakorol nagyobb vonzóerőt a másikra? Miért?",
+        "answers": [
+            "Ugyanakkora vonzóerőt gyakorolnak egymásra, a tömegvonzás törvénye alapján (insert képlet), mert mindkét égitest szempontjából felírva a képletet, ugyanaz jön ki"
+        ]
+    },
+    {
+        "question": "Ha egy test lendülete háromszorosára növekszik, hogyan változik meg eközben mozgási energiája? Miért?",
+        "answers": [
+            "A test tömegét vegyük konstansnak ez idő alatt, mert csak hétköznapi sebességekkel megy a test. Ekkor a lendülete csak a sebesség megháromszorozódásával tud szintén a háromszorosára növekedni. Az (½) * m * v^2 képletből adódóan ekkor a test mozgási energiája 3^2-nel, vagyis a kilencszeresére nő."
+        ]
+    },
+    {
+        "question": "Egy függőleges rugó alsó végéhez egy test van rögzítve. A rugó felső végét függőleges irányban kis amplitúdóval mozgathatjuk. Milyen körülmények közt lehetséges, hogy a felső véget csak 1mm amplitúdóval mozgatjuk, de a test 10 cm-es, állandó amplitúdójú rezgéseket végez?",
+        "answers": [
+            "Ha a rezgetés során elég pontosan eltaláljuk a rugó sajátfrekvenciáját, és ezáltal rezonanciát hozunk létre a rezgésben."
+        ]
+    },
+    {
+        "question": "Két harmonikus rezgés egyirányú eredőjét vizsgáljuk. Lehetséges-e, hogy az eredő pont ugyanakkora amplitúdójú, mint a nagyobbik amplitúdó? Miért?",
+        "answers": [
+            "Igen, lehetséges, mivel a két rezgés eredőjének amplitúdója a két rezgés eredeti amplitúdójának különbségének abszolút értéke és azok összege közt lehet."
+        ]
+    },
+    {
+        "question": "Két egyirányú harmonikus rezgés eredőjét vizsgáljuk. Lehet-e az eredő kisebb amplitúdójú, mint a kisebbik amplitúdó? Miért?",
+        "answers": [
+            "Igen, lehetséges, mivel a két rezgés eredőjének amplitúdója a két rezgés eredeti amplitúdójának különbségének abszolút értéke és azok összege közt lehet."
+        ]
+    },
+    {
+        "question": "Mikor lesz két egyirányú szinuszos rezgés eredője nem periodikus? (ism. – 2x)",
+        "answers": [
+            "Akkor, ha a két rezgés körfrekvenciájának hányadosa (ω1 / ω2) nem racionális – ha racionális, akkor periodikus lesz."
+        ]
+    },
+    {
+        "question": "•\tAz eltávolodás után háromszor akkora sugarú gömbben terjed szét az ugyanakkora hangteljesítmény, és mivel a gömb felszíne a sugár 2. hatványával arányos, ezért 9-ed akkora lesz csak a hang intenzitása.",
+        "answers": [
+            "Az eltávolodás után háromszor akkora sugarú gömbben terjed szét az ugyanakkora hangteljesítmény, és mivel a gömb felszíne a sugár 2. hatványával arányos, ezért 9-ed akkora lesz csak a hang intenzitása."
+        ]
+    },
+    {
+        "question": "Halljuk-e a hangját egy hangforrásnak, ha mi állunk a levegőhöz képest, de a forrás hangsebességgel távolodik tőlünk? Miért?",
+        "answers": [
+            "Szerintem igen, csak később halljuk"
+        ]
+    },
+    {
+        "question": "Egy TV-készülék hangerő-szabályzóján 0 és 100 közti értekét állíthatunk be. Ez az érték egyenesen arányos a hangszórók által kibocsátott teljesítménnyel. Milyennek érzékeljük fülünkkel a hangerő emelkedését, ha a hangerő-szabályzó számszerű értékét egyenletesen emeljük 0-tól 100-ig? (Az is egyenletesen emelkedik? Vagy az érték növelésével egyre lassul vagy inkább gyorsul az érzékelt hangerő növekedése?) Válaszát indokolja! (ismétlődött – 2x)",
+        "answers": [
+            "A hangerő emelkedése szerintem lassulni fog, hiszen az a kibocsátott hangteljesítmény 10-es alapú logaritmusával arányos, így egy logaritmusszerű görbét fog leírni."
+        ]
+    },
+    {
+        "question": "•\tNem változik a terjedési sebessége, mivel az nem függ a fullámzás frekvenciájától (v = (Fh / u) ** 0.5). Csak a hullámhossz csökken a felére (v = lambda / f)",
+        "answers": [
+            "Nem változik a terjedési sebessége, mivel az nem függ a fullámzás frekvenciájától (v = (Fh / u) ** 0.5). Csak a hullámhossz csökken a felére (v = lambda / f)"
+        ]
+    },
+    {
+        "question": "A látszólagos vagy a valódi kép vetíthető ki ernyőre? Miért?",
+        "answers": [
+            "A valódi, mert csak ebben az esetben találkoznak a fénysugarak valóban  egymással."
+        ]
+    },
+    {
+        "question": "Egy gyűjtőlencse egy tárgyól olyan valódi képet alkot, mely nagyobb, mint a tárgy. Mit mondhatunk a képtávolság és a fókusztávolság arányáról? Miért?",
+        "answers": [
+            "A kép a fókuszponton túl keletkezik, mert valódi képalkotásnál a kép mindig a fókuszponton túl keletkezik"
+        ]
+    },
+    {
+        "question": "Mondjon példát, hogy egy átlagos szobában ülve honnét jut a szemünkbe részben polarizált fény! (ismétlődött – 3x)",
+        "answers": [
+            "Az égbolt kék színe",
+            "A mindennapokban a nem fémes felületekről nem merőlegesen visszavert fény többé-kevésbé polarizált lesz (ha véletlen épp eltaláljuk a Brewster-szöget, akkor a polarizáció teljes). Például az ablaküvegen megcsillanó fény is ilyen."
+        ]
+    },
+    {
+        "question": "A számítógépek monitorán minden pixel valójában 3 kis csíkból (vörös, zöld, kék) áll. Mégis, ha normal távolságból nézünk a monitorra, nem látjuk külön ezeket a csíkokat. Mi ennek az oka? Hogyan lehet mégis megpillantani őket?",
+        "answers": [
+            "Az emberi szem felbontóképessége nem olyan pontos, hogy különbséget tudjon tenni a pixelex közt.",
+            "Úgy lehet megpillantani őket, ha mikroszkóp alá tesszük a monitort vagy nagyon közelről nézzük a monitort"
+        ]
+    },
+    {
+        "question": "Mi a koherenciahossz? Hagyományos fényforrásokra kb. mekkora az értéke?",
+        "answers": [
+            "Az a távolság, amin belül egy adott fényforrás fénye egyetlen harmonikus hullámmal jellemezhető, hagyományos fényforrásoknál ez általában kisebb, mint 0,1mm"
+        ]
+    },
+    {
+        "question": "Mondjon példát olyan tárgyra, mely a hétköznapokban is felbukkan és melyen a fény hullámtulajdonságának egyik hatása szemmel láthatóan megnyilvánul!",
+        "answers": [
+            "Vízfelszínen a fénytörés látható",
+            "CD-lemez"
+        ]
+    },
+    {
+        "question": "Létrehozható-e olyan fényforrás, melynek nyalábja tökéletesen párhuzamos? Miért?",
+        "answers": [
+            "Nem, mert a kimeneten a fényelhajlás elkerülhetetlen, így a nyaláb valamennyire mindenképp szóródik."
+        ]
+    },
+    {
+        "question": "Miért játszik színekben egy CD-lemez, ha napsütés éri?",
+        "answers": [
+            "Mert a felszíne optikai rácsként működik"
+        ]
+    },
+    {
+        "question": "Az a feladatunk, hogy egy megadott, jó minőségű lencsével egy fénynyalábot minél kisebb foltba fókuszáljunk. Háromféle, azaz vörös, kék és zöld színű lézer közül választhatunk fényforrást. Melyiket érdemes választani és miért, ha a fő cél a minél kisebb helyre való fókuszálás? (ismétlődött – 3x)",
+        "answers": [
+            "A kéket, mert a kisebb hullámhosszaknál kevésbé jelentkezik a fényelhajlás torzító hatása, így kisebb helyre lehet fókuszálni a kisebb hullámhosszal. A felsorolt színek közül a kéké a legkisebb hullámhossz."
+        ]
+    },
+    {
+        "question": "Egy lencsétől folyamatosan távolodik egy tárgy. Hogyan változik valódi képének mérete és távolsága a lencsétől? Miért?",
+        "answers": [
+            "A lencse fókusztávolsága egy fix érték, emiatt az 1/f = 1/k + 1/t képletből adódóan ha a lencsétől messzebb visszük a tárgyat, vagyis növeljük a t-t, akkor a k-nak, vagyis a képtávolságnak csökkennie kell, hogy az egyenlet fennálljon. Az N = K / T = k / t képletből adódóan pedig kisebb lesz a nagyítás mértéke, ha távolítjuk a tárgyat."
+        ]
+    },
+    {
+        "question": "Egy 5m hosszú pajtán fut át egy gyors futó, aki egy (nyugalmi állapotnan) 5m hosszú rudat tart mozgásirányban. Mit válaszolhatunk precízen arra a kérdésre, hogy „Volt-e olyan pillanat, amikor a rúd teljes terjedelmében a pajtában volt?”?",
+        "answers": [
+            "Azt hiszem, hogy a vonatkoztatási rendszertől függ. A pajtához rögzítettben volt olyan pillanat, a futóhoz képest nem. De ez nem egy gyakorlati probléma, hiszen ilyen gyorsan nem lehet futni"
+        ]
+    },
+    {
+        "question": "Hogyan adható meg egy m0 nyugalmi tömegű részecske fénysebességre való felgyorsításához szükséges energia?",
+        "answers": [
+            "Úgyis végtelenre jön ki, de itt a képlet:"
+        ]
+    },
+    {
+        "question": "•\tDelta E = ((m - m0) * c^2) / ((1 – v^2 / c^2) ** 0.5)",
+        "answers": [
+            "Delta E = ((m - m0) * c^2) / ((1 – v^2 / c^2) ** 0.5)"
+        ]
+    },
+    {
+        "question": "Ábrázolja egy ct - x koordinátarendszerben a fény és és egy állandó sebességgel mozgó tömegpont világvonalát!",
+        "answers": [
+            "Fénykúpos cucc a diákból"
+        ]
+    },
+    {
+        "question": "Tanultuk, hogy a fénysebesség közelébe gyorsított részecskéknek megnő a tömegük. Mi történik a tömeggel, ha a részecskét visszalassítjuk 0 sebességre?",
+        "answers": [
+            "Visszaáll az eredeti tömegére"
+        ]
+    },
+    {
+        "question": "Nevezzen meg egy hatást, amit a speciális relativitáselmélet ír le és befolyásolja a GPS-navigáció pontotsságát! (ismétlődött – 2x)",
+        "answers": [
+            "Idődilatáció, a fénysebességgel összemérhető sebességekkel mozgó testek számára lelassul az idő"
+        ]
+    },
+    {
+        "question": "Mit értünk azon, hogy a klasszikus mechanika törvényei invariánsak a Galilei-transzformációra?",
+        "answers": [
+            "Azt, hogy az F = m * a képlet változatlan formában igaz"
+        ]
+    },
+    {
+        "question": "A Michelson-interferométert a fénysebesség kicsiny változásainak kimutatására fejlesztették ki. Írjon egy mai, műszaki alkalmazását e műszer egy változatának!",
+        "answers": [
+            "CD/DVD meghajtó"
+        ]
+    },
+    {
+        "question": "Milyen az elektronszerkezete a nemesgázoknak?",
+        "answers": [
+            "A legkülső elektronhéjuk is telített"
+        ]
+    },
+    {
+        "question": "Nő vagy csökken egy elektron de Broglie-hullámossza, ha nagyobb feszültséggel gyorsítjuk? Miért?",
+        "answers": [
+            "(talán csökken (lambda = h / (m * v)))"
+        ]
+    },
+    {
+        "question": "Milyen kapcsolatban van az atom rendszáma és elektronjainak száma?",
+        "answers": [
+            "Ugyanannyi a kettő"
+        ]
+    },
+    {
+        "question": "Mit jelent az a megállapítás, hogy a H-atom spektruma diszkrét vagy vonalas?",
+        "answers": [
+            "Vonalas esetén csak azokat a hullámhosszú fényeket tudja kibocsátani az atom, ahol van vonal a színképében"
+        ]
+    },
+    {
+        "question": "Miért nem tapasztalható a Compton-effektus a látható fény fotonjainál? (ism – 3x)",
+        "answers": [
+            "Azért, mert a látható fénynek túl kevés az energiája ehhez, mivel jelentősen nagyobb a hullámhossza és ezáltal jelentősen kisebb a frekvenciája, mint a Röntgen-sugaraknak (E = h * f képletből adódik). Emiatt nem tudja úgy meglökni a szabad elektronokat, mint a Röntgen-sugarak"
+        ]
+    },
+    {
+        "question": "Miért sokkal jobb az elektronmikroszkópok elvi felbontóképessége, mint a hagyományos fénnyel működő mikroszkópoké?",
+        "answers": [
+            "Mert több nagyságrenddel kisebb az elektronok mérete, mint a látható fény hullámhossza"
+        ]
+    },
+    {
+        "question": "A 238-as tömegszámú urán rendszáma 92. Milyen rendszámú és tömegszámú elem keletkezik belőle, ha alfa-bomlást szenved el?",
+        "answers": [
+            "234-es tömegszámú 90-es atommag lesz + 4 He 2"
+        ]
+    },
+    {
+        "question": "Miért könnyebb magátlakulást előidézni neutronnal, mint alfa-részecskével? (ismétlődött – 2x)",
+        "answers": [
+            "Mert alfa részecske esetén csak a felezési idő tempójában lehet a magot bontani és energiát felszabadítani, míg neutronokkal a maghasadást nagyon gyorsan elő lehet idézni."
+        ]
+    },
+    {
+        "question": "Egy gondolatkísérletben egy stabil atommaghoz kívülről protonokat adunk. Miért lesz ettől instabil az atommag, hisz a protonok a magerők segítségével kötődnek a már ott levő egyéb nukleonokhoz?",
+        "answers": [
+            "Mert egy idő után túllépjük a magerő mérettartományát, emiatt az nem fog már az összes nukleonra hatni, ami így instabillá válik"
+        ]
+    },
+    {
+        "question": "Létrehozható-e olyan lézer, melynek nyalábja tökéletesen párhuzamos? Miért? (ismétlődött – 3x)",
+        "answers": [
+            "Nem, mert a fényelhajlás miatt széttart a fénnyaláb"
+        ]
+    },
+    {
+        "question": "Lehetséges-e, hogy egy lézer infravörös tartományban működjön?",
+        "answers": [
+            "Persze"
+        ]
+    },
+    {
+        "question": "Az atomerőművek biztonsági rúdjai hogyan viselkednek a neutronokkal szemben?",
+        "answers": [
+            "Elnyelik őket"
+        ]
+    },
+    {
+        "question": "Azt tanultuk, hogy az atommag alkotórészei a protonok és a neutronok és az atom elektronjai a mag méreténél sokkal nagyobb elektronfelhőt alkotnak, nincsenek benne a magban. Béta-bomláskor mégis egy nagy energiájú elektron repül ki a magból. Hogyan lehetséges ez?",
+        "answers": [
+            "Béta bomláskor egy neutron alakul át egy kisebb energiájú protonná, egy nagy energiájú elektronná és egy neutrínóvá, tehát nem az elektronfelhőből lökődik ki egy elektron"
+        ]
+    },
+    {
+        "question": "Egy követ függőlegesen feldobunk, és visszaesése után elkapjuk. A mozgás mely szakaszában volt ellentétes irányú a sebessége és a gyorsulása?",
+        "answers": [
+            "Amikor felfelé haladt"
+        ]
+    },
+    {
+        "question": "Megmérjük egy mobiltelefon gyorsulását az idő függvényében. Meg lehet-e ebből határozni a telefon sebesség-idő függvényét?",
+        "answers": [
+            "Nem. Ehhez ismerni kellene a kezdő sebességet is."
+        ]
+    },
+    {
+        "question": "Előfordulhat-e, hogy egy test mozgása során az út kisebb, mint az elmozdulás nagysága?",
+        "answers": [
+            "Nem"
+        ]
+    },
+    {
+        "question": "Mit ad meg a sebesség-idő függvény deriváltja?",
+        "answers": [
+            "A pillanatnyi gyorsulást"
+        ]
+    },
+    {
+        "question": "Mit ad meg a sebesség-idő grafikon és a tengely közti előjeles terület nagysága két időpont között? (1D mozgás)",
+        "answers": [
+            "A két időpont közti elmozdulást"
+        ]
+    },
+    {
+        "question": "Egy kis személyautó és egy nagy kamion ütközik. Az ütközés során a kettejük közti erőhöz képest a többi erő közel elhanyagolható. (Csak a vízszintes síkban vizsgálódunk.) Mit mondhatunk a két járműre ható erők és gyorsulások nagyságának viszonyáról?",
+        "answers": [
+            "A két járműre ható erők nagysága azonos, de a személyautó gyorsulása nagyobb lesz."
+        ]
+    },
+    {
+        "question": "•\tA rá ható erők vektori összege 0.",
+        "answers": [
+            "A rá ható erők vektori összege 0."
+        ]
+    },
+    {
+        "question": "Két test állandó sebességvektorral halad, de az elsőnek a sebessége nagyobb, mint a másodiké. Mit mondhatunk ezek alapján a testekre ható külső erők eredőjének nagyságáról?",
+        "answers": [
+            "Azt, hogy mindegyikre 0 eredő erő hat, különben nem lenne állandó a sebesség-vektoruk"
+        ]
+    },
+    {
+        "question": "Mit ad meg egy test lendületének idő szerinti deriváltja?",
+        "answers": [
+            "A testre ható erők eredőjét"
+        ]
+    },
+    {
+        "question": "Egy test mozgása során mozgási és helyzeti energiájának összege állandó marad. Az alábbiak közül jelölje be azokat az erőfajtákat, melyek hathatnak a tester.",
+        "answers": [
+            "Elektrosztatikus erő",
+            "Gravitációs erő",
+            "Egy rugalmas test ereje"
+        ]
+    },
+    {
+        "question": "Egy testre ható külső erők munkája negatív. Mit mondhatunk ez alapján sebesség-nagyságának időbeli változásáról?",
+        "answers": [
+            "A sebesség nagysága biztosan csökken."
+        ]
+    },
+    {
+        "question": "Egy gyors autóra (vízszintesen) ható legnagyobb erő a v^2-tel arányos közegellenállási erő. (v az autó sebesságe) Ennek legyőzésére bizonyos P teljesítményt kell fordítanunk. Milyen arányosság van P és v közt?",
+        "answers": [
+            "P egyenesen arányos v^3-nal."
+        ]
+    },
+    {
+        "question": "Egy kötél végén kis testet pörgetünk. Hogyan változik meg a kötelet feszítő erő nagysága, ha a keringés periódusidejét felezzük?",
+        "answers": [
+            "4-szeresére nő"
+        ]
+    },
+    {
+        "question": "A csillapodó rezgőmozgást végző test össz mechanikai energiája nő, csökken vagy állandó marad a rezgés során? Miért?",
+        "answers": [
+            "A csillapodást okozó erő (közegellenállás) nem konzervatív, ezért csökken az össz mechanikai energia."
+        ]
+    },
+    {
+        "question": "Egy csillapodó rezgést vizsgálunk, mely egy v-vel arányos közegellenállás hatására történik. Azt tapasztaljuk, hogy 100s alatt 10cm-ről 5cm-re csökkent az amplitúdó. Mekkora lesz az amplitúdó további 100s elteltével. Miért?",
+        "answers": [
+            "Exponenciális lecsengésű, ezért 100s-onként feleződik, tehát 2,5s lesz 100s múlva"
+        ]
+    },
+    {
+        "question": "Egy testről tudjuk, hogy egy pontba helyezve ott marad. Biztosak lehetünk-e benne, hogy egy kicsit kitérítve onnan, rezgőmozgásba kezd? Miért? (Csak a jó indoklással ér pontot)",
+        "answers": [
+            "Nem, mert elképzelhető, hogy az eltérítés után az egyensúlyi helyzettől eltávolító erő lép fel."
+        ]
+    },
+    {
+        "question": "Egy rezgő testet 120 Hz frekvenciával gerjesztve a kialakuló rezgések amplitúdója 15 cm lesz. Mit mondhatunk a kialakuló rezgések amplitúdójáról 240 Hz gerjesztési frekvencia esetén?",
+        "answers": [
+            "Semmit. Ismerni kellene a rezonancia-frekvenciát és a csillapítási tényezőt is, hogy ki lehessen számolni a választ."
+        ]
+    },
+    {
+        "question": "Mit nevezünk a fizikában a rezonancia jelenségének?",
+        "answers": [
+            "Azt, hogy ha egy rezgő rendszerben a gerjesztő erő frekvenciájaa közel egyenlő a rendszer sajátfrekvenciájával, akkor a kialakuló rezgés amplitúdója igen megnövekszik."
+        ]
+    },
+    {
+        "question": "Egy harmonikus rezgőmozgásnak felezzük az amplitúdóját. Hogyan változik meg emiatt a perióduideje?",
+        "answers": [
+            "Sehogy, mert a harmonikus rezgőmozgás periódusideje független az amplitúdótól"
+        ]
+    },
+    {
+        "question": "Egy harmonikus rezgőmozgás periódusideje a harmadára csökken, amplitúdója változatlan marad. Hogyan változik meg emiatt a mozgás sebességének maximális értéke?",
+        "answers": [
+            "Háromszorosára nő"
+        ]
+    },
+    {
+        "question": "Egy állványra rugót, annak végére egy testet akasztunk és függőleges rezgésbe hozunk. Megmérjük a rezgés periódus-idejét. Ha ezt a berendezést egy űrhajós elvinné a Holdra, vajon hogyan viszonyulna az ott mérhető periódus-idő a Földön mérthez? Miért?",
+        "answers": [
+            "A periódusidőt nem befolyásolja a gravitációs gyorsulás, így ugyanazt mérnénk."
+        ]
+    },
+    {
+        "question": "Két hullámforrás teljesen azonos hullámokat bocsát ki. Mit mondhatunk a két forrást összekötő szakasz felező merőlegesén bekövetkező interferenciáról? Miért?",
+        "answers": [
+            "Ott mindenképp erősítés less, mert ezek a pontok azonos távolságra vannak a forrásoktól, ezért fáziskülönbség nélkül érkeznek be hullámok."
+        ]
+    },
+    {
+        "question": "Mit mondhatunk egy állóhullám esetén a szomszédos csomópontok távolságáról?",
+        "answers": [
+            "A hullámhossz fele"
+        ]
+    },
+    {
+        "question": "Egy nyugvó hullámforráshoz közeledünk a hullám terjesési sebességének felével. A forrás frekvenciájának hányszorosát érzékeljük?",
+        "answers": [
+            "Másfélszeresét"
+        ]
+    },
+    {
+        "question": "Mit nevezünk a hullámtanban frontfelületnek?",
+        "answers": [
+            "Az azonos rezgési fázisban lévő pontok halmazát."
+        ]
+    },
+    {
+        "question": "Nem csillapodó harmonikus hullám terjed egy egyenes mentén. A közeg két különböző pontját nézve van-e kapcsolat a mérhető rezgési frekvenciák, amplitúdók és kezdőfázisok közt?",
+        "answers": [
+            "Az amplitúdó és a frekvencia azonos, a kezdőfázis a pontok távolságával egyenes arányban tér el."
+        ]
+    },
+    {
+        "question": "Egy síkhullám érkezik egy elnyelő ernyőre, melyen csak egy igen kicsi (hullámhossznál sokkal kisebb) lyuk van. Milyen hullám halad tovább a túloldalon?",
+        "answers": [
+            "Gömbhullám"
+        ]
+    },
+    {
+        "question": "Két, azonos hosszúságú húrunk van egymás mellett. A második kétszer nagyobb tömegű, de ezt kétszer nagyobb erő feszíti meg, mint az elsőt. Mit mondhatunk a hullámterjedési sebességek viszonyáról a két húron?",
+        "answers": [
+            "Egyforma lesz"
+        ]
+    },
+    {
+        "question": "Egy hullám olyan közegbe ér, ahol terjedési sebessége 4-szer nagyobb, mint az eredetiben. Hogyan változik meg ennek hatására a hullámhossza?",
+        "answers": [
+            "Megnégyszereződik"
+        ]
+    },
+    {
+        "question": "Tanultuk, hogy egy mechanikai hullámmozgás során a közeg pontjai rezgőmozgást végeznek. Mi az, amit biztosan tudunk a hullám terjedési és a közeg pontjainak rezgési viszonyáról?",
+        "answers": [
+            "Semmit. Bármelyik lehet kisebb vagy nagyobb a másiknál, néha még egyenlőek is lehetnek."
+        ]
+    },
+    {
+        "question": "Egy hallgató azt írta a ZH-ban, hogy Transzverzális hullámnál a közeg merőlegesen, longitudinálisnál pedig párhuzamosan rezeg. Miért rossz a válasz?",
+        "answers": [
+            "Azért, mert nincs értelme, “a közeg merőlegesen rezeg”, de mire?"
+        ]
+    },
+    {
+        "question": "Milyen elektromágneses hullámnak nevezzük azt, aminek 20 m a hullámhossza?",
+        "answers": [
+            "Rádióhullámnak"
+        ]
+    },
+    {
+        "question": "Egy fényképezőgéppel először egy igen távoli tárgyat fényképezünk, majd egy közelire akarunk élesre állni. Távolítani vagy közelíteni kell a lencsét a szenzortól ehhez?",
+        "answers": [
+            "Távolítani"
+        ]
+    },
+    {
+        "question": "Egy gyűjtőlencse valódi képet alkot egy tárgyról. A tárgy lassan távolodik a lencsétől. Hogyan változik eközben a kép távolsága és mérete?",
+        "answers": [
+            "Mindegyik csökken"
+        ]
+    },
+    {
+        "question": "Egy tükörben nézzük saját arcunkat. Azt tapasztaljuk, hogy közelről nézve nagyítva látjuk arcunk részleteit, majd távolítva egyre kisebb less a képe, de igen távolról egy kicsinyített, fejen álló képet kapunk. Milyen tükör lehet ez?",
+        "answers": [
+            "Homorú tükör."
+        ]
+    },
+    {
+        "question": "Mit nevezünk az optikában a fényelhajlás jelenségének?",
+        "answers": [
+            "Azt, hogy réseken áthaladó fénysugár esetén a sugar jelentős része ugyan továbbmegy az eredeti irányba, de egy kis része szétszóródik az eredeti irány körül."
+        ]
+    },
+    {
+        "question": "Az alábbiak közül melyik az a hatás, amit a legdrágább lencse sem tud kiküszöbölni annyira, hogy annak hatása ne látszódjék a képen?",
+        "answers": [
+            "A fényelhajlás"
+        ]
+    },
+    {
+        "question": "Tanultuk, hogy minden hullám terjedése során a tér egyes pontjaiban rezgés alakul ki. Mi rezeg a fény terjedése során?",
+        "answers": [
+            "Az elektromos és mágneses tér"
+        ]
+    },
+    {
+        "question": "Miért nehéz közvetlenül kimutatni, hogy a fénysugár igen kis résen áthaladva teljesen szétszóródik?",
+        "answers": [
+            "Azért, mert ehhez a fény hullámhosszánál kisebb lyuk szükséges, de azon kevés fény jut át, így csak sötét szobában látjuk."
+        ]
+    },
+    {
+        "question": "Állítsa növekvő hullámhossz alapján sorba az alábbi tiszta színeket: zöld, kék, narancs, vörös.",
+        "answers": [
+            "Kék, zöld, narancs, vörös"
+        ]
+    },
+    {
+        "question": "Mikor mondjuk, hogy egy lencse valódi képet alkot?",
+        "answers": [
+            "Akkor, ha az egy pontból kiinduló fénysugarak újra egy pontban találkoznak."
+        ]
+    },
+    {
+        "question": "Jelölje be azokat a mennyiségeket, melyeket a Galilei-transzformáció változatlanul hagy. (Azaz azokat, melyek a klasszikus fizika szerint minden inerciarendszerben azonosak.) [Több választ is be kell jelölni!]",
+        "answers": [
+            "Gyorsulás",
+            "Sebesség",
+            "Időtartam"
+        ]
+    },
+    {
+        "question": "Miért mondjuk, hogy a GPS-rendszer lényegében működésképtelen lenne, ha nem ismernénk a speciális relativitáselméletet?",
+        "answers": [
+            "Azért, mert az idődilatáció miatt a műholdak órái kicsit lassabban járnak, és pár hónap alatt ez akkora eltérést jelentene, hogy használhatatlanul pontatlan lenne a rendszer."
+        ]
+    },
+    {
+        "question": "A speciális relativitáselmélet szerint a tárgyak mozgásirányban megrövidülnek. Valaki kételkedik ebben és azt mondja, hogy sose, hogy mondjuk egy Formula-1-es versenyautó összement volna a célegyenesben. Mit válaszoljunk neki?",
+        "answers": [
+            "Azt, hogy még a leggyorsabb autó esetén is atomi méretskálán van az összehúzódás mértéke, így ez semmiképp nem látható szabad szemmel."
+        ]
+    },
+    {
+        "question": "Az alábbi mennyiségek közül melyikek tartanak a végtelenbe, ha egy tárgyat 0 sebességről a fénysebességet egyre jobban megközelítő sebességre gyorsítunk? [Több választ is be kell jelölni!]",
+        "answers": [
+            "Lendület",
+            "Mozgási Energia",
+            "Tömeg"
+        ]
+    },
+    {
+        "question": "Miét lepődtek meg a fizikusok azon, hogy a Michelson-interferométeres kísérletek szerint a fénysebesség függetlennek mutatkozott az iránytól?",
+        "answers": [
+            "Azért, mert elvileg ki kellett volna tudni mérni ezzel a Föld mozgásának hatását a fénysebességre."
+        ]
+    },
+    {
+        "question": "A speciális relativitáselméletben a sebességek nem adódnak egyszerűen össze, amikor másik vonatkoztatási rendszerre térünk át. Mi áll ennek a hátterében?",
+        "answers": [
+            "Az, hogy a mozgó tárgyak esetén máshogy kell mérni a távolságot és az időt is, ezért lesz az eredő sebesség formulája bonyolult."
+        ]
+    },
+    {
+        "question": "Mit mond ki a speciális relativitáselmélet a vákuumbeli fénysebességről?",
+        "answers": [
+            "Azt, hogy a fénysebesség minden inerciarendszerből nézve azonos."
+        ]
+    },
+    {
+        "question": "Tanultuk, hogy a speciális relativitáselmélet szerint még bizonyos események sorrendisége (tehát melyik volt előbb vagy később) is függhet a vonatkoztatási rendszertől. Lehetséges-e, hogy ha célba dobunk labdával, akkor ezt a folyamatot egy másik rendszerből nézve fordítva lássuk, azaz a labda a céltáblától indul vissza a kezünkbe? Miért?",
+        "answers": [
+            "Nem lehetséges. Nem minden esemény sorrendisége borulhat fel. A labda eldobása és célba érése közt ok-okozati viszony van, amit nem ront el a relativitáselmélet."
+        ]
+    },
+    {
+        "question": "Mivel magyarázható az, hogy a Compton-effektus esetén az elektronokon szóródó fénynek (elektromágneses sugárzásnak) nő a hullámhossza?",
+        "answers": [
+            "Azzal, hogy a fény egy fotonja ütközik egy (közel) nyugvó elektronnak, azt meglöki, ezért energiát ad le, de a kisebb energiájú fotonnak nagyobb a hullámhossza."
+        ]
+    },
+    {
+        "question": "Egy anyagdarabon belül az elektronok csak néhány, elkülönülő energiaszinten lehetnek. Milyen a színképe ennek az anyagnak? Miért?",
+        "answers": [
+            "A színképe vonalas lesz, mert foton kibocsátás csak energia-szint átmenetkor lehetséges, ami csak néhány energia-különbséget jelent, így a lehetséges hullámhosszak száma is alacsony."
+        ]
+    },
+    {
+        "question": "Minek az energiáját jelenti a kvantummechanikában használatos E=h*f formula?",
+        "answers": [
+            "Egy f frekvenciájú foton energiáját."
+        ]
+    },
+    {
+        "question": "Mi a fényelektromos hatás (fotoeffektus) lényege?",
+        "answers": [
+            "Az, hogy szilárd testre eső fénysugárzás onnan elektronokat lökhet ki."
+        ]
+    },
+    {
+        "question": "A kvantummechanika szerint bizonyos mennyiségek mérési pontossága kihatással van más mennyiségekére. Ha egy részecske helyét egyre pontosabban megmérjük, az melyik mennyiség határozatlanságát növeli meg?",
+        "answers": [
+            "A lendületét"
+        ]
+    },
+    {
+        "question": "Mit tudunk a hullámfüggvényről biztosan, amikor egy kvantumos rendszer stabil állapotban van?",
+        "answers": [
+            "Azt, hogy a hullámfüggvény egy állóhullámnak megfelelő állapotot vesz fel."
+        ]
+    },
+    {
+        "question": "A kvantummechanika szerint a részecskéknek nincs határozott helyük, sebességük, gyorsulásuk. Van azonban kapcsolat a hullámfüggvénnyel leírt változás és a Newton-törvények közt. Mi ennek a lényege?",
+        "answers": [
+            "Az, hogy ha a részecske hullámcsomagjának méretén belül közel konstans a külső hatások nagysága, akkor a hullámcsomag közepe a Newton-törvényeknek megfelelően mozog."
+        ]
+    },
+    {
+        "question": "Miért a \"fekete testek\" sugárzását tanulmányozták a kutatók behatóan?",
+        "answers": [
+            "Azért, mert ezek nem verik vissza a környezet fényeit és saját sugárzásukat sem befolyásolja a színük."
+        ]
+    },
+    {
+        "question": "Mondjon egy okot, ami miatt nem észleljük a hétköznapi tárgyak kvantummechanikai hullámtermészetét!",
+        "answers": [
+            "A de Broglie hullámhosszuk sokkal kisebb, mint egy atom mérete, ezért nem vehető észre."
+        ]
+    },
+    {
+        "question": "Egy izzított fekete test sugárzását vizsgáljuk. Hogyan változik a sugárzási maximum hullámhossza, ha növeljük a test hőmérsékletét?",
+        "answers": [
+            "Csökken"
+        ]
+    },
+    {
+        "question": "Egy radioaktív anyag bomlása során a felezési idő 5-szörösét várjuk ki. Hányszor kevesebb a folyamat végén a még el nem bomlott magok száma, mint az elején?",
+        "answers": [
+            "32-szer"
+        ]
+    },
+    {
+        "question": "Milyen részecskék alkotják az alfa-sugárzást?",
+        "answers": [
+            "2 neutron és 2 proton együttese."
+        ]
+    },
+    {
+        "question": "Lehetséges-e, hogy egy atommag tömegszáma kisebb legyen rendszámánál? Miért?",
+        "answers": [
+            "Nem lehetséges. Ok: a rendszám a protonok száma, a tömegszám a protonok és neutronok együttes száma. Nem lehet negatív számú neutron a magban."
+        ]
+    },
+    {
+        "question": "Kb. mekkora az atommagot összetartó kölcsönhatás, a \"magerők\" hatótávolsága?",
+        "answers": [
+            "10^(-15) m. (10 a mínusz tizenötödiken méter)"
+        ]
+    },
+    {
+        "question": "Két radioaktív anyagdarab azonos mennyiségű magot tartalmaz a mérés pillanatában, de az elsőnek kisebb a felezési ideje. Melyiknél mérhetünk nagyobb aktivitást ekkor? Miért?",
+        "answers": [
+            "Az elsőnél. Ok: hamarabb elbomlanak benne a magok, azaz időegység alatt több a bomlások száma. (Amíg nem tér el a magok száma lényegesen.)"
+        ]
+    },
+    {
+        "question": "Miért veszélyes, ha egy működő atomerőműben műszaki hiba miatt hirtelen leáll a hűtőrendszer?",
+        "answers": [
+            "Azért, mert a reaktor ilyenkor hirtelen túlmelegszik, ami kémiai robbanást okoz és a sugárzó anyag kiszóródhat a környezetbe."
+        ]
+    },
+    {
+        "question": "Azt tanultuk, hogy a vas izotópjai esetén a legerősebb a nukleonok magbeli kötési energiája. Kb. mekkora ennek az értéke?",
+        "answers": [
+            "9--10 MeV."
+        ]
+    },
+    {
+        "question": "Mi a moderátor szerepe egy atomerőműben?",
+        "answers": [
+            "Az, hogy a hasadáskor keletkező gyors neutronokat lelassítja, hogy azok nagyobb eséllyel hasítsanak magokat."
+        ]
+    },
+    {
+        "question": "Bizonyos orvosi vizsgálatoknál a szervezet egy helyére összegyűlő kémiai elem radioaktív változatát juttatják a szervezetbe és ennek sugárzásának eloszlását mérik. Az ilyen radioaktív változat atommagja miben különbözik a hagyományos kémiai elemtől?",
+        "answers": [
+            "A protonok száma azonos, a neutronok száma különbözik. (izotópok)"
         ]
     }
 ]

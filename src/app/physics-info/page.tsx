@@ -41,7 +41,7 @@ export default function Home() {
         let tmp: any = [];
         if (value.length == 0) { return memr.data };
         for (const i of value) {
-            const m = memr.data.filter((item: any) => item.text.filter((t: any) => t.toLowerCase().includes(i.toLowerCase())).length > 0 || item.label.toLowerCase().includes(i.toLowerCase()));
+            const m = memr.data.filter((item: any) => item.answers.filter((t: any) => t.toLowerCase().includes(i.toLowerCase())).length > 0 || item.question.toLowerCase().includes(i.toLowerCase()));
             tmp = [...tmp, ...m];
         }
         return tmp.filter((item: any, index: number) => tmp.indexOf(item) === index);
@@ -155,8 +155,8 @@ export default function Home() {
                     json.map((item: any, index: number) => {
                         return (
                             <div key={index} className="flex flex-col gap-1 border border-gray-500 rounded-lg p-2">
-                                <div className="font-bold">{item.label}</div>
-                                {item.text.map((text: any, index: number) => {
+                                <div className="font-bold">{item.question}</div>
+                                {item.answers.map((text: any, index: number) => {
                                     return (
                                         <div key={index}>{text}</div>
                                     )
