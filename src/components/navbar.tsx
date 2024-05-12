@@ -100,7 +100,7 @@ export default function Navbar({
 
                 }
             </nav>
-            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen  bg-[#1e1e1e] text-gray-300 ' style={isMobile.current ? { width: "100vw" } : { width: "25rem" }}>
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen bg-white text-gray-900 ' style={isMobile.current ? { width: "100vw" } : { width: "25rem" }}>
                 <div className='grid grid-cols-2 gap-2 relative select-none overflow-hidden '>
                     <div onClick={() => { navigateTo("/"); setMenu(false) }} className={`p-3 col-span-2 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Főoldal</div>
 

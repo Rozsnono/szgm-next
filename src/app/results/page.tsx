@@ -95,7 +95,7 @@ export default function Home() {
             <div className="flex gap-3 w-full justify-center">
                 {exams.map((item) => {
                     return (
-                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border font-bold p-2 rounded-lg cursor-pointer duration-200 ' + (item.title === param.get("exam") ? "border-red-700 text-gray-300 bg-red-700" : "border-red-700 text-red-700 hover:text-stone-200 hover:bg-red-700 ")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
+                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border font-bold p-2 rounded-lg cursor-pointer duration-200 ' + (item.title === param.get("exam") ? "border-red-700 text-gray-900 bg-red-700" : "border-red-700 text-red-700 hover:text-white hover:bg-red-700 ")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
                     )
                 })}
             </div>

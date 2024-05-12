@@ -68,7 +68,7 @@ export default function Page() {
                 <Tooltip target=".copy" autoHide={false} position={"left"}>
                     <div>{copy ? "Másolva!" : "Másolás"}</div>
                 </Tooltip>
-                <div onMouseLeave={() => { setCopy(false) }} className="absolute top-1 right-1  bg-red-800 text-gray-300  p-1 rounded-lg text-xs copy cursor-pointer" onClick={() => { navigator.clipboard.writeText(code.replaceAll(/`{3}/g, '') as string); setCopy(true) }}><i className="pi pi-copy"></i></div>
+                <div onMouseLeave={() => { setCopy(false) }} className="absolute top-1 right-1  bg-red-800 text-gray-900  p-1 rounded-lg text-xs copy cursor-pointer" onClick={() => { navigator.clipboard.writeText(code.replaceAll(/`{3}/g, '') as string); setCopy(true) }}><i className="pi pi-copy"></i></div>
                 {code.replaceAll(/`{3}/g, '')}
             </pre>
         )

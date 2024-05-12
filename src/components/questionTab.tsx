@@ -79,9 +79,9 @@ export default function Tab({ question, answers, number, type, img, icon, result
 
     return (
         <main>
-            <div className={"flex items-center lg:p-4 py-4 lg:justify-center text-gray-300 " + (!result ? " min-h-screen" : "")}>
+            <div className={"flex items-center lg:p-4 py-4 lg:justify-center text-gray-900 " + (!result ? " min-h-screen" : "")}>
                 <div
-                    className="flex flex-col overflow-hidden  bg-stone-900 rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
+                    className="flex flex-col overflow-hidden  bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
                 >
                     <div
                         className={"p-4 py-6 overflow-hidden text-white w-full flex-shrink-0 flex flex-col items-center justify-evenly transition-all duration-200  bg-red-800 relative"}
@@ -94,11 +94,11 @@ export default function Tab({ question, answers, number, type, img, icon, result
                             <i className={"pi pi-" + icon} style={{ fontSize: "10rem" }}></i>
                         </div>
                     </div>
-                    <div className="p-5  bg-stone-900 md:flex-1 ">
+                    <div className="p-5  bg-white md:flex-1 ">
 
                         <div className="flex flex-col space-y-5">
                             <div className="flex flex-col space-y-1 text-center relative">
-                                <div className="text-lg text-end "> <span className="text-gray-300  font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">{max}</span> </div>
+                                <div className="text-lg text-end "> <span className="text-gray-900  font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">{max}</span> </div>
                             </div>
                             {
                                 img === null || img === "" || img === undefined ?

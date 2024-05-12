@@ -240,7 +240,7 @@ export default function Home() {
     };
 
     return (
-        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm text-gray-300 ">
+        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm text-gray-900 ">
             {
                 !data.isLoading && data.data ?
                 <div className="flex w-full flex-col gap-3">

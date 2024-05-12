@@ -132,7 +132,7 @@ export default function Home() {
     }
 
     return (
-        <main className={"flex flex-col lg:pt-14 py-12 text-lg  bg-[#1e1e1e] text-gray-300  gap-4"}>
+        <main className={"flex flex-col lg:pt-14 py-12 text-lg  bg-white text-gray-900  gap-4"}>
             {/* <div className="flex lg:flex-row flex-col gap-2 mt-1 p-2 border rounded-lg justify-center items-center fixed w-screen bg-gray-200">
                 <input type="text" className="w-1/2 my-2 rounded-md p-1" value={label} onChange={(e) => { setLabel(e.target.value) }} />
                 <textarea name="" id="" className="w-full rounded-md p-1" value={text} onChange={(e) => { setText(e.target.value) }}></textarea>

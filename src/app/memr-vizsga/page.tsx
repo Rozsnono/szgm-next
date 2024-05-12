@@ -132,7 +132,7 @@ export default function Home() {
     }
 
     return (
-        <main className={"flex flex-col lg:pt-14 py-12 text-lg  bg-[#1e1e1e] text-gray-300  gap-4"}>
+        <main className={"flex flex-col lg:pt-14 py-12 text-lg  bg-white text-gray-900  gap-4"}>
             {/* <div className="flex lg:flex-row flex-col gap-2 mt-1 p-2 border rounded-lg justify-center items-center fixed w-screen bg-gray-200">
                 <input type="text" className="w-1/2 my-2 rounded-md p-1" value={label} onChange={(e) => { setLabel(e.target.value) }} />
                 <textarea name="" id="" className="w-full rounded-md p-1" value={text} onChange={(e) => { setText(e.target.value) }}></textarea>
@@ -144,7 +144,7 @@ export default function Home() {
             </div> */}
             <div className="flex gap-3 lg:w-1/3 w-full mt-8 px-3">
                 <span className="p-float-label w-full ">
-                    <Chips className={"w-full  bg-stone-900" + (!memr.isLoading && memr.data.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); }} onKeyDown={handleKeyDown} />
+                    <Chips className={"w-full  bg-white" + (!memr.isLoading && memr.data.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); }} onKeyDown={handleKeyDown} />
                     <label htmlFor="search">Keresés</label>
                 </span>
                 <button onClick={getSearch} className="border border-red-600 rounded-lg bg-red-600 text-white font-bold p-2">Keresés</button>

@@ -10,7 +10,7 @@ import Form from '@/components/form';
 import { usePathname, useRouter } from 'next/navigation';
 import Message from '@/components/message';
 import dynamic from 'next/dynamic';
-import "../css/dark.css";
+import "../css/light.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,7 +47,7 @@ export default function RootLayout({
           <UserContext.Provider value={{ user, setUser }}>
             <Navbar>
               <Form>
-                <div className=' bg-[#1e1e1e]'>
+                <div className=' bg-white'>
                   {children}
 
                 </div>

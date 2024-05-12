@@ -22,7 +22,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center lg:p-24 p-16  bg-[#1e1e1e]">
+    <main className="flex min-h-screen flex-col items-center justify-center lg:p-24 p-16  bg-white">
       {
         checkUser ?
           <Menus menuLeft={menuLeft}></Menus> : <></>

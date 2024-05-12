@@ -10,7 +10,7 @@ export default function Home() {
     const router = useRouter();
 
     return (
-        <main className="mt-16 mi lg:p-16 p-4 lg:text-lg text-sm text-justify text-gray-300 ">
+        <main className="mt-16 mi lg:p-16 p-4 lg:text-lg text-sm text-justify text-gray-900 ">
             <div>
                 <h1>MI lufi </h1>
                 <p>A tőzsdei lufihoz hasonló jelenség. Egy jelentősebb elért áttörés után különösen megnő az érdeklődés, ezzel együtt a ráfordított erőforrás mennyisége is. Nem feltétlenül sikerült valós piaci körülmények között tartani az ígéreteket. Párszor az MI területén is lezajlott már, pl. 70-80-as évek: visszaesés a kutatási </p>

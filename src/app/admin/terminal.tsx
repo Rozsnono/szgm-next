@@ -37,12 +37,12 @@ export default function Terminal({ commandHandler, response, users }: { commandH
     }
 
     return (
-        <label className="w-full h-full border border-gray-600 bg-stone-900 rounded-md p-1" htmlFor="command"  >
+        <label className="w-full h-full border border-gray-600 bg-white rounded-md p-1" htmlFor="command"  >
             <ScrollPanel style={{ width: '100%', height: '100%' }} className="">
                 {response.map((item, index) => { return (<p key={index} className="text-xs"> {item} </p>) })}
                 <div ref={commander} className="flex">
                     {">"}
-                    <input type="text" id="command" onChange={(e) => { setCommand(e.target.value) }} value={command} autoFocus className="border-0 ms-1 admin-terminal-input bg-stone-900 w-full text-xs" onKeyDown={(e) => { handler(e) }} />
+                    <input type="text" id="command" onChange={(e) => { setCommand(e.target.value) }} value={command} autoFocus className="border-0 ms-1 admin-terminal-input bg-white w-full text-xs" onKeyDown={(e) => { handler(e) }} />
                 </div>
             </ScrollPanel>
         </label>

@@ -83,7 +83,7 @@ export default function Home() {
         <main>
             {
                 !szgh.isLoading && queue.length > 0 ?
-                    <QuestionTab max={4} icon="sitemap" question={szgh.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type="radio"></QuestionTab>
+                    <QuestionTab max={24} icon="sitemap" question={szgh.data[queue[number]].question} number={number + 1} answers={["Igaz", "Hamis"]} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type="radio"></QuestionTab>
                     : <></>
             }
         </main>

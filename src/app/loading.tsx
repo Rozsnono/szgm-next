@@ -2,8 +2,8 @@
 
 export default function Loading(){
     return (
-        <main className="min-h-screen w-screen  bg-[#1e1e1e] absolute top-0 left-0">
-            <div className="flex items-center min-h-screen p-4  bg-[#1e1e1e] justify-center">
+        <main className="min-h-screen w-screen  bg-white absolute top-0 left-0">
+            <div className="flex items-center min-h-screen p-4  bg-white justify-center">
                 <i className="pi pi-spinner pi-spin text-gray-500" style={{fontSize: "5rem"}}></i>  
             </div>
         </main>
