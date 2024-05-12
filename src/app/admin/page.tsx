@@ -161,7 +161,7 @@ export default function Home() {
                                 return (
                                     <div className={`border ${item.isDeleted ? "border-red-600" : ""} rounded-lg p-2 flex justify-between items-center gap-2`} key={index}>
                                         {item.user}
-                                        <div onClick={() => { banUser(item) }} className="border border-blue-800 bg-blue-800 text-white flex items-center justify-center p-1 text-xs rounded-md cursor-pointer hover:bg-white hover:text-blue-800 duration-100">
+                                        <div onClick={() => { banUser(item) }} className="border border-blue-800 border-red-800  bg-red-800 text-white flex items-center justify-center p-1 text-xs rounded-md cursor-pointer hover:bg-gray-600 hover:text-blue-800 text-red-800 duration-100">
                                             {!item.isDeleted ? "BAN" : "UNBAN"}
                                         </div>
                                     </div>
@@ -180,7 +180,7 @@ export default function Home() {
                         <div className="flex gap-2">
                             <Dropdown value={choosen} onChange={(e) => setChoosen(e.value)} options={users.data} optionLabel="user"
                                 placeholder="Users" className="w-fit" />
-                            <div onClick={banUser} className="border border-blue-800 bg-blue-800 text-white flex items-center justify-center p-2 rounded-md cursor-pointer hover:bg-white hover:text-blue-800 duration-100">{choosen && choosen.isDeleted ? "Unban" : "Ban"}</div>
+                            <div onClick={banUser} className="border border-blue-800 border-red-800  bg-red-800 text-white flex items-center justify-center p-2 rounded-md cursor-pointer hover:bg-gray-600 hover:text-blue-800 text-red-800 duration-100">{choosen && choosen.isDeleted ? "Unban" : "Ban"}</div>
                         </div> : <></>
                 } */}
 
@@ -201,7 +201,7 @@ export default function Home() {
                                         }:
                                     </p>
 
-                                    <p className={"font-bold flex-1" + (item.log.includes("tried") ? " text-red-900" : "")}>{item.log}</p>
+                                    <p className={"font-bold flex-1" + (item.log.includes("tried") ? " text-blue-900 text-red-900" : "")}>{item.log}</p>
                                 </div>
 
                                 <div>

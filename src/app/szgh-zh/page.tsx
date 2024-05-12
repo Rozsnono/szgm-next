@@ -36,7 +36,7 @@ export default function Home() {
 
 
     return (
-        <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg">
+        <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-24 text-lg text-gray-300 ">
             <div className="flex gap-3 lg:w-1/3 w-full">
                 <span className="p-float-label w-full">
                     <InputText className={"w-full " + (tmpSZGH.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); setTMPszgh(search(e.target.value)) }} />

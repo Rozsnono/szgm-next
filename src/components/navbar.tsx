@@ -82,16 +82,16 @@ export default function Navbar({
         <main className="relative">
 
 
-            <nav className="fixed top-0 w-screen z-99 bg-blue-800 p-2 flex justify-between" style={{ zIndex: "1000" }}>
-                <button onClick={(event: any) => { setMenu(true); setMenuShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
+            <nav className="fixed top-0 w-screen z-99  bg-red-800 p-2 flex justify-between" style={{ zIndex: "1000" }}>
+                <button onClick={(event: any) => { setMenu(true); setMenuShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
 
                 {
                     checkUser && checkUser.role === 1 ?
-                        <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-user'></i></button> : <></>
+                        <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-user'></i></button> : <></>
                 }
                 {
                     checkUser && checkUser.role < 3 ?
-                        <button onClick={() => { router.replace("/admin"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-users'></i></button> : <></>
+                        <button onClick={() => { router.replace("/admin"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-users'></i></button> : <></>
                 }
                 {
                     checkUser && checkUser.role === 1 && show &&
@@ -99,25 +99,25 @@ export default function Navbar({
                 }
                 {
                     checkUser ?
-                        <button onClick={() => { logout(); setUser({}); router.replace("/"); router.refresh(); window.location.reload() }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-out'></i> Log out</button> :
-                        <button onClick={() => { router.replace("/login"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-sign-in'></i> Log in</button>
+                        <button onClick={() => { logout(); setUser({}); router.replace("/"); router.refresh(); window.location.reload() }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900  hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-sign-out'></i> Log out</button> :
+                        <button onClick={() => { router.replace("/login"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900  hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-sign-in'></i> Log in</button>
 
                 }
             </nav>
-            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen' style={isMobile.current ? { width: "100vw" } : { width: "25rem" }}>
-                <div className='grid grid-cols-2 gap-2 relative select-none overflow-hidden'>
-                    <div onClick={() => { navigateTo("/"); setMenu(false) }} className={`p-3 col-span-2 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Főoldal</div>
+            <Sidebar visible={menu} onHide={() => setMenu(false)} className='w-screen  bg-[#1e1e1e] text-gray-300 ' style={isMobile.current ? { width: "100vw" } : { width: "25rem" }}>
+                <div className='grid grid-cols-2 gap-2 relative select-none overflow-hidden '>
+                    <div onClick={() => { navigateTo("/"); setMenu(false) }} className={`p-3 col-span-2 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Főoldal</div>
 
                     <hr className='col-span-2' />
 
-                    <div onClick={() => { navigateTo("/average"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Átlag</div>
-                    <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-bookmark"></i> Tárgyak</div>
+                    <div onClick={() => { navigateTo("/average"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Átlag</div>
+                    <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-bookmark"></i> Tárgyak</div>
 
                     {
                         checkUser &&
                         <>
-                            <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
-                            <div onClick={() => { navigateTo("/tanulai"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white duration-200`}><i className="pi pi-user"></i> TanulAI</div>
+                            <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
+                            <div onClick={() => { navigateTo("/tanulai"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-user"></i> TanulAI</div>
                         </>
                     }
 
@@ -126,8 +126,8 @@ export default function Navbar({
                     {
                         checkUser && checkUser.role != 4 &&
                         <>
-                            <div onClick={() => { setType("test") }} className={`p-3 select-none px-4 rounded-full ${type == 'study' ? 'border-b-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer' : 'border-b-2 border-green-800 bg-green-800 text-white'} duration-200`}><i className="pi pi-question"></i> Tesztek</div>
-                            <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer' : 'border-b-2 border-green-800 bg-green-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
+                            <div onClick={() => { setType("test") }} className={`p-3 select-none px-4 rounded-full ${type == 'study' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-question"></i> Tesztek</div>
+                            <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
                         </>
                     }
 
@@ -144,7 +144,7 @@ export default function Navbar({
                                     {
                                         type === "study" ?
                                             <>
-                                                <div onClick={() => { navigateTo("/matek1") }} data-pr-tooltip={"Matek 1"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
+                                                <div onClick={() => { navigateTo("/matek1") }} data-pr-tooltip={"Matek 1"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-plus-circle"></i></div>
                                             </> :
                                             <>
                                             </>
@@ -158,15 +158,15 @@ export default function Navbar({
                                     {
                                         type === "study" ?
                                             <>
-                                                <div onClick={() => { navigateTo("/matek2") }} data-pr-tooltip={"Matek 2"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
-                                                <div onClick={() => { navigateTo("/szgh-zh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
-                                                <div onClick={() => { navigateTo("/szgh-answers") }} data-pr-tooltip={"SZGH-GYAK"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
-                                                <div onClick={() => { navigateTo("/pmszt-vizsga") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
+                                                <div onClick={() => { navigateTo("/matek2") }} data-pr-tooltip={"Matek 2"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-plus-circle"></i></div>
+                                                <div onClick={() => { navigateTo("/szgh-zh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-server"></i></div>
+                                                <div onClick={() => { navigateTo("/szgh-answers") }} data-pr-tooltip={"SZGH-GYAK"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-server"></i></div>
+                                                <div onClick={() => { navigateTo("/pmszt-vizsga") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-file"></i></div>
                                             </> :
                                             <>
-                                                <div onClick={() => { navigateTo("/szgh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-server"></i></div>
-                                                <div onClick={() => { navigateTo("/rdsz") }} data-pr-tooltip={"RDSZ"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-cog"></i></div>
-                                                <div onClick={() => { navigateTo("/pmszt") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-file"></i></div>
+                                                <div onClick={() => { navigateTo("/szgh") }} data-pr-tooltip={"SZGH"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-server"></i></div>
+                                                <div onClick={() => { navigateTo("/rdsz") }} data-pr-tooltip={"RDSZ"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-cog"></i></div>
+                                                <div onClick={() => { navigateTo("/pmszt") }} data-pr-tooltip={"PMSZT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-file"></i></div>
                                             </>
                                     }
                                 </div>
@@ -178,14 +178,14 @@ export default function Navbar({
                                     {
                                         type === "study" ?
                                             <>
-                                                <div onClick={() => { navigateTo("/matek3") }} data-pr-tooltip={"Matek 3"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-plus-circle"></i></div>
-                                                <div onClick={() => { navigateTo("/memr-zh") }} data-pr-tooltip={"MEMR RÖVID"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
-                                                <div onClick={() => { navigateTo("/memr-vizsga") }} data-pr-tooltip={"MEMR TELJES"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
-                                                <div onClick={() => { navigateTo("/database") }} data-pr-tooltip={"ADATBÁZIS"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-database"></i></div>
+                                                <div onClick={() => { navigateTo("/matek3") }} data-pr-tooltip={"Matek 3"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-plus-circle"></i></div>
+                                                <div onClick={() => { navigateTo("/memr-zh") }} data-pr-tooltip={"MEMR RÖVID"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-calculator"></i></div>
+                                                <div onClick={() => { navigateTo("/memr-vizsga") }} data-pr-tooltip={"MEMR TELJES"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-calculator"></i></div>
+                                                <div onClick={() => { navigateTo("/database") }} data-pr-tooltip={"ADATBÁZIS"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-database"></i></div>
                                             </> :
                                             <>
-                                                <div onClick={() => { navigateTo("/memr") }} data-pr-tooltip={"MEMR"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-calculator"></i></div>
-                                                <div onClick={() => { navigateTo("/company") }} data-pr-tooltip={"VÁLLALAT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-chart-line"></i></div>
+                                                <div onClick={() => { navigateTo("/memr") }} data-pr-tooltip={"MEMR"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-calculator"></i></div>
+                                                <div onClick={() => { navigateTo("/company") }} data-pr-tooltip={"VÁLLALAT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-chart-line"></i></div>
                                             </>
                                     }
                                 </div>
@@ -197,8 +197,8 @@ export default function Navbar({
                                     {
                                         type === "study" ?
                                             <>
-                                                <div onClick={() => { navigateTo("/mi") }} data-pr-tooltip={"MI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-android"></i></div>
-                                                <div onClick={() => { navigateTo("/physics-info") }} data-pr-tooltip={"FIZIKA INFO"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-globe"></i></div>
+                                                <div onClick={() => { navigateTo("/mi") }} data-pr-tooltip={"MI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-android"></i></div>
+                                                <div onClick={() => { navigateTo("/physics-info") }} data-pr-tooltip={"FIZIKA INFO"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
                                             </> :
                                             <></>
                                     }
@@ -211,7 +211,7 @@ export default function Navbar({
                                     {
                                         type === "study" ?
                                             <>
-                                                <div onClick={() => { navigateTo("/physics") }} data-pr-tooltip={"FIZIKA TÖRI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 text-blue-800 hover:bg-blue-800"}><i className="pi pi-globe"></i></div>
+                                                <div onClick={() => { navigateTo("/physics") }} data-pr-tooltip={"FIZIKA TÖRI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
                                             </> :
                                             <></>
                                     }
@@ -224,7 +224,7 @@ export default function Navbar({
                             items.filter((item: any) => { return urls.includes(item.link) }).map((item: any, index: number) => {
                                 return (
                                     <div key={index}>
-                                        <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 cursor-pointer px-4 rounded-full border-2 ${item.error ? "border-red-800 text-red-800 hover:bg-red-800 hover:text-white" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white"}`}><i className={item.icon}></i> {item.label}</div>
+                                        <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 cursor-pointer px-4 rounded-full border-2 ${item.error ? "border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white" : "border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white"}`}><i className={item.icon}></i> {item.label}</div>
                                     </div>
                                 )
                             })
@@ -234,7 +234,7 @@ export default function Navbar({
                                     <div key={index} className={!item.items && !item.separator ? "" : "col-span-2 flex flex-wrap justify-center"}>
                                         {
                                             !item.items && !item.separator ?
-                                                <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 px-4 rounded-full border-2 ${item.type == "switcher" ? "bg-sky-500" : ""} ${item.error ? "border-red-800 text-red-800" : "border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white cursor-pointer"}`}><i className={item.icon}></i> {item.label}</div> :
+                                                <div onClick={() => { navigateTo(item.link); setMenu(false) }} key={index} className={`p-3 px-4 rounded-full border-2 ${item.type == "switcher" ? "bg-red-500" : ""} ${item.error ? "border-blue-800 border-red-800 text-blue-800 text-red-800" : "border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white cursor-pointer"}`}><i className={item.icon}></i> {item.label}</div> :
                                                 item.items && !item.separator ?
                                                     <MenusItem items={item.items.filter((item: any) => !item.template && item.type != "study")} label={item.label} onClick={(e) => { navigateTo(e); setMenu(false) }}></MenusItem>
                                                     :
@@ -265,7 +265,7 @@ function MenusItem({ items, label, onClick }: { items: any, label: string, onCli
                                 {
                                     item.separator ?
                                         <div className='h-10 border border-gray-500'></div> :
-                                        <div onClick={() => { onClick(item.link); }} data-pr-tooltip={item.label} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white" + (item.type == "test" ? " border-green-800 text-green-800 hover:bg-green-800" : " border-blue-800 text-blue-800 hover:bg-blue-800")}><i className={item.icon}></i></div>
+                                        <div onClick={() => { onClick(item.link); }} data-pr-tooltip={item.label} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white" + (item.type == "test" ? " border-green-800 text-green-800 hover:bg-green-800" : " border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800")}><i className={item.icon}></i></div>
                                 }
                             </div>
                         )

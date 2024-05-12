@@ -17,26 +17,31 @@ export default function Home() {
         {
             title: "PMSZT",
             icon: "pi pi-file",
+            link: "pmszt",
             max: 30
         },
         {
             title: "SZGH",
             icon: "pi pi-sitemap",
+            link: "szgh",
             max: 24
         },
         {
             title: "RDSZ",
             icon: "pi pi-cog",
+            link:"rdsz",
             max: 24
         },
         {
             title: "MEMR",
             icon: "pi pi-calculator",
+            link:"memr",
             max: 30
         },
         {
             title: "VALLALAT",
             icon: "pi pi-chart-line",
+            link:"company",
             max: 9
         },
     ];
@@ -90,7 +95,7 @@ export default function Home() {
             <div className="flex gap-3 w-full justify-center">
                 {exams.map((item) => {
                     return (
-                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border-2  font-bold p-2 rounded-lg cursor-pointer duration-200' + (item.title === param.get("exam") ? "border-blue-700 text-white bg-blue-700" : "border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
+                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border font-bold p-2 rounded-lg cursor-pointer duration-200 ' + (item.title === param.get("exam") ? "border-red-700 text-gray-300 bg-red-700" : "border-red-700 text-red-700 hover:text-stone-200 hover:bg-red-700 ")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
                     )
                 })}
             </div>
@@ -98,7 +103,7 @@ export default function Home() {
                 <span className="p-float-label w-full">
                     <label htmlFor="search">{point.current} / {selectedExam.max}</label>
                 </span>
-                <span onClick={() => { router.push("/" + selectedExam.title.toLocaleLowerCase()); sessionStorage.removeItem(selectedExam.title.toLowerCase() + "-result") }} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover:bg-blue-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
+                <span onClick={() => { router.push("/" + selectedExam.link.toLocaleLowerCase()); sessionStorage.removeItem(selectedExam.title.toLowerCase() + "-result") }} className="p-float-label w-full border border-gray-300 text-gray-500 cursor-pointer hover: hover:bg-red-800 hover:text-white duration-200 rounded-lg text-center flex items-center justify-center">
                     Újra
                 </span>
             </div>

@@ -184,12 +184,12 @@ export default function Home() {
     }
 
     function getColorCode(include: any) {
-        if (nexts.includes(include)) return "bg-yellow-200";
-        if (prevs.includes(include)) return "bg-red-200";
-        if (can.includes(include)) return "bg-blue-200";
+        if (nexts.includes(include)) return "bg-yellow-200 text-black";
+        if (prevs.includes(include)) return "bg-red-200 text-black";
+        if (can.includes(include)) return "bg-blue-200 text-black";
         if (doneRef.current.includes(include)) return "bg-green-700";
-        if (maybe.includes(include)) return "bg-sky-400";
-        return "hover:bg-green-200";
+        if (maybe.includes(include)) return "bg-blue-400 text-black";
+        return "hover:bg-gray-400 hover:bg-gray-700";
     }
 
     function getAllCount() {
@@ -240,14 +240,14 @@ export default function Home() {
     };
 
     return (
-        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm">
+        <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm text-gray-300 ">
             {
                 !data.isLoading && data.data ?
                 <div className="flex w-full flex-col gap-3">
                     <div className="flex justify-between lg:flex-row flex-col justify-center items-center gap-6">
                         {
                             user &&
-                            <div onClick={!save ? saving : () => { }} className={"border w-full text-center border-green-800 bg-green-800 text-white hover:text-green-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
+                            <div onClick={!save ? saving : () => { }} className={"border w-full text-center border-green-800 bg-green-800 text-white hover:bg-green-900 p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
                         }
 
                         {
@@ -271,7 +271,7 @@ export default function Home() {
                                     <label htmlFor="username">Tanterv</label>
                                 </span>
 
-                                <div onClick={() => { data.refetch(); }} className={"border w-full text-center border-blue-800 bg-blue-800 text-white hover:text-blue-800 hover:bg-white p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
+                                <div onClick={() => { data.refetch(); }} className={"border w-full text-center border-blue-800  text-white hover:bg-blue-900 bg-blue-800 p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
 
 
                             </>
@@ -291,12 +291,12 @@ export default function Home() {
                     </Tooltip>
 
                     <div className="flex lg:flex-row flex-col w-full gap-5 text-center justify-center">
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-700">Teljesített</div>
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-green-200">Kijelölt</div>
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-yellow-200">Ráépülés</div>
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-red-200">Előkövetelmény</div>
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-blue-200">Felvehető</div>
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-800 p-1 bg-sky-400">Tervezett</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-green-700">Teljesített</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-gray-400 bg-gray-700">Kijelölt</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-yellow-200 text-black">Ráépülés</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-red-200 text-black">Előkövetelmény</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-blue-200 text-black">Felvehető</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-blue-400 text-black">Tervezett</div>
                     </div>
 
 
@@ -315,7 +315,7 @@ export default function Home() {
                                         {
                                             Object.values(data.data.courses[0].data).filter((item: any) => { return item.semester == sem }).map((item: any, index: number) => {
                                                 return (
-                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-800 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(data.data.courses[0].data, item))}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                    <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[0].data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-600 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(data.data.courses[0].data, item))}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                 )
                                             })
                                         }
@@ -339,7 +339,7 @@ export default function Home() {
                                         {
                                             Object.values(courses.data).map((item: any, index: number) => {
                                                 return (
-                                                    <div key={index} onClick={() => { onClick(getKeyByValue(courses.data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(courses.data, item)) }} onMouseLeave={onHoverOut} className={"border flex justify-between rounded-md border-gray-800 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(courses.data, item))}><div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                    <div key={index} onClick={() => { onClick(getKeyByValue(courses.data, item), item.nexts) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(courses.data, item)) }} onMouseLeave={onHoverOut} className={"border flex justify-between rounded-md border-gray-600 p-1 cursor-pointer duration-100 " + getColorCode(getKeyByValue(courses.data, item))}><div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                 )
                                             })
                                         }
@@ -358,7 +358,7 @@ export default function Home() {
                             {
                                 Object.values(data.data.courses[2].data).map((item: any, index: number) => {
                                     return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[2].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
+                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[2].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
                                     )
                                 })
                             }
@@ -372,7 +372,7 @@ export default function Home() {
                             {
                                 Object.values(data.data.courses[3].data).map((item: any, index: number) => {
                                     return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[3].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
+                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[3].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
                                     )
                                 })
                             }
@@ -386,7 +386,7 @@ export default function Home() {
                             {
                                 Object.values(data.data.courses[4].data).map((item: any, index: number) => {
                                     return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[4].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
+                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[4].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
                                     )
                                 })
                             }
@@ -400,7 +400,7 @@ export default function Home() {
                             {
                                 Object.values(data.data.courses[5].data).map((item: any, index: number) => {
                                     return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[5].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-800 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-red-200" : nexts.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
+                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[5].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
                                     )
                                 })
                             }

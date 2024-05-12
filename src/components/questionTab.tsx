@@ -21,7 +21,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
         } else if (correct.includes(a) && !result.includes(a)) {
             isCorrect.current = (false)
             next(false);
-            return <i className="pi pi-info-circle text-blue-400"></i>
+            return <i className="pi pi-info-circle text-red-400"></i>
         } else if (!correct.includes(a) && result.includes(a)) {
             isCorrect.current = (false)
             next(false);
@@ -67,26 +67,26 @@ export default function Tab({ question, answers, number, type, img, icon, result
 
     return (
         <main>
-            <div className={"flex items-center lg:p-4 py-4 lg:justify-center" + (!result ? " min-h-screen" : "")}>
+            <div className={"flex items-center lg:p-4 py-4 lg:justify-center text-gray-300 " + (!result ? " min-h-screen" : "")}>
                 <div
-                    className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
+                    className="flex flex-col overflow-hidden  bg-stone-900 rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
                 >
                     <div
-                        className={"p-4 py-6 overflow-hidden text-white w-full flex-shrink-0 flex flex-col items-center justify-evenly transition-all duration-200 bg-blue-800 relative"}
+                        className={"p-4 py-6 overflow-hidden text-white w-full flex-shrink-0 flex flex-col items-center justify-evenly transition-all duration-200  bg-red-800 relative"}
                     >
                         <div className="my-3 text-2xl font-bold tracking-wider text-center z-50">
                             <p>{question}</p>
                         </div>
 
-                        <div className="flex p-3 overflow-hidden absolute text-blue-900 top-0 left-0">
+                        <div className="flex p-3 overflow-hidden absolute text-blue-900 text-red-900 top-0 left-0">
                             <i className={"pi pi-" + icon} style={{ fontSize: "10rem" }}></i>
                         </div>
                     </div>
-                    <div className="p-5 bg-white md:flex-1 ">
+                    <div className="p-5  bg-stone-900 md:flex-1 ">
 
                         <div className="flex flex-col space-y-5">
                             <div className="flex flex-col space-y-1 text-center relative">
-                                <div className="text-lg text-end "> <span className="text-gray-800 font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">{max}</span> </div>
+                                <div className="text-lg text-end "> <span className="text-gray-300  font-bold">{number}</span> <span className="text-gray-400">of</span> <span className="text-gray-600">{max}</span> </div>
                             </div>
                             {
                                 img === null || img === "" || img === undefined ?
@@ -142,9 +142,11 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                         <>
                                             {
                                                 max !== number ?
+                                                <button type="button" onClick={() => { next(choosed); setChoosed([]) }} className="flex items-center gap-2 text-white bg-blue-700 bg-red-700 hover: hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2">Tovább <i className="pi pi-send"></i> </button> :
+                                                    // <Button color="warn" onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" /> :
+                                                    // <Button onClick={() => { finished(choosed); setChoosed([]) }} rounded label="Befejezés" icon="pi pi-send" />
+                                                <button type="button" onClick={() => { finished(choosed); setChoosed([]) }} className="flex items-center gap-2 text-white bg-orange-700 hover:bg-orange-800 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2">Befejezés <i className="pi pi-send"></i> </button>
 
-                                                    <Button onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" /> :
-                                                    <Button onClick={() => { finished(choosed); setChoosed([]) }} rounded label="Befejezés" icon="pi pi-send" />
                                             }
                                         </>
                                         :

@@ -30,7 +30,7 @@
     "next": "^14.2.3",
     "postcss": "8.4.29",
     "primeicons": "^6.0.1",
-    "primereact": "^9.6.2",
+    "primereact": "^9.6.4",
     "react": "^18.3.1",
     "react-chat-engine": "^1.11.28",
     "react-dom": "^18.3.1",

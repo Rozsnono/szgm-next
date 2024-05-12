@@ -22,14 +22,14 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center lg:p-24 p-16">
+    <main className="flex min-h-screen flex-col items-center justify-center lg:p-24 p-16  bg-[#1e1e1e]">
       {
         checkUser ?
           <Menus menuLeft={menuLeft}></Menus> : <></>
       }
 
       <div className="flex flex-col  gap-2">
-        <Image src={"/icon-only.png"} width={300} height={300} alt='icon'></Image>
+        {/* <Image src={"/icon-only.png"} width={300} height={300} alt='icon'></Image> */}
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');
@@ -37,7 +37,7 @@ export default function Home() {
             link.download = 'sze-helper.apk';
 
             link.click();
-          }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'>
+          }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800  bg-red-800 hover:border-blue-900 hover:border-red-900 border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'>
             <i className='pi pi-mobile'></i> Download APK
           </button>
 

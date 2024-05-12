@@ -68,7 +68,7 @@ export default function Page() {
                 <Tooltip target=".copy" autoHide={false} position={"left"}>
                     <div>{copy ? "Másolva!" : "Másolás"}</div>
                 </Tooltip>
-                <div onMouseLeave={() => { setCopy(false) }} className="absolute top-1 right-1 bg-blue-800 text-gray-300 p-1 rounded-lg text-xs copy cursor-pointer" onClick={() => { navigator.clipboard.writeText(code.replaceAll(/`{3}/g, '') as string); setCopy(true) }}><i className="pi pi-copy"></i></div>
+                <div onMouseLeave={() => { setCopy(false) }} className="absolute top-1 right-1  bg-red-800 text-gray-300  p-1 rounded-lg text-xs copy cursor-pointer" onClick={() => { navigator.clipboard.writeText(code.replaceAll(/`{3}/g, '') as string); setCopy(true) }}><i className="pi pi-copy"></i></div>
                 {code.replaceAll(/`{3}/g, '')}
             </pre>
         )
@@ -111,7 +111,7 @@ export default function Page() {
         <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-md flex lg:flex-row flex-col justify-center gap-4">
             <div className="lg:flex hidden lg:w-1/4 w-full flex-col relative">
                 <div className="lg:fixed flex lg:flex-col flex-row gap-4 overflow-auto">
-                    <div onClick={create} className=" border border-blue-800 flex items-center gap-1 rounded-lg p-2 w-fit text-blue-800 font-bold cursor-pointer hover:bg-blue-800 hover:text-white duration-200">
+                    <div onClick={create} className=" border border-blue-800 border-red-800 flex items-center gap-1 rounded-lg p-2 w-fit text-blue-800 text-red-800 font-bold cursor-pointer hover: hover:bg-red-800 hover:text-white duration-200">
                         Új chat
                         <i className="pi pi-comment"></i>
                     </div>
@@ -135,7 +135,7 @@ export default function Page() {
                                 return (
                                     <div key={index} className="flex flex-row gap-2 items-center max-w-full">
                                         <i className="pi pi-user"></i>
-                                        <div className="bg-blue-700 text-white rounded-lg p-2 flex flex-col gap-1">{typeof item.message == typeof "" ? item.message.split("\n\n").map((row: any) => {
+                                        <div className="bg-blue-700 bg-red-700 text-white rounded-lg p-2 flex flex-col gap-1">{typeof item.message == typeof "" ? item.message.split("\n\n").map((row: any) => {
                                             return <div key={row} className="">{row.includes("```") ? codeDisplay(row) : row}</div>
                                         }) : item.message}</div>
                                     </div>
@@ -143,16 +143,16 @@ export default function Page() {
                             } else {
                                 return (
                                     <div key={index} className="flex flex-row gap-2 items-center justify-end">
-                                        <p className="bg-white text-blue-800 border border-blue-800 rounded-lg p-2">{item.message}</p>
+                                        <p className="bg-gray-600 text-blue-800 text-red-800 border border-blue-800 border-red-800 rounded-lg p-2">{item.message}</p>
                                     </div>
                                 )
                             }
                         })
                     }
                 </div>
-                <div className="border border-blue-700 rounded-full overflow-hidden lg:w-1/2 flex items-center">
+                <div className="border border-red-700 rounded-full overflow-hidden lg:w-1/2 flex items-center">
                     <input type="text" style={{ outline: "none" }} className="w-full px-4 p-2" placeholder="Üzenet" onChange={(e) => { setMessage(e.target.value) }} value={message} onKeyDown={handler} />
-                    <button className="text-blue-800 px-4" onClick={send} >
+                    <button className="text-blue-800 text-red-800 px-4" onClick={send} >
                         {isLoading ? <i className="pi pi-spin pi-spinner"></i> :
                             <i className="pi pi-send"></i>
                         }

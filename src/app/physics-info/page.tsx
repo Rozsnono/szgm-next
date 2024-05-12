@@ -132,13 +132,13 @@ export default function Home() {
     }
 
     return (
-        <main className={"flex flex-col lg:pt-14 py-12 text-lg bg-gray-100 gap-4"}>
+        <main className={"flex flex-col lg:pt-14 py-12 text-lg  bg-[#1e1e1e] text-gray-300  gap-4"}>
             {/* <div className="flex lg:flex-row flex-col gap-2 mt-1 p-2 border rounded-lg justify-center items-center fixed w-screen bg-gray-200">
                 <input type="text" className="w-1/2 my-2 rounded-md p-1" value={label} onChange={(e) => { setLabel(e.target.value) }} />
                 <textarea name="" id="" className="w-full rounded-md p-1" value={text} onChange={(e) => { setText(e.target.value) }}></textarea>
                 <div className="flex gap-2">
                     <button onClick={addJson} className="border border-green-400 rounded-lg bg-green-400 text-white font-bold p-2">Add</button>
-                    <button onClick={downloadFile} className="border border-blue-400 rounded-lg bg-blue-400 text-white font-bold p-2">Download</button>
+                    <button onClick={downloadFile} className="border border-red-400 rounded-lg bg-red-400 text-white font-bold p-2">Download</button>
                     <input type="file" accept=".json" onChange={handleFileChange} />
                 </div>
             </div> */}
@@ -147,7 +147,7 @@ export default function Home() {
                     <Chips className={"w-full " + (!memr.isLoading && memr.data.length === 0 && value != null ? "p-invalid" : "")} id="search" value={value} onChange={(e) => { setValue(e.target.value); }} onKeyDown={handleKeyDown} />
                     <label htmlFor="search">Keresés</label>
                 </span>
-                <button onClick={getSearch} className="border border-blue-400 rounded-lg bg-blue-400 text-white font-bold p-2">Search</button>
+                <button onClick={getSearch} className="border border-red-600 rounded-lg bg-red-600 text-white font-bold p-2">Keresés</button>
 
             </div>
             <div className="lg:px-16 px-2 gap-2 flex flex-col lg:mt-12 mt-6">
@@ -158,7 +158,7 @@ export default function Home() {
                                 <div className="font-bold">{item.question}</div>
                                 {item.answers.map((text: any, index: number) => {
                                     return (
-                                        <div key={index}>{text}</div>
+                                        <div key={index} className="ms-2">{text}</div>
                                     )
                                 })}
                             </div>

@@ -67,7 +67,7 @@ export default function Form({
                 checkUser === null && urls.filter((url) => { return path == url }).length === 0 ?
                     <>
 
-                        <main className="fixed top-0 p-2 flex justify-center items-center w-screen h-screen bg-white overflow-hidden" style={{ zIndex: 1001 }}>
+                        <main className="fixed top-0 p-2 flex justify-center items-center w-screen h-screen bg-gray-600 overflow-hidden" style={{ zIndex: 1001 }}>
                             <div className="absolute w-full h-full gap-1 top-0 left-0 flex flex-wrap sections">
                                 <div className="absolute bg"></div>
                                 <div className="box"></div>
@@ -408,7 +408,7 @@ export default function Form({
                                 <div className="box"></div>
 
                             </div>
-                            <div className="mx-auto flex flex-col bg-white border-2 border-blue-500 gap-6 p-6 rounded-lg h-fit" style={{ zIndex: 102 }}>
+                            <div className="mx-auto flex flex-col bg-gray-600 border-2 border-red-500 gap-6 p-6 rounded-lg h-fit" style={{ zIndex: 102 }}>
                                 <span className="p-float-label">
                                     <InputText id="username" value={TMPuser} onChange={(e) => setTMPUser(e.target.value)} />
                                     <label htmlFor="username">Username</label>
@@ -419,14 +419,14 @@ export default function Form({
                                 </span>
                                 <div className="text-red-500">{message}</div>
 
-                                <div className={"w-full rounded-full border-blue-500 bg-white border-2 text-blue-500 duration-100 text-center " + (isLoading ? "" : "hover:bg-blue-500 hover:text-white cursor-pointer")} onClick={logining}>{isLoading ? "Logging in..." : "Login"}</div>
+                                <div className={"w-full rounded-full border-red-500 bg-gray-600 border-2 text-red-500 duration-100 text-center " + (isLoading ? "" : "hover:bg-red-500 hover:text-white cursor-pointer")} onClick={logining}>{isLoading ? "Logging in..." : "Login"}</div>
                             </div>
                         </main>
 
                     </> :
                     checkUser === undefined ?
                         <main className="fixed top-0 p-2 flex justify-center w-screen h-screen bg-[#00000040]" style={{ zIndex: 1001 }}>
-                            <div className="mx-auto flex flex-col bg-white border-2 border-blue-800 gap-6 p-6 rounded-lg h-fit" >
+                            <div className="mx-auto flex flex-col bg-gray-600 border-2 border-blue-800 border-red-800 gap-6 p-6 rounded-lg h-fit" >
                                 {/* <i className="pi pi-spin pi-spinner" style={{ fontSize: "3rem" }}></i> */}
                                 <div className="loader"></div>
                             </div>
@@ -472,7 +472,7 @@ export function Register() {
 
     return (
         <main className="fixed top-0 p-2 flex justify-center items-center w-screen" style={{ zIndex: 1001 }}>
-            <div className="mx-auto flex flex-col bg-white border-2 border-blue-800 gap-6 p-6 rounded-lg justify-center" >
+            <div className="mx-auto flex flex-col bg-gray-600 border-2 border-blue-800 border-red-800 gap-6 p-6 rounded-lg justify-center" >
                 <span className="p-float-label w-full">
                     <InputText id="username" value={user} onChange={(e) => setUser(e.target.value)} className="w-full" />
                     <label htmlFor="username">Username</label>
@@ -484,7 +484,7 @@ export function Register() {
 
                 <SelectButton value={role} onChange={(e) => setRole(e.value)} itemTemplate={template} optionLabel="value" options={options} />
 
-                <div className="w-full rounded-full border-blue-800 bg-white border-2 text-blue-800 hover:bg-blue-800 hover:text-white duration-100 text-center cursor-pointer" onClick={logining}>Register</div>
+                <div className="w-full rounded-full border-blue-800 border-red-800 bg-gray-600 border-2 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-100 text-center cursor-pointer" onClick={logining}>Register</div>
             </div>
         </main>
     )

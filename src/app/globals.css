@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "primereact/resources/themes/bootstrap4-light-blue/theme.css";     
+/* @import "primereact/resources/themes/md-dark-deeppurple/theme.css";      */
 @import "primereact/resources/primereact.min.css";   
 
 @import 'primeicons/primeicons.css';

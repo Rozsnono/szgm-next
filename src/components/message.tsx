@@ -65,7 +65,7 @@ export default function Message({ _id }: { _id: string }) {
   function getShape(index: number, dir: string, message: any) {
     const odir = (dir === 'l' ? 'r' : 'l');
     let first = false;
-    let className = 'border p-2 w-fit lg:max-w-[25rem] max-w-[50vw] px-4 relative ' + (user.user === message.by ? "border-gray-400" : "bg-blue-500") + " ";
+    let className = 'border p-2 w-fit lg:max-w-[25rem] max-w-[50vw] px-4 relative ' + (user.user === message.by ? "border-gray-400" : "bg-red-500") + " ";
     if (index === 0 && messages.data?.messages.length === 1) return (<div className={className + "rounded-full"}>{message.message}</div>)
     if (index > 0 && index < messages.data.messages.length - 1) {
       if (messages.data?.messages[index - 1].by === messages.data?.messages[index].by && messages.data?.messages[index + 1].by === messages.data?.messages[index].by) {
@@ -130,7 +130,7 @@ export default function Message({ _id }: { _id: string }) {
         }
         {
           dir === "r" &&
-          <Avatar key={index} label={message.by.slice(0, 1).toUpperCase()} className={"mr-2 bg-blue-700 text-white " + (!first && " opacity-0")} size={"normal"} shape="circle" />
+          <Avatar key={index} label={message.by.slice(0, 1).toUpperCase()} className={"mr-2 bg-blue-700 bg-red-700 text-white " + (!first && " opacity-0")} size={"normal"} shape="circle" />
         }
 
         <div className={className + (message.reaction.length > 0 && " mb-4")}>
@@ -184,7 +184,7 @@ export default function Message({ _id }: { _id: string }) {
   return (
     <div className='h-full flex justify-center'>
       <div className="flex flex-col border rounded-xl bg-gray-200 justify-between overflow-hidden relative lg:w-[35rem] w-[90vw] mx-auto">
-        <div className='w-full border-b flex justify-between items-center text-xl p-2 font-bold bg-blue-500 absolute top-0'>
+        <div className='w-full border-b flex justify-between items-center text-xl p-2 font-bold bg-red-500 absolute top-0'>
           {isMobile && <div className='flex items-center gap-2'>
             <i onClick={() => { window.location.href = "/messages" }} className='pi pi-arrow-left cursor-pointer'></i>
           </div>}
@@ -195,7 +195,7 @@ export default function Message({ _id }: { _id: string }) {
                 {
                   messages.data?.participants.filter((p: any) => { return p._id !== user._id }).map((p: any, index: number) => {
                     return (
-                      <Avatar key={index} label={p.name.slice(0, 1).toUpperCase()} className="mr-2 bg-blue-700 text-white group-hover:bg-white group-hover:text-blue-700 duration-100" size={"normal"} shape="circle" />
+                      <Avatar key={index} label={p.name.slice(0, 1).toUpperCase()} className="mr-2 bg-blue-700 bg-red-700 text-white group-hover:bg-gray-600 group-hover:text-red-700 duration-100" size={"normal"} shape="circle" />
                     )
                   })
                 }
@@ -236,9 +236,9 @@ export default function Message({ _id }: { _id: string }) {
           <div className='flex p-2 gap-3 absolute bottom-0 lg:w-[35rem] w-[90vw]'>
             <div className='flex w-full items-center'>
               <input type="text" className='rounded-full lg:rounded-r-none px-2 py-1 w-full' value={message} onChange={(e) => { setMessage(e.target.value); }} onKeyDown={handler} />
-              <div onClick={() => { setShowEmoji2(!showEmoji2) }} className='rounded-r-full bg-white py-1 px-3 lg:block hidden cursor-pointer '><i className='pi pi-user'></i></div>
+              <div onClick={() => { setShowEmoji2(!showEmoji2) }} className='rounded-r-full bg-gray-600 py-1 px-3 lg:block hidden cursor-pointer '><i className='pi pi-user'></i></div>
             </div>
-            <button onClick={createMessage} className='flex items-center justify-center p-3 rounded-full bg-blue-500 text-white'><i className='pi pi-send'></i></button>
+            <button onClick={createMessage} className='flex items-center justify-center p-3 rounded-full bg-red-500 text-white'><i className='pi pi-send'></i></button>
           </div>
         </div>
       </div>

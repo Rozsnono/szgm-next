@@ -125,7 +125,7 @@ export default function Home() {
     return (
         <main className="lg:flex grid-col-reverse min-h-screen gap-10 items-center justify-center lg:p-24 p-6 pt-24">
             <div className="grid gap-5">
-                <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full border-2 border-blue-700 rounded-lg p-6 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full border-2 border-red-700 rounded-lg p-6 gap-4">
                     <span className="p-float-label mx-auto">
                         {/* <Dropdown value={value} onChange={(e: any) => setValue(e.value)} options={subjects.data} optionLabel={"subject"}
                             filter className="w-full" /> */}
@@ -136,7 +136,7 @@ export default function Home() {
                         <InputNumber id="number-input" min={0} max={5} value={number} onValueChange={(e) => setNumber(e.value ? e.value : null)} />
                         <label htmlFor="number-input">Érdemjegy</label>
                     </span>
-                    <button onClick={addSubject} className='px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'><i className='pi pi-plus'></i> Új tárgy</button>
+                    <button onClick={addSubject} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800  bg-red-800 hover:border-blue-900 hover:border-red-900 border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-plus'></i> Új tárgy</button>
                 </div>
 
                 <div className="grid p-10 gap-10">
@@ -166,7 +166,7 @@ export default function Home() {
 
             </div>
 
-            <div className="flex flex-col border-2 border-blue-700 rounded-lg p-8 gap-8">
+            <div className="flex flex-col border-2 border-red-700 rounded-lg p-8 gap-8">
                 <span className="p-float-label mx-auto">
                     <InputNumber id="number-input" value={avg && avg > 0 ? avg : null} readOnly />
                     <label htmlFor="number-input">Átlag</label>

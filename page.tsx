@@ -30,14 +30,14 @@ export default function Home() {
 
       <div className="flex flex-col  gap-2">
         
-        <div className='flex flex-col lg:text-[5rem] text-lg font-bold p-12 border-2 underline border-blue-800 rounded-lg text-blue-800'>Nem hivatalos oldal!</div>
+        <div className='flex flex-col lg:text-[5rem] text-lg font-bold p-12 border-2 underline border-blue-800 border-red-800 rounded-lg text-blue-800 text-red-800'>Nem hivatalos oldal!</div>
         <div className="items-center">
           <button onClick={() => {
             const link = document.createElement('a');
             link.href = '/tanulas-helper.apk';
             link.download = 'tanulas-helper.apk';
             link.click();
-          }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 bg-blue-800 hover:border-blue-900 hover:bg-blue-900 text-white'>
+          }} className='w-full h-full px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800  bg-red-800 hover:border-blue-900 hover:border-red-900 border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'>
             <i className='pi pi-mobile'></i> Download APK
           </button>
 
