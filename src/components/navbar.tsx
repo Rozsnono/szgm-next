@@ -86,10 +86,6 @@ export default function Navbar({
                 <button onClick={(event: any) => { setMenu(true); setMenuShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-align-left'></i> Menu</button>
 
                 {
-                    checkUser && checkUser.role === 1 ?
-                        <button onClick={() => { setShow(true) }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-user'></i></button> : <></>
-                }
-                {
                     checkUser && checkUser.role < 3 ?
                         <button onClick={() => { router.replace("/admin"); }} className='px-4 py-2 border-2 rounded-xl border-blue-800 border-red-800 hover:border-blue-900 hover:border-red-900 hover:bg-blue-900 hover:bg-red-900 text-white'><i className='pi pi-users'></i></button> : <></>
                 }

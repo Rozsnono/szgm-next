@@ -5,10 +5,12 @@ import { RadioButton } from "primereact/radiobutton";
 import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
 import { Messages } from 'primereact/messages';
+import Loading from "@/app/loading";
 
 export default function Tab({ question, answers, number, type, img, icon, result, correct, next, finished, max, checking }: { question: string, answers: any, number: number, img?: string | null, icon: string, type: string, result?: any, correct?: any, next: (e: any) => void, finished: (e: any) => void, max: number, checking?: boolean}) {
 
     const [choosed, setChoosed] = useState<any>(result ? (type === "text" ? answers : result) : []);
+    const [finish, setFinish] = useState<boolean>(false);
     const isCorrect = useRef<boolean>(true);
 
     function toBase64(arr: any) {
@@ -63,6 +65,16 @@ export default function Tab({ question, answers, number, type, img, icon, result
                 setChoosed([...choosed, e.value])
             }
         }
+    }
+
+    function finishing(){
+        setFinish(true);
+        finished(choosed); 
+        setChoosed([]);
+    }
+
+    if(finish){
+        return <Loading></Loading>
     }
 
     return (
@@ -145,7 +157,7 @@ export default function Tab({ question, answers, number, type, img, icon, result
                                                 <button type="button" onClick={() => { next(choosed); setChoosed([]) }} className="flex items-center gap-2 text-white bg-blue-700 bg-red-700 hover: hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2">Tovább <i className="pi pi-send"></i> </button> :
                                                     // <Button color="warn" onClick={() => { next(choosed); setChoosed([]) }} rounded label="Tovább" icon="pi pi-send" /> :
                                                     // <Button onClick={() => { finished(choosed); setChoosed([]) }} rounded label="Befejezés" icon="pi pi-send" />
-                                                <button type="button" onClick={() => { finished(choosed); setChoosed([]) }} className="flex items-center gap-2 text-white bg-orange-700 hover:bg-orange-800 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2">Befejezés <i className="pi pi-send"></i> </button>
+                                                <button type="button" onClick={finishing} className="flex items-center gap-2 text-white bg-orange-700 hover:bg-orange-800 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2">Befejezés <i className="pi pi-send"></i> </button>
 
                                             }
                                         </>

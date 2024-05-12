@@ -153,6 +153,7 @@ export default function Home() {
                     }}
                 /> */}
 
+                <div className="h-full overflow-y-auto">
                 {
                     !users.isLoading && users.data &&
                     <div className="lg:flex grid grid-cols-2 flex-col gap-2">
@@ -170,6 +171,7 @@ export default function Home() {
                         }
                     </div>
                 }
+                </div>
                 
                 {!users.isLoading && users.data &&
                     <Terminal commandHandler={commandHandler} response={response} users={users.data}></Terminal>
