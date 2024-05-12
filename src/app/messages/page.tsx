@@ -18,7 +18,7 @@ export default function Messages() {
     const { user } = useContext<any>(UserContext);
 
     async function getMessages() {
-        const res = await fetch("https://troubled-underwear-frog.cyclic.app/api/messages?user=" + user._id);
+        const res = await fetch("https://szgm-next-server.onrender.com/api/messages?user=" + user._id);
         const data = await res.json();
         return data;
     }
