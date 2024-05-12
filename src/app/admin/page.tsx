@@ -22,20 +22,20 @@ export default function Home() {
     }
 
     async function getData() {
-        const res = await fetch("https://sze-szerver.cyclic.app//api/logs");
+        const res = await fetch("https://troubled-underwear-frog.cyclic.app/api/logs");
         const data = await res.json();
         return data;
     }
 
     async function getUsers() {
-        const res = await fetch("https://sze-szerver.cyclic.app//api/users");
+        const res = await fetch("https://troubled-underwear-frog.cyclic.app/api/users");
         const data = await res.json();
         return data;
     }
 
     async function banUser(user: any) {
         window.location.reload();
-        await fetch("https://sze-szerver.cyclic.app//api/user/" + user._id + "/" + !user.isDeleted, { method: "DELETE" });
+        await fetch("https://troubled-underwear-frog.cyclic.app/api/user/" + user._id + "/" + !user.isDeleted, { method: "DELETE" });
     }
 
     const data = useQuery<any[]>('database', getData);
@@ -86,14 +86,14 @@ export default function Home() {
                 setChoosen(users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0]);
                 const banUser = users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0];
                 tmpResponse = ["|    User banned: " + banUser.user];
-                fetch("https://sze-szerver.cyclic.app//api/user/" + banUser._id + "/" + true, { method: "DELETE" })
+                fetch("https://troubled-underwear-frog.cyclic.app/api/user/" + banUser._id + "/" + true, { method: "DELETE" })
                 break;
 
             case "unban":
                 setChoosen(users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0]);
                 const banUser2 = users.data?.filter((item) => { return item.user === text.substring(argsIndex + 1) })[0];
                 tmpResponse = ["|    User unbanned: " + banUser2.user];
-                fetch("https://sze-szerver.cyclic.app//api/user/" + banUser2._id + "/" + false, { method: "DELETE" })
+                fetch("https://troubled-underwear-frog.cyclic.app/api/user/" + banUser2._id + "/" + false, { method: "DELETE" })
                 break;
 
             case 'clear':

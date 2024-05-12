@@ -8,7 +8,7 @@ const UserContext = createContext({ user: {} as { _id: string, user: string, pas
 export default UserContext;
 
 export async function login(user: string, password: string) {
-    await fetch("https://sze-szerver.cyclic.app//api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
+    await fetch("https://troubled-underwear-frog.cyclic.app/api/user?user=" + user + "&password=" + Coder(password)).then(res => res.json()).then(data => {
         if (data.length !== 0 && data.user) {
             localStorage.setItem("6429FC567AB4618A", JSON.stringify(data[0]));
             window.location.reload();
@@ -23,7 +23,7 @@ export async function login(user: string, password: string) {
 export async function register(user: string, password: string, role: number) {
     User.push({ user: user, password: Coder(password), role: role });
 
-    await fetch("https://sze-szerver.cyclic.app//api/user", { method: "POST", body: JSON.stringify({ user: user, password: Coder(password), role: role }), headers: { "Content-Type": "application/json" } })
+    await fetch("https://troubled-underwear-frog.cyclic.app/api/user", { method: "POST", body: JSON.stringify({ user: user, password: Coder(password), role: role }), headers: { "Content-Type": "application/json" } })
 }
 
 export function logout() {

@@ -17,7 +17,7 @@ export default function Message({ _id }: { _id: string }) {
 
 
   async function getMessage() {
-    const res = await fetch("https://sze-szerver.cyclic.app//api/message/" + _id);
+    const res = await fetch("https://troubled-underwear-frog.cyclic.app/api/message/" + _id);
     const data = await res.json();
     return data;
   }
@@ -25,7 +25,7 @@ export default function Message({ _id }: { _id: string }) {
 
   async function createMessage() {
     if (message === '') return;
-    const res = await fetch("https://sze-szerver.cyclic.app//api/message/" + _id, { method: 'PUT', body: JSON.stringify({ by: user.user, message: message }), headers: { "Content-Type": "application/json" } });
+    const res = await fetch("https://troubled-underwear-frog.cyclic.app/api/message/" + _id, { method: 'PUT', body: JSON.stringify({ by: user.user, message: message }), headers: { "Content-Type": "application/json" } });
     const data = await res.json();
     setMessage('');
 
@@ -169,7 +169,7 @@ export default function Message({ _id }: { _id: string }) {
   }
 
   async function reactToChat(reaction: string, selected: any) {
-    const res = await fetch("https://sze-szerver.cyclic.app//api/message/reaction/"+_id, { method: 'PUT', body: JSON.stringify({ _id: selected._id, reaction: reaction }), headers: { "Content-Type": "application/json" } });
+    const res = await fetch("https://troubled-underwear-frog.cyclic.app/api/message/reaction/"+_id, { method: 'PUT', body: JSON.stringify({ _id: selected._id, reaction: reaction }), headers: { "Content-Type": "application/json" } });
     setShowEmoji(null);
     const data = await res.json();
   }

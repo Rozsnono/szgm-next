@@ -47,7 +47,7 @@ export default function Navbar({
             setUser(null);
             return null;
         };
-        const res2 = await fetch("https://sze-szerver.cyclic.app//api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + data.ip);
+        const res2 = await fetch("https://troubled-underwear-frog.cyclic.app/api/user?user=" + tmpUser.user + "&password=" + tmpUser.password + "&ip=" + data.ip);
         const data2 = await res2.json();
 
         if (data2.length !== 0 && data2[0].user) {

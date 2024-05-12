@@ -23,7 +23,7 @@ export default function Page() {
 
     async function getAI() {
 
-        const res = await fetch("https://sze-szerver.cyclic.app/api/ai-all?user_id=" + user?._id, {
+        const res = await fetch("https://troubled-underwear-frog.cyclic.appapi/ai-all?user_id=" + user?._id, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -82,7 +82,7 @@ export default function Page() {
         const tmpMessage = message;
         setIsloading(true);
         setMessage("");
-        const res = await fetch("https://sze-szerver.cyclic.app/api/ai", {
+        const res = await fetch("https://troubled-underwear-frog.cyclic.appapi/ai", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -95,7 +95,7 @@ export default function Page() {
     }
 
     async function create() {
-        const res = await fetch("https://sze-szerver.cyclic.app/api/ai-new", {
+        const res = await fetch("https://troubled-underwear-frog.cyclic.appapi/ai-new", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
