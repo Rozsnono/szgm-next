@@ -32,6 +32,8 @@ export default function Navbar({
     const [show, setShow] = useState<boolean>(false);
     const [menuShow, setMenuShow] = useState<boolean>(false);
 
+    const [showNotLogin, setShowNotLogin] = useState<boolean>(false);
+
     async function getData(): Promise<any> {
 
         let data = { ip: "1.1.1.1" };
@@ -41,6 +43,9 @@ export default function Navbar({
         } catch (error) {
             data = { ip: "0.0.0.0" };
         }
+
+        setTimeout(() => { setShowNotLogin(true) }, 2000);
+
 
         const tmpUser = JSON.parse(localStorage.getItem("6429FC567AB4618A") as string) as any;
         if (!tmpUser) {
@@ -126,6 +131,8 @@ export default function Navbar({
                             <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
                         </>
                     }
+
+                    <div onClick={() => { navigateTo("/szgh-vizsga"); setMenu(false) }} className={`p-3 col-span-2 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-server"></i> Felkészülés</div>
 
 
                     <Tooltip target=".menu-items">
@@ -242,6 +249,28 @@ export default function Navbar({
                     } */}
                 </div>
             </Sidebar>
+
+            {
+                (data.isLoading && user !== null) &&
+                <main className="fixed top-0 p-2 flex flex-col items-center  w-screen h-screen bg-[#00000040]" style={{ zIndex: 1001 }}>
+                    <div className="mx-auto flex flex-col bg-white border-2 border-red-800 border-red-800 gap-6 p-6 rounded-lg h-fit" >
+                        {/* <i className="pi pi-spin pi-spinner" style={{ fontSize: "3rem" }}></i> */}
+                        <div className="loader"></div>
+                    </div>
+
+                    {
+                        showNotLogin &&
+                        <div className="mx-auto flex item-center justify-center mt-16">
+                            <button onClick={() => { data.remove(); setUser(null) }} className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-bold text-red-700 rounded-lg group bg-gradient-to-br from-red-900 to-rose-500 group-hover:from-red-600 group-hover:to-rose-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-rose-300 dark:focus:ring-rose-800">
+                                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+                                    Belépés nélkül
+                                </span>
+                            </button>
+                        </div>
+                    }
+                </main>
+            }
+
             {children}
         </main>
     );
