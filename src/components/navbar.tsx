@@ -203,7 +203,9 @@ export default function Navbar({
                                                 <div onClick={() => { navigateTo("/mi") }} data-pr-tooltip={"MI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-android"></i></div>
                                                 <div onClick={() => { navigateTo("/physics-info") }} data-pr-tooltip={"FIZIKA INFO"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
                                             </> :
-                                            <></>
+                                            <>
+                                                <div onClick={() => { navigateTo("/physics-answers") }} data-pr-tooltip={"FIZIKA INFO"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
+                                            </>
                                     }
                                 </div>
                             </main>
