@@ -132,7 +132,6 @@ export default function Navbar({
                         </>
                     }
 
-                    <div onClick={() => { navigateTo("/szgh-vizsga"); setMenu(false) }} className={`p-3 col-span-2 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-server"></i> Felkészülés</div>
 
 
                     <Tooltip target=".menu-items">

@@ -110,7 +110,7 @@ export default function Home() {
     };
 
     const handleKeyDown = (event: any) => {
-        if (event.key === ' ' || event.key == "Enter") {
+        if (event.key == "Enter") {
             event.preventDefault();
             let tmp;
             if( value == null){
@@ -123,6 +123,8 @@ export default function Home() {
 
             setValue(tmp);
             event.target.value = '';
+
+            setJson(search(tmp));
         }
     };
 
