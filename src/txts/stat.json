@@ -1,0 +1,109 @@
+[
+    {
+        "label": "Bázisviszonyszám",
+        "text": [
+            "B = Eᵢ / Eₒ",
+            "Bázisviszonyszám = A viszgált elem / Az első elem"
+        ]
+    },
+    {
+        "label": "Láncviszonyszám",
+        "text": [
+            "L = Eᵢ / Eᵢ₋₁",
+            "Láncviszonyszám = A viszgált elem / A korábbi elem"
+        ]
+    },
+    {
+        "label": "Indexszám",
+        "text": [
+            "I = (Eᵢ / E₀) * 100",
+            "Indexszám = (A viszgált elem / Az első elem) * 100"
+        ]
+    },
+    {
+        "label":"Átlag",
+        "text": [
+            "Á = (E₁ + E₂ + ... + Eₙ) / n",
+            "Átlag = (Az első elem + A második elem + ... + Az utolsó elem) / elemek száma"
+        ]
+    },
+    {
+        "label":"Súlyozott átlag",
+        "text": [
+            "Á = (E₁ * W₁ + E₂ * W₂ + ... + Eₙ * Wₙ) / (W₁ + W₂ + ... + Wₙ)",
+            "Súlyozott átlag = (Az első elem * Az első súly + A második elem * A második súly + ... + Az utolsó elem * Az utolsó súly) / (Az első súly + A második súly + ... + Az utolsó súly)",
+            "W = gyakoriság , E = elem"
+        ]
+    },
+    {
+        "label":"Medián",
+        "text": [
+            "Két részte bontja a sokaságot"
+        ]
+    },
+    {
+        "label":"Tercilis",
+        "text": [
+            "Három részre bontja a sokaságot"
+        ]
+    },
+    {
+        "label":"Kvartilis",
+        "text": [
+            "Négy részre bontja a sokaságot"
+        ]
+    },
+    {
+        "label":"Decilis",
+        "text": [
+            "Tíz részre bontja a sokaságot"
+        ]
+    },
+    {
+        "label":"Módusz",
+        "text": [
+            "A leggyakoribb elem"
+        ]
+    },
+    {
+        "label":"Szórás",
+        "text": [
+            "Szórás = √(Σ(Eᵢ - Á)² / n)",
+            "Szórás = √(Σ(A viszgált elem - Átlag)² / elemek száma)",
+            "E = elem, Á = átlag, Σ = szumma"
+
+        ]
+    },
+    {
+        "label":"Súlyozott szórás",
+        "text": [
+            "Szórás = √(Σ(Wᵢ * (Eᵢ - Á)²) / (ΣW))",
+            "Szórás = √(Σ(A súly * (A viszgált elem - Átlag)²) / (Σsúly))",
+            "W = gyakoriság , E = elem, Á = átlag, Σ = szumma"
+        ]
+    },
+    {
+        "label": "A mutatószám",
+        "text": [
+            "A = (Á - Mo) / Sz",
+            "Mutatószám = (Átlag - Módusz) / Szórás"
+        ]
+    },
+    {
+        "label": "P mutatószám",
+        "text": [
+            "P = 3(Á - Me) / Sz",
+            "P mutatószám = 3(Átlag - Medián) / Szórás"
+        ]
+    
+    },
+    {
+        "label": "Csuprov-féle asszociációs mutató",
+        "text": [
+            "Cᵢⱼ = (Eᵢⱼ - (ΣEᵢ * ΣEⱼ) / ΣE) / √((ΣEᵢ * ΣEⱼ) / ΣE)",
+            "Csuprov-féle asszociációs mutató = (Az i. és j. elem - (Az i. elem összege * Az j. elem összege) / Az összes elem összege) / √((Az i. elem összege * Az j. elem összege) / Az összes elem összege)",
+            "E = elem, Σ = szumma"
+        ]
+    }
+
+]
