@@ -104,6 +104,35 @@
             "Csuprov-féle asszociációs mutató = (Az i. és j. elem - (Az i. elem összege * Az j. elem összege) / Az összes elem összege) / √((Az i. elem összege * Az j. elem összege) / Az összes elem összege)",
             "E = elem, Σ = szumma"
         ]
+    },
+    {
+        "label":"Előjelkorrleáció",
+        "text":[
+            "r = p - q / p + q",
+            "Előjelkorrleáció = Megegyező elöjelek száma - Különböző előjelek száma / Megegyező előjelek száma + Különböző előjelek száma",
+            "p = Megegyező előjelek száma, q = Különböző előjelek száma"
+        ]
+    },
+    {
+        "label": "Rangkorreláció",
+        "text":[
+            "R = 6 * Σd² / n(n² - 1)",
+            "Rangkorreláció = 6 * Σ(d)² / elemek száma(elemek száma² - 1)",
+            "d = Különbség"
+        ]
+    },
+    {
+        "label":"Terület index",
+        "text": [
+            "I = Eᵢⱼ / Eᵢⱼ₊₁",
+            "Terület index = Az i. és j. elem / Az i. és j. elem utáni elem (alatta)"
+        ]
+    },
+    {
+        "label":"Fischer féle sulyozás",
+        "text": [
+            "I = √(I₁ * I₂)",
+            "Fischer féle sulyozás = √(Az első index * A második index)"
+        ]
     }
-
 ]
