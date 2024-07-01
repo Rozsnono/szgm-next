@@ -189,6 +189,8 @@ export default function Home() {
 
     function getCountInPlanner(type: any) {
         let tmp = 0;
+        if(!inPlanner) return <></>;
+
         Object.values(inPlanner).forEach((item: any) => {
             item.forEach((i: any) => {
                 if (Object.values(type.data).find((e: any) =>{ return e.name == i.name })) {
@@ -201,7 +203,7 @@ export default function Home() {
     }
 
     function getColorCode(include: any) {
-        if (Object.values(inPlanner).find((i: any) => { return i.find((k: any)=>{ return k.name === (subjects.find((j: any)=>{ return j.code == include })).name }) })) return "bg-indigo-600 text-black";
+        if ( inPlanner && Object.values(inPlanner).find((i: any) => { return i.find((k: any)=>{ return k.name === (subjects.find((j: any)=>{ return j.code == include })).name }) })) return "bg-indigo-600 text-black";
         if (nexts.includes(include)) return "bg-yellow-200 text-black";
         if (prevs.includes(include)) return "bg-red-200 text-black";
         if (can.includes(include)) return "bg-blue-200 text-black";

@@ -121,6 +121,8 @@ export default function Home() {
         })
 
         let tmpD = 0;
+        if(planedSubjects == undefined) return <>{tmp} / {tmpD}</>;
+
 
         Object.values(planedSubjects).forEach((item: any) => {
             item.forEach((i: any) => {
@@ -194,6 +196,7 @@ export default function Home() {
 
     function getCountInPlanner(type: any) {
         let tmp = 0;
+        if (!planedSubjects) return tmp;
         Object.values(planedSubjects).forEach((item: any) => {
             item.forEach((i: any) => {
                 if (Object.values(type.data).find((e: any) => { return e.name == i.name })) {
