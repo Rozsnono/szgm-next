@@ -112,13 +112,13 @@ export default function Navbar({
                     <hr className='col-span-2' />
 
                     <div onClick={() => { navigateTo("/average"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Átlag</div>
-                    <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-bookmark"></i> Tárgyak</div>
+                    <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-book"></i> Tárgyak</div>
 
                     {
                         checkUser &&
                         <>
                             <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
-                            <div onClick={() => { navigateTo("/tanulai"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-user"></i> TanulAI</div>
+                            <div onClick={() => { navigateTo("/subjects-planner"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-calendar"></i> Órarendtervező</div>
                         </>
                     }
 

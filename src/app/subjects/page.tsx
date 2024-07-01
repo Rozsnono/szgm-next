@@ -46,6 +46,9 @@ export default function Home() {
         if (user && subjects) {
             setMaybe(user.planedSubjects);
         }
+        if(user && subjects && user.savedPlannedSubjects) {
+            setInPlanner(user.savedPlannedSubjects[0]);
+        }
         setLoading(false);
         return data
     }
@@ -158,6 +161,7 @@ export default function Home() {
     const [can, setCan] = useState<any[]>([]);
     const [prevs, setPrevs] = useState<any[]>([]);
     const [done, setDone] = useState<any[]>([]);
+    const [inPlanner, setInPlanner] = useState<any[]>([]);
     const [tematik, setTematik] = useState<string>();
 
     const doneRef = useRef<any[]>([]);
@@ -183,7 +187,21 @@ export default function Home() {
         return tmp;
     }
 
+    function getCountInPlanner(type: any) {
+        let tmp = 0;
+        Object.values(inPlanner).forEach((item: any) => {
+            item.forEach((i: any) => {
+                if (Object.values(type.data).find((e: any) =>{ return e.name == i.name })) {
+                    tmp += parseInt(i.credit);
+                }
+            });
+        });
+
+        return <><i className="pi pi-calendar"></i>{tmp}</>;
+    }
+
     function getColorCode(include: any) {
+        if (Object.values(inPlanner).find((i: any) => { return i.find((k: any)=>{ return k.name === (subjects.find((j: any)=>{ return j.code == include })).name }) })) return "bg-indigo-600 text-black";
         if (nexts.includes(include)) return "bg-yellow-200 text-black";
         if (prevs.includes(include)) return "bg-red-200 text-black";
         if (can.includes(include)) return "bg-blue-200 text-black";
@@ -292,16 +310,17 @@ export default function Home() {
 
                     <div className="flex lg:flex-row flex-col w-full gap-5 text-center justify-center">
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-green-700">Teljesített</div>
-                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-gray-400 bg-gray-700">Kijelölt</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-gray-400">Kijelölt</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-yellow-200 text-black">Ráépülés</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-red-200 text-black">Előkövetelmény</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-blue-200 text-black">Felvehető</div>
                         <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-blue-400 text-black">Tervezett</div>
+                        <div className="w-full border text-center justify-center flex rounded-md border-gray-600 p-1 bg-indigo-700 text-black">Tervezőben</div>
                     </div>
 
 
                     <div className="text-center text-lg">{data.data.courses[0].name}</div>
-                    <div className={"text-center text-sm" + (data.data.courses[0].required_credits > getCount(data.data.courses[0]) ? "" : " text-green-600")}>{data.data.courses[0].required_credits} / {getCount(data.data.courses[0])} ({getCountByMaybe(data.data.courses[0])})</div>
+                    <div className={"text-center text-sm" + (data.data.courses[0].required_credits > getCount(data.data.courses[0]) ? "" : " text-green-600")}>{data.data.courses[0].required_credits} / {getCount(data.data.courses[0])} ({getCountByMaybe(data.data.courses[0])}) ({getCountInPlanner(data.data.courses[0])})</div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-center">
 
                         {
@@ -332,7 +351,7 @@ export default function Home() {
                                 return (
                                     <div key={c_i} className="flex flex-col gap-2">
                                         <div className="text-center">{courses.name}</div>
-                                        <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0") + (getCount(courses) < courses.required_credits ? "" : " text-green-600 font-bold")}>{courses.required_credits ? courses.required_credits : 0} / {getCount(courses)} ({getCountByMaybe(courses)})</div>
+                                        <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0") + (getCount(courses) < courses.required_credits ? "" : " text-green-600 font-bold")}>{courses.required_credits ? courses.required_credits : 0} / {getCount(courses)} ({getCountByMaybe(courses)}) ({getCountInPlanner(courses)})</div>
 
                                         <hr />
 
