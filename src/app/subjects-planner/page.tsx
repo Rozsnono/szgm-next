@@ -14,31 +14,24 @@ export default function Home() {
 
     async function getData() {
         setLoading(true);
-        let url = "2021-09-01/IVIN_BMI/IVIN_BMI/IVIN_BMI_4";
-        if (selectedSub && selectedDir && selectedY && selectedYear) {
-            url = selectedYear + "/" + selectedSub.code + "/" + selectedDir.code + "/" + selectedY.code + "/";
-        } else if (user && user.savedTematiks) {
 
-            setSelectedYear(user.savedTematiks.year);
-            setSelectedSub(user.savedTematiks.sub);
-            setSelectedDir(user.savedTematiks.dir);
-            setSelectedY(user.savedTematiks.y);
-            url = user.savedTematiks.year + "/" + user.savedTematiks.sub.code + "/" + user.savedTematiks.dir.code + "/" + user.savedTematiks.y.code;
-        }
-        const res = await fetch("https://szgm-next-server.onrender.com/api/subjects?url=" + url);
+        const res = await fetch("https://szgm-next-server.onrender.com/api/subjects", { method: "POST", body: JSON.stringify({ "id": "IVIN_BMI_4" }) });
         const data: any = await res.json();
-        let semesters = Object.values(data.courses[0].data).map((item: any) => item.semester)
+
+        let semesters = data.mandatory.data.map((item: any) => item.semester);
         semesters = semesters.filter((item: any, index: number) => { return semesters.indexOf(item) == index });
         setSemesters(semesters);
-
-        let subjectsName = data.courses.map((item: any) => Object.keys(item.data));
+        setMandatory(data.mandatory);
+        let subjectsName = Object.values(data).map((item: any) => item.data.map((items: any) => { return items }));
         subjectsName = subjectsName.flat();
+        setSubjects(subjectsName);
 
-        let subjects = data.courses.map((item: any) => Object.values(item.data));
-        subjects = subjects.flat();
-        subjects = subjects.map((item: any, index: number) => { return { ...item, code: subjectsName[index] } })
-        setSubjects(subjects);
-
+        if (user && subjects) {
+            setDone(user.savedSubjects);
+        }
+        if (user && subjects) {
+            setPlan(user.planedSubjects);
+        }
         if (user && subjects && user.savedPlannedSubjects) {
             setPlanedSubjects(user.savedPlannedSubjects[0]);
         }
@@ -46,30 +39,8 @@ export default function Home() {
         return data
     }
 
-    async function getSub() {
-        const res = await fetch("https://szgm-next-server.onrender.com/api/subjectData");
-        const data: any = await res.json();
-        const tmpSub = Object.values(data.targyadatok).map((item: any, index: number) => {
-            return {
-                code: Object.keys(data.targyadatok)[index], name: item.name,
-                szakirany: Object.values(item.szakirany).map((szaki: any, index: number) => {
-                    return {
-                        code: Object.keys(item.szakirany)[index], name: szaki.name,
-                        tanterv: Object.values(szaki.tanterv).map((tan: any, index: number) => { return { code: Object.keys(szaki.tanterv)[index], name: tan.name } })
-                    }
-                })
-            }
-        });
-        const tmpData = {
-            evek: data.evek,
-            targyadatok: tmpSub
-        }
-        return tmpData
-    }
-
 
     const data = useQuery<any>('subss', getData);
-    const subjectsData = useQuery<any>('sub', getSub, { refetchOnWindowFocus: false });
 
     const [subjects, setSubjects] = useState<any[]>([]);
 
@@ -79,15 +50,15 @@ export default function Home() {
     }
 
     function onHover(item: any) {
-        setNexts(item.nexts);
-        setPrevs(item.prevs);
+        setNext(subjects.filter((items: any) => { return items.pre.includes(item.code) }).map((itemss: any) => itemss.code));
+        setPre(subjects.filter((items: any) => { return item.pre.includes(items.code) }).map((itemss: any) => itemss.code));
     }
     function onTematikaHover(item: any) {
         setTematik(item);
     }
     function onHoverOut() {
-        setNexts([]);
-        setPrevs([]);
+        setNext([]);
+        setPre([]);
     }
     function onClick(item: any, sem: any) {
 
@@ -99,18 +70,26 @@ export default function Home() {
     }
 
     const [semesters, setSemesters] = useState<number[]>([]);
+    const [mandatory, setMandatory] = useState<any>([]);
     const [nexts, setNexts] = useState<any[]>([]);
     const [possibleValues, setPossibleValues] = useState<any[]>([]);
     const [can, setCan] = useState<any[]>([]);
     const [prevs, setPrevs] = useState<any[]>([]);
-    const [done, setDone] = useState<any[]>([]);
     const [tematik, setTematik] = useState<string>();
 
+
+    
+    const [done, setDone] = useState<any[]>([]);
+    const [plan, setPlan] = useState<any[]>([]);
+    const [next, setNext] = useState<any[]>([]);
+    const [pre, setPre] = useState<any[]>([]);
+
+    
     const doneRef = useRef<any[]>([]);
 
 
     function getColorCode(include: any) {
-        if (possibleValues.find((i: any) => i.name === include)) return "border-2 border-blue-400 bg-blue-300 ";
+        if (possibleValues.find((i: any) => i.code === include)) return "border-2 border-blue-400 bg-blue-300 ";
         return "hover:bg-gray-400 ";
     }
 
@@ -121,7 +100,7 @@ export default function Home() {
         })
 
         let tmpD = 0;
-        if(planedSubjects == undefined) return <>{tmp} / {tmpD}</>;
+        if (planedSubjects == undefined) return <>{tmp} / {tmpD}</>;
 
 
         Object.values(planedSubjects).forEach((item: any) => {
@@ -138,7 +117,6 @@ export default function Home() {
         const body =
         {
             ...user,
-            savedTematiks: { year: selectedYear, sub: selectedSub, dir: selectedDir, y: selectedY },
             savedPlannedSubjects: planedSubjects,
         };
         fetch("https://szgm-next-server.onrender.com/api/user/" + body._id, {
@@ -152,11 +130,6 @@ export default function Home() {
         })
     }
 
-
-    const [selectedYear, setSelectedYear] = useState<any>();
-    const [selectedSub, setSelectedSub] = useState<any>();
-    const [selectedDir, setSelectedDir] = useState<any>();
-    const [selectedY, setSelectedY] = useState<any>();
 
     const [planedSubjects, setPlanedSubjects] = useState<any>();
     function addToSemester(sem: number) {
@@ -211,40 +184,12 @@ export default function Home() {
     return (
         <main className="lg:pt-24 pt-32 lg:p-8 p-4 text-sm text-gray-900 select-none">
             {
-                !data.isLoading && data.data ?
+                !data.isLoading ?
                     <div className="flex w-full flex-col gap-3">
                         <div className="flex justify-between lg:flex-row flex-col justify-center items-center gap-6">
                             {
                                 user &&
                                 <div onClick={!save ? saving : () => { }} className={"border w-full text-center border-green-800 bg-green-800 text-white hover:bg-green-900 p-2 rounded-lg w-fit cursor-pointer duration-200"}> {save ? <i className="pi pi-spinner pi-spin"></i> : <></>} Mentés</div>
-                            }
-
-                            {
-                                !subjectsData.isLoading && subjectsData.data &&
-                                <>
-                                    <span className="p-float-label">
-                                        <Dropdown value={selectedYear} onChange={(e) => setSelectedYear(e.value)} options={subjectsData.data.evek} optionLabel="name" className="w-64" />
-                                        <label htmlFor="username">Beiratkozás éve</label>
-                                    </span>
-                                    <span className="p-float-label">
-                                        <Dropdown value={selectedSub} onChange={(e) => setSelectedSub(e.value)} options={subjectsData.data.targyadatok} optionLabel="name" filter className="w-64 " />
-                                        <label htmlFor="username">Szak</label>
-
-                                    </span>
-                                    <span className="p-float-label">
-                                        <Dropdown value={selectedDir} onChange={(e) => setSelectedDir(e.value)} options={selectedSub ? selectedSub.szakirany : []} optionLabel="name" className="w-64" />
-                                        <label htmlFor="username">Szakirány</label>
-                                    </span>
-                                    <span className="p-float-label">
-                                        <Dropdown value={selectedY} onChange={(e) => setSelectedY(e.value)} options={selectedDir ? selectedDir.tanterv : []} optionLabel="name" className="w-64" />
-                                        <label htmlFor="username">Tanterv</label>
-                                    </span>
-
-                                    <div onClick={() => { data.refetch(); }} className={"border w-full text-center border-blue-800  text-white hover:bg-blue-900 bg-blue-800 p-2 rounded-lg w-fit cursor-pointer duration-200"}> {loading ? <i className="pi pi-spinner pi-spin"></i> : <></>} Keresés</div>
-
-
-                                </>
-
                             }
 
                             <div className={"text-lg text-center"}>{data.data.courses ? getAllCount() : 0}</div>
@@ -279,7 +224,7 @@ export default function Home() {
                                                 planedSubjects && planedSubjects[semIndex] &&
                                                 planedSubjects[semIndex].map((item: any, index: number) => {
                                                     return (
-                                                        <div key={index} onClick={() => { removeFromSemester(semIndex, index) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-600 p-1 cursor-pointer duration-100 "}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                        <div key={index} onClick={() => { removeFromSemester(semIndex, index) }} className={"border justify-between flex rounded-md border-gray-600 p-1 cursor-pointer duration-100 "}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                     )
                                                 })
                                             }
@@ -291,11 +236,9 @@ export default function Home() {
                         <hr />
 
 
-                        <div className="text-center text-lg">{data.data.courses[0].name}</div>
-                    <div className={"text-center text-sm"}>{data.data.courses[0].required_credits} / {getCountInPlanner(data.data.courses[0])}</div>
-                        
-
-                        <div className="flex lg:flex-row flex-col gap-5 justify-center">
+                        <div className="text-center text-lg">Kötelező törzsanyag</div>
+                        {/* <div className={"text-center text-sm" + (mandatory.total > getCount('mandatory') ? "" : " text-green-600")}>{mandatory.total} / {getCount('mandatory')} ({getCountByMaybe('mandatory')}) ({getCountInPlanner('mandatory')})</div> */}
+                        <div className="flex lg:flex-row flex-col gap-5 justify-center select-none">
 
                             {
                                 semesters.map((sem: number, semIndex: number) => {
@@ -306,9 +249,9 @@ export default function Home() {
                                             <hr />
 
                                             {
-                                                ArrayCorrection(Object.values(data.data.courses[0].data).filter((item: any) => { return item.semester == sem }), sem).map((item: any, index: number) => {
+                                                ArrayCorrection(mandatory.data,1).filter((item: any) => { return item.semester == sem }).map((item: any, index: number) => {
                                                     return (
-                                                        <div key={index} onClick={() => { onClick(item, sem) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(data.data.courses[0].data, item)) }} onMouseLeave={onHoverOut} className={"border justify-between flex rounded-md border-gray-600 p-1 cursor-pointer duration-100 " + getColorCode(item.name)}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                        <div key={index} onClick={() => { onClick(item, item.semester) }} className={"border justify-between flex rounded-md border-gray-600 p-1 cursor-pointer duration-100 " + getColorCode(item.code)}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                     )
                                                 })
                                             }
@@ -321,18 +264,19 @@ export default function Home() {
                         <div className="flex lg:flex-row flex-col gap-5 justify-center pt-5">
 
                             {
-                                data.data.courses.slice(1).map((courses: any, c_i: number) => {
+                                ArrayCorrection(Object.values(data.data).slice(1),1).map((courses: any, c_i: number) => {
                                     return (
                                         <div key={c_i} className="flex flex-col gap-2">
-                                            <div className="text-center">{courses.name}</div>
-                                            <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0")}>{courses.required_credits ? courses.required_credits : 0} / {getCountInPlanner(courses)}</div>
+                                            {/* <div className="text-center">{courses.name}</div> */}
+                                            {/* <div className={"text-sm text-center " + (!courses.required_credits && " opacity-0") + (getCount(courses) < courses.required_credits ? "" : " text-green-600 font-bold")}>{courses.required_credits ? courses.required_credits : 0} / {getCount(courses)} ({getCountByMaybe(courses)}) ({getCountInPlanner(courses)})</div> */}
+                                            {/* <div className={"text-center text-sm" + (courses.total > getCount(Object.keys(data.data)[c_i + 1]) ? "" : " text-green-600")}>{courses.total} / {getCount(Object.keys(data.data)[c_i + 1])} ({getCountByMaybe(Object.keys(data.data)[c_i + 1])}) ({getCountInPlanner(Object.keys(data.data)[c_i + 1])})</div> */}
 
                                             <hr />
 
                                             {
-                                                ArrayCorrection(Object.values(courses.data), 0).map((item: any, index: number) => {
+                                                Object.values(courses.data).map((item: any, index: number) => {
                                                     return (
-                                                        <div key={index} onClick={() => { onClick(item, courses.name) }} onMouseEnter={() => { onHover(item); onTematikaHover(getKeyByValue(courses.data, item)) }} onMouseLeave={onHoverOut} className={"border flex justify-between rounded-md border-gray-600 p-1 cursor-pointer duration-100 " + getColorCode(item.name)}><div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
+                                                        <div key={index} onClick={() => {  onClick(item, item.semester) }} className={"border justify-between flex rounded-md border-gray-600 p-1 cursor-pointer duration-100 " + getColorCode(item.code)}> <div>{item.name}</div> <div className="ms-1">{item.credit}</div></div>
                                                     )
                                                 })
                                             }
@@ -341,63 +285,6 @@ export default function Home() {
                                 })
                             }
 
-
-
-                            {/* <div className="flex flex-col gap-2">
-                            <div className="text-center"></div>
-
-                            <hr />
-
-                            {
-                                Object.values(data.data.courses[2].data).map((item: any, index: number) => {
-                                    return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[2].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[2].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
-                                    )
-                                })
-                            }
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <div className="text-center"></div>
-
-                            <hr />
-
-                            {
-                                Object.values(data.data.courses[3].data).map((item: any, index: number) => {
-                                    return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[3].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[3].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
-                                    )
-                                })
-                            }
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <div className="text-center"></div>
-
-                            <hr />
-
-                            {
-                                Object.values(data.data.courses[4].data).map((item: any, index: number) => {
-                                    return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[4].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[4].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
-                                    )
-                                })
-                            }
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <div className="text-center"></div>
-
-                            <hr />
-
-                            {
-                                Object.values(data.data.courses[5].data).map((item: any, index: number) => {
-                                    return (
-                                        <div key={index} onClick={() => { onClick(getKeyByValue(data.data.courses[5].data, item), item.nexts) }} onMouseEnter={() => { onHover(item) }} onMouseLeave={onHoverOut} className={"border rounded-md border-gray-600 p-1 cursor-pointer duration-100" + (doneRef.current.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-green-600" : " hover:bg-green-200 ") + (can.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-blue-200" : prevs.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-blue-200" : nexts.includes(getKeyByValue(data.data.courses[5].data, item)) ? " bg-yellow-200" : "")}>{item.name}</div>
-                                    )
-                                })
-                            }
-                        </div> */}
                         </div>
 
                     </div>
