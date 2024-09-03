@@ -71,7 +71,8 @@
             "osztalékelsőbbségi részvény",
             "likvidációs hányadhoz fűződő elsőbbséget biztosító részvény",
             "szavazatelsőbbségi részvény",
-            "vezető tisztségviselő vagy felügyelő bizottsági tag kijelölésére vonatkozó elsőbbséget biztosító részvény"
+            "vezető tisztségviselő vagy felügyelő bizottsági tag kijelölésére vonatkozó elsőbbséget biztosító részvény",
+            "elővásárlási jogot biztosító elsőbbségi részvény"
         ]
     },
     {
@@ -134,7 +135,10 @@
             "Az előtársaság működése azonban az alábbiak szerint korlátozott:",
             "- Tagjainak személyében nem állhat be változás",
             "- A társasági szerződést nem lehet módosítani (kivéve, ha erre a cégbíróság hiánypótlási felhívása miatt kerül sor),",
-            "- Nem kezdeményezhető tagkizárási per,"
+            "- Nem kezdeményezhető tagkizárási per,",
+            "- Hatósági engedélyhez kötött tevékenységet nem végezhet,",
+            "- Jogutód nélküli megszűnés, társasági formaváltás, egyesülés, szétválás, közhasznú társasággá alakulás nem határozható el,",
+            "- Az előtársaság nem alapíthat más társaságot, illetve nem vehet részt benne tagként"
         ]
     },
     {
@@ -143,7 +147,9 @@
             "- A gazdasági társaság cégneve és székhelye",
             "- A társaság tagjai",
             "- A társaság főtevékenysége",
-            "- A vagyoni hozzájárulás"
+            "- A vagyoni hozzájárulás",
+            "- A vezető tisztségviselő(k), a felügyelő bizottság és a könyvvizsgáló",
+            "- A társaság működésének időtartama"
         ]
     },
     {
@@ -158,7 +164,9 @@
             "A cégnév minimális kelléke a vezérszó és a cégforma megjelölése.",
             "A vezérszó a cégnévben az első helyen áll.",
             "A cégkizárólagosság elvének (a cégnévnek az ország területén bejegyzett más cég elnevezésétől a cégforma különbözőségén túlmenően is egyértelműen különböznie kell, és nem kelthet olyan látszatot, ami különösen a cég tevékenységi körét és a választott cégformát illetően megtévesztő)",
-            "A cégvalódiság elvének(a cégnévnek a cég alapvető tevékenységét és tényleges formáját kell tartalmaznia és nem kelthet olyan látszatot, amely ezekkel ellentétes)"
+            "A cégvalódiság elvének(a cégnévnek a cég alapvető tevékenységét és tényleges formáját kell tartalmaznia és nem kelthet olyan látszatot, amely ezekkel ellentétes)",
+            "A cégszabatosság elvének (A cégnévben a vezérszón kívül csak magyar szavak szerepelhetnek, a magyar helyesírás szabályainak megfelelıen. A cégnévben rövidítés csak a vezérszó esetén, illetve a cégforma meghatározásánál lehetséges)",
+            "A Kis Halász Szolgáltató Betéti Társaság (teljes cégnév) választhat rövidített cégnevet, amely ez esetben Kis Halász Bt. lehet. (Kis Halász a veszérszó), Szolgáltató a tevékenység, Bt meg a társaság formája)"
         ]
     },
     {
@@ -252,7 +260,8 @@
             "A kisebbségi jogok gyakorolhatósága szempontjából kisebbségnek minősül az a tagi kör, amely a szavazatok legalább öt százalékával rendelkezik.",
             "A kisebbség mindenekelőtt az ok és a cél megjelölésével bármikor kérheti a legfőbb szerv összehívását.",
             "Amennyiben az ügyvezetés a legfőbb szerv összehívására vonatkozó kérelemnek harminc napon belül nem tesz eleget, a kisebbség a cégbírósághoz fordulhat.",
-            "Amennyiben ugyanis a legfőbb szerv elvetette azt az indítványt (vagy a bejelentett indítványról nem szavazott), hogy az utolsó számviteli törvény szerinti beszámolót vagy az utolsó két év ügyvezetésében előfordult valamely eseményt könyvvizsgáló vizsgálja meg, a kisebbség kérelmére a könyvvizsgálatot a cégbíróság elrendeli, egyúttal kirendeli a könyvvizsgálót is."
+            "Amennyiben ugyanis a legfőbb szerv elvetette azt az indítványt (vagy a bejelentett indítványról nem szavazott), hogy az utolsó számviteli törvény szerinti beszámolót vagy az utolsó két év ügyvezetésében előfordult valamely eseményt könyvvizsgáló vizsgálja meg, a kisebbség kérelmére a könyvvizsgálatot a cégbíróság elrendeli, egyúttal kirendeli a könyvvizsgálót is.",
+            "Ha a gazdasági társaság legfőbb szerve elvetette azt az indítványt, hogy a társaságnak a tagok, a vezető tisztségviselők vagy a felügyelő bizottsági tagok, illetve a könyvvizsgáló ellen valamely követelést a társaság érvényesítsen, a kisebbség a legfőbb szerv ülésének napjától számított harminc napos jogvesztő határidőn belül a gazdasági társaság nevében keresettel maguk érvényesíthetik"
         ]
     },
     {
