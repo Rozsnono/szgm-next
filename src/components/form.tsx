@@ -59,12 +59,12 @@ export default function Form({
 
     }
 
-    const urls = ["/average", "/subjects", "/", "/szgh-vizsga"]
+    const urls = ["/subjects-planner", "/subjects"]
 
     return (
         <>
             {
-                checkUser === null && urls.filter((url) => { return path == url }).length === 0 ?
+                checkUser === null && urls.filter((url) => { return path == url }).length !== 0 ?
                     <>
 
                         <main className="fixed top-0 p-2 flex justify-center items-center w-screen h-screen bg-white overflow-hidden" style={{ zIndex: 1001 }}>
@@ -424,10 +424,7 @@ export default function Form({
                         </main>
 
                     </> :
-                    checkUser === undefined ?
-                        <></>
-                        :
-                        children
+                    children
             }
         </>
 

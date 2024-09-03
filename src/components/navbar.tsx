@@ -112,25 +112,21 @@ export default function Navbar({
                     <hr className='col-span-2' />
 
                     <div onClick={() => { navigateTo("/average"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Átlag</div>
-                    <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-book"></i> Tárgyak</div>
+                    <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
 
                     {
                         checkUser &&
                         <>
-                            <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
+                            <div onClick={() => { navigateTo("/subjects"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-book"></i> Tárgyak</div>
                             <div onClick={() => { navigateTo("/subjects-planner"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-calendar"></i> Órarendtervező</div>
                         </>
                     }
 
                     <hr className='col-span-2' />
 
-                    {
-                        checkUser && checkUser.role != 4 &&
-                        <>
-                            <div onClick={() => { setType("test") }} className={`p-3 select-none px-4 rounded-full ${type == 'study' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-question"></i> Tesztek</div>
-                            <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
-                        </>
-                    }
+                    <div onClick={() => { setType("test") }} className={`p-3 select-none px-4 rounded-full ${type == 'study' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-question"></i> Tesztek</div>
+                    <div onClick={() => { setType("study") }} className={`p-3 select-none px-4 rounded-full ${type == 'test' ? 'border-b-2 border-gray-500 text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer' : 'border-b-2 border-blue-800 border-red-800  bg-red-800 text-white'} duration-200`}><i className="pi pi-file"></i> Anyagok</div>
+
 
 
 
@@ -138,7 +134,7 @@ export default function Navbar({
                     </Tooltip>
 
                     {
-                        checkUser &&
+                        true &&
                         <div className={'col-span-2 flex flex-col gap-2 mt-4 ' + (type + "-animation")}>
                             <main className="flex flex-col justify-center items-center col-span-2">
                                 <div className="">1. félév</div>
@@ -205,6 +201,20 @@ export default function Navbar({
                                             </> :
                                             <>
                                                 <div onClick={() => { navigateTo("/physics-answers") }} data-pr-tooltip={"FIZIKA INFO"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
+                                            </>
+                                    }
+                                </div>
+                            </main>
+
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">5. félév</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                            </> :
+                                            <>
+                                                <div onClick={() => { navigateTo("/itlaw") }} data-pr-tooltip={"Üzleti és IT jog"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-book"></i></div>
                                             </>
                                     }
                                 </div>
