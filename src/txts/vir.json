@@ -1,0 +1,1748 @@
+[
+    {
+        "question": "AD",
+        "answer": [
+            "Architectural Design"
+        ],
+        "options": [
+            "Architectural Design",
+            "Asset Deployment",
+            "Application Development",
+            "Analysis Design"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "AM",
+        "answer": [
+            "Asset Management"
+        ],
+        "options": [
+            "Asset Management",
+            "Application Maintenance",
+            "Activity Monitoring",
+            "Account Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "BCM",
+        "answer": [
+            "Business Continuity Management"
+        ],
+        "options": [
+            "Business Continuity Management",
+            "Budget Control Management",
+            "Business Communication Model",
+            "Backup and Content Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "BOM",
+        "answer": [
+            "Bill Of Materials"
+        ],
+        "options": [
+            "Bill Of Materials",
+            "Business Object Management",
+            "Budget Optimization Model",
+            "Batch Order Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "BPM",
+        "answer": [
+            "Business Process Management"
+        ],
+        "options": [
+            "Business Process Management",
+            "Budget Planning Method",
+            "Batch Processing Model",
+            "Business Policy Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "BPR",
+        "answer": [
+            "Business Process Reengineering"
+        ],
+        "options": [
+            "Business Process Reengineering",
+            "Business Policy Review",
+            "Budget Process Revision",
+            "Batch Process Reconfiguration"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "BW",
+        "answer": [
+            "Business Warehouse"
+        ],
+        "options": [
+            "Business Warehouse",
+            "Budget Worksheet",
+            "Backup Workspace",
+            "Business Workflow"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "CM",
+        "answer": [
+            "Contact Management"
+        ],
+        "options": [
+            "Contact Management",
+            "Content Maintenance",
+            "Customer Monitoring",
+            "Channel Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "CMS",
+        "answer": [
+            "Content Management System"
+        ],
+        "options": [
+            "Content Management System",
+            "Customer Management Solution",
+            "Channel Monitoring System",
+            "Contact Maintenance Suite"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "CRM",
+        "answer": [
+            "Customer Relationship Management"
+        ],
+        "options": [
+            "Customer Relationship Management",
+            "Contact Resource Management",
+            "Channel Revenue Model",
+            "Customer Resolution Method"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "DFD",
+        "answer": [
+            "Data-Flow Diagram"
+        ],
+        "options": [
+            "Data-Flow Diagram",
+            "Database Flow Design",
+            "Dynamic File Diagram",
+            "Data Function Description"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "DML",
+        "answer": [
+            "Data Manipulation Language"
+        ],
+        "options": [
+            "Data Manipulation Language",
+            "Dynamic Markup Language",
+            "Database Maintenance Language",
+            "Data Mining Language"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "DMS",
+        "answer": [
+            "Document Management System"
+        ],
+        "options": [
+            "Document Management System",
+            "Data Mining Suite",
+            "Database Maintenance Solution",
+            "Digital Monitoring System"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "EA",
+        "answer": [
+            "Enterprise Architect"
+        ],
+        "options": [
+            "Enterprise Architect",
+            "Enterprise Analysis",
+            "Engineering Application",
+            "Environment Architect"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "EAA",
+        "answer": [
+            "Enterprise Application Architect"
+        ],
+        "options": [
+            "Enterprise Application Architect",
+            "Enterprise Automation Application",
+            "Extended Application Architecture",
+            "Engineering Application Analyst"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ECM",
+        "answer": [
+            "Enterprise Content Management"
+        ],
+        "options": [
+            "Enterprise Content Management",
+            "Enterprise Configuration Module",
+            "Engineering Content Model",
+            "Enterprise Control Mechanism"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ERP",
+        "answer": [
+            "Enterprise Resource Planning"
+        ],
+        "options": [
+            "Enterprise Resource Planning",
+            "Engineering Resource Platform",
+            "Enterprise Risk Program",
+            "Enterprise Report Planning"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ERP II",
+        "answer": [
+            "Extended ERP"
+        ],
+        "options": [
+            "Extended ERP",
+            "Enterprise Resource Program II",
+            "Engineering Resource Platform II",
+            "Enhanced Resource Planning"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "FI",
+        "answer": [
+            "Financial Accounting"
+        ],
+        "options": [
+            "Financial Accounting",
+            "Finance Integration",
+            "Fiscal Information",
+            "Financial Institution"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "FI/CO",
+        "answer": [
+            "Finance and Controlling"
+        ],
+        "options": [
+            "Finance and Controlling",
+            "Financial Operations",
+            "Fiscal Control Office",
+            "Finance and Compliance"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "FR",
+        "answer": [
+            "Functional Requirement"
+        ],
+        "options": [
+            "Functional Requirement",
+            "Financial Reporting",
+            "Fiscal Review",
+            "File Retention"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "GR/IR",
+        "answer": [
+            "Goods Receipt, Invoice Receipt"
+        ],
+        "options": [
+            "Goods Receipt, Invoice Receipt",
+            "General Reporting/Information Retrieval",
+            "Global Resource/Inventory Report",
+            "Goods Review/Internal Receipt"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "HLD",
+        "answer": [
+            "High Level Design"
+        ],
+        "options": [
+            "High Level Design",
+            "Hardware Level Diagram",
+            "Human Layer Design",
+            "High Load Distribution"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "HR",
+        "answer": [
+            "Human Resources"
+        ],
+        "options": [
+            "Human Resources",
+            "High Risk",
+            "Hardware Repository",
+            "Human Relations"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "IaaS",
+        "answer": [
+            "Infrastructure-as-a-Service"
+        ],
+        "options": [
+            "Infrastructure-as-a-Service",
+            "Information-as-a-Service",
+            "Integration-as-a-Service",
+            "Interface-as-a-Service"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "IS",
+        "answer": [
+            "Industry Solutions"
+        ],
+        "options": [
+            "Industry Solutions",
+            "Information Systems",
+            "Inventory Solutions",
+            "Integration Services"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "JDBC",
+        "answer": [
+            "Java DataBase Connectivity"
+        ],
+        "options": [
+            "Java DataBase Connectivity",
+            "Java Data Bridge Connector",
+            "Joint DataBase Communication",
+            "Java Database Compiler"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "LDAP",
+        "answer": [
+            "Lightweight Directory Access Protocol"
+        ],
+        "options": [
+            "Lightweight Directory Access Protocol",
+            "Lightweight Data Access Protocol",
+            "Limited Data Application Protocol",
+            "Logical Directory Access Point"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ME",
+        "answer": [
+            "Manufacturing Execution"
+        ],
+        "options": [
+            "Manufacturing Execution",
+            "Material Engineering",
+            "Maintenance Equipment",
+            "Management Enterprise"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "MM",
+        "answer": [
+            "Materials Management"
+        ],
+        "options": [
+            "Materials Management",
+            "Manufacturing Maintenance",
+            "Market Monitoring",
+            "Model Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "MRP",
+        "answer": [
+            "Material Requirement Planning"
+        ],
+        "options": [
+            "Material Requirement Planning",
+            "Manufacturing Resource Plan",
+            "Maintenance Resource Planning",
+            "Market Resource Planning"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "MRP II",
+        "answer": [
+            "Manufacturing Resource Planning"
+        ],
+        "options": [
+            "Manufacturing Resource Planning",
+            "Material Resource Plan II",
+            "Maintenance and Repair Planning",
+            "Market Response Plan II"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "MTO",
+        "answer": [
+            "Make To Order"
+        ],
+        "options": [
+            "Make To Order",
+            "Manufacture To Order",
+            "Material Tracking Operation",
+            "Model To Operation"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "NFR",
+        "answer": [
+            "Non Functional Requirement"
+        ],
+        "options": [
+            "Non Functional Requirement",
+            "Network Functional Routing",
+            "New Feature Requirement",
+            "Non Fiscal Reporting"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ODBC",
+        "answer": [
+            "Open DataBase Connectivity"
+        ],
+        "options": [
+            "Open DataBase Connectivity",
+            "Object Data Bridge Connector",
+            "Operational Database Connectivity",
+            "Open Data Backup Channel"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "OLAP",
+        "answer": [
+            "OnLine Analytical Processing"
+        ],
+        "options": [
+            "OnLine Analytical Processing",
+            "Object Level Application Processing",
+            "OnLine Algorithmic Processing",
+            "Operational Link Analysis Program"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ROLAP",
+        "answer": [
+            "Relational OLAP"
+        ],
+        "options": [
+            "Relational OLAP",
+            "Regional OLAP",
+            "Resource Optimized OLAP",
+            "Reporting OLAP"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "MOLAP",
+        "answer": [
+            "Multidimensional OLAP"
+        ],
+        "options": [
+            "Multidimensional OLAP",
+            "Matrix OLAP",
+            "Model OLAP",
+            "Managed OLAP"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "HOLAP",
+        "answer": [
+            "Hybrid OLAP"
+        ],
+        "options": [
+            "Hybrid OLAP",
+            "Hierarchical OLAP",
+            "Host Optimized OLAP",
+            "Historical OLAP"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "OLTP",
+        "answer": [
+            "OnLine Transaction Processing"
+        ],
+        "options": [
+            "OnLine Transaction Processing",
+            "Operational Level Transaction Processing",
+            "Object Level Transfer Protocol",
+            "Online Link Transaction Protocol"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PaaS",
+        "answer": [
+            "Platform-as-a-Service"
+        ],
+        "options": [
+            "Platform-as-a-Service",
+            "Process-as-a-Service",
+            "Platform and Application Services",
+            "Protocol-as-a-Service"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PI",
+        "answer": [
+            "Process Integration"
+        ],
+        "options": [
+            "Process Integration",
+            "Project Implementation",
+            "Product Inventory",
+            "Performance Indicator"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PIM",
+        "answer": [
+            "Personal Information Management"
+        ],
+        "options": [
+            "Personal Information Management",
+            "Product Inventory Management",
+            "Process Integration Module",
+            "Project Information Monitoring"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PLM",
+        "answer": [
+            "Product Lifecycle Management"
+        ],
+        "options": [
+            "Product Lifecycle Management",
+            "Project Lifecycle Management",
+            "Process Line Management",
+            "Portfolio Lifecycle Monitoring"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PM",
+        "answer": [
+            "Plant Maintenance"
+        ],
+        "options": [
+            "Plant Maintenance",
+            "Project Management",
+            "Product Monitoring",
+            "Performance Maintenance"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PP",
+        "answer": [
+            "Production Planning"
+        ],
+        "options": [
+            "Production Planning",
+            "Product Packaging",
+            "Process Planning",
+            "Project Programming"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PS",
+        "answer": [
+            "Project System"
+        ],
+        "options": [
+            "Project System",
+            "Process System",
+            "Product Specification",
+            "Performance System"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "QM",
+        "answer": [
+            "Quality Management"
+        ],
+        "options": [
+            "Quality Management",
+            "Query Management",
+            "Queue Monitoring",
+            "Quality Maintenance"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "REST",
+        "answer": [
+            "REpresentational State Transfer"
+        ],
+        "options": [
+            "REpresentational State Transfer",
+            "Resource Extension State Transfer",
+            "Remote Execution Service Transfer",
+            "Reliable State Transfer"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "RFQ",
+        "answer": [
+            "Request For Quotation"
+        ],
+        "options": [
+            "Request For Quotation",
+            "Request For Queueing",
+            "Resource File Query",
+            "Remote Function Query"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "RMI",
+        "answer": [
+            "Remote Method Invocation"
+        ],
+        "options": [
+            "Remote Method Invocation",
+            "Resource Management Integration",
+            "Remote Messaging Interface",
+            "Reliable Management Invocation"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "RPO",
+        "answer": [
+            "Recovery Point Objective"
+        ],
+        "options": [
+            "Recovery Point Objective",
+            "Resource Planning Objective",
+            "Remote Processing Operation",
+            "Reliable Point Optimization"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "RTO",
+        "answer": [
+            "Recovery Time Objective"
+        ],
+        "options": [
+            "Recovery Time Objective",
+            "Resource Timing Objective",
+            "Remote Transfer Operation",
+            "Reliable Timing Optimization"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SaaS",
+        "answer": [
+            "Software-as-a-Service"
+        ],
+        "options": [
+            "Software-as-a-Service",
+            "System-as-a-Service",
+            "Solution-as-a-Service",
+            "Service and Application Software"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SAP",
+        "answer": [
+            "Systems Applications and Products in Data Processing"
+        ],
+        "options": [
+            "Systems Applications and Products in Data Processing",
+            "Software Applications and Programming",
+            "Service and Application Protocol",
+            "Systematic Application Processing"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SCM",
+        "answer": [
+            "Supply Chain Management"
+        ],
+        "options": [
+            "Supply Chain Management",
+            "Service Configuration Management",
+            "System Control Module",
+            "Software Chain Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SD",
+        "answer": [
+            "Sales and Distribution"
+        ],
+        "options": [
+            "Sales and Distribution",
+            "Service Delivery",
+            "System Development",
+            "Software Deployment"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SLA",
+        "answer": [
+            "Service-Level Agreement"
+        ],
+        "options": [
+            "Service-Level Agreement",
+            "Software License Agreement",
+            "System Load Analysis",
+            "Solution Level Architecture"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SOA",
+        "answer": [
+            "Service-Oriented Architecture"
+        ],
+        "options": [
+            "Service-Oriented Architecture",
+            "System Operational Application",
+            "Software Optimization Approach",
+            "Service Operations Architecture"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SOAP",
+        "answer": [
+            "Simple Object Access Protocol"
+        ],
+        "options": [
+            "Simple Object Access Protocol",
+            "Service Oriented Access Protocol",
+            "Software Object Application Platform",
+            "System Object Application Protocol"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "SRM",
+        "answer": [
+            "Supplier Relationship Management"
+        ],
+        "options": [
+            "Supplier Relationship Management",
+            "Service Resource Management",
+            "Systematic Resource Monitoring",
+            "Software Resource Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "TCO",
+        "answer": [
+            "Total Cost of Ownership"
+        ],
+        "options": [
+            "Total Cost of Ownership",
+            "Technical Cost Optimization",
+            "Technology Control Operation",
+            "Total Configuration Output"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "RCO",
+        "answer": [
+            "Real Cost of Ownership"
+        ],
+        "options": [
+            "Real Cost of Ownership",
+            "Resource Cost Optimization",
+            "Remote Control Operation",
+            "Reliable Cost Overview"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "PCM",
+        "answer": [
+            "Predictive Cost Modeling"
+        ],
+        "options": [
+            "Predictive Cost Modeling",
+            "Process Configuration Management",
+            "Performance Control Method",
+            "Project Cost Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "TCAO",
+        "answer": [
+            "Total Cost of Application Ownership"
+        ],
+        "options": [
+            "Total Cost of Application Ownership",
+            "Technical Configuration and Application Optimization",
+            "Total Cost Analysis Output",
+            "Total Configuration Application Ownership"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "ETCO",
+        "answer": [
+            "Enterprise Total Cost of Ownership"
+        ],
+        "options": [
+            "Enterprise Total Cost of Ownership",
+            "Enterprise Technical Configuration Optimization",
+            "Enterprise Transaction Cost Overview",
+            "Enterprise Tool Control Operation"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "UML",
+        "answer": [
+            "Unified Modeling Language"
+        ],
+        "options": [
+            "Unified Modeling Language",
+            "Universal Management Logic",
+            "User Maintenance Layer",
+            "Utility Model Layout"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "WM",
+        "answer": [
+            "Warehouse Management"
+        ],
+        "options": [
+            "Warehouse Management",
+            "Workflow Management",
+            "Waste Management",
+            "Wide Management"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "WSDL",
+        "answer": [
+            "Web Service Description Language"
+        ],
+        "options": [
+            "Web Service Description Language",
+            "Wide System Data Layer",
+            "Web System Design Logic",
+            "Workflow Service Definition Layer"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "XRM",
+        "answer": [
+            "Anything Relationship Management"
+        ],
+        "options": [
+            "Anything Relationship Management",
+            "Extended Resource Management",
+            "External Relationship Management",
+            "Extra Resource Monitoring"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A következő beállítási lehetőségek érhetőek el az SAP-rendszerben egy anyag beszerzésének módjával (procurement types) kapcsolatban:",
+        "answers": [
+            "külső beszerzés (external procurement)",
+            "saját termelés (in-house production)",
+            "külső beszerzés (external procurement) és saját termelés (in-house production)"
+        ],
+        "options": [
+            "anyagfogyáson alapuló (consumption based) beszerzés",
+            "külső beszerzés (external procurement)",
+            "saját termelés (in-house production)",
+            "külső beszerzés (external procurement) és saját termelés (in-house production)",
+            "termelésen alapuló (production based) beszerzés",
+            "diszpozíció alapú (MRP) beszerzés"
+        ],
+        "type": "checkbox"
+    },
+    {
+        "question": "Az SAP-rendszerben az értékesítési kondíció (condition) az alábbi célokat szolgálhatja:",
+        "answers": [
+            "bizonyos mennyiségi szint felett más árazás érvényesülhet",
+            "sávok definiálásával többféle árazás érvényesülhet",
+            "segítségével egy adott termékre időszakos kedvezményt állíthatunk be",
+            "segítségével beállíthatók a szállításra vonatkozó nemzetközi kereskedelmi feltételek (incoterms)"
+        ],
+        "options": [
+            "több, sorozatos rendelés esetén árengedmény adható segítségével",
+            "segítségével többszöri megrendelés leadása után a vásárlók automatikus engedményt kaphatnak",
+            "bizonyos mennyiségi szint felett más árazás érvényesülhet",
+            "sávok definiálásával többféle árazás érvényesülhet",
+            "segítségével egy adott termékre időszakos kedvezményt állíthatunk be",
+            "segítségével beállíthatók a szállításra vonatkozó nemzetközi kereskedelmi feltételek (incoterms)"
+        ],
+        "type": "checkbox"
+    },
+    {
+        "question": "A következő felsorolásból az alábbiak részei egy értékesítési dokumentumnak (sales document):",
+        "answers": [
+            "fej adtok (header)",
+            "tételek (items)",
+            "ütemezések (schedule lines)"
+        ],
+        "options": [
+            "előrejelzések (forecasts)",
+            "fej adtok (header)",
+            "tételek (items)",
+            "kontingensek (product allocations)",
+            "ütemezések (schedule lines)",
+            "átkönyvelések (transfer postings)"
+        ],
+        "type": "checkbox"
+    },
+    {
+        "question": "Az SAP CO-modulja (management accounting) az alábbi komponenseket foglalja magában:",
+        "answers": [
+            "általánosköltség-controlling (Overhead Cost Controlling – CO-OM)",
+            "termékköltség-controlling (Product Cost Controlling – CO-PC)",
+            "eredményszámítás (Profitability Analysis – CO-PA)",
+            "költségnemszámítás (Cost Element Accounting – CO-CEL)",
+            "profit-center-számítás (Profit Center Accounting – CO-PCA)"
+        ],
+        "options": [
+            "általánosköltség-controlling (Overhead Cost Controlling – CO-OM)",
+            "termékköltség-controlling (Product Cost Controlling – CO-PC)",
+            "eredményszámítás (Profitability Analysis – CO-PA)",
+            "költségnemszámítás (Cost Element Accounting – CO-CEL)",
+            "bevételnemszámítás (Income Element Accounting – CO-IEL)",
+            "profit-center-számítás (Profit Center Accounting – CO-PCA)"
+        ],
+        "type": "checkbox"
+    },
+    {
+        "question": "Az objektív információfelfogás szerint az információ abszolút és semleges.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az objektív információfeldolgozás szerint az információ nem abszolút és semleges.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az információ lényegében az adatok jelentése, vagyis az adatok értelmezése valamilyen tudás kontextusban.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az adat lényegében az információk jelentése, vagyis az információk értelmezése valamilyen (pl.: egyéni, szervezeti) tudás kontextusában.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy rendszer maga is része lehet egy nagyobb egységnek (rendszernek).",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy rendszer nem lehet része egy nagyobb egységnek (rendszernek).",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A vállalatok az operatív működést képező feladatok kiszolgálására tipikusan tranzakció feldolgozó rendszereket alkalmaznak.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A vállalatok az operatív működést képező feladatok kiszolgálására tipikusan nem tranzakciófeldolgozó rendszereket alkalmaznak.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A komponens alapú rendszerek feketedoboz-jellegű (black box) újrafelhasználás lehetőségével rendelkeznek.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A komponensalapú rendszerek nem rendelkeznek feketedoboz-jellegű (black-box) újrafelhasználás lehetőséggel.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A kliens-szerver modellben a szerver- és a kliensmodulok általában különböző számítógépekre kerülnek.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A kliens-szerver modellben a szerver- és a kliensmodulok általában azonos számítógépekre kerülnek.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy üzleti célú alkalmazás rétegszerkezetének kialakítása során olyan rendszer felbontásra törekszünk, hogy minden réteg csak a két közvetlen szomszédjával álljon kapcsolatban.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy üzleti célú alkalmazás rétegszerkezetének kialakítása során olyan rendszer felbontásra törekszünk, hogy minden réteg minden réteggel közvetlen kapcsolatban álljon.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A háromrétegű architektúrájú vállalati információs rendszerek esetén nem az üzleti logika réteg feladata a felhasználóval való kapcsolattartás.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A háromrétegű architektúrájú vállalati információs rendszerek esetén az üzleti logika réteg feladata a felhasználóval való kapcsolattartás.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A vállalati információs rendszerek esetében a hagyományos vastagkliens megoldások használata nem csak előnnyel rendelkezik a vékonykliens megoldásokkal szemben.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A vállalati információs rendszerek esetében a hagyományos vastagkliens megoldások használata szinte csak előnnyel rendelkezik a vékonykliens megoldásokkal szemben.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A felhőalapú szolgáltatás egy olyan számítógépes erőforrás-hozzáférési modell, amely a hálózaton keresztül különféle típusú közös használatú erőforráshalmazokat konfigurálható módon tesz elérhetővé a felhasználók számára.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A felhőalapú szolgáltatás nem egy olyan számítógépes erőforrás-hozzáférési modell, amely a hálózaton keresztül a különféle típusú, közös használatú erőforráshalmazokat konfigurálható módon tesz lehetővé a felhasználók számára.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A PaaS platform szolgáltatást jelent.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A PaaS alkalmazás szolgáltatást jelent.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A nyilvános felhők esetében a szolgáltató az ügyfelek sokaságának kiszolgálását célozta.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A nyilvános felhők esetében a szolgáltató nem az ügyfelek sokaságának kiszolgálását célozta.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az integrált vállalatirányítási rendszerek bevezetése során szükséges lehet a szoftvert az adott vállalat igényeire testre szabni.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az integrált vállalatirányítási rendszerek bevezetése során nem szükséges a szoftvert az adott vállalat igényeire testre szabni, mivel az integráltságból adódóan ez már korábban meg lett valósítva.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A 'best practice' jellegű üzleti folyamatok az egyes területek legjobb üzleti gyakorlatának megfelelő folyamatokat jelentik.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A 'best practice' jellegű üzleti folyamatok nem az egyes területek legjobb üzleti gyakorlatának megfelelő folyamatokat jelentik.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy vállalatirányítási rendszer teljesítménytesztelésének a célja nem az, hogy megvalósítja-e a specifikációban foglalt funkciókat.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy vállalatirányítási rendszer teljesítménytesztelésének célja az, hogy megvalósítja-e a specifikációban foglalt funkciókat.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az SAP ERP Business Suite elsősorban nem a kis- és középvállalatokat célzó vállalatirányítási megoldás.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az SAP ERP Business Suite egy kis- és középvállalatokat célzó, alacsony komplexitású vállalatirányítási modell.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A szigetszerű alkalmazások a vállalati információs rendszerek területén nem az olyan vállalatirányítási rendszereket jelölik, amelyek rendelkeznek EDI (Electronic Data Interchange) komponenssel.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A szigetszerű alkalmazások a vállalati információs rendszerek területén az olyan vállalatirányítási rendszereket jelölik, amelyek nem rendelkeznek EDI (Electronic Data Interchange) komponenssel.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A DSS-rendszerek a döntési folyamat informatikai támogatását szolgáló rendszerek.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A DSS-rendszerek nem a döntési folyamat informatikai támogatását szolgáló rendszerek.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A tudásmenedzsment rendszerek nem tekinthetőek a vállalatirányítási rendszerek egyik típusának.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A tudásmenedzsment rendszerek a vállalatirányítási rendszerek egyik típusának tekinthetők.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az OLAP-rendszerek nem relációs adatmodellen alapulnak.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az OLAP-rendszerek relációs adatmodellen alapulnak.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az operatív rendszereknek nem az a lényege, hogy az összegyűjtött bemeneti adatokat olyanra formára hozzák, amely a felhasználó számára megkönnyíti az adott helyzet megfelelő értékelését.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az operatív rendszerek lényege az, hogy az összegyűjtött bemeneti adatokat olyan formára hozzák, amely a felhasználók számára megkönnyíti az adott helyzet megfelelő értékelését.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az OLAP-rendszerek jellemzően olvasásra vannak optimalizálva.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az OLAP-rendszerek jellemzően nem olvasásra vannak optimalizálva.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az adatbányászatnak nem fő célja az analitikai modellalkotás.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az adatbányászat fő célja az analitikai modellalkotás.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A multidimenzionális adatmodellben a dimenziós adatok hierarchiába rendezhetők.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A multidimenzionális adatmodellben a dimenziós adatok nem rendezhetők hierarchiába.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A dokumentum menedzsment- és vállalati tartalomkezelő rendszerek nem azonos funkcionalitással bírnak.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A dokumentum menedzsment- és vállalati tartalomkezelő rendszerek azonos funkcionalitással bírnak.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A gamification nem a játékkonzolok esetében alkalmazott ember-gép interakciók PC-s környezetbe történő adoptálását jelenti.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A gamification a játékkonzolok esetében alkalmazott ember-gép interakciók PC-s környezetbe történő adoptálását jelenti.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A gamification megközelítésnek pszichológiai vonatkozásai is vannak.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A gamification megközelítésének nincsenek pszichológiai vonatkozásai.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A gamification játéktervezési elemek használatát jelenti nem játékos környezetben.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A gamification játéktervezési elemek használatát jelenti játékos környezetben.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy beszerzési szervezetet nem kell minden esetben hozzárendelni egy vállalathoz (company code).",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy beszerzési szervezetet (purchasing organization) minden esetben hozzá kell rendelni egy vállalathoz (company code).",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az átkönyvelés (transfer posting) nem jár feltétlenül fizikai anyagmozgatással.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az átkönyvelés (transfer posting) mindig fizikai anyagmozgással jár.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az anyag törzsben (material master) rögzített alapadatok (basic data) alkalmazhatóak a teljes vállalatra (client).",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az anyagtörzs (material master) minden beállítása releváns az anyagtervezés (material planning) szempontjából.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy értékesítési szervezet (sales organization) csak egy vállalathoz (company code) tartozhat.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy értékesítési szervezet (sales organization) több vállalathoz (company code) is tartozhat.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A terv rendelésből (planned order) gyártási megrendelés (production order) képezhető.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Gyártási megrendelésből (production order) tervrendelés (planned order) képezhető.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az anyagtörzsben (material master) a retrográd kivét (backflush) beállításának hatására az anyagmozgás automatikusan könyvelődik, amikor a gyártási megbízás visszajelzésre kerül (production order confirmation).",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az anyagtörzsben (material master) a retrográd kivét (backflush) beállításának hatására a készletszint mindig optimális lesz.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A kiszállítási pontot (shipping point) üzemhez (plant) lehet rendelni.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy kiszállítási pontot (shipping point) raktárhelyhez (storage location) lehet rendelni.",
+        "answer": [false],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A felhő szolgáltatásokra általánosságban jellemző a különféle virtualizált erőforrások használata.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A felhasználóval való kapcsolattartás alapján megkülönböztethetők passzív, aktív és kooperatív döntéstámogató rendszerek.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A darabjegyzék (bill of material) létrehozása és karbantartása csak egyszintű darabjegyzék (single-level BOM) formájában történhet.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A műveleti tervet (routing) mintának használják fel a gyártási vagy sorozatgyártási feladatoknál.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az SD (Sales and Distribution) modul használata esetén legalább egy részleg (division) felvétele kötelező.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy költségszámítási körhöz (controlling area) több vállalat (company code) is rendelhető.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A SAP NetWeaver egy átfogó integrációs és alkalmazási platform.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az információs rendszer erőforrásai: eszközök, emberek, szabványok és eljárások.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A hazai informatikai hálózat váltóáramról megy.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az anyagtörzs (material master) nem minden beállítása releváns az anyagtervezés (material planning) szempontjából.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A technológiai műveleti terv (routing) a termelési folyamat egyes műveleteit írja le.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A beszerzési információs rekordok (purchase info records) az egyes anyagokkal kapcsolatos meghatározott szállítókra vonatkozó beszerzési adatait tartalmazzák.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "A felhasználás vezérelt diszpozíció (consumption-based planning) típusú eljárások alapvetően az anyag múltbéli fogyasztásán alapulnak.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Egy szállítási rekord létrehozásakor a beszerzéshez és a könyveléshez vonatkozóan nem kell minden releváns adatot egy lépésben megadni.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    },
+    {
+        "question": "Az SD (sales and distribution) modul használata esetén legalább egy értékesítési csatorna (distribution channel) létrehozása kötelező.",
+        "answer": [true],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ],
+        "type": "radio"
+    }
+]

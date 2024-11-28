@@ -44,6 +44,12 @@ export default function Home() {
             link:"company",
             max: 9
         },
+        {
+            title: "VIR",
+            icon: "pi pi-briefcase",
+            link:"vir",
+            max: 30
+        },
     ];
     const [selectedExam, setSelectedExam] = useState<any>(param.get("exam") ? exams.filter((item) => item.title == (param.get("exam") as string).toUpperCase())[0] : exams[0]);
     const exam = useRef<any>(selectedExam);

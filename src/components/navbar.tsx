@@ -215,6 +215,7 @@ export default function Navbar({
                                             </> :
                                             <>
                                                 <div onClick={() => { navigateTo("/itlaw") }} data-pr-tooltip={"Üzleti és IT jog"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-book"></i></div>
+                                                <div onClick={() => { navigateTo("/vir") }} data-pr-tooltip={"Vállalat és információs rendszerek"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-briefcase"></i></div>
                                             </>
                                     }
                                 </div>

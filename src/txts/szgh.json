@@ -1,1 +1,1324 @@
-{"data":[{"question":"Egy kilobájt több mint egy kibibájt.","answer":false},{"question":"Egy megabájt kevesebb, mint egy mebibájt.","answer":true},{"question":"Egy terrabájt kevesebb, mint egy tebibájt.","answer":true},{"question":"Az ICMP protokoll nem képes a hibákról és azok típusáról tájékoztatást adni.","answer":false},{"question":"A helyfoglalásos protokoll nem ütközésmentes.","answer":false},{"question":"A helyfoglalásos protokoll permutálja az állomásszámokat.","answer":true},{"question":"A helyfoglalásos protokoll statikus állomásszámokkal dolgozik.","answer":false},{"question":"A protokoll szabályok halmaza, melyek a \"mit\" kérdéssel kapcsolatosak.","answer":false},{"question":"Az protokollokra virtuális kommunikáció jellemzo.","answer":true},{"question":"A protokollokra a valódi kommunikáció jellemzo.","answer":false},{"question":"A protokoll a szolgáltatás implementációjának felel meg.","answer":true},{"question":"A szolgáltatás a protokoll implementációjának felel meg.","answer":false},{"question":"A Simplex \"megáll és vár\" protokoll szinkronizációt használ.","answer":true},{"question":"A Simplex megáll és vár protokoll nem használ nyugtakeretet.","answer":false},{"question":"A Simplex összetett protokoll sorszámozza a kereteket.","answer":true},{"question":"A Simplex összetett protokoll nem sorszámozza a kereteket.","answer":false},{"question":"A szelektív ismétlo protokoll használ negatív nyugtát is.","answer":true},{"question":"A \"csúszóablakos\" protokollnak része a \"Piggy-back\" technika.","answer":true},{"question":"A \"csúszóablakos\" protokoll tartalmaz önálló nyugtakeretet.","answer":true},{"question":"A visszalépés \"n\"-el protokoll például a muholdas technikában használatos.","answer":true},{"question":"Az UDP egy összeköttetés nélküli protokoll.","answer":true},{"question":"Az UDP fejrészében kötelezo az ellenorzo összeg használata.","answer":false},{"question":"Az UDP egy nem megbízható protokoll, nem garantálja az átvitt adatok megérkezését.","answer":true},{"question":"Az UDP fejrészben található sürgosségi mutató.","answer":false},{"question":"Az UDP protokoll fejrésze összetettebb, mint a TCP protokoll fejrésze.","answer":false},{"question":"A TCP protokoll fejrésze egyszerubb, mint az UDP protokoll fejrésze.","answer":false},{"question":"Az UDP protokoll nem az operációs rendszer része.","answer":false},{"question":"A bináris visszaszámlálás protokoll esetén a hosztok sorszáma bináris.","answer":true},{"question":"A bináris visszaszámlálás protokoll jellemzoje a versengési idorés.","answer":true},{"question":"A bináris visszaszámlálás protokoll a magasabb sorszámú hostoknak kedvez.","answer":true},{"question":"A bináris visszaszámlálás protokoll ütközésmentes","answer":true},{"question":"A BPDU protokoll alapja a MAC cím.","answer":true},{"question":"A BPDU protokoll alapja az IP cím.","answer":false},{"question":"A versenyhelyzetes protokollok kis terhelésnél teljesítenek jól.","answer":true},{"question":"A versenyhelyzetben lévo protokollok nagy terhelésnél teljesítenek jól.","answer":false},{"question":"ISP jelentése - Internet Service Provider.","answer":true},{"question":"Egy ISP-n belül nagyszámú POP található.","answer":true},{"question":"Az IXP az egyes ISP-ék közötti adatforgalmat biztosítja.","answer":true},{"question":"Az ISP az egyes IXP-k közötti adatforgalmat biztosítja.","answer":false},{"question":"A PAN kisebb hálózatot jelent, mint a MAN.","answer":true},{"question":"A PAN nagyobb hálózat, mint a LAN.","answer":false},{"question":"A LAN kisebb hálózatot jelent, mint a WAN.","answer":true},{"question":"A LAN nagyobb hálózatot jelent, mint a WAN.","answer":false},{"question":"A WAN MAN-okból épül fel.","answer":false},{"question":"A bináris mértékegység rendszer jellemzoen memóriaméretre utal.","answer":true},{"question":"A bináris mértékegység rendszer jellemzoen háttértár méretére utal.","answer":false},{"question":"A bináris rendszer jellemzoen háttértár méretre utal.","answer":false},{"question":"A bináris konvolúciós kódok esetében nincsenek \"valamilyen\" határok.","answer":true},{"question":"A bináris konvolúciós kódok esetében nincsenek üzeneti határok.","answer":true},{"question":"Egy informatikai mérnök számára a sávszélesség egysége a bit/sec.","answer":true},{"question":"Egy informatikai mérnök számára a sávszélesség egysége a Hz.","answer":false},{"question":"Egy villamosmérnök számára a sávszélesség egysége a Hz.","answer":true},{"question":"Egy villamosmérnök számára a sávszélesség egysége a bit/sec.","answer":false},{"question":"Az interfészekre valódi kommunikáció jellemzo. ","answer":true},{"question":"Az interfészekre virtuális kommunikáció jellemzo.","answer":false},{"question":"A 0G mobilhálózat tisztán analóg megoldású.","answer":true},{"question":"A 0G mobilhálózat jellemzoje az automatikus hívásindítás.","answer":false},{"question":"Az 1G mobilhálózat nem támogatja az automatikus hívásátadást.","answer":false},{"question":"Az 1G mobilhálózat részben digitális megoldású.","answer":false},{"question":"Az 1G digitális rendszer.","answer":false},{"question":"A 2G mobilhálózat teljesen digitális megoldású.","answer":true},{"question":"A 2G mobilhálózat részben digitális megoldású.","answer":false},{"question":"A 2,5G mobilhálózat része a WAP és az EDGE.","answer":true},{"question":"A 2,5 G mobilhálózat része UMTS.","answer":false},{"question":"3G mobilhálózatnak része az UMTS.","answer":true},{"question":"A 3G mobilhálózatnak nem része a WCDMA.","answer":false},{"question":"3G hálózat része a  WiMax.","answer":false},{"question":"a 4G mobilhálózat része a WiMAX ","answer":true},{"question":"A 4G mobilhálózat része az LTE.","answer":true},{"question":"Az 5G mobilhálózat legfontosabb tulajdonsága a gyors válaszido és késleltetés.","answer":true},{"question":"Az 5G mobilhálózat adatátviteli sebessége a 4G mobilhálózat adatátviteli sebességének akár tízszerese is lehet.","answer":true},{"question":"Az 5G mobilhálózat különbözo specifikus frekvenciasávokban azonos feladatokat lát el.","answer":false},{"question":"Az adatkapcsolati réteg egyik feladata a forgalomszabályozás.","answer":true},{"question":"Az adatkapcsolati rétegben nincs forgalomszabályzás.","answer":false},{"question":"Az adatkapcsolati réteg nem végez forgalomszabályozást.","answer":false},{"question":"Az adatkapcsolati réteg a szegmenseket továbbítja.","answer":false},{"question":"A gyakorlati modellben az adatkapcsolati réteg a fizikai réteg alatt található.","answer":false},{"question":"A gyakorlati modellben az adatkapcsolati réteg a hálózati réteg alatt található.","answer":true},{"question":"A gyakorlati modellben az adatkapcsolati réteg a hálózati réteg felett található.","answer":false},{"question":"Az adatkapcsolati rétegben csomagok továbbítódnak.","answer":false},{"question":"Az adatkapcsolati rétegnek nem a keretezés a fo feladata.","answer":false},{"question":"A hálózati réteg alapveto feladata az útvonalválasztás.","answer":true},{"question":"A hálózati rétegben csomagok továbbítódnak.","answer":true},{"question":"A hálózati rétegben keretek továbbítódnak.","answer":false},{"question":"A szállítási rétegben szegmensek továbbítódnak.","answer":true},{"question":"A szállítási réteg csomagokat továbbít.","answer":false},{"question":"A szálítási rétegben keretek továbbítódnak.","answer":false},{"question":"A szállítási réteg a feladatát az alatta lévo rétegek kialakításától függoen végzi.","answer":true},{"question":"A gyakorlati modellben a szállítási réteg a hálózati réteg alatt van.","answer":false},{"question":"A viszonyréteg az OSI modellben található.","answer":true},{"question":"A megjelenítési réteg az OSI modellben található.","answer":true},{"question":"A kapcsolati réteg az TCP/IP modellben található.","answer":true},{"question":"Az kapcsolat réteg az OSI modellben található.","answer":false},{"question":"Az internet réteg az OSI modellben található.","answer":false},{"question":"A megjelenítési réteg a(z) TCP/IP modellben található.","answer":false},{"question":"Összeköttetés nélküli rendszerre példa a postai levélszolgáltatás.","answer":true},{"question":"Összeköttetés alapú rendszerekben minimum hat szolgáltatási primitív kell.","answer":true},{"question":"Összeköttetés nélküli rendszerekben minimum hat szolgáltatás primitív kell.","answer":false},{"question":"A csatorna használata az összeköttetés nélküli rendszerekre jellemzo.","answer":true},{"question":"Nyugtázott datagram az összeköttetés nélküli rendszerre jellemzo.","answer":true},{"question":"A datagram használata az összeköttetés alapú rendszerekre jellemzo.","answer":false},{"question":"Datagram alapú összeköttetés esetében bonyolult a szolgáltatás muködésének biztosítása.","answer":true},{"question":"Datagramm alapú összeköttetés esetében bonyolult a szolgáltatás minoségének a biztosítása.","answer":true},{"question":"Az NRZ-I kódolás alapja az NRZ-L jel.","answer":false},{"question":"Az NRZ-I kódolás alapja az NRZ-M jel.","answer":true},{"question":"Az NRZ-I kódolást az USB szabvány használja.","answer":true},{"question":"Az NRZ-L értéke csak 1-rol 0-ra történo jelváltás után változik meg.","answer":false},{"question":"Az NRZ-L értéke minden jelváltás után megváltozik.","answer":true},{"question":"Az NRZ-M értéke csak 1-rol 0-ra történo jelváltás után változik meg.","answer":false},{"question":"Az Ethernet hálózat NRZ-L kódolást használ.","answer":true},{"question":"Az Ethernet hálózat NRZ-S kódolást használ.","answer":false},{"question":"Az NRZ-M értéke minden jelváltás után megváltozik.","answer":false},{"question":"Az NRZ-M kódolást az USB szabvány használja.","answer":false},{"question":"Az NRZ-S kódolást az USB szabvány használja.","answer":false},{"question":"Az NRZ-S értéke minden jelváltás után megváltozik.","answer":false},{"question":"Az NRZ-S értéke csak 1-rol 0-ra történo jelváltás után változik meg.","answer":false},{"question":"Az NR2-S kódolást a USB szabvány használja.","answer":false},{"question":"A CAT5e szabvány maximális sebessége 4 érpáron 100 Mb/s..H","answer":false},{"question":"A CAT5e szabvány maximális sebessége 4 érpáron 1000Mb/s.","answer":true},{"question":"A CAT5e szabvány maximális sebessége 2 érpáron 100 Mb/s.","answer":true},{"question":"A CAT5e szabvány maximális sávszélessége 100 MHz.","answer":true},{"question":"A CAT6 szabvány maximális sávszélessége 100 méteren 250MHz.","answer":true},{"question":"A CAT6 szabvány maximális sávszélessége 100 méteren 500Mhz.","answer":false},{"question":"A Cat6 szabvány maximális sebessége 100m-en 1Gbit.","answer":true},{"question":"A CAT6 szabvány maximális sebessége 100 méteren 10 Gb/s.","answer":false},{"question":"A CAT6A szabvány maximális sávszélessége 100 méteren 500MHz.","answer":true},{"question":"A CAT6A szabvány maximális sebessége 100 méteren 1Gb/s.","answer":false},{"question":"A CAT7 szabvány maximális sebessége 100 méteren 1Gb/s.","answer":false},{"question":"A CAT7 szabvány maximális sávszélessége 100 méteren 750 MHz.","answer":false},{"question":"A MIMO védettsége gyenge a visszaverodésekkel szemben.","answer":false},{"question":"A MIMO párhuzamos csatornákkal növeli a sebességet.","answer":true},{"question":"A MIMO tulajdonéppen az SDMA egyfajta kiterjesztése.","answer":true},{"question":"Az 1-perzisztens CSMA nem vizsgálja a csatorna foglaltságát.","answer":false},{"question":"A p-perzisztens CSMA szabad csatorna esetén azonnal adni kezd.","answer":false},{"question":"A nem perzisztens CSMA szabad csatorna esetén azonnal adni kezd.","answer":true},{"question":"A CSMA/CA protokoll ütközés esetén azonnal ismétli az átadást.","answer":false},{"question":"Vivojel érzékelés nélkül nem döntheto el, hogy egy csatorna foglalt-e.","answer":true},{"question":"A QSS és a WPS kényelmi funkciókat szolgál.","answer":true},{"question":"A QSS és a WPS növeli a rendszer védettségét.","answer":false},{"question":"A 256-QAM egyetlen jelváltozással 16 bitet kódol.","answer":false},{"question":"A 256-QAM egyetlen jelváltozással 8 bitet kódol.","answer":true},{"question":"RNC jelentése \"Radio Network Controller\".","answer":true},{"question":"A leghosszabb rádióhullámok képesek követni a föld görbületét.","answer":true},{"question":"A rövidhullám visszaverodik az ionoszféráról.","answer":true},{"question":"A rövidhullámok képesek követni a föld görbületét.","answer":false},{"question":"A mikrohullám visszaverodik az ionoszféráról.","answer":false},{"question":"A mikrohullámok jól irányíthatóak.","answer":true},{"question":"Minél kisebb a hullámhossz, annál jobb a tárgyakon való áthaladás.","answer":false},{"question":"A WEP titkosítás b/g/n szabványoknak egyaránt része.","answer":false},{"question":"A WEP az \"n\" szabványnak már nem része.","answer":true},{"question":"A WEP-es védelemre a kéretlen látogatók veszélyt jelentenek.","answer":true},{"question":"A WEP-es védelemre a kéretlen látogatók valós veszélyt jelentenek.","answer":true},{"question":"Az AES a WEP2 védelem algoritmusa.","answer":false},{"question":"Az AES a WPA2 védelem algoritmusa.","answer":true},{"question":"Az AES a WPA védelem algoritmusa.","answer":false},{"question":"A TKIP a WPA védelem algoritmusa.","answer":true},{"question":"A DSSS 11db csatornája részben sem fedi át egymást.","answer":false},{"question":"A DSSS 11db egymást részben átfedo csatornát használ.","answer":true},{"question":"A Manchester kódot NOR muvelettel képezzük.","answer":false},{"question":"A Manchester kódot XOR muvelettel képezzük.","answer":true},{"question":"A klasszikus Manchester kódolás hatékonyabb mint a 8B/10B kódolás","answer":false},{"question":"A kitöltés mezo hossza minden esetben több mint 0 bájt.H","answer":false},{"question":"A kitöltés mezo célja a minimális kerethossz elérésének biztositása.","answer":true},{"question":"A típus/hossz mezo típust jelöl, ha tartalma kisebb egyenlo, mint 0x0600.","answer":false},{"question":"A típus/hossz mezo típust jelöl, ha tartalma nagyobb, mint 0x0600.","answer":true},{"question":"A Hamming-távolságot egy NOR muvelettel számíthatjuk ki.","answer":false},{"question":"A Hamming-távolságot egy XOR muvelettel számíthatjuk ki.","answer":true},{"question":"Páros paritás esetén a paritásbit 1, ha a kódszóban az 1-esek száma páratlan.","answer":true},{"question":"Páros paritás esetén a paritásbit 0, ha a kódszóban az 1 -esek száma páros.","answer":true},{"question":"Páros paritás esetén a paritásbit 0, ha a kódszóban az 1-esek száma páratlan.","answer":false},{"question":"Páratlan paritás esetén a paritásbit 1, ha a kódszóban az 1-esek száma páros.","answer":true},{"question":"Páratlan paritás esetén a paritásbit 0, ha a kódszóban az 1-esek száma páratlan","answer":true},{"question":"Az LLC alréteg felel a csatorna kiosztásáért.","answer":false},{"question":"Az LLC alréteg felel a keretek épségéért.","answer":true},{"question":"Az IEEE 802.3 szabványba a \"Base\" szó jelentése \"alapveto\".","answer":false},{"question":"A 802.3 szabvány a vezeték nélküli LAN-okra vonatkozik.","answer":false},{"question":"AZ IEEE802.11 adatkeretében a keretvezérlés 11 almezobol áll.","answer":true},{"question":"Az IEEE802.11 szabvány a CSMA/CA protokollt használja.","answer":true},{"question":"Az IEEE802.11 szabvány CSMA/CD protokollt használja.","answer":false},{"question":"Az IEEE802.11 három féle keretosztállyal dolgozik.","answer":true},{"question":"Az IEEE802.11 adatkeretében két cím szerepel.","answer":false},{"question":"A 802.11 szabvány az Ethernet-re vonatkozik.","answer":false},{"question":"A 10 gigabites ethernet 5 különbözo jelszintet használ.","answer":false},{"question":"A gigabites ethernet 16 különbözo jelszintet használ.","answer":false},{"question":"A 10 gigabites Ethernet nem használja a CSMA/CD protokollt.","answer":true},{"question":"A 10 gigabites Ethernet használja a CSMA/CD protokollt.","answer":false},{"question":"A 10 gigabites Ethernet a Half- és a Full-Duplex üzemmódot is támogatja.","answer":false},{"question":"A réz alapú 10 gigabites Ethernet a 64B/66B kódolást használja.","answer":false},{"question":"Az optikai 10 gigabites Ethernet a 64B/66B kódolást használja","answer":true},{"question":"Az optikai kábelek a 64B/66B kódolást használják.","answer":true},{"question":"Jellemzoen kis távolságok áthidalására használnak optikai kábeleket.","answer":false},{"question":"Az ethernet fejléc 2 bájttal hosszabb, mint a VLAN fejléc.","answer":false},{"question":"Virtuális LAN (Virtual LAN - VLAN) IEEE kódja a 802.10.","answer":true},{"question":"Virtuális áramkör alapú összeköttetés esetében egyszeru a torlódáskezelés.","answer":true},{"question":"Az LSOH/LSZH a kábel mechanikai terhelésének jelzése.","answer":false},{"question":"Az LSOH/LSZH a kábel mechanikai tesztelésének jelzése.","answer":false},{"question":"Az IPv4-ben a broadcast cím mindig 0-ra végzodik.","answer":false},{"question":"Az IPv4-ben a broadcast cím mindig 1-re végzodik.","answer":true},{"question":"Az IPv4-ben egy hálózat címe mindig 0-ra végzodik.","answer":true},{"question":"Az IPv4 datagram maximális mérete 65535 bájt.","answer":true},{"question":"Az IPv4 datagramm maximális mérete kevesebb, mint 65535 bájt.","answer":false},{"question":"A CIDR az IPv4 merev szabályait oldja fel.","answer":true},{"question":"A CIDR az IPv4-ben rugalmas hoszt kiosztást tesz lehetové.","answer":true},{"question":"Az IPv4 hálózati maszkban a 0-ás értéket semmiképpen sem követhet 1-es érték.","answer":true},{"question":"A CIDR és a NAT is hozzájárult az IPv4 címek elfogyásának késleltetéséhez","answer":true},{"question":"A CIDR és a NAT is hozzájárult az IPv6 gyorsabb bevezetéséhez.","answer":false},{"question":"Az IPv4 \"A\" osztály kevesebb hosztot tartalmaz mint a \"C\" osztály.","answer":false},{"question":"Az IPv4 fejrész tartalmaz ellenorzo összeget.","answer":true},{"question":"Az IPv4 fejrész maximális fix hossza 20 bájt.","answer":false},{"question":"Az IPv4 fejrész minimális fix hossza 20 bájt.","answer":true},{"question":"Az IPv4 fejrész teljes hossz mezoje 16 bites.","answer":true},{"question":"Az IPv6 fejrészben az ugráskorlát értéke csak ugrásonként csökken 1-el.","answer":false},{"question":"Az IPv6 fejrész több mezot tartalmaz mint az IPv4 fejrész.","answer":false},{"question":"Az IPv6 adatmezo maximális mérete 65535 bájt","answer":true},{"question":"AZ IPv6 fejrész maximális hossza kétszerese az IPv4 fejrész minimális hosszának.","answer":true},{"question":"AZ IPv6 fejrész maximális hossza kétszerese az IPv4 fejrész maximális hosszának.","answer":false},{"question":"Az IPv6 címzési rendszere tartalmazza az IPv4-ben megismert osztályokat.","answer":false},{"question":"Az NDP az Ipv6 protokoll része.","answer":true},{"question":"Az ARP az IPv6 protokoll része.","answer":false},{"question":"A karakterszámlálás egy sérülésvédett keretezési megoldás.","answer":false},{"question":"A keret elotag 7 bájt hosszú.","answer":false},{"question":"A keret elotag 8 bájt hosszú.","answer":true},{"question":"A keret elotag fo funkciója az idoszinkronizáció.","answer":true},{"question":"A keret réteg fo funkciója az idoszinkronizáció.","answer":true},{"question":"Vezérjeles gyuru esetén minden hoszt azonos prioritású.","answer":false},{"question":"A vezérjeles gyuru esetén a hosztok csak a következo hosztig juttatják el a keretet.","answer":true},{"question":"A vezérjeles gyuru ütközésmentes.","answer":true},{"question":"A vezérjeles gyuru nem ütközésmentes.","answer":false},{"question":"Vezérjeles gyuru esetén az elküldött keret több kört is megtehet.","answer":false},{"question":"Vezérjeles algoritmus esetén nem léphet fel túlcsordulás, adatvesztés.","answer":true},{"question":"A vezérjeles vödör algoritmus esetén az adatok csak azonos sebességgel távozhatnak.","answer":false},{"question":"Lyukas vödör algoritmus esetén nem léphet fel túlcsordulás, adatvesztés.","answer":false},{"question":"Az LDPC kódolás matematikailag polinomokra épül.","answer":false},{"question":"Az LDPC kódolás esetén a kódolt üzenet hosszabb az eredeti üzenetnél.","answer":true},{"question":"Az LDPC kódolásnak nem jelentos a szoftveres eroforrásigénye","answer":false},{"question":"Az LDPC kódolásnak jelentos a szoftveres eroforrás igénye.","answer":true},{"question":"LDPC kódolás használatos például a DVB-T2 muholdas rendszerben.","answer":true},{"question":"LDPC kódolás használatos például a DVB-12  muholdas rendszerben.","answer":true},{"question":"A Reed-Solomon kódolás matematikailag polinomokra épül.","answer":true},{"question":"A 8B/10B kódolás 8 bitenként legalább 3 szintváltást tartalmaz.","answer":false},{"question":"ALOHA rendszerek esetén a nyugtázó csatornákban is lehet ütközés.","answer":false},{"question":"ALOHA rendszerek esetén a nyugtázó csatornában nem fordulhat elo ütközés.","answer":true},{"question":"Az ALOHA használ nyugtázást.","answer":true},{"question":"A LOHA rendszerek esetén a nyugtázó csatornákban is lehet ütközés.","answer":false},{"question":"A szolgáltatás muveletek halmaza, amelyek a \"mit\" kérdéssel kapcsolatosak. ","answer":true},{"question":"A forgalomszabályozás 2 hoszt között értelmezheto fogalom.","answer":true},{"question":"A forgalomszabályzás a hálózat egészére értelmezheto fogalom.","answer":false},{"question":"Az RP illetve az RR a kábel égésekor felszabaduló gázokra utal.","answer":false},{"question":"A RP illetve az RR a kábel rágcsálók elleni védelmét jelenti.","answer":true},{"question":"A Nyquist tétel az ideális átviteli csatornával kapcsolatos.","answer":true},{"question":"A Nyquist tétel a zajos átviteli csatornával kapcsolatos.","answer":false},{"question":"AZ IT-ban használt IEC mértékegység alapja a tízes számrendszer.","answer":false},{"question":"AZ IT-ban használt IEC mértékegység alapja a kettes számrendszer.","answer":true},{"question":"MODEM: a kifejezés a \"modulátor\" és \"demodulátor\" szavakból származik, és olyan berendezést jelent, ami egy vivohullám modulációjával az analóg jelet digitálissá alakítja.","answer":false},{"question":"A modem célja, hogy az analóg adatot digitális módon átvihetové tegye.","answer":false},{"question":"A modem célja, hogy a digitális adatot analóg módon átvihetové tegye.","answer":true},{"question":"A QoS-t hat paraméterrel határozzuk meg.","answer":false},{"question":"A Shannon tétel az ideális átviteli csatornával kapcsolatos.","answer":false},{"question":"A Shannon tétel a zajos átviteli csatornával kapcsolatos.","answer":true},{"question":"Vezetékes átvitel esetén célszeru a hibajavítás.","answer":false},{"question":"Vezetékes átvitel esetén célszeru a hibadetektálás és az adatismétlés.","answer":true},{"question":"A DNS idoben sokkal az URL után jelent meg. ","answer":false},{"question":"A DNS idoben sokkal az URL elott jelent meg.","answer":true},{"question":"A DNS névhierarchia tetején a gyökérnévszerverek darabszáma folyamatosan növekszik.","answer":false},{"question":"Rekurzív kérés esetén a DNS szerver teljes mértékben megválaszolja a kérést vagy hibajelzsét ad.","answer":true},{"question":"Az URL tulajdonképpen a DNS szolgáltatásait teszi a felhasználó számára még produktívabbá.","answer":true},{"question":"A \"T-568A\" és \"T-568B\" bekötése 50%-ba megegyezik.","answer":true},{"question":"A \"T-568A\" és \"T-568B\" bekötése több mint 50%-ban eltéro.","answer":false},{"question":"A Layer 2 Switch képes az egyes VLAN-ok közötti forgalomirányításra.","answer":false},{"question":"A Layer 2 switch nem képes az egyes VLAN-ok közötti forgalomirányításra. ","answer":true},{"question":"Egy Switch-ekkel összekapcsolt hálózatban nem fordulhat elo ütközés.","answer":true},{"question":"Egy Switch-ekkel összekapcsolt hálózatban nem fordulhat elo keret ütközés","answer":true},{"question":"A switch IP címek segítségével dolgozik.","answer":false},{"question":"A Switch MAC címek segítségével dolgozik","answer":true},{"question":"A switcheknek nem kell ismerni a hálózati réteg protokollját a routernek viszont ismernie kell azt.","answer":true},{"question":"A Switch összeállítja a csomagot a keretekbol és a csomagban lévo IP címet használja a cél hoszt meghatározásásra.","answer":false},{"question":"A MAC címek nem tartalmaznak lokalizációs információkat.","answer":true},{"question":"A MAC alréteg felel a keretek épségéért.","answer":false},{"question":"A Bridge MAC címek segítségével dolgozik.","answer":true},{"question":"A Bridge IP címek segítségével dolgozik.","answer":false},{"question":"Egy geoszinkron muholddal fix parabolaantennával kommunikálhatunk.","answer":false},{"question":"Egy geostacionárius muholdddal fix parabolaantennával kommunikálhatunk.","answer":true},{"question":"A TCP fejrészben kötelezo az ellenorzo összeg használata.","answer":true},{"question":"A TCP összeköttetés-alapú protokoll.","answer":true},{"question":"TCP protokoll az operációs rendszer része","answer":true},{"question":"A NEXT közelvégi áthallást jelent.","answer":true},{"question":"A NEXT távolvégi áthallást jelent.","answer":false},{"question":"A PSNEXT a közelvégi áthallás összesített értékét jelenti.","answer":true},{"question":"A PSNEXT az azonos szintu távolvégi áthallást jelenti.","answer":false},{"question":"Az MSC és a GMSC biztosítja a mobilhálózat és az internet közötti kapcsolatot.","answer":false},{"question":"Az MSC és a GMSC biztosítja a mobilhálózat és az internet közötti kapcsolatot.","answer":false},{"question":"Az átlátszó darabolás esetén a csomagok egyesítése csak a cél hosztnál történik meg.","answer":false},{"question":"Átlátszó darabolás esetén a csomagok egyesítése minden érintett hálózat elhagyásakor megtörténik.","answer":true},{"question":"A nem átlátszó darabolás esetén a darabolás az egyes hálózatokban függetlenül történik","answer":false},{"question":"A nem átlátszó darabolás esetén a csomagok egyesítése csak a cél hosztnál történik meg.","answer":true},{"question":"A kapcsolatállapot alapú útválasztás a távolságvektor alapú útválasztást váltotta fel.","answer":true},{"question":"A távolságvektor alapú útválasztás a kapcsolatállapot alapú útválasztást váltotta fel.","answer":false},{"question":"Az SSID azonosító egy maximum 32 karakter hosszú szabad választott név","answer":true},{"question":"Az Auto Negotation az ütközések elkerülésének egyik megoldása.","answer":false},{"question":"Az autonegotation automatikus sebesség és duplexitás egyeztetést jelent.","answer":true},{"question":"A karakterszámlálás nem igényel egyedi fejlécet.","answer":true},{"question":"A torlódáskezelés a hálózat egészére értelmezheto fogalom.","answer":true},{"question":"A Congestion jelentése: Torlódás","answer":true},{"question":"A Congestion jelentése: Forgalomszabályozás.","answer":false},{"question":"Az alagút átvitel olyan módon áll össze két hálózat között, hogy azok a köztük lévo hálózat(ok) hosztjait nem is érhetik el.","answer":true},{"question":"Az adaptív forgalomirányító eljárások alkalmazkodnak a hálózati forgalomhoz és a topológiához.","answer":true},{"question":"A CSMA/CD ütközés érzékelésekor azonnal megszakítja az adást.","answer":true},{"question":"A CSMA/CD protokoll az adás megkezdése után is figyeli a csatornát.","answer":true},{"question":"A CSMA vezeték nélküli összeköttetésben hatékonyabb, mint vezetékesben.","answer":false},{"question":"A RIP egy távolságvektor alapú IGP protokoll.","answer":true},{"question":"Az RIP fejrészében található sürgosségi mutató.","answer":false},{"question":"a TCP fejrészében található sürgosségi mutató","answer":true},{"question":"Az RTP fejrészében található a sürgosségi mutató.","answer":false},{"question":"Az RTP fejrészében nem található sürgosségi mutató.","answer":true},{"question":"Az RTP protokoll az UDP protokollra épül.","answer":true},{"question":"Az RTP protokoll az operációs rendszer része.","answer":false},{"question":"Az RTP protokoll nem az operációs rendszer része.","answer":true},{"question":"A decimális alapú mértékegység rendszer jellemzoen háttértár méretre utal.","answer":true},{"question":"A decimális alapú mértékegység rendszer jellemzoen memóriaméretre utal.","answer":false},{"question":"A NAT címfordítás a LAN és a WAN hálózat között történik","answer":true},{"question":"Az 1000Base-T-ben a T a sodrott érpárt jelöli.","answer":true},{"question":"Az 1000Base-T-ben 5 különbözo jelváltást értelmezünk.","answer":true},{"question":"Az 1000Base-T maximális átviteli sebessége 1Gbit.","answer":true},{"question":"Az 1000Base-T maximális átviteli sebessége 100Mbit.","answer":false},{"question":"Az STP támadása esetén az aktuális gyökér MAC címénél kisebb cím hálózatba juttatása a cél.","answer":true},{"question":"Az FTP egy megbízható protkoll, garantálja az átvitt adatok megérkezését.","answer":true},{"question":"Az FTP egy nem megbízható protokoll, nem garantálja az átvitt adatok megérkezését.","answer":false},{"question":"Az OFDM a nagy sebességu jelfolyamot több kisebb sebességure bontja.","answer":true},{"question":"A Széles sávú, vezeték nélküli hálózatok IEEE kódja: 802.16","answer":true},{"question":"A személyi hálózatok (Bluetooth, Zigbee) IEEE kódja: 802.15","answer":true}]}
+{
+    "data": [
+        {
+            "question": "Egy kilobájt több mint egy kibibájt.",
+            "answer": false
+        },
+        {
+            "question": "Egy megabájt kevesebb, mint egy mebibájt.",
+            "answer": true
+        },
+        {
+            "question": "Egy terrabájt kevesebb, mint egy tebibájt.",
+            "answer": true
+        },
+        {
+            "question": "Az ICMP protokoll nem képes a hibákról és azok típusáról tájékoztatást adni.",
+            "answer": false
+        },
+        {
+            "question": "A helyfoglalásos protokoll nem ütközésmentes.",
+            "answer": false
+        },
+        {
+            "question": "A helyfoglalásos protokoll permutálja az állomásszámokat.",
+            "answer": true
+        },
+        {
+            "question": "A helyfoglalásos protokoll statikus állomásszámokkal dolgozik.",
+            "answer": false
+        },
+        {
+            "question": "A protokoll szabályok halmaza, melyek a \"mit\" kérdéssel kapcsolatosak.",
+            "answer": false
+        },
+        {
+            "question": "Az protokollokra virtuális kommunikáció jellemzo.",
+            "answer": true
+        },
+        {
+            "question": "A protokollokra a valódi kommunikáció jellemzo.",
+            "answer": false
+        },
+        {
+            "question": "A protokoll a szolgáltatás implementációjának felel meg.",
+            "answer": true
+        },
+        {
+            "question": "A szolgáltatás a protokoll implementációjának felel meg.",
+            "answer": false
+        },
+        {
+            "question": "A Simplex \"megáll és vár\" protokoll szinkronizációt használ.",
+            "answer": true
+        },
+        {
+            "question": "A Simplex megáll és vár protokoll nem használ nyugtakeretet.",
+            "answer": false
+        },
+        {
+            "question": "A Simplex összetett protokoll sorszámozza a kereteket.",
+            "answer": true
+        },
+        {
+            "question": "A Simplex összetett protokoll nem sorszámozza a kereteket.",
+            "answer": false
+        },
+        {
+            "question": "A szelektív ismétlo protokoll használ negatív nyugtát is.",
+            "answer": true
+        },
+        {
+            "question": "A \"csúszóablakos\" protokollnak része a \"Piggy-back\" technika.",
+            "answer": true
+        },
+        {
+            "question": "A \"csúszóablakos\" protokoll tartalmaz önálló nyugtakeretet.",
+            "answer": true
+        },
+        {
+            "question": "A visszalépés \"n\"-el protokoll például a muholdas technikában használatos.",
+            "answer": true
+        },
+        {
+            "question": "Az UDP egy összeköttetés nélküli protokoll.",
+            "answer": true
+        },
+        {
+            "question": "Az UDP fejrészében kötelezo az ellenorzo összeg használata.",
+            "answer": false
+        },
+        {
+            "question": "Az UDP egy nem megbízható protokoll, nem garantálja az átvitt adatok megérkezését.",
+            "answer": true
+        },
+        {
+            "question": "Az UDP fejrészben található sürgosségi mutató.",
+            "answer": false
+        },
+        {
+            "question": "Az UDP protokoll fejrésze összetettebb, mint a TCP protokoll fejrésze.",
+            "answer": false
+        },
+        {
+            "question": "A TCP protokoll fejrésze egyszerubb, mint az UDP protokoll fejrésze.",
+            "answer": false
+        },
+        {
+            "question": "Az UDP protokoll nem az operációs rendszer része.",
+            "answer": false
+        },
+        {
+            "question": "A bináris visszaszámlálás protokoll esetén a hosztok sorszáma bináris.",
+            "answer": true
+        },
+        {
+            "question": "A bináris visszaszámlálás protokoll jellemzoje a versengési idorés.",
+            "answer": true
+        },
+        {
+            "question": "A bináris visszaszámlálás protokoll a magasabb sorszámú hostoknak kedvez.",
+            "answer": true
+        },
+        {
+            "question": "A bináris visszaszámlálás protokoll ütközésmentes",
+            "answer": true
+        },
+        {
+            "question": "A BPDU protokoll alapja a MAC cím.",
+            "answer": true
+        },
+        {
+            "question": "A BPDU protokoll alapja az IP cím.",
+            "answer": false
+        },
+        {
+            "question": "A versenyhelyzetes protokollok kis terhelésnél teljesítenek jól.",
+            "answer": true
+        },
+        {
+            "question": "A versenyhelyzetben lévo protokollok nagy terhelésnél teljesítenek jól.",
+            "answer": false
+        },
+        {
+            "question": "ISP jelentése - Internet Service Provider.",
+            "answer": true
+        },
+        {
+            "question": "Egy ISP-n belül nagyszámú POP található.",
+            "answer": true
+        },
+        {
+            "question": "Az IXP az egyes ISP-ék közötti adatforgalmat biztosítja.",
+            "answer": true
+        },
+        {
+            "question": "Az ISP az egyes IXP-k közötti adatforgalmat biztosítja.",
+            "answer": false
+        },
+        {
+            "question": "A PAN kisebb hálózatot jelent, mint a MAN.",
+            "answer": true
+        },
+        {
+            "question": "A PAN nagyobb hálózat, mint a LAN.",
+            "answer": false
+        },
+        {
+            "question": "A LAN kisebb hálózatot jelent, mint a WAN.",
+            "answer": true
+        },
+        {
+            "question": "A LAN nagyobb hálózatot jelent, mint a WAN.",
+            "answer": false
+        },
+        {
+            "question": "A WAN MAN-okból épül fel.",
+            "answer": false
+        },
+        {
+            "question": "A bináris mértékegység rendszer jellemzoen memóriaméretre utal.",
+            "answer": true
+        },
+        {
+            "question": "A bináris mértékegység rendszer jellemzoen háttértár méretére utal.",
+            "answer": false
+        },
+        {
+            "question": "A bináris rendszer jellemzoen háttértár méretre utal.",
+            "answer": false
+        },
+        {
+            "question": "A bináris konvolúciós kódok esetében nincsenek \"valamilyen\" határok.",
+            "answer": true
+        },
+        {
+            "question": "A bináris konvolúciós kódok esetében nincsenek üzeneti határok.",
+            "answer": true
+        },
+        {
+            "question": "Egy informatikai mérnök számára a sávszélesség egysége a bit/sec.",
+            "answer": true
+        },
+        {
+            "question": "Egy informatikai mérnök számára a sávszélesség egysége a Hz.",
+            "answer": false
+        },
+        {
+            "question": "Egy villamosmérnök számára a sávszélesség egysége a Hz.",
+            "answer": true
+        },
+        {
+            "question": "Egy villamosmérnök számára a sávszélesség egysége a bit/sec.",
+            "answer": false
+        },
+        {
+            "question": "Az interfészekre valódi kommunikáció jellemzo. ",
+            "answer": true
+        },
+        {
+            "question": "Az interfészekre virtuális kommunikáció jellemzo.",
+            "answer": false
+        },
+        {
+            "question": "A 0G mobilhálózat tisztán analóg megoldású.",
+            "answer": true
+        },
+        {
+            "question": "A 0G mobilhálózat jellemzoje az automatikus hívásindítás.",
+            "answer": false
+        },
+        {
+            "question": "Az 1G mobilhálózat nem támogatja az automatikus hívásátadást.",
+            "answer": false
+        },
+        {
+            "question": "Az 1G mobilhálózat részben digitális megoldású.",
+            "answer": false
+        },
+        {
+            "question": "Az 1G digitális rendszer.",
+            "answer": false
+        },
+        {
+            "question": "A 2G mobilhálózat teljesen digitális megoldású.",
+            "answer": true
+        },
+        {
+            "question": "A 2G mobilhálózat részben digitális megoldású.",
+            "answer": false
+        },
+        {
+            "question": "A 2,5G mobilhálózat része a WAP és az EDGE.",
+            "answer": true
+        },
+        {
+            "question": "A 2,5 G mobilhálózat része UMTS.",
+            "answer": false
+        },
+        {
+            "question": "3G mobilhálózatnak része az UMTS.",
+            "answer": true
+        },
+        {
+            "question": "A 3G mobilhálózatnak nem része a WCDMA.",
+            "answer": false
+        },
+        {
+            "question": "3G hálózat része a  WiMax.",
+            "answer": false
+        },
+        {
+            "question": "a 4G mobilhálózat része a WiMAX ",
+            "answer": true
+        },
+        {
+            "question": "A 4G mobilhálózat része az LTE.",
+            "answer": true
+        },
+        {
+            "question": "Az 5G mobilhálózat legfontosabb tulajdonsága a gyors válaszido és késleltetés.",
+            "answer": true
+        },
+        {
+            "question": "Az 5G mobilhálózat adatátviteli sebessége a 4G mobilhálózat adatátviteli sebességének akár tízszerese is lehet.",
+            "answer": true
+        },
+        {
+            "question": "Az 5G mobilhálózat különbözo specifikus frekvenciasávokban azonos feladatokat lát el.",
+            "answer": false
+        },
+        {
+            "question": "Az adatkapcsolati réteg egyik feladata a forgalomszabályozás.",
+            "answer": true
+        },
+        {
+            "question": "Az adatkapcsolati rétegben nincs forgalomszabályzás.",
+            "answer": false
+        },
+        {
+            "question": "Az adatkapcsolati réteg nem végez forgalomszabályozást.",
+            "answer": false
+        },
+        {
+            "question": "Az adatkapcsolati réteg a szegmenseket továbbítja.",
+            "answer": false
+        },
+        {
+            "question": "A gyakorlati modellben az adatkapcsolati réteg a fizikai réteg alatt található.",
+            "answer": false
+        },
+        {
+            "question": "A gyakorlati modellben az adatkapcsolati réteg a hálózati réteg alatt található.",
+            "answer": true
+        },
+        {
+            "question": "A gyakorlati modellben az adatkapcsolati réteg a hálózati réteg felett található.",
+            "answer": false
+        },
+        {
+            "question": "Az adatkapcsolati rétegben csomagok továbbítódnak.",
+            "answer": false
+        },
+        {
+            "question": "Az adatkapcsolati rétegnek nem a keretezés a fo feladata.",
+            "answer": false
+        },
+        {
+            "question": "A hálózati réteg alapveto feladata az útvonalválasztás.",
+            "answer": true
+        },
+        {
+            "question": "A hálózati rétegben csomagok továbbítódnak.",
+            "answer": true
+        },
+        {
+            "question": "A hálózati rétegben keretek továbbítódnak.",
+            "answer": false
+        },
+        {
+            "question": "A szállítási rétegben szegmensek továbbítódnak.",
+            "answer": true
+        },
+        {
+            "question": "A szállítási réteg csomagokat továbbít.",
+            "answer": false
+        },
+        {
+            "question": "A szálítási rétegben keretek továbbítódnak.",
+            "answer": false
+        },
+        {
+            "question": "A szállítási réteg a feladatát az alatta lévo rétegek kialakításától függoen végzi.",
+            "answer": true
+        },
+        {
+            "question": "A gyakorlati modellben a szállítási réteg a hálózati réteg alatt van.",
+            "answer": false
+        },
+        {
+            "question": "A viszonyréteg az OSI modellben található.",
+            "answer": true
+        },
+        {
+            "question": "A megjelenítési réteg az OSI modellben található.",
+            "answer": true
+        },
+        {
+            "question": "A kapcsolati réteg az TCP/IP modellben található.",
+            "answer": true
+        },
+        {
+            "question": "Az kapcsolat réteg az OSI modellben található.",
+            "answer": false
+        },
+        {
+            "question": "Az internet réteg az OSI modellben található.",
+            "answer": false
+        },
+        {
+            "question": "A megjelenítési réteg a(z) TCP/IP modellben található.",
+            "answer": false
+        },
+        {
+            "question": "Összeköttetés nélküli rendszerre példa a postai levélszolgáltatás.",
+            "answer": true
+        },
+        {
+            "question": "Összeköttetés alapú rendszerekben minimum hat szolgáltatási primitív kell.",
+            "answer": true
+        },
+        {
+            "question": "Összeköttetés nélküli rendszerekben minimum hat szolgáltatás primitív kell.",
+            "answer": false
+        },
+        {
+            "question": "A csatorna használata az összeköttetés nélküli rendszerekre jellemzo.",
+            "answer": true
+        },
+        {
+            "question": "Nyugtázott datagram az összeköttetés nélküli rendszerre jellemzo.",
+            "answer": true
+        },
+        {
+            "question": "A datagram használata az összeköttetés alapú rendszerekre jellemzo.",
+            "answer": false
+        },
+        {
+            "question": "Datagram alapú összeköttetés esetében bonyolult a szolgáltatás muködésének biztosítása.",
+            "answer": true
+        },
+        {
+            "question": "Datagramm alapú összeköttetés esetében bonyolult a szolgáltatás minoségének a biztosítása.",
+            "answer": true
+        },
+        {
+            "question": "Az NRZ-I kódolás alapja az NRZ-L jel.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-I kódolás alapja az NRZ-M jel.",
+            "answer": true
+        },
+        {
+            "question": "Az NRZ-I kódolást az USB szabvány használja.",
+            "answer": true
+        },
+        {
+            "question": "Az NRZ-L értéke csak 1-rol 0-ra történo jelváltás után változik meg.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-L értéke minden jelváltás után megváltozik.",
+            "answer": true
+        },
+        {
+            "question": "Az NRZ-M értéke csak 1-rol 0-ra történo jelváltás után változik meg.",
+            "answer": false
+        },
+        {
+            "question": "Az Ethernet hálózat NRZ-L kódolást használ.",
+            "answer": true
+        },
+        {
+            "question": "Az Ethernet hálózat NRZ-S kódolást használ.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-M értéke minden jelváltás után megváltozik.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-M kódolást az USB szabvány használja.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-S kódolást az USB szabvány használja.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-S értéke minden jelváltás után megváltozik.",
+            "answer": false
+        },
+        {
+            "question": "Az NRZ-S értéke csak 1-rol 0-ra történo jelváltás után változik meg.",
+            "answer": false
+        },
+        {
+            "question": "Az NR2-S kódolást a USB szabvány használja.",
+            "answer": false
+        },
+        {
+            "question": "A CAT5e szabvány maximális sebessége 4 érpáron 100 Mb/s..H",
+            "answer": false
+        },
+        {
+            "question": "A CAT5e szabvány maximális sebessége 4 érpáron 1000Mb/s.",
+            "answer": true
+        },
+        {
+            "question": "A CAT5e szabvány maximális sebessége 2 érpáron 100 Mb/s.",
+            "answer": true
+        },
+        {
+            "question": "A CAT5e szabvány maximális sávszélessége 100 MHz.",
+            "answer": true
+        },
+        {
+            "question": "A CAT6 szabvány maximális sávszélessége 100 méteren 250MHz.",
+            "answer": true
+        },
+        {
+            "question": "A CAT6 szabvány maximális sávszélessége 100 méteren 500Mhz.",
+            "answer": false
+        },
+        {
+            "question": "A Cat6 szabvány maximális sebessége 100m-en 1Gbit.",
+            "answer": true
+        },
+        {
+            "question": "A CAT6 szabvány maximális sebessége 100 méteren 10 Gb/s.",
+            "answer": false
+        },
+        {
+            "question": "A CAT6A szabvány maximális sávszélessége 100 méteren 500MHz.",
+            "answer": true
+        },
+        {
+            "question": "A CAT6A szabvány maximális sebessége 100 méteren 1Gb/s.",
+            "answer": false
+        },
+        {
+            "question": "A CAT7 szabvány maximális sebessége 100 méteren 1Gb/s.",
+            "answer": false
+        },
+        {
+            "question": "A CAT7 szabvány maximális sávszélessége 100 méteren 750 MHz.",
+            "answer": false
+        },
+        {
+            "question": "A MIMO védettsége gyenge a visszaverodésekkel szemben.",
+            "answer": false
+        },
+        {
+            "question": "A MIMO párhuzamos csatornákkal növeli a sebességet.",
+            "answer": true
+        },
+        {
+            "question": "A MIMO tulajdonéppen az SDMA egyfajta kiterjesztése.",
+            "answer": true
+        },
+        {
+            "question": "Az 1-perzisztens CSMA nem vizsgálja a csatorna foglaltságát.",
+            "answer": false
+        },
+        {
+            "question": "A p-perzisztens CSMA szabad csatorna esetén azonnal adni kezd.",
+            "answer": false
+        },
+        {
+            "question": "A nem perzisztens CSMA szabad csatorna esetén azonnal adni kezd.",
+            "answer": true
+        },
+        {
+            "question": "A CSMA/CA protokoll ütközés esetén azonnal ismétli az átadást.",
+            "answer": false
+        },
+        {
+            "question": "Vivojel érzékelés nélkül nem döntheto el, hogy egy csatorna foglalt-e.",
+            "answer": true
+        },
+        {
+            "question": "A QSS és a WPS kényelmi funkciókat szolgál.",
+            "answer": true
+        },
+        {
+            "question": "A QSS és a WPS növeli a rendszer védettségét.",
+            "answer": false
+        },
+        {
+            "question": "A 256-QAM egyetlen jelváltozással 16 bitet kódol.",
+            "answer": false
+        },
+        {
+            "question": "A 256-QAM egyetlen jelváltozással 8 bitet kódol.",
+            "answer": true
+        },
+        {
+            "question": "RNC jelentése \"Radio Network Controller\".",
+            "answer": true
+        },
+        {
+            "question": "A leghosszabb rádióhullámok képesek követni a föld görbületét.",
+            "answer": true
+        },
+        {
+            "question": "A rövidhullám visszaverodik az ionoszféráról.",
+            "answer": true
+        },
+        {
+            "question": "A rövidhullámok képesek követni a föld görbületét.",
+            "answer": false
+        },
+        {
+            "question": "A mikrohullám visszaverodik az ionoszféráról.",
+            "answer": false
+        },
+        {
+            "question": "A mikrohullámok jól irányíthatóak.",
+            "answer": true
+        },
+        {
+            "question": "Minél kisebb a hullámhossz, annál jobb a tárgyakon való áthaladás.",
+            "answer": false
+        },
+        {
+            "question": "A WEP titkosítás b/g/n szabványoknak egyaránt része.",
+            "answer": false
+        },
+        {
+            "question": "A WEP az \"n\" szabványnak már nem része.",
+            "answer": true
+        },
+        {
+            "question": "A WEP-es védelemre a kéretlen látogatók veszélyt jelentenek.",
+            "answer": true
+        },
+        {
+            "question": "A WEP-es védelemre a kéretlen látogatók valós veszélyt jelentenek.",
+            "answer": true
+        },
+        {
+            "question": "Az AES a WEP2 védelem algoritmusa.",
+            "answer": false
+        },
+        {
+            "question": "Az AES a WPA2 védelem algoritmusa.",
+            "answer": true
+        },
+        {
+            "question": "Az AES a WPA védelem algoritmusa.",
+            "answer": false
+        },
+        {
+            "question": "A TKIP a WPA védelem algoritmusa.",
+            "answer": true
+        },
+        {
+            "question": "A DSSS 11db csatornája részben sem fedi át egymást.",
+            "answer": false
+        },
+        {
+            "question": "A DSSS 11db egymást részben átfedo csatornát használ.",
+            "answer": true
+        },
+        {
+            "question": "A Manchester kódot NOR muvelettel képezzük.",
+            "answer": false
+        },
+        {
+            "question": "A Manchester kódot XOR muvelettel képezzük.",
+            "answer": true
+        },
+        {
+            "question": "A klasszikus Manchester kódolás hatékonyabb mint a 8B/10B kódolás",
+            "answer": false
+        },
+        {
+            "question": "A kitöltés mezo hossza minden esetben több mint 0 bájt.H",
+            "answer": false
+        },
+        {
+            "question": "A kitöltés mezo célja a minimális kerethossz elérésének biztositása.",
+            "answer": true
+        },
+        {
+            "question": "A típus/hossz mezo típust jelöl, ha tartalma kisebb egyenlo, mint 0x0600.",
+            "answer": false
+        },
+        {
+            "question": "A típus/hossz mezo típust jelöl, ha tartalma nagyobb, mint 0x0600.",
+            "answer": true
+        },
+        {
+            "question": "A Hamming-távolságot egy NOR muvelettel számíthatjuk ki.",
+            "answer": false
+        },
+        {
+            "question": "A Hamming-távolságot egy XOR muvelettel számíthatjuk ki.",
+            "answer": true
+        },
+        {
+            "question": "Páros paritás esetén a paritásbit 1, ha a kódszóban az 1-esek száma páratlan.",
+            "answer": true
+        },
+        {
+            "question": "Páros paritás esetén a paritásbit 0, ha a kódszóban az 1 -esek száma páros.",
+            "answer": true
+        },
+        {
+            "question": "Páros paritás esetén a paritásbit 0, ha a kódszóban az 1-esek száma páratlan.",
+            "answer": false
+        },
+        {
+            "question": "Páratlan paritás esetén a paritásbit 1, ha a kódszóban az 1-esek száma páros.",
+            "answer": true
+        },
+        {
+            "question": "Páratlan paritás esetén a paritásbit 0, ha a kódszóban az 1-esek száma páratlan",
+            "answer": true
+        },
+        {
+            "question": "Az LLC alréteg felel a csatorna kiosztásáért.",
+            "answer": false
+        },
+        {
+            "question": "Az LLC alréteg felel a keretek épségéért.",
+            "answer": true
+        },
+        {
+            "question": "Az IEEE 802.3 szabványba a \"Base\" szó jelentése \"alapveto\".",
+            "answer": false
+        },
+        {
+            "question": "A 802.3 szabvány a vezeték nélküli LAN-okra vonatkozik.",
+            "answer": false
+        },
+        {
+            "question": "AZ IEEE802.11 adatkeretében a keretvezérlés 11 almezobol áll.",
+            "answer": true
+        },
+        {
+            "question": "Az IEEE802.11 szabvány a CSMA/CA protokollt használja.",
+            "answer": true
+        },
+        {
+            "question": "Az IEEE802.11 szabvány CSMA/CD protokollt használja.",
+            "answer": false
+        },
+        {
+            "question": "Az IEEE802.11 három féle keretosztállyal dolgozik.",
+            "answer": true
+        },
+        {
+            "question": "Az IEEE802.11 adatkeretében két cím szerepel.",
+            "answer": false
+        },
+        {
+            "question": "A 802.11 szabvány az Ethernet-re vonatkozik.",
+            "answer": false
+        },
+        {
+            "question": "A 10 gigabites ethernet 5 különbözo jelszintet használ.",
+            "answer": false
+        },
+        {
+            "question": "A gigabites ethernet 16 különbözo jelszintet használ.",
+            "answer": false
+        },
+        {
+            "question": "A 10 gigabites Ethernet nem használja a CSMA/CD protokollt.",
+            "answer": true
+        },
+        {
+            "question": "A 10 gigabites Ethernet használja a CSMA/CD protokollt.",
+            "answer": false
+        },
+        {
+            "question": "A 10 gigabites Ethernet a Half- és a Full-Duplex üzemmódot is támogatja.",
+            "answer": false
+        },
+        {
+            "question": "A réz alapú 10 gigabites Ethernet a 64B/66B kódolást használja.",
+            "answer": false
+        },
+        {
+            "question": "Az optikai 10 gigabites Ethernet a 64B/66B kódolást használja",
+            "answer": true
+        },
+        {
+            "question": "Az optikai kábelek a 64B/66B kódolást használják.",
+            "answer": true
+        },
+        {
+            "question": "Jellemzoen kis távolságok áthidalására használnak optikai kábeleket.",
+            "answer": false
+        },
+        {
+            "question": "Az ethernet fejléc 2 bájttal hosszabb, mint a VLAN fejléc.",
+            "answer": false
+        },
+        {
+            "question": "Virtuális LAN (Virtual LAN - VLAN) IEEE kódja a 802.10.",
+            "answer": true
+        },
+        {
+            "question": "Virtuális áramkör alapú összeköttetés esetében egyszeru a torlódáskezelés.",
+            "answer": true
+        },
+        {
+            "question": "Az LSOH/LSZH a kábel mechanikai terhelésének jelzése.",
+            "answer": false
+        },
+        {
+            "question": "Az LSOH/LSZH a kábel mechanikai tesztelésének jelzése.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv4-ben a broadcast cím mindig 0-ra végzodik.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv4-ben a broadcast cím mindig 1-re végzodik.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv4-ben egy hálózat címe mindig 0-ra végzodik.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv4 datagram maximális mérete 65535 bájt.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv4 datagramm maximális mérete kevesebb, mint 65535 bájt.",
+            "answer": false
+        },
+        {
+            "question": "A CIDR az IPv4 merev szabályait oldja fel.",
+            "answer": true
+        },
+        {
+            "question": "A CIDR az IPv4-ben rugalmas hoszt kiosztást tesz lehetové.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv4 hálózati maszkban a 0-ás értéket semmiképpen sem követhet 1-es érték.",
+            "answer": true
+        },
+        {
+            "question": "A CIDR és a NAT is hozzájárult az IPv4 címek elfogyásának késleltetéséhez",
+            "answer": true
+        },
+        {
+            "question": "A CIDR és a NAT is hozzájárult az IPv6 gyorsabb bevezetéséhez.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv4 \"A\" osztály kevesebb hosztot tartalmaz mint a \"C\" osztály.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv4 fejrész tartalmaz ellenorzo összeget.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv4 fejrész maximális fix hossza 20 bájt.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv4 fejrész minimális fix hossza 20 bájt.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv4 fejrész teljes hossz mezoje 16 bites.",
+            "answer": true
+        },
+        {
+            "question": "Az IPv6 fejrészben az ugráskorlát értéke csak ugrásonként csökken 1-el.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv6 fejrész több mezot tartalmaz mint az IPv4 fejrész.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv6 adatmezo maximális mérete 65535 bájt",
+            "answer": true
+        },
+        {
+            "question": "AZ IPv6 fejrész maximális hossza kétszerese az IPv4 fejrész minimális hosszának.",
+            "answer": true
+        },
+        {
+            "question": "AZ IPv6 fejrész maximális hossza kétszerese az IPv4 fejrész maximális hosszának.",
+            "answer": false
+        },
+        {
+            "question": "Az IPv6 címzési rendszere tartalmazza az IPv4-ben megismert osztályokat.",
+            "answer": false
+        },
+        {
+            "question": "Az NDP az Ipv6 protokoll része.",
+            "answer": true
+        },
+        {
+            "question": "Az ARP az IPv6 protokoll része.",
+            "answer": false
+        },
+        {
+            "question": "A karakterszámlálás egy sérülésvédett keretezési megoldás.",
+            "answer": false
+        },
+        {
+            "question": "A keret elotag 7 bájt hosszú.",
+            "answer": false
+        },
+        {
+            "question": "A keret elotag 8 bájt hosszú.",
+            "answer": true
+        },
+        {
+            "question": "A keret elotag fo funkciója az idoszinkronizáció.",
+            "answer": true
+        },
+        {
+            "question": "A keret réteg fo funkciója az idoszinkronizáció.",
+            "answer": true
+        },
+        {
+            "question": "Vezérjeles gyuru esetén minden hoszt azonos prioritású.",
+            "answer": false
+        },
+        {
+            "question": "A vezérjeles gyuru esetén a hosztok csak a következo hosztig juttatják el a keretet.",
+            "answer": true
+        },
+        {
+            "question": "A vezérjeles gyuru ütközésmentes.",
+            "answer": true
+        },
+        {
+            "question": "A vezérjeles gyuru nem ütközésmentes.",
+            "answer": false
+        },
+        {
+            "question": "Vezérjeles gyuru esetén az elküldött keret több kört is megtehet.",
+            "answer": false
+        },
+        {
+            "question": "Vezérjeles algoritmus esetén nem léphet fel túlcsordulás, adatvesztés.",
+            "answer": true
+        },
+        {
+            "question": "A vezérjeles vödör algoritmus esetén az adatok csak azonos sebességgel távozhatnak.",
+            "answer": false
+        },
+        {
+            "question": "Lyukas vödör algoritmus esetén nem léphet fel túlcsordulás, adatvesztés.",
+            "answer": false
+        },
+        {
+            "question": "Az LDPC kódolás matematikailag polinomokra épül.",
+            "answer": false
+        },
+        {
+            "question": "Az LDPC kódolás esetén a kódolt üzenet hosszabb az eredeti üzenetnél.",
+            "answer": true
+        },
+        {
+            "question": "Az LDPC kódolásnak nem jelentos a szoftveres eroforrásigénye",
+            "answer": false
+        },
+        {
+            "question": "Az LDPC kódolásnak jelentos a szoftveres eroforrás igénye.",
+            "answer": true
+        },
+        {
+            "question": "LDPC kódolás használatos például a DVB-T2 muholdas rendszerben.",
+            "answer": true
+        },
+        {
+            "question": "LDPC kódolás használatos például a DVB-12  muholdas rendszerben.",
+            "answer": true
+        },
+        {
+            "question": "A Reed-Solomon kódolás matematikailag polinomokra épül.",
+            "answer": true
+        },
+        {
+            "question": "A 8B/10B kódolás 8 bitenként legalább 3 szintváltást tartalmaz.",
+            "answer": false
+        },
+        {
+            "question": "ALOHA rendszerek esetén a nyugtázó csatornákban is lehet ütközés.",
+            "answer": false
+        },
+        {
+            "question": "ALOHA rendszerek esetén a nyugtázó csatornában nem fordulhat elo ütközés.",
+            "answer": true
+        },
+        {
+            "question": "Az ALOHA használ nyugtázást.",
+            "answer": true
+        },
+        {
+            "question": "A LOHA rendszerek esetén a nyugtázó csatornákban is lehet ütközés.",
+            "answer": false
+        },
+        {
+            "question": "A szolgáltatás muveletek halmaza, amelyek a \"mit\" kérdéssel kapcsolatosak. ",
+            "answer": true
+        },
+        {
+            "question": "A forgalomszabályozás 2 hoszt között értelmezheto fogalom.",
+            "answer": true
+        },
+        {
+            "question": "A forgalomszabályzás a hálózat egészére értelmezheto fogalom.",
+            "answer": false
+        },
+        {
+            "question": "Az RP illetve az RR a kábel égésekor felszabaduló gázokra utal.",
+            "answer": false
+        },
+        {
+            "question": "A RP illetve az RR a kábel rágcsálók elleni védelmét jelenti.",
+            "answer": true
+        },
+        {
+            "question": "A Nyquist tétel az ideális átviteli csatornával kapcsolatos.",
+            "answer": true
+        },
+        {
+            "question": "A Nyquist tétel a zajos átviteli csatornával kapcsolatos.",
+            "answer": false
+        },
+        {
+            "question": "AZ IT-ban használt IEC mértékegység alapja a tízes számrendszer.",
+            "answer": false
+        },
+        {
+            "question": "AZ IT-ban használt IEC mértékegység alapja a kettes számrendszer.",
+            "answer": true
+        },
+        {
+            "question": "MODEM: a kifejezés a \"modulátor\" és \"demodulátor\" szavakból származik, és olyan berendezést jelent, ami egy vivohullám modulációjával az analóg jelet digitálissá alakítja.",
+            "answer": false
+        },
+        {
+            "question": "A modem célja, hogy az analóg adatot digitális módon átvihetové tegye.",
+            "answer": false
+        },
+        {
+            "question": "A modem célja, hogy a digitális adatot analóg módon átvihetové tegye.",
+            "answer": true
+        },
+        {
+            "question": "A QoS-t hat paraméterrel határozzuk meg.",
+            "answer": false
+        },
+        {
+            "question": "A Shannon tétel az ideális átviteli csatornával kapcsolatos.",
+            "answer": false
+        },
+        {
+            "question": "A Shannon tétel a zajos átviteli csatornával kapcsolatos.",
+            "answer": true
+        },
+        {
+            "question": "Vezetékes átvitel esetén célszeru a hibajavítás.",
+            "answer": false
+        },
+        {
+            "question": "Vezetékes átvitel esetén célszeru a hibadetektálás és az adatismétlés.",
+            "answer": true
+        },
+        {
+            "question": "A DNS idoben sokkal az URL után jelent meg. ",
+            "answer": false
+        },
+        {
+            "question": "A DNS idoben sokkal az URL elott jelent meg.",
+            "answer": true
+        },
+        {
+            "question": "A DNS névhierarchia tetején a gyökérnévszerverek darabszáma folyamatosan növekszik.",
+            "answer": false
+        },
+        {
+            "question": "Rekurzív kérés esetén a DNS szerver teljes mértékben megválaszolja a kérést vagy hibajelzsét ad.",
+            "answer": true
+        },
+        {
+            "question": "Az URL tulajdonképpen a DNS szolgáltatásait teszi a felhasználó számára még produktívabbá.",
+            "answer": true
+        },
+        {
+            "question": "A \"T-568A\" és \"T-568B\" bekötése 50%-ba megegyezik.",
+            "answer": true
+        },
+        {
+            "question": "A \"T-568A\" és \"T-568B\" bekötése több mint 50%-ban eltéro.",
+            "answer": false
+        },
+        {
+            "question": "A Layer 2 Switch képes az egyes VLAN-ok közötti forgalomirányításra.",
+            "answer": false
+        },
+        {
+            "question": "A Layer 2 switch nem képes az egyes VLAN-ok közötti forgalomirányításra. ",
+            "answer": true
+        },
+        {
+            "question": "Egy Switch-ekkel összekapcsolt hálózatban nem fordulhat elo ütközés.",
+            "answer": true
+        },
+        {
+            "question": "Egy Switch-ekkel összekapcsolt hálózatban nem fordulhat elo keret ütközés",
+            "answer": true
+        },
+        {
+            "question": "A switch IP címek segítségével dolgozik.",
+            "answer": false
+        },
+        {
+            "question": "A Switch MAC címek segítségével dolgozik",
+            "answer": true
+        },
+        {
+            "question": "A switcheknek nem kell ismerni a hálózati réteg protokollját a routernek viszont ismernie kell azt.",
+            "answer": true
+        },
+        {
+            "question": "A Switch összeállítja a csomagot a keretekbol és a csomagban lévo IP címet használja a cél hoszt meghatározásásra.",
+            "answer": false
+        },
+        {
+            "question": "A MAC címek nem tartalmaznak lokalizációs információkat.",
+            "answer": true
+        },
+        {
+            "question": "A MAC alréteg felel a keretek épségéért.",
+            "answer": false
+        },
+        {
+            "question": "A Bridge MAC címek segítségével dolgozik.",
+            "answer": true
+        },
+        {
+            "question": "A Bridge IP címek segítségével dolgozik.",
+            "answer": false
+        },
+        {
+            "question": "Egy geoszinkron muholddal fix parabolaantennával kommunikálhatunk.",
+            "answer": false
+        },
+        {
+            "question": "Egy geostacionárius muholdddal fix parabolaantennával kommunikálhatunk.",
+            "answer": true
+        },
+        {
+            "question": "A TCP fejrészben kötelezo az ellenorzo összeg használata.",
+            "answer": true
+        },
+        {
+            "question": "A TCP összeköttetés-alapú protokoll.",
+            "answer": true
+        },
+        {
+            "question": "TCP protokoll az operációs rendszer része",
+            "answer": true
+        },
+        {
+            "question": "A NEXT közelvégi áthallást jelent.",
+            "answer": true
+        },
+        {
+            "question": "A NEXT távolvégi áthallást jelent.",
+            "answer": false
+        },
+        {
+            "question": "A PSNEXT a közelvégi áthallás összesített értékét jelenti.",
+            "answer": true
+        },
+        {
+            "question": "A PSNEXT az azonos szintu távolvégi áthallást jelenti.",
+            "answer": false
+        },
+        {
+            "question": "Az MSC és a GMSC biztosítja a mobilhálózat és az internet közötti kapcsolatot.",
+            "answer": false
+        },
+        {
+            "question": "Az MSC és a GMSC biztosítja a mobilhálózat és az internet közötti kapcsolatot.",
+            "answer": false
+        },
+        {
+            "question": "Az átlátszó darabolás esetén a csomagok egyesítése csak a cél hosztnál történik meg.",
+            "answer": false
+        },
+        {
+            "question": "Átlátszó darabolás esetén a csomagok egyesítése minden érintett hálózat elhagyásakor megtörténik.",
+            "answer": true
+        },
+        {
+            "question": "A nem átlátszó darabolás esetén a darabolás az egyes hálózatokban függetlenül történik",
+            "answer": false
+        },
+        {
+            "question": "A nem átlátszó darabolás esetén a csomagok egyesítése csak a cél hosztnál történik meg.",
+            "answer": true
+        },
+        {
+            "question": "A kapcsolatállapot alapú útválasztás a távolságvektor alapú útválasztást váltotta fel.",
+            "answer": true
+        },
+        {
+            "question": "A távolságvektor alapú útválasztás a kapcsolatállapot alapú útválasztást váltotta fel.",
+            "answer": false
+        },
+        {
+            "question": "Az SSID azonosító egy maximum 32 karakter hosszú szabad választott név",
+            "answer": true
+        },
+        {
+            "question": "Az Auto Negotation az ütközések elkerülésének egyik megoldása.",
+            "answer": false
+        },
+        {
+            "question": "Az autonegotation automatikus sebesség és duplexitás egyeztetést jelent.",
+            "answer": true
+        },
+        {
+            "question": "A karakterszámlálás nem igényel egyedi fejlécet.",
+            "answer": true
+        },
+        {
+            "question": "A torlódáskezelés a hálózat egészére értelmezheto fogalom.",
+            "answer": true
+        },
+        {
+            "question": "A Congestion jelentése: Torlódás",
+            "answer": true
+        },
+        {
+            "question": "A Congestion jelentése: Forgalomszabályozás.",
+            "answer": false
+        },
+        {
+            "question": "Az alagút átvitel olyan módon áll össze két hálózat között, hogy azok a köztük lévo hálózat(ok) hosztjait nem is érhetik el.",
+            "answer": true
+        },
+        {
+            "question": "Az adaptív forgalomirányító eljárások alkalmazkodnak a hálózati forgalomhoz és a topológiához.",
+            "answer": true
+        },
+        {
+            "question": "A CSMA/CD ütközés érzékelésekor azonnal megszakítja az adást.",
+            "answer": true
+        },
+        {
+            "question": "A CSMA/CD protokoll az adás megkezdése után is figyeli a csatornát.",
+            "answer": true
+        },
+        {
+            "question": "A CSMA vezeték nélküli összeköttetésben hatékonyabb, mint vezetékesben.",
+            "answer": false
+        },
+        {
+            "question": "A RIP egy távolságvektor alapú IGP protokoll.",
+            "answer": true
+        },
+        {
+            "question": "Az RIP fejrészében található sürgosségi mutató.",
+            "answer": false
+        },
+        {
+            "question": "a TCP fejrészében található sürgosségi mutató",
+            "answer": true
+        },
+        {
+            "question": "Az RTP fejrészében található a sürgosségi mutató.",
+            "answer": false
+        },
+        {
+            "question": "Az RTP fejrészében nem található sürgosségi mutató.",
+            "answer": true
+        },
+        {
+            "question": "Az RTP protokoll az UDP protokollra épül.",
+            "answer": true
+        },
+        {
+            "question": "Az RTP protokoll az operációs rendszer része.",
+            "answer": false
+        },
+        {
+            "question": "Az RTP protokoll nem az operációs rendszer része.",
+            "answer": true
+        },
+        {
+            "question": "A decimális alapú mértékegység rendszer jellemzoen háttértár méretre utal.",
+            "answer": true
+        },
+        {
+            "question": "A decimális alapú mértékegység rendszer jellemzoen memóriaméretre utal.",
+            "answer": false
+        },
+        {
+            "question": "A NAT címfordítás a LAN és a WAN hálózat között történik",
+            "answer": true
+        },
+        {
+            "question": "Az 1000Base-T-ben a T a sodrott érpárt jelöli.",
+            "answer": true
+        },
+        {
+            "question": "Az 1000Base-T-ben 5 különbözo jelváltást értelmezünk.",
+            "answer": true
+        },
+        {
+            "question": "Az 1000Base-T maximális átviteli sebessége 1Gbit.",
+            "answer": true
+        },
+        {
+            "question": "Az 1000Base-T maximális átviteli sebessége 100Mbit.",
+            "answer": false
+        },
+        {
+            "question": "Az STP támadása esetén az aktuális gyökér MAC címénél kisebb cím hálózatba juttatása a cél.",
+            "answer": true
+        },
+        {
+            "question": "Az FTP egy megbízható protkoll, garantálja az átvitt adatok megérkezését.",
+            "answer": true
+        },
+        {
+            "question": "Az FTP egy nem megbízható protokoll, nem garantálja az átvitt adatok megérkezését.",
+            "answer": false
+        },
+        {
+            "question": "Az OFDM a nagy sebességu jelfolyamot több kisebb sebességure bontja.",
+            "answer": true
+        },
+        {
+            "question": "A Széles sávú, vezeték nélküli hálózatok IEEE kódja: 802.16",
+            "answer": true
+        },
+        {
+            "question": "A személyi hálózatok (Bluetooth, Zigbee) IEEE kódja: 802.15",
+            "answer": true
+        }
+    ]
+}
