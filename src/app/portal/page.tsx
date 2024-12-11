@@ -57,7 +57,7 @@ export default function Home() {
         setNumber(number + 1);
         sessionStorage.setItem("number", (number + 1).toString());
         let result = sessionStorage.getItem("portal-result") ? JSON.parse(sessionStorage.getItem("portal-result") || "") : [];
-        result.push({ question: portal.data[queue[number]].question, answer: item, options: portal.data[queue[number]].options, correct: getCorrect(), type: "radio" });
+        result.push({ question: portal.data[queue[number]].question, answer: item, options: portal.data[queue[number]].options, correct: getCorrect(), type: portal.data[queue[number]].answers.length > 2 ? "checkbox" : "radio" });
         sessionStorage.setItem("portal-result", JSON.stringify(result));
 
         if (number + 1 > 29) {
@@ -71,7 +71,7 @@ export default function Home() {
     function finished(item: any) {
 
         let result = sessionStorage.getItem("portal-result") ? JSON.parse(sessionStorage.getItem("portal-result") || "") : [];
-        result.push({ question: portal.data[queue[number]].question, answer: item, options: portal.data[queue[number]].options, correct: getCorrect(), type: "radio" });
+        result.push({ question: portal.data[queue[number]].question, answer: item, options: portal.data[queue[number]].options, correct: getCorrect(), type: portal.data[queue[number]].answers.length > 2 ? "checkbox" : "radio" });
         sessionStorage.setItem("portal-result", JSON.stringify(result));
         sessionStorage.removeItem("number");
         sessionStorage.removeItem("queue");
