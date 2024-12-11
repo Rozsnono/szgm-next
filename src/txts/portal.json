@@ -1,0 +1,305 @@
+[
+    {
+        "question": "Miért van külön Web.Debug.config és Web.Release.config fájl a webalkalmazásban?",
+        "answers": [
+            "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz."
+        ],
+        "options": [
+            "Azért, mert így külön definiálhatóak beállítások éles és demo környezetekhez.",
+            "Azért, mert így külön definiálhatóak változtatható a kinézet éles és demo környezetek között.",
+            "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz.",
+            "Azért, mert így külön definiálhatóak változtatható a kinézet éles és demo környezetek között."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban adatbáziskapcsolat adatai hol tárolhatóak?",
+        "answers": [
+            "Web.config fájlban"
+        ],
+        "options": [
+            "ConfigurationSettings.cs fájlban",
+            "Web.config fájlban",
+            "Global.asax fájlban"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mit tartalmaz a Global.asax.cs fájl?",
+        "answers": [
+            "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot."
+        ],
+        "options": [
+            "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot.",
+            "Az egész alkalmazásból elérhető metódusokat.",
+            "Globális változók definíciója"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mi a különbség valami.aspx, valami.aspx.cs és valami.aspx.designer.cs fájlok tartalma között?",
+        "answers": [
+            "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza."
+        ],
+        "options": [
+            "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
+            "Az .cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.designer.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
+            "Az aspx.designer.cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx generált fájl, mely a vezérlők definícióját tartalmazza."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mit tartalmaz a Site.master fájl?",
+        "answers": [
+            "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal"
+        ],
+        "options": [
+            "Az oldal kerete, kinézete és működése, melyet az .cs fájlok töltenek meg tartalommal",
+            "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal",
+            "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot.",
+            "Az egész alkalmazásból elérhető metódusokat.",
+            "Globális változók definíciója"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban lehet-e több site.master fájl?",
+        "answers": [
+            "Igen, lehet"
+        ],
+        "options": [
+            "Igen, lehet",
+            "Nem, nem lehet."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban egy aspx fájlban a <%: %> jel található, mit jelent?",
+        "answers": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt."
+        ],
+        "options": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
+            "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés",
+            "értéke."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban egy aspx fájlban a <% %> jel található, mit jelent?",
+        "answers": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt."
+        ],
+        "options": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
+            "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban(Web forms) mit értünk a code behind fájl alatt?",
+        "answers": [
+            "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
+        ],
+        "options": [
+            "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
+            "Azt a POCO .cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
+            "Azt a .designer.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
+        ]
+    },
+    {
+        "question": "Miért van külön Web.Debug.config és Web.Release.config fájl a webalkalmazásban?",
+        "answers": [
+            "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz."
+        ],
+        "options": [
+            "Azért, mert így külön definiálhatóak beállítások éles és demo környezetekhez.",
+            "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz.",
+            "Azért, mert így külön definiálhatóak változtatható a kinézet éles és demo környezetek között."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban adatbáziskapcsolat adatai hol tárolhatóak?",
+        "answers": [
+            "Web.config fájlban"
+        ],
+        "options": [
+            "ConfigurationSettings.cs fájlban",
+            "Web.config fájlban",
+            "Global.asax fájlban"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mit tartalmaz a Global.asax.cs fájl?",
+        "answers": [
+            "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot."
+        ],
+        "options": [
+            "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot.",
+            "Az egész alkalmazásból elérhető metódusokat.",
+            "Globális változók definíciója"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mi a különbség valami.aspx, valami.aspx.cs és valami.aspx.designer.cs fájlok tartalma között?",
+        "answers": [
+            "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza."
+        ],
+        "options": [
+            "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
+            "Az .cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.designer.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
+            "Az aspx.designer.cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx generált fájl, mely a vezérlők definícióját tartalmazza."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mit tartalmaz a Site.master fájl?",
+        "answers": [
+            "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal."
+        ],
+        "options": [
+            "Az oldal kerete, kinézete és működése, melyet az .cs fájlok töltenek meg tartalommal",
+            "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal",
+            "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot.",
+            "Az egész alkalmazásból elérhető metódusokat.",
+            "Globális változók definíciója"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban lehet-e több site.master fájl?",
+        "answers": [
+            "Igen, lehet"
+        ],
+        "options": [
+            "Igen, lehet",
+            "Nem, nem lehet."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban egy aspx fájlban a <%: %> jel található, mit jelent?",
+        "answers": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt."
+        ],
+        "options": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
+            "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés",
+            "értéke."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban egy aspx fájlban a <% %> jel található, mit jelent?",
+        "answers": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt."
+        ],
+        "options": [
+            "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
+            "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban(Web forms) mit értünk a code behind fájl alatt?",
+        "answers": [
+            "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
+        ],
+        "options": [
+            "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
+            "Azt a POCO .cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
+            "Azt a .designer.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (web forms) hogyan generáltatható egy vezérlőelem default eseménykezelője?",
+        "answers": [
+            "Dupla kattintás a vezérlőelemen",
+            "Properties panel, event gomb alapján a kiválasztott eseményen dupla kattintás"
+        ],
+        "options": [
+            "Dupla kattintás a vezérlőelemen",
+            "Properties panel, event gomb alapján a kiválasztott eseményen dupla kattintás",
+            "Tools menü, events… és ott kiválasztható ’add default’"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (web forms) válassza ki,melyek a választható/használható vezérlőelemek?",
+        "answers": [
+            "Button",
+            "Textbox",
+            "DropdownList",
+            "Checkbox"
+        ],
+        "options": [
+            "Clock",
+            "Button",
+            "Textbox",
+            "DropdownList",
+            "Checkbox"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (Web forms) mit tudhatunk meg az IsPostBack tulajdonságából?",
+        "answers": [
+            "Értéke hamis, ha ez az első oldalbetöltés."
+        ],
+        "options": [
+            "Értéke hamis, ha ez az első oldalbetöltés.",
+            "Értéke hamis, ha az oldalbetöltés vezérlés hatására történt"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban DropdownList vezérlőhöz hogyan tudunk elemeket hozzáadni?",
+        "answers": [
+            "Példány.Items kollekció manipulálásával"
+        ],
+        "options": [
+            "Példány.Items kollekció manipulálásával",
+            "Példány.Selection kollekció manipulálásával",
+            "Példány.CustomElements kollekció manipulálásával"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (Web forms) egy Label típusú vezérlőelemen megjelenő szöveg melyik tulajdonsággal állítható be?",
+        "answers": [
+            "Példány.Text"
+        ],
+        "options": [
+            "Példány.Label",
+            "Példány.Caption",
+            "Példány.Text",
+            "Példány.ShowText()"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (Web forms) egy Textbox típusú vezérlőelembe user által írt szöveg melyik tulajdonsággal érhető el?",
+        "answers": [
+            "Példány.Text"
+        ],
+        "options": [
+            "Példány.Label",
+            "Példány.Caption",
+            "Példány.Text",
+            "Példány.Textbox"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (Web forms) egy Button típusú vezérlőelem eseménye melyik tulajdonsághoz kapcsolódik?",
+        "answers": [
+            "OnClick"
+        ],
+        "options": [
+            "OnClick",
+            "OnPress",
+            "OnEvent"
+        ]
+    },
+    {
+        "question": "Web alkalmazásban (Web forms) mit jelent, hogy a PostBack módszer éles üzemmódban a formon belül minden vezérlőelem elérhető marad?",
+        "answers": [
+            "Ez azt jelenti, hogy a felhasználói interakciók nem törlik a vezérlőelemek állapotát, ezek továbbra is elérhetőek."
+        ],
+        "options": [
+            "Ez azt jelenti, hogy a felhasználói interakciók nem törlik a vezérlőelemek állapotát, ezek továbbra is elérhetőek.",
+            "Ez azt jelenti, hogy a felhasználói interakciók törlik a vezérlőelemek állapotát, melyek újra inicializálásra kerülnek."
+        ]
+    },
+    {
+        "question": "Web alkalmazásban mit jelent a UserControl használata?",
+        "answers": [
+            "Olyan újrahasználható vezérlőelemek készítését jelenti, amelyeket több különböző oldalon is használhatunk."
+        ],
+        "options": [
+            "Olyan újrahasználható vezérlőelemek készítését jelenti, amelyeket több különböző oldalon is használhatunk.",
+            "Csak egy oldalra vonatkozó vezérlő, amit nem használhatunk máshol."
+        ]
+    }
+]
