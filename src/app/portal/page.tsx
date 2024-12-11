@@ -87,7 +87,7 @@ export default function Home() {
         <main className="lg:pt-0 pt-12">
             {
                 !portal.isLoading && queue.length > 0 ?
-                    <QuestionTab max={20} icon="save" question={portal.data[queue[number]].question} number={number + 1} answers={portal.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={"radio"}></QuestionTab>
+                    <QuestionTab max={20} icon="save" question={portal.data[queue[number]].question} number={number + 1} answers={portal.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={portal.data[queue[number]].answers.length > 2 ? "checkbox" : "radio"}></QuestionTab>
                     : <></>
             }
         </main>

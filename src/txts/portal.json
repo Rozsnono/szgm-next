@@ -6,7 +6,7 @@
             "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz.",
             "Azért, mert így külön definiálhatóak változtatható a kinézet éles és demo környezetek között."
         ],
-        "answers":[
+        "answers": [
             "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz."
         ]
     },
@@ -17,7 +17,7 @@
             "Web.config fájlban",
             "Global.asax fájlban"
         ],
-        "answers":[
+        "answers": [
             "Web.config fájlban"
         ]
     },
@@ -28,7 +28,7 @@
             "Az egész alkalmazásból elérhető metódusokat.",
             "Globális változók definíciója"
         ],
-        "answers":[
+        "answers": [
             "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot."
         ]
     },
@@ -39,8 +39,8 @@
             "Az .cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.designer.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
             "Az aspx.designer.cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx generált fájl, mely a vezérlők definícióját tartalmazza."
         ],
-        "answers":[
-             "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza."
+        "answers": [
+            "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza."
         ]
     },
     {
@@ -52,7 +52,7 @@
             "Az egész alkalmazásból elérhető metódusokat.",
             "Globális változók definíciója"
         ],
-        "answers":[
+        "answers": [
             "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal"
         ]
     },
@@ -62,8 +62,8 @@
             "Igen, lehet",
             "Nem, nem lehet."
         ],
-        "answers":[
-         "Igen, lehet"   
+        "answers": [
+            "Igen, lehet"
         ]
     },
     {
@@ -72,7 +72,7 @@
             "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
             "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke"
         ],
-        "answers":[
+        "answers": [
             "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke"
         ]
     },
@@ -82,7 +82,7 @@
             "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
             "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke."
         ],
-        "answers":[
+        "answers": [
             "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt."
         ]
     },
@@ -93,18 +93,18 @@
             "Azt a POCO .cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
             "Azt a .designer.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
         ],
-        "answers":[
+        "answers": [
             "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (web forms) hogyan generáltatható egy vezérlőelem default eseménykezelője?",
         "options": [
-            "Dupla kattintás a vezérlőelemen +",
+            "Dupla kattintás a vezérlőelemen",
             "Properties panel, event gomb alapján a kiválasztott eseményen dupla kattintás",
             "Tools menü, events… és ott kiválasztható ’add default’"
         ],
-        "answers":[
+        "answers": [
             "Properties panel, event gomb alapján a kiválasztott eseményen dupla kattintás"
         ]
     },
@@ -117,11 +117,11 @@
             "DropdownList",
             "Checkbox"
         ],
-        "answers":[
+        "answers": [
             "Button",
             "Textbox",
             "DropdownList",
-            "Checkbox" 
+            "Checkbox"
         ]
     },
     {
@@ -130,7 +130,7 @@
             "Értéke hamis, ha ez az első oldalbetöltés.",
             "Értéke hamis, ha az oldalbetöltés vezérlés hatására történt"
         ],
-        "answers":[
+        "answers": [
             "Értéke hamis, ha ez az első oldalbetöltés."
         ]
     },
@@ -141,7 +141,7 @@
             "Példány.Selection kollekció manipulálásával",
             "Példány.CustomElements kollekció manipulálásával"
         ],
-        "answers":[
+        "answers": [
             "Példány.Items kollekció manipulálásával"
         ]
     },
@@ -153,7 +153,7 @@
             "Példány.Text",
             "Példány.ShowText()"
         ],
-        "answers":[
+        "answers": [
             "Példány.Text"
         ]
     },
@@ -165,7 +165,7 @@
             "Példány.Text",
             "Példány.ShowText()"
         ],
-        "answers":[
+        "answers": [
             "Példány.Text"
         ]
     },
@@ -177,7 +177,7 @@
             "Visible tulajdonság false értékre állításával",
             "Opacity tulajdonság 0 értékre állításával"
         ],
-        "answers":[
+        "answers": [
             "Enabled tulajdonság false értékre állításával"
         ]
     },
@@ -188,7 +188,7 @@
             "Text tulajdonságba sortöréssel ellátott szöveget helyezünk, EnableMultiLine tulajdonságot true értékre állítva",
             "Text tulajdonságba sortöréssel ellátott szöveget helyezünk, TextMode tulajdonságot MultiLine értékre állítva"
         ],
-        "answers":[
+        "answers": [
             "Text tulajdonságba sortöréssel ellátott szöveget helyezünk, TextMode tulajdonságot MultiLine értékre állítva"
         ]
     },
@@ -199,7 +199,7 @@
             "Controller osztályok publikus metódusaihoz.",
             "Manager osztályok publikus metódusaihoz."
         ],
-        "answers":[
+        "answers": [
             "Controller osztályok publikus metódusaihoz."
         ]
     },
@@ -210,7 +210,7 @@
             "Routing szabályokkal kell megadni.",
             "A Contextben kell megadni."
         ],
-        "answers":[
+        "answers": [
             "Routing szabályokkal kell megadni."
         ]
     },
@@ -221,7 +221,7 @@
             "Azon osztályok ezek, melyek az adatbázisban kerülnek perzisztálásra.",
             "Egy View alapját szolgáltató osztály, mely tipikusan nem tartalmaz számított mezőket és lekérdezett értékeket."
         ],
-        "answers":[
+        "answers": [
             "Egy View alapját szolgáltató osztály, mely tipikusan tartalmaz számított mezőket és lekérdezett értékeket."
         ]
     },
@@ -231,7 +231,7 @@
             "Model-View-Controller",
             "Model-ViewModel-Control"
         ],
-        "answers":[
+        "answers": [
             "Model-View-Controller"
         ]
     },
@@ -242,7 +242,7 @@
             "A megadott URL egy Controller metódusra mutat, mely View-t adhat vissza.",
             "ViewModel generálódik és jeleníti meg a browser."
         ],
-        "answers":[
+        "answers": [
             "A megadott URL egy Controller metódusra mutat, mely View-t adhat vissza."
         ]
     },
@@ -253,7 +253,7 @@
             "Az oldal minden elkészítése során",
             "Az oldal minden elkészítése során, ami nem IsPostBack"
         ],
-        "answers":[
+        "answers": [
             "Az oldal minden elkészítése során"
         ]
     },
@@ -264,7 +264,7 @@
             "Javascript fájlok",
             ".cs fájlok"
         ],
-        "answers":[
+        "answers": [
             "Javascript fájlok"
         ]
     },
@@ -275,7 +275,7 @@
             "Aspx fájlok",
             "Ascx fájlok"
         ],
-        "answers":[
+        "answers": [
             "CSS fájlok"
         ]
     },
@@ -286,7 +286,7 @@
             "Helyi adatbázis fájlok",
             "Konfigurációs fájlo"
         ],
-        "answers":[
+        "answers": [
             "Helyi adatbázis fájlok"
         ]
     },
@@ -297,7 +297,7 @@
             "Azon osztályok ezek, melyek az adatbázisban kerülnek perzisztálásra.",
             "Egy View alapját szolgáltató osztály, mely tipikusan nem tartalmaz számított mezőket és lekérdezett értékeket."
         ],
-        "answers":[
+        "answers": [
             "Egy View alapját szolgáltató osztály, mely tipikusan tartalmaz számított mezőket és lekérdezett értékeket."
         ]
     },
@@ -308,7 +308,7 @@
             "Minden ide tartozik, mely megmondja, hogy hol és milyen adatok érhetőek el.",
             "Minden ide tartozik, amely a tárolt adatokat írja le (tulajdonságok, kapcsolatok)"
         ],
-        "answers":[
+        "answers": [
             "Minden ide tartozik, mely megmondja, hogy hol és milyen adatok érhetőek el."
         ]
     },
@@ -319,7 +319,7 @@
             "Mert így nem kell újra felvinni teszt adatokat fejlesztés közben, amikor intenzíven változik a db séma.",
             "Mert így minden változás a sémában automatikusan rögzítve lesz."
         ],
-        "answers":[
+        "answers": [
             "Mert így nem kell újra felvinni teszt adatokat fejlesztés közben, amikor intenzíven változik a db séma."
         ]
     },
@@ -330,7 +330,7 @@
             "Minen öröklődési hierarchiához egy tábla készül az ős nevével, mely minden leszármazott tulajdonságot és Discriminatort tartalmaz.",
             "Minden keletkezett táblában benne lesz az összes tulajdonság, ami csak felmerül a Context-ben, így gyorsul a hozzáférés."
         ],
-        "answers":[
+        "answers": [
             "Minen öröklődési hierarchiához egy tábla készül az ős nevével, mely minden leszármazott tulajdonságot és Discriminatort tartalmaz."
         ]
     },
@@ -341,7 +341,7 @@
             "Timestamp/RowVerison használata",
             "Where feltételben az összes tulajdonság megjelenítése"
         ],
-        "answers":[
+        "answers": [
             "Where feltételben az összes tulajdonság megjelenítése"
         ]
     },
@@ -352,7 +352,7 @@
             "Ez tipikusan a kezdőoldal.",
             "Ez adhatja a keretet, melyben a tartalom megjelenhet."
         ],
-        "answers":[
+        "answers": [
             "Ez adhatja a keretet, melyben a tartalom megjelenhet."
         ]
     },
@@ -363,7 +363,7 @@
             "Olyan objektum, melynek nincsenek előre definiált tulajdonságai, kétirányban bármi bele tehető.",
             "View-kat lehet controllerekhez küldeni vele."
         ],
-        "answers":[
+        "answers": [
             "Egy View kollekciót lehet segítsségével megjeleníteni, akár egyszerre több controllerből is."
         ]
     },
@@ -374,7 +374,7 @@
             "Model folder POCO osztályaiból.",
             "Controller metódusok ActionResult visszatérésű elemeiből."
         ],
-        "answers":[
+        "answers": [
             "Model folder POCO osztályaiból."
         ]
     },
@@ -385,7 +385,7 @@
             "…IList<long> tulajdonság kell az idegen kulcs miatt.",
             "…generikus ICollection interfészt megvalósító tulajdonság kell."
         ],
-        "answers":[
+        "answers": [
             "…generikus ICollection interfészt megvalósító tulajdonság kell."
         ]
     },
@@ -396,7 +396,7 @@
             "…virtual property kell, olyan típussal, ami a másik elem típusa.",
             "…publikus property get részében kell lekérdezni ID alapján és visszaadni."
         ],
-        "answers":[
+        "answers": [
             "…publikus property get részében kell lekérdezni ID alapján és visszaadni."
         ]
     },
@@ -407,7 +407,7 @@
             "Web.config fájl ConnectionStrings részében kell megadni",
             "A model osztályok atributumai határozzák meg."
         ],
-        "answers":[
+        "answers": [
             "A model osztályok atributumai határozzák meg."
         ]
     },
@@ -418,8 +418,8 @@
             "Az Application_Start() metódus való erre.",
             "Initializer osztály kell / Seed metódus override."
         ],
-        "answers":[
-            "Initializer osztály kell / Initialize() metódus felülbírálatával."
+        "answers": [
+            "Initializer osztály kell / Seed metódus override."
         ]
     },
     {
@@ -429,7 +429,7 @@
             "Controller osztályok publikus metódusaihoz.",
             "Manager osztályok publikus metódusaihoz."
         ],
-        "answers":[
+        "answers": [
             "Controller osztályok publikus metódusaihoz."
         ]
     },
@@ -440,7 +440,7 @@
             "Routing szabályokkal kell megadni.",
             "A Contextben kell megadni."
         ],
-        "answers":[
+        "answers": [
             "Routing szabályokkal kell megadni."
         ]
     },
@@ -451,7 +451,7 @@
             "QueryString segítségével",
             "ViewModel postolásával"
         ],
-        "answers":[
+        "answers": [
             "FormCollection segítségével"
         ]
     },
@@ -462,7 +462,7 @@
             "Mert Query Object pattern megvalósítás miatt, csak a lekérdezést tárolja, késői kiértékelés lehetséges.",
             "Mert így azonnal rendelkezsére áll az egész halmaz, igaz több adat kerülhet átvitelre"
         ],
-        "answers":[
+        "answers": [
             "Mert Query Object pattern megvalósítás miatt, csak a lekérdezést tárolja, késői kiértékelés lehetséges."
         ]
     }
