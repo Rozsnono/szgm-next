@@ -1,468 +1,447 @@
 [
     {
         "question": "Kérdés: Miért van külön Web.Debug.config és Web.Release.config fájl a webalkalmazásban?",
-        "options": [
+        "answers": [
             "Azért, mert így külön definiálhatóak beállítások éles és demo környezetekhez.",
             "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz.",
             "Azért, mert így külön definiálhatóak változtatható a kinézet éles és demo környezetek között."
         ],
-        "answers": [
+        "good":[
             "Azért, mert így külön definiálhatóak beállítások a Solution Configuration alatt választható build típusokhoz."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban adatbáziskapcsolat adatai hol tárolhatóak?",
-        "options": [
+        "answers": [
             "ConfigurationSettings.cs fájlban",
             "Web.config fájlban",
             "Global.asax fájlban"
         ],
-        "answers": [
+        "good":[
             "Web.config fájlban"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban mit tartalmaz a Global.asax.cs fájl?",
-        "options": [
+        "answers": [
             "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot.",
             "Az egész alkalmazásból elérhető metódusokat.",
             "Globális változók definíciója"
         ],
-        "answers": [
+        "good":[
             "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban mi a különbség valami.aspx, valami.aspx.cs és valami.aspx.designer.cs fájlok tartalma között?",
-        "options": [
+        "answers": [
             "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
             "Az .cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.designer.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.cs generált fájl, mely a vezérlők definícióját tartalmazza.",
             "Az aspx.designer.cs tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx generált fájl, mely a vezérlők definícióját tartalmazza."
         ],
-        "answers": [
-            "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza."
+        "good":[
+             "Az aspx tartalmazza a vezérlőelemek elhelyezkedését, típusát és alapvelő működését, az aspx.cs a hozzá tartozó code behind fájl (főként vezérlőelemek kezelésére vonatkozó kóddal), míg az aspx.designer.cs generált fájl, mely a vezérlők definícióját tartalmazza."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban mit tartalmaz a Site.master fájl?",
-        "options": [
+        "answers": [
             "Az oldal kerete, kinézete és működése, melyet az .cs fájlok töltenek meg tartalommal",
             "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal",
             "Az egész alkalmazás működését érintő események bekövetkezésekor végrehajtandó kódot.",
             "Az egész alkalmazásból elérhető metódusokat.",
             "Globális változók definíciója"
         ],
-        "answers": [
+        "good":[
             "Az oldal kerete, kinézete és működése, melyet az .aspx fájlok töltenek meg tartalommal"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban lehet-e több site.master fájl?",
-        "options": [
+        "answers": [
             "Igen, lehet",
             "Nem, nem lehet."
         ],
-        "answers": [
-            "Igen, lehet"
+        "good":[
+         "Igen, lehet"   
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban egy aspx fájlban a <%: %> jel található, mit jelent?",
-        "options": [
+        "answers": [
             "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
             "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke"
         ],
-        "answers": [
+        "good":[
             "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban egy aspx fájlban a <% %> jel található, mit jelent?",
-        "options": [
+        "answers": [
             "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt.",
             "A végleges, browsernek küldött html tartalomban jelenjen meg a jelek között található kifejezés értéke."
         ],
-        "answers": [
+        "good":[
             "A végleges, browsernek küldött html tartalom előállítása során csharp nyelven kell értelmezni a jelek közötti részt."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban(Web forms) mit értünk a code behind fájl alatt?",
-        "options": [
+        "answers": [
             "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
             "Azt a POCO .cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit.",
             "Azt a .designer.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
         ],
-        "answers": [
+        "good":[
             "Azt a .aspx.cs fájlt, mely az aspx fájllal összhangban tartalmazza többek között az események kezelőit."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (web forms) hogyan generáltatható egy vezérlőelem default eseménykezelője?",
-        "options": [
+        "answers": [
             "Dupla kattintás a vezérlőelemen",
             "Properties panel, event gomb alapján a kiválasztott eseményen dupla kattintás",
             "Tools menü, events… és ott kiválasztható ’add default’"
         ],
-        "answers": [
+        "good":[
             "Properties panel, event gomb alapján a kiválasztott eseményen dupla kattintás"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (web forms) válassza ki,melyek a választható/használható vezérlő elemek?",
-        "options": [
+        "answers": [
             "Clock",
             "Button",
             "Textbox",
             "DropdownList",
             "Checkbox"
         ],
-        "answers": [
+        "good":[
             "Button",
             "Textbox",
             "DropdownList",
-            "Checkbox"
+            "Checkbox" 
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) mit tudhatunk meg az IsPostBack tulajdonsából?",
-        "options": [
+        "answers": [
             "Értéke hamis, ha ez az első oldalbetöltés.",
             "Értéke hamis, ha az oldalbetöltés vezérlés hatására történt"
         ],
-        "answers": [
+        "good":[
             "Értéke hamis, ha ez az első oldalbetöltés."
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban DropdownList vezérlőhöz hogyan tudunk elemeket hozzáadni?",
-        "options": [
+        "answers": [
             "Példány.Items kollekció manipulálásával",
             "Példány.Selection kollekció manipulálásával",
             "Példány.CustomElements kollekció manipulálásával"
         ],
-        "answers": [
+        "good":[
             "Példány.Items kollekció manipulálásával"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) egy Label típusú vezérlőelemen megjelenő szöveg melyik tulajdonsággal állítható be?",
-        "options": [
+        "answers": [
             "Példány.Label",
             "Példány.Caption",
             "Példány.Text",
             "Példány.ShowText()"
         ],
-        "answers": [
+        "good":[
             "Példány.Text"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) egy Textbox típusú vezérlőelembe user által írt szöveg melyik tulajdonsággal olvasható ki?",
-        "options": [
+        "answers": [
             "Példány.Label",
             "Példány.Caption",
             "Példány.Text",
             "Példány.ShowText()"
         ],
-        "answers": [
+        "good":[
             "Példány.Text"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) egy Textbox típusú melyik tulajdonsággal tiltható le (user nem szerkesztheti)?",
-        "options": [
+        "answers": [
             "Disabled tulajdonság true értékre állításával",
             "Enabled tulajdonság false értékre állításával",
             "Visible tulajdonság false értékre állításával",
             "Opacity tulajdonság 0 értékre állításával"
         ],
-        "answers": [
+        "good":[
             "Enabled tulajdonság false értékre állításával"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (web forms) egy TextBox típusú vezérlőben hogyan tudunk több sornyi szöveget megjeleníteni?",
-        "options": [
+        "answers": [
             "Nem lehetséges, alapvetően user input-ra való",
             "Text tulajdonságba sortöréssel ellátott szöveget helyezünk, EnableMultiLine tulajdonságot true értékre állítva",
             "Text tulajdonságba sortöréssel ellátott szöveget helyezünk, TextMode tulajdonságot MultiLine értékre állítva"
         ],
-        "answers": [
+        "good":[
             "Text tulajdonságba sortöréssel ellátott szöveget helyezünk, TextMode tulajdonságot MultiLine értékre állítva"
         ]
     },
     {
         "question": "Kérdés:MVC projekt esetén tipikusan hova futnak be a browser kérései?",
-        "options": [
+        "answers": [
             "Controller osztályok ActionResult attribútummal ellátott metóduasihoz.",
             "Controller osztályok publikus metódusaihoz.",
             "Manager osztályok publikus metódusaihoz."
         ],
-        "answers": [
+        "good":[
             "Controller osztályok publikus metódusaihoz."
         ]
     },
     {
         "question": "Kérdés: Mi határozza meg, hogy a browser címsorában lévő uri hova mutat az alkalmazásban?",
-        "options": [
+        "answers": [
             "Controllerek publikus metódusaihoz futnak be.",
             "Routing szabályokkal kell megadni.",
             "A Contextben kell megadni."
         ],
-        "answers": [
+        "good":[
             "Routing szabályokkal kell megadni."
         ]
     },
     {
         "question": "Kérdés: MVC projekt esetén tipikusan mit értünk ViewModel alatt?",
-        "options": [
+        "answers": [
             "Egy View alapját szolgáltató osztály, mely tipikusan tartalmaz számított mezőket és lekérdezett értékeket.",
             "Azon osztályok ezek, melyek az adatbázisban kerülnek perzisztálásra.",
             "Egy View alapját szolgáltató osztály, mely tipikusan nem tartalmaz számított mezőket és lekérdezett értékeket."
         ],
-        "answers": [
+        "good":[
             "Egy View alapját szolgáltató osztály, mely tipikusan tartalmaz számított mezőket és lekérdezett értékeket."
         ]
     },
     {
         "question": "Kérdés: Mire utal az MVC minta?",
-        "options": [
+        "answers": [
             "Model-View-Controller",
             "Model-ViewModel-Control"
         ],
-        "answers": [
+        "good":[
             "Model-View-Controller"
         ]
     },
     {
         "question": "Kérdés: MVC Web alkalmazásban hogyan kerül egy View megjelenítésre?",
-        "options": [
+        "answers": [
             "A megadott URL egy HTML oldalra mutat, melyet a browser megjelenít, ez a View.",
             "A megadott URL egy Controller metódusra mutat, mely View-t adhat vissza.",
             "ViewModel generálódik és jeleníti meg a browser."
         ],
-        "answers": [
+        "good":[
             "A megadott URL egy Controller metódusra mutat, mely View-t adhat vissza."
         ]
     },
     {
         "question": "Kérdés: MVC alkalmazás esetén mikor fog kiértékelődni a <%%> jelek közötti kifejezés?",
-        "options": [
+        "answers": [
             "Csak az első megjelenítés során",
             "Az oldal minden elkészítése során",
             "Az oldal minden elkészítése során, ami nem IsPostBack"
         ],
-        "answers": [
+        "good":[
             "Az oldal minden elkészítése során"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) tipikusan milyen típusú fájlok lehetnek az előre definiált Scripts mappában?",
-        "options": [
+        "answers": [
             "SQL script fájlok",
             "Javascript fájlok",
             ".cs fájlok"
         ],
-        "answers": [
+        "good":[
             "Javascript fájlok"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) tipikusan milyen típusú fájlok lehetnek az előre definiált Styles mappában?",
-        "options": [
+        "answers": [
             "CSS fájlok",
             "Aspx fájlok",
             "Ascx fájlok"
         ],
-        "answers": [
+        "good":[
             "CSS fájlok"
         ]
     },
     {
         "question": "Kérdés: Web alkalmazásban (Web forms) tipikusan milyen típusú fájlok lehetnek az előre definiált App_Data mappában?",
-        "options": [
+        "answers": [
             "Metadata fájlok (.cs)",
             "Helyi adatbázis fájlok",
             "Konfigurációs fájlo"
         ],
-        "answers": [
+        "good":[
             "Helyi adatbázis fájlok"
         ]
     },
     {
-        "question": "Kérdés: MVC projekt esetén tipikusan mit értünk ViewModel alatt?",
-        "options": [
-            "Egy View alapját szolgáltató osztály, mely tipikusan tartalmaz számított mezőket és lekérdezett értékeket.",
-            "Azon osztályok ezek, melyek az adatbázisban kerülnek perzisztálásra.",
-            "Egy View alapját szolgáltató osztály, mely tipikusan nem tartalmaz számított mezőket és lekérdezett értékeket."
-        ],
-        "answers": [
-            "Egy View alapját szolgáltató osztály, mely tipikusan tartalmaz számított mezőket és lekérdezett értékeket."
-        ]
-    },
-    {
         "question": "Kérdés: Tipikusan mit értünk Context alatt?",
-        "options": [
+        "answers": [
             "Minden ide tartozik, ami a Model osztályokban van.",
             "Minden ide tartozik, mely megmondja, hogy hol és milyen adatok érhetőek el.",
             "Minden ide tartozik, amely a tárolt adatokat írja le (tulajdonságok, kapcsolatok)"
         ],
-        "answers": [
+        "good":[
             "Minden ide tartozik, mely megmondja, hogy hol és milyen adatok érhetőek el."
         ]
     },
     {
         "question": "Kérdés: MVC projektben, adatkezeléssel kapcsolatban, miért/mikor előnyös Initializer használata?",
-        "options": [
+        "answers": [
             "Mert így minden Model osztályból tábla készíthető, egy lépésben.",
             "Mert így nem kell újra felvinni teszt adatokat fejlesztés közben, amikor intenzíven változik a db séma.",
             "Mert így minden változás a sémában automatikusan rögzítve lesz."
         ],
-        "answers": [
+        "good":[
             "Mert így nem kell újra felvinni teszt adatokat fejlesztés közben, amikor intenzíven változik a db séma."
         ]
     },
-    {
-        "question": "Kérdés: Entity Framework – mit jelent a Table-per-type pattern használata/mit eredményez?",
-        "options": [
-            "Annyi tábla keletkezik belső hivatkozásokkal, ahány osztály részt vesz az öröklésben",
-            "Minen öröklődési hierarchiához egy tábla készül az ős nevével, mely minden leszármazott tulajdonságot és Discriminatort tartalmaz.",
-            "Minden keletkezett táblában benne lesz az összes tulajdonság, ami csak felmerül a Context-ben, így gyorsul a hozzáférés."
-        ],
+	{
+        "question": "Kérdés: Entity Framework – mit jelent a Table-per-hierarchy pattern használata/mit eredményez?",
         "answers": [
+            "Minden keletkezett táblában benne lesz az összes tulajdonság, ami csak felmerül a Context-ben, így gyorsul a hozzáférés.\n",
+            "Minen öröklődési hierarchiához egy tábla készül az ős nevével, mely minden leszármazott tulajdonságot és Discriminatort tartalmaz.\n",
+            "Annyi tábla keletkezik belső hivatkozásokkal, ahány osztály részt vesz az öröklésben\n"
+        ],
+        "good":[
             "Minen öröklődési hierarchiához egy tábla készül az ős nevével, mely minden leszármazott tulajdonságot és Discriminatort tartalmaz."
         ]
     },
     {
+        "question": "Kérdés: Entity Framework – mit jelent a Table-per-type pattern használata/mit eredményez?",
+        "answers": [
+            "Annyi tábla keletkezik belső hivatkozásokkal, ahány osztály részt vesz az öröklésben",
+            "Minen öröklődési hierarchiához egy tábla készül az ős nevével, mely minden leszármazott tulajdonságot és Discriminatort tartalmaz.",
+            "Minden keletkezett táblában benne lesz az összes tulajdonság, ami csak felmerül a Context-ben, így gyorsul a hozzáférés."
+        ],
+        "good":[
+            "Annyi tábla keletkezik belső hivatkozásokkal, ahány osztály részt vesz az öröklésben."
+        ]
+    },
+    {
         "question": "Kérdés: Entity Framework – konkurencia kezelésére melyek a lehetséges módok?",
-        "options": [
+        "answers": [
             "Contextben lock segítségével",
             "Timestamp/RowVerison használata",
             "Where feltételben az összes tulajdonság megjelenítése"
         ],
-        "answers": [
+        "good":[
+			"Timestamp/RowVerison használata",
             "Where feltételben az összes tulajdonság megjelenítése"
         ]
     },
     {
         "question": "Kérdés: MVC projekt esetén mire való a MasterPage?",
-        "options": [
+        "answers": [
             "Ez tipikusan a nyitóoldal.",
             "Ez tipikusan a kezdőoldal.",
             "Ez adhatja a keretet, melyben a tartalom megjelenhet."
         ],
-        "answers": [
+        "good":[
             "Ez adhatja a keretet, melyben a tartalom megjelenhet."
         ]
     },
     {
         "question": "Kérdés: MVC projekt esetén mire használható a ViewBag?",
-        "options": [
+        "answers": [
             "Egy View kollekciót lehet segítsségével megjeleníteni, akár egyszerre több controllerből is.",
             "Olyan objektum, melynek nincsenek előre definiált tulajdonságai, kétirányban bármi bele tehető.",
             "View-kat lehet controllerekhez küldeni vele."
         ],
-        "answers": [
+        "good":[
             "Egy View kollekciót lehet segítsségével megjeleníteni, akár egyszerre több controllerből is."
         ]
     },
     {
         "question": "Kérdés: Entity Framework – tipikusan milyen típusú elemekből lesznek táblák?",
-        "options": [
+        "answers": [
             "ViewModelekből, ez attributummal jelezhető.",
             "Model folder POCO osztályaiból.",
             "Controller metódusok ActionResult visszatérésű elemeiből."
         ],
-        "answers": [
+        "good":[
             "Model folder POCO osztályaiból."
         ]
     },
     {
         "question": "Kérdés: Entity Framework – Ha tulajdonságként 1:N kapcsolat megvalósítása a cél, akkor….",
-        "options": [
+        "answers": [
             "…generikus IDictionary interfészt megvalósító tulajdonság kell.",
             "…IList<long> tulajdonság kell az idegen kulcs miatt.",
             "…generikus ICollection interfészt megvalósító tulajdonság kell."
         ],
-        "answers": [
+        "good":[
             "…generikus ICollection interfészt megvalósító tulajdonság kell."
         ]
     },
     {
         "question": "Kérdés: Entity Framework – Ha tulajdonságként 1:1 kapcsolat megvalósítása a cél, akkor….",
-        "options": [
+        "answers": [
             "…protected property kell, olyan típussal, ami a hivatkozott elem típusa.",
             "…virtual property kell, olyan típussal, ami a másik elem típusa.",
             "…publikus property get részében kell lekérdezni ID alapján és visszaadni."
         ],
-        "answers": [
-            "…publikus property get részében kell lekérdezni ID alapján és visszaadni."
+        "good":[
+            "…virtual property kell, olyan típussal, ami a másik elem típusa."
         ]
     },
     {
         "question": "Kérdés: Entity Framework – mivel szabályozható, hogy mely osztályokból készüljön tábla?",
-        "options": [
+        "answers": [
             "Ezt Context generikus DbSet tulajdonságai határozzák meg.",
             "Web.config fájl ConnectionStrings részében kell megadni",
             "A model osztályok atributumai határozzák meg."
         ],
-        "answers": [
-            "A model osztályok atributumai határozzák meg."
+        "good":[
+            "Ezt Context generikus DbSet tulajdonságai határozzák meg."
         ]
     },
     {
         "question": "Kérdés: Entity Framework – hogyan állíthatjuk be az adatok inicializálását?",
-        "options": [
+        "answers": [
             "Initializer osztály kell / Initialize() metódus felülbírálatával.",
             "Az Application_Start() metódus való erre.",
             "Initializer osztály kell / Seed metódus override."
         ],
-        "answers": [
-            "Initializer osztály kell / Seed metódus override."
-        ]
-    },
-    {
-        "question": "Kérdés:MVC projekt esetén tipikusan hova futnak be a browser kérései?",
-        "options": [
-            "Controller osztályok ActionResult attribútummal ellátott metóduasihoz.",
-            "Controller osztályok publikus metódusaihoz.",
-            "Manager osztályok publikus metódusaihoz."
-        ],
-        "answers": [
-            "Controller osztályok publikus metódusaihoz."
-        ]
-    },
-    {
-        "question": "Kérdés: Mi határozza meg, hogy a browser címsorában lévő uri hova mutat az alkalmazásban?",
-        "options": [
-            "Controllerek publikus metódusaihoz futnak be.",
-            "Routing szabályokkal kell megadni.",
-            "A Contextben kell megadni."
-        ],
-        "answers": [
-            "Routing szabályokkal kell megadni."
+        "good":[
+            "Initializer osztály kell / Initialize() metódus felülbírálatával."
         ]
     },
     {
         "question": "Kérdés: MVC - Hogyan tud egy View értékeket visszaadni egy Controllernek?",
-        "options": [
+        "answers": [
             "FormCollection segítségével",
             "QueryString segítségével",
             "ViewModel postolásával"
         ],
-        "answers": [
+        "good":[
             "FormCollection segítségével"
         ]
     },
     {
         "question": "Kérdés: Miért előnyös az IQueryable interfész használata?",
-        "options": [
+        "answers": [
             "Mert így az adatbázisba nem kell külön elmenteni az adatokat, ez azonnal megtörténik.",
             "Mert Query Object pattern megvalósítás miatt, csak a lekérdezést tárolja, késői kiértékelés lehetséges.",
             "Mert így azonnal rendelkezsére áll az egész halmaz, igaz több adat kerülhet átvitelre"
         ],
-        "answers": [
+        "good":[
             "Mert Query Object pattern megvalósítás miatt, csak a lekérdezést tárolja, késői kiértékelés lehetséges."
         ]
     }
