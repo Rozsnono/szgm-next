@@ -22,9 +22,9 @@ export default function Card({ question, answers, number, icon, next, finished, 
 
     return (
         <main>
-            <div className={"flex items-center lg:p-4 py-4 lg:justify-center text-gray-900 min-h-screen"}>
+            <div className={"flex items-center lg:p-4 py-4 lg:justify-center text-gray-900 min-h-screen"} style={{minWidth: "20rem"}}>
                 <div
-                    className="flex flex-col overflow-hidden  bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
+                    className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max flex-row flex-1 lg:max-w-screen-md"
                 >
                     <div
                         className={"p-4 py-6 overflow-hidden text-white w-full flex-shrink-0 flex flex-col items-center justify-evenly transition-all duration-200  bg-red-800 relative"}

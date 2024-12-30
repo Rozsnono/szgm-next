@@ -1,0 +1,1059 @@
+[
+    {
+        "latin": "extermitas superios",
+        "magyar": "felső végtag"
+    },
+    {
+        "latin": "extermitas inferior",
+        "magyar": "alsó végtag"
+    },
+    {
+        "latin": "caput",
+        "magyar": "fej"
+    },
+    {
+        "latin": "collum",
+        "magyar": "nyak"
+    },
+    {
+        "latin": "brachium",
+        "magyar": "felkar"
+    },
+    {
+        "latin": "antebrachium",
+        "magyar": "alkar"
+    },
+    {
+        "latin": "manus",
+        "magyar": "kéz"
+    },
+    {
+        "latin": "trunculus",
+        "magyar": "törzs"
+    },
+    {
+        "latin": "abdomen",
+        "magyar": "has"
+    },
+    {
+        "latin": "dorsum",
+        "magyar": "hát"
+    },
+    {
+        "latin": "thorax",
+        "magyar": "mellkas"
+    },
+    {
+        "latin": "femur",
+        "magyar": "comb"
+    },
+    {
+        "latin": "crus",
+        "magyar": "lábszár"
+    },
+    {
+        "latin": "pes",
+        "magyar": "láb"
+    },
+    {
+        "latin": "aspectus anterior",
+        "magyar": "elölnézet"
+    },
+    {
+        "latin": "aspectus posterior",
+        "magyar": "hátulnézet"
+    },
+    {
+        "latin": "aspectus superios",
+        "magyar": "felülnézet"
+    },
+    {
+        "latin": "aspectus inferior",
+        "magyar": "alulnézet"
+    },
+    {
+        "latin": "scapula",
+        "magyar": "lapocka"
+    },
+    {
+        "latin": "clavicula",
+        "magyar": "kulcscsont"
+    },
+    {
+        "latin": "brachium",
+        "magyar": "kar"
+    },
+    {
+        "latin": "antebrachium",
+        "magyar": "alkar"
+    },
+    {
+        "latin": "ulna",
+        "magyar": "singcsont"
+    },
+    {
+        "latin": "radius",
+        "magyar": "orsócsont"
+    },
+    {
+        "latin": "manus",
+        "magyar": "kéz"
+    },
+    {
+        "latin": "carpus",
+        "magyar": "kéztő"
+    },
+    {
+        "latin": "os scaphoideum",
+        "magyar": "sajkacsont"
+    },
+    {
+        "latin": "os lunatum",
+        "magyar": "holdascsont"
+    },
+    {
+        "latin": "os triquetrum",
+        "magyar": "háromszögletűcsont"
+    },
+    {
+        "latin": "os pisiforme",
+        "magyar": "borsócsont"
+    },
+    {
+        "latin": "os multangulum minius",
+        "magyar": "kis sokszögletűcsont"
+    },
+    {
+        "latin": "os multangulum majus",
+        "magyar": "nagy sokszögletűcsont"
+    },
+    {
+        "latin": "os capitatum",
+        "magyar": "fejescsont"
+    },
+    {
+        "latin": "os hamatum",
+        "magyar": "horgascsont"
+    },
+    {
+        "latin": "metacarpus",
+        "magyar": "kézközép"
+    },
+    {
+        "latin": "pollex",
+        "magyar": "hüvelykujj"
+    },
+    {
+        "latin": "index",
+        "magyar": "mutató ujj"
+    },
+    {
+        "latin": "digitus medius",
+        "magyar": "középső ujj"
+    },
+    {
+        "latin": "digitus anularis",
+        "magyar": "gyűrűs ujj"
+    },
+    {
+        "latin": "digitus minius",
+        "magyar": "kisujj"
+    },
+    {
+        "latin": "pelvis",
+        "magyar": "medence"
+    },
+    {
+        "latin": "os coxae",
+        "magyar": "medencecsont"
+    },
+    {
+        "latin": "os sacrum",
+        "magyar": "keresztcsont"
+    },
+    {
+        "latin": "os ilium",
+        "magyar": "csípőcsont"
+    },
+    {
+        "latin": "os pubis",
+        "magyar": "szeméremcsont"
+    },
+    {
+        "latin": "os ischii",
+        "magyar": "ülőcsont"
+    },
+    {
+        "latin": "femur",
+        "magyar": "combcsont"
+    },
+    {
+        "latin": "patella",
+        "magyar": "térdkalács"
+    },
+    {
+        "latin": "tibia",
+        "magyar": "sípcsont"
+    },
+    {
+        "latin": "fibula",
+        "magyar": "szárkapocscsont"
+    },
+    {
+        "latin": "talus",
+        "magyar": "ugrócsont"
+    },
+    {
+        "latin": "calcaneus",
+        "magyar": "sarokcsont"
+    },
+    {
+        "latin": "os naviculare",
+        "magyar": "sajkacsont"
+    },
+    {
+        "latin": "os cumeiforme mediale",
+        "magyar": "belső ékcsont"
+    },
+    {
+        "latin": "os cuneiforme intermedium",
+        "magyar": "középső ékcsont"
+    },
+    {
+        "latin": "os cuneiforme laterale",
+        "magyar": "külső ékcsont"
+    },
+    {
+        "latin": "os cuboideum",
+        "magyar": "köbcsont"
+    },
+    {
+        "latin": "metatarsus",
+        "magyar": "lábközép"
+    },
+    {
+        "latin": "digiti pedis",
+        "magyar": "láb ujjai"
+    },
+    {
+        "latin": "vertebra",
+        "magyar": "csigolya"
+    },
+    {
+        "latin": "corpus vertebrae",
+        "magyar": "csigolyatest"
+    },
+    {
+        "latin": "arcus vertebrae",
+        "magyar": "csigolyaív"
+    },
+    {
+        "latin": "foramen vertebrae",
+        "magyar": "csigolyalyuk"
+    },
+    {
+        "latin": "discus",
+        "magyar": "porckorongok"
+    },
+    {
+        "latin": "columna vertebralis",
+        "magyar": "gerincoszlop"
+    },
+    {
+        "latin": "vertebrae cervicales",
+        "magyar": "nyaki csigolyák"
+    },
+    {
+        "latin": "vertebrae thoracicae",
+        "magyar": "háti csigolyák"
+    },
+    {
+        "latin": "vertebrae lumbales",
+        "magyar": "ágyéki csigolyák"
+    },
+    {
+        "latin": "vertebrae sacrales",
+        "magyar": "keresztcsonti csigolyák"
+    },
+    {
+        "latin": "vertebrae coccygeae",
+        "magyar": "farok csigolyák"
+    },
+    {
+        "latin": "os coccygis",
+        "magyar": "farokcsont"
+    },
+    {
+        "latin": "sternum",
+        "magyar": "szegycsont"
+    },
+    {
+        "latin": "costae",
+        "magyar": "bordák"
+    },
+    {
+        "latin": "musculus deltoidus",
+        "magyar": [
+            "Név: deltaizum",
+            "Ered: kulcscsonton és lapocka 2 pontján",
+            "Tapad: humerus",
+            "Funkció: kar vízszinteség emelése,  elől kar befelé forgat, hátul kart kifelé forgat"
+        ]
+    },
+    {
+        "latin": "musculus supraspinatus",
+        "magyar": [
+            "Név: tövis feletti izom",
+            "Ered: lapocka tövis felett hátul",
+            "Tapad: humerus felső részén",
+            "Funkció: kar távolítása, kifelé forgatás"
+        ]
+    },
+    {
+        "latin": "musculus infraspinatus",
+        "magyar": [
+            "Név: tövis alatti izom",
+            "Ered: hátul lapocka tövise alatti nagy tgerület",
+            "Tapad: humerus felső részén kívül supraspinatus alatt",
+            "Funkció: kifelé forgatás"
+        ]
+    },
+    {
+        "latin": "musculus teres minor",
+        "magyar": [
+            "Név: kis görgetegizom",
+            "Ered: lapocka alsó része",
+            "Tapad: humerus felső részén kívül infraspinatus alatt",
+            "Funkció: kart közelíti"
+        ]
+    },
+    {
+        "latin": "musculus teres major",
+        "magyar": [
+            "Név: nagy görgetegizom",
+            "Ered: lapocka alsó csúcsa",
+            "Tapad: humeros elülső felső részén",
+            "Funkció: befelé forgat, közelít"
+        ]
+    },
+    {
+        "latin": "musculus subscapularis",
+        "magyar": [
+            "Név: lapocka alatti izom",
+            "Ered: lapocka belső bordák felé néző felszínén",
+            "Tapad: humerus elülső felső részén",
+            "Funkció: befelé forgat"
+        ]
+    },
+    {
+        "latin": "musculus biceps brachii",
+        "magyar": [
+            "Név: kétfejű karizom",
+            "Ered: hf: lapockán, rf: lapockán, hollócsőr-nyúlványon",
+            "Tapad: orsócsont érdességén",
+            "Funkció: könyökizületi hajlítás, alkar hanyintása"
+        ]
+    },
+    {
+        "latin": "musculus coracobrachialis",
+        "magyar": [
+            "Név: hollócsőr-karizom",
+            "Ered: hollócsőr-nyúlvány",
+            "Tapad: humerus elülső belső felszíne",
+            "Funkció: vállizületben előre lendít"
+        ]
+    },
+    {
+        "latin": "mmusculus brachialis",
+        "magyar": [
+            "Név: karizom",
+            "Ered: humerus elülső felaszínén középen",
+            "Tapad: singcsont",
+            "Funkció: könyökizületi hajlítás"
+        ]
+    },
+    {
+        "latin": "musculus triceps brachii",
+        "magyar": [
+            "Név: háromfejű karizom",
+            "Ered: hf: lapockáról, mf és lf humerus hátulsó részéről",
+            "Tapad: singcsont könyökkampóján",
+            "Funkció: könyökizületi feszítés, hf. vállizületben közelít"
+        ]
+    },
+    {
+        "latin": "musculus anconeus",
+        "magyar": [
+            "Név: kampóizom",
+            "Ered: külső könyökdudorról",
+            "Tapad: singcsont könyökkampóján",
+            "Funkció: könyökizületi feszítés - annak védelme"
+        ]
+    },
+    {
+        "latin": "musculus pronator teres",
+        "magyar": [
+            "Név: hengeres borintóizom",
+            "Ered:  belső könyökdudorról, singcsont felső részéről",
+            "Tapad: orsócsont közepén",
+            "Funkció: orsócsont lefelé fordítása"
+        ]
+    },
+    {
+        "latin": "musculus flexor carpi radialis",
+        "magyar": [
+            "Név: orsócsonti csuklóhajlító izom",
+            "Ered: belső könyökdudor",
+            "Tapad: 2. kézközépcsont tenyéri oldalán alul",
+            "Funkció: tenyéri hajlítás, könyökizületi flexió"
+        ]
+    },
+    {
+        "latin": "musculus flexor carpi ulnaris",
+        "magyar": [
+            "Név: singcsonti csuklóhajlító izom",
+            "Ered: belső könyökdudorról, singcsont elején felül",
+            "Tapad: 5. kézközépcsont tenyéri oldalán alul",
+            "Funkció: singcsonti távolítás, tenyéri hajlítás"
+        ]
+    },
+    {
+        "latin": "musculus palmaris longus",
+        "magyar": [
+            "Név: hosszú tenyérizom",
+            "Ered: belső könyökdudor",
+            "Tapad: tenyéri bőnye",
+            "Funkció: tenyéri hajlítás, bőnye feszítése"
+        ]
+    },
+    {
+        "latin": "musculus flexor digitorum superficialis",
+        "magyar": [
+            "Név: felületes ujjakat hajlító izom",
+            "Ered: belső könyökdudor, singcsont felső része, orsócsont felső része",
+            "Tapad: csuklónál 4 ínra válik szét melyek középső ujjperceken tapadnak",
+            "Funkció: ujjak hajlítása"
+        ]
+    },
+    {
+        "latin": "musculus brachioradialis",
+        "magyar": [
+            "Név: karorsói izom",
+            "Ered: humerus alsó része",
+            "Tapad: iróvessző",
+            "Funkció: könyökizület hajlítása, pronatio és supinatio középhelyzet létrehozása"
+        ]
+    },
+    {
+        "latin": "musculus extenrsor carpi radialis longus",
+        "magyar": [
+            "Név: hosszú orsócsonti csuklófeszítő izom",
+            "Ered: külső könyökdudor",
+            "Tapad: 2. kézköépcsont alapjánál kézháti oldalon",
+            "Funkció: kézháti hajlítás és orsócsonti távolítás"
+        ]
+    },
+    {
+        "latin": "musculus extensor carpi radialis brevis",
+        "magyar": [
+            "Név: rövid orsócsonti csuklófeszítő izom",
+            "Ered: kölső könyökdudor",
+            "Tapad: 3. kézközépcsont alapjánál kézháti odlalon",
+            "Funkció: kézháti hajlítás"
+        ]
+    },
+    {
+        "latin": "musculus extensor digitorum communis",
+        "magyar": [
+            "Név: közös ujjakat feszítő izom",
+            "Ered: külső könyökdudor",
+            "Tapad: körömpercek alapján",
+            "Funkció: ujjak feszítése, csukló hajlítása hátra"
+        ]
+    },
+    {
+        "latin": "musculus extensor digiti minimi",
+        "magyar": [
+            "Név: kisujjat feszítő izom",
+            "Ered: külső könyökdudor",
+            "Tapad: kisujj körömperce",
+            "Funkció: kisujj feszítése kézháti hajlítás csuklóizületben"
+        ]
+    },
+    {
+        "latin": "musclulus extensor carpi ulnaris",
+        "magyar": [
+            "Név: singcsonti csuklófeszítő izom",
+            "Ered: külső könyökdudor",
+            "Tapad: 5. kézközépcsont alapjánál kézháti oldalán",
+            "Funkció: kézháti hajlítás, singcsonti távolítás "
+        ]
+    },
+    {
+        "latin": "musculus flexor pollicis longus)",
+        "magyar": [
+            "Név: Hosszú hüvelykujj-hajlító izom",
+            "Ered: orsócsont közepén, annak külső felszínén",
+            "Tapad: hüvelykujj körömpercén",
+            "Funkció: hüvelykujj hajlítása"
+        ]
+    },
+    {
+        "latin": "musculus flexor digitorum profundus",
+        "magyar": [
+            "Név: mély ujjhajlító izom",
+            "Ered: singcsont elülső része",
+            "Tapad: körömpercek",
+            "Funkció: csukló és az 1-5 ujjak hajlítása"
+        ]
+    },
+    {
+        "latin": "m. pronator quadratus",
+        "magyar": [
+            "Név: négyszögű borintóizom",
+            "Ered: singcsont végén",
+            "Tapad: orsócsonton",
+            "Funkció: alkar borintása"
+        ]
+    },
+    {
+        "latin": "m. supinator",
+        "magyar": [
+            "Név: hanyintóizom",
+            "Ered: külső könyökdudor",
+            "Tapad: orsócsonton",
+            "Funkció: alkar hanyintása"
+        ]
+    },
+    {
+        "latin": "m. abductor pollicis longus",
+        "magyar": [
+            "Név: hosszú hüvelykujj távolító izom",
+            "Ered: orsócsontról, singcsontról, csontközépi hártyáról",
+            "Tapad: 1. kézközépcsonton",
+            "Funkció: hüvelykujj távolítása"
+        ]
+    },
+    {
+        "latin": "m. extensor pollicis brevis",
+        "magyar": [
+            "Név: rövid hüvelykujj feszítő izom",
+            "Ered: orsócsontról",
+            "Tapad: hüvelykujj felső ujjperceing",
+            "Funkció: hüvelykujj feszítlése és távolítása"
+        ]
+    },
+    {
+        "latin": "m. extensor pollicis longus",
+        "magyar": [
+            "Név: hosszú hüvelykujj feszítő izom",
+            "Ered: singcsontról és csontközépi hártyáról",
+            "Tapad: hüvelykujj körömpercén",
+            "Funkció: hüvelykujj feszítése és távolítása"
+        ]
+    },
+    {
+        "latin": "m. extensor indicis",
+        "magyar": [
+            "Név: mutatóujj feszítő izom",
+            "Ered: singcsontról és csontközépi hártyáról",
+            "Tapad: mutatóujj körömpercén",
+            "Funkció: mutatóuj feszítése"
+        ]
+    },
+    {
+        "latin": "m. gluteus maximus",
+        "magyar": [
+            "Név: nagy farizom",
+            "Ered: csípőcsontról, ágyéki pólyáról",
+            "Tapad: combcsonton hátul és combpólya megerősödésén",
+            "Funkció: csípőizület feszítése, comb kifelé rotálása, távolító"
+        ]
+    },
+    {
+        "latin": "m. gluteus medius",
+        "magyar": [
+            "Név: középső farizom",
+            "Ered: csípőcsont lapátján",
+            "Tapad: combcsont nagy tomporán",
+            "Funkció: csípőizület távolító"
+        ]
+    },
+    {
+        "latin": "m. gluteus minius",
+        "magyar": [
+            "Név: kis farizom",
+            "Ered: csípőcsont lapátján",
+            "Tapad: combcsont nagy tomporán",
+            "Funkció: combot befelé forgatja, távolítja"
+        ]
+    },
+    {
+        "latin": "m. tensor fasciae latae",
+        "magyar": [
+            "Név: combpólya feszítő izom",
+            "Ered: csípőcsont lapátján",
+            "Tapad: sípcsont felső részén kívül",
+            "Funkció: csípőizületi hajlító, befelé forgató, térdizületben feszítő, kifelé forgató"
+        ]
+    },
+    {
+        "latin": "m. obturator externus",
+        "magyar": [
+            "Név: külső elfedő izom",
+            "Ered: szemérem és ülőcsont ágai által közrefogott nyílás",
+            "Tapad: combcsont nyakán",
+            "Funkció: kifelé rotál, combot távolít"
+        ]
+    },
+    {
+        "latin": "m. quadratus femoris",
+        "magyar": [
+            "Név: négyszögű combizom",
+            "Ered: ölőgumó",
+            "Tapad: tomporok közti tarajon",
+            "Funkció: erőf kifelé rotator, csípőizületi közelítő"
+        ]
+    },
+    {
+        "latin": "psoas minor",
+        "magyar": [
+            "Név: kis horpaszizom",
+            "Ered: L1 csigolyatest",
+            "Tapad: szeméremcsont",
+            "Funkció: ágyéki tájékban hajlítás"
+        ]
+    },
+    {
+        "latin": "m. psoas major",
+        "magyar": [
+            "Név: nagy horpaszizom",
+            "Ered: 12. háté és 1-5. deréki csigolyák",
+            "Tapad: combcsont hátulsó belső részém",
+            "Funkció: csípőizületi hajlító"
+        ]
+    },
+    {
+        "latin": "m. iliacus",
+        "magyar": [
+            "Név: csípőizom",
+            "Ered: csípőlapát belső felszínén",
+            "Tapad: combcsont hátulsó részén",
+            "Funkció: csípőizületi hajlító"
+        ]
+    },
+    {
+        "latin":"m. piriformis",
+        "magyar": [
+            "Név: körteképű izom",
+            "Ered: keresztcsont",
+            "Tapad: combcsont nagy tomporának belső felszínén",
+            "Funkció: csípőizületi távolító"
+        ] 
+        }, 
+    {
+        "latin": "m. gemellus superior et inferior",
+        "magyar": [
+            "Név: felső és alsó ikerizom",
+            "Ered: ülőcsont",
+            "Tapad: combcsont nagy tomporán",
+            "Funkció: kifelé rotálás, csípő izületi távolítók"
+        ]
+    },
+    {
+        "latin":"m. obturator internus",
+        "magyar": [
+            "Név: belső elfedő izom",
+            "Ered: szemérem és ülőcsont között található nyílás",
+            "Tapad: csombcsont nagy tomporán",
+            "Funkció: kifelé rotálás, csípő izületi távolító"
+        ] 
+        }, 
+    {
+        "latin": "m. sartorius",
+        "magyar": [
+            "Név: szabóizom",
+            "Ered: csípőcsonton",
+            "Tapad: sípcsonton",
+            "Funkció: térdizület hajlítása"
+        ]
+    },
+    {
+        "latin": "m. rectus femoris",
+        "magyar": [
+            "Név: egyenes combizom - quadriceps része",
+            "Ered: csípőcsont",
+            "Tapad: sípcsont térd alatti érdességén",
+            "Funkció: térdizületi feszítés, csípőizületben hajlít"
+        ]
+    },
+    {
+        "latin": "m. vastus medialis",
+        "magyar": [
+            "Név: belső vaskos izom - quadriceps része",
+            "Ered: combcsonton elöl belül",
+            "Tapad: sípcsont térd alatti érdességén",
+            "Funkció: térdizületi feszítés"
+        ]
+    },
+    {
+        "latin": "m. vastus intermedius",
+        "magyar": [
+            "Név: középső vaskos izom - quadriceps része",
+            "Ered: combcsont",
+            "Tapad: sípcsont térd alatti érdességén",
+            "Funkció: térdizületi feszítés"
+        ]
+    },
+    {
+        "latin": "m. vastus lateralis",
+        "magyar": [
+            "Név: külső vaskos izom - quadriceps része",
+            "Ered: combcsont",
+            "Tapad: sípcsont térd alatti érdességén",
+            "Funkció: térdizületi feszítés"
+        ]
+    },
+    {
+        "latin": "m. semitendinosus",
+        "magyar": [
+            "Név: féliginas izom",
+            "Ered: ülőgumó",
+            "Tapad: sípcsont",
+            "Funkció: térdizületi hasjlítás, csípőfeszítő"
+        ]
+    },
+    {
+        "latin": "m. semimembranosus",
+        "magyar": [
+            "Név: félighártyás izom",
+            "Ered: ülőgumó",
+            "Tapad: sípcsont",
+            "Funkció: térdizület hajlítása, csipőfeszítő"
+        ]
+    },
+    {
+        "latin": "m. biceps femoris",
+        "magyar": [
+            "Név: kétfejű combizom",
+            "Ered: ülőgumó, combcsont",
+            "Tapad: tibia és szárkapocscsont",
+            "Funkció: csípőizület-feszítő, térdizületi hajlító, térd kifelé rotálás"
+        ]
+    },
+    {
+        "latin": "m. pectineus",
+        "magyar": [
+            "Név: fésűizom",
+            "Ered: szeméremcsont",
+            "Tapad: combcsont",
+            "Funkció: combközelítő, csípőizületben hajlít, combot kifelé rotál"
+        ]
+    },
+    {
+        "latin": "m. adductor brevis",
+        "magyar": [
+            "Név: rövid combközelítő izom",
+            "Ered: szeméremcsont, ülőcsont",
+            "Tapad: combcsont",
+            "Funkció: combközelítő"
+        ]
+    },
+    {
+        "latin": "m. adductor longus",
+        "magyar": [
+            "Név: hosszú combközelítő izom",
+            "Ered: szeméremcsont",
+            "Tapad: érdes vonalon",
+            "Funkció: combközelítő"
+        ]
+    },
+    {
+        "latin": "m. adductor magnus",
+        "magyar": [
+            "Név: nagy combközelítő izom",
+            "Ered: szeméremcsont, ülőcsont",
+            "Tapad: érdes vonal, combcsont",
+            "Funkció: combközelítő"
+        ]
+    },
+    {
+        "latin": "m. gracilis",
+        "magyar": [
+            "Név: karcsúizom",
+            "Ered: szeméremcsont, ülőcsont",
+            "Tapad: lúdlábban, sípcsonton",
+            "Funkció: combközelítő, térdben befelé rotál"
+        ]
+    },
+    {
+        "latin": "m. tibialis anterior",
+        "magyar": [
+            "Név: elülső sípcsonti izom",
+            "Ered: sípcsont külső izületi bütyök",
+            "Tapad: ékcsont, 1. lábközépcsonton",
+            "Funkció: felső ugróizületben dorsalflexio, alsó ugró - supinatio"
+        ]
+    },
+    {
+        "latin": "m. extensor hallucis longus",
+        "magyar": [
+            "Név: hosszú öregujjfeszítő izom",
+            "Ered: szárkapocscsont",
+            "Tapad: öregujj körömpercén",
+            "Funkció: öregujj feszítése"
+        ]
+    },
+    {
+        "latin": "m. extensor digitorum longus",
+        "magyar": [
+            "Név: hosszú ujjakat feszítő izom",
+            "Ered: sípcsonti külső izületi bütök",
+            "Tapad: 2-5. ujjak középső körömpercein lábháton",
+            "Funkció: 2-5. ujjak feszítése"
+        ]
+    },
+    {
+        "latin": "m. triceps surae",
+        "magyar": [
+            "Név: háromfejű lábkarizom - vádli",
+            "Ered: combcsont, szárkapocscsont",
+            "Tapad: sarokcsont gumóján",
+            "Funkció: bokaizületben plantarflexio"
+        ]
+    },
+    {
+        "latin": "m. plantaris",
+        "magyar": [
+            "Név: talpi izom",
+            "Ered: combcsont külső izületi bütyke",
+            "Tapad: sarokcsont gumóján",
+            "Funkció: bokaizületben lpantarflexio"
+        ]
+    },
+    {
+        "latin": "m. tibialis posterior",
+        "magyar": [
+            "Név: hátsó sípcsonti izom",
+            "Ered: sípcsont, szárkapocscsont",
+            "Tapad: sajkacsont, ékcsont talpi oldalán",
+            "Funkció: bokaizületben plantarflexio"
+        ]
+    },
+    {
+        "latin": "m. flexor digitorum longus",
+        "magyar": [
+            "Név: hosszú ujjakat hajlító izom",
+            "Ered: sípcsonton hátul",
+            "Tapad: 2-5 lábujjak körömpercei",
+            "Funkció: 2-5 ujjak hajlítása"
+        ]
+    },
+    {
+        "latin": "m. flexor hallucis longus",
+        "magyar": [
+            "Név: hisszú öregujjhajlító izom",
+            "Ered: szárkapocscsont",
+            "Tapad: öregujj körömperce",
+            "Funkció: öregujj hajlítása"
+        ]
+    },
+    {
+        "latin": "m. peroneus longus",
+        "magyar": [
+            "Név: hosszú szárkapcsi izom",
+            "Ered: szárkapocscsont",
+            "Tapad: ékcsont, öregujj lábközépcsont talpi oldala",
+            "Funkció: bokaizületben plantarflexio"
+        ]
+    },
+    {
+        "latin": "m. peroneus brevis",
+        "magyar": [
+            "Név: rövid szárkapcsi izom",
+            "Ered: szárkapocscsont",
+            "Tapad: kislábujj lábközépcsontja",
+            "Funkció: fő működése láb pronatioja"
+        ]
+    },
+    {
+        "latin": "m. peroneus tertius",
+        "magyar": [
+            "Név: harmadik szárkapcsi izom",
+            "Ered: szárkapocscsont",
+            "Tapad: 5. lábközépcsonton",
+            "Funkció: láb pronatioja"
+        ]
+    },
+    {
+        "latin": "m. trapezius",
+        "magyar": [
+            "Név: csuklyásizom",
+            "Ered: komponya, tarkószalag, nyak- hátcsigolyák",
+            "Tapad: kulcscsonton, vállcsúcson, lapocka tövis",
+            "Funkció: lapocka tartása, vállöv fixálás, lapocka közelítése"
+        ]
+    },
+    {
+        "latin": "m. latissimus dorsi",
+        "magyar": [
+            "Név: széles hátizom",
+            "Ered: 7-12 hátcsigolya, alsó bordapárok, ágyéki pólya",
+            "Tapad: humerus",
+            "Funkció: mellizom szinergistája, kart hátrahúzza, befelé rotálja, törzs tartása"
+        ]
+    },
+    {
+        "latin": "m. rhomboideus major et minor",
+        "magyar": [
+            "Név: kis és nagy rombuszizom",
+            "Ered: 6-7 nyakcsigolya és 1-4 hátcsigolya",
+            "Tapad: lapocka",
+            "Funkció: 'katonás' tartás"
+        ]
+    },
+    {
+        "latin": "m. serratus posterior superior",
+        "magyar": [
+            "Név: hátulsó felső fűrészizom",
+            "Ered: 6-7 nyakcsigolya 1-2hátcsigolya",
+            "Tapad: 2-5 bordapáron",
+            "Funkció: bordaemelő"
+        ]
+    },
+    {
+        "latin": "m. serratus posterio inferior",
+        "magyar": [
+            "Név: alsó hátsó fűrészizom",
+            "Ered: 12. hátcsigolya, 1-3 ágyéki csigolya",
+            "Tapad: 9-12 bordapár",
+            "Funkció: bordasüllyesztő"
+        ]
+    },
+    {
+        "latin": "m. levator scapulae",
+        "magyar": [
+            "Név: lapockaemelő izom",
+            "Ered: 1-4 nyakcsigolya",
+            "Tapad: lapocka",
+            "Funkció: lapockát emeli"
+        ]
+    },
+    {
+        "latin": "m. pectoralis major",
+        "magyar": [
+            "Név: nagy mellizom",
+            "Ered: kulcscsont, szegycsont, 2-6 bordapár, rectus hüvely",
+            "Tapad: karcsont",
+            "Funkció: törzs tartása, kar lehúzása, közelítése, befelé rotálása"
+        ]
+    },
+    {
+        "latin": "m. pectoralis minor",
+        "magyar": [
+            "Név: kis mellizom",
+            "Ered: 3-5 bordapár",
+            "Tapad: lapocka hollócsőrnyúlványa",
+            "Funkció: lapocka süllyesztése, belégzőizom"
+        ]
+    },
+    {
+        "latin": "m. serratus anterior",
+        "magyar": [
+            "Név: elülső fűrészizom",
+            "Ered: 1-9 bordapár",
+            "Tapad: lapocka alatt",
+            "Funkció: kar vízszintes fölé emelése"
+        ]
+    },
+    {
+        "latin": "m. intercostales externi",
+        "magyar": [
+            "Név: külső bordaközi izmok",
+            "Ered: felső borda alsó szélén a bordák oldalsó részén hátul a csigolyákig",
+            "Tapad: alsó borda felső szélén",
+            "Funkció: belégzőizmok"
+        ]
+    },
+    {
+        "latin": "m. intercostales interni",
+        "magyar": [
+            "Név: belső bordaközi izmok",
+            "Ered: alsó borda felső szélén a bordág szegycsonthoz közeli részén",
+            "Tapad: felső borda alsó szélén",
+            "Funkció: kilégzőizmok, bordák felfelé húzása"
+        ]
+    },
+    {
+        "latin": "m. levatores costarum",
+        "magyar": [
+            "Név: bordaemelő izmok",
+            "Ered: 7. nyakcsigolya és 1-11 hátcsigolyák harántnyúlványain",
+            "Tapad: 1-3 bordával ejjebb a bordák testén",
+            "Funkció: belégző izom, törzs oldalra hajlítása"
+        ]
+    },
+    {
+        "latin": "m. transversus thoracis",
+        "magyar": [
+            "Név: haránt mellkasizom",
+            "Ered: szegcsont testén, kard-nyúlvány belső felszínén",
+            "Tapad: 2-6 bordaporc alsó részén",
+            "Funkció: kilégzőizom"
+        ]
+    },
+    {
+        "latin": "diaphragma",
+        "magyar": [
+            "Név: rekeszizom",
+            "Ered: kard-nyúlvány belső felszínén, 7-12. bordák belső felnszínén, ágyéki csigolyákról",
+            "Tapad: saját inas lemezében középen",
+            "Funkció: hasüreg és mellüreg elválasztása"
+        ]
+    },
+    {
+        "latin": "m. subclavius",
+        "magyar": [
+            "Név: kulcscsont alatti izom",
+            "Ered: 1. borda szegycsonti végén",
+            "Tapad:kulcscsont alsó felszínén ",
+            "Funkció: kulcscsont rögzítés"
+        ]
+    },
+    {
+        "latin": "m. obliquus externus abdominis",
+        "magyar": [
+            "Név: belső ferde hasizom",
+            "Ered: csípőlapátról és ágyéki pólyáról",
+            "Tapad: 10-12. bordák alsó szélén",
+            "Funkció: "
+        ]
+    },
+    {
+        "latin": "musculus transversus abdominis",
+        "magyar": [
+            "Név: haránt hasizom",
+            "Ered: 7-12. bordaporc belső felszínéről hat csipkével",
+            "Tapad: fehér vonalban övszerűen derék körbefogása",
+            "Funkció: "
+        ]
+    },
+    {
+        "latin": "musculus rectus abdominis",
+        "magyar": [
+            "Név: egyenes hasizom",
+            "Ered: 3 csipkével az 5-7 bordaporc külső felszínén, kard-nyúlványon",
+            "Tapad: szeméremcsonton",
+            "Funkció: -"
+        ]
+    },
+    {
+        "latin": "musclulus quadratus lumborum",
+        "magyar": [
+            "Név: négyszögű ágyékizom",
+            "Ered: csipőlapát",
+            "Tapad: 12. bordapár gerinchez közeli részén valamanint 1-3 csigolyák",
+            "Funkció: 12. borda süllyesztése, törzs oldalra hajlítása"
+        ]
+    }
+]

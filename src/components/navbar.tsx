@@ -246,7 +246,22 @@ export default function Navbar({
                                     }
                                 </div>
                             </main>
+
+                            <main className="flex flex-col justify-center items-center col-span-2">
+                                <div className="">MÁRK</div>
+                                <div className="flex gap-2 items-center">
+                                    {
+                                        type === "study" ?
+                                            <>
+                                                <div onClick={() => { navigateTo("/anat") }} data-pr-tooltip={"ANAT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-table"></i></div>
+                                            </> :
+                                            <></>
+                                    }
+                                </div>
+                            </main>
                         </div>
+
+
                     }
                     {/* {
                         !checkUser ?
