@@ -54,6 +54,8 @@ export default function Neptun() {
 
     const [passwordEye, setPasswordEye] = useState<boolean>(false);
 
+    const [credit, setCredit] = useState<number>(0);
+
     function chooseSubject(subject: any, course: any) {
 
         let tmpSelectedSubject = selectedSubject;
@@ -74,7 +76,11 @@ export default function Neptun() {
                 const tmp = selectedSubject.find(e => e.subjectId == subject.id);
                 tmp.courseIds.push(course.id);
                 tmpSelectedSubject = [...selectedSubject.filter(e => e.subjectId != subject.id), tmp];
-                tmpSelectedSubjectTime = [...selectedSubjectTime, { id: course.id, startTime: course.classInstanceInfos[0].startTime, endTime: course.classInstanceInfos[0].endTime, dayOfWeek: course.classInstanceInfos[0].dayOfWeek }];
+                if (course.classInstanceInfos.length > 0) {
+                    tmpSelectedSubjectTime = [...selectedSubjectTime, { id: course.id, startTime: course.classInstanceInfos[0].startTime, endTime: course.classInstanceInfos[0].endTime, dayOfWeek: course.classInstanceInfos[0].dayOfWeek }];
+                } else {
+                    tmpSelectedSubjectTime = [...selectedSubjectTime, { id: course.id, startTime: "00:00", endTime: "00:00", dayOfWeek: "" }];
+                }
 
             }
         } else {
@@ -86,7 +92,11 @@ export default function Neptun() {
                 subjectId: subject.id,
                 termId: subject.termId
             }
-            tmpSelectedSubjectTime = [...selectedSubjectTime, { id: course.id, startTime: course.classInstanceInfos[0].startTime, endTime: course.classInstanceInfos[0].endTime, dayOfWeek: course.classInstanceInfos[0].dayOfWeek }];
+            if (course.classInstanceInfos.length > 0) {
+                tmpSelectedSubjectTime = [...selectedSubjectTime, { id: course.id, startTime: course.classInstanceInfos[0].startTime, endTime: course.classInstanceInfos[0].endTime, dayOfWeek: course.classInstanceInfos[0].dayOfWeek }];
+            } else {
+                tmpSelectedSubjectTime = [...selectedSubjectTime, { id: course.id, startTime: "00:00", endTime: "00:00", dayOfWeek: "" }];
+            }
             tmpSelectedSubject = [...selectedSubject, tmp];
         }
 
@@ -381,14 +391,15 @@ export default function Neptun() {
 
             const courses = data.data.filter((e: any) => subject.courseIds.find((c: any) => c == e.id)).map((e: any) => { return { code: e.code } });
             const choosedSubject = subjects.find((e: any) => e.id == subject.subjectId);
-            setSelectedSubjectByName([...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
-            localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify([...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]));
 
             if (selectedSubject.length - 1 > index) {
                 indexingSaveSubjectByName(index + 1, subjects);
             } else {
                 alert("Everything is saved successfully!");
             }
+            console.log(subject, choosedSubject, subjects);
+            setSelectedSubjectByName(selectedSubjectByName => [...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
+            localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByName));
         });
     }
 
@@ -442,7 +453,7 @@ export default function Neptun() {
             const courses = data.data.filter((e: any) => savedSubjs[index].courses.find((c: any) => c.code == e.code)).map((e: any) => { return e.id });
             const scheduledSubjectId = data.data[0].scheduledSubjectId;
 
-            setSelectedSubject([...selectedSubject, { courseIds: courses, curriculumTemplateId: subjects[index].curriculumTemplateId, curriculumTemplateLineId: subjects[index].curriculumTemplateLineId, scheduledSubjectId: scheduledSubjectId, subjectId: subjects[index].id, termId: subjects[index].termId }]);
+            setSelectedSubject(selectedSubject => [...selectedSubject, { courseIds: courses, curriculumTemplateId: subjects[index].curriculumTemplateId, curriculumTemplateLineId: subjects[index].curriculumTemplateLineId, scheduledSubjectId: scheduledSubjectId, subjectId: subjects[index].id, termId: subjects[index].termId }]);
         });
     }
 
@@ -453,6 +464,14 @@ export default function Neptun() {
         localStorage.removeItem("tanulas.netlify.selectedSubject");
         localStorage.removeItem("tanulas.netlify.selectedSubjectTime");
         localStorage.removeItem("tanulas.netlify.selectedSubjectByName");
+    }
+
+    function calculateCredit() {
+        let credit = 0;
+        subjects.filter((e: any) => selectedSubject.find((s: any) => s.subjectId == e.id)).forEach((e: any) => {
+            credit += e.credit;
+        });
+        return credit;
     }
 
     return (
@@ -506,6 +525,12 @@ export default function Neptun() {
 
                     <div className="flex justify-between w-full gap-2">
                         <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
+                        <div className="flex items-center gap-2">
+                            {calculateCredit()} credit
+                        </div>
+                        <div>
+                            <a href="https://ttr.sze.hu/#/tantargy_lista/hu/IVIN_BMI_4" className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2">Tematika</a>
+                        </div>
                         <div className="flex gap-2">
                             <button onClick={signInToSelectedSubjects} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-sign-in"></i>Sign in</button>
                             <button onClick={saveSubjectByName} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-save"></i>Save</button>
@@ -517,7 +542,7 @@ export default function Neptun() {
 
                         {
                             subjects.map((row: any, i: number) => (
-                                <div key={i} className="flex flex-col w-full items-center p-3 border rounded-md hover:bg-gray-100 cursor-pointer">
+                                <div key={i} className={`flex flex-col w-full items-center p-3 border rounded-md hover:bg-gray-100 cursor-pointer ${checkIfSelectedSubject(row) ? "border-orange-400" : ""}`}>
                                     <div className="grid grid-cols-5 w-full items-center ">
                                         <div className="flex justify-start">
                                             {row.title}
