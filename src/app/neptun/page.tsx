@@ -219,7 +219,6 @@ export default function Neptun() {
             } else {
                 setSubjectTypes(data.data);
                 setSelectedSubjectType(data.data[0].value);
-                console.log(data.data[0].value);
                 subjectType = data.data[0].value;
             }
         });
@@ -398,7 +397,6 @@ export default function Neptun() {
             } else {
                 alert("Everything is saved successfully!");
             }
-            console.log(subject, choosedSubject, subjects);
             setSelectedSubjectByName(selectedSubjectByName => [...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
             localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByName));
         });
