@@ -113,6 +113,7 @@ export default function Navbar({
 
                     <div onClick={() => { navigateTo("/average"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-chart-bar"></i> Átlag</div>
                     <div onClick={() => { navigateTo("/results"); setMenu(false) }} className={`p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-percentage"></i> Eredmények</div>
+                    <div onClick={() => { navigateTo("/neptun"); setMenu(false) }} className={`col-span-2 p-3 cursor-pointer px-4 rounded-full border-2 border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800 hover:text-white duration-200`}><i className="pi pi-user"></i> Neptun</div>
 
                     {
                         checkUser &&
