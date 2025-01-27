@@ -6,7 +6,7 @@ export default function Neptun() {
 
     const url = "https://szgm-next-server.onrender.com";
 
-    async function getLogin(): any {
+    async function getLogin(): Promise<any> {
         if (localStorage.getItem("tanulas.netlify.neptun")) {
 
             const access = localStorage.getItem("tanulas.netlify.neptun") as string;
