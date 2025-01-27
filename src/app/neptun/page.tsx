@@ -393,7 +393,7 @@ export default function Neptun() {
 
             const courses = data.data.filter((e: any) => subject.courseIds.find((c: any) => c == e.id)).map((e: any) => { return { code: e.code } });
             const choosedSubject = subjects.find((e: any) => e.id == subject.subjectId);
-            setSelectedSubjectByName(selectedSubjectByName => [...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
+            // setSelectedSubjectByName(selectedSubjectByName => [...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
             selectedSubjectByNameRef.current.push({ code: choosedSubject.code, name: choosedSubject.title, courses: courses });
 
             if (selectedSubject.length - 1 > index) {
@@ -405,7 +405,8 @@ export default function Neptun() {
     }
 
     async function SaveIntoLocalStorage() {
-        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef)); console.log(selectedSubjectByName)}, 10);
+        setSelectedSubjectByName(selectedSubjectByNameRef.current);
+        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef.current)); console.log(selectedSubjectByName)}, 10);
         alert("Everything is saved successfully!");
     }
 
