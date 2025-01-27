@@ -539,7 +539,7 @@ export default function Neptun() {
                         </div>
                         <div className="flex gap-2">
                             <button onClick={signInToSelectedSubjects} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-sign-in"></i>Sign in</button>
-                            <button onClick={saveSubjectByName} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-save"></i>Save</button>
+                            <button disabled={subjects.length == 0} onClick={saveSubjectByName} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2 disabled:bg-emerald-900 disabled:text-gray-400"> <i className="pi pi-save"></i>Save</button>
                             <button onClick={getSavedSubjects} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-history"></i>Paste</button>
                         </div>
                     </div>
