@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useQuery } from "react-query";
 
 export default function Neptun() {
@@ -55,6 +55,8 @@ export default function Neptun() {
     const [passwordEye, setPasswordEye] = useState<boolean>(false);
 
     const [selectedSubjectByName, setSelectedSubjectByName] = useState<any[]>([]);
+
+    const selectedSubjectByNameRef = useRef(selectedSubjectByName);
 
 
     function chooseSubject(subject: any, course: any) {
@@ -391,15 +393,20 @@ export default function Neptun() {
 
             const courses = data.data.filter((e: any) => subject.courseIds.find((c: any) => c == e.id)).map((e: any) => { return { code: e.code } });
             const choosedSubject = subjects.find((e: any) => e.id == subject.subjectId);
+            setSelectedSubjectByName(selectedSubjectByName => [...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
+            selectedSubjectByNameRef.current.push({ code: choosedSubject.code, name: choosedSubject.title, courses: courses });
 
             if (selectedSubject.length - 1 > index) {
                 indexingSaveSubjectByName(index + 1, subjects);
             } else {
-                alert("Everything is saved successfully!");
+                SaveIntoLocalStorage();
             }
-            setSelectedSubjectByName(selectedSubjectByName => [...selectedSubjectByName, { code: choosedSubject.code, name: choosedSubject.title, courses: courses }]);
-            localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByName));
         });
+    }
+
+    async function SaveIntoLocalStorage() {
+        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef)); console.log(selectedSubjectByName)}, 10);
+        alert("Everything is saved successfully!");
     }
 
     async function getSavedSubjects() {
