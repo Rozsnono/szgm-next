@@ -353,6 +353,8 @@ export default function Neptun() {
         localStorage.removeItem("tanulas.netlify.neptun");
         localStorage.removeItem("tanulas.netlify.selectedSubject");
         localStorage.removeItem("tanulas.netlify.selectedSubjectTime");
+
+        window.location.reload();
     }
 
     async function saveSubjectByName() {
@@ -406,7 +408,7 @@ export default function Neptun() {
 
     async function SaveIntoLocalStorage() {
         setSelectedSubjectByName(selectedSubjectByNameRef.current);
-        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef.current)); console.log(selectedSubjectByName)}, 10);
+        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef.current)); console.log(selectedSubjectByName) }, 10);
         alert("Everything is saved successfully!");
     }
 
@@ -522,28 +524,33 @@ export default function Neptun() {
 
             <div className="flex w-full gap-3">
                 <main className="flex flex-col gap-6 w-3/4">
-                    <div className="flex justify-between w-full gap-2">
-                        <Select options={terms} onChange={(e) => { setSelectedTerm(e.target.value) }} value={selectedTerm}></Select>
-                        <Select options={subjectTypes} onChange={(e) => { setSelectedSubjectType(e.target.value) }} value={selectedSubjectType}></Select>
-                        <Select options={curriculums} onChange={(e) => { setSelectedCurriculum(e.target.value) }} value={selectedCurriculum}></Select>
-                        <Select options={groups} onChange={(e) => { setSelectedGroup(e.target.value) }} value={selectedGroup}></Select>
-                        <button onClick={getSubjects} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-search"></i> Search</button>
-                    </div>
+                    {
+                        accesToken &&
+                        <>
+                            <div className="flex justify-between w-full gap-2">
+                                <Select options={terms} onChange={(e) => { setSelectedTerm(e.target.value) }} value={selectedTerm}></Select>
+                                <Select options={subjectTypes} onChange={(e) => { setSelectedSubjectType(e.target.value) }} value={selectedSubjectType}></Select>
+                                <Select options={curriculums} onChange={(e) => { setSelectedCurriculum(e.target.value) }} value={selectedCurriculum}></Select>
+                                <Select options={groups} onChange={(e) => { setSelectedGroup(e.target.value) }} value={selectedGroup}></Select>
+                                <button onClick={getSubjects} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-search"></i> Search</button>
+                            </div>
 
-                    <div className="flex justify-between w-full gap-2">
-                        <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
-                        <div className="flex items-center gap-2">
-                            {calculateCredit()} credit
-                        </div>
-                        <div>
-                            <a href="https://ttr.sze.hu/#/tantargy_lista/hu/IVIN_BMI_4" className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2">Tematika</a>
-                        </div>
-                        <div className="flex gap-2">
-                            <button onClick={signInToSelectedSubjects} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-sign-in"></i>Sign in</button>
-                            <button disabled={subjects.length == 0} onClick={saveSubjectByName} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2 disabled:bg-emerald-900 disabled:text-gray-400"> <i className="pi pi-save"></i>Save</button>
-                            <button onClick={getSavedSubjects} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-history"></i>Paste</button>
-                        </div>
-                    </div>
+                            <div className="flex justify-between w-full gap-2">
+                                <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
+                                <div className="flex items-center gap-2">
+                                    {calculateCredit()} credit
+                                </div>
+                                <div>
+                                    <a href="https://ttr.sze.hu/#/tantargy_lista/hu/IVIN_BMI_4" className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2">Tematika</a>
+                                </div>
+                                <div className="flex gap-2">
+                                    <button onClick={signInToSelectedSubjects} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-sign-in"></i>Sign in</button>
+                                    <button disabled={subjects.length == 0} onClick={saveSubjectByName} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2 disabled:bg-emerald-900 disabled:text-gray-400"> <i className="pi pi-save"></i>Save</button>
+                                    <button onClick={getSavedSubjects} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-history"></i>Paste</button>
+                                </div>
+                            </div>
+                        </>
+                    }
 
                     <div className="flex flex-col gap-2 justify-center w-full">
 

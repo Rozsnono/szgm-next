@@ -46,12 +46,10 @@ export default function RootLayout({
         <QueryClientProvider client={queryClient}>
           <UserContext.Provider value={{ user, setUser }}>
             <Navbar>
-              <Form>
-                <div className=' bg-white'>
-                  {children}
+              <div className=' bg-white'>
+                {children}
 
-                </div>
-              </Form>
+              </div>
             </Navbar>
           </UserContext.Provider>
         </QueryClientProvider>

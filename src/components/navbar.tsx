@@ -12,6 +12,7 @@ import { useRouter } from 'next/navigation';
 import { useQuery } from 'react-query';
 import { Tooltip } from 'primereact/tooltip';
 import { urls } from './menus';
+import Loading from '@/app/loading';
 
 export default function Navbar({
     children,
@@ -292,11 +293,10 @@ export default function Navbar({
                 </div>
             </Sidebar>
 
-            {
+            {/* {
                 (data.isLoading && user !== null) &&
                 <main className="fixed top-0 p-2 flex flex-col items-center  w-screen h-screen bg-[#00000040]" style={{ zIndex: 1001 }}>
                     <div className="mx-auto flex flex-col bg-white border-2 border-red-800 border-red-800 gap-6 p-6 rounded-lg h-fit" >
-                        {/* <i className="pi pi-spin pi-spinner" style={{ fontSize: "3rem" }}></i> */}
                         <div className="loader"></div>
                     </div>
 
@@ -311,6 +311,11 @@ export default function Navbar({
                         </div>
                     }
                 </main>
+            } */}
+
+{
+                (data.isLoading && user !== null) &&
+                <Loading></Loading>
             }
 
             {children}
