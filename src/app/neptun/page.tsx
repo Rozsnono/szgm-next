@@ -54,7 +54,8 @@ export default function Neptun() {
 
     const [passwordEye, setPasswordEye] = useState<boolean>(false);
 
-    const [credit, setCredit] = useState<number>(0);
+    const [selectedSubjectByName, setSelectedSubjectByName] = useState<any[]>([]);
+
 
     function chooseSubject(subject: any, course: any) {
 
@@ -290,7 +291,8 @@ export default function Neptun() {
         signingInToSubject(selectedSubject[index]).then((res) => res.json().then((data) => {
             if (!(index > selectedSubject.length - 1)) {
                 indexingSignInToSelectedSubjects(index + 1);
-                alert(data.notification[0].description);
+                // alert(data.notification[0].description);
+                console.log(data);
             }
         }));
     }
@@ -370,7 +372,6 @@ export default function Neptun() {
         });
     }
 
-    const [selectedSubjectByName, setSelectedSubjectByName] = useState<any[]>([]);
 
     async function indexingSaveSubjectByName(index: number, subjects: any[]) {
         const subject = selectedSubject[index];
