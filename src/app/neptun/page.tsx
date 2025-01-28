@@ -485,6 +485,13 @@ export default function Neptun() {
     function clearSaved() {
         setSelectedSubject([]);
         setSelectedSubjectTime([]);
+        localStorage.removeItem("tanulas.netlify.selectedSubject");
+        localStorage.removeItem("tanulas.netlify.selectedSubjectTime");
+    }
+
+    function clearSavedAll() {
+        setSelectedSubject([]);
+        setSelectedSubjectTime([]);
         setSelectedSubjectByName([]);
         localStorage.removeItem("tanulas.netlify.selectedSubject");
         localStorage.removeItem("tanulas.netlify.selectedSubjectTime");
@@ -577,6 +584,7 @@ export default function Neptun() {
 
                             <div className="flex justify-between w-full gap-2">
                                 <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
+                                <button onClick={clearSavedAll} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear All</button>
                                 <div className="flex items-center gap-2">
                                     {calculateCredit()} credit
                                 </div>
