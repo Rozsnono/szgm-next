@@ -9,7 +9,7 @@ export default function Loading() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setTime((prev) => prev + 1);
+            setTime((prev) => prev + 0.5);
         }, 1000);
     }, []);
 

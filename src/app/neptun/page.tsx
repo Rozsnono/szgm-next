@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useQuery } from "react-query";
 
 export default function Neptun() {
@@ -56,8 +56,13 @@ export default function Neptun() {
 
     const [selectedSubjectByName, setSelectedSubjectByName] = useState<any[]>([]);
 
-    const selectedSubjectByNameRef = useRef(selectedSubjectByName);
+    const [time, setTime] = useState(1);
 
+    const [isSigningIn, setIsSigningIn] = useState<boolean>(false);
+
+    const [signInCodes, setSignInCodes] = useState<any[]>([]);
+
+    const selectedSubjectByNameRef = useRef(selectedSubjectByName);
 
     function chooseSubject(subject: any, course: any) {
 
@@ -167,6 +172,7 @@ export default function Neptun() {
             if (data.data && data.data.accessToken) {
                 setAccessToken(data.data.accessToken);
                 localStorage.setItem("tanulas.netlify.neptun", data.data.accessToken);
+                localStorage.setItem("tanulas.netlify.neptun.login", JSON.stringify(new Date().getTime()));
                 neptunAPI.refetch();
             } else {
 
@@ -289,10 +295,12 @@ export default function Neptun() {
     }
 
     function indexingSignInToSelectedSubjects(index: number) {
+        console.log(index);
         signingInToSubject(selectedSubject[index]).then((res) => res.json().then((data) => {
             if (!(index > selectedSubject.length - 1)) {
                 indexingSignInToSelectedSubjects(index + 1);
                 // alert(data.notification[0].description);
+                setSignInCodes(signInCodes => [...signInCodes, {subject: selectedSubject[index], data: data}]);
                 console.log(data);
             }
         }));
@@ -305,7 +313,7 @@ export default function Neptun() {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${accesToken}`
             },
-            body: JSON.stringify(selectedSubject[0])
+            body: JSON.stringify(subject)
         });
     }
 
@@ -337,24 +345,32 @@ export default function Neptun() {
     }
 
     function logOut() {
-        setAccessToken("");
-        setSubjects([]);
-        setTerms([]);
-        setSubjectTypes([]);
-        setCurriculums([]);
-        setGroups([]);
-        setSelectedTerm("");
-        setSelectedSubjectType("");
-        setSelectedCurriculum("");
-        setSelectedGroup("");
-        setSubjectDetail({});
-        setSelectedSubject([]);
+        fetch(url + "/api/neptun/logout", {
+            method: "POST", headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${accesToken}`
+            }
+        }).then(() => {
+            setAccessToken("");
+            setSubjects([]);
+            setTerms([]);
+            setSubjectTypes([]);
+            setCurriculums([]);
+            setGroups([]);
+            setSelectedTerm("");
+            setSelectedSubjectType("");
+            setSelectedCurriculum("");
+            setSelectedGroup("");
+            setSubjectDetail({});
+            setSelectedSubject([]);
 
-        localStorage.removeItem("tanulas.netlify.neptun");
-        localStorage.removeItem("tanulas.netlify.selectedSubject");
-        localStorage.removeItem("tanulas.netlify.selectedSubjectTime");
+            localStorage.removeItem("tanulas.netlify.neptun");
+            localStorage.removeItem("tanulas.netlify.selectedSubject");
+            localStorage.removeItem("tanulas.netlify.selectedSubjectTime");
+            localStorage.removeItem("tanulas.netlify.neptun.login");
 
-        window.location.reload();
+            window.location.reload();
+        });
     }
 
     async function saveSubjectByName() {
@@ -483,6 +499,29 @@ export default function Neptun() {
         return credit;
     }
 
+    function calculateTime() {
+        const logTime = localStorage.getItem("tanulas.netlify.neptun.login");
+        if (!logTime) {
+            return 0;
+        }
+        const now = new Date().getTime();
+        const diff = now - parseInt(logTime);
+        const time = 10 * 60 - Math.floor(diff / 1000);
+        setTime(time);
+    }
+
+    useEffect(() => {
+        setInterval(() => {
+            if (localStorage.getItem("tanulas.netlify.neptun.login")) {
+                calculateTime();
+            }
+        }, 1000);
+    }, []);
+
+    function correctTimeDisplayer() {
+        return `${Math.floor(time / 60)}:${time % 60 < 10 ? '0' : ''}${time % 60}`;
+    }
+
     return (
         <main className="flex flex-col min-h-screen gap-6 lg:p-12 lg:pt-24 p-6 pt-32 text-sm">
             <div className="flex w-full justify-between">
@@ -509,9 +548,10 @@ export default function Neptun() {
                         </form>
                         :
                         <div className="flex gap-2">
-                            <div className="border p-2 rounded px-4 flex items-center">
-                                Authorized
-                                <div className="text-gray-600 cursor-pointer" onClick={copyCode}>
+                            <div className="border p-2 rounded px-4 flex items-center gap-2">
+                                {correctTimeDisplayer()}
+                                <div className="text-gray-600 cursor-pointer flex" onClick={copyCode}>
+                                    <div>Authorized</div>
                                     <i className="pi pi-copy text-sm"></i>
                                 </div>
                             </div>
@@ -523,7 +563,7 @@ export default function Neptun() {
             </div>
 
             <div className="flex w-full gap-3">
-                <main className="flex flex-col gap-6 w-3/4">
+                <main className={"flex flex-col gap-6 " + (!isSigningIn ? "w-3/4" : "w-2/4")}>
                     {
                         accesToken &&
                         <>
@@ -621,14 +661,31 @@ export default function Neptun() {
                     </div>
                 </main>
 
-                <main className="flex flex-col gap-6 w-1/4">
-                    <pre style={{ background: '#444', color: "#fff", padding: '1em', borderRadius: '8px', overflowX: 'auto' }}>
-                        <code>{JSON.stringify(selectedSubject, null, 2)}</code>
-                    </pre>
+                <main className={"flex flex-col gap-6 " + (isSigningIn ? "w-2/4" : "w-1/4")}>
 
-                    <pre style={{ background: '#444', color: "#fff", padding: '1em', borderRadius: '8px', overflowX: 'auto' }}>
-                        <code>{JSON.stringify(selectedSubjectByName, null, 2)}</code>
-                    </pre>
+                    <button className="border w-fit p-2 flex items-center rounded-md" onClick={()=>{setIsSigningIn(!isSigningIn)}}>
+                        {
+                            isSigningIn ?
+                                <i className="pi pi-server"></i> : <i className="pi pi-code"></i>
+                        }
+                    </button>
+
+                    {
+                        isSigningIn ?
+                            <pre className="w-full p-4 bg-stone-600 text-gray-100 rounded-md overflow-x-auto">
+                                <code>{JSON.stringify(signInCodes, null, 2)}</code>
+                            </pre>
+                            : 
+                            <>
+                                <pre className="w-full p-4 bg-stone-600 text-gray-100 rounded-md overflow-x-auto">
+                                    <code>{JSON.stringify(selectedSubject, null, 2)}</code>
+                                </pre>
+
+                                <pre className="w-full p-4 bg-stone-600 text-gray-100 rounded-md overflow-x-auto">
+                                    <code>{JSON.stringify(selectedSubjectByName, null, 2)}</code>
+                                </pre>
+                            </>
+                    }
                 </main>
             </div>
         </main>
