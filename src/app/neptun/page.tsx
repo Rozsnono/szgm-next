@@ -531,12 +531,12 @@ export default function Neptun() {
 
     return (
         <main className="flex flex-col min-h-screen gap-6 lg:p-12 lg:pt-24 p-6 pt-32 text-sm">
-            <div className="flex w-full justify-between">
+            <div className="flex w-full lg:justify-between lg:flex-row flex-col gap-6">
                 <div>Neptun</div>
 
                 {
                     !accesToken ?
-                        <form className="flex gap-2">
+                        <form className="flex lg:flex-row flex-col gap-2">
                             <input type="text" name="neptun" id="neptun" className="border rounded-md p-2" placeholder="Neptun" value={neptun} onChange={(e) => { setNeptun(e.target.value as any) }} />
                             <div className="border rounded-md flex gap-1 items-center pe-2">
                                 <input type={passwordEye ? 'text' : 'password'} name="password" id="password" className="p-2 rounded" placeholder="Password" value={password} onChange={(e) => { setPassword(e.target.value as any) }} />
@@ -569,12 +569,12 @@ export default function Neptun() {
 
             </div>
 
-            <div className="flex w-full gap-3">
-                <main className={"flex flex-col gap-6 " + (!isSigningIn ? "w-3/4" : "w-2/4")}>
+            <div className="flex w-full gap-3 flex-wrap">
+                <main className={"flex flex-col gap-6 w-full " + (!isSigningIn ? "lg:w-3/4" : "lg:w-2/4")}>
                     {
                         accesToken &&
                         <>
-                            <div className="flex justify-between w-full gap-2">
+                            <div className="flex lg:justify-between lg:flex-row flex-col w-full gap-2">
                                 <Select options={terms} onChange={(e) => { setSelectedTerm(e.target.value) }} value={selectedTerm}></Select>
                                 <Select options={subjectTypes} onChange={(e) => { setSelectedSubjectType(e.target.value) }} value={selectedSubjectType}></Select>
                                 <Select options={curriculums} onChange={(e) => { setSelectedCurriculum(e.target.value) }} value={selectedCurriculum}></Select>
@@ -582,7 +582,7 @@ export default function Neptun() {
                                 <button onClick={getSubjects} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-search"></i> Search</button>
                             </div>
 
-                            <div className="flex justify-between w-full gap-2">
+                            <div className="flex lg:justify-between lg:flex-row flex-col w-full gap-2">
                                 <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
                                 <button onClick={clearSavedAll} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear All</button>
                                 <div className="flex items-center gap-2">
@@ -600,7 +600,7 @@ export default function Neptun() {
                         </>
                     }
 
-                    <div className="flex flex-col gap-2 justify-center w-full">
+                    <div className="flex flex-col gap-2 justify-center w-full lg:text-md text-[0.8rem]">
 
                         {
                             subjects.map((row: any, i: number) => (
@@ -610,7 +610,7 @@ export default function Neptun() {
                                             {row.title}
                                         </div>
                                         <div className="flex justify-center col-span-3">
-                                            {row.subjectGroup} - {row.credit} kredit - {row.requirementType} - {row.code}
+                                            <span className="lg:flex hidden">{row.subjectGroup}</span> - {row.credit} kredit -  <span className="lg:flex hidden">{row.requirementType} - {row.code}</span>
                                         </div>
                                         <div className="flex justify-end items-center text-gray-500">
                                             {checkIfSelectedSubject(row) && <div className="bg-orange-500 text-gray-100 px-2 p-1 rounded">!</div>}
@@ -669,7 +669,7 @@ export default function Neptun() {
                     </div>
                 </main>
 
-                <main className={"flex flex-col gap-6 " + (isSigningIn ? "w-2/4" : "w-1/4")}>
+                <main className={"flex flex-col gap-6 w-full " + (isSigningIn ? "lg:w-2/4" : "lg:w-1/4")}>
 
                     <button className="border w-fit p-2 flex items-center rounded-md" onClick={()=>{setIsSigningIn(!isSigningIn)}}>
                         {
