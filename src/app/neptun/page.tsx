@@ -300,7 +300,7 @@ export default function Neptun() {
             if (!(index > selectedSubject.length - 1)) {
                 indexingSignInToSelectedSubjects(index + 1);
                 // alert(data.notification[0].description);
-                setSignInCodes(signInCodes => [...signInCodes, {subject: selectedSubject[index], data: data}]);
+                setSignInCodes(signInCodes => [...signInCodes, { subject: selectedSubject[index], data: data }]);
                 console.log(data);
             }
         }));
@@ -336,7 +336,7 @@ export default function Neptun() {
             let tmp: any = {};
             for (const e of data.data) {
                 let temp = tmp[e.type] ? tmp[e.type] : [];
-                temp.push({ id: e.id, classInstanceInfos: e.classInstanceInfos, teacher: e.tutorName, scheduledSubjectId: e.scheduledSubjectId });
+                temp.push({ id: e.id, classInstanceInfos: e.classInstanceInfos, teacher: e.tutorName, maxLimit: e.maxLimit, registeredStudentsCount: e.registeredStudentsCount, scheduledSubjectId: e.scheduledSubjectId });
                 tmp[e.type] = temp;
                 tmp.id = subject.id;
             }
@@ -506,6 +506,14 @@ export default function Neptun() {
         return credit;
     }
 
+    function calculateCreditRegistered() {
+        let credit = 0;
+        subjects.filter((e: any) => e.isRegistered).forEach((e: any) => {
+            credit += e.credit;
+        });
+        return credit;
+    }
+
     function calculateTime() {
         const logTime = localStorage.getItem("tanulas.netlify.neptun.login");
         if (!logTime) {
@@ -569,8 +577,8 @@ export default function Neptun() {
 
             </div>
 
-            <div className="flex w-full gap-2 flex-wrap">
-                <main className={"flex flex-col gap-6 w-full " + (!isSigningIn ? "lg:w-fit" : "lg:w-2/4")}>
+            <div className="flex w-full gap-2 ">
+                <main className={"flex flex-col gap-6 w-full " + (!isSigningIn ? "lg:w-3/4" : "lg:w-2/4")}>
                     {
                         accesToken &&
                         <>
@@ -583,14 +591,18 @@ export default function Neptun() {
                             </div>
 
                             <div className="flex lg:justify-between lg:flex-row flex-col w-full gap-2">
-                                <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
-                                <button onClick={clearSavedAll} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear All</button>
-                                <div className="flex items-center gap-2">
+                                <div className="flex gap-2">
+                                    <button onClick={clearSaved} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear</button>
+                                    <button onClick={clearSavedAll} className="bg-red-800 hover:bg-red-900 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-trash"></i>Clear All</button>
+                                    <a href="https://ttr.sze.hu/#/tantargy_lista/hu/IVIN_BMI_4" className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-book"></i> Tematika</a>
+                                </div>
+                                <div className="border-2 border-green-500 font-bold py-2 px-4 rounded flex items-center gap-2">
+                                    {calculateCreditRegistered()} credit
+                                </div>
+                                <div className="border-2 border-orange-500 font-bold py-2 px-4 rounded flex items-center gap-2">
                                     {calculateCredit()} credit
                                 </div>
-                                <div>
-                                    <a href="https://ttr.sze.hu/#/tantargy_lista/hu/IVIN_BMI_4" className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2">Tematika</a>
-                                </div>
+
                                 <div className="flex gap-2">
                                     <button onClick={signInToSelectedSubjects} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2"> <i className="pi pi-sign-in"></i>Sign in</button>
                                     <button disabled={subjects.length == 0} onClick={saveSubjectByName} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2 disabled:bg-emerald-900 disabled:text-gray-400"> <i className="pi pi-save"></i>Save</button>
@@ -604,7 +616,7 @@ export default function Neptun() {
 
                         {
                             subjects.map((row: any, i: number) => (
-                                <div key={i} className={`flex flex-col w-full items-center p-3 border rounded-md hover:bg-gray-100 cursor-pointer ${checkIfSelectedSubject(row) ? "border-orange-400" : ""}`}>
+                                <div key={i} className={`flex flex-col w-full items-center p-3 border rounded-md hover:bg-gray-100 cursor-pointer ${checkIfSelectedSubject(row) ? "border-orange-400" : (row.isRegistered ? "border-green-400" : "")}`}>
                                     <div className="grid grid-cols-5 w-full items-center ">
                                         <div className="flex justify-start">
                                             {row.title}
@@ -613,6 +625,7 @@ export default function Neptun() {
                                             <span className="lg:flex hidden">{row.subjectGroup}</span> - {row.credit} kredit -  <span className="lg:flex hidden">{row.requirementType} - {row.code}</span>
                                         </div>
                                         <div className="flex justify-end items-center text-gray-500">
+                                            {row.isRegistered && <div className="bg-green-400 text-gray-100 flex items-center p-2 px-1 rounded"><i className="pi pi-check"></i></div>}
                                             {checkIfSelectedSubject(row) && <div className="bg-orange-500 text-gray-100 px-2 p-1 rounded">!</div>}
                                             <i className="pi pi-ellipsis-v cursor-pointer text-[0.4rem]" onClick={() => { getSubjectDetail(row) }}></i>
                                         </div>
@@ -628,7 +641,7 @@ export default function Neptun() {
                                                         </div>
                                                         {
                                                             subjectDetail[key].map((e: any, i: number) => (
-                                                                <div key={i} className="grid grid-cols-3 justify-between w-full items-center p-2 border rounded-md">
+                                                                <div key={i} className="grid grid-cols-4 justify-between w-full items-center p-2 border rounded-md">
                                                                     <div className="flex gap-2 justify-start">
                                                                         {
                                                                             e.classInstanceInfos.map((c: any, i: number) => (
@@ -639,6 +652,10 @@ export default function Neptun() {
                                                                                 </div>
                                                                             ))
                                                                         }
+                                                                    </div>
+
+                                                                    <div className="flex justify-center">
+                                                                        {e.registeredStudentsCount}/{e.maxLimit}
                                                                     </div>
 
                                                                     <div className="flex justify-center">
@@ -669,9 +686,9 @@ export default function Neptun() {
                     </div>
                 </main>
 
-                <main className={"flex flex-col gap-6 w-full " + (isSigningIn ? "lg:w-fit" : "lg:w-fit")}>
+                <main className={"flex flex-col gap-6 w-full " + (!isSigningIn ? "lg:w-1/4" : "lg:w-1/2")}>
 
-                    <button className="border w-fit p-2 flex items-center rounded-md" onClick={()=>{setIsSigningIn(!isSigningIn)}}>
+                    <button className="border w-fit p-2 flex items-center rounded-md" onClick={() => { setIsSigningIn(!isSigningIn) }}>
                         {
                             isSigningIn ?
                                 <i className="pi pi-server"></i> : <i className="pi pi-code"></i>
@@ -683,7 +700,7 @@ export default function Neptun() {
                             <pre className="w-full p-4 bg-stone-600 text-gray-100 rounded-md overflow-x-auto">
                                 <code>{JSON.stringify(signInCodes, null, 2)}</code>
                             </pre>
-                            : 
+                            :
                             <>
                                 <pre className="w-full p-4 bg-stone-600 text-gray-100 rounded-md overflow-x-auto">
                                     <code>{JSON.stringify(selectedSubject, null, 2)}</code>
