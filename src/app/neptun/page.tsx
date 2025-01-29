@@ -569,8 +569,8 @@ export default function Neptun() {
 
             </div>
 
-            <div className="flex w-full gap-3 flex-wrap">
-                <main className={"flex flex-col gap-6 w-full " + (!isSigningIn ? "lg:w-3/4" : "lg:w-2/4")}>
+            <div className="flex w-full gap-2 flex-wrap">
+                <main className={"flex flex-col gap-6 w-full " + (!isSigningIn ? "lg:w-fit" : "lg:w-2/4")}>
                     {
                         accesToken &&
                         <>
@@ -669,7 +669,7 @@ export default function Neptun() {
                     </div>
                 </main>
 
-                <main className={"flex flex-col gap-6 w-full " + (isSigningIn ? "lg:w-2/4" : "lg:w-1/4")}>
+                <main className={"flex flex-col gap-6 w-full " + (isSigningIn ? "lg:w-fit" : "lg:w-fit")}>
 
                     <button className="border w-fit p-2 flex items-center rounded-md" onClick={()=>{setIsSigningIn(!isSigningIn)}}>
                         {
