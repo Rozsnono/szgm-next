@@ -56,6 +56,12 @@ export default function Home() {
             link:"portal",
             max: 20
         },
+        {
+            title: "PSZICHO",
+            icon: "pi pi-table",
+            link:"pszicho",
+            max: 30
+        },
     ];
     const [selectedExam, setSelectedExam] = useState<any>(param.get("exam") ? exams.filter((item) => item.title == (param.get("exam") as string).toUpperCase())[0] : exams[0]);
     const exam = useRef<any>(selectedExam);

@@ -1,0 +1,1078 @@
+[
+    {
+        "question": "1. A sportpszichológiára igaz",
+        "options": [
+            "a) a fizikai aktivitás lélektani hatását vizsgálja",
+            "b) edukációs és klinikai szemlélet",
+            "c) elméleti és alkalmazott megközelítés",
+            "d) kizárólag problémás esetekkel foglalozik"
+        ],
+        "answers": [
+            "a) a fizikai aktivitás lélektani hatását vizsgálja",
+            "b) edukációs és klinikai szemlélet",
+            "c) elméleti és alkalmazott megközelítés"
+        ]
+    },
+    {
+        "question": "2. Az önmeghatározás-elmélet (SDT) komponensei",
+        "options": [
+            "a) Kompetencia",
+            "b) Autonómia",
+            "c) Szerencse",
+            "d) Társas kapcsolatok"
+        ],
+        "answers": [
+            "a) Kompetencia",
+            "b) Autonómia",
+            "d) Társas kapcsolatok"
+        ]
+    },
+    {
+        "question": "3. A sportoló mellett dolgozó pszichológusnak – a sporttörvény szerint - nem kell sport-szakpszichológusi végzettséggel rendelkeznie",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "4. A sportpszichológus általában az egészségügyi stábban dolgozik",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "5. Siker esetén mindenki munkáját el kell ismerni, kudarc esetén pedig közösen kell levonni a konzekvenciákat.",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "6. A sportpszichológushoz érkezhet a sportoló",
+        "options": [
+            "a) önállóan, egyedül",
+            "b) edző küldi",
+            "c) szerződése kötelezi",
+            "d) szülővel"
+        ],
+        "answers": [
+            "a) önállóan, egyedül",
+            "b) edző küldi",
+            "c) szerződése kötelezi",
+            "d) szülővel"
+        ]
+    },
+    {
+        "question": "7. Titoktartási kötelezettség alá nem tartozó információk",
+        "options": [
+            "a) Szexuális bántalmazás kiskorú esetében",
+            "b) Kábítószer-használat kiskorú esetében",
+            "c) egyik sem",
+            "d) mindkettő"
+        ],
+        "answers": [
+            "d) mindkettő"
+        ]
+    },
+    {
+        "question": "8. Az edző kontrollálatlan izgalma befolyásolhatja a versenyző teljesítményét.",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "9. A felkészülési (terápiás) szerződés tulajdonképpen egy szóbeli megállapodás, amely rögzíti az együttműködés kereteit.",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "10. A sportpszichológiai munka fázisai",
+        "options": [
+            "a) bevezető szakasz",
+            "b) működési (munka) szakasz",
+            "c) lezárás",
+            "d) vegyes szakasz"
+        ],
+        "answers": [
+            "a) bevezető szakasz",
+            "b) működési (munka) szakasz"
+        ]
+    },
+    {
+        "question": "11. A mozgások érzékelése-szabályozása „belülről” történik (interocepció), a vezető (mozgásszabályozó) információk az izmokból és inakból származnak.",
+        "options": [
+            "a) zárt mozgáskészségek",
+            "b) nyílt mozgáskészségek",
+            "c) egyik sem",
+            "d) mindkettő"
+        ],
+        "answers": [
+            "a) zárt mozgáskészségek"
+        ]
+    },
+    {
+        "question": "12. Az imagináció alatt az embereknek azt a képességét értjük, hogy jelen nem lévő szituációkat, folyamatokat, tárgyakat és/vagy személyeket képesek gondolatban megjeleníteni",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "13. Az autogén tréning (AT) egy relaxációs módszer, amit a jóga és a hipnózis ihletett, azok gyakorlatára épül.",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "14. Az organizmikus átkapcsolás Schultz leírása szerint, testi-lelki áthangolódást, egy új pszichofizikai minőség elérését jelenti.",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "15. Balyi István hosszú távú sportolófejlesztési programja (LTAD) legalább 7 szakaszból áll.",
+        "options": [
+            "a) igaz",
+            "b) hamis",
+            "c) részben igaz",
+            "d) részben hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "16. Az LTAD „train to win” szakasza előtt a sportolónak meg kell szereznie a széles körű és adaptív megküzdő képességeket (coping skills), amelyek segítségével képes hatékonyan megbirkózni pl. a versenyszorongással",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "17. Az edző tevékenysége során pedagógiai hatásrendszert működtet.",
+        "options": [
+            "a) nem",
+            "b) igen, amely szelektív és orientáló",
+            "c) igen, amely autokratikus",
+            "d) igen, amelynek jellemzője az ösztönösség és a közömbösség"
+        ],
+        "answers": [
+            "b) igen, amely szelektív és orientáló"
+        ]
+    },
+    {
+        "question": "18. Sportolói figyelmi típus, kivéve",
+        "options": [
+            "a) Széles körű-befelé forduló",
+            "b) Szűk körű – kifelé forduló",
+            "c) Széles körű – általános",
+            "d) Szűk körű – befelé forduló"
+        ],
+        "answers": [
+            "c) Széles körű – általános"
+        ]
+    },
+    {
+        "question": "19. Edző-sportoló kapcsolat jellemzője, kivéve",
+        "options": [
+            "a) Érzelmi közelség",
+            "b) Konfliktusmentesség",
+            "c) Együttműködés",
+            "d) Kiegészítés"
+        ],
+        "answers": [
+            "b) Konfliktusmentesség"
+        ]
+    },
+    {
+        "question": "20. Az autogén tréning gyakorlatai, kivéve",
+        "options": [
+            "a) Nehézségérzés",
+            "b) Melegségérzés",
+            "c) Szárazságérzés",
+            "d) Homlok hűvösségérzés"
+        ],
+        "answers": [
+            "c) Szárazságérzés"
+        ]
+    },
+    {
+        "question": "21. Az interperszonális kapcsolatokban a tekintélyszemély pozitív élményforrássá válik, amennyiben",
+        "options": [
+            "a) empatikus",
+            "b) frusztráló",
+            "c) közömbös",
+            "d) következetes"
+        ],
+        "answers": [
+            "a) empatikus"
+        ]
+    },
+    {
+        "question": "22. A kognitív technikákkal a sportoló képessé válik arra, hogy felfedezze a gondolkozásában jelen levő torzításokat, logikai hibákat.",
+        "options": [
+            "a) igaz",
+            "b) hamis"
+        ],
+        "answers": [
+            "a) igaz"
+        ]
+    },
+    {
+        "question": "23. A szociális befolyásolás során a tapasztalatok függetlenednek a forrástól, beépülnek az egyén értékrendjébe",
+        "options": [
+            "a) behódolás",
+            "b) szeretet",
+            "c) externalizáció",
+            "d) interiorizáció"
+        ],
+        "answers": [
+            "d) interiorizáció"
+        ]
+    },
+    {
+        "question": "24. A stressz elmélet megalkotója",
+        "options": [
+            "a) Charles D. Spielberger",
+            "b) Yuri Hanin",
+            "c) Selye János",
+            "d) Albert Einstein"
+        ],
+        "answers": [
+            "c) Selye János"
+        ]
+    },
+    {
+        "question": "25. A versenyszorongás két komponense",
+        "options": [
+            "a) kognitív és szomatikus",
+            "b) regresszív és erőszakos",
+            "c) obszesszív és kompulzív",
+            "d) agresszív és változatos"
+        ],
+        "answers": [
+            "a) kognitív és szomatikus"
+        ]
+    },
+    {
+        "question": "26. Az edzettségi szint két fontos komponense",
+        "options": [
+            "a. erőnléti",
+            "b. pszichológiai",
+            "c. motoros",
+            "d. biomechanikai"
+        ],
+        "answers": [
+            "b. pszichológiai",
+            "c. motoros"
+        ]
+    },
+    {
+        "question": "27. Azt gondolják, hogy a sorsukat saját maguk alakítják",
+        "options": [
+            "a. belső kontrollosok",
+            "b. külső kontrollosok",
+            "c. egyik sem",
+            "d. mindkettő"
+        ],
+        "answers": [
+            "a. belső kontrollosok"
+        ]
+    },
+    {
+        "question": "28. A kemény, kezdeményező, határozott fellépést, mely a győzelem érdekében támadó viselkedést is igényel, de nem irányul az ellenfél megsebesítésére, megsemmisítésére",
+        "options": [
+            "a. asszertivitásnak nevezik",
+            "b. agresszivitásnak nevezik",
+            "c. szubmissziónak nevezik",
+            "d. attraktivitásnak nevezik"
+        ],
+        "answers": [
+            "a. asszertivitásnak nevezik"
+        ]
+    },
+    {
+        "question": "29. A csúcsteljesítmény flow-élményének leírása … nevéhez fűződik",
+        "options": [
+            "a. Albert Bandura",
+            "b. Philip Zimbardo",
+            "c. Carol Dweck",
+            "d. Csíkszentmihályi Mihály"
+        ],
+        "answers": [
+            "d. Csíkszentmihályi Mihály"
+        ]
+    },
+    {
+        "question": "30. Külső, de autonóm motivációs forrás",
+        "options": [
+            "a. intrinzik",
+            "b. extrinzik",
+            "c. integrált",
+            "d. introjektált"
+        ],
+        "answers": [
+            "c. integrált"
+        ]
+    },
+    {
+        "question": "31. A Selye-féle stresszelmélet komponensei",
+        "options": [
+            "a. alarm-reakció",
+            "b. aktív ellenállás",
+            "c. kimerülés",
+            "d. szorongás"
+        ],
+        "answers": [
+            "a. alarm-reakció",
+            "b. aktív ellenállás",
+            "c. kimerülés"
+        ]
+    },
+    {
+        "question": "32. Az öndeterminációs elmélet két fontos komponense",
+        "options": [
+            "a. empátia",
+            "b. asszertivitás",
+            "c. autonómia",
+            "d. kompetencia-érzés"
+        ],
+        "answers": [
+            "c. autonómia",
+            "d. kompetencia-érzés"
+        ]
+    },
+    {
+        "question": "33. Konstruktív magatartásformák két nagy csoportja",
+        "options": [
+            "a. önfejlesztő",
+            "b. közösségfejlesztő",
+            "c. egyéni",
+            "d. csoportos"
+        ],
+        "answers": [
+            "a. önfejlesztő",
+            "b. közösségfejlesztő"
+        ]
+    },
+    {
+        "question": "34. A magatartási zavarok kialakulásában a neurotikus működési mód és az „önkárpótlási” tendencia együttes megjelenése kriminalizálódáshoz vezethet.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "a. igaz"
+        ]
+    },
+    {
+        "question": "35. A MacLean-féle agymodell három összetevője",
+        "options": [
+            "a. hüllőagy (R-komplex)",
+            "b. ősemlősagy (limbikus rendszer)",
+            "c. neocortex",
+            "d. gerincvelő"
+        ],
+        "answers": [
+            "a. hüllőagy (R-komplex)",
+            "b. ősemlősagy (limbikus rendszer)",
+            "c. neocortex"
+        ]
+    },
+    {
+        "question": "36. Cloninger személyiségelméletének három komponense",
+        "options": [
+            "a. psziché",
+            "b. karakter",
+            "c. temperamentum",
+            "d. ösztönén"
+        ],
+        "answers": [
+            "a. psziché",
+            "b. karakter",
+            "c. temperamentum"
+        ]
+    },
+    {
+        "question": "37. Az újdonságkeresés „hormonja” neurotranszmittere",
+        "options": [
+            "a. GABA",
+            "b. noradrenalin",
+            "c. dopamin",
+            "d. acetilkolin"
+        ],
+        "answers": [
+            "c. dopamin"
+        ]
+    },
+    {
+        "question": "38. A narcisztikus személyiségzavarral küzdők a DSM-5 alapján a szorongó csoportba tartoznak.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "b. hamis"
+        ]
+    },
+    {
+        "question": "39. A hedonikus boldogság a görög „gyönyör” szóból eredeztethető és a magas pozitív és alacsony negatív érzelmekkel jellemezhető pszichológiai állapotot jellemez.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "a. igaz"
+        ]
+    },
+    {
+        "question": "40. A keleti interdependens kultúrában a személyiség önmagában „nem létezik”, mások elvárásai alakítják a viselkedést, ezért az SDT öndeterminációs elmélet csak limitációkkal alkalmazható.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "a. igaz"
+        ]
+    },
+    {
+        "question": "41. A tanult tehetetlenség az a pszichológiai állapot, amikor úgy ítéljük meg, hogy nincs hatalmunk a kellemetlen helyzet elhárítására.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "a. igaz"
+        ]
+    },
+    {
+        "question": "42. Destruktív szülőtípus: a gyereket befektetésnek tekinti.",
+        "options": [
+            "a. narcisztikus",
+            "b. frusztrált",
+            "c. pénzéhes",
+            "d. versengő"
+        ],
+        "answers": [
+            "c. pénzéhes"
+        ]
+    },
+    {
+        "question": "43. A szülők és a gyermekük sportolással kapcsolatos céljai nem válnak el egymástól.",
+        "options": [
+            "a. normális",
+            "b. rizikós áldozatvállalás",
+            "c. tárgyiasulás",
+            "d. potenciális kihasználás",
+            "e. abúzus"
+        ],
+        "answers": [
+            "b. rizikós áldozatvállalás"
+        ]
+    },
+    {
+        "question": "44. Háromféle rajtállapot",
+        "options": [
+            "a. rajtkézség",
+            "b. rajtapátia",
+            "c. rajtáz",
+            "d. elkerülés"
+        ],
+        "answers": [
+            "a. rajtkézség",
+            "b. rajtapátia",
+            "c. rajtáz"
+        ]
+    },
+    {
+        "question": "45. Pozitív versenyzői típus I.",
+        "options": [
+            "a. magabiztos",
+            "b. makrokinetikus",
+            "c. intarpunitív",
+            "d. szomatizáló"
+        ],
+        "answers": [
+            "a. magabiztos"
+        ]
+    },
+    {
+        "question": "46. Pozitív versenyzői típus II.",
+        "options": [
+            "a. mikrokinetikus",
+            "b. paranoid",
+            "c. extrapunitív",
+            "d. depressziós"
+        ],
+        "answers": [
+            "c. extrapunitív"
+        ]
+    },
+    {
+        "question": "47. A skizotip személyiségzavarral küzdők a dramatikus csoportba tartoznak.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "b. hamis"
+        ]
+    },
+    {
+        "question": "48. A sikerorientált személy a sikereit belső okokkal, a kudarcait külső okokkal magyarázza.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "a. igaz"
+        ]
+    },
+    {
+        "question": "49. A kudarckerülő személy a sikereit külső okokkal, a kudarcait belső okokkal magyarázza.",
+        "options": [
+            "a. igaz",
+            "b. hamis"
+        ],
+        "answers": [
+            "a. igaz"
+        ]
+    },
+    {
+        "question": "50. A viselkedés mögött álló okok három dimenzió mentén szerveződnek (attribúció). Ebből az egyik dimenzió:",
+        "options": [
+            "a. véges vs. végtelen",
+            "b. sok vs. kevés",
+            "c. ellenőrizhető vs. ellenőrizhetetlen",
+            "d. nagy vs. kicsi"
+        ],
+        "answers": [
+            "c. ellenőrizhető vs. ellenőrizhetetlen"
+        ]
+    },
+    {
+        "question": "51. Az önmeghatározás (SDT) egyik eleme",
+        "options": [
+            "a) Boldogság",
+            "b) Autonómia",
+            "c) Szerencse",
+            "d) Habitus"
+        ],
+        "answers": [
+            "b) Autonómia"
+        ]
+    },
+    {
+        "question": "52. Az éntudat kialakulásának szakaszai. A kisgyermek felismeri saját arcvonásait a tükörben.",
+        "options": [
+            "a) 6-9. hónap",
+            "b) 9-12. hónap",
+            "c) 12-15. hónap",
+            "d) 15-18. hónap"
+        ],
+        "answers": [
+            "d) 15-18. hónap"
+        ]
+    },
+    {
+        "question": "53. Melyik nevelési stílussal jellemezhetők azok a szülők, akik elvárják gyermekeiktől, hogy koruknak és képességeiknek megfelelően viselkedjenek, ugyanakkor figyelembe veszik a gyerekeik véleményét és érzéseit, elismerik jogaikat?",
+        "options": [
+            "a) Elhanyagoló",
+            "b) Irányító (megkívánó)",
+            "c) Tekintélyelvű (megkövetelő)",
+            "d) Engedékeny"
+        ],
+        "answers": [
+            "b) Irányító (megkívánó)"
+        ]
+    },
+    {
+        "question": "54. Rotter szerint a belső kontrollos személy úgy érzi, hogy …",
+        "options": [
+            "a) külső tényezők határozzák meg az életét",
+            "b) hatékonyan képes önmaga irányítani az életét",
+            "c) a szerencse befolyásolja a sikerességét",
+            "d) nagy szüksége van mások segítségére és azt gyakran igénybe is veszi"
+        ],
+        "answers": [
+            "b) hatékonyan képes önmaga irányítani az életét"
+        ]
+    },
+    {
+        "question": "55. Melyik leírás jellemzi a „nehéz” temperamentumú csecsemőt?",
+        "options": [
+            "a) alacsony aktivitás és válaszkészség, lassú alkalmazkodás",
+            "b) rendszertelen, ingerlékeny",
+            "c) alkalmazkodó, rendszeres életritmus",
+            "d) nincs ilyen elnevezés a lélektanban"
+        ],
+        "answers": [
+            "b) rendszertelen, ingerlékeny"
+        ]
+    },
+    {
+        "question": "56. Neurotikus zavarok gyermekkorban. A szeparációs szorongásra jellemző, kivéve",
+        "options": [
+            "a) Fél óvodába, iskolába menni",
+            "b) Lefekvéskor nehezen szakad el",
+            "c) Felnőttkorban agórafóbia jelenhet meg",
+            "d) Indokolatlan jókedv"
+        ],
+        "answers": [
+            "d) Indokolatlan jókedv"
+        ]
+    },
+    {
+        "question": "57. Konfliktuskezelési stratégiák. Thomas-Kilmann modell alapján kivéve",
+        "options": [
+            "a) Versengő (győztes-vesztes)",
+            "b) Alkalmazkodó",
+            "c) Problémamegoldó",
+            "d) Bagatellizáló"
+        ],
+        "answers": [
+            "d) Bagatellizáló"
+        ]
+    },
+    {
+        "question": "58. A csoportalakulás viharzás szakaszára jellemző KIVÉVE:",
+        "options": [
+            "a) Legtöbbször nem tudatos folyamat",
+            "b) A hasonló pozíciókért versengők összecsapnak",
+            "c) „Harapási sorrend” kialakulása",
+            "d) Kellemes, ismerkedős fázis"
+        ],
+        "answers": [
+            "d) Kellemes, ismerkedős fázis"
+        ]
+    },
+    {
+        "question": "59. „Tiltottgyümölcseffektus” vagy „Rómeó és Júlia hatás”-ra igaz, KIVÉVE:",
+        "options": [
+            "a) A szabad választás korlátozása során a nem választható alternatíva vonzereje megnő.",
+            "b) Ha valamit nagyon erőltetünk a személy ellenáll a kényszernek.",
+            "c) A serdülőkre vonatkozóan nem működik ez a jelenség.",
+            "d) „Vannak drágább termékeink, de ezt Önök úgysem engedhetik meg.”"
+        ],
+        "answers": [
+            "c) A serdülőkre vonatkozóan nem működik ez a jelenség."
+        ]
+    },
+    {
+        "question": "60. A sportoló, edző, szülők kapcsolati struktúráját ……. hívjuk.",
+        "options": [
+            "a) Mátrixnak",
+            "b) Sportháromszögnek",
+            "c) Együttműködésnek",
+            "d) Teljesítményfokozásnak"
+        ],
+        "answers": [
+            "b) Sportháromszögnek"
+        ]
+    },
+    {
+        "question": "61. A genetikai és a környezeti tényezők csaknem azonos mértékben határozzák meg a viselkedéses válaszokat. Kérdőív - Temperament and Character Inventory, 1994. Kinek a modellje?",
+        "options": [
+            "a) Mike Eysenck",
+            "b) Charles D. Spielberger",
+            "c) Robert C. Cloninger",
+            "d) Carl G. Jung"
+        ],
+        "answers": [
+            "c) Robert C. Cloninger"
+        ]
+    },
+    {
+        "question": "62. A társas befolyásolásban a referens hatalom azt jelenti, hogy a befolyásoló személy",
+        "options": [
+            "a) Jutalmazni képes, vagy meg tudja védeni az egyént",
+            "b) Jogosan befolyásolja az egyént és neki kötelessége engedelmeskedni",
+            "c) Az egyént jogosan büntetheti és neki kötelessége engedelmeskedni",
+            "d) Modellként, vonatkoztatási pontként szolgál az egyén számára"
+        ],
+        "answers": [
+            "d) Modellként, vonatkoztatási pontként szolgál az egyén számára"
+        ]
+    },
+    {
+        "question": "63. Melyek a mediáció előnyei, kivéve?",
+        "options": [
+            "a) A konfliktusok más megvilágításba kerülnek",
+            "b) A résztvevők kölcsönösen előnyös megállapodásra törekszenek",
+            "c) Költséges megoldás",
+            "d) Bizalmas, az érintetteken kívül más nem juthat információhoz"
+        ],
+        "answers": [
+            "c) Költséges megoldás"
+        ]
+    },
+    {
+        "question": "64. Az evokatív interakció arra utal, hogy …",
+        "options": [
+            "a) a veleszületett habitus nem befolyásolja a környezetet.",
+            "b) a gyerekek érésük során egyre inkább maguk alakítják a környezetüket.",
+            "c) ugyanaz a környezet mindenkire másképpen hat.",
+            "d) az emberek sajátos reakciókat váltanak ki másokból."
+        ],
+        "answers": [
+            "d) az emberek sajátos reakciókat váltanak ki másokból."
+        ]
+    },
+    {
+        "question": "65. A versengő személyiségre igaz, KIVÉVE!",
+        "options": [
+            "a) Sikerorientált motiváció túlsúly",
+            "b) Belső kontrollos attitűd",
+            "c) Debilizáló szorongás",
+            "d) Facilitáló szorongás"
+        ],
+        "answers": [
+            "c) Debilizáló szorongás"
+        ]
+    },
+    {
+        "question": "66. A serdülőkor feladatai, kivéve",
+        "options": [
+            "a) Testkép elfogadása",
+            "b) Azonosulás a nemi szereppel",
+            "c) Érzelmi függőség megtartása a szülőkkel",
+            "d) Párválasztás"
+        ],
+        "answers": [
+            "c) Érzelmi függőség megtartása a szülőkkel"
+        ]
+    },
+    {
+        "question": "67. A szülő/nevelő a gyermek érzelmeit, érzékenységét elutasítja",
+        "options": [
+            "a) Pszichológiai bántalmazás",
+            "b) Fizikai bántalmazás",
+            "c) Szexuális bántalmazás",
+            "d) Elhanyagolás"
+        ],
+        "answers": [
+            "a) Pszichológiai bántalmazás"
+        ]
+    },
+    {
+        "question": "68. Figyelmi típus, kivéve",
+        "options": [
+            "a) Széles körű-befelé",
+            "b) Szűk körű – kifelé",
+            "c) Széles körű – általános",
+            "d) Szűk körű – befelé"
+        ],
+        "answers": [
+            "c) Széles körű – általános"
+        ]
+    },
+    {
+        "question": "69. Edző-sportoló kapcsolat jellemzője, kivéve",
+        "options": [
+            "a) Érzelmi közelség",
+            "b) Konfliktusmentesség",
+            "c) Együttműködés",
+            "d) Kiegészítés"
+        ],
+        "answers": [
+            "b) Konfliktusmentesség"
+        ]
+    },
+    {
+        "question": "70. Az autogén tréning gyakorlatai, kivéve",
+        "options": [
+            "a) Nehézségérzés",
+            "b) Melegségérzés",
+            "c) Szárazságérzés",
+            "d) Homlok hűvösség"
+        ],
+        "answers": [
+            "c) Szárazságérzés"
+        ]
+    },
+    {
+        "question": "71. Az egyén életét természetes életközegeiben szemlélő irányzat, az élőhelyek egyedeinek és csoportjainak környezettel való kapcsolati mintázatát vizsgálja. Bronfenbrenner nevéhez fűződik.",
+        "options": [
+            "a) Ökológiai szemlélet",
+            "b) Bio-medikális szemlélet",
+            "c) Preventív szemlélet",
+            "d) Pszichoanalitikus szemlélet"
+        ],
+        "answers": [
+            "a) Ökológiai szemlélet"
+        ]
+    },
+    {
+        "question": "72. Az éntudat kialakulásának szakaszai: A kisgyermek felismeri saját arcvonásait a tükörben.",
+        "options": [
+            "a) 6-9. hónap",
+            "b) 9-12. hónap",
+            "c) 12-15. hónap",
+            "d) 15-18. hónap"
+        ],
+        "answers": [
+            "d) 15-18. hónap"
+        ]
+    },
+    {
+        "question": "73. A ….… kötődésű gyermekek anyja hideg, elutasító, kerüli a testi kontaktust, sokszor „könyv szerint” nevel.",
+        "options": [
+            "a) Biztonságos",
+            "b) Bizonytalan elkerülő",
+            "c) Bizonytalan ambivalens",
+            "d) Zavarodott (dezorganizált)"
+        ],
+        "answers": [
+            "b) Bizonytalan elkerülő"
+        ]
+    },
+    {
+        "question": "74. A társas befolyásolásban a referens hatalom azt jelenti, hogy a befolyásoló személy",
+        "options": [
+            "a) Jutalmazni képes, vagy meg tudja védeni az egyént",
+            "b) Jogosan befolyásolja az egyént és neki kötelessége engedelmeskedni",
+            "c) Az egyént jogosan büntetheti és neki kötelessége engedelmeskedni",
+            "d) Modellként, vonatkoztatási pontként szolgál az egyén számára"
+        ],
+        "answers": [
+            "d) Modellként, vonatkoztatási pontként szolgál az egyén számára"
+        ]
+    },
+    {
+        "question": "75. Melyik leírás jellemzi a „nehéz” temperamentumú csecsemőt?",
+        "options": [
+            "a) Alacsony aktivitás és válaszkészség, lassú alkalmazkodás",
+            "b) Rendszertelen, ingerlékeny",
+            "c) Alkalmazkodó, rendszeres életritmus",
+            "d) Nincs ilyen elnevezés a lélektanban"
+        ],
+        "answers": [
+            "b) Rendszertelen, ingerlékeny"
+        ]
+    },
+    {
+        "question": "76. Neurotikus zavarok gyermekkorban: A szeparációs szorongásra jellemző, kivéve",
+        "options": [
+            "a) Fél óvodába, iskolába menni",
+            "b) Lefekvéskor nehezen szakad el",
+            "c) Felnőttkorban agórafóbia jelenhet meg",
+            "d) Indokolatlan jókedv"
+        ],
+        "answers": [
+            "d) Indokolatlan jókedv"
+        ]
+    },
+    {
+        "question": "77. A holdudvarhatás alapja, hogy az emberek……………",
+        "options": [
+            "a) Hajlamosak a személlyel kapcsolatos, elsősorban külső, információk alapján feltételezni, hogy a személy többi tulajdonsága is ezzel összhangban áll.",
+            "b) Hajlamosak túl szépnek látni a dolgokat.",
+            "c) Ösztönösen reagálnak a váratlan helyzetekre.",
+            "d) Megpróbálnak kevés információból messzemenő következtetéseket levonni."
+        ],
+        "answers": [
+            "a) Hajlamosak a személlyel kapcsolatos, elsősorban külső, információk alapján feltételezni, hogy a személy többi tulajdonsága is ezzel összhangban áll."
+        ]
+    },
+    {
+        "question": "78. A versengő személyiségre igaz, KIVÉVE!",
+        "options": [
+            "a) Sikerorientált motiváció túlsúly",
+            "b) Belső kontrollos attitűd",
+            "c) Debilizáló szorongás",
+            "d) Facilitáló szorongás"
+        ],
+        "answers": [
+            "c) Debilizáló szorongás"
+        ]
+    },
+    {
+        "question": "79. „Tiltottgyümölcseffektus” vagy „Rómeó és Júlia hatás”-ra igaz, KIVÉVE:",
+        "options": [
+            "a) A szabad választás korlátozása során a nem választható alternatíva vonzereje megnő.",
+            "b) Ha valamit nagyon erőltetünk a személy ellenáll a kényszernek.",
+            "c) A serdülőkre vonatkozóan nem működik ez a jelenség.",
+            "d) „Vannak drágább termékeink, de ezt Önök úgysem engedhetik meg.”"
+        ],
+        "answers": [
+            "c) A serdülőkre vonatkozóan nem működik ez a jelenség."
+        ]
+    },
+    {
+        "question": "80. A sportoló, edző, szülők kapcsolati struktúráját ………..… hívjuk.",
+        "options": [
+            "a) Mátrixnak",
+            "b) Sportháromszögnek",
+            "c) Együttműködésnek",
+            "d) Teljesítményfokozásnak"
+        ],
+        "answers": [
+            "b) Sportháromszögnek"
+        ]
+    },
+    {
+        "question": "81. A genetikai és a környezeti tényezők csaknem azonos mértékben határozzák meg a viselkedéses válaszokat. Kérdőív - Temperament and Character Inventory, 1994. Kinek a modellje?",
+        "options": [
+            "a) Mike Eysenck",
+            "b) Charles D. Spielberger",
+            "c) Robert C. Cloninger",
+            "d) Carl G. Jung"
+        ],
+        "answers": [
+            "c) Robert C. Cloninger"
+        ]
+    },
+    {
+        "question": "82. A gyermekek mentális megbetegedéseiben lényeges szerepet játszó faktorok, KIVÉVE",
+        "options": [
+            "a) Apa kriminalitása",
+            "b) Szülők közötti rossz viszony",
+            "c) Engedékeny nevelési stílus",
+            "d) Anya mentális betegsége"
+        ],
+        "answers": [
+            "c) Engedékeny nevelési stílus"
+        ]
+    },
+    {
+        "question": "83. Melyek a mediáció előnyei, kivéve?",
+        "options": [
+            "a) A konfliktusok más megvilágításba kerülnek",
+            "b) A résztvevők kölcsönösen előnyös megállapodásra törekszenek",
+            "c) Költséges megoldás",
+            "d) Bizalmas, az érintetteken kívül más nem juthat információhoz"
+        ],
+        "answers": [
+            "c) Költséges megoldás"
+        ]
+    },
+    {
+        "question": "84. Az evokatív interakció arra utal, hogy ……………..…",
+        "options": [
+            "a) A veleszületett habitus nem befolyásolja a környezetet.",
+            "b) A gyerekek érésük során egyre inkább maguk alakítják a környezetüket.",
+            "c) Ugyanaz a környezet mindenkire másképpen hat.",
+            "d) Az emberek sajátos reakciókat váltanak ki másokból."
+        ],
+        "answers": [
+            "d) Az emberek sajátos reakciókat váltanak ki másokból."
+        ]
+    },
+    {
+        "question": "85. A személypercepcióra jellemző, KIVÉVE:",
+        "options": [
+            "a) Elsődlegességi hatás",
+            "b) Újdonsági hatás",
+            "c) Megbízhatóság",
+            "d) Kiugró jellemzők hatása"
+        ],
+        "answers": [
+            "c) Megbízhatóság"
+        ]
+    },
+    {
+        "question": "86. A mentális edzés fázisai, kivéve",
+        "options": [
+            "a) Módosult tudatállapot elérése",
+            "b) Mentális technika, szuggesztiók",
+            "c) Mentális szilárdság, kitartás",
+            "d) Korrektív emocionális élmények feldolgozása"
+        ],
+        "answers": [
+            "d) Korrektív emocionális élmények feldolgozása"
+        ]
+    },
+    {
+        "question": "86. A mentális edzés fázisai, kivéve",
+        "options": [
+            "a) Módosult tudatállapot elérése",
+            "b) Mentális technika, szuggesztiók",
+            "c) Mentális szilárdság, kitartás",
+            "d) Korrektív emocionális élmények feldolgozása"
+        ],
+        "answers": [
+            "d) Korrektív emocionális élmények feldolgozása"
+        ]
+    },
+    {
+        "question": "87. A bullying egyik formája: kiközösítés, pletyka terjesztése, barát elcsábítása",
+        "options": [
+            "a) Fizikai",
+            "b) Verbális",
+            "c) Kapcsolati",
+            "d) Cyber"
+        ],
+        "answers": [
+            "c) Kapcsolati"
+        ]
+    },
+    {
+        "question": "88. Sportpszichológiai módszerek, kivéve",
+        "options": [
+            "a) Relaxációs módszerek",
+            "b) Gyógyszeres terápia",
+            "c) Imaginációs módszerek",
+            "d) Figyelemfókuszálási módszerek"
+        ],
+        "answers": [
+            "b) Gyógyszeres terápia"
+        ]
+    },
+    {
+        "question": "89. Túlzott azonosulás a sportoló élményeivel, teljesítményével",
+        "options": [
+            "a) Vikariáló érzések, identifikáció",
+            "b) Irigység",
+            "c) Idealizáció",
+            "d) Melléállás"
+        ],
+        "answers": [
+            "a) Vikariáló érzések, identifikáció"
+        ]
+    },
+    {
+        "question": "90. Sportolókra jellemző evészavar, kivéve",
+        "options": [
+            "a) Szubklinikus evészavar (SCED)",
+            "b) Orthorexia nervosa",
+            "c) Izomdiszmorfia",
+            "d) Fatorexia"
+        ],
+        "answers": [
+            "d) Fatorexia"
+        ]
+    }
+]
