@@ -83,7 +83,7 @@ export default function Home() {
         <main className="lg:pt-0 pt-12">
             {
                 !mezg.isLoading && queue.length > 0 ?
-                    <QuestionTab max={10} icon="database" img={mezg.data[queue[number]].pic} question={mezg.data[queue[number]].question} number={number + 1} answers={mezg.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={mezg.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
+                    <QuestionTab max={10} icon="globe" img={mezg.data[queue[number]].pic} question={mezg.data[queue[number]].question} number={number + 1} answers={mezg.data[queue[number]].options} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={mezg.data[queue[number]].answers.length > 1 ? "checkbox" : "radio"}></QuestionTab>
                     : <></>
             }
         </main>
