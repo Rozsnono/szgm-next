@@ -18,7 +18,6 @@ export default function Tab({ question, answers, number, type, img, icon, result
     }
 
     function checkCorrect(a: any) {
-        console.log(correct, result, a)
         if (correct.includes(a) && result.includes(a)) {
             return <i className="pi pi-check text-green-600"></i>
         } else if (correct.includes(a) && !result.includes(a)) {

@@ -29,38 +29,44 @@ export default function Home() {
         {
             title: "RDSZ",
             icon: "pi pi-cog",
-            link:"rdsz",
+            link: "rdsz",
             max: 24
         },
         {
             title: "MEMR",
             icon: "pi pi-calculator",
-            link:"memr",
+            link: "memr",
             max: 30
         },
         {
             title: "VALLALAT",
             icon: "pi pi-chart-line",
-            link:"company",
+            link: "company",
             max: 9
         },
         {
             title: "VIR",
             icon: "pi pi-briefcase",
-            link:"vir",
+            link: "vir",
             max: 30
         },
         {
             title: "PORTAL",
             icon: "pi pi-save",
-            link:"portal",
+            link: "portal",
             max: 20
         },
         {
             title: "PSZICHO",
             icon: "pi pi-table",
-            link:"pszicho",
+            link: "pszicho",
             max: 30
+        },
+        {
+            title: "MEZG",
+            icon: "pi pi-globe",
+            link: "mezg",
+            max: 10
         },
     ];
     const [selectedExam, setSelectedExam] = useState<any>(param.get("exam") ? exams.filter((item) => item.title == (param.get("exam") as string).toUpperCase())[0] : exams[0]);
@@ -90,7 +96,7 @@ export default function Home() {
         return checkI;
     }
 
-    const results: any = useQuery(param.get("exam")+ "-result", getResults);
+    const results: any = useQuery(param.get("exam") + "-result", getResults);
 
 
 
@@ -110,14 +116,12 @@ export default function Home() {
 
     return (
         <main className="flex flex-col min-h-screen gap-4 lg:p-12 p-6 lg:pt-24 pt-32 text-lg">
-            <div className="flex gap-3 w-full justify-center">
+            <div className="flex gap-3 w-full justify-between items-center">
                 {exams.map((item) => {
                     return (
-                        <Link href={("/results?exam="+item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border font-bold p-2 rounded-lg cursor-pointer duration-200 ' + (item.title === param.get("exam") ? "border-red-700 text-gray-900 bg-red-700" : "border-red-700 text-red-700 hover:text-white hover:bg-red-700 ")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
+                        <Link href={("/results?exam=" + item.title)} onClick={() => { setSelectedExam(item); results.refetch(); exam.current = item; }} key={item.title} className={'flex items-center gap-1 border font-bold p-2 rounded-lg cursor-pointer duration-200 ' + (item.title === param.get("exam") ? "border-red-700 text-gray-900 bg-red-700" : "border-red-700 text-red-700 hover:text-white hover:bg-red-700 ")}><i className={item.icon}></i><div className='lg:flex hidden'>{item.title}</div></Link>
                     )
                 })}
-            </div>
-            <div className="flex gap-3 w-full">
                 <span className="p-float-label w-full">
                     <label htmlFor="search">{point.current} / {selectedExam.max}</label>
                 </span>

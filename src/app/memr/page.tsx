@@ -82,7 +82,6 @@ export default function Home() {
 
     return (
         <main className="lg:pt-0">
-            {!memr.isLoading ? <>{console.log(memr.data, queue, number, memr.data[queue[number]])}</> : <></>}
             {
                 !memr.isLoading && queue.length > 0 ?
                     <QuestionTab icon="calculator" question={memr.data[queue[number]].question} number={number + 1} answers={memr.data[queue[number]].option} next={(e) => { Next(e); }} finished={(e) => { finished(e) }} type={memr.data[queue[number]].type} max={30}></QuestionTab>

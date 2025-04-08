@@ -295,13 +295,11 @@ export default function Neptun() {
     }
 
     function indexingSignInToSelectedSubjects(index: number) {
-        console.log(index);
         signingInToSubject(selectedSubject[index]).then((res) => res.json().then((data) => {
             if (!(index > selectedSubject.length - 1)) {
                 indexingSignInToSelectedSubjects(index + 1);
                 // alert(data.notification[0].description);
                 setSignInCodes(signInCodes => [...signInCodes, { subject: selectedSubject[index], data: data }]);
-                console.log(data);
             }
         }));
     }
@@ -424,7 +422,7 @@ export default function Neptun() {
 
     async function SaveIntoLocalStorage() {
         setSelectedSubjectByName(selectedSubjectByNameRef.current);
-        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef.current)); console.log(selectedSubjectByName) }, 10);
+        setTimeout(() => { localStorage.setItem("tanulas.netlify.selectedSubjectByName", JSON.stringify(selectedSubjectByNameRef.current)); }, 10);
         alert("Everything is saved successfully!");
     }
 

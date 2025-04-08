@@ -1,0 +1,597 @@
+[
+    {
+        "question": "A talajművelés célja a talaj fizikai állapotának javítása.",
+        "answers": [
+            "Igaz"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "A talajművelés kihat a talaj termőképességére, a gazdaságosságra és környezeti fenntarthatóságra.",
+        "answers": [
+            "Igaz"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "A talajművelés milyen módokon hat a talajra?",
+        "answers": [
+            "Mechanikai úton változtatja meg a talaj fizikai állapotát",
+            "Közvetett hatással van a biológiai és kémiai tulajdonságaira"
+        ],
+        "options": [
+            "Kizárólag kémiai úton hat",
+            "Mechanikai úton változtatja meg a talaj fizikai állapotát",
+            "Csak hőmérsékletet szabályoz",
+            "Közvetett hatással van a biológiai és kémiai tulajdonságaira"
+        ]
+    },
+    {
+        "question": "Melyek a talajművelési rendszerek típusai?",
+        "answers": [
+            "Hagyományos rendszer",
+            "Csökkentett művelés",
+            "Direkt vetés"
+        ],
+        "options": [
+            "Hagyományos rendszer",
+            "Csökkentett művelés",
+            "Direkt vetés",
+            "Öntözéses művelés"
+        ]
+    },
+    {
+        "question": "Melyek a talajművelés pozitív hatásai?",
+        "answers": [
+            "Talajszerkezet javulása",
+            "Levegőzés, vízelvezetés növekedése",
+            "Gyom- és kártevőirtás"
+        ],
+        "options": [
+            "Talajszerkezet javulása",
+            "Levegőzés, vízelvezetés növekedése",
+            "Szerkezetrombolás",
+            "Talajtömörödés",
+            "Gyom- és kártevőirtás"
+        ]
+    },
+    {
+        "question": "Melyek az alapművelés példái?",
+        "answers": [
+            "Szántás"
+        ],
+        "options": [
+            "Hengerlés",
+            "Simítás",
+            "Tömörítés",
+            "Szántás"
+        ]
+    },
+    {
+        "question": "Melyik eszköz tartozik a forgató gépek közé?",
+        "answers": [
+            "Eke"
+        ],
+        "options": [
+            "Kultivátor",
+            "Borona",
+            "Eke",
+            "Henger"
+        ]
+    },
+    {
+        "question": "Mi befolyásolja a talajművelés tervezését?",
+        "answers": [
+            "Talajtípus",
+            "Éghajlat",
+            "Vetésforgó",
+            "Növényi igények"
+        ],
+        "options": [
+            "Talajtípus",
+            "Hőmérséklet",
+            "Éghajlat",
+            "Vetésforgó",
+            "Növényi igények"
+        ]
+    },
+    {
+        "question": "Mi a vetés célja?",
+        "answers": [
+            "Fajra/fajtára jellemző tenyészterület biztosítása",
+            "Optimális térállás elérése"
+        ],
+        "options": [
+            "Tápanyagpótlás",
+            "Fajra/fajtára jellemző tenyészterület biztosítása",
+            "Optimális térállás elérése",
+            "Talajszerkezet javítása"
+        ]
+    },
+    {
+        "question": "Milyen vetési módok léteznek magelhelyezés szerint?",
+        "answers": [
+            "Szórva-vetés",
+            "Sorba-vetés",
+            "Szalagos vetés",
+            "Szemenkénti vetés"
+        ],
+        "options": [
+            "Szórva-vetés",
+            "Sorba-vetés",
+            "Szalagos vetés",
+            "Szemenkénti vetés",
+            "Takarásos vetés"
+        ]
+    },
+    {
+        "question": "Melyik növényhez tartozik a 4,5–5,5 millió db/ha vetőmagnorma?",
+        "answers": [
+            "Őszi búza"
+        ],
+        "options": [
+            "Kukorica",
+            "Napraforgó",
+            "Őszi búza",
+            "Őszi árpa"
+        ]
+    },
+    {
+        "question": "Mi befolyásolja a vetés mélységét?",
+        "answers": [
+            "Magméret",
+            "Talajállapot",
+            "Nedvesség",
+            "Időjárás"
+        ],
+        "options": [
+            "Magméret",
+            "Talajállapot",
+            "Nedvesség",
+            "Időjárás",
+            "Fajta"
+        ]
+    },
+    {
+        "question": "Mi a vetőgépek szerepe?",
+        "answers": [
+            "Mag talajba juttatása",
+            "Vetőmennyiség szabályozása",
+            "Magtakarás biztosítása"
+        ],
+        "options": [
+            "Mag talajba juttatása",
+            "Gyomirtás",
+            "Vetőmennyiség szabályozása",
+            "Magtakarás biztosítása"
+        ]
+    },
+    {
+        "question": "Az őszi búza optimális vetésideje szeptember 10. és 20. közé esik.",
+        "answers": [
+            "Hamis"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "Melyik vetési módra igaz, hogy a magvak sorokba rendeződnek, a sortávolság állandó, de a tőtávolság változó?",
+        "answers": [
+            "Sorba-vetés"
+        ],
+        "options": [
+            "Szórva-vetés",
+            "Sorba-vetés",
+            "Szalagos vetés",
+            "Szemenkénti vetés"
+        ]
+    },
+    {
+        "question": "Mely tényezők befolyásolják a vetési mélységet? (Több válasz is lehetséges)",
+        "answers": [
+            "A talaj szerkezete és típusa",
+            "A magágy állapota",
+            "A vetés időpontja"
+        ],
+        "options": [
+            "A talaj szerkezete és típusa",
+            "A traktor típusa",
+            "A magágy állapota",
+            "A vetés időpontja"
+        ]
+    },
+    {
+        "question": "Mi jellemző a kevert vetésre?",
+        "answers": [
+            "A vetés előtt azonos méretű és vetési mélységet igénylő magokat keverünk össze."
+        ],
+        "options": [
+            "A vetés előtt azonos méretű és vetési mélységet igénylő magokat keverünk össze.",
+            "Tavasszal vetjük alá az aprómagot egy már kikelt növény alá.",
+            "A már elvetett, de ki nem kelt növény fölé vetünk.",
+            "Egyfajta növény kerül egy adott táblába."
+        ]
+    },
+    {
+        "question": "Mennyi az optimális tőszám őszi búza esetén hektáronként?",
+        "answers": [
+            "5-6 millió"
+        ],
+        "options": [
+            "3-4 millió",
+            "4-5 millió",
+            "5-6 millió",
+            "6-7 millió"
+        ]
+    },
+    {
+        "question": "Mi a rávetés célja?",
+        "answers": [
+            "A növényállomány besűrítése"
+        ],
+        "options": [
+            "A növényállomány besűrítése",
+            "A csírázási idő lerövidítése",
+            "A tőszám csökkentése",
+            "A sortávolság növelése"
+        ]
+    },
+    {
+        "question": "Az őszi búza optimális vetésideje szeptember 10. és 20. közé esik.",
+        "answers": [
+            "Hamis"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "Melyik vetési módra igaz, hogy a magvak sorokba rendeződnek, a sortávolság állandó, de a tőtávolság változó?",
+        "answers": [
+            "Sorba-vetés"
+        ],
+        "options": [
+            "Szórva-vetés",
+            "Sorba-vetés",
+            "Szalagos vetés",
+            "Szemenkénti vetés"
+        ]
+    },
+    {
+        "question": "Mely tényezők befolyásolják a vetési mélységet? (Több válasz is lehetséges)",
+        "answers": [
+            "A talaj szerkezete és típusa",
+            "A magágy állapota",
+            "A vetés időpontja"
+        ],
+        "options": [
+            "A talaj szerkezete és típusa",
+            "A traktor típusa",
+            "A magágy állapota",
+            "A vetés időpontja"
+        ]
+    },
+    {
+        "question": "Mi jellemző a kevert vetésre?",
+        "answers": [
+            "A vetés előtt azonos méretű és vetési mélységet igénylő magokat keverünk össze."
+        ],
+        "options": [
+            "A vetés előtt azonos méretű és vetési mélységet igénylő magokat keverünk össze.",
+            "Tavasszal vetjük alá az aprómagot egy már kikelt növény alá.",
+            "A már elvetett, de ki nem kelt növény fölé vetünk.",
+            "Egyfajta növény kerül egy adott táblába."
+        ]
+    },
+    {
+        "question": "Mennyi az optimális tőszám őszi búza esetén hektáronként?",
+        "answers": [
+            "5-6 millió"
+        ],
+        "options": [
+            "3-4 millió",
+            "4-5 millió",
+            "5-6 millió",
+            "6-7 millió"
+        ]
+    },
+    {
+        "question": "Mi a rávetés célja?",
+        "answers": [
+            "A növényállomány besűrítése"
+        ],
+        "options": [
+            "A növényállomány besűrítése",
+            "A csírázási idő lerövidítése",
+            "A tőszám csökkentése",
+            "A sortávolság növelése"
+        ]
+    },
+    {
+        "question": "Honnan származik a kukorica, és hogyan terjedt el Európában?",
+        "answers": [
+            "Amerikából származik, Kolumbusz hozta Európába 1493-ban"
+        ],
+        "options": [
+            "Ázsiából származik, Marco Polo hozta Európába",
+            "Afrikából származik, portugál kereskedők hozták be",
+            "Amerikából származik, Kolumbusz hozta Európába 1493-ban",
+            "Ausztráliából származik, brit gyarmatosítók terjesztették el"
+        ]
+    },
+    {
+        "question": "Milyen növényi részből keletkezett a kukorica az inka mítosz szerint?",
+        "answers": [
+            "A fiúcska fogaiból"
+        ],
+        "options": [
+            "A fiúcska hajából",
+            "A fiúcska fogaiból",
+            "A fiúcska szeméből",
+            "A fiúcska csontjaiból"
+        ]
+    },
+    {
+        "question": "Milyen FAO-számú hibrideket használnak főként másodvetésre?",
+        "answers": [
+            "200-299"
+        ],
+        "options": [
+            "100-199",
+            "200-299",
+            "400-599",
+            "600-799"
+        ]
+    },
+    {
+        "question": "Mi a szokásos vetési időpont kukorica esetén?",
+        "answers": [
+            "Április 10-20."
+        ],
+        "options": [
+            "Március 1-10.",
+            "Április 10-20.",
+            "Május 5-15.",
+            "Június 1-10."
+        ]
+    },
+    {
+        "question": "Mennyi a szokásos vetőmagszükséglet kukorica esetén hektáronként?",
+        "answers": [
+            "25-30 kg"
+        ],
+        "options": [
+            "10-15 kg",
+            "15-20 kg",
+            "25-30 kg",
+            "35-40 kg"
+        ]
+    },
+    {
+        "question": "Mekkora lehet az árukukorica és silókukorica optimális állománysűrűsége?",
+        "answers": [
+            "Árukukorica: 60-90 ezer, Silókukorica: 90-120 ezer tő/ha"
+        ],
+        "options": [
+            "Árukukorica: 30-50 ezer, Silókukorica: 70-90 ezer tő/ha",
+            "Árukukorica: 40-60 ezer, Silókukorica: 80-100 ezer tő/ha",
+            "Árukukorica: 60-90 ezer, Silókukorica: 90-120 ezer tő/ha",
+            "Árukukorica: 70-100 ezer, Silókukorica: 100-130 ezer tő/ha"
+        ]
+    },
+    {
+        "question": "Igaz vagy hamis? A kukorica szemei természetes módon könnyen leválnak a csutkáról.",
+        "answers": [
+            "Hamis"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "Mekkora a kukorica betakarításának ideje?",
+        "answers": [
+            "Szeptember második felétől november végéig"
+        ],
+        "options": [
+            "Augusztus elejétől szeptember közepéig",
+            "Szeptember második felétől november végéig",
+            "Október közepétől december elejéig",
+            "Novembertől január végéig"
+        ]
+    },
+    {
+        "question": "Milyen silózási feltételek optimálisak?",
+        "answers": [
+            "1-2 cm szecskahossz, 28-30% nedvességtartalom"
+        ],
+        "options": [
+            "1-2 cm szecskahossz, 28-30% nedvességtartalom",
+            "5-6 cm szecskahossz, 15-20% nedvességtartalom",
+            "2-3 cm szecskahossz, 35-40% nedvességtartalom",
+            "1 cm szecskahossz, 10% nedvességtartalom"
+        ]
+    },
+    {
+        "question": "Mikor kezdték el Magyarországon a burgonya termesztését a Felvidéken?",
+        "answers": [
+            "1770"
+        ],
+        "options": [
+            "1610",
+            "1701",
+            "1770",
+            "1815"
+        ]
+    },
+    {
+        "question": "Igaz vagy hamis: A burgonyát generatív módon, azaz magról szaporítjuk.",
+        "answers": [
+            "Hamis"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "Melyik típusú burgonya érik a legkorábban?",
+        "answers": [
+            "AA"
+        ],
+        "options": [
+            "AA",
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question": "Melyek a burgonya betakarításának fő műveletcsoportjai?",
+        "answers": [
+            "száreltávolítás (vegyi és mechanikai)",
+            "gumók kiásása, felszedése és tisztítása",
+            "gumók osztályozása és prizmázása"
+        ],
+        "options": [
+            "száreltávolítás (vegyi és mechanikai)",
+            "gumók kiásása, felszedése és tisztítása",
+            "gumók osztályozása és prizmázása",
+            "permetezés és trágyázás"
+        ]
+    },
+    {
+        "question": "Mikor betakarítjuk a cukorrépát, mikor érhető el a legmagasabb cukortartalom?",
+        "answers": [
+            "októberi betakarítással"
+        ],
+        "options": [
+            "szeptemberi betakarítással",
+            "októberi betakarítással",
+            "novemberi betakarítással",
+            "augusztusi betakarítással"
+        ]
+    },
+    {
+        "question": "Igaz vagy hamis: A cukorrépa egymenetes betakarítása során külön gép végzi a fejezést, a kiemelést és a felszedést.",
+        "answers": [
+            "Hamis"
+        ],
+        "options": [
+            "Igaz",
+            "Hamis"
+        ]
+    },
+    {
+        "question": "Milyen talajigénye van a cukorrépának?",
+        "answers": [
+            "tápanyagdús, mélyszántott, szerves-trágyázott, aprómorzsás"
+        ],
+        "options": [
+            "kavicsos, laza szerkezetű",
+            "homokos, gyors vízáteresztő",
+            "tápanyagdús, mélyszántott, szerves-trágyázott, aprómorzsás",
+            "mocsaras, vízzel telített"
+        ]
+    },
+    {
+        "question": "Miért vált elterjedtté a cukorrépa termesztése Európában a 19. század elején?",
+        "answers": [
+            "A gyarmati cukorhiány miatt",
+            "Napóleon zárlata miatt",
+            "Achard kifejlesztette az ipari cukorgyártási módszert"
+        ],
+        "options": [
+            "A gyarmati cukorhiány miatt",
+            "Napóleon zárlata miatt",
+            "A burgonyatermés csökkenése miatt",
+            "Achard kifejlesztette az ipari cukorgyártási módszert"
+        ]
+    },
+    {
+        "question": "Miért fontos a szerves trágyák alkalmazása a talaj termékenysége szempontjából?",
+        "answers": [
+            "Javítják a talaj szerkezetét és növelik a tápanyag-szolgáltató képességet"
+        ],
+        "options": [
+            "Csak a vízháztartást javítják",
+            "Javítják a talaj szerkezetét és növelik a tápanyag-szolgáltató képességet",
+            "Kizárólag mikroelemeket pótolnak",
+            "Csökkentik a gyomirtó szerek hatását"
+        ]
+    },
+    {
+        "question": "Milyen hatással van a szerves trágya a talaj biológiai aktivitására?",
+        "answers": [
+            "Növeli a biológiai aktivitást a szerves anyag tartalom révén"
+        ],
+        "options": [
+            "Csökkenti a biológiai aktivitást",
+            "Növeli a biológiai aktivitást a szerves anyag tartalom révén",
+            "Nem befolyásolja a talaj mikroorganizmusait",
+            "Elpusztítja a kórokozókat"
+        ]
+    },
+    {
+        "question": "Mely szerves trágyafajták ismertek?",
+        "answers": [
+            "Istállótrágya",
+            "Komposzt",
+            "Zöldtrágya"
+        ],
+        "options": [
+            "Istállótrágya",
+            "Kőtrágya",
+            "Komposzt",
+            "Zöldtrágya"
+        ]
+    },
+    {
+        "question": "Mi az istállótrágya összetevője?",
+        "answers": [
+            "Alomanyag",
+            "Állati ürülék",
+            "Vizelet"
+        ],
+        "options": [
+            "Alomanyag",
+            "Műtrágya",
+            "Állati ürülék",
+            "Vizelet"
+        ]
+    },
+    {
+        "question": "Melyik állítás igaz a komposztra?",
+        "answers": [
+            "Szerves anyagok mikrobiális lebontásával jön létre"
+        ],
+        "options": [
+            "Csak vegyi úton állítható elő",
+            "Kizárólag állati eredetű anyagokat tartalmaz",
+            "Szerves anyagok mikrobiális lebontásával jön létre",
+            "Nem tartalmaz tápanyagot"
+        ]
+    },
+    {
+        "question": "Mikor a leghatékonyabb a zöldtrágya használata?",
+        "answers": [
+            "Virágzás előtt beforgatva"
+        ],
+        "options": [
+            "Termésérés után beforgatva",
+            "Virágzás előtt beforgatva",
+            "Betakarítás után trágyázva",
+            "Ősszel kiszórva"
+        ]
+    }
+]

@@ -35,7 +35,6 @@ export default function Home() {
             }
         })
 
-        console.log(jsonData);
     }
 
     return (

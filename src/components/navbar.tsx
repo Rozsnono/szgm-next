@@ -231,7 +231,8 @@ export default function Navbar({
                                             <>
                                                 <div onClick={() => { navigateTo("/physics") }} data-pr-tooltip={"FIZIKA TÖRI"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
                                             </> :
-                                            <></>
+                                            <>
+                                            </>
                                     }
                                 </div>
                             </main>
@@ -244,7 +245,9 @@ export default function Navbar({
                                             <>
                                                 <div onClick={() => { navigateTo("/portal") }} data-pr-tooltip={"Portalfejlesztés .Net-ben"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-save"></i></div>
                                             </> :
-                                            <></>
+                                            <>
+                                                <div onClick={() => { navigateTo("/mezg") }} data-pr-tooltip={"Mezőgaztasági alap."} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
+                                            </>
                                     }
                                 </div>
                             </main>
@@ -314,7 +317,7 @@ export default function Navbar({
                 </main>
             } */}
 
-{
+            {
                 (data.isLoading && user !== null) &&
                 <Loading></Loading>
             }
