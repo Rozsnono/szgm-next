@@ -1,0 +1,780 @@
+[
+    {
+        "question": "Melyik a belégző izom a felsoroltak közül?",
+        "options": [
+            "belső bordaközti izmok",
+            "egyenes hasizom",
+            "rekeszizom"
+        ],
+        "answers": [
+            "rekeszizom"
+        ]
+    },
+    {
+        "question": "Melyik állítás helyes az artéria meghatározására?",
+        "options": [
+            "A vér a szívből a szövetek felé áramlik",
+            "Mindig oxigénben gazdag vért szállít",
+            "A vér a szövetek felől a szívbe áramlik"
+        ],
+        "answers": [
+            "A vér a szívből a szövetek felé áramlik"
+        ]
+    },
+    {
+        "question": "Melyik a lassú (vörös) izomrostok jellemző tulajdonsága?",
+        "options": [
+            "alacsony mioglobin tartalom",
+            "alacsony mitokondrium tartalom",
+            "kitartó működés"
+        ],
+        "answers": [
+            "kitartó működés"
+        ]
+    },
+    {
+        "question": "Hogy nevezik az ingertovábbítás útját a receptortól a központi idegrendszerbe?",
+        "options": [
+            "afferens",
+            "efferens",
+            "differens"
+        ],
+        "answers": [
+            "afferens"
+        ]
+    },
+    {
+        "question": "Mi a motoros egység?",
+        "options": [
+            "Egy idegsejt és egy izomsejt együtt",
+            "Mozgató idegsejtek csoportja",
+            "egy idegsejt és az általa beidegzett izomsejtek együtt"
+        ],
+        "answers": [
+            "egy idegsejt és az általa beidegzett izomsejtek együtt"
+        ]
+    },
+    {
+        "question": "Melyik funkció jellemző az extrapiramidális mozgató pályákra?",
+        "options": [
+            "Mozgástanulás során intenzíven működik",
+            "Bonyolult, akaratlagos mozgások szabályozója",
+            "A testtartásért felelős izmok működését szabályozza"
+        ],
+        "answers": [
+            "A testtartásért felelős izmok működését szabályozza"
+        ]
+    },
+    {
+        "question": "Melyik nem a paraszimpatikus idegrendszer hatása?",
+        "options": [
+            "pupilla tágul",
+            "hörgők szűkülnek",
+            "pulzus csökken"
+        ],
+        "answers": [
+            "pupilla tágul"
+        ]
+    },
+    {
+        "question": " Melyik hormon termelődik a pajzsmirigyben?",
+        "options": [
+            "glukagon",
+            "tiroxin",
+            "adrenalin"
+        ],
+        "answers": [
+            "tiroxin"
+        ]
+    },
+    {
+        "question": "Melyik működés nem következik be hipertermia esetén?",
+        "options": [
+            "izmok merevsége",
+            "bőrfelszíni erek tágulása",
+            "izmok lazulása"
+        ],
+        "answers": [
+            "izmok merevsége"
+        ]
+    },
+    {
+        "question": "Melyik ér csatlakozik a bal pitvarba?",
+        "options": [
+            "felső és alsó üres visszér",
+            "tüdő véna",
+            "tüdő artéri"
+        ],
+        "answers": [
+            "tüdő véna"
+        ]
+    },
+    {
+        "question": "Melyik hormonnak van vércukorszint-emelő hatása?",
+        "options": [
+            "inzulinnak",
+            "adrenalinnak",
+            "melotoninnak"
+        ],
+        "answers": [
+            "adrenalinnak"
+        ]
+    },
+    {
+        "question": "Mely élettani mutató értéke emelkedik fizikai terhelés hatására?",
+        "options": [
+            "zsigeri erek átmérője",
+            "vér pH-ja",
+            "vércukorszint"
+        ],
+        "answers": [
+            "vércukorszint"
+        ]
+    },
+    {
+        "question": "Melyik fizikai tulajdonság változatlan izotonikus izomkontrakció során?",
+        "options": [
+            "izmok feszülése",
+            "izom hossza",
+            "izomrövidülés sebessége"
+        ],
+        "answers": [
+            "izmok feszülése"
+        ]
+    },
+    {
+        "question": "Mikor származik a zsírok bontásából az izomműködéshez szükséges energia?",
+        "options": [
+            "didergéskor",
+            "súlyemeléskor",
+            "hegyi kerékpározás során"
+        ],
+        "answers": [
+            "hegyi kerékpározás során"
+        ]
+    },
+    {
+        "question": "Mi jellemző a szisztoléra?",
+        "options": [
+            "kamraizomzat összehúzódása",
+            "kamraizomzat elernyedése",
+            "mindkettő"
+        ],
+        "answers": [
+            "kamraizomzat összehúzódása"
+        ]
+    },
+    {
+        "question": "Melyik a kilégző izom a felsoroltak közül?",
+        "options": [
+            "külső bordaközti izmok",
+            "belső bordeközti izmok",
+            "rekeszizom"
+        ],
+        "answers": [
+            "belső bordeközti izmok"
+        ]
+    },
+    {
+        "question": "Melyik állítás helyes a véna meghatározására?",
+        "options": [
+            "a vér szívből a szövetek felé áramlik",
+            "mindig oxigénben szegény cért szállít",
+            "vér a szövvetek felől a szívbe áramlik"
+        ],
+        "answers": [
+            "vér a szövvetek felől a szívbe áramlik"
+        ]
+    },
+    {
+        "question": "Melyik működés nem következik be a hipotermia esetén?",
+        "options": [
+            "izmok merevsége",
+            "didergés",
+            "izmok lazulása"
+        ],
+        "answers": [
+            "izmok lazulása"
+        ]
+    },
+    {
+        "question": "Az érrendszer melyik területén történik a vér és a szövetek közötti anyagkicserélődés?",
+        "options": [
+            "ütőerek falán keresztül",
+            "hajszálerek falán keresztül",
+            "gyűjtőerek falán keresztül"
+        ],
+        "answers": [
+            "hajszálerek falán keresztül"
+        ]
+    },
+    {
+        "question": "Melyik hormonnak van vércukorszint-csökkentő hatása?",
+        "options": [
+            "inzulinnak",
+            "növekedési hormonnak",
+            "adrenalinnak"
+        ],
+        "answers": [
+            "inzulinnak"
+        ]
+    },
+    {
+        "question": "Mely élettani mutató értéke nem emelkedik fizikai terhelés hatására?",
+        "options": [
+            "testhőmérséklet",
+            "vér pH-ja",
+            "vércukorszint"
+        ],
+        "answers": [
+            "vér pH-ja"
+        ]
+    },
+    {
+        "question": "Melyik működés jellemzi a karizmok izomrostjait nehéz teher cipelésekor?",
+        "options": [
+            "komplett tetanusz",
+            "inkomplett tetanusz",
+            "izomrángás"
+        ],
+        "answers": [
+            "komplett tetanusz"
+        ]
+    },
+    {
+        "question": "23. A szociális befolyásolás során a tapasztalatok függetlenednek a forrástól, beépülnek az egyén értékrendjébe",
+        "options": [
+            "behódolás",
+            "szeretet",
+            "externalizáció",
+            "interiorizáció"
+        ],
+        "answers": [
+            "interiorizáció"
+        ]
+    },
+    {
+        "question": "24. A stressz elmélet megalkotója",
+        "options": [
+            "Charles Spielberger",
+            "Yuri Hanin",
+            "Selye János",
+            "Albert Einstein"
+        ],
+        "answers": [
+            "Selye János"
+        ]
+    },
+    {
+        "question": "Mikor nem a zsírok bontásából származik az izomműködéshez szükséges energia?",
+        "options": [
+            "didergéskor",
+            "súlyemeléskor",
+            "nyugalomban"
+        ],
+        "answers": [
+            "súlyemeléskor"
+        ]
+    },
+    {
+        "question": "Mi jellemző a diasztoléra?",
+        "options": [
+            "pitvarizomzat elernyedése",
+            "kamraizomzat elernyedése",
+            "mindkettő"
+        ],
+        "answers": [
+            "kamraizomzat elernyedése"
+        ]
+    },
+    {
+        "question": "Mit jelent a relatív aerob kapacitás?",
+        "options": [
+            "Egy perc alatt hasznosított teljes levegő mennyisége.",
+            "Egy perc alatt felvett oxigén mennyisége egy testsúly kg-ra vonatkoztatvak",
+            "Egy óra alatt felvett oxigén mennyisége",
+            "Egy perc alatt kifújt CO2 mennyisége egy testsúly kg-ra vonatkoztatva"
+        ],
+        "answers": [
+            "Egy perc alatt felvett oxigén mennyisége egy testsúly kg-ra vonatkoztatvak"
+        ]
+    },
+    {
+        "question": "2Mekkora egy felnőtt ember nyugalmi légzési térfogata?",
+        "options": [
+            "0,5l",
+            "1,5l",
+            "15l",
+            "150l"
+        ],
+        "answers": [
+            "0,5l"
+        ]
+    },
+    {
+        "question": "Melyik terheléses vérnyomás érték számít kórosnak szubmaximális intenzitású futás során?",
+        "options": [
+            "160/80",
+            "160/70",
+            "150/110",
+            "160/50"
+        ],
+        "answers": [
+            "150/110"
+        ]
+    },
+    {
+        "question": "Mit jelent a pulzustérfogat?",
+        "options": [
+            "A pitvarok összehúzódásakor kilökött vér mennyisége",
+            "A kamrák összehúzódásakor kilökött vér mennyisége",
+            "A bal kamra összehúzódásakor kilökött vér mennyisége",
+            "A bal kamra összehúzódásakor mért átmérője"
+        ],
+        "answers": [
+            "A bal kamra összehúzódásakor kilökött vér mennyisége"
+        ]
+    },
+    {
+        "question": "32. Az öndeterminációs elmélet két fontos komponense",
+        "options": [
+            "empátia",
+            "asszertivitás",
+            "autonómia",
+            "kompetencia-érzés"
+        ],
+        "answers": [
+            "autonómia",
+            "kompetencia-érzés"
+        ]
+    },
+    {
+        "question": "Mekkora lehet egy felnőtt edzett ember terheléses pulzusának maximális értéke?",
+        "options": [
+            "220-életkor",
+            "200-életkor",
+            "180+életkor",
+            "200"
+        ],
+        "answers": [
+            "220-életkor"
+        ]
+    },
+    {
+        "question": "34. A magatartási zavarok kialakulásában a neurotikus működési mód és az „önkárpótlási” tendencia együttes megjelenése kriminalizálódáshoz vezethet.",
+        "options": [
+            "igaz",
+            "hamis"
+        ],
+        "answers": [
+            "igaz"
+        ]
+    },
+    {
+        "question": "Melyik tényező nem a rendszeres edzés hatása?",
+        "options": [
+            "A csontok szilárdsága nő",
+            "Az izmok hajszálérellátottsága megvastagszik",
+            "Az elkopott ízületi porcréteg megvastagszik",
+            "Az inak, szalagok szakítószilárdsága nő"
+        ],
+        "answers": [
+            "Az elkopott ízületi porcréteg megvastagszik"
+        ]
+    },
+    {
+        "question": "Melyik sporttevékenység tartozik a maximális erőteljességi övezetbe?",
+        "options": [
+            "400m úszás",
+            "800m síkfutás",
+            "100m síkfutás",
+            "10000m-es kajakozás"
+        ],
+        "answers": [
+            "100m síkfutás"
+        ]
+    },
+    {
+        "question": "Mi jellemzi a mérsékelt erőteljességi övezetbe tartozó versenyszámokat?",
+        "options": [
+            "Kevesebb, mint 10 percig tartó sporttevékenységek",
+            "A teljesítményt ne limitálja a glikogén raktárak kimerülése",
+            "Elsősorban anaerob energiafelhasználás jellemzi",
+            "Elsősorban aerob energiafelhasználás jellemzi"
+        ],
+        "answers": [
+            "Elsősorban aerob energiafelhasználás jellemzi"
+        ]
+    },
+    {
+        "question": "Melyik tápláléknak magas a fehérje tartalma a felsoroltak közül?",
+        "options": [
+            "Zöld paprika",
+            "Áfonya",
+            "marhahús",
+            "oliva olaj"
+        ],
+        "answers": [
+            "marhahús"
+        ]
+    },
+    {
+        "question": "Mikor származik az energianyerés döntően a zsírok égetéséből?",
+        "options": [
+            "Hidegben",
+            "Emelkedően kerékpározás során",
+            "Vágtafutás során",
+            "Bírkózás során"
+        ],
+        "answers": [
+            "Hidegben"
+        ]
+    },
+    {
+        "question": "Melyik ásványi anyag fontos az izmok ingerelhetőségéhez?",
+        "options": [
+            "Kálium",
+            "Vas",
+            "Kalcium",
+            "Réz"
+        ],
+        "answers": [
+            "Kalcium"
+        ]
+    },
+    {
+        "question": "Melyik ételben van a legtöbb élelmi rost?",
+        "options": [
+            "Fehér kenyér",
+            "Párizsi",
+            "Vaj",
+            "Graham kenyér"
+        ],
+        "answers": [
+            "Graham kenyér"
+        ]
+    },
+    {
+        "question": "Melyik állítás igaz? Belégzés során a ….",
+        "options": [
+            "Bordák emelkednek",
+            "Mellkas térfogata csökken",
+            "Rekeszizom elernyed",
+            "Bodák süllyednek"
+        ],
+        "answers": [
+            "Bordák emelkednek"
+        ]
+    },
+    {
+        "question": "Melyik a gyors (fehér) izomrostok jellemző tulajdonsága?",
+        "options": [
+            "Alacsony mioglobin tartalom",
+            "Magas mitokondrium tartalom ",
+            "Kitartó működés "
+        ],
+        "answers": [
+            "Alacsony mioglobin tartalom"
+        ]
+    },
+    {
+        "question": "Melyik funkció jellemző a piramis pályákra?",
+        "options": [
+            "Bonyolult, cél-vezérelt mozgások kivitelezése",
+            "A mimikai izmok spontán működése ",
+            "A testtartásért felelős izmok működésének összehangolása "
+        ],
+        "answers": [
+            "Bonyolult, cél-vezérelt mozgások kivitelezése"
+        ]
+    },
+    {
+        "question": "Melyik nem a szimpatikus idegrendszer hatása?",
+        "options": [
+            "A pupilla tágulása",
+            "A hörgők szűkülése",
+            "A vércukorszint növekedése"
+        ],
+        "answers": [
+            "A hörgők szűkülése"
+        ]
+    },
+    {
+        "question": "Melyik hormon termelődik a mellékvesében?",
+        "options": [
+            "Glukagon",
+            "Tiroxin",
+            "Adrenalin"
+        ],
+        "answers": [
+            "Adrenalin"
+        ]
+    },
+    {
+        "question": "Melyik hatás jellemzi az oxitocint?",
+        "options": [
+            "Fehérje anabolikus hatás",
+            "A simaizmok összehúzódása",
+            "Vércukorszint csökkenése"
+        ],
+        "answers": [
+            "A simaizmok összehúzódása"
+        ]
+    },
+    {
+        "question": "Melyik állítás nem igaz a vékonybél működésére?",
+        "options": [
+            "A tápanyagok felszívódása itt történik",
+            "A zsírok emésztése itt történik",
+            "Víz, gyógyszerek, alkohol felszívódása itt kezdődik"
+        ],
+        "answers": [
+            "Víz, gyógyszerek, alkohol felszívódása itt kezdődik"
+        ]
+    },
+    {
+        "question": "Milyen anyag szükséges a szénhidrátok bontásához?",
+        "options": [
+            "Amiláz",
+            "Pepszin",
+            "Lipáz"
+        ],
+        "answers": [
+            "Amiláz"
+        ]
+    },
+    {
+        "question": "Melyik a nephron alkotórésze?",
+        "options": [
+            "Henle kacs",
+            "Húgycső",
+            "Vesemedence"
+        ],
+        "answers": [
+            "Henle kacs"
+        ]
+    },
+    {
+        "question": "Mennyi a felnőtt, átlagos testméretű emberben keringő vér mennyisége?",
+        "options": [
+            "5-6dl",
+            "5-6l",
+            "50-60ml"
+        ],
+        "answers": [
+            "5-6l"
+        ]
+    },
+    {
+        "question": "Melyik hatás jellemzi a tesztoszteront?",
+        "options": [
+            "Fehérje anabolikus hatás",
+            "Vörösvértestek csökkentése",
+            "Szőrtelenség"
+        ],
+        "answers": [
+            "Fehérje anabolikus hatás"
+        ]
+    },
+    {
+        "question": "Melyik állítás nem igaz a gyomor működésére?",
+        "options": [
+            "A fehérjék emésztése itt kezdődik",
+            "A zsírok emésztése itt kezdődik",
+            "Víz, gyógyszerek, alkohol felszívódása itt történik"
+        ],
+        "answers": [
+            "A zsírok emésztése itt kezdődik"
+        ]
+    },
+    {
+        "question": "54. Rotter szerint a belső kontrollos személy úgy érzi, hogy …",
+        "options": [
+            "külső tényezők határozzák meg az életét",
+            "hatékonyan képes önmaga irányítani az életét",
+            "a szerencse befolyásolja a sikerességét",
+            "nagy szüksége van mások segítségére és azt gyakran igénybe is veszi"
+        ],
+        "answers": [
+            "hatékonyan képes önmaga irányítani az életét"
+        ]
+    },
+    {
+        "question": "Milyen anyag szükséges a zsírok bontásához?",
+        "options": [
+            "Amiláz",
+            "Pepszin",
+            "Lipáz"
+        ],
+        "answers": [
+            "Lipáz"
+        ]
+    },
+    {
+        "question": "Mi a neve a Bowmann tokba került folyadéknak a nefronban?",
+        "options": [
+            "Vizelet",
+            "Oldat",
+            "Szűrlet"
+        ],
+        "answers": [
+            "Szűrlet"
+        ]
+    },
+    {
+        "question": "Mennyi egy felnőtt emberben a vizelet napi mennyisége?",
+        "options": [
+            "1.5-2dl",
+            "1.5-2l",
+            "150-200ml"
+        ],
+        "answers": [
+            "1.5-2l"
+        ]
+    },
+    {
+        "question": "58. A csoportalakulás viharzás szakaszára jellemző KIVÉVE:",
+        "options": [
+            "Legtöbbször nem tudatos folyamat",
+            "A hasonló pozíciókért versengők összecsapnak",
+            "„Harapási sorrend” kialakulása",
+            "Kellemes, ismerkedős fázis"
+        ],
+        "answers": [
+            "Kellemes, ismerkedős fázis"
+        ]
+    },
+    {
+        "question": "Melyik a kilégző izom a felsoroltak közül?",
+        "options": [
+            "m. pectoralis minor",
+            "mm. intercostales externi ",
+            "mm. intercostales interni",
+            "diaphragma (rekeszizom)"
+        ],
+        "answers": [
+            "mm. intercostales interni"
+        ]
+    },
+    {
+        "question": "Melyik a gyors (fehér) izomrostok jellemző tulajdonsága?",
+        "options": [
+            "Nagy glikolitikus kapacitás",
+            "Magas mitokondrium tartalom",
+            "Kitartó működés",
+            "Nagy oxidatív kapacitás"
+        ],
+        "answers": [
+            "Nagy glikolitikus kapacitás"
+        ]
+    },
+    {
+        "question": "Hogy nevezik az ingertovábbítás útját a központi idegrendszerből az izmok felé?",
+        "options": [
+            "Afferens",
+            "Differens",
+            "Efferens",
+            "Koherens"
+        ],
+        "answers": [
+            "Efferens"
+        ]
+    },
+    {
+        "question": "Hol alakulnak ki a dinamikus sztereotípiák?",
+        "options": [
+            "Thalamusban",
+            "Látótelepben",
+            "Agykéregben",
+            "Kisagyban"
+        ],
+        "answers": [
+            "Kisagyban"
+        ]
+    },
+    {
+        "question": "Mennyi a zsírok égéshője?",
+        "options": [
+            "4,1 kcal",
+            "9,3 kcal",
+            "5,8 kcal",
+            "1,1 kcal"
+        ],
+        "answers": [
+            "9,3 kcal"
+        ]
+    },
+    {
+        "question": "Melyik sporttevékenységre jellemző a dominánsan anaerob alaktacid energiafelhasználás?",
+        "options": [
+            "Terepfutás",
+            "Vitorlázás",
+            "Rajtok",
+            "Falmászás"
+        ],
+        "answers": [
+            "Rajtok"
+        ]
+    },
+    {
+        "question": "Melyik működés nem következik be hipotermia esetén?",
+        "options": [
+            "Az izmok merevsége",
+            "Bőrfelszíni erek tágulása",
+            "Az izmok inkomplett tetanusza",
+            "Sérülésveszély fokozódása"
+        ],
+        "answers": [
+            "Bőrfelszíni erek tágulása"
+        ]
+    },
+    {
+        "question": "Melyik ér csatlakozik a jobb pitvarba?",
+        "options": [
+            "A felső és alsó visszér",
+            "A tüdő véna",
+            "A tüdő artéria",
+            "Aorta"
+        ],
+        "answers": [
+            "A felső és alsó visszér"
+        ]
+    },
+    {
+        "question": "Mely élettani mutató értéke emelkedik pihenés során?",
+        "options": [
+            "Pulzus",
+            "Izomerek átmérője",
+            "Zsigeri erek átmérője",
+            "Vércukorszint"
+        ],
+        "answers": [
+            "Zsigeri erek átmérője"
+        ]
+    },
+    {
+        "question": "Melyik fizikai tulajdonság változatlan izokinetikus izomkontrakció során?",
+        "options": [
+            "Az izom feszülése",
+            "Az izom hossza ",
+            "Az izomrövidülés sebessége",
+            "Felsoroltak mindegyike"
+        ],
+        "answers": [
+            "Az izomrövidülés sebessége"
+        ]
+    },
+    {
+        "question": "Mikor származik a zsírok bontásából az izomműködéshez szükséges energia?",
+        "options": [
+            "Súlyemelés során",
+            "Gerelyhajítás során",
+            "Didergéskor",
+            "Hegyi kerékpározás során"
+        ],
+        "answers": [
+            "Hegyi kerékpározás során"
+
+        ]
+    }
+]

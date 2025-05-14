@@ -243,9 +243,9 @@ export default function Navbar({
                                     {
                                         type === "study" ?
                                             <>
-                                                <div onClick={() => { navigateTo("/portal") }} data-pr-tooltip={"Portalfejlesztés .Net-ben"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-save"></i></div>
                                             </> :
                                             <>
+                                                <div onClick={() => { navigateTo("/portal") }} data-pr-tooltip={"Portalfejlesztés .Net-ben"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-save"></i></div>
                                                 <div onClick={() => { navigateTo("/mezg") }} data-pr-tooltip={"Mezőgaztasági alap."} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-globe"></i></div>
                                             </>
                                     }
@@ -260,6 +260,7 @@ export default function Navbar({
                                             <>
                                                 <div onClick={() => { navigateTo("/anat") }} data-pr-tooltip={"ANAT"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-table"></i></div>
                                                 <div onClick={() => { navigateTo("/pszicho") }} data-pr-tooltip={"Pszicho"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-table"></i></div>
+                                                <div onClick={() => { navigateTo("/eletgeci") }} data-pr-tooltip={"Életgeci"} data-pr-position={"top"} className={"p-3 menu-items cursor-pointer px-3 flex items-center rounded-full border-2 hover:text-white border-blue-800 border-red-800 text-blue-800 text-red-800 hover: hover:bg-red-800"}><i className="pi pi-table"></i></div>
                                             </> :
                                             <></>
                                     }

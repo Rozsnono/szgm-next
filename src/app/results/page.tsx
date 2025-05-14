@@ -63,6 +63,12 @@ export default function Home() {
             max: 30
         },
         {
+            title: "ELETGECI",
+            icon: "pi pi-table",
+            link: "eletgeci",
+            max: 30
+        },
+        {
             title: "MEZG",
             icon: "pi pi-globe",
             link: "mezg",
