@@ -1,6 +1,6 @@
 "use client";
 import QuestionTab from "@/components/questionTab";
-import eletgeci from "../../txts/eletgeci.json";
+import Eletgeci from "../../txts/eletgeci.json";
 import { useQuery } from "react-query";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -9,7 +9,7 @@ export default function Home() {
 
     function getData() {
         try {
-            const data = eletgeci;
+            const data = Eletgeci;
             if (sessionStorage.getItem("queue") != "undefined" && sessionStorage.getItem("queue") != null) {
                 const qu: string | any = sessionStorage.getItem("queue");
                 setQueue(JSON.parse(qu) as any)
