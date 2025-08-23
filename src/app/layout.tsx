@@ -11,6 +11,8 @@ import { usePathname, useRouter } from 'next/navigation';
 import Message from '@/components/message';
 import dynamic from 'next/dynamic';
 import "../css/light.css";
+import Image from 'next/image'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,8 +44,14 @@ export default function RootLayout({
     <html lang="en">
       <title>Vizsga és Zárthelyi gyakorló oldal</title>
 
-      <body className={inter.className}>
-        <QueryClientProvider client={queryClient}>
+      <body className={inter.className + "w-screen h-screen flex items-center justify-center"}>
+        <div className='flex flex-col items-center justify-center gap-2'>
+          <Image src={"/icon-only.png"} width={300} height={300} alt='icon'></Image>
+
+          <h1 className='text-3xl text-zinc-900'>Az oldal bezárásra került!</h1>
+          <p className='text-zinc-600'>Kérjük, vegye fel a kapcsolatot a fejlesztővel.</p>
+        </div>
+        {/* <QueryClientProvider client={queryClient}>
           <UserContext.Provider value={{ user, setUser }}>
             <Navbar>
               <div className=' bg-white'>
@@ -52,7 +60,7 @@ export default function RootLayout({
               </div>
             </Navbar>
           </UserContext.Provider>
-        </QueryClientProvider>
+        </QueryClientProvider> */}
       </body>
     </html>
   )

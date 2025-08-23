@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 import SZE from "../assets/sze.png"
 
 import { useContext, useEffect, useRef, useState } from 'react';
